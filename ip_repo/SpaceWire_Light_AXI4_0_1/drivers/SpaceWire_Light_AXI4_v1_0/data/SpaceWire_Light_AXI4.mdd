@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER SpaceWire_Light_AXI4
+	OPTION supported_peripherals = (SpaceWire_Light_AXI4);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = SpaceWire_Light_AXI4;
+END DRIVER

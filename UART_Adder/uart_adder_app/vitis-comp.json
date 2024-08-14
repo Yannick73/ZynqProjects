@@ -1,0 +1,15 @@
+{
+  "name": "uart_adder_app",
+  "type": "HOST",
+  "platform": "F:\\Xilinx\\Projects\\UART_Adder\\platform\\export\\platform\\platform.xpfm",
+  "domain": "standalone_ps7_cortexa9_1",
+  "cpuInstance": "ps7_cortexa9_1",
+  "cpuType": "cortex-a9",
+  "os": "standalone",
+  "configuration": {
+    "componentType": "HOST",
+    "hostToolchainConfigurations": []
+  },
+  "domainRealName": "standalone_ps7_cortexa9_1",
+  "applicationFlow": "EMBEDDED"
+}

@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Adder.srcs/sources_1/new/byte_register.v" \
+"../../../../Adder.gen/sources_1/bd/Adder/ip/Adder_byte_register_0_1/sim/Adder_byte_register_0_1.v" \
+"../../../../Adder.gen/sources_1/bd/Adder/ip/Adder_byte_register_0_3/sim/Adder_byte_register_0_3.v" \
+"../../../../Adder.gen/sources_1/bd/Adder/sim/Adder.v" \
+"../../../../Adder.srcs/sim_1/new/adder_test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

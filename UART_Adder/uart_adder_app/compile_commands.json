@@ -1,0 +1,7 @@
+[
+{
+  "directory": "F:/Xilinx/Projects/UART_Adder/uart_adder_app/build",
+  "command": "F:\\Xilinx\\Vitis\\2024.1\\gnu\\aarch32\\nt\\gcc-arm-none-eabi\\bin\\arm-none-eabi-g++.exe -isystem F:/Xilinx/Projects/UART_Adder/platform/export/platform/sw/standalone_ps7_cortexa9_1/include -isystem F:/Xilinx/Vitis/2024.1/gnu/aarch32/nt/gcc-arm-none-eabi/x86_64-oesdk-mingw32/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/12.2.0/include -isystem F:/Xilinx/Vitis/2024.1/gnu/aarch32/nt/gcc-arm-none-eabi/x86_64-oesdk-mingw32/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/12.2.0/include-fixed -isystem F:/Xilinx/Vitis/2024.1/gnu/aarch32/nt/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include/c++/12.2.0 -isystem F:/Xilinx/Vitis/2024.1/gnu/aarch32/nt/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include/c++/12.2.0/arm-xilinx-eabi/thumb/v7-a+fp/hard -isystem F:/Xilinx/Vitis/2024.1/gnu/aarch32/nt/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include/c++/12.2.0/backward -isystem F:/Xilinx/Vitis/2024.1/gnu/aarch32/nt/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include  -O2 -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=F:/Xilinx/Projects/UART_Adder/platform/export/platform/sw/standalone_ps7_cortexa9_1/Xilinx.spec -IF:/Xilinx/Projects/UART_Adder/platform/export/platform/sw/standalone_ps7_cortexa9_1/include -Wall -Wextra      -O0  -g3     -U__clang__ -o CMakeFiles\\uart_adder_app.elf.dir\\main.cpp.obj -c F:\\Xilinx\\Projects\\UART_Adder\\uart_adder_app\\src\\main.cpp",
+  "file": "F:\\Xilinx\\Projects\\UART_Adder\\uart_adder_app\\src\\main.cpp"
+}
+]

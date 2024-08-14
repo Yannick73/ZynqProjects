@@ -1,0 +1,49 @@
+{
+  "schema": "xilinx.com:schema:json_instance:1.0",
+  "ip_inst": {
+    "xci_name": "Adder_Implementation_Adder_wrapper_0_0",
+    "cell_name": "Adder_wrapper_0",
+    "component_reference": "xilinx.com:module_ref:Adder_wrapper:1.0",
+    "ip_revision": "1",
+    "gen_directory": "../../../../../../Adder.gen/sources_1/bd/Adder_Implementation/ip/Adder_Implementation_Adder_wrapper_0_0",
+    "parameters": {
+      "component_parameters": {
+        "Component_Name": [ { "value": "Adder_Implementation_Adder_wrapper_0_0", "resolve_type": "user", "usage": "all" } ]
+      },
+      "project_parameters": {
+        "ARCHITECTURE": [ { "value": "zynq" } ],
+        "BASE_BOARD_PART": [ { "value": "digilentinc.com:zedboard:part0:1.1" } ],
+        "BOARD_CONNECTIONS": [ { "value": "" } ],
+        "DEVICE": [ { "value": "xc7z020" } ],
+        "NEXTGEN_VERSAL": [ { "value": "0" } ],
+        "PACKAGE": [ { "value": "clg484" } ],
+        "PREFHDL": [ { "value": "VERILOG" } ],
+        "SILICON_REVISION": [ { "value": "" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
+        "SPEEDGRADE": [ { "value": "-1" } ],
+        "STATIC_POWER": [ { "value": "" } ],
+        "TEMPERATURE_GRADE": [ { "value": "" } ]
+      },
+      "runtime_parameters": {
+        "IPCONTEXT": [ { "value": "IP_Integrator" } ],
+        "IPREVISION": [ { "value": "1" } ],
+        "MANAGED": [ { "value": "TRUE" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../Adder.gen/sources_1/bd/Adder_Implementation/ip/Adder_Implementation_Adder_wrapper_0_0" } ],
+        "SELECTEDSIMMODEL": [ { "value": "" } ],
+        "SHAREDDIR": [ { "value": "../../ipshared" } ],
+        "SWVERSION": [ { "value": "2024.1" } ],
+        "SYNTHESISFLOW": [ { "value": "OOC_HIERARCHICAL" } ]
+      }
+    },
+    "boundary": {
+      "ports": {
+        "CA": [ { "direction": "in" } ],
+        "CB": [ { "direction": "in" } ],
+        "S": [ { "direction": "out", "size_left": "7", "size_right": "0" } ],
+        "carry": [ { "direction": "out" } ],
+        "clk_100MHz": [ { "direction": "in" } ],
+        "data": [ { "direction": "in", "size_left": "7", "size_right": "0" } ]
+      }
+    }
+  }
+}

@@ -1,0 +1,3 @@
+F:/Xilinx/Projects/UART_Adder/platform/zynq_fsbl/build/CMakeFiles/fsbl.elf.dir
+F:/Xilinx/Projects/UART_Adder/platform/zynq_fsbl/build/CMakeFiles/edit_cache.dir
+F:/Xilinx/Projects/UART_Adder/platform/zynq_fsbl/build/CMakeFiles/rebuild_cache.dir

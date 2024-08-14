@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Wed Jul  3 23:56:05 2024
+# Process ID: 39551
+# Current directory: /home/yannick/Vivado/Adder/Adder.runs/Adder_implementation_Adder_wrapper_0_0_synth_1
+# Command line: vivado -log Adder_implementation_Adder_wrapper_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Adder_implementation_Adder_wrapper_0_0.tcl
+# Log file: /home/yannick/Vivado/Adder/Adder.runs/Adder_implementation_Adder_wrapper_0_0_synth_1/Adder_implementation_Adder_wrapper_0_0.vds
+# Journal file: /home/yannick/Vivado/Adder/Adder.runs/Adder_implementation_Adder_wrapper_0_0_synth_1/vivado.jou
+# Running On        :yannick-AB350-Gaming-3
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 22.04.4 LTS
+# Processor Detail  :AMD Ryzen 5 3600 6-Core Processor
+# CPU Frequency     :2200.000 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :16674 MB
+# Swap memory       :17179 MB
+# Total Virtual     :33854 MB
+# Available Virtual :28378 MB
+#-----------------------------------------------------------
+source Adder_implementation_Adder_wrapper_0_0.tcl -notrace

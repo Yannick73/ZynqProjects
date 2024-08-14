@@ -1,0 +1,40 @@
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L xbip_utils_v3_0_13 -L c_reg_fd_v12_0_9 -L xbip_dsp48_wrapper_v3_0_6 -L xbip_pipe_v3_0_9 -L xbip_dsp48_addsub_v3_0_9 -L xbip_addsub_v3_0_9 -L c_addsub_v12_0_18 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot adder_test_behav xil_defaultlib.adder_test xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package c_addsub_v12_0_18.c_addsub_v12_0_18_viv_comp
+Compiling package xbip_utils_v3_0_13.xbip_utils_v3_0_13_pkg
+Compiling package xbip_pipe_v3_0_9.xbip_pipe_v3_0_9_viv_comp
+Compiling package xbip_addsub_v3_0_9.xbip_addsub_v3_0_9_viv_comp
+Compiling package c_addsub_v12_0_18.c_addsub_v12_0_18_pkg
+Compiling package c_addsub_v12_0_18.c_addsub_v12_0_18_pkg_legacy
+Compiling package c_reg_fd_v12_0_9.c_reg_fd_v12_0_9_viv_comp
+Compiling package unisim.vcomponents
+Compiling module xil_defaultlib.byte_register
+Compiling module xil_defaultlib.Adder_byte_register_0_1
+Compiling module xil_defaultlib.Adder_byte_register_0_3
+Compiling architecture structural of entity c_reg_fd_v12_0_9.c_reg_fd_v12_0_9_viv [\c_reg_fd_v12_0_9_viv(c_sync_pri...]
+Compiling architecture structural of entity c_reg_fd_v12_0_9.c_reg_fd_v12_0_9_viv [\c_reg_fd_v12_0_9_viv(c_width=8,...]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture rtl of entity c_addsub_v12_0_18.c_addsub_v12_0_18_lut6_legacy [\c_addsub_v12_0_18_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_18.c_addsub_v12_0_18_fabric_legacy [\c_addsub_v12_0_18_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_18.c_addsub_v12_0_18_legacy [\c_addsub_v12_0_18_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_18.c_addsub_v12_0_18_viv [\c_addsub_v12_0_18_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_18.c_addsub_v12_0_18 [\c_addsub_v12_0_18(c_xdevicefami...]
+Compiling architecture adder_c_addsub_0_0_arch of entity xil_defaultlib.Adder_c_addsub_0_0 [adder_c_addsub_0_0_default]
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.adder_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot adder_test_behav

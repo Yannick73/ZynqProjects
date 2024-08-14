@@ -1,0 +1,24 @@
+
+*** Running vivado
+    with args -log Adder_c_addsub_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Adder_c_addsub_0_0.tcl
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Wed Jul  3 23:28:45 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source Adder_c_addsub_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1410.016 ; gain = 0.023 ; free physical = 1140 ; free virtual = 24306
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: Adder_c_addsub_0_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 566948439ed08da3 to dir: /home/yannick/Vivado/Adder/Adder.runs/Adder_c_addsub_0_0_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/yannick/Vivado/Adder/Adder.cache/ip/2024.1/5/6/566948439ed08da3/Adder_c_addsub_0_0_sim_netlist.vhdl to /home/yannick/Vivado/Adder/Adder.runs/Adder_c_addsub_0_0_synth_1/Adder_c_addsub_0_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/yannick/Vivado/Adder/Adder.cache/ip/2024.1/5/6/566948439ed08da3/Adder_c_addsub_0_0.dcp to /home/yannick/Vivado/Adder/Adder.runs/Adder_c_addsub_0_0_synth_1/Adder_c_addsub_0_0.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/yannick/Vivado/Adder/Adder.cache/ip/2024.1/5/6/566948439ed08da3/Adder_c_addsub_0_0_stub.v to /home/yannick/Vivado/Adder/Adder.runs/Adder_c_addsub_0_0_synth_1/Adder_c_addsub_0_0_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/yannick/Vivado/Adder/Adder.cache/ip/2024.1/5/6/566948439ed08da3/Adder_c_addsub_0_0_sim_netlist.v to /home/yannick/Vivado/Adder/Adder.runs/Adder_c_addsub_0_0_synth_1/Adder_c_addsub_0_0_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/yannick/Vivado/Adder/Adder.cache/ip/2024.1/5/6/566948439ed08da3/Adder_c_addsub_0_0_stub.vhdl to /home/yannick/Vivado/Adder/Adder.runs/Adder_c_addsub_0_0_synth_1/Adder_c_addsub_0_0_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP Adder_c_addsub_0_0, cache-ID = 566948439ed08da3.
+INFO: [Common 17-206] Exiting Vivado at Wed Jul  3 23:28:56 2024...

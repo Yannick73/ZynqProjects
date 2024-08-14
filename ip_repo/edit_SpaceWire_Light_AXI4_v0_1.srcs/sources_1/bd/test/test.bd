@@ -1,0 +1,25 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7z020clg484-1",
+      "gen_directory": "../../../../edit_SpaceWire_Light_AXI4_v0_1.gen/sources_1/bd/test",
+      "name": "test",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.1"
+    },
+    "design_tree": {
+      "SpaceWire_Light_AXI4_0": ""
+    },
+    "components": {
+      "SpaceWire_Light_AXI4_0": {
+        "vlnv": "xilinx.com:user:SpaceWire_Light_AXI4:0.1",
+        "ip_revision": "2",
+        "xci_name": "test_SpaceWire_Light_AXI4_0_1",
+        "xci_path": "ip\\test_SpaceWire_Light_AXI4_0_1\\test_SpaceWire_Light_AXI4_0_1.xci",
+        "inst_hier_path": "SpaceWire_Light_AXI4_0"
+      }
+    }
+  }
+}

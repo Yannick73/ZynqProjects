@@ -1,0 +1,9 @@
+verilog xil_defaultlib  \
+"../../../../Adder.gen/sources_1/bd/Adder/ip/Adder_byte_register_0_1/sim/Adder_byte_register_0_1.v" \
+"../../../../Adder.gen/sources_1/bd/Adder/ip/Adder_byte_register_0_3/sim/Adder_byte_register_0_3.v" \
+"../../../../Adder.gen/sources_1/bd/Adder/sim/Adder.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

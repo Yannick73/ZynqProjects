@@ -1,0 +1,3 @@
+Time resolution is 1 ps
+adder_test finished w/o errors
+$finish called at time : 458752 ns : File "/home/yannick/Vivado/Adder/Adder.srcs/sim_1/new/adder_test.v" Line 100
