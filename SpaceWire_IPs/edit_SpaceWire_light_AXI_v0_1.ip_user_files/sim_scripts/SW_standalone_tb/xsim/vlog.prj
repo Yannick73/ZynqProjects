@@ -1,0 +1,8 @@
+verilog xil_defaultlib --include "../../../../edit_SpaceWire_light_AXI_v0_1.gen/sources_1/bd/SW_standalone_tb/ipshared/3242" \
+"../../../bd/SW_standalone_tb/ip/SW_standalone_tb_clk_wiz_0/SW_standalone_tb_clk_wiz_0_clk_wiz.v" \
+"../../../bd/SW_standalone_tb/ip/SW_standalone_tb_clk_wiz_0/SW_standalone_tb_clk_wiz_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

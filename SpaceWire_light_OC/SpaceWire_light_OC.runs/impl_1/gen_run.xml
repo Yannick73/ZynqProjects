@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1723829385">
+  <File Type="ROUTE-PWR" Name="SpwStream_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="SpwStream.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="SpwStream_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="SpwStream_reports.tcl"/>
+  <File Type="OPT-RQA-PB" Name="SpwStream_rqa_opted.pb"/>
+  <File Type="BITSTR-MMI" Name="SpwStream.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="SpwStream_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="SpwStream_timing_summary_init.rpt"/>
+  <File Type="OPT-TIMING" Name="SpwStream_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="SpwStream_opt.dcp"/>
+  <File Type="OPT-DRC" Name="SpwStream_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="SpwStream.hwdef"/>
+  <File Type="PWROPT-DCP" Name="SpwStream_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="SpwStream_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="SpwStream_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="SpwStream_placed.dcp"/>
+  <File Type="PLACE-IO" Name="SpwStream_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="SpwStream_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="SpwStream_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="SpwStream_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="SpwStream_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="SpwStream_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="SpwStream_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="SpwStream.bin"/>
+  <File Type="PLACE-TIMING" Name="SpwStream_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="SpwStream_power_routed.rpx"/>
+  <File Type="PLACE-RQA-PB" Name="SpwStream_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="SpwStream_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="SpwStream.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="SpwStream_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="SpwStream_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="SpwStream_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="SpwStream.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="SpwStream_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="SpwStream_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="SpwStream_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="SpwStream_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="SpwStream_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="SpwStream_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="SpwStream_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="SpwStream_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="SpwStream_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="SpwStream_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-RQS-PB" Name="SpwStream_rqs_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="SpwStream_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="SpwStream_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="SpwStream_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="SpwStream_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="SpwStream_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="SpwStream_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="SpwStream_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="SpwStream_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="SpwStream_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="SpwStream_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="SpwStream_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="SpwStream_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="syncdff_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="syncdff_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="syncdff_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="syncdff_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="SpwStream.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="syncdff_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="syncdff_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="SpwStream.nky"/>
+  <File Type="BITSTR-BMM" Name="SpwStream_bd.bmm"/>
+  <File Type="PDI-FILE" Name="SpwStream.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="SpwStream_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="SpwStream_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="SpwStream.rcfi"/>
+  <File Type="CFI_FILE" Name="SpwStream.cfi"/>
+  <File Type="RNPI_FILE" Name="SpwStream.rnpi"/>
+  <File Type="NPI_FILE" Name="SpwStream.npi"/>
+  <File Type="RBD_FILE" Name="SpwStream.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="SpwStream.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="SpwStream.sysdef"/>
+  <File Type="BG-BGN" Name="SpwStream.bgn"/>
+  <File Type="BG-DRC" Name="SpwStream.drc"/>
+  <File Type="RDI-RDI" Name="SpwStream.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="SpwStream_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="SpwStream_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../External_IPs/spacewire-light-bciwf/SPWIPLogic/src/SPWIPLogic/SpwStream/Definitions/ModuleMap_pkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="spwip"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../External_IPs/spacewire-light-bciwf/SPWIPLogic/src/SPWIPLogic/SpwStream/Definitions/SpwProtocol_pkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="spwip"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../External_IPs/spacewire-light-bciwf/SPWIPLogic/src/SPWIPLogic/SpwStream/Definitions/SpwRegisters_pkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="spwip"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../External_IPs/spacewire-light-bciwf/SPWIPLogic/src/SPWIPLogic/SpwStream/SpwLink.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="spwip"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../External_IPs/spacewire-light-bciwf/SPWIPLogic/src/SPWIPLogic/SpwStream/SpwRam.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="spwip"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../External_IPs/spacewire-light-bciwf/SPWIPLogic/src/SPWIPLogic/SpwStream/SpwRecovClk.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="spwip"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../External_IPs/spacewire-light-bciwf/SPWIPLogic/src/SPWIPLogic/SpwStream/SpwRecv.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="spwip"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../External_IPs/spacewire-light-bciwf/SPWIPLogic/src/SPWIPLogic/SpwStream/SpwXmit_fast/SpwXmit_fast_pkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="spwip"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../External_IPs/spacewire-light-bciwf/SPWIPLogic/src/SPWIPLogic/SpwStream/SpwStream_pkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="spwip"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../External_IPs/spacewire-light-bciwf/SPWIPLogic/src/SPWIPLogic/SpwStream/SpwRecvFront/SpwRecvFrontXor.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="spwip"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../External_IPs/spacewire-light-bciwf/SPWIPLogic/src/SPWIPLogic/SpwStream/SpwRecvFront/SpwRecvFront_pkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="spwip"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../External_IPs/spacewire-light-bciwf/SPWIPLogic/src/SPWIPLogic/SpwStream/SpwReset.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="spwip"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../External_IPs/spacewire-light-bciwf/SPWIPLogic/src/SPWIPLogic/SpwStream/SpwXmit_fast/SpwXmit_fast.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="spwip"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../External_IPs/spacewire-light-bciwf/SPWIPLogic/src/SPWIPLogic/SpwStream/SpwXmit_fast/SyncDff.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="spwip"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../External_IPs/spacewire-light-bciwf/SPWIPLogic/src/SPWIPLogic/SpwStream/SpwStream.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="spwip"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/SpaceWire/SpaceWire.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="SpwStream"/>
+      <Option Name="TopLib" Val="spwip"/>
+      <Option Name="TopArchitecture" Val="SpwStream_rtl"/>
+      <Option Name="TopRTLFile" Val="$PPRDIR/../External_IPs/spacewire-light-bciwf/SPWIPLogic/src/SPWIPLogic/SpwStream/SpwStream.vhd"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

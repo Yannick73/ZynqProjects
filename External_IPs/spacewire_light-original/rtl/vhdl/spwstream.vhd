@@ -19,10 +19,13 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use work.spwpkg.all;
+use work.spwpkg.spw_implementation_type;
 
 entity spwstream is
 
+
     generic (
+        
         -- System clock frequency in Hz.
         -- This must be set to the frequency of "clk". It is used to setup
         -- counters for reset timing, disconnect timeout and to transmit

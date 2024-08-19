@@ -1,0 +1,94 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xE251CDEDA4E730FF",
+      "device": "xc7z020clg484-1",
+      "gen_directory": "../../../../edit_SpaceWire_light_AXI_v0_1.gen/sources_1/bd/SW_standalone_tb",
+      "name": "SW_standalone_tb",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.1"
+    },
+    "design_tree": {
+      "clk_wiz": ""
+    },
+    "ports": {
+      "sys_clock": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "PHASE": {
+            "value": "0.0"
+          }
+        }
+      },
+      "reset_rtl": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      }
+    },
+    "components": {
+      "clk_wiz": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "ip_revision": "14",
+        "xci_name": "SW_standalone_tb_clk_wiz_0",
+        "xci_path": "ip\\SW_standalone_tb_clk_wiz_0\\SW_standalone_tb_clk_wiz_0.xci",
+        "inst_hier_path": "clk_wiz",
+        "parameters": {
+          "CLKIN2_JITTER_PS": {
+            "value": "166.66"
+          },
+          "CLKOUT1_JITTER": {
+            "value": "137.143"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "80"
+          },
+          "CLK_IN1_BOARD_INTERFACE": {
+            "value": "sys_clock"
+          },
+          "CLK_IN2_BOARD_INTERFACE": {
+            "value": "Custom"
+          },
+          "MMCM_CLKIN2_PERIOD": {
+            "value": "10.000"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "12.500"
+          },
+          "SECONDARY_SOURCE": {
+            "value": "Single_ended_clock_capable_pin"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          },
+          "USE_INCLK_SWITCHOVER": {
+            "value": "false"
+          }
+        }
+      }
+    },
+    "nets": {
+      "reset_rtl_1": {
+        "ports": [
+          "reset_rtl",
+          "clk_wiz/reset"
+        ]
+      },
+      "sys_clock_1": {
+        "ports": [
+          "sys_clock",
+          "clk_wiz/clk_in1"
+        ]
+      }
+    }
+  }
+}

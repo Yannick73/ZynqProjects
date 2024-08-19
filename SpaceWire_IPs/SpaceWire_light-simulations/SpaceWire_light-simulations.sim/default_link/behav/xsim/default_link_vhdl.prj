@@ -1,0 +1,20 @@
+# compile vhdl design source files
+vhdl SPWIP  \
+"../../../../../spacewire-light-bciwf/SPWIPLogic/src/SPWIPLogic/SpwStream/SpwRam.vhd" \
+"../../../../../spacewire-light-bciwf/SPWIPLogic/src/SPWIPLogic/SpwStream/SpwXmit_fast/SyncDff.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../../spacewire_light-original/rtl/vhdl/spwpkg.vhd" \
+"../../../../../spacewire_light-original/rtl/vhdl/spwlink.vhd" \
+"../../../../../spacewire_light-original/rtl/vhdl/spwram.vhd" \
+"../../../../../spacewire_light-original/rtl/vhdl/spwrecv.vhd" \
+"../../../../../spacewire_light-original/rtl/vhdl/spwrecvfront_fast.vhd" \
+"../../../../../spacewire_light-original/rtl/vhdl/spwrecvfront_generic.vhd" \
+"../../../../../spacewire_light-original/rtl/vhdl/spwstream.vhd" \
+"../../../../../spacewire_light-original/rtl/vhdl/spwxmit.vhd" \
+"../../../../../spacewire_light-original/rtl/vhdl/spwxmit_fast.vhd" \
+"../../../../../spacewire_light-original/rtl/vhdl/syncdff.vhd" \
+"../../../../SpaceWire_light-simulations.srcs/default_link/new/default_link.vhd" \
+
+# Do not sort compile order
+nosort

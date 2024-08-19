@@ -1,0 +1,81 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Mon Aug 19 13:40:26 2024
+| Host         : DESKTOP-MEH5DGT running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file SpaceWire_light_AXI_control_sets_placed.rpt
+| Design       : SpaceWire_light_AXI
+| Device       : xc7z020
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |     3 |
+|    Minimum number of control sets                        |     3 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    20 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |     3 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     0 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               2 |            1 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               9 |            3 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               1 |            1 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|              Clock Signal             |                               Enable Signal                               |                                         Set/Reset Signal                                         | Slice Load Count | Bel Load Count | Bels / Slice |
++---------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|  s_axi_controlregister_aclk_IBUF_BUFG | SpaceWire_light_AXI_slave_lite_v0_1_S_AXI_ControlRegister_inst/axi_wready | SpaceWire_light_AXI_slave_lite_v0_1_S_AXI_ControlRegister_inst/FSM_onehot_state_write[2]_i_1_n_0 |                1 |              1 |         1.00 |
+|  s_axi_stream_aclk_IBUF_BUFG          |                                                                           |                                                                                                  |                1 |              2 |         2.00 |
+|  s_axi_controlregister_aclk_IBUF_BUFG |                                                                           | SpaceWire_light_AXI_slave_lite_v0_1_S_AXI_ControlRegister_inst/FSM_onehot_state_write[2]_i_1_n_0 |                3 |              9 |         3.00 |
++---------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+
+

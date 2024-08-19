@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x67B2F705BBC7A98F",
+      "boundary_crc": "0x67B2F705CE4AEE4F",
       "device": "xc7z020clg484-1",
       "gen_directory": "../../../../SpaceWire_light_OC.gen/sources_1/bd/SpaceWire",
       "name": "SpaceWire",
@@ -10,7 +10,8 @@
       "tool_version": "2024.1"
     },
     "design_tree": {
-      "processing_system7_0": ""
+      "processing_system7_0": "",
+      "SpwStream_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -1079,6 +1080,154 @@
                 }
               }
             }
+          }
+        }
+      },
+      "SpwStream_0": {
+        "vlnv": "xilinx.com:module_ref:SpwStream:1.0",
+        "ip_revision": "1",
+        "xci_name": "SpaceWire_SpwStream_0_0",
+        "xci_path": "ip\\SpaceWire_SpwStream_0_0\\SpaceWire_SpwStream_0_0.xci",
+        "inst_hier_path": "SpwStream_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "SpwStream",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "AUTOSTART": {
+            "direction": "I"
+          },
+          "LINKSTART": {
+            "direction": "I"
+          },
+          "LINKDIS": {
+            "direction": "I"
+          },
+          "TXDIVCNT": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "TICK_IN": {
+            "direction": "I"
+          },
+          "CTRL_IN": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "TIME_IN": {
+            "direction": "I",
+            "left": "5",
+            "right": "0"
+          },
+          "TXWRITE": {
+            "direction": "I"
+          },
+          "TXFLAG": {
+            "direction": "I"
+          },
+          "TXDATA": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "RXREAD": {
+            "direction": "I"
+          },
+          "SPW_DI": {
+            "direction": "I"
+          },
+          "SPW_SI": {
+            "direction": "I"
+          },
+          "CLK": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "TXCLK": {
+            "direction": "I"
+          },
+          "ARST_N": {
+            "direction": "I"
+          },
+          "CNT_RST": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "TXRDY": {
+            "direction": "O"
+          },
+          "TXHALFF": {
+            "direction": "O"
+          },
+          "TICK_OUT": {
+            "direction": "O"
+          },
+          "CTRL_OUT": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "TIME_OUT": {
+            "direction": "O",
+            "left": "5",
+            "right": "0"
+          },
+          "RXVALID": {
+            "direction": "O"
+          },
+          "RXHALFF": {
+            "direction": "O"
+          },
+          "RXFLAG": {
+            "direction": "O"
+          },
+          "RXDATA": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "STARTED": {
+            "direction": "O"
+          },
+          "CONNECTING": {
+            "direction": "O"
+          },
+          "RUNNING": {
+            "direction": "O"
+          },
+          "ERRDISC_CNT": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "ERRPAR_CNT": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "ERRESC_CNT": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "ERRCRED_CNT": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "EMPTY_CNT": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "SPW_DO": {
+            "direction": "O"
+          },
+          "SPW_SO": {
+            "direction": "O"
           }
         }
       }

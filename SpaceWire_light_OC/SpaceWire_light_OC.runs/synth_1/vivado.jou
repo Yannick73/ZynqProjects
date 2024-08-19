@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Fri Aug 16 19:28:55 2024
+# Process ID: 8952
+# Current directory: F:/Xilinx/ZynqProjects/SpaceWire_light_OC/SpaceWire_light_OC.runs/synth_1
+# Command line: vivado.exe -log SpwStream.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SpwStream.tcl
+# Log file: F:/Xilinx/ZynqProjects/SpaceWire_light_OC/SpaceWire_light_OC.runs/synth_1/SpwStream.vds
+# Journal file: F:/Xilinx/ZynqProjects/SpaceWire_light_OC/SpaceWire_light_OC.runs/synth_1\vivado.jou
+# Running On        :DESKTOP-MEH5DGT
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :AMD Ryzen 5 3600 6-Core Processor              
+# CPU Frequency     :3593 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :17100 MB
+# Swap memory       :3758 MB
+# Total Virtual     :20858 MB
+# Available Virtual :6798 MB
+#-----------------------------------------------------------
+source SpwStream.tcl -notrace

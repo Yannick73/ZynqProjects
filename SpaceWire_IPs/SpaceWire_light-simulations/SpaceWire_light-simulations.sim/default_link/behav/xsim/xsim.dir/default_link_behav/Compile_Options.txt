@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "SPWIP" -L "secureip" --snapshot "default_link_behav" "xil_defaultlib.default_link" -log "elaborate.log" 

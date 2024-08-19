@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Aug 16 18:41:11 2024" VIVADOVERSION="2024.1">
+
+  <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zedboard:part0:1.1" DEVICE="7z020" NAME="SW_pkg_tb" PACKAGE="clg484" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS/>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES/>
+
+</EDKSYSTEM>

@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"SW_pkg_tb": {
+			"proto_instances": {
+			}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+/*!
+\mainpage SpaceWire IP Code Documentation
+
+Version V \b 1.00<BR>
+Copyright &copy; 2018-2021 by IWF
+
+\tableofcontents
+
+\section sec_general General
+This documentation is an overview of the coded packages and units of the SpaceWire IP Logic.<br>
+It is automatically generated from the VHDL source code and reflects the current state of the IP design.
+
+\author Jorge Tonfat     (JTO)       jorge.tonfat@oeaw.ac.at 
+\author Harald Ottacher  (HOT)       harald.ottacher@oeaw.ac.at	 
+
+\section sec_reference Applicable and Reference Documents 
+
+
+
+\subsection sub_app_ECSS Applicable ECSS Standards
+
+|   | Document Reference   | Title                                  | Issue | Date    |
+|---|----------------------|----------------------------------------|-------|---------|
+|EC1| ECSS-E-ST-50-12C     | SpaceWire – Links, nodes, routers      |   C   | 07/2008 |
+|^  |^                     | and networks                           |^      |^        |
+
+
+
+ */

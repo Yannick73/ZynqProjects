@@ -1,0 +1,248 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Fri Aug 16 19:30:30 2024
+| Host         : DESKTOP-MEH5DGT running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file SpwStream_control_sets_placed.rpt
+| Design       : SpwStream
+| Device       : xc7z020
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   170 |
+|    Minimum number of control sets                        |   170 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |  1044 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   170 |
+| >= 0 to < 4        |     6 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |    14 |
+| >= 8 to < 10       |   140 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     4 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     4 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               6 |            2 |
+| No           | No                    | Yes                    |             184 |           62 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |            1422 |          541 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------+--------------------------------------------------+----------------------------------------------+------------------+----------------+--------------+
+|   Clock Signal   |                   Enable Signal                  |               Set/Reset Signal               | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------+--------------------------------------------------+----------------------------------------------+------------------+----------------+--------------+
+|  CLK_IBUF_BUFG   |                                                  | TXRSTLOGIC/ARST_N                            |                1 |              1 |         1.00 |
+| ~rxclk_BUFG      |                                                  | RECVFRONT_INST/RXRSTLOGIC/reset_reg_reg[0]_0 |                1 |              1 |         1.00 |
+|  TXCLK_IBUF_BUFG |                                                  | TXRSTLOGIC/ARST_N                            |                1 |              1 |         1.00 |
+|  rxclk_BUFG      |                                                  | LINK_INST/load                               |                1 |              1 |         1.00 |
+|  rxclk_BUFG      |                                                  |                                              |                1 |              3 |         3.00 |
+| ~rxclk_BUFG      |                                                  |                                              |                1 |              3 |         3.00 |
+|  CLK_IBUF_BUFG   | WEN10_out                                        | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              6 |         3.00 |
+|  CLK_IBUF_BUFG   | LINK_INST/FSM_onehot_state_seq[state][5]_i_1_n_0 | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              6 |         3.00 |
+|  CLK_IBUF_BUFG   | LINK_INST/vstate[tx_credit]                      | SYSRSTLOGIC/reset_reg_reg[0]_0               |                3 |              6 |         2.00 |
+|  CLK_IBUF_BUFG   | LINK_INST/res_seq_reg[txdiscard][0]              | SYSRSTLOGIC/reset_reg_reg[0]_0               |                1 |              6 |         6.00 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfull][0]                 | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              6 |         3.00 |
+|  rxclk_BUFG      | RECVFRONT_INST/FIFOMEM/s_mem[2]_9                | RECVFRONT_INST/RXRSTLOGIC/reset_reg_reg[0]_0 |                1 |              6 |         6.00 |
+|  rxclk_BUFG      | RECVFRONT_INST/FIFOMEM/s_mem[5]_12               | RECVFRONT_INST/RXRSTLOGIC/reset_reg_reg[0]_0 |                1 |              6 |         6.00 |
+|  rxclk_BUFG      | RECVFRONT_INST/FIFOMEM/s_mem[1]_8                | RECVFRONT_INST/RXRSTLOGIC/reset_reg_reg[0]_0 |                1 |              6 |         6.00 |
+|  rxclk_BUFG      | RECVFRONT_INST/FIFOMEM/s_mem[6]_13               | RECVFRONT_INST/RXRSTLOGIC/reset_reg_reg[0]_0 |                1 |              6 |         6.00 |
+|  rxclk_BUFG      | RECVFRONT_INST/FIFOMEM/s_mem[0][5]_i_1_n_0       | RECVFRONT_INST/RXRSTLOGIC/reset_reg_reg[0]_0 |                1 |              6 |         6.00 |
+|  rxclk_BUFG      | RECVFRONT_INST/FIFOMEM/s_mem[4]_11               | RECVFRONT_INST/RXRSTLOGIC/reset_reg_reg[0]_0 |                1 |              6 |         6.00 |
+|  rxclk_BUFG      | RECVFRONT_INST/FIFOMEM/s_mem[7]_14               | RECVFRONT_INST/RXRSTLOGIC/reset_reg_reg[0]_0 |                2 |              6 |         3.00 |
+|  rxclk_BUFG      | RECVFRONT_INST/FIFOMEM/s_mem[3]_10               | RECVFRONT_INST/RXRSTLOGIC/reset_reg_reg[0]_0 |                1 |              6 |         6.00 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq[disccnt][6]_i_1_n_0            | LINK_INST/res_seq_reg[bit_seen]0             |                2 |              7 |         3.50 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[erresc]_1[0]               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                3 |              8 |         2.67 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxpacket][0]               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              8 |         4.00 |
+|  CLK_IBUF_BUFG   | RECV_INST/E[0]                                   | SYSRSTLOGIC/reset_reg_reg[0]_0               |                3 |              8 |         2.67 |
+|  CLK_IBUF_BUFG   | RECV_INST/vres[timereg]                          | LINK_INST/res_seq_reg[bit_seen]0             |                4 |              8 |         2.00 |
+|  CLK_IBUF_BUFG   | LINK_INST/E[0]                                   | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              8 |         4.00 |
+|  CLK_IBUF_BUFG   | LINK_INST/state_seq_reg[errcred]_0[0]            | SYSRSTLOGIC/reset_reg_reg[0]_0               |                3 |              8 |         2.67 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[errpar]_0[0]               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                3 |              8 |         2.67 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[3]_108                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[21]_122                              | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[45]_116                              | SYSRSTLOGIC/reset_reg_reg[0]_0               |                4 |              9 |         2.25 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[11]_126                              | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[23]_121                              | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[2]_94                                | SYSRSTLOGIC/reset_reg_reg[0]_0               |                3 |              9 |         3.00 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[47]_115                              | SYSRSTLOGIC/reset_reg_reg[0]_0               |                9 |              9 |         1.00 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[48]_71                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                5 |              9 |         1.80 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[1]_102                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[49]_97                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[14]_88                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[16]_87                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                3 |              9 |         3.00 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[20]_85                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                6 |              9 |         1.50 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[26]_82                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                5 |              9 |         1.80 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[28]_81                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[38]_76                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[39]_103                              | SYSRSTLOGIC/reset_reg_reg[0]_0               |                4 |              9 |         2.25 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[10]_90                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[22]_84                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[13]_125                              | SYSRSTLOGIC/reset_reg_reg[0]_0               |                4 |              9 |         2.25 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[19]_123                              | SYSRSTLOGIC/reset_reg_reg[0]_0               |                3 |              9 |         3.00 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[25]_96                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                3 |              9 |         3.00 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[30]_80                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                5 |              9 |         1.80 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[29]_119                              | SYSRSTLOGIC/reset_reg_reg[0]_0               |                3 |              9 |         3.00 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[17]_98                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                3 |              9 |         3.00 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[18]_86                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[32]_79                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                4 |              9 |         2.25 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[34]_78                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                3 |              9 |         3.00 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[35]_107                              | SYSRSTLOGIC/reset_reg_reg[0]_0               |                4 |              9 |         2.25 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[36]_77                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                3 |              9 |         3.00 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[37]_105                              | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[40]_75                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                3 |              9 |         3.00 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[41]_99                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[9]_100                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                9 |              9 |         1.00 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[8]_91                                | SYSRSTLOGIC/reset_reg_reg[0]_0               |                5 |              9 |         1.80 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[54]_68                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                3 |              9 |         3.00 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[4]_93                                | SYSRSTLOGIC/reset_reg_reg[0]_0               |                5 |              9 |         1.80 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[58]_66                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                5 |              9 |         1.80 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[60]_65                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[59]_111                              | SYSRSTLOGIC/reset_reg_reg[0]_0               |                4 |              9 |         2.25 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[51]_114                              | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[5]_106                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                3 |              9 |         3.00 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[6]_92                                | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[61]_110                              | SYSRSTLOGIC/reset_reg_reg[0]_0               |                4 |              9 |         2.25 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[50]_70                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[62]_64                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                4 |              9 |         2.25 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[63]_109                              | SYSRSTLOGIC/reset_reg_reg[0]_0               |                9 |              9 |         1.00 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[56]_67                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[7]_104                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[53]_113                              | SYSRSTLOGIC/reset_reg_reg[0]_0               |                3 |              9 |         3.00 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[55]_112                              | SYSRSTLOGIC/reset_reg_reg[0]_0               |                4 |              9 |         2.25 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[57]_95                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                5 |              9 |         1.80 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[52]_69                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | LINK_INST/xmito[txack]                           | SYSRSTLOGIC/reset_reg_reg[0]_0               |                3 |              9 |         3.00 |
+|  CLK_IBUF_BUFG   | XMIT_FAST_INST/res_seq[txdivreg][7]_i_1_n_0      | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1][0]        | SYSRSTLOGIC/reset_reg_reg[0]_0               |                3 |              9 |         3.00 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_26[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_28[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                3 |              9 |         3.00 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_10[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                3 |              9 |         3.00 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_14[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_23[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                5 |              9 |         1.80 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_29[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                6 |              9 |         1.50 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_30[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                3 |              9 |         3.00 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_0[0]      | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_15[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                5 |              9 |         1.80 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_27[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_3[0]      | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_18[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                6 |              9 |         1.50 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_31[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                4 |              9 |         2.25 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_32[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_2[0]      | SYSRSTLOGIC/reset_reg_reg[0]_0               |                4 |              9 |         2.25 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_25[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_11[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                5 |              9 |         1.80 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_12[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_13[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                5 |              9 |         1.80 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_16[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                3 |              9 |         3.00 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_17[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                5 |              9 |         1.80 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_1[0]      | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_19[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                4 |              9 |         2.25 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_20[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                4 |              9 |         2.25 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_21[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                3 |              9 |         3.00 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_22[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                5 |              9 |         1.80 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_24[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                4 |              9 |         2.25 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][2]_9[0]      | SYSRSTLOGIC/reset_reg_reg[0]_0               |                8 |              9 |         1.12 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][2]_6[0]      | SYSRSTLOGIC/reset_reg_reg[0]_0               |                3 |              9 |         3.00 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][2]_3[0]      | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_46[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                3 |              9 |         3.00 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_43[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                4 |              9 |         2.25 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_8[0]      | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_4[0]      | SYSRSTLOGIC/reset_reg_reg[0]_0               |                4 |              9 |         2.25 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][2]_1[0]      | SYSRSTLOGIC/reset_reg_reg[0]_0               |                6 |              9 |         1.50 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_35[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                6 |              9 |         1.50 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_38[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                3 |              9 |         3.00 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][2]_10[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                6 |              9 |         1.50 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][2][0]        | SYSRSTLOGIC/reset_reg_reg[0]_0               |                3 |              9 |         3.00 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][2]_11[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                4 |              9 |         2.25 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_5[0]      | SYSRSTLOGIC/reset_reg_reg[0]_0               |                4 |              9 |         2.25 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_39[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                4 |              9 |         2.25 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_34[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_40[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_41[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                3 |              9 |         3.00 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][2]_4[0]      | SYSRSTLOGIC/reset_reg_reg[0]_0               |                3 |              9 |         3.00 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_9[0]      | SYSRSTLOGIC/reset_reg_reg[0]_0               |                5 |              9 |         1.80 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][2]_5[0]      | SYSRSTLOGIC/reset_reg_reg[0]_0               |                5 |              9 |         1.80 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_6[0]      | SYSRSTLOGIC/reset_reg_reg[0]_0               |                6 |              9 |         1.50 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_42[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                4 |              9 |         2.25 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_37[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                3 |              9 |         3.00 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][2]_13[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][2]_7[0]      | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_33[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                3 |              9 |         3.00 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_36[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_44[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                6 |              9 |         1.50 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][2]_8[0]      | SYSRSTLOGIC/reset_reg_reg[0]_0               |                3 |              9 |         3.00 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][2]_0[0]      | SYSRSTLOGIC/reset_reg_reg[0]_0               |                5 |              9 |         1.80 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][2]_12[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_7[0]      | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][2]_14[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][1]_45[0]     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[46]_72                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                4 |              9 |         2.25 |
+|  TXCLK_IBUF_BUFG | XMIT_FAST_INST/SYNCTXTXDIVSAFE/E[0]              | TXRSTLOGIC/reset_reg_reg[0]_0                |                2 |              9 |         4.50 |
+|  TXCLK_IBUF_BUFG | XMIT_FAST_INST/restx_seq_reg[c_update_n_0_]      | TXRSTLOGIC/reset_reg_reg[0]_0                |                3 |              9 |         3.00 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq[datareg][7]_i_1_n_0            | LINK_INST/res_seq_reg[bit_seen]0             |                5 |              9 |         1.80 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[42]_74                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                4 |              9 |         2.25 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[0][8]_i_1__0_n_0                     | SYSRSTLOGIC/reset_reg_reg[0]_0               |                5 |              9 |         1.80 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[43]_117                              | SYSRSTLOGIC/reset_reg_reg[0]_0               |                5 |              9 |         1.80 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[15]_124                              | SYSRSTLOGIC/reset_reg_reg[0]_0               |                4 |              9 |         2.25 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[27]_120                              | SYSRSTLOGIC/reset_reg_reg[0]_0               |                5 |              9 |         1.80 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[31]_118                              | SYSRSTLOGIC/reset_reg_reg[0]_0               |                9 |              9 |         1.00 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[44]_73                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[12]_89                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[24]_83                               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                4 |              9 |         2.25 |
+|  CLK_IBUF_BUFG   | TXMEM/s_mem[33]_101                              | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |              9 |         4.50 |
+|  CLK_IBUF_BUFG   | RECV_INST/res_seq_reg[rxfifo_waddr][2]_2[0]      | SYSRSTLOGIC/reset_reg_reg[0]_0               |                5 |              9 |         1.80 |
+|  CLK_IBUF_BUFG   |                                                  | LINK_INST/res_seq_reg[bit_seen]0             |                6 |             10 |         1.67 |
+|  TXCLK_IBUF_BUFG | XMIT_FAST_INST/SYNCTXTXEN/E[0]                   | TXRSTLOGIC/reset_reg_reg[0]_0                |                2 |             11 |         5.50 |
+|  TXCLK_IBUF_BUFG | XMIT_FAST_INST/restx_seq_reg[b_update]__0        | TXRSTLOGIC/reset_reg_reg[0]_0                |                2 |             12 |         6.00 |
+|  TXCLK_IBUF_BUFG | XMIT_FAST_INST/restx_seq_reg[txclken]__0         | TXRSTLOGIC/reset_reg_reg[0]_0                |                2 |             12 |         6.00 |
+|  CLK_IBUF_BUFG   | XMIT_FAST_INST/SYNCSYSTXFLIP0/E[0]               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                2 |             12 |         6.00 |
+|  CLK_IBUF_BUFG   | XMIT_FAST_INST/SYNCSYSTXFLIP1/E[0]               | SYSRSTLOGIC/reset_reg_reg[0]_0               |                3 |             12 |         4.00 |
+|  rxclk_BUFG      |                                                  | RECVFRONT_INST/RXRSTLOGIC/reset_reg_reg[0]_0 |                5 |             17 |         3.40 |
+|  CLK_IBUF_BUFG   | RECVFRONT_INST/recv_inbvalid                     | LINK_INST/res_seq_reg[bit_seen]0             |               17 |             25 |         1.47 |
+|  TXCLK_IBUF_BUFG |                                                  | TXRSTLOGIC/reset_reg_reg[0]_0                |               12 |             46 |         3.83 |
+|  CLK_IBUF_BUFG   |                                                  | SYSRSTLOGIC/reset_reg_reg[0]_0               |               35 |            107 |         3.06 |
++------------------+--------------------------------------------------+----------------------------------------------+------------------+----------------+--------------+
+
+

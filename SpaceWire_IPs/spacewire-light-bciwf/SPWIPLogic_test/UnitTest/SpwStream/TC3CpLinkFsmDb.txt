@@ -1,0 +1,53 @@
+cp_link_fsm
+528 1157 45.00000 0 0 1.000000 0 FALSE 100.000000 FALSE 
+0
+3 49 
+1 508 1 1 50800.0000 0 0 0 0 1 1  35 S_ErrorReset(C_reset)->S_ErrorReset
+1 40 1 1 4000.0000 0 0 1 1 9 9  39 S_ErrorReset(C_timer_6_4u)->S_ErrorWait
+0 0 0 0 0.0000 0 0 0 0 0 0  36 S_ErrorReset(C_others)->S_ErrorReset
+1 1 1 1 100.0000 1 1 0 0 1 1  34 S_ErrorWait(C_reset)->S_ErrorReset
+1 1 1 1 100.0000 1 1 0 0 2 2  37 S_ErrorWait(C_disc_err)->S_ErrorReset
+1 1 1 1 100.0000 1 1 0 0 3 3  36 S_ErrorWait(C_par_err)->S_ErrorReset
+1 1 1 1 100.0000 1 1 0 0 6 6  36 S_ErrorWait(C_esc_err)->S_ErrorReset
+1 1 1 1 100.0000 1 1 0 0 4 4  36 S_ErrorWait(C_got_fct)->S_ErrorReset
+1 3 1 1 300.0000 1 1 0 0 7 7  39 S_ErrorWait(C_got_rxchar)->S_ErrorReset
+1 1 1 1 100.0000 1 1 0 0 8 8  41 S_ErrorWait(C_got_timecode)->S_ErrorReset
+1 31 1 1 3100.0000 1 1 2 2 10 10  35 S_ErrorWait(C_timer_12_8u)->S_Ready
+1 7032 1 1 703200.0000 1 1 1 1 5 5  36 S_ErrorWait(C_got_null)->S_ErrorWait
+0 0 0 0 0.0000 1 1 1 1 0 0  34 S_ErrorWait(C_others)->S_ErrorWait
+1 3 1 1 300.0000 2 2 0 0 1 1  30 S_Ready(C_reset)->S_ErrorReset
+1 1 1 1 100.0000 2 2 0 0 2 2  33 S_Ready(C_disc_err)->S_ErrorReset
+1 1 1 1 100.0000 2 2 0 0 3 3  32 S_Ready(C_par_err)->S_ErrorReset
+1 1 1 1 100.0000 2 2 0 0 6 6  32 S_Ready(C_esc_err)->S_ErrorReset
+1 1 1 1 100.0000 2 2 0 0 4 4  32 S_Ready(C_got_fct)->S_ErrorReset
+1 3 1 1 300.0000 2 2 0 0 7 7  35 S_Ready(C_got_rxchar)->S_ErrorReset
+1 1 1 1 100.0000 2 2 0 0 8 8  37 S_Ready(C_got_timecode)->S_ErrorReset
+1 7 1 1 700.0000 2 2 3 3 13 13  32 S_Ready(C_link_start)->S_Started
+1 13 1 1 1300.0000 2 2 3 3 14 14  37 S_Ready(C_link_auto_start)->S_Started
+1 358 1 1 35800.0000 2 2 2 2 5 5  28 S_Ready(C_got_null)->S_Ready
+1 391 1 1 39100.0000 2 2 2 2 11 11  32 S_Ready(C_link_disable)->S_Ready
+0 0 0 0 0.0000 2 2 2 2 0 0  26 S_Ready(C_others)->S_Ready
+1 1 1 1 100.0000 3 3 0 0 1 1  32 S_Started(C_reset)->S_ErrorReset
+1 1 1 1 100.0000 3 3 0 0 2 2  35 S_Started(C_disc_err)->S_ErrorReset
+1 1 1 1 100.0000 3 3 0 0 10 10  38 S_Started(C_timer_12_8u)->S_ErrorReset
+1 17 1 1 1700.0000 3 3 4 4 5 5  35 S_Started(C_got_null)->S_Connecting
+1 0 1 1 0.0000 3 3 4 4 15 15  39 S_Started(C_got_null_fct)->S_Connecting
+0 0 0 0 0.0000 3 3 3 3 0 0  30 S_Started(C_others)->S_Started
+1 1 1 1 100.0000 4 4 0 0 1 1  35 S_Connecting(C_reset)->S_ErrorReset
+1 1 1 1 100.0000 4 4 0 0 2 2  38 S_Connecting(C_disc_err)->S_ErrorReset
+1 1 1 1 100.0000 4 4 0 0 3 3  37 S_Connecting(C_par_err)->S_ErrorReset
+1 1 1 1 100.0000 4 4 0 0 6 6  37 S_Connecting(C_esc_err)->S_ErrorReset
+1 3 1 1 300.0000 4 4 0 0 7 7  40 S_Connecting(C_got_rxchar)->S_ErrorReset
+1 1 1 1 100.0000 4 4 0 0 8 8  42 S_Connecting(C_got_timecode)->S_ErrorReset
+1 1 1 1 100.0000 4 4 0 0 10 10  41 S_Connecting(C_timer_12_8u)->S_ErrorReset
+1 8 1 1 800.0000 4 4 5 5 4 4  30 S_Connecting(C_got_fct)->S_Run
+1 0 1 1 0.0000 4 4 5 5 15 15  35 S_Connecting(C_got_null_fct)->S_Run
+0 0 0 0 0.0000 4 4 4 4 0 0  36 S_Connecting(C_others)->S_Connecting
+1 2 1 1 200.0000 5 5 0 0 1 1  28 S_Run(C_reset)->S_ErrorReset
+1 1 1 1 100.0000 5 5 0 0 2 2  31 S_Run(C_disc_err)->S_ErrorReset
+1 1 1 1 100.0000 5 5 0 0 3 3  30 S_Run(C_par_err)->S_ErrorReset
+1 1 1 1 100.0000 5 5 0 0 6 6  30 S_Run(C_esc_err)->S_ErrorReset
+1 2 1 1 200.0000 5 5 0 0 12 12  33 S_Run(C_credit_err)->S_ErrorReset
+1 1 1 1 100.0000 5 5 0 0 11 11  35 S_Run(C_link_disable)->S_ErrorReset
+0 0 0 0 0.0000 5 5 5 5 0 0  22 S_Run(C_others)->S_Run
+-1 0 0 0 0.0000 -2147483648 2147483647 -2147483648 2147483647 -2147483648 2147483647  0 

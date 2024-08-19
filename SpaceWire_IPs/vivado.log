@@ -1,0 +1,531 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Fri Aug 16 18:29:04 2024
+# Process ID: 20076
+# Current directory: F:/Xilinx/ZynqProjects/SpaceWire_IPs
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8104 F:\Xilinx\ZynqProjects\SpaceWire_IPs\edit_SpaceWire_light_AXI_v0_1.xpr
+# Log file: F:/Xilinx/ZynqProjects/SpaceWire_IPs/vivado.log
+# Journal file: F:/Xilinx/ZynqProjects/SpaceWire_IPs\vivado.jou
+# Running On        :DESKTOP-MEH5DGT
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :AMD Ryzen 5 3600 6-Core Processor              
+# CPU Frequency     :3593 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :17100 MB
+# Swap memory       :3758 MB
+# Total Virtual     :20858 MB
+# Available Virtual :8854 MB
+#-----------------------------------------------------------
+start_gui
+open_project F:/Xilinx/ZynqProjects/SpaceWire_IPs/edit_SpaceWire_light_AXI_v0_1.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.3/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.2/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.2/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'F:/Xilinx/Projects/SpaceWire_IPs' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI_0_1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2024.1/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 1625.027 ; gain = 520.379
+update_compile_order -fileset sources_1
+add_files -norecurse {F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwxmit_fast.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/syncdff.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwram.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwstream.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwamba.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwrecv.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwrecvfront_generic.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwxmit.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwrecvfront_fast.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwpkg.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwlink.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwahbmst.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwambapkg.vhd}
+update_compile_order -fileset sources_1
+open_bd_design {F:/Xilinx/ZynqProjects/SpaceWire_IPs/edit_SpaceWire_light_AXI_v0_1.srcs/sources_1/bd/SW_standalone_tb/SW_standalone_tb.bd}
+Reading block design file <F:/Xilinx/ZynqProjects/SpaceWire_IPs/edit_SpaceWire_light_AXI_v0_1.srcs/sources_1/bd/SW_standalone_tb/SW_standalone_tb.bd>...
+Successfully read diagram <SW_standalone_tb> from block design file <F:/Xilinx/ZynqProjects/SpaceWire_IPs/edit_SpaceWire_light_AXI_v0_1.srcs/sources_1/bd/SW_standalone_tb/SW_standalone_tb.bd>
+open_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1772.625 ; gain = 117.688
+create_bd_cell -type module -reference spwstream spwstream_0
+WARNING: [IP_Flow 19-329] [HDL Parser] Unable to determine the value format for HDL parameter 'rximpl' with value 'impl_generic'. The parameter type could not be inferred or is not supported in this release.
+WARNING: [IP_Flow 19-329] [HDL Parser] Unable to determine the value format for HDL parameter 'tximpl' with value 'impl_generic'. The parameter type could not be inferred or is not supported in this release.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "impl_generic" into user parameter "rximpl".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "impl_generic" into user parameter "tximpl".
+ERROR: [IP_Flow 19-627] HDL Parameter 'rximpl (Rximpl)': XPath expression failed: Undefined parameter "impl_generic" used in expression "impl_generic".
+ERROR: [IP_Flow 19-627] HDL Parameter 'tximpl (Tximpl)': XPath expression failed: Undefined parameter "impl_generic" used in expression "impl_generic".
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'spwstream'.
+ERROR: [BD 41-1699] Unable to add reference type cell for reference-module 'spwstream'
+ERROR: [BD 5-7] Error: running create_bd_cell  -type module -reference spwstream -name spwstream_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+export_ip_user_files -of_objects  [get_files F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwamba.vhd] -no_script -reset -force -quiet
+remove_files  F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwamba.vhd
+export_ip_user_files -of_objects  [get_files F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwahbmst.vhd] -no_script -reset -force -quiet
+remove_files  F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwahbmst.vhd
+create_bd_cell -type module -reference spwstream spwstream_0
+WARNING: [IP_Flow 19-329] [HDL Parser] Unable to determine the value format for HDL parameter 'rximpl' with value 'impl_generic'. The parameter type could not be inferred or is not supported in this release.
+WARNING: [IP_Flow 19-329] [HDL Parser] Unable to determine the value format for HDL parameter 'tximpl' with value 'impl_generic'. The parameter type could not be inferred or is not supported in this release.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "impl_generic" into user parameter "rximpl".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "impl_generic" into user parameter "tximpl".
+ERROR: [IP_Flow 19-627] HDL Parameter 'rximpl (Rximpl)': XPath expression failed: Undefined parameter "impl_generic" used in expression "impl_generic".
+ERROR: [IP_Flow 19-627] HDL Parameter 'tximpl (Tximpl)': XPath expression failed: Undefined parameter "impl_generic" used in expression "impl_generic".
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'spwstream'.
+ERROR: [BD 41-1699] Unable to add reference type cell for reference-module 'spwstream'
+ERROR: [BD 5-7] Error: running create_bd_cell  -type module -reference spwstream -name spwstream_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+export_ip_user_files -of_objects  [get_files F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwambapkg.vhd] -no_script -reset -force -quiet
+remove_files  F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwambapkg.vhd
+create_bd_cell -type module -reference spwlink spwlink_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+ERROR: [IP_Flow 19-734] Port 'linki': Port type 'spw_link_in_type' is not recognized. Only std_logic and std_logic_vector types are allowed for ports. See the documentation for more details.
+ERROR: [IP_Flow 19-734] Port 'linko': Port type 'spw_link_out_type' is not recognized. Only std_logic and std_logic_vector types are allowed for ports. See the documentation for more details.
+ERROR: [IP_Flow 19-734] Port 'recvo': Port type 'spw_recv_out_type' is not recognized. Only std_logic and std_logic_vector types are allowed for ports. See the documentation for more details.
+ERROR: [IP_Flow 19-734] Port 'xmiti': Port type 'spw_xmit_in_type' is not recognized. Only std_logic and std_logic_vector types are allowed for ports. See the documentation for more details.
+ERROR: [IP_Flow 19-734] Port 'xmito': Port type 'spw_xmit_out_type' is not recognized. Only std_logic and std_logic_vector types are allowed for ports. See the documentation for more details.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'spwlink'.
+ERROR: [BD 41-1699] Unable to add reference type cell for reference-module 'spwlink'
+ERROR: [BD 5-7] Error: running create_bd_cell  -type module -reference spwlink -name spwlink_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+set_property library work [get_files  {F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwxmit_fast.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/syncdff.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwram.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwstream.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwrecv.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwrecvfront_generic.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwxmit.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwrecvfront_fast.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwpkg.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwlink.vhd}]
+create_bd_cell -type module -reference spwstream spwstream_0
+WARNING: [IP_Flow 19-329] [HDL Parser] Unable to determine the value format for HDL parameter 'rximpl' with value 'impl_generic'. The parameter type could not be inferred or is not supported in this release.
+WARNING: [IP_Flow 19-329] [HDL Parser] Unable to determine the value format for HDL parameter 'tximpl' with value 'impl_generic'. The parameter type could not be inferred or is not supported in this release.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "impl_generic" into user parameter "rximpl".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "impl_generic" into user parameter "tximpl".
+ERROR: [IP_Flow 19-627] HDL Parameter 'rximpl (Rximpl)': XPath expression failed: Undefined parameter "impl_generic" used in expression "impl_generic".
+ERROR: [IP_Flow 19-627] HDL Parameter 'tximpl (Tximpl)': XPath expression failed: Undefined parameter "impl_generic" used in expression "impl_generic".
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'spwstream'.
+ERROR: [BD 41-1699] Unable to add reference type cell for reference-module 'spwstream'
+ERROR: [BD 5-7] Error: running create_bd_cell  -type module -reference spwstream -name spwstream_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+create_bd_cell -type module -reference spwstream spwstream_0
+WARNING: [IP_Flow 19-329] [HDL Parser] Unable to determine the value format for HDL parameter 'rximpl' with value 'impl_generic'. The parameter type could not be inferred or is not supported in this release.
+WARNING: [IP_Flow 19-329] [HDL Parser] Unable to determine the value format for HDL parameter 'tximpl' with value 'impl_generic'. The parameter type could not be inferred or is not supported in this release.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "impl_generic" into user parameter "rximpl".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "impl_generic" into user parameter "tximpl".
+ERROR: [IP_Flow 19-627] HDL Parameter 'rximpl (Rximpl)': XPath expression failed: Undefined parameter "impl_generic" used in expression "impl_generic".
+ERROR: [IP_Flow 19-627] HDL Parameter 'tximpl (Tximpl)': XPath expression failed: Undefined parameter "impl_generic" used in expression "impl_generic".
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'spwstream'.
+ERROR: [BD 41-1699] Unable to add reference type cell for reference-module 'spwstream'
+ERROR: [BD 5-7] Error: running create_bd_cell  -type module -reference spwstream -name spwstream_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+create_bd_cell -type module -reference spwlink spwlink_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+ERROR: [IP_Flow 19-734] Port 'linki': Port type 'spw_link_in_type' is not recognized. Only std_logic and std_logic_vector types are allowed for ports. See the documentation for more details.
+ERROR: [IP_Flow 19-734] Port 'linko': Port type 'spw_link_out_type' is not recognized. Only std_logic and std_logic_vector types are allowed for ports. See the documentation for more details.
+ERROR: [IP_Flow 19-734] Port 'recvo': Port type 'spw_recv_out_type' is not recognized. Only std_logic and std_logic_vector types are allowed for ports. See the documentation for more details.
+ERROR: [IP_Flow 19-734] Port 'xmiti': Port type 'spw_xmit_in_type' is not recognized. Only std_logic and std_logic_vector types are allowed for ports. See the documentation for more details.
+ERROR: [IP_Flow 19-734] Port 'xmito': Port type 'spw_xmit_out_type' is not recognized. Only std_logic and std_logic_vector types are allowed for ports. See the documentation for more details.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'spwlink'.
+ERROR: [BD 41-1699] Unable to add reference type cell for reference-module 'spwlink'
+ERROR: [BD 5-7] Error: running create_bd_cell  -type module -reference spwlink -name spwlink_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+create_bd_cell -type module -reference spwrecv spwrecv_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+ERROR: [IP_Flow 19-734] Port 'recvo': Port type 'spw_recv_out_type' is not recognized. Only std_logic and std_logic_vector types are allowed for ports. See the documentation for more details.
+ERROR: [IP_Flow 19-346] User Parameter 'disconnect_time (Disconnect Time)': Default value 0 is less than the validation minimum 1
+ERROR: [IP_Flow 19-346] User Parameter 'rxchunk (Rxchunk)': Default value 0 is less than the validation minimum 1
+ERROR: [IP_Flow 19-346] HDL Parameter 'disconnect_time (Disconnect Time)': Default value 0 is less than the validation minimum 1
+ERROR: [IP_Flow 19-346] HDL Parameter 'rxchunk (Rxchunk)': Default value 0 is less than the validation minimum 1
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'spwrecv'.
+ERROR: [BD 41-1699] Unable to add reference type cell for reference-module 'spwrecv'
+ERROR: [BD 5-7] Error: running create_bd_cell  -type module -reference spwrecv -name spwrecv_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwlink.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwstream.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwlink.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwlink.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwram.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecv.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit_fast.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\syncdff.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwstream.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\syncdff.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\syncdff.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwram.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecv.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit_fast.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\syncdff.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwstream.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwstream.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwstream.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwram.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecv.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit_fast.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\syncdff.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwstream.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwram.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwram.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwram.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecv.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit_fast.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\syncdff.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwstream.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecv.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecv.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwram.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecv.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit_fast.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecvfront_generic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\syncdff.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwstream.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\syncdff.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\syncdff.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwram.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecv.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit_fast.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecvfront_generic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\syncdff.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwstream.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwstream.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwstream.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwram.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecv.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit_fast.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecvfront_generic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\syncdff.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwstream.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecvfront_generic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecvfront_generic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwram.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecv.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit_fast.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecvfront_generic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\syncdff.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwstream.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecvfront_fast.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwram.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwram.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwram.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecv.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit_fast.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecvfront_generic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\syncdff.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwstream.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecvfront_fast.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecv.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecv.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwram.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecv.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit_fast.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecvfront_generic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\syncdff.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwstream.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecvfront_fast.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit_fast.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit_fast.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwram.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecv.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit_fast.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecvfront_generic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\syncdff.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwstream.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecvfront_fast.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwram.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecv.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit_fast.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecvfront_generic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\syncdff.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwstream.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecvfront_fast.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\syncdff.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\syncdff.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwram.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecv.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit_fast.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecvfront_generic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\syncdff.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwstream.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecvfront_fast.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwstream.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwstream.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwram.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecv.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit_fast.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecvfront_generic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\syncdff.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwstream.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecvfront_fast.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecvfront_generic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecvfront_generic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwram.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecv.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit_fast.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecvfront_generic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\syncdff.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwstream.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecvfront_fast.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecvfront_fast.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecvfront_fast.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwram.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecv.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit_fast.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecvfront_generic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\syncdff.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwstream.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecvfront_fast.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit_fast.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit_fast.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwram.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecv.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit_fast.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecvfront_generic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\syncdff.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwstream.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecvfront_fast.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwram.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwram.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwram.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecv.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwxmit_fast.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecvfront_generic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\syncdff.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwstream.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecvfront_fast.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecv.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\spacewire_light-original\rtl\vhdl\spwrecv.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+create_bd_cell -type module -reference spwstream spwstream_0
+WARNING: [IP_Flow 19-329] [HDL Parser] Unable to determine the value format for HDL parameter 'rximpl' with value 'impl_generic'. The parameter type could not be inferred or is not supported in this release.
+WARNING: [IP_Flow 19-329] [HDL Parser] Unable to determine the value format for HDL parameter 'tximpl' with value 'impl_generic'. The parameter type could not be inferred or is not supported in this release.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "impl_generic" into user parameter "rximpl".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "impl_generic" into user parameter "tximpl".
+ERROR: [IP_Flow 19-627] HDL Parameter 'rximpl (Rximpl)': XPath expression failed: Undefined parameter "impl_generic" used in expression "impl_generic".
+ERROR: [IP_Flow 19-627] HDL Parameter 'tximpl (Tximpl)': XPath expression failed: Undefined parameter "impl_generic" used in expression "impl_generic".
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'spwstream'.
+ERROR: [BD 41-1699] Unable to add reference type cell for reference-module 'spwstream'
+ERROR: [BD 5-7] Error: running create_bd_cell  -type module -reference spwstream -name spwstream_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+create_bd_cell -type module -reference spwram spwram_0
+ERROR: [filemgmt 56-190] Failed to uniquely resolve reference. Multiple different modules were found that match the name 'spwram'.
+ERROR: [BD 41-1690] Unable to resolve module-source based on inputs: spwram
+ERROR: [BD 5-7] Error: running create_bd_cell  -type module -reference spwram -name spwram_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+create_bd_cell -type module -reference spwram spwram_0
+ERROR: [filemgmt 56-190] Failed to uniquely resolve reference. Multiple different modules were found that match the name 'spwram'.
+ERROR: [BD 41-1690] Unable to resolve module-source based on inputs: spwram
+ERROR: [BD 5-7] Error: running create_bd_cell  -type module -reference spwram -name spwram_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+create_bd_cell -type module -reference spwrecvfront_generic spwrecvfront_generic_0
+delete_bd_objs [get_bd_cells spwrecvfront_generic_0]
+create_bd_cell -type module -reference spwrecv spwrecv_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+ERROR: [IP_Flow 19-734] Port 'recvo': Port type 'spw_recv_out_type' is not recognized. Only std_logic and std_logic_vector types are allowed for ports. See the documentation for more details.
+ERROR: [IP_Flow 19-346] User Parameter 'disconnect_time (Disconnect Time)': Default value 0 is less than the validation minimum 1
+ERROR: [IP_Flow 19-346] User Parameter 'rxchunk (Rxchunk)': Default value 0 is less than the validation minimum 1
+ERROR: [IP_Flow 19-346] HDL Parameter 'disconnect_time (Disconnect Time)': Default value 0 is less than the validation minimum 1
+ERROR: [IP_Flow 19-346] HDL Parameter 'rxchunk (Rxchunk)': Default value 0 is less than the validation minimum 1
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'spwrecv'.
+ERROR: [BD 41-1699] Unable to add reference type cell for reference-module 'spwrecv'
+ERROR: [BD 5-7] Error: running create_bd_cell  -type module -reference spwrecv -name spwrecv_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+create_bd_cell -type module -reference spwstream spwstream_0
+WARNING: [IP_Flow 19-329] [HDL Parser] Unable to determine the value format for HDL parameter 'rximpl' with value 'impl_generic'. The parameter type could not be inferred or is not supported in this release.
+WARNING: [IP_Flow 19-329] [HDL Parser] Unable to determine the value format for HDL parameter 'tximpl' with value 'impl_generic'. The parameter type could not be inferred or is not supported in this release.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "impl_generic" into user parameter "rximpl".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "impl_generic" into user parameter "tximpl".
+ERROR: [IP_Flow 19-627] HDL Parameter 'rximpl (Rximpl)': XPath expression failed: Undefined parameter "impl_generic" used in expression "impl_generic".
+ERROR: [IP_Flow 19-627] HDL Parameter 'tximpl (Tximpl)': XPath expression failed: Undefined parameter "impl_generic" used in expression "impl_generic".
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'spwstream'.
+ERROR: [BD 41-1699] Unable to add reference type cell for reference-module 'spwstream'
+ERROR: [BD 5-7] Error: running create_bd_cell  -type module -reference spwstream -name spwstream_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+set_property source_mgmt_mode DisplayOnly [current_project]
+reorder_files -after F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwxmit_fast.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwpkg.vhd
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+reorder_files -before F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwxmit_fast.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwpkg.vhd
+save_bd_design
+Wrote  : <F:\Xilinx\ZynqProjects\SpaceWire_IPs\edit_SpaceWire_light_AXI_v0_1.srcs\sources_1\bd\SW_standalone_tb\SW_standalone_tb.bd> 
+Wrote  : <F:/Xilinx/ZynqProjects/SpaceWire_IPs/edit_SpaceWire_light_AXI_v0_1.srcs/sources_1/bd/SW_standalone_tb/ui/bd_56ff416d.ui> 
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file F:/Xilinx/ZynqProjects/SpaceWire_IPs/edit_SpaceWire_light_AXI_v0_1.srcs/utils_1/imports/synth_1/SpaceWire_light_AXI.dcp with file F:/Xilinx/ZynqProjects/SpaceWire_IPs/edit_SpaceWire_light_AXI_v0_1.runs/synth_1/SpaceWire_light_AXI.dcp
+update_module_reference SW_standalone_tb_spwrecvfront_generic_0_0
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+ERROR: [filemgmt 56-587] Failed to resolve reference. Nothing was found in the project to match the name spwrecvfront_generic Try changing the compile order from manual to automatic. 
+ERROR: [Common 17-39] 'update_module_reference' failed due to earlier errors.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+reorder_files -before F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwxmit_fast.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwrecvfront_generic.vhd
+launch_runs synth_1 -jobs 12
+Wrote  : <F:\Xilinx\ZynqProjects\SpaceWire_IPs\edit_SpaceWire_light_AXI_v0_1.srcs\sources_1\bd\SW_standalone_tb\SW_standalone_tb.bd> 
+VHDL Output written to : f:/Xilinx/ZynqProjects/SpaceWire_IPs/edit_SpaceWire_light_AXI_v0_1.gen/sources_1/bd/SW_standalone_tb/synth/SW_standalone_tb.vhd
+VHDL Output written to : f:/Xilinx/ZynqProjects/SpaceWire_IPs/edit_SpaceWire_light_AXI_v0_1.gen/sources_1/bd/SW_standalone_tb/sim/SW_standalone_tb.vhd
+VHDL Output written to : f:/Xilinx/ZynqProjects/SpaceWire_IPs/edit_SpaceWire_light_AXI_v0_1.gen/sources_1/bd/SW_standalone_tb/hdl/SW_standalone_tb_wrapper.vhd
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI_0_1'.
+Exporting to file f:/Xilinx/ZynqProjects/SpaceWire_IPs/edit_SpaceWire_light_AXI_v0_1.gen/sources_1/bd/SW_standalone_tb/hw_handoff/SW_standalone_tb.hwh
+Generated Hardware Definition File f:/Xilinx/ZynqProjects/SpaceWire_IPs/edit_SpaceWire_light_AXI_v0_1.gen/sources_1/bd/SW_standalone_tb/synth/SW_standalone_tb.hwdef
+ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source: 
+/SpaceWire_light_AXI_0/spw_core_clk
+/SpaceWire_light_AXI_0/s_axi_controlregister_aclk
+/SpaceWire_light_AXI_0/s_axi_stream_aclk
+
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design F:/Xilinx/ZynqProjects/SpaceWire_IPs/edit_SpaceWire_light_AXI_v0_1.srcs/sources_1/bd/SW_pkg_tb/SW_pkg_tb.bd 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: SW_pkg_tb_SpaceWire_light_AXI_0_2
+ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+open_bd_design {F:/Xilinx/ZynqProjects/SpaceWire_IPs/edit_SpaceWire_light_AXI_v0_1.srcs/sources_1/bd/SW_pkg_tb/SW_pkg_tb.bd}
+Reading block design file <F:/Xilinx/ZynqProjects/SpaceWire_IPs/edit_SpaceWire_light_AXI_v0_1.srcs/sources_1/bd/SW_pkg_tb/SW_pkg_tb.bd>...
+Adding component instance block -- IRS:RomeoOBDH:SpaceWire_light_AXI:0.1 - SpaceWire_light_AXI_0
+Successfully read diagram <SW_pkg_tb> from block design file <F:/Xilinx/ZynqProjects/SpaceWire_IPs/edit_SpaceWire_light_AXI_v0_1.srcs/sources_1/bd/SW_pkg_tb/SW_pkg_tb.bd>
+delete_bd_objs [get_bd_cells SpaceWire_light_AXI_0]
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+save_bd_design
+Wrote  : <F:\Xilinx\ZynqProjects\SpaceWire_IPs\edit_SpaceWire_light_AXI_v0_1.srcs\sources_1\bd\SW_pkg_tb\SW_pkg_tb.bd> 
+Wrote  : <F:/Xilinx/ZynqProjects/SpaceWire_IPs/edit_SpaceWire_light_AXI_v0_1.srcs/sources_1/bd/SW_pkg_tb/ui/bd_205d8d7c.ui> 
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+launch_runs synth_1 -jobs 12
+Wrote  : <F:\Xilinx\ZynqProjects\SpaceWire_IPs\edit_SpaceWire_light_AXI_v0_1.srcs\sources_1\bd\SW_pkg_tb\SW_pkg_tb.bd> 
+VHDL Output written to : f:/Xilinx/ZynqProjects/SpaceWire_IPs/edit_SpaceWire_light_AXI_v0_1.gen/sources_1/bd/SW_pkg_tb/synth/SW_pkg_tb.vhd
+VHDL Output written to : f:/Xilinx/ZynqProjects/SpaceWire_IPs/edit_SpaceWire_light_AXI_v0_1.gen/sources_1/bd/SW_pkg_tb/sim/SW_pkg_tb.vhd
+VHDL Output written to : f:/Xilinx/ZynqProjects/SpaceWire_IPs/edit_SpaceWire_light_AXI_v0_1.gen/sources_1/bd/SW_pkg_tb/hdl/SW_pkg_tb_wrapper.vhd
+Exporting to file f:/Xilinx/ZynqProjects/SpaceWire_IPs/edit_SpaceWire_light_AXI_v0_1.gen/sources_1/bd/SW_pkg_tb/hw_handoff/SW_pkg_tb.hwh
+Generated Hardware Definition File f:/Xilinx/ZynqProjects/SpaceWire_IPs/edit_SpaceWire_light_AXI_v0_1.gen/sources_1/bd/SW_pkg_tb/synth/SW_pkg_tb.hwdef
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+[Fri Aug 16 18:41:12 2024] Launched synth_1...
+Run output will be captured here: F:/Xilinx/ZynqProjects/SpaceWire_IPs/edit_SpaceWire_light_AXI_v0_1.runs/synth_1/runme.log
+set_property source_mgmt_mode All [current_project]
+create_bd_cell -type module -reference spwstream spwstream_0
+WARNING: [IP_Flow 19-329] [HDL Parser] Unable to determine the value format for HDL parameter 'rximpl' with value 'impl_generic'. The parameter type could not be inferred or is not supported in this release.
+WARNING: [IP_Flow 19-329] [HDL Parser] Unable to determine the value format for HDL parameter 'tximpl' with value 'impl_generic'. The parameter type could not be inferred or is not supported in this release.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "impl_generic" into user parameter "rximpl".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "impl_generic" into user parameter "tximpl".
+ERROR: [IP_Flow 19-627] HDL Parameter 'rximpl (Rximpl)': XPath expression failed: Undefined parameter "impl_generic" used in expression "impl_generic".
+ERROR: [IP_Flow 19-627] HDL Parameter 'tximpl (Tximpl)': XPath expression failed: Undefined parameter "impl_generic" used in expression "impl_generic".
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'spwstream'.
+ERROR: [BD 41-1699] Unable to add reference type cell for reference-module 'spwstream'
+ERROR: [BD 5-7] Error: running create_bd_cell  -type module -reference spwstream -name spwstream_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+update_compile_order -fileset sources_1
+set_property source_mgmt_mode DisplayOnly [current_project]
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file F:/Xilinx/ZynqProjects/SpaceWire_IPs/edit_SpaceWire_light_AXI_v0_1.srcs/utils_1/imports/synth_1/SpaceWire_light_AXI.dcp with file F:/Xilinx/ZynqProjects/SpaceWire_IPs/edit_SpaceWire_light_AXI_v0_1.runs/synth_1/SpaceWire_light_AXI.dcp
+launch_runs synth_1 -jobs 12
+[Fri Aug 16 18:42:45 2024] Launched synth_1...
+Run output will be captured here: F:/Xilinx/ZynqProjects/SpaceWire_IPs/edit_SpaceWire_light_AXI_v0_1.runs/synth_1/runme.log
+reorder_files -after F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwrecvfront_generic.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwxmit.vhd
+reorder_files -before F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwxmit_fast.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/spacewire_light-original/rtl/vhdl/spwrecvfront_fast.vhd
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+set_property source_mgmt_mode All [current_project]
+create_bd_cell -type module -reference spwstream spwstream_0
+WARNING: [IP_Flow 19-329] [HDL Parser] Unable to determine the value format for HDL parameter 'rximpl' with value 'impl_generic'. The parameter type could not be inferred or is not supported in this release.
+WARNING: [IP_Flow 19-329] [HDL Parser] Unable to determine the value format for HDL parameter 'tximpl' with value 'impl_generic'. The parameter type could not be inferred or is not supported in this release.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "impl_generic" into user parameter "rximpl".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "impl_generic" into user parameter "tximpl".
+ERROR: [IP_Flow 19-627] HDL Parameter 'rximpl (Rximpl)': XPath expression failed: Undefined parameter "impl_generic" used in expression "impl_generic".
+ERROR: [IP_Flow 19-627] HDL Parameter 'tximpl (Tximpl)': XPath expression failed: Undefined parameter "impl_generic" used in expression "impl_generic".
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'spwstream'.
+ERROR: [BD 41-1699] Unable to add reference type cell for reference-module 'spwstream'
+ERROR: [BD 5-7] Error: running create_bd_cell  -type module -reference spwstream -name spwstream_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 16 18:46:57 2024...
