@@ -54,10 +54,10 @@
 #endif
 typedef void (*funcp)(char *, char *);
 extern int main(int, char**);
-IKI_DLLESPEC extern void execute_147(char*, char *);
-IKI_DLLESPEC extern void execute_148(char*, char *);
-IKI_DLLESPEC extern void execute_149(char*, char *);
-IKI_DLLESPEC extern void execute_150(char*, char *);
+IKI_DLLESPEC extern void execute_251(char*, char *);
+IKI_DLLESPEC extern void execute_252(char*, char *);
+IKI_DLLESPEC extern void execute_253(char*, char *);
+IKI_DLLESPEC extern void execute_254(char*, char *);
 IKI_DLLESPEC extern void execute_145(char*, char *);
 IKI_DLLESPEC extern void execute_146(char*, char *);
 IKI_DLLESPEC extern void execute_44(char*, char *);
@@ -85,18 +85,18 @@ IKI_DLLESPEC extern void execute_129(char*, char *);
 IKI_DLLESPEC extern void execute_130(char*, char *);
 IKI_DLLESPEC extern void execute_132(char*, char *);
 IKI_DLLESPEC extern void execute_133(char*, char *);
-IKI_DLLESPEC extern void vhdl_transfunc_eventcallback(char*, char*, unsigned, unsigned, unsigned, char *);
 IKI_DLLESPEC extern void transaction_5(char*, char*, unsigned, unsigned, unsigned);
-IKI_DLLESPEC extern void transaction_20(char*, char*, unsigned, unsigned, unsigned);
-IKI_DLLESPEC extern void transaction_60(char*, char*, unsigned, unsigned, unsigned);
-funcp funcTab[35] = {(funcp)execute_147, (funcp)execute_148, (funcp)execute_149, (funcp)execute_150, (funcp)execute_145, (funcp)execute_146, (funcp)execute_44, (funcp)execute_45, (funcp)execute_47, (funcp)execute_48, (funcp)execute_68, (funcp)execute_69, (funcp)execute_70, (funcp)execute_51, (funcp)execute_52, (funcp)execute_75, (funcp)execute_74, (funcp)execute_77, (funcp)execute_78, (funcp)execute_105, (funcp)execute_106, (funcp)execute_134, (funcp)execute_135, (funcp)execute_136, (funcp)execute_137, (funcp)execute_138, (funcp)execute_86, (funcp)execute_129, (funcp)execute_130, (funcp)execute_132, (funcp)execute_133, (funcp)vhdl_transfunc_eventcallback, (funcp)transaction_5, (funcp)transaction_20, (funcp)transaction_60};
+IKI_DLLESPEC extern void vhdl_transfunc_eventcallback(char*, char*, unsigned, unsigned, unsigned, char *);
+IKI_DLLESPEC extern void transaction_72(char*, char*, unsigned, unsigned, unsigned);
+IKI_DLLESPEC extern void transaction_179(char*, char*, unsigned, unsigned, unsigned);
+funcp funcTab[35] = {(funcp)execute_251, (funcp)execute_252, (funcp)execute_253, (funcp)execute_254, (funcp)execute_145, (funcp)execute_146, (funcp)execute_44, (funcp)execute_45, (funcp)execute_47, (funcp)execute_48, (funcp)execute_68, (funcp)execute_69, (funcp)execute_70, (funcp)execute_51, (funcp)execute_52, (funcp)execute_75, (funcp)execute_74, (funcp)execute_77, (funcp)execute_78, (funcp)execute_105, (funcp)execute_106, (funcp)execute_134, (funcp)execute_135, (funcp)execute_136, (funcp)execute_137, (funcp)execute_138, (funcp)execute_86, (funcp)execute_129, (funcp)execute_130, (funcp)execute_132, (funcp)execute_133, (funcp)transaction_5, (funcp)vhdl_transfunc_eventcallback, (funcp)transaction_72, (funcp)transaction_179};
 const int NumRelocateId= 35;
 
 void relocate(char *dp)
 {
 	iki_relocate(dp, "xsim.dir/default_link_behav/xsim.reloc",  (void **)funcTab, 35);
-	iki_vhdl_file_variable_register(dp + 106144);
-	iki_vhdl_file_variable_register(dp + 106200);
+	iki_vhdl_file_variable_register(dp + 208896);
+	iki_vhdl_file_variable_register(dp + 208952);
 
 
 	/*Populate the transaction function pointer field in the whole net structure */
@@ -107,10 +107,12 @@ void sensitize(char *dp)
 	iki_sensitize(dp, "xsim.dir/default_link_behav/xsim.reloc");
 }
 
+	// Initialize Verilog nets in mixed simulation, for the cases when the value at time 0 should be propagated from the mixed language Vhdl net
+
 void simulate(char *dp)
 {
 		iki_schedule_processes_at_time_zero(dp, "xsim.dir/default_link_behav/xsim.reloc");
-	// Initialize Verilog nets in mixed simulation, for the cases when the value at time 0 should be propagated from the mixed language Vhdl net
+
 	iki_execute_processes();
 
 	// Schedule resolution functions for the multiply driven Verilog nets that have strength

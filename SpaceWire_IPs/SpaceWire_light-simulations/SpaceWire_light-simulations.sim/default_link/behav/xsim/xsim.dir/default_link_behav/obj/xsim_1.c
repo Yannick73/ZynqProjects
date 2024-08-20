@@ -54,6 +54,10 @@
 #endif
 typedef void (*funcp)(char *, char *);
 extern int main(int, char**);
+IKI_DLLESPEC extern void execute_88(char*, char *);
+IKI_DLLESPEC extern void execute_89(char*, char *);
+IKI_DLLESPEC extern void execute_90(char*, char *);
+IKI_DLLESPEC extern void execute_91(char*, char *);
 IKI_DLLESPEC extern void execute_59(char*, char *);
 IKI_DLLESPEC extern void execute_60(char*, char *);
 IKI_DLLESPEC extern void execute_43(char*, char *);
@@ -70,14 +74,14 @@ IKI_DLLESPEC extern void execute_54(char*, char *);
 IKI_DLLESPEC extern void execute_55(char*, char *);
 IKI_DLLESPEC extern void vhdl_transfunc_eventcallback(char*, char*, unsigned, unsigned, unsigned, char *);
 IKI_DLLESPEC extern void transaction_5(char*, char*, unsigned, unsigned, unsigned);
-funcp funcTab[16] = {(funcp)execute_59, (funcp)execute_60, (funcp)execute_43, (funcp)execute_44, (funcp)execute_48, (funcp)execute_49, (funcp)execute_50, (funcp)execute_51, (funcp)execute_36, (funcp)execute_37, (funcp)execute_39, (funcp)execute_40, (funcp)execute_54, (funcp)execute_55, (funcp)vhdl_transfunc_eventcallback, (funcp)transaction_5};
-const int NumRelocateId= 16;
+funcp funcTab[20] = {(funcp)execute_88, (funcp)execute_89, (funcp)execute_90, (funcp)execute_91, (funcp)execute_59, (funcp)execute_60, (funcp)execute_43, (funcp)execute_44, (funcp)execute_48, (funcp)execute_49, (funcp)execute_50, (funcp)execute_51, (funcp)execute_36, (funcp)execute_37, (funcp)execute_39, (funcp)execute_40, (funcp)execute_54, (funcp)execute_55, (funcp)vhdl_transfunc_eventcallback, (funcp)transaction_5};
+const int NumRelocateId= 20;
 
 void relocate(char *dp)
 {
-	iki_relocate(dp, "xsim.dir/default_link_behav/xsim.reloc",  (void **)funcTab, 16);
-	iki_vhdl_file_variable_register(dp + 92696);
-	iki_vhdl_file_variable_register(dp + 92752);
+	iki_relocate(dp, "xsim.dir/default_link_behav/xsim.reloc",  (void **)funcTab, 20);
+	iki_vhdl_file_variable_register(dp + 182608);
+	iki_vhdl_file_variable_register(dp + 182664);
 
 
 	/*Populate the transaction function pointer field in the whole net structure */

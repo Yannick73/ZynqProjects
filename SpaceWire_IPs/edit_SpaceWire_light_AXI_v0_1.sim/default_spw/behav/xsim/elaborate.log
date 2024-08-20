@@ -28,7 +28,7 @@ Compiling architecture spwram_rtl of entity spwip.SpwRam [\SpwRam(abits=11,dbits
 Compiling architecture driver_str of entity spwip.Driver [driver_default]
 Compiling architecture spwreset_rtl of entity spwip.SpwReset [\SpwReset(reset_latency=1)\]
 Compiling architecture spwram_rtl of entity spwip.SpwRam [\SpwRam(abits=3,dbits=2)\]
-Compiling architecture spwrecvfront_rtl of entity spwip.SpwRecvFront [\SpwRecvFront(rxchunk=1)\]
+Compiling architecture spwrecvfront_rtl of entity spwip.SpwRecvFront [\SpwRecvFront(rxchunk=2)\]
 Compiling architecture spwstream_rtl of entity spwip.SpwStream [spwstream_default]
 Compiling architecture behavioral of entity xil_defaultlib.default_link
 Built simulation snapshot default_link_behav

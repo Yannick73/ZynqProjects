@@ -102,12 +102,12 @@ use SPWIP.SpwRegisters_pkg.all;
 --                V 1.03 JTO 03.09.2020 - update logic to improve code coverage in integration test
 --------------------------------------------------------------------------------
 entity SpwStream is 
-   -- added missing generics
+--   -- added missing generics
    generic (
       SYSFREQ           : real                      := 100.0*1e6;       -- IP core clock of 100 MHz
-      RXIMPL            : spw_implementation_type   := impl_generic;    -- receiver using core clock
-      TXIMPL            : spw_implementation_type   := impl_generic;    -- receiver using core clock
-      RXCHUNK           : integer                   := 1;               -- 1 in case of impl_generic
+      RXIMPL            : spw_implementation_type   := impl_fast;       -- receiver using core clock
+      TXIMPL            : spw_implementation_type   := impl_fast;       -- receiver using core clock
+      RXCHUNK           : integer                   := 2;               -- 1 in case of impl_generic
       RXFIFOSIZE_BITS   : integer                   := 11;              -- 11 bit RXFIFO adress space = 2kB FIFO
       TXFIFOSIZE_BITS   : integer                   := 11               -- 11 bit TXFIFO adress space = 2kB FIFO
    ); 
