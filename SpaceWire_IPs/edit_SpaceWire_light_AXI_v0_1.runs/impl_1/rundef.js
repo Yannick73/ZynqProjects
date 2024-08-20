@@ -24,7 +24,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 // pre-commands:
-ISETouchFile( "init_design", "begin" );
+ISETouchFile( "write_bitstream", "begin" );
 ISEStep( "vivado",
          "-log SpaceWire_light_AXI.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source SpaceWire_light_AXI.tcl -notrace" );
 

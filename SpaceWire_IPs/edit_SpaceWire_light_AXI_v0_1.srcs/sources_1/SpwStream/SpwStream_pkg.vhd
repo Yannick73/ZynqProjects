@@ -77,9 +77,9 @@ package SpwStream_pkg is
           TXCLKFREQ         : real;                                         -- transmit clock
           RXIMPL            : spw_implementation_type   := impl_recovclk;   -- receiver using core clock
           TXIMPL            : spw_implementation_type   := impl_fast;       -- receiver using core clock
-          RXCHUNK           : integer                   := 4;               -- 1 in case of impl_generic
-          RXFIFOSIZE_BITS   : integer                   := 11;              -- 11 bit RXFIFO adress space = 2kB FIFO
-          TXFIFOSIZE_BITS   : integer                   := 11               -- 11 bit TXFIFO adress space = 2kB FIFO
+          RXCHUNK           : integer range 1 to 6      := 1;               -- 1 in case of impl_generic
+          RXFIFOSIZE_BITS   : integer range 6 to 16     := 11;              -- 11 bit RXFIFO adress space = 2kB FIFO
+          TXFIFOSIZE_BITS   : integer range 2 to 16     := 11               -- 11 bit TXFIFO adress space = 2kB FIFO
      ); 
       port ( 
          AUTOSTART   : in std_logic;                      -- Enables automatic link start on receipt of a NULL character.

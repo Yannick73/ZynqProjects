@@ -103,185 +103,41 @@ set_msg_config  -id {[BD 41-1306]}  -suppress
 set_msg_config  -id {[BD 41-1271]}  -suppress 
 
 OPTRACE "impl_1" START { ROLLUP_1 }
-OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
-start_step init_design
-set ACTIVE_STEP init_design
+OPTRACE "Phase: Write Bitstream" START { ROLLUP_AUTO }
+OPTRACE "write_bitstream setup" START { }
+start_step write_bitstream
+set ACTIVE_STEP write_bitstream
 set rc [catch {
-  create_msg_db init_design.pb
+  create_msg_db write_bitstream.pb
   set_param chipscope.maxJobs 3
   set_param checkpoint.writeSynthRtdsInDcp 1
-  set_param synth.incrementalSynthesisCache C:/Users/Yannick/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-22436-DESKTOP-MEH5DGT/incrSyn
+  set_param synth.incrementalSynthesisCache C:/Users/Yannick/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-16460-DESKTOP-MEH5DGT/incrSyn
   set_param runs.launchOptions { -jobs 12  }
-OPTRACE "create in-memory project" START { }
-  create_project -in_memory -part xc7z020clg484-1
-  set_property board_part digilentinc.com:zedboard:part0:1.1 [current_project]
-  set_property design_mode GateLvl [current_fileset]
-  set_param project.singleFileAddWarning.threshold 0
-OPTRACE "create in-memory project" END { }
-OPTRACE "set parameters" START { }
+  open_checkpoint SpaceWire_light_AXI_routed.dcp
   set_property webtalk.parent_dir F:/Xilinx/ZynqProjects/SpaceWire_IPs/edit_SpaceWire_light_AXI_v0_1.cache/wt [current_project]
-  set_property parent.project_path F:/Xilinx/ZynqProjects/SpaceWire_IPs/edit_SpaceWire_light_AXI_v0_1.xpr [current_project]
-  set_property ip_repo_paths F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI_0_1 [current_project]
-  update_ip_catalog
-  set_property ip_output_repo F:/Xilinx/ZynqProjects/SpaceWire_IPs/edit_SpaceWire_light_AXI_v0_1.cache/ip [current_project]
-  set_property ip_cache_permissions {read write} [current_project]
-OPTRACE "set parameters" END { }
-OPTRACE "add files" START { }
-  add_files -quiet F:/Xilinx/ZynqProjects/SpaceWire_IPs/edit_SpaceWire_light_AXI_v0_1.runs/synth_1/SpaceWire_light_AXI.dcp
-OPTRACE "read constraints: implementation" START { }
-OPTRACE "read constraints: implementation" END { }
-OPTRACE "read constraints: implementation_pre" START { }
-OPTRACE "read constraints: implementation_pre" END { }
-OPTRACE "add files" END { }
-OPTRACE "link_design" START { }
-  link_design -top SpaceWire_light_AXI -part xc7z020clg484-1 
-OPTRACE "link_design" END { }
-OPTRACE "gray box cells" START { }
-OPTRACE "gray box cells" END { }
-OPTRACE "init_design_reports" START { REPORT }
-OPTRACE "init_design_reports" END { }
-OPTRACE "init_design_write_hwdef" START { }
-OPTRACE "init_design_write_hwdef" END { }
-  close_msg_db -file init_design.pb
+set_property TOP SpaceWire_light_AXI [current_fileset]
+OPTRACE "read constraints: write_bitstream" START { }
+OPTRACE "read constraints: write_bitstream" END { }
+  catch { write_mem_info -force -no_partial_mmi SpaceWire_light_AXI.mmi }
+OPTRACE "write_bitstream setup" END { }
+OPTRACE "write_bitstream" START { }
+  write_bitstream -force SpaceWire_light_AXI.bit 
+OPTRACE "write_bitstream" END { }
+OPTRACE "write_bitstream misc" START { }
+OPTRACE "read constraints: write_bitstream_post" START { }
+OPTRACE "read constraints: write_bitstream_post" END { }
+  catch {write_debug_probes -quiet -force SpaceWire_light_AXI}
+  catch {file copy -force SpaceWire_light_AXI.ltx debug_nets.ltx}
+  close_msg_db -file write_bitstream.pb
 } RESULT]
 if {$rc} {
-  step_failed init_design
+  step_failed write_bitstream
   return -code error $RESULT
 } else {
-  end_step init_design
+  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 
-OPTRACE "Phase: Init Design" END { }
-OPTRACE "Phase: Opt Design" START { ROLLUP_AUTO }
-start_step opt_design
-set ACTIVE_STEP opt_design
-set rc [catch {
-  create_msg_db opt_design.pb
-OPTRACE "read constraints: opt_design" START { }
-OPTRACE "read constraints: opt_design" END { }
-OPTRACE "opt_design" START { }
-  opt_design 
-OPTRACE "opt_design" END { }
-OPTRACE "read constraints: opt_design_post" START { }
-OPTRACE "read constraints: opt_design_post" END { }
-OPTRACE "opt_design reports" START { REPORT }
-  set_param project.isImplRun true
-  generate_parallel_reports -reports { "report_drc -file SpaceWire_light_AXI_drc_opted.rpt -pb SpaceWire_light_AXI_drc_opted.pb -rpx SpaceWire_light_AXI_drc_opted.rpx"  }
-  set_param project.isImplRun false
-OPTRACE "opt_design reports" END { }
-OPTRACE "Opt Design: write_checkpoint" START { CHECKPOINT }
-  write_checkpoint -force SpaceWire_light_AXI_opt.dcp
-OPTRACE "Opt Design: write_checkpoint" END { }
-  close_msg_db -file opt_design.pb
-} RESULT]
-if {$rc} {
-  step_failed opt_design
-  return -code error $RESULT
-} else {
-  end_step opt_design
-  unset ACTIVE_STEP 
-}
-
-OPTRACE "Phase: Opt Design" END { }
-OPTRACE "Phase: Place Design" START { ROLLUP_AUTO }
-start_step place_design
-set ACTIVE_STEP place_design
-set rc [catch {
-  create_msg_db place_design.pb
-OPTRACE "read constraints: place_design" START { }
-OPTRACE "read constraints: place_design" END { }
-  if { [llength [get_debug_cores -quiet] ] > 0 }  { 
-OPTRACE "implement_debug_core" START { }
-    implement_debug_core 
-OPTRACE "implement_debug_core" END { }
-  } 
-OPTRACE "place_design" START { }
-  place_design 
-OPTRACE "place_design" END { }
-OPTRACE "read constraints: place_design_post" START { }
-OPTRACE "read constraints: place_design_post" END { }
-OPTRACE "place_design reports" START { REPORT }
-  set_param project.isImplRun true
-  generate_parallel_reports -reports { "report_io -file SpaceWire_light_AXI_io_placed.rpt" "report_utilization -file SpaceWire_light_AXI_utilization_placed.rpt -pb SpaceWire_light_AXI_utilization_placed.pb" "report_control_sets -verbose -file SpaceWire_light_AXI_control_sets_placed.rpt"  }
-  set_param project.isImplRun false
-OPTRACE "place_design reports" END { }
-OPTRACE "Place Design: write_checkpoint" START { CHECKPOINT }
-  write_checkpoint -force SpaceWire_light_AXI_placed.dcp
-OPTRACE "Place Design: write_checkpoint" END { }
-  close_msg_db -file place_design.pb
-} RESULT]
-if {$rc} {
-  step_failed place_design
-  return -code error $RESULT
-} else {
-  end_step place_design
-  unset ACTIVE_STEP 
-}
-
-OPTRACE "Phase: Place Design" END { }
-OPTRACE "Phase: Physical Opt Design" START { ROLLUP_AUTO }
-start_step phys_opt_design
-set ACTIVE_STEP phys_opt_design
-set rc [catch {
-  create_msg_db phys_opt_design.pb
-OPTRACE "read constraints: phys_opt_design" START { }
-OPTRACE "read constraints: phys_opt_design" END { }
-OPTRACE "phys_opt_design" START { }
-  phys_opt_design 
-OPTRACE "phys_opt_design" END { }
-OPTRACE "read constraints: phys_opt_design_post" START { }
-OPTRACE "read constraints: phys_opt_design_post" END { }
-OPTRACE "phys_opt_design report" START { REPORT }
-OPTRACE "phys_opt_design report" END { }
-OPTRACE "Post-Place Phys Opt Design: write_checkpoint" START { CHECKPOINT }
-  write_checkpoint -force SpaceWire_light_AXI_physopt.dcp
-OPTRACE "Post-Place Phys Opt Design: write_checkpoint" END { }
-  close_msg_db -file phys_opt_design.pb
-} RESULT]
-if {$rc} {
-  step_failed phys_opt_design
-  return -code error $RESULT
-} else {
-  end_step phys_opt_design
-  unset ACTIVE_STEP 
-}
-
-OPTRACE "Phase: Physical Opt Design" END { }
-OPTRACE "Phase: Route Design" START { ROLLUP_AUTO }
-start_step route_design
-set ACTIVE_STEP route_design
-set rc [catch {
-  create_msg_db route_design.pb
-OPTRACE "read constraints: route_design" START { }
-OPTRACE "read constraints: route_design" END { }
-OPTRACE "route_design" START { }
-  route_design 
-OPTRACE "route_design" END { }
-OPTRACE "read constraints: route_design_post" START { }
-OPTRACE "read constraints: route_design_post" END { }
-OPTRACE "route_design reports" START { REPORT }
-  set_param project.isImplRun true
-  generate_parallel_reports -reports { "report_drc -file SpaceWire_light_AXI_drc_routed.rpt -pb SpaceWire_light_AXI_drc_routed.pb -rpx SpaceWire_light_AXI_drc_routed.rpx" "report_methodology -file SpaceWire_light_AXI_methodology_drc_routed.rpt -pb SpaceWire_light_AXI_methodology_drc_routed.pb -rpx SpaceWire_light_AXI_methodology_drc_routed.rpx" "report_power -file SpaceWire_light_AXI_power_routed.rpt -pb SpaceWire_light_AXI_power_summary_routed.pb -rpx SpaceWire_light_AXI_power_routed.rpx" "report_route_status -file SpaceWire_light_AXI_route_status.rpt -pb SpaceWire_light_AXI_route_status.pb" "report_timing_summary -max_paths 10 -report_unconstrained -file SpaceWire_light_AXI_timing_summary_routed.rpt -pb SpaceWire_light_AXI_timing_summary_routed.pb -rpx SpaceWire_light_AXI_timing_summary_routed.rpx -warn_on_violation " "report_incremental_reuse -file SpaceWire_light_AXI_incremental_reuse_routed.rpt" "report_clock_utilization -file SpaceWire_light_AXI_clock_utilization_routed.rpt" "report_bus_skew -warn_on_violation -file SpaceWire_light_AXI_bus_skew_routed.rpt -pb SpaceWire_light_AXI_bus_skew_routed.pb -rpx SpaceWire_light_AXI_bus_skew_routed.rpx"  }
-  set_param project.isImplRun false
-OPTRACE "route_design reports" END { }
-OPTRACE "Route Design: write_checkpoint" START { CHECKPOINT }
-  write_checkpoint -force SpaceWire_light_AXI_routed.dcp
-OPTRACE "Route Design: write_checkpoint" END { }
-OPTRACE "route_design misc" START { }
-  close_msg_db -file route_design.pb
-} RESULT]
-if {$rc} {
-OPTRACE "route_design write_checkpoint" START { CHECKPOINT }
-OPTRACE "route_design write_checkpoint" END { }
-  write_checkpoint -force SpaceWire_light_AXI_routed_error.dcp
-  step_failed route_design
-  return -code error $RESULT
-} else {
-  end_step route_design
-  unset ACTIVE_STEP 
-}
-
-OPTRACE "route_design misc" END { }
-OPTRACE "Phase: Route Design" END { }
+OPTRACE "write_bitstream misc" END { }
+OPTRACE "Phase: Write Bitstream" END { }
 OPTRACE "impl_1" END { }

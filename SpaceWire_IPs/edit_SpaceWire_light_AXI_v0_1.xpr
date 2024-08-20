@@ -61,7 +61,7 @@
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="zedboard"/>
-    <Option Name="WTXSimLaunchSim" Val="126"/>
+    <Option Name="WTXSimLaunchSim" Val="171"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -221,14 +221,6 @@
       <File Path="$PPRDIR/SpaceWire_light_AXI_0_1/component.xml">
         <FileInfo SFType="IPXACT"/>
       </File>
-      <File Path="$PSRCDIR/sources_1/bd/SW_standalone_tb/SW_standalone_tb.bd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/bd/SW_pkg_tb/SW_pkg_tb.bd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
@@ -281,15 +273,22 @@
     </FileSet>
     <FileSet Name="default_spw" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/default_spw" RelGenDir="$PGENDIR/default_spw">
       <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/default_spw/new/exchange_data.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/default_spw/new/default_link.vhd">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="default_link"/>
+        <Option Name="TopModule" Val="exchange_data"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>
@@ -299,7 +298,7 @@
         <Option Name="PamSignalDriverFile" Val="xil_bypass_driver"/>
         <Option Name="PamPseudoTop" Val="pseudo_tb"/>
         <Option Name="SrcSet" Val="sources_1"/>
-        <Option Name="xsim.simulate.runtime" Val="1000us"/>
+        <Option Name="xsim.simulate.runtime" Val="100us"/>
       </Config>
     </FileSet>
   </FileSets>

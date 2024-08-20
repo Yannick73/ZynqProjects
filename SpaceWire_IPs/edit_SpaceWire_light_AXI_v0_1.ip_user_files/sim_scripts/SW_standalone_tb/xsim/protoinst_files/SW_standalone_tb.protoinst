@@ -1,9 +1,0 @@
-{
-	"version": "1.0",
-	"modules": {
-		"SW_standalone_tb": {
-			"proto_instances": {
-			}
-		}
-	}
-}

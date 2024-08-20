@@ -108,9 +108,9 @@ entity SpwStream is
       TXCLKFREQ         : real;                                         -- transmit clock
       RXIMPL            : spw_implementation_type   := impl_recovclk;   -- receiver using core clock
       TXIMPL            : spw_implementation_type   := impl_fast;       -- receiver using core clock
-      RXCHUNK           : integer                   := 4;               -- 1 in case of impl_generic
-      RXFIFOSIZE_BITS   : integer                   := 11;              -- 11 bit RXFIFO adress space = 2kB FIFO
-      TXFIFOSIZE_BITS   : integer                   := 11               -- 11 bit TXFIFO adress space = 2kB FIFO
+      RXCHUNK           : integer range 1 to 6      := 1;               -- 1 in case of impl_generic
+      RXFIFOSIZE_BITS   : integer range 6 to 16     := 11;              -- 11 bit RXFIFO adress space = 2kB FIFO
+      TXFIFOSIZE_BITS   : integer range 2 to 16     := 11               -- 11 bit TXFIFO adress space = 2kB FIFO
    ); 
    port ( 
       AUTOSTART   : in std_logic;                      --! Enables automatic link start on receipt of a NULL character.
@@ -461,7 +461,31 @@ begin
             if ( res_seq.rxfull = '0' ) then
                vres.rxfifo_waddr := vrxfifo_waddr_succ;
             end if; -- res_seq.rxfull
+--         when others =>
       end case;
+
+-- The concetanation seems to have caused trouble: vrxfifo_op was 0 for transmit=0 and read=U
+-- Possibly only an issue for simulations, still rewriting the case to ifs should permanently fix this
+--      if (vrxfifo_wreq = '0' and RXREAD = '1') then
+--            if ( res_seq.rxfifo_rvalid = '1' ) then -- If FIFO is NOT empty, it can be read.
+--               vres.rxfifo_raddr := vrxfifo_raddr_succ;
+--               vres.rxfiforoom := std_logic_vector(unsigned(res_seq.rxfiforoom) + 1);
+--            end if; -- res_seq.rxfifo_rvalid
+--      else if (vrxfifo_wreq = '1' and RXREAD = '0') then
+--            if ( res_seq.rxfull = '0' ) then  -- If FIFO is NOT full, it can be written.
+--               vres.rxfifo_waddr := vrxfifo_waddr_succ;
+--               vres.rxfiforoom := std_logic_vector(unsigned(res_seq.rxfiforoom) - 1);
+--            end if; -- res_seq.rxfull
+--      else if (vrxfifo_wreq = '1' and RXREAD = '1') then
+--            if ( res_seq.rxfifo_rvalid = '1' ) then
+--               vres.rxfifo_raddr := vrxfifo_raddr_succ;
+--            end if; -- res_seq.rxfifo_rvalid
+--            if ( res_seq.rxfull = '0' ) then
+--               vres.rxfifo_waddr := vrxfifo_waddr_succ;
+--            end if; -- res_seq.rxfull
+--      end
+      
+
       vres.rxfifo_rvalid := bool_to_logic( ( unsigned(vres.rxfiforoom) < to_unsigned(2**RXFIFOSIZE_BITS, RXFIFOSIZE_BITS+1) ) );
       vres.rxfull := bool_to_logic( vres.rxfiforoom = std_logic_vector(to_unsigned(0,RXFIFOSIZE_BITS+1)) ); -- NOTE: using new value
       vres.rxhalff := bool_to_logic( unsigned(vres.rxfiforoom) < 2**(RXFIFOSIZE_BITS-1) );

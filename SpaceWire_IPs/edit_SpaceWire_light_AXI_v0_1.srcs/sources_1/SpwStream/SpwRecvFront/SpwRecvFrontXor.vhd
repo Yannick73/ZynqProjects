@@ -277,16 +277,20 @@ begin
    -----------------------------------------------------------------------------
    bitCounter: process( RXCLK_IN, rx_rst_n )
    begin
+      -- originally: if-elseif-elseif
       if ( rx_rst_n = '0' ) then
          rxcnt_r <= "0001";
          rxcnt_f <= "0000";
+      else
+          -- changed to else with seperate if inside, which is equ to else if
+          if rising_edge(RXCLK_IN) then
+             rxcnt_r <= std_logic_vector(unsigned(rxcnt_r) + 2);
+          end if;
+          -- also added two seperate cases for each edge, both cannot appear simultaneously
+          if falling_edge(RXCLK_IN) then
+             rxcnt_f <= std_logic_vector(unsigned(rxcnt_f) + 2);
+          end if; -- rx_rst_n
       end if;
-      if rising_edge(RXCLK_IN) then
-         rxcnt_r <= std_logic_vector(unsigned(rxcnt_r) + 2);
-      end if;
-      if falling_edge(RXCLK_IN) then
-         rxcnt_f <= std_logic_vector(unsigned(rxcnt_f) + 2);
-      end if; -- rx_rst_n
    end process bitCounter;
    
 

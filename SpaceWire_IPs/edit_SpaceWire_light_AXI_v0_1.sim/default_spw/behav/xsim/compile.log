@@ -1,2 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "F:/Xilinx/ZynqProjects/SpaceWire_IPs/edit_SpaceWire_light_AXI_v0_1.srcs/default_spw/new/default_link.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'default_link'
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/Xilinx/ZynqProjects/SpaceWire_IPs/edit_SpaceWire_light_AXI_v0_1.srcs/default_spw/new/exchange_data.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'exchange_data'

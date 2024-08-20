@@ -19,22 +19,12 @@ entity SpaceWire_light_AXI is
 		C_S_AXI_ControlRegister_ADDR_WIDTH	: integer	:= 5;
 
 		-- Parameters of Axi Slave Bus Interface S_AXI_Stream
-		C_S_AXI_Stream_TDATA_WIDTH	: integer	:= 32;
-
-		-- Parameters of Axi Slave Bus Interface S_AXI_INTR
-		C_S_AXI_INTR_DATA_WIDTH	: integer	:= 32;
-		C_S_AXI_INTR_ADDR_WIDTH	: integer	:= 5;
-		C_NUM_OF_INTR	: integer	:= 1;
-		C_INTR_SENSITIVITY	: std_logic_vector	:= x"FFFFFFFF";
-		C_INTR_ACTIVE_STATE	: std_logic_vector	:= x"FFFFFFFF";
-		C_IRQ_SENSITIVITY	: integer	:= 1;
-		C_IRQ_ACTIVE_STATE	: integer	:= 1
+		C_S_AXI_Stream_TDATA_WIDTH	: integer	:= 8
 	);
 	port (
 		-- Users to add ports here
 		
 		spw_core_clk   : in std_logic;     -- main core clock
-		spw_rxfclk     : in std_logic;     -- rxclk used in rximpl = impl_fast
 		spw_txfclk     : in std_logic;     -- txclk used in tximpl = impl_fast
 		spw_core_rst   : in std_logic;     -- main core reset, active low to conform to standard
 		-- needs inversion to active high for the IP core
@@ -133,42 +123,6 @@ architecture arch_imp of SpaceWire_light_AXI is
 		);
 	end component SpaceWire_light_AXI_slave_stream_v0_1_S_AXI_Stream;
 
-	component SpaceWire_light_AXI_slave_lite_inter_v0_1_S_AXI_INTR is
-		generic (
-		C_S_AXI_DATA_WIDTH	: integer	:= 32;
-		C_S_AXI_ADDR_WIDTH	: integer	:= 5;
-		C_NUM_OF_INTR	: integer	:= 1;
-		C_INTR_SENSITIVITY	: std_logic_vector	:= x"FFFFFFFF";
-		C_INTR_ACTIVE_STATE	: std_logic_vector	:= x"FFFFFFFF";
-		C_IRQ_SENSITIVITY	: integer	:= 1;
-		C_IRQ_ACTIVE_STATE	: integer	:= 1
-		);
-		port (
-		S_AXI_ACLK	: in std_logic;
-		S_AXI_ARESETN	: in std_logic;
-		S_AXI_AWADDR	: in std_logic_vector(C_S_AXI_ADDR_WIDTH-1 downto 0);
-		S_AXI_AWPROT	: in std_logic_vector(2 downto 0);
-		S_AXI_AWVALID	: in std_logic;
-		S_AXI_AWREADY	: out std_logic;
-		S_AXI_WDATA	: in std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
-		S_AXI_WSTRB	: in std_logic_vector((C_S_AXI_DATA_WIDTH/8)-1 downto 0);
-		S_AXI_WVALID	: in std_logic;
-		S_AXI_WREADY	: out std_logic;
-		S_AXI_BRESP	: out std_logic_vector(1 downto 0);
-		S_AXI_BVALID	: out std_logic;
-		S_AXI_BREADY	: in std_logic;
-		S_AXI_ARADDR	: in std_logic_vector(C_S_AXI_ADDR_WIDTH-1 downto 0);
-		S_AXI_ARPROT	: in std_logic_vector(2 downto 0);
-		S_AXI_ARVALID	: in std_logic;
-		S_AXI_ARREADY	: out std_logic;
-		S_AXI_RDATA	: out std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
-		S_AXI_RRESP	: out std_logic_vector(1 downto 0);
-		S_AXI_RVALID	: out std_logic;
-		S_AXI_RREADY	: in std_logic;
-		irq	: out std_logic
-		);
-	end component SpaceWire_light_AXI_slave_lite_inter_v0_1_S_AXI_INTR;
-
 begin
 
     -- SpaceWire peripheral (tbd!)
@@ -177,9 +131,10 @@ begin
     generic map (
         -- target core clock frequency of 100MHz
         SYSFREQ  => 100.0*1e6,
+        TXCLKFREQ => 200.0*1e6,
         -- low speed test
-        RXIMPL => impl_generic,   
-        TXIMPL => impl_generic,
+        RXIMPL => impl_fast,   
+        TXIMPL => impl_fast,
         -- as defined by document for impl_generic
         RXCHUNK => 1,
         -- default of the doc
