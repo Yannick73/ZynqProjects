@@ -75,13 +75,13 @@ begin
     SPW_Master : SpwStream
     -- set parameters
     generic map (
-        -- target core clock frequency of 100MHz
+        -- target core clock frequency of 100MHz and transmit clock of 200MHz
         SYSFREQ  => 100.0*1e6,
-        -- low speed test
-        RXIMPL => impl_fast,   
-        TXIMPL => impl_fast,
+        TXCLKFREQ => 200.0*1e6,
         -- as defined by document for impl_generic
-        RXCHUNK => 2,
+        RXIMPL => impl_recovclk,
+        TXIMPL => impl_fast,
+        RXCHUNK => 4,
         -- default of the doc
         RXFIFOSIZE_BITS => 11,
         TXFIFOSIZE_BITS => 11
@@ -119,13 +119,11 @@ begin
     SPW_Client : SpwStream
     -- set parameters
     generic map (
-        -- target core clock frequency of 100MHz
+        -- target core clock frequency of 100MHz and transmit clock of 200MHz
         SYSFREQ  => 100.0*1e6,
-        -- low speed test
-        RXIMPL => impl_fast,   
-        TXIMPL => impl_fast,
+        TXCLKFREQ => 200.0*1e6,
         -- as defined by document for impl_generic
-        RXCHUNK => 2,
+        RXCHUNK => 4,
         -- default of the doc
         RXFIFOSIZE_BITS => 11,
         TXFIFOSIZE_BITS => 11
@@ -163,6 +161,7 @@ begin
     -- simclk <= not simclk after 500ps;
     -- start the 100MHz core clk
     clk <= not clk after 5ns;
+    --clk <= not clk after 2500ps;
     -- start the 200MHz transmit clk
     txclk <= not txclk after 2500ps;
     -- reset the devices (active low) for 10 cycles
@@ -179,8 +178,9 @@ begin
         -- in sim needs to be clocked high for at least 20us,
         link_start <= '1';
         -- after that takes about 19us until 'started', which itself lasts for 14us (w/o any input)
-        wait until (started = '1');
+        wait until (running = '1');
         wait for 8ns;
+        link_start <= '0';
         
 --        for i in 0 to 0 loop
 --            -- esc and fct are the null control code
@@ -211,7 +211,7 @@ begin
 --        end loop;
         
         
-        wait for 100us;
+        wait for 1000ms;
     end process stimulus;
 
 

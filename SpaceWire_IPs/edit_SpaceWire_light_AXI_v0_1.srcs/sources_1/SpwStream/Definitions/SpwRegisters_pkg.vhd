@@ -84,18 +84,20 @@ package SpwRegisters_pkg is
    type bool_to_logic_type is array(boolean) of std_ulogic;
    --! use the bool_to_logic_type to map boolean to std_ulogic.
    constant BOOL_TO_LOGIC : bool_to_logic_type := (false => '0', true => '1');
+   -- moved constants to spwstream definition, as to make them reusable with 
+   -- generic parameters
    --! system clock frequency in Hz.
-   constant SYSFREQ : real := 25.0e6;
-   --! transmit clock frequency in Hz (only if TXIMPL = impl_fast).
-   constant TXCLKFREQ : real := 100.0e6;
-   --! maximum number of bits received per system clock.
-   constant RXCHUNK : integer range 1 to 6 := 6;
-   --! selection of a transmitter implementation.
-   constant TXIMPL : spw_implementation_type := impl_fast;
-   --! size of the receive FIFO as the 2-logarithm of the number of bytes.
-   constant RXFIFOSIZE_BITS : integer := 6;
-   --! size of the transmit FIFO as the 2-logarithm of the number of bytes.
-   constant TXFIFOSIZE_BITS : integer := 6;
+--   constant SYSFREQ : real := 25.0e6;
+--   --! transmit clock frequency in Hz (only if TXIMPL = impl_fast).
+--   constant TXCLKFREQ : real := 100.0e6;
+--   --! maximum number of bits received per system clock.
+--   constant RXCHUNK : integer range 1 to 6 := 6;
+--   --! selection of a transmitter implementation.
+--   constant TXIMPL : spw_implementation_type := impl_fast;
+--   --! size of the receive FIFO as the 2-logarithm of the number of bytes.
+--   constant RXFIFOSIZE_BITS : integer := 6;
+--   --! size of the transmit FIFO as the 2-logarithm of the number of bytes.
+--   constant TXFIFOSIZE_BITS : integer := 6;
 
    -----------------------------------------------------------------------------
    -- Type spwlink_regs_type
