@@ -1,0 +1,1048 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Aug 22 11:34:56 2024
+# Process ID: 6344
+# Current directory: F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1988 F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\edit_SpaceWire_light_AXI_v0_2.xpr
+# Log file: F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/vivado.log
+# Journal file: F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI\vivado.jou
+# Running On        :DESKTOP-MEH5DGT
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :AMD Ryzen 5 3600 6-Core Processor              
+# CPU Frequency     :3593 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :17100 MB
+# Swap memory       :4294 MB
+# Total Virtual     :21395 MB
+# Available Virtual :8086 MB
+#-----------------------------------------------------------
+start_gui
+open_project F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.3/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.2/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.2/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI_0_1'.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI_0_1'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2024.1/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:10 . Memory (MB): peak = 1582.914 ; gain = 456.355
+update_compile_order -fileset sources_1
+file mkdir F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/sources_1/new
+close [ open F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/sources_1/new/test.vhd w ]
+add_files F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/sources_1/new/test.vhd
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/sources_1/new/test.vhd] -no_script -reset -force -quiet
+remove_files  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/sources_1/new/test.vhd
+add_files {F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/SpwRamReset.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SpwXmit_fast_pkg.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SpwXmit_fast.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecovClk.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/SpwProtocol_pkg.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/SpwRegisters_pkg.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SyncDff.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/SpwRamReset_pkg.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwLink.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecv.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwReset.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFront_pkg.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream_pkg.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRam.vhd}
+set_property library SPWIP [get_files  {F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/SpwRamReset.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SpwXmit_fast_pkg.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SpwXmit_fast.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecovClk.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/SpwProtocol_pkg.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/SpwRegisters_pkg.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SyncDff.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/SpwRamReset_pkg.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwLink.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecv.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwReset.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFront_pkg.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream_pkg.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRam.vhd}]
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/SpwRamReset.vhd] -no_script -reset -force -quiet
+remove_files  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/SpwRamReset.vhd
+ipx::open_ipxact_file {F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\component.xml}
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SpwXmit_fast_pkg.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SpwXmit_fast.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecovClk.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/SpwProtocol_pkg.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/SpwRegisters_pkg.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SyncDff.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/SpwRamReset_pkg.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwLink.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecv.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwReset.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFront_pkg.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream_pkg.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRam.vhd'.
+set_property vendor IRS [ipx::current_core]
+set_property library RomeoOBDH [ipx::current_core]
+set_property vendor_display_name {Institute of Space Systems - University of Stuttgart} [ipx::current_core]
+set_property company_url https://www.irs.uni-stuttgart.de/en/ [ipx::current_core]
+ipgui::remove_param -component [ipx::current_core] [ipgui::get_guiparamspec -name "C_AXI_StreamOut_TDATA_WIDTH" -component [ipx::current_core]]
+ipgui::remove_param -component [ipx::current_core] [ipgui::get_guiparamspec -name "C_AXI_StreamOut_START_COUNT" -component [ipx::current_core]]
+ipgui::remove_param -component [ipx::current_core] [ipgui::get_guiparamspec -name "C_AXI_Register_DATA_WIDTH" -component [ipx::current_core]]
+ipgui::remove_param -component [ipx::current_core] [ipgui::get_guiparamspec -name "C_AXI_Register_ADDR_WIDTH" -component [ipx::current_core]]
+ipgui::remove_param -component [ipx::current_core] [ipgui::get_guiparamspec -name "C_AXI_Register_BASEADDR" -component [ipx::current_core]]
+ipgui::remove_param -component [ipx::current_core] [ipgui::get_guiparamspec -name "C_AXI_Register_HIGHADDR" -component [ipx::current_core]]
+ipgui::remove_param -component [ipx::current_core] [ipgui::get_guiparamspec -name "C_AXI_StreamIn_TDATA_WIDTH" -component [ipx::current_core]]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipgui::add_param -name {C_AXI_Register_BASEADDR} -component [ipx::current_core]
+ipgui::add_param -name {C_AXI_Register_HIGHADDR} -component [ipx::current_core]
+ipx::add_user_parameter SYSFREQ [ipx::current_core]
+set_property value_resolve_type user [ipx::get_user_parameters SYSFREQ -of_objects [ipx::current_core]]
+ipgui::add_param -name {SYSFREQ} -component [ipx::current_core]
+set_property display_name {Sysfreq} [ipgui::get_guiparamspec -name "SYSFREQ" -component [ipx::current_core] ]
+set_property tooltip {Main clock frequency of the core} [ipgui::get_guiparamspec -name "SYSFREQ" -component [ipx::current_core] ]
+set_property widget {comboBox} [ipgui::get_guiparamspec -name "SYSFREQ" -component [ipx::current_core] ]
+set_property value_format float [ipx::get_user_parameters SYSFREQ -of_objects [ipx::current_core]]
+set_property value_validation_type list [ipx::get_user_parameters SYSFREQ -of_objects [ipx::current_core]]
+ERROR: [IP_Flow 19-3452] Invalid long/float value '' specified for parameter 'Sysfreq(SYSFREQ)' for IP 'SpaceWire_light_AXI_0'.
+ERROR: [IP_Flow 19-3452] Invalid long/float value '' specified for parameter 'Sysfreq(SYSFREQ)' for IP 'SpaceWire_light_AXI_0'.
+ERROR: [IP_Flow 19-3452] Invalid long/float value '' specified for parameter 'Sysfreq(SYSFREQ)' for IP 'SpaceWire_light_AXI_0'.
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ERROR: [IP_Flow 19-350] User Parameter 'SYSFREQ (Sysfreq)': Missing default value
+WARNING: [IP_Flow 19-11889] HDL Parameter 'C_AXI_StreamOut_TDATA_WIDTH (C AXI StreamOut TDATA WIDTH)': Order is obsolete with XGUI version >= 2.0
+WARNING: [IP_Flow 19-11889] HDL Parameter 'C_AXI_StreamOut_START_COUNT (C AXI StreamOut START COUNT)': Order is obsolete with XGUI version >= 2.0
+WARNING: [IP_Flow 19-11889] HDL Parameter 'C_AXI_Register_DATA_WIDTH (C AXI Register DATA WIDTH)': Order is obsolete with XGUI version >= 2.0
+WARNING: [IP_Flow 19-11889] HDL Parameter 'C_AXI_Register_ADDR_WIDTH (C AXI Register ADDR WIDTH)': Order is obsolete with XGUI version >= 2.0
+WARNING: [IP_Flow 19-11889] HDL Parameter 'C_AXI_StreamIn_TDATA_WIDTH (C AXI StreamIn TDATA WIDTH)': Order is obsolete with XGUI version >= 2.0
+WARNING: [IP_Flow 19-11770] Clock interface 'AXI_StreamOut_CLK' has no FREQ_HZ parameter.
+WARNING: [IP_Flow 19-11770] Clock interface 'AXI_Register_CLK' has no FREQ_HZ parameter.
+WARNING: [IP_Flow 19-11770] Clock interface 'AXI_StreamIn_CLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-2181] Payment is not required for this core.
+WARNING: [IP_Flow 19-2187] The Product Guide file is missing.
+ERROR: [Ipptcl 7-1485] check_integrity: Integrity check failed.
+ERROR: [Common 17-39] 'ipx::check_integrity' failed due to earlier errors.
+ERROR: [IP_Flow 19-3452] Invalid long/float value '' specified for parameter 'Sysfreq(SYSFREQ)' for IP 'SpaceWire_light_AXI_0'.
+set_property widget {textEdit} [ipgui::get_guiparamspec -name "SYSFREQ" -component [ipx::current_core] ]
+set_property value 100.0e6 [ipx::get_user_parameters SYSFREQ -of_objects [ipx::current_core]]
+set_property value_validation_type range_float [ipx::get_user_parameters SYSFREQ -of_objects [ipx::current_core]]
+set_property value_validation_range_minimum 1000000.0 [ipx::get_user_parameters SYSFREQ -of_objects [ipx::current_core]]
+set_property value_validation_range_maximum 1.0E9 [ipx::get_user_parameters SYSFREQ -of_objects [ipx::current_core]]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::add_user_parameter TXCLKFREQ [ipx::current_core]
+set_property value_resolve_type user [ipx::get_user_parameters TXCLKFREQ -of_objects [ipx::current_core]]
+ipgui::add_param -name {TXCLKFREQ} -component [ipx::current_core]
+set_property display_name {Txclkfreq} [ipgui::get_guiparamspec -name "TXCLKFREQ" -component [ipx::current_core] ]
+set_property tooltip {Clock frequency of the transmitter. Needs to be the same, or multiple, of the transmitting bitrate.} [ipgui::get_guiparamspec -name "TXCLKFREQ" -component [ipx::current_core] ]
+set_property widget {textEdit} [ipgui::get_guiparamspec -name "TXCLKFREQ" -component [ipx::current_core] ]
+set_property value 100.0e6 [ipx::get_user_parameters TXCLKFREQ -of_objects [ipx::current_core]]
+set_property value_format float [ipx::get_user_parameters TXCLKFREQ -of_objects [ipx::current_core]]
+set_property value_validation_type range_float [ipx::get_user_parameters TXCLKFREQ -of_objects [ipx::current_core]]
+set_property value_validation_range_minimum 1000000.0 [ipx::get_user_parameters TXCLKFREQ -of_objects [ipx::current_core]]
+set_property value_validation_range_maximum 1.0E9 [ipx::get_user_parameters TXCLKFREQ -of_objects [ipx::current_core]]
+ipx::add_user_parameter TXCHUNK [ipx::current_core]
+set_property value_resolve_type user [ipx::get_user_parameters TXCHUNK -of_objects [ipx::current_core]]
+ipgui::add_param -name {TXCHUNK} -component [ipx::current_core]
+ipx::remove_user_parameter TXCHUNK [ipx::current_core]
+ipx::add_user_parameter RXCHUNK [ipx::current_core]
+set_property value_resolve_type user [ipx::get_user_parameters RXCHUNK -of_objects [ipx::current_core]]
+ipgui::add_param -name {RXCHUNK} -component [ipx::current_core]
+set_property display_name {Rxchunk} [ipgui::get_guiparamspec -name "RXCHUNK" -component [ipx::current_core] ]
+set_property tooltip {The number of bits, that can be received per main core clock.} [ipgui::get_guiparamspec -name "RXCHUNK" -component [ipx::current_core] ]
+set_property widget {comboBox} [ipgui::get_guiparamspec -name "RXCHUNK" -component [ipx::current_core] ]
+set_property value 1 [ipx::get_user_parameters RXCHUNK -of_objects [ipx::current_core]]
+set_property value_format long [ipx::get_user_parameters RXCHUNK -of_objects [ipx::current_core]]
+set_property value_validation_type list [ipx::get_user_parameters RXCHUNK -of_objects [ipx::current_core]]
+set_property value_validation_list {1 2 4 6} [ipx::get_user_parameters RXCHUNK -of_objects [ipx::current_core]]
+ipx::add_user_parameter RXFIFOSIZE_BITS [ipx::current_core]
+set_property value_resolve_type user [ipx::get_user_parameters RXFIFOSIZE_BITS -of_objects [ipx::current_core]]
+ipgui::add_param -name {RXFIFOSIZE_BITS} -component [ipx::current_core]
+set_property display_name {Rxfifosize Bits} [ipgui::get_guiparamspec -name "RXFIFOSIZE_BITS" -component [ipx::current_core] ]
+set_property tooltip {Adress size of the RX FIFO. FIFO size is 2^bits.} [ipgui::get_guiparamspec -name "RXFIFOSIZE_BITS" -component [ipx::current_core] ]
+set_property widget {textEdit} [ipgui::get_guiparamspec -name "RXFIFOSIZE_BITS" -component [ipx::current_core] ]
+set_property value 10 [ipx::get_user_parameters RXFIFOSIZE_BITS -of_objects [ipx::current_core]]
+set_property value_format long [ipx::get_user_parameters RXFIFOSIZE_BITS -of_objects [ipx::current_core]]
+set_property value_validation_type range_long [ipx::get_user_parameters RXFIFOSIZE_BITS -of_objects [ipx::current_core]]
+set_property value_validation_range_minimum 6 [ipx::get_user_parameters RXFIFOSIZE_BITS -of_objects [ipx::current_core]]
+set_property value_validation_range_maximum 16 [ipx::get_user_parameters RXFIFOSIZE_BITS -of_objects [ipx::current_core]]
+ipx::add_user_parameter TXFIFOSIZE_BITS [ipx::current_core]
+set_property value_resolve_type user [ipx::get_user_parameters TXFIFOSIZE_BITS -of_objects [ipx::current_core]]
+ipgui::add_param -name {TXFIFOSIZE_BITS} -component [ipx::current_core]
+set_property display_name {Txfifosize Bits} [ipgui::get_guiparamspec -name "TXFIFOSIZE_BITS" -component [ipx::current_core] ]
+set_property tooltip {Adress size of the TX FIFO. FIFO size is 2^bits.} [ipgui::get_guiparamspec -name "TXFIFOSIZE_BITS" -component [ipx::current_core] ]
+set_property widget {textEdit} [ipgui::get_guiparamspec -name "TXFIFOSIZE_BITS" -component [ipx::current_core] ]
+set_property value 10 [ipx::get_user_parameters TXFIFOSIZE_BITS -of_objects [ipx::current_core]]
+set_property value_format long [ipx::get_user_parameters TXFIFOSIZE_BITS -of_objects [ipx::current_core]]
+set_property value_validation_type range_long [ipx::get_user_parameters TXFIFOSIZE_BITS -of_objects [ipx::current_core]]
+set_property value_validation_range_minimum 2 [ipx::get_user_parameters TXFIFOSIZE_BITS -of_objects [ipx::current_core]]
+set_property value_validation_range_maximum 16 [ipx::get_user_parameters TXFIFOSIZE_BITS -of_objects [ipx::current_core]]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+WARNING: [IP_Flow 19-11889] HDL Parameter 'C_AXI_StreamOut_TDATA_WIDTH (C AXI StreamOut TDATA WIDTH)': Order is obsolete with XGUI version >= 2.0
+WARNING: [IP_Flow 19-11889] HDL Parameter 'C_AXI_StreamOut_START_COUNT (C AXI StreamOut START COUNT)': Order is obsolete with XGUI version >= 2.0
+WARNING: [IP_Flow 19-11889] HDL Parameter 'C_AXI_Register_DATA_WIDTH (C AXI Register DATA WIDTH)': Order is obsolete with XGUI version >= 2.0
+WARNING: [IP_Flow 19-11889] HDL Parameter 'C_AXI_Register_ADDR_WIDTH (C AXI Register ADDR WIDTH)': Order is obsolete with XGUI version >= 2.0
+WARNING: [IP_Flow 19-11889] HDL Parameter 'C_AXI_StreamIn_TDATA_WIDTH (C AXI StreamIn TDATA WIDTH)': Order is obsolete with XGUI version >= 2.0
+WARNING: [IP_Flow 19-11770] Clock interface 'AXI_StreamOut_CLK' has no FREQ_HZ parameter.
+WARNING: [IP_Flow 19-11770] Clock interface 'AXI_Register_CLK' has no FREQ_HZ parameter.
+WARNING: [IP_Flow 19-11770] Clock interface 'AXI_StreamIn_CLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-2181] Payment is not required for this core.
+WARNING: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2'
+create_bd_design "Test_Implementaiton"
+Wrote  : <F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\edit_SpaceWire_light_AXI_v0_2.srcs\sources_1\bd\Test_Implementaiton\Test_Implementaiton.bd> 
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+create_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:19 . Memory (MB): peak = 1962.414 ; gain = 0.000
+ERROR: [Common 17-39] 'create_bd_design' failed due to earlier errors.
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+startgroup
+create_bd_cell -type ip -vlnv IRS:RomeoOBDH:SpaceWire_light_AXI:0.2 SpaceWire_light_AXI_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+set_property location {0.5 -30 -26} [get_bd_cells processing_system7_0]
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+set_property location {713 -205} [get_bd_intf_ports DDR]
+set_property location {713 -177} [get_bd_intf_ports FIXED_IO]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/SpaceWire_light_AXI_0/AXI_Register} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins SpaceWire_light_AXI_0/AXI_Register]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Slave segment '/SpaceWire_light_AXI_0/AXI_Register/AXI_Register_reg' is being assigned into address space '/processing_system7_0/Data' at <0x43C0_0000 [ 64K ]>.
+set_property location {3 924 -46} [get_bd_cells SpaceWire_light_AXI_0]
+set_property location {2 696 -313} [get_bd_cells rst_ps7_0_100M]
+set_property location {2 670 -292} [get_bd_cells rst_ps7_0_100M]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0
+endgroup
+set_property location {3 1079 442} [get_bd_cells axi_dma_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_dma_0/S_AXI_LITE} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_dma_0/S_AXI_LITE]
+Slave segment '/axi_dma_0/S_AXI_LITE/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4040_0000 [ 64K ]>.
+connect_bd_intf_net [get_bd_intf_pins SpaceWire_light_AXI_0/AXI_StreamOut] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
+connect_bd_intf_net [get_bd_intf_pins SpaceWire_light_AXI_0/AXI_StreamIn] [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins SpaceWire_light_AXI_0/axi_streamin_aclk]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins SpaceWire_light_AXI_0/axi_streamout_aclk]
+endgroup
+validate_bd_design
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/axi_dma_0/Data_MM2S' to master interface '/axi_dma_0/M_AXI_MM2S'. Please either complete or remove this path to resolve.
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/axi_dma_0/Data_S2MM' to master interface '/axi_dma_0/M_AXI_S2MM'. Please either complete or remove this path to resolve.
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/axi_dma_0/Data_SG' to master interface '/axi_dma_0/M_AXI_SG'. Please either complete or remove this path to resolve.
+ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source: 
+/axi_dma_0/m_axi_sg_aclk
+
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+connect_bd_net [get_bd_pins axi_dma_0/m_axi_sg_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+validate_bd_design
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/axi_dma_0/Data_MM2S' to master interface '/axi_dma_0/M_AXI_MM2S'. Please either complete or remove this path to resolve.
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/axi_dma_0/Data_S2MM' to master interface '/axi_dma_0/M_AXI_S2MM'. Please either complete or remove this path to resolve.
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/axi_dma_0/Data_SG' to master interface '/axi_dma_0/M_AXI_SG'. Please either complete or remove this path to resolve.
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+startgroup
+set_property -dict [list CONFIG.c_single_interface.VALUE_SRC PROPAGATED CONFIG.c_s_axis_s2mm_tdata_width.VALUE_SRC PROPAGATED] [get_bd_cells axi_dma_0]
+set_property -dict [list \
+  CONFIG.c_enable_multi_channel {0} \
+  CONFIG.c_include_mm2s {1} \
+  CONFIG.c_include_s2mm {1} \
+  CONFIG.c_include_sg {1} \
+  CONFIG.c_m_axis_mm2s_tdata_width {32} \
+  CONFIG.c_micro_dma {0} \
+  CONFIG.c_mm2s_burst_size {16} \
+  CONFIG.c_s2mm_burst_size {16} \
+  CONFIG.c_sg_include_stscntrl_strm {0} \
+] [get_bd_cells axi_dma_0]
+endgroup
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+startgroup
+set_property -dict [list \
+  CONFIG.PCW_IRQ_F2P_INTR {1} \
+  CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} \
+  CONFIG.PCW_USE_AXI_NONSECURE {0} \
+  CONFIG.PCW_USE_DMA0 {1} \
+  CONFIG.PCW_USE_FABRIC_INTERRUPT {1} \
+] [get_bd_cells processing_system7_0]
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+endgroup
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+startgroup
+set_property -dict [list \
+  CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} \
+  CONFIG.PCW_USE_M_AXI_GP0 {0} \
+  CONFIG.PCW_USE_S_AXI_GP0 {1} \
+  CONFIG.PCW_USE_S_AXI_GP1 {1} \
+] [get_bd_cells processing_system7_0]
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [BD 41-1684] Pin /processing_system7_0/M_AXI_GP0_ACLK is now disabled. All connections to this pin have been removed. 
+delete_bd_objs [get_bd_intf_nets processing_system7_0_M_AXI_GP0]
+endgroup
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+startgroup
+set_property -dict [list \
+  CONFIG.PCW_USE_S_AXI_GP0 {0} \
+  CONFIG.PCW_USE_S_AXI_GP1 {0} \
+] [get_bd_cells processing_system7_0]
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+endgroup
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property CONFIG.PCW_USE_DMA0 {0} [get_bd_cells processing_system7_0]
+endgroup
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+startgroup
+set_property CONFIG.PCW_USE_AXI_NONSECURE {1} [get_bd_cells processing_system7_0]
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+endgroup
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+startgroup
+set_property -dict [list \
+  CONFIG.PCW_USE_AXI_NONSECURE {0} \
+  CONFIG.PCW_USE_S_AXI_GP0 {1} \
+] [get_bd_cells processing_system7_0]
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+endgroup
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+startgroup
+set_property -dict [list \
+  CONFIG.PCW_USE_S_AXI_GP0 {0} \
+  CONFIG.PCW_USE_S_AXI_HP0 {1} \
+] [get_bd_cells processing_system7_0]
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+endgroup
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+startgroup
+set_property -dict [list \
+  CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} \
+  CONFIG.PCW_USE_S_AXI_ACP {1} \
+  CONFIG.PCW_USE_S_AXI_HP0 {0} \
+] [get_bd_cells processing_system7_0]
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+endgroup
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+startgroup
+set_property -dict [list \
+  CONFIG.PCW_USE_S_AXI_ACP {0} \
+  CONFIG.PCW_USE_S_AXI_GP0 {1} \
+] [get_bd_cells processing_system7_0]
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+endgroup
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+startgroup
+set_property -dict [list \
+  CONFIG.PCW_USE_S_AXI_GP0 {0} \
+  CONFIG.PCW_USE_S_AXI_GP1 {1} \
+] [get_bd_cells processing_system7_0]
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+endgroup
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/axi_dma_0/M_AXI_MM2S} Slave {/processing_system7_0/S_AXI_GP1} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins processing_system7_0/S_AXI_GP1]
+Slave segment '/processing_system7_0/S_AXI_GP1/GP1_DDR_LOWOCM' is being assigned into address space '/axi_dma_0/Data_MM2S' at <0x0000_0000 [ 512M ]>.
+Slave segment '/processing_system7_0/S_AXI_GP1/GP1_QSPI_LINEAR' is being assigned into address space '/axi_dma_0/Data_MM2S' at <0xFC00_0000 [ 16M ]>.
+Slave segment '/processing_system7_0/S_AXI_GP1/GP1_IOP' is being assigned into address space '/axi_dma_0/Data_MM2S' at <0xE000_0000 [ 4M ]>.
+WARNING: [BD 41-1051] Slave segment '/processing_system7_0/S_AXI_GP1/GP1_IOP' with 'register' usage does not match address space '/axi_dma_0/Data_MM2S' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /processing_system7_0/S_AXI_GP1/GP1_IOP from address space /axi_dma_0/Data_MM2S.
+delete_bd_objs [get_bd_intf_nets axi_dma_0_M_AXI_MM2S]
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M02_AXI]
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M00_AXI]
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M01_AXI]
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+set_property location {3 1070 431} [get_bd_cells axi_dma_0]
+delete_bd_objs [get_bd_intf_nets SpaceWire_light_AXI_0_AXI_StreamOut] [get_bd_intf_nets axi_dma_0_M_AXIS_MM2S] [get_bd_cells axi_dma_0]
+delete_bd_objs [get_bd_cells SpaceWire_light_AXI_0]
+delete_bd_objs [get_bd_nets rst_ps7_0_100M_peripheral_aresetn] [get_bd_cells ps7_0_axi_periph]
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_RESET0_N] [get_bd_cells rst_ps7_0_100M]
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_CLK0] [get_bd_intf_nets processing_system7_0_DDR] [get_bd_intf_nets processing_system7_0_FIXED_IO] [get_bd_cells processing_system7_0]
+delete_bd_objs [get_bd_intf_ports DDR]
+delete_bd_objs [get_bd_intf_ports FIXED_IO]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+create_bd_cell -type ip -vlnv IRS:RomeoOBDH:SpaceWire_light_AXI:0.2 SpaceWire_light_AXI_0
+endgroup
+set_property location {2.5 796 -621} [get_bd_cells SpaceWire_light_AXI_0]
+set_property location {2.5 992 -626} [get_bd_cells SpaceWire_light_AXI_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_interconnect_0
+endgroup
+connect_bd_intf_net [get_bd_intf_pins processing_system7_0/M_AXI_GP0] -boundary_type upper [get_bd_intf_pins axi_interconnect_0/S00_AXI]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M00_AXI] [get_bd_intf_pins SpaceWire_light_AXI_0/AXI_Register]
+set_property location {2.5 633 -279} [get_bd_cells axi_interconnect_0]
+set_property location {2 626 -240} [get_bd_cells axi_interconnect_0]
+set_property location {2 665 -185} [get_bd_cells axi_interconnect_0]
+set_property location {3 1096 -173} [get_bd_cells SpaceWire_light_AXI_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0
+endgroup
+set_property location {2 602 116} [get_bd_cells axi_dma_0]
+connect_bd_intf_net [get_bd_intf_pins axi_dma_0/S_AXIS_STS] [get_bd_intf_pins SpaceWire_light_AXI_0/AXI_StreamOut]
+delete_bd_objs [get_bd_intf_nets SpaceWire_light_AXI_0_AXI_StreamOut]
+connect_bd_intf_net [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM] [get_bd_intf_pins SpaceWire_light_AXI_0/AXI_StreamOut]
+connect_bd_intf_net [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S] [get_bd_intf_pins SpaceWire_light_AXI_0/AXI_StreamIn]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_dma_0/S_AXI_LITE} ddr_seg {Auto} intc_ip {/axi_interconnect_0} master_apm {0}}  [get_bd_intf_pins axi_dma_0/S_AXI_LITE]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Slave segment '/axi_dma_0/S_AXI_LITE/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4040_0000 [ 64K ]>.
+INFO: [BD 5-455] Automation on '/axi_interconnect_0/ACLK' will not be run, since it is obsolete due to previously run automations
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins axi_interconnect_0/M00_ACLK]
+INFO: [BD 5-455] Automation on '/axi_interconnect_0/S00_ACLK' will not be run, since it is obsolete due to previously run automations
+INFO: [BD 5-455] Automation on '/processing_system7_0/M_AXI_GP0_ACLK' will not be run, since it is obsolete due to previously run automations
+INFO: [BD 5-455] Automation on '/SpaceWire_light_AXI_0/axi_register_aclk' will not be run, since it is obsolete due to previously run automations
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins SpaceWire_light_AXI_0/axi_streamin_aclk]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins SpaceWire_light_AXI_0/axi_streamout_aclk]
+endgroup
+set_property location {3.5 1488 -7} [get_bd_cells SpaceWire_light_AXI_0]
+delete_bd_objs [get_bd_intf_nets axi_interconnect_0_M00_AXI] [get_bd_intf_nets axi_dma_0_M_AXIS_MM2S] [get_bd_intf_nets SpaceWire_light_AXI_0_AXI_StreamOut] [get_bd_cells SpaceWire_light_AXI_0]
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_RESET0_N] [get_bd_cells rst_ps7_0_100M]
+delete_bd_objs [get_bd_nets rst_ps7_0_100M_peripheral_aresetn] [get_bd_intf_nets processing_system7_0_M_AXI_GP0] [get_bd_intf_nets axi_interconnect_0_M01_AXI] [get_bd_cells axi_interconnect_0]
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+startgroup
+set_property -dict [list \
+  CONFIG.PCW_S_AXI_HP0_DATA_WIDTH {32} \
+  CONFIG.PCW_USE_S_AXI_GP0 {0} \
+  CONFIG.PCW_USE_S_AXI_HP0 {1} \
+] [get_bd_cells processing_system7_0]
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+endgroup
+delete_bd_objs [get_bd_cells axi_dma_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_dma_0/S_AXI_LITE} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_dma_0/S_AXI_LITE]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Slave segment '/axi_dma_0/S_AXI_LITE/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4040_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/axi_dma_0/M_AXI_MM2S} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins processing_system7_0/S_AXI_HP0]
+Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/axi_dma_0/Data_MM2S' at <0x0000_0000 [ 512M ]>.
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/axi_dma_0/M_AXI_S2MM} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {/axi_mem_intercon} master_apm {0}}  [get_bd_intf_pins axi_dma_0/M_AXI_S2MM]
+INFO: [BD 41-3093] Triggering Legacy Auto Assign Algorithm
+Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/axi_dma_0/Data_S2MM' at <0x0000_0000 [ 512M ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/axi_dma_0/M_AXI_SG} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {/axi_mem_intercon} master_apm {0}}  [get_bd_intf_pins axi_dma_0/M_AXI_SG]
+INFO: [BD 41-3093] Triggering Legacy Auto Assign Algorithm
+Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/axi_dma_0/Data_SG' at <0x0000_0000 [ 512M ]>.
+endgroup
+startgroup
+set_property CONFIG.c_include_sg {0} [get_bd_cells axi_dma_0]
+WARNING: [BD 41-1684] Pin /axi_dma_0/m_axi_sg_aclk is now disabled. All connections to this pin have been removed. 
+delete_bd_objs [get_bd_intf_nets axi_dma_0_M_AXI_SG]
+endgroup
+startgroup
+set_property -dict [list \
+  CONFIG.NUM_MI {1} \
+  CONFIG.NUM_SI {2} \
+] [get_bd_cells axi_mem_intercon]
+endgroup
+set_property  ip_repo_paths  f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2 [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2'.
+validate_bd_design
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [xilinx.com:ip:axi_dma:7.1-11] /axi_dma_0
+                   #################################### 
+                   S_AXIS_S2MM interface is unconnected
+                   ####################################
+validate_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2454.012 ; gain = 0.070
+synth_design -top SpaceWire_light_AXI -part xc7z020clg484-1 -lint 
+Command: synth_design -top SpaceWire_light_AXI -part xc7z020clg484-1 -lint
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4124
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2884.344 ; gain = 414.707
+---------------------------------------------------------------------------------
+Clean up Linter database...
+INFO: [Synth 8-638] synthesizing module 'SpaceWire_light_AXI' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:74]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:5' bound to instance 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register_inst' of component 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:141]
+INFO: [Synth 8-638] synthesizing module 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:86]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-226] default block is never used [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:226]
+WARNING: [Synth 8-6014] Unused sequential element axi_awaddr_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:166]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg0_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:216]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg1_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:217]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg4_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:220]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg5_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:221]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg6_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:222]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg7_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:223]
+WARNING: [Synth 8-6014] Unused sequential element axi_araddr_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:329]
+INFO: [Synth 8-256] done synthesizing module 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register' (1#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:86]
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:5' bound to instance 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn_inst' of component 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:38]
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-226] default block is never used [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:94]
+WARNING: [Synth 8-6014] Unused sequential element write_pointer_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:133]
+WARNING: [Synth 8-6014] Unused sequential element FIFO_GEN[0].stream_data_fifo_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element FIFO_GEN[1].stream_data_fifo_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element FIFO_GEN[2].stream_data_fifo_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element FIFO_GEN[3].stream_data_fifo_reg was removed. 
+INFO: [Synth 8-256] done synthesizing module 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn' (2#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:38]
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_START_COUNT bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:5' bound to instance 'SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut_inst' of component 'SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:186]
+INFO: [Synth 8-638] synthesizing module 'SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:40]
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_START_COUNT bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut' (3#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'SpaceWire_light_AXI' (4#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:74]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2994.594 ; gain = 524.957
+---------------------------------------------------------------------------------
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Thu Aug 22 13:46:39 2024
+| Host         : DESKTOP-MEH5DGT running 64-bit major release  (build 9200)
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+RTL Linter Report
+
+Table of Contents
+-----------------
+1. Summary
+
+1. Summary
+----------
+
++-----------+----------+--------------+----------+
+| Rule ID   | Severity | # Violations | # Waived |
++-----------+----------+--------------+----------+
+| ASSIGN-5  | WARNING  | 1            | 0        |
+| ASSIGN-10 | WARNING  | 3            | 0        |
++-----------+----------+--------------+----------+
+
+
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'S_AXI_ARPROT' are not read. First unread bit index is 0. 
+RTL Name 'S_AXI_ARPROT', Hierarchy 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register', File 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd', Line 65.
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'S_AXI_AWPROT' are not read. First unread bit index is 0. 
+RTL Name 'S_AXI_AWPROT', Hierarchy 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register', File 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd', Line 32.
+WARNING: [Synth 37-95] [ASSIGN-5]Found scalar variable(s) 'fifo_full_flag' declared and are not set.
+RTL Name 'fifo_full_flag', Hierarchy 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn', File 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd', Line 75.
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'S_AXIS_TSTRB' are not read. First unread bit index is 0. 
+RTL Name 'S_AXIS_TSTRB', Hierarchy 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn', File 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd', Line 30.
+INFO: [Synth 37-85] Total of 4 linter message(s) generated.
+INFO: [Synth 37-45] Linter Run Finished!
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 3012.520 ; gain = 542.883
+INFO: [Common 17-83] Releasing license: Synthesis
+20 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 3012.520 ; gain = 557.539
+save_bd_design
+Wrote  : <F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\edit_SpaceWire_light_AXI_v0_2.srcs\sources_1\bd\Test_Implementaiton\Test_Implementaiton.bd> 
+Wrote  : <F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/sources_1/bd/Test_Implementaiton/ui/bd_c57dc135.ui> 
+synth_design -top SpaceWire_light_AXI -part xc7z020clg484-1 -lint 
+Command: synth_design -top SpaceWire_light_AXI -part xc7z020clg484-1 -lint
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3025.039 ; gain = 0.000
+---------------------------------------------------------------------------------
+Clean up Linter database...
+INFO: [Synth 8-638] synthesizing module 'SpaceWire_light_AXI' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:74]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:5' bound to instance 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register_inst' of component 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:141]
+INFO: [Synth 8-638] synthesizing module 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:86]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-226] default block is never used [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:226]
+WARNING: [Synth 8-6014] Unused sequential element axi_awaddr_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:166]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg0_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:216]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg1_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:217]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg4_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:220]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg5_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:221]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg6_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:222]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg7_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:223]
+WARNING: [Synth 8-6014] Unused sequential element axi_araddr_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:329]
+INFO: [Synth 8-256] done synthesizing module 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register' (1#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:86]
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:5' bound to instance 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn_inst' of component 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:38]
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-226] default block is never used [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:94]
+WARNING: [Synth 8-6014] Unused sequential element write_pointer_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:133]
+WARNING: [Synth 8-6014] Unused sequential element FIFO_GEN[0].stream_data_fifo_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element FIFO_GEN[1].stream_data_fifo_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element FIFO_GEN[2].stream_data_fifo_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element FIFO_GEN[3].stream_data_fifo_reg was removed. 
+INFO: [Synth 8-256] done synthesizing module 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn' (2#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:38]
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_START_COUNT bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:5' bound to instance 'SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut_inst' of component 'SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:186]
+INFO: [Synth 8-638] synthesizing module 'SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:40]
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_START_COUNT bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut' (3#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'SpaceWire_light_AXI' (4#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:74]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3025.039 ; gain = 0.000
+---------------------------------------------------------------------------------
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Thu Aug 22 13:47:13 2024
+| Host         : DESKTOP-MEH5DGT running 64-bit major release  (build 9200)
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+RTL Linter Report
+
+Table of Contents
+-----------------
+1. Summary
+
+1. Summary
+----------
+
++-----------+----------+--------------+----------+
+| Rule ID   | Severity | # Violations | # Waived |
++-----------+----------+--------------+----------+
+| ASSIGN-5  | WARNING  | 1            | 0        |
+| ASSIGN-10 | WARNING  | 3            | 0        |
++-----------+----------+--------------+----------+
+
+
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'S_AXI_ARPROT' are not read. First unread bit index is 0. 
+RTL Name 'S_AXI_ARPROT', Hierarchy 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register', File 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd', Line 65.
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'S_AXI_AWPROT' are not read. First unread bit index is 0. 
+RTL Name 'S_AXI_AWPROT', Hierarchy 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register', File 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd', Line 32.
+WARNING: [Synth 37-95] [ASSIGN-5]Found scalar variable(s) 'fifo_full_flag' declared and are not set.
+RTL Name 'fifo_full_flag', Hierarchy 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn', File 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd', Line 75.
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'S_AXIS_TSTRB' are not read. First unread bit index is 0. 
+RTL Name 'S_AXIS_TSTRB', Hierarchy 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn', File 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd', Line 30.
+INFO: [Synth 37-85] Total of 4 linter message(s) generated.
+INFO: [Synth 37-45] Linter Run Finished!
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3025.039 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Synthesis
+18 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3025.039 ; gain = 0.000
+launch_runs synth_1 -jobs 12
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+[Thu Aug 22 13:47:21 2024] Launched synth_1...
+Run output will be captured here: F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 12
+[Thu Aug 22 13:48:27 2024] Launched impl_1...
+Run output will be captured here: F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Thu Aug 22 13:49:49 2024] Launched impl_1...
+Run output will be captured here: F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/impl_1/runme.log
+set_property location {1 305 164} [get_bd_cells rst_ps7_0_100M]
+set_property location {1.5 805 -50} [get_bd_cells ps7_0_axi_periph]
+set_property location {2 818 -65} [get_bd_cells ps7_0_axi_periph]
+set_property location {2 799 -88} [get_bd_cells ps7_0_axi_periph]
+set_property location {2 864 -338} [get_bd_cells axi_dma_0]
+set_property location {2.5 941 -733} [get_bd_cells axi_mem_intercon]
+set_property location {3.5 1103 -292} [get_bd_cells axi_mem_intercon]
+set_property location {3 1095 -323} [get_bd_cells axi_mem_intercon]
+startgroup
+create_bd_cell -type ip -vlnv IRS:RomeoOBDH:SpaceWire_light_AXI:0.2 SpaceWire_light_AXI_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/SpaceWire_light_AXI_0/AXI_Register} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins SpaceWire_light_AXI_0/AXI_Register]
+Slave segment '/SpaceWire_light_AXI_0/AXI_Register/AXI_Register_reg' is being assigned into address space '/processing_system7_0/Data' at <0x43C0_0000 [ 64K ]>.
+connect_bd_intf_net [get_bd_intf_pins SpaceWire_light_AXI_0/AXI_StreamIn] [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S]
+connect_bd_intf_net [get_bd_intf_pins SpaceWire_light_AXI_0/AXI_StreamOut] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
+connect_bd_net [get_bd_pins SpaceWire_light_AXI_0/axi_streamout_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins SpaceWire_light_AXI_0/axi_streamin_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins SpaceWire_light_AXI_0/axi_streamout_aresetn] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]
+connect_bd_net [get_bd_pins SpaceWire_light_AXI_0/axi_streamin_aresetn] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]
+set_property location {2 603 -72} [get_bd_cells ps7_0_axi_periph]
+save_bd_design
+Wrote  : <F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\edit_SpaceWire_light_AXI_v0_2.srcs\sources_1\bd\Test_Implementaiton\Test_Implementaiton.bd> 
+Wrote  : <F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/sources_1/bd/Test_Implementaiton/ui/bd_c57dc135.ui> 
+synth_design -top SpaceWire_light_AXI -part xc7z020clg484-1 -lint 
+Command: synth_design -top SpaceWire_light_AXI -part xc7z020clg484-1 -lint
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3032.859 ; gain = 0.000
+---------------------------------------------------------------------------------
+Clean up Linter database...
+INFO: [Synth 8-638] synthesizing module 'SpaceWire_light_AXI' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:74]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:5' bound to instance 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register_inst' of component 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:141]
+INFO: [Synth 8-638] synthesizing module 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:86]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-226] default block is never used [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:226]
+WARNING: [Synth 8-6014] Unused sequential element axi_awaddr_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:166]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg0_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:216]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg1_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:217]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg4_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:220]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg5_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:221]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg6_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:222]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg7_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:223]
+WARNING: [Synth 8-6014] Unused sequential element axi_araddr_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:329]
+INFO: [Synth 8-256] done synthesizing module 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register' (1#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:86]
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:5' bound to instance 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn_inst' of component 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:38]
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-226] default block is never used [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:94]
+WARNING: [Synth 8-6014] Unused sequential element write_pointer_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:133]
+WARNING: [Synth 8-6014] Unused sequential element FIFO_GEN[0].stream_data_fifo_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element FIFO_GEN[1].stream_data_fifo_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element FIFO_GEN[2].stream_data_fifo_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element FIFO_GEN[3].stream_data_fifo_reg was removed. 
+INFO: [Synth 8-256] done synthesizing module 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn' (2#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:38]
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_START_COUNT bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:5' bound to instance 'SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut_inst' of component 'SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:186]
+INFO: [Synth 8-638] synthesizing module 'SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:40]
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_START_COUNT bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut' (3#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'SpaceWire_light_AXI' (4#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:74]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3037.457 ; gain = 4.598
+---------------------------------------------------------------------------------
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Thu Aug 22 13:52:53 2024
+| Host         : DESKTOP-MEH5DGT running 64-bit major release  (build 9200)
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+RTL Linter Report
+
+Table of Contents
+-----------------
+1. Summary
+
+1. Summary
+----------
+
++-----------+----------+--------------+----------+
+| Rule ID   | Severity | # Violations | # Waived |
++-----------+----------+--------------+----------+
+| ASSIGN-5  | WARNING  | 1            | 0        |
+| ASSIGN-10 | WARNING  | 3            | 0        |
++-----------+----------+--------------+----------+
+
+
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'S_AXI_ARPROT' are not read. First unread bit index is 0. 
+RTL Name 'S_AXI_ARPROT', Hierarchy 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register', File 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd', Line 65.
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'S_AXI_AWPROT' are not read. First unread bit index is 0. 
+RTL Name 'S_AXI_AWPROT', Hierarchy 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register', File 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd', Line 32.
+WARNING: [Synth 37-95] [ASSIGN-5]Found scalar variable(s) 'fifo_full_flag' declared and are not set.
+RTL Name 'fifo_full_flag', Hierarchy 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn', File 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd', Line 75.
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'S_AXIS_TSTRB' are not read. First unread bit index is 0. 
+RTL Name 'S_AXIS_TSTRB', Hierarchy 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn', File 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd', Line 30.
+INFO: [Synth 37-85] Total of 4 linter message(s) generated.
+INFO: [Synth 37-45] Linter Run Finished!
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3055.348 ; gain = 22.488
+INFO: [Common 17-83] Releasing license: Synthesis
+18 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3055.348 ; gain = 22.488
+reset_run synth_1
+INFO: [Project 1-1160] Copying file F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/synth_1/SpaceWire_light_AXI.dcp to F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/utils_1/imports/synth_1 and adding it to utils fileset
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:]
+launch_runs synth_1 -jobs 12
+[Thu Aug 22 13:53:03 2024] Launched synth_1...
+Run output will be captured here: F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/synth_1/runme.log
+ERROR: [Common 17-180] Spawn failed: No error

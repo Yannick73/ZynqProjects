@@ -1,0 +1,12 @@
+verilog xil_defaultlib --include "F:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" --include "../../../../edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/ec67/hdl" --include "../../../../edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/b28c/hdl" \
+"../../../bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/sim/Test_Implementaiton_processing_system7_0_1.v" \
+"../../../bd/Test_Implementaiton/ip/Test_Implementaiton_xbar_3/sim/Test_Implementaiton_xbar_3.v" \
+"../../../bd/Test_Implementaiton/ip/Test_Implementaiton_xbar_2/sim/Test_Implementaiton_xbar_2.v" \
+"../../../bd/Test_Implementaiton/ip/Test_Implementaiton_xlconcat_0_0/sim/Test_Implementaiton_xlconcat_0_0.v" \
+"../../../bd/Test_Implementaiton/ip/Test_Implementaiton_auto_pc_0/sim/Test_Implementaiton_auto_pc_0.v" \
+"../../../bd/Test_Implementaiton/ip/Test_Implementaiton_auto_pc_1/sim/Test_Implementaiton_auto_pc_1.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

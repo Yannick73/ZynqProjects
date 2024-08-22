@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Aug 22 11:34:14 2024
+# Process ID: 16260
+# Current directory: F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI_old
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25004 F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI_old\edit_SpaceWire_light_AXI_v0_1.xpr
+# Log file: F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI_old/vivado.log
+# Journal file: F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI_old\vivado.jou
+# Running On        :DESKTOP-MEH5DGT
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :AMD Ryzen 5 3600 6-Core Processor              
+# CPU Frequency     :3593 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :17100 MB
+# Swap memory       :4294 MB
+# Total Virtual     :21395 MB
+# Available Virtual :9777 MB
+#-----------------------------------------------------------
+start_gui
+open_project F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI_old/edit_SpaceWire_light_AXI_v0_1.xpr
+update_compile_order -fileset sources_1
+ipx::open_ipxact_file {F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI_old\SpaceWire_light_AXI_0_1\component.xml}

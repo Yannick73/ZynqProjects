@@ -1,0 +1,555 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Aug 22 13:54:51 2024
+# Process ID: 3896
+# Current directory: F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24332 F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\edit_SpaceWire_light_AXI_v0_2.xpr
+# Log file: F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/vivado.log
+# Journal file: F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI\vivado.jou
+# Running On        :DESKTOP-MEH5DGT
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :AMD Ryzen 5 3600 6-Core Processor              
+# CPU Frequency     :3593 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :17100 MB
+# Swap memory       :4294 MB
+# Total Virtual     :21395 MB
+# Available Virtual :7042 MB
+#-----------------------------------------------------------
+start_gui
+open_project F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.3/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.2/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.2/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at F:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/SpwRamReset_pkg.vhd'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2024.1/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:11 . Memory (MB): peak = 1644.770 ; gain = 522.359
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/utils_1/imports/synth_1/SpaceWire_light_AXI.dcp with file F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/synth_1/SpaceWire_light_AXI.dcp
+launch_runs synth_1 -jobs 12
+[Thu Aug 22 13:55:30 2024] Launched synth_1...
+Run output will be captured here: F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 12
+[Thu Aug 22 13:56:12 2024] Launched impl_1...
+Run output will be captured here: F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Device 21-9227] Part: xc7z020clg484-1 does not have CEAM library.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2070.652 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2163.160 ; gain = 0.266
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2163.781 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2168.074 ; gain = 4.293
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2168.555 ; gain = 0.211
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2168.555 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.118 . Memory (MB): peak = 2170.527 ; gain = 1.973
+Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.149 . Memory (MB): peak = 2170.527 ; gain = 6.746
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.149 . Memory (MB): peak = 2170.527 ; gain = 6.746
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2574.379 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 2673.566 ; gain = 995.969
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+open_bd_design {F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/sources_1/bd/Test_Implementaiton/Test_Implementaiton.bd}
+Reading block design file <F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/sources_1/bd/Test_Implementaiton/Test_Implementaiton.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+WARNING: [BD 41-1282] Parameter 'HAS_BURST' is not defined on '/axi_dma_0/M_AXIS_MM2S'. Parameter ignored.
+WARNING: [BD 41-1282] Parameter 'HAS_BURST' is not defined on '/axi_dma_0/M_AXIS_MM2S'. Parameter ignored.
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- IRS:RomeoOBDH:SpaceWire_light_AXI:0.2 - SpaceWire_light_AXI_0
+Successfully read diagram <Test_Implementaiton> from block design file <F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/sources_1/bd/Test_Implementaiton/Test_Implementaiton.bd>
+open_bd_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2910.898 ; gain = 125.375
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list \
+  CONFIG.PCW_IRQ_F2P_INTR {1} \
+  CONFIG.PCW_USE_FABRIC_INTERRUPT {1} \
+] [get_bd_cells processing_system7_0]
+endgroup
+ipx::open_ipxact_file {F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\component.xml}
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SpwXmit_fast_pkg.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SpwXmit_fast.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecovClk.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/SpwProtocol_pkg.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/SpwRegisters_pkg.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SyncDff.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/SpwRamReset_pkg.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwLink.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecv.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwReset.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFront_pkg.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream_pkg.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRam.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/sources_1/bd/Test_Implementaiton/Test_Implementaiton.bd'.
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SpwXmit_fast_pkg.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SpwXmit_fast.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecovClk.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/SpwProtocol_pkg.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/SpwRegisters_pkg.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SyncDff.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/SpwRamReset_pkg.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwLink.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecv.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwReset.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFront_pkg.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream_pkg.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRam.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/sources_1/bd/Test_Implementaiton/Test_Implementaiton.bd'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'TX_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-3166] Bus Interface 'AXI_Register': References existing memory map 'AXI_Register'.
+ipx::merge_project_changes ports [ipx::current_core]
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SpwXmit_fast_pkg.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SpwXmit_fast.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecovClk.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/SpwProtocol_pkg.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/SpwRegisters_pkg.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SyncDff.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/SpwRamReset_pkg.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwLink.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecv.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwReset.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFront_pkg.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream_pkg.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRam.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/sources_1/bd/Test_Implementaiton/Test_Implementaiton.bd'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'IRQ' of definition 'xilinx.com:signal:interrupt:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-3166] Bus Interface 'AXI_Register': References existing memory map 'AXI_Register'.
+INFO: [IP_Flow 19-4728] Bus Interface 'IRQ': Added interface parameter 'SENSITIVITY' with value 'LEVEL_HIGH'.
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 4 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+WARNING: [IP_Flow 19-11889] HDL Parameter 'C_AXI_StreamOut_TDATA_WIDTH (C AXI StreamOut TDATA WIDTH)': Order is obsolete with XGUI version >= 2.0
+WARNING: [IP_Flow 19-11889] HDL Parameter 'C_AXI_StreamOut_START_COUNT (C AXI StreamOut START COUNT)': Order is obsolete with XGUI version >= 2.0
+WARNING: [IP_Flow 19-11889] HDL Parameter 'C_AXI_Register_DATA_WIDTH (C AXI Register DATA WIDTH)': Order is obsolete with XGUI version >= 2.0
+WARNING: [IP_Flow 19-11889] HDL Parameter 'C_AXI_Register_ADDR_WIDTH (C AXI Register ADDR WIDTH)': Order is obsolete with XGUI version >= 2.0
+WARNING: [IP_Flow 19-11889] HDL Parameter 'C_AXI_StreamIn_TDATA_WIDTH (C AXI StreamIn TDATA WIDTH)': Order is obsolete with XGUI version >= 2.0
+WARNING: [IP_Flow 19-11770] Clock interface 'AXI_StreamOut_CLK' has no FREQ_HZ parameter.
+WARNING: [IP_Flow 19-11770] Clock interface 'AXI_Register_CLK' has no FREQ_HZ parameter.
+WARNING: [IP_Flow 19-11770] Clock interface 'AXI_StreamIn_CLK' has no FREQ_HZ parameter.
+WARNING: [IP_Flow 19-5661] Bus Interface 'TX_clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'TX_clk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-2181] Payment is not required for this core.
+WARNING: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2'
+synth_design -top SpaceWire_light_AXI -part xc7z020clg484-1 -lint 
+Command: synth_design -top SpaceWire_light_AXI -part xc7z020clg484-1 -lint
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 15484
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 3991.133 ; gain = 0.000
+---------------------------------------------------------------------------------
+Clean up Linter database...
+INFO: [Synth 8-638] synthesizing module 'SpaceWire_light_AXI' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:83]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:5' bound to instance 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register_inst' of component 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:150]
+INFO: [Synth 8-638] synthesizing module 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:86]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-226] default block is never used [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:226]
+WARNING: [Synth 8-6014] Unused sequential element axi_awaddr_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:166]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg0_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:216]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg1_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:217]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg4_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:220]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg5_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:221]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg6_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:222]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg7_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:223]
+WARNING: [Synth 8-6014] Unused sequential element axi_araddr_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:329]
+INFO: [Synth 8-256] done synthesizing module 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register' (1#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:86]
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:5' bound to instance 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn_inst' of component 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:180]
+INFO: [Synth 8-638] synthesizing module 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:38]
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-226] default block is never used [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:94]
+WARNING: [Synth 8-6014] Unused sequential element write_pointer_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:133]
+WARNING: [Synth 8-6014] Unused sequential element FIFO_GEN[0].stream_data_fifo_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element FIFO_GEN[1].stream_data_fifo_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element FIFO_GEN[2].stream_data_fifo_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element FIFO_GEN[3].stream_data_fifo_reg was removed. 
+INFO: [Synth 8-256] done synthesizing module 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn' (2#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:38]
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_START_COUNT bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:5' bound to instance 'SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut_inst' of component 'SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:195]
+INFO: [Synth 8-638] synthesizing module 'SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:40]
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_START_COUNT bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut' (3#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:40]
+WARNING: [Synth 8-3848] Net IRQ in module/entity SpaceWire_light_AXI does not have driver. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:27]
+WARNING: [Synth 8-3848] Net SPW_Dout in module/entity SpaceWire_light_AXI does not have driver. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:29]
+WARNING: [Synth 8-3848] Net SPW_Sout in module/entity SpaceWire_light_AXI does not have driver. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'SpaceWire_light_AXI' (4#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:83]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 3991.133 ; gain = 0.000
+---------------------------------------------------------------------------------
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Thu Aug 22 14:36:07 2024
+| Host         : DESKTOP-MEH5DGT running 64-bit major release  (build 9200)
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+RTL Linter Report
+
+Table of Contents
+-----------------
+1. Summary
+
+1. Summary
+----------
+
++-----------+----------+--------------+----------+
+| Rule ID   | Severity | # Violations | # Waived |
++-----------+----------+--------------+----------+
+| ASSIGN-5  | WARNING  | 1            | 0        |
+| ASSIGN-9  | WARNING  | 3            | 0        |
+| ASSIGN-10 | WARNING  | 6            | 0        |
++-----------+----------+--------------+----------+
+
+
+WARNING: [Synth 37-126] [ASSIGN-9]Some bits in IO 'IRQ' are not set. First unset bit index is 0. 
+RTL Name 'IRQ', Hierarchy 'SpaceWire_light_AXI', File 'SpaceWire_light_AXI.vhd', Line 27.
+WARNING: [Synth 37-126] [ASSIGN-9]Some bits in IO 'SPW_Dout' are not set. First unset bit index is 0. 
+RTL Name 'SPW_Dout', Hierarchy 'SpaceWire_light_AXI', File 'SpaceWire_light_AXI.vhd', Line 29.
+WARNING: [Synth 37-126] [ASSIGN-9]Some bits in IO 'SPW_Sout' are not set. First unset bit index is 0. 
+RTL Name 'SPW_Sout', Hierarchy 'SpaceWire_light_AXI', File 'SpaceWire_light_AXI.vhd', Line 30.
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'SPW_Din' are not read. First unread bit index is 0. 
+RTL Name 'SPW_Din', Hierarchy 'SpaceWire_light_AXI', File 'SpaceWire_light_AXI.vhd', Line 31.
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'SPW_Sin' are not read. First unread bit index is 0. 
+RTL Name 'SPW_Sin', Hierarchy 'SpaceWire_light_AXI', File 'SpaceWire_light_AXI.vhd', Line 32.
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'TX_clk' are not read. First unread bit index is 0. 
+RTL Name 'TX_clk', Hierarchy 'SpaceWire_light_AXI', File 'SpaceWire_light_AXI.vhd', Line 34.
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'S_AXI_ARPROT' are not read. First unread bit index is 0. 
+RTL Name 'S_AXI_ARPROT', Hierarchy 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register', File 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd', Line 65.
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'S_AXI_AWPROT' are not read. First unread bit index is 0. 
+RTL Name 'S_AXI_AWPROT', Hierarchy 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register', File 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd', Line 32.
+WARNING: [Synth 37-95] [ASSIGN-5]Found scalar variable(s) 'fifo_full_flag' declared and are not set.
+RTL Name 'fifo_full_flag', Hierarchy 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn', File 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd', Line 75.
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'S_AXIS_TSTRB' are not read. First unread bit index is 0. 
+RTL Name 'S_AXIS_TSTRB', Hierarchy 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn', File 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd', Line 30.
+INFO: [Synth 37-85] Total of 10 linter message(s) generated.
+INFO: [Synth 37-45] Linter Run Finished!
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 3991.133 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Synthesis
+20 Infos, 28 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3991.133 ; gain = 0.000
+report_ip_status -name ip_status 
+upgrade_ip -vlnv IRS:RomeoOBDH:SpaceWire_light_AXI:0.2 [get_ips  Test_Implementaiton_SpaceWire_light_AXI_0_2] -log ip_upgrade.log
+Upgrading 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/sources_1/bd/Test_Implementaiton/Test_Implementaiton.bd'
+INFO: [IP_Flow 19-3422] Upgraded Test_Implementaiton_SpaceWire_light_AXI_0_2 (SpaceWire_light_AXI_v0.2 0.2) from revision 3 to revision 4
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'IRQ'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'SPW_Din'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'SPW_Dout'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'SPW_Sin'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'SPW_Sout'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'TX_clk'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'Test_Implementaiton_SpaceWire_light_AXI_0_2'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'Test_Implementaiton_SpaceWire_light_AXI_0_2' has identified issues that may require user intervention. Please review the upgrade log 'f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\edit_SpaceWire_light_AXI_v0_2.srcs\sources_1\bd\Test_Implementaiton\Test_Implementaiton.bd> 
+Wrote  : <F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/sources_1/bd/Test_Implementaiton/ui/bd_c57dc135.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips Test_Implementaiton_SpaceWire_light_AXI_0_2] -no_script -sync -force -quiet
+generate_target all [get_files  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/sources_1/bd/Test_Implementaiton/Test_Implementaiton.bd]
+ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source: 
+/SpaceWire_light_AXI_0/TX_clk
+
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/sources_1/bd/Test_Implementaiton/Test_Implementaiton.bd 
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+connect_bd_net [get_bd_pins SpaceWire_light_AXI_0/TX_clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins SpaceWire_light_AXI_0/IRQ] [get_bd_pins processing_system7_0/IRQ_F2P]
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/utils_1/imports/synth_1/SpaceWire_light_AXI.dcp with file F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/synth_1/SpaceWire_light_AXI.dcp
+save_bd_design
+Wrote  : <F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\edit_SpaceWire_light_AXI_v0_2.srcs\sources_1\bd\Test_Implementaiton\Test_Implementaiton.bd> 
+Wrote  : <F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/sources_1/bd/Test_Implementaiton/ui/bd_c57dc135.ui> 
+launch_runs impl_1 -jobs 12
+[Thu Aug 22 14:37:42 2024] Launched synth_1...
+Run output will be captured here: F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/synth_1/runme.log
+[Thu Aug 22 14:37:42 2024] Launched impl_1...
+Run output will be captured here: F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/impl_1/runme.log
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3991.133 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 3991.133 ; gain = 0.000
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3991.133 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 3991.133 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 3991.133 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3991.133 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 3991.133 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 3991.133 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 3991.133 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 3991.133 ; gain = 0.000
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:]
+set_property core_revision 5 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+WARNING: [IP_Flow 19-11889] HDL Parameter 'C_AXI_StreamOut_TDATA_WIDTH (C AXI StreamOut TDATA WIDTH)': Order is obsolete with XGUI version >= 2.0
+WARNING: [IP_Flow 19-11889] HDL Parameter 'C_AXI_StreamOut_START_COUNT (C AXI StreamOut START COUNT)': Order is obsolete with XGUI version >= 2.0
+WARNING: [IP_Flow 19-11889] HDL Parameter 'C_AXI_Register_DATA_WIDTH (C AXI Register DATA WIDTH)': Order is obsolete with XGUI version >= 2.0
+WARNING: [IP_Flow 19-11889] HDL Parameter 'C_AXI_Register_ADDR_WIDTH (C AXI Register ADDR WIDTH)': Order is obsolete with XGUI version >= 2.0
+WARNING: [IP_Flow 19-11889] HDL Parameter 'C_AXI_StreamIn_TDATA_WIDTH (C AXI StreamIn TDATA WIDTH)': Order is obsolete with XGUI version >= 2.0
+WARNING: [IP_Flow 19-11770] Clock interface 'AXI_StreamOut_CLK' has no FREQ_HZ parameter.
+WARNING: [IP_Flow 19-11770] Clock interface 'AXI_Register_CLK' has no FREQ_HZ parameter.
+WARNING: [IP_Flow 19-11770] Clock interface 'AXI_StreamIn_CLK' has no FREQ_HZ parameter.
+WARNING: [IP_Flow 19-5661] Bus Interface 'TX_clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'TX_clk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-2181] Payment is not required for this core.
+WARNING: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2'
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI.vhd:]
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/utils_1/imports/synth_1/SpaceWire_light_AXI.dcp with file F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/synth_1/SpaceWire_light_AXI.dcp
+launch_runs synth_1 -jobs 12
+[Thu Aug 22 14:47:00 2024] Launched synth_1...
+Run output will be captured here: F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/synth_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\SpaceWire_light_AXI_0_2\hdl\SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:]
+regenerate_bd_layout
+startgroup
+set_property -dict [list CONFIG.c_s_axis_s2mm_tdata_width.VALUE_SRC USER] [get_bd_cells axi_dma_0]
+set_property -dict [list \
+  CONFIG.c_m_axis_mm2s_tdata_width {8} \
+  CONFIG.c_s_axis_s2mm_tdata_width {8} \
+] [get_bd_cells axi_dma_0]
+endgroup
+upgrade_ip -vlnv IRS:RomeoOBDH:SpaceWire_light_AXI:0.2 [get_ips  Test_Implementaiton_SpaceWire_light_AXI_0_2] -log ip_upgrade.log
+Upgrading 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/sources_1/bd/Test_Implementaiton/Test_Implementaiton.bd'
+INFO: [IP_Flow 19-3422] Upgraded Test_Implementaiton_SpaceWire_light_AXI_0_2 (SpaceWire_light_AXI_v0.2 0.2) from revision 4 to revision 5
+Wrote  : <F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\edit_SpaceWire_light_AXI_v0_2.srcs\sources_1\bd\Test_Implementaiton\Test_Implementaiton.bd> 
+Wrote  : <F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/sources_1/bd/Test_Implementaiton/ui/bd_c57dc135.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips Test_Implementaiton_SpaceWire_light_AXI_0_2] -no_script -sync -force -quiet
+generate_target all [get_files  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/sources_1/bd/Test_Implementaiton/Test_Implementaiton.bd]
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_S_AXIS_S2MM_TDATA_WIDTH(8) on '/axi_dma_0' with propagated value(32). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_S_AXIS_S2MM_TDATA_WIDTH(8) on '/axi_dma_0' with propagated value(32). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_S_AXIS_S2MM_TDATA_WIDTH(8) on '/axi_dma_0' with propagated value(32). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_S_AXIS_S2MM_TDATA_WIDTH(8) on '/axi_dma_0' with propagated value(32). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_S_AXIS_S2MM_TDATA_WIDTH(8) on '/axi_dma_0' with propagated value(32). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_S_AXIS_S2MM_TDATA_WIDTH(8) on '/axi_dma_0' with propagated value(32). Command ignored
+CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /SpaceWire_light_AXI_0/AXI_StreamIn(4) and /axi_dma_0/M_AXIS_MM2S(1)
+CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /axi_dma_0/S_AXIS_S2MM(1) and /SpaceWire_light_AXI_0/AXI_StreamOut(4)
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/SpaceWire_light_AXI_0/SPW_Din
+/SpaceWire_light_AXI_0/SPW_Sin
+
+Wrote  : <F:\Xilinx\ZynqProjects\SpaceWire_IPs\SpaceWire_light_AXI\edit_SpaceWire_light_AXI_v0_2.srcs\sources_1\bd\Test_Implementaiton\Test_Implementaiton.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_dma_0/s_axis_s2mm_tdata'(8) to pin: '/SpaceWire_light_AXI_0/axi_streamout_tdata'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/SpaceWire_light_AXI_0/axi_streamin_tdata'(32) to pin: '/axi_dma_0/m_axis_mm2s_tdata'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(1) - Only lower order bits will be connected.
+VHDL Output written to : f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/synth/Test_Implementaiton.vhd
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_dma_0/s_axis_s2mm_tdata'(8) to pin: '/SpaceWire_light_AXI_0/axi_streamout_tdata'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/SpaceWire_light_AXI_0/axi_streamin_tdata'(32) to pin: '/axi_dma_0/m_axis_mm2s_tdata'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(1) - Only lower order bits will be connected.
+VHDL Output written to : f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/sim/Test_Implementaiton.vhd
+VHDL Output written to : f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/hdl/Test_Implementaiton_wrapper.vhd
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block SpaceWire_light_AXI_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_auto_pc_0/Test_Implementaiton_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_auto_pc_1/Test_Implementaiton_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_pc .
+Exporting to file f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/hw_handoff/Test_Implementaiton.hwh
+Generated Hardware Definition File f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/synth/Test_Implementaiton.hwdef
+generate_target: Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 3991.133 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all Test_Implementaiton_axi_dma_0_2] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: Test_Implementaiton_axi_dma_0_2
+catch { config_ip_cache -export [get_ips -all Test_Implementaiton_xbar_3] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: Test_Implementaiton_xbar_3
+catch { config_ip_cache -export [get_ips -all Test_Implementaiton_rst_ps7_0_100M_2] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: Test_Implementaiton_rst_ps7_0_100M_2
+catch { config_ip_cache -export [get_ips -all Test_Implementaiton_xbar_2] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: Test_Implementaiton_xbar_2
+catch { config_ip_cache -export [get_ips -all Test_Implementaiton_SpaceWire_light_AXI_0_2] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: Test_Implementaiton_SpaceWire_light_AXI_0_2
+catch { config_ip_cache -export [get_ips -all Test_Implementaiton_auto_pc_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: Test_Implementaiton_auto_pc_0
+catch { config_ip_cache -export [get_ips -all Test_Implementaiton_auto_pc_1] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: Test_Implementaiton_auto_pc_1
+export_ip_user_files -of_objects [get_files F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/sources_1/bd/Test_Implementaiton/Test_Implementaiton.bd] -no_script -sync -force -quiet
+INFO: [Vivado 12-23855] The given sub-design is auto disabled, no action will be taken: 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/sources_1/bd/Test_Implementaiton/Test_Implementaiton.bd'
+export_simulation -of_objects [get_files F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/sources_1/bd/Test_Implementaiton/Test_Implementaiton.bd] -directory F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.ip_user_files/sim_scripts -ip_user_files_dir F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.ip_user_files -ipstatic_source_dir F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.cache/compile_simlib/modelsim} {questa=F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.cache/compile_simlib/questa} {riviera=F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.cache/compile_simlib/riviera} {activehdl=F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+validate_bd_design -force
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_S_AXIS_S2MM_TDATA_WIDTH(8) on '/axi_dma_0' with propagated value(32). Command ignored
+CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /SpaceWire_light_AXI_0/AXI_StreamIn(4) and /axi_dma_0/M_AXIS_MM2S(1)
+CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /axi_dma_0/S_AXIS_S2MM(1) and /SpaceWire_light_AXI_0/AXI_StreamOut(4)
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/SpaceWire_light_AXI_0/SPW_Din
+/SpaceWire_light_AXI_0/SPW_Sin
+
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M01_AXI] [get_bd_intf_nets axi_dma_0_M_AXIS_MM2S] [get_bd_intf_nets SpaceWire_light_AXI_0_AXI_StreamOut] [get_bd_nets SpaceWire_light_AXI_0_IRQ] [get_bd_cells SpaceWire_light_AXI_0]
+startgroup
+create_bd_cell -type ip -vlnv IRS:RomeoOBDH:SpaceWire_light_AXI:0.2 SpaceWire_light_AXI_0
+endgroup

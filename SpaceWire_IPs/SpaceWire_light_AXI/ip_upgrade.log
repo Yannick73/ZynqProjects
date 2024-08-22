@@ -1,0 +1,290 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Thu Aug 22 22:34:28 2024
+| Host         : DESKTOP-MEH5DGT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Test_Implementaiton_SpaceWire_light_AXI_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the update of Test_Implementaiton_SpaceWire_light_AXI_0_2 (IRS:RomeoOBDH:SpaceWire_light_AXI:0.2 (Rev. 8)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Thu Aug 22 22:33:26 2024
+| Host         : DESKTOP-MEH5DGT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Test_Implementaiton_SpaceWire_light_AXI_0_2'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of Test_Implementaiton_SpaceWire_light_AXI_0_2 (IRS:RomeoOBDH:SpaceWire_light_AXI:0.2) from (Rev. 7) to (Rev. 8)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'Test_Implementaiton_SpaceWire_light_AXI_0_2'. These changes may impact your design.
+
+
+-Upgrade has removed port 'TX_clk'
+
+-Upgrade has added port 'SPW_TX_clk'
+
+-Upgrade has added port 'SPW_main_clk'
+
+-Upgrade has added port 'SPW_rst'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Thu Aug 22 15:00:47 2024
+| Host         : DESKTOP-MEH5DGT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Test_Implementaiton_SpaceWire_light_AXI_0_2'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of Test_Implementaiton_SpaceWire_light_AXI_0_2 (IRS:RomeoOBDH:SpaceWire_light_AXI:0.2) from (Rev. 5) to (Rev. 7)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'Test_Implementaiton_SpaceWire_light_AXI_0_2'. These changes may impact your design.
+
+
+-Upgraded port 'axi_streamin_tdata' width 8 differs from original width 32
+
+-Upgraded port 'axi_streamin_tstrb' width 1 differs from original width 4
+
+-Upgraded port 'axi_streamout_tdata' width 8 differs from original width 32
+
+-Upgraded port 'axi_streamout_tstrb' width 1 differs from original width 4
+
+
+3. Customization warnings
+-------------------------
+
+An attempt to modify the value of disabled parameter 'C_AXI_StreamOut_TDATA_WIDTH' from '8' to '32' has been ignored for IP 'Test_Implementaiton_SpaceWire_light_AXI_0_2'
+
+An attempt to modify the value of disabled parameter 'C_AXI_StreamIn_TDATA_WIDTH' from '8' to '32' has been ignored for IP 'Test_Implementaiton_SpaceWire_light_AXI_0_2'
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv IRS:RomeoOBDH:SpaceWire_light_AXI:0.2 -user_name Test_Implementaiton_SpaceWire_light_AXI_0_2
+set_property -dict "\
+  CONFIG.AXI_Register.ADDR_WIDTH {5} \
+  CONFIG.AXI_Register.ARUSER_WIDTH {0} \
+  CONFIG.AXI_Register.AWUSER_WIDTH {0} \
+  CONFIG.AXI_Register.BUSER_WIDTH {0} \
+  CONFIG.AXI_Register.CLK_DOMAIN {Test_Implementaiton_processing_system7_0_1_FCLK_CLK0} \
+  CONFIG.AXI_Register.DATA_WIDTH {32} \
+  CONFIG.AXI_Register.FREQ_HZ {100000000} \
+  CONFIG.AXI_Register.HAS_BRESP {1} \
+  CONFIG.AXI_Register.HAS_BURST {0} \
+  CONFIG.AXI_Register.HAS_CACHE {0} \
+  CONFIG.AXI_Register.HAS_LOCK {0} \
+  CONFIG.AXI_Register.HAS_PROT {1} \
+  CONFIG.AXI_Register.HAS_QOS {0} \
+  CONFIG.AXI_Register.HAS_REGION {0} \
+  CONFIG.AXI_Register.HAS_RRESP {1} \
+  CONFIG.AXI_Register.HAS_WSTRB {1} \
+  CONFIG.AXI_Register.ID_WIDTH {0} \
+  CONFIG.AXI_Register.INSERT_VIP {0} \
+  CONFIG.AXI_Register.MAX_BURST_LENGTH {1} \
+  CONFIG.AXI_Register.NUM_READ_OUTSTANDING {2} \
+  CONFIG.AXI_Register.NUM_READ_THREADS {1} \
+  CONFIG.AXI_Register.NUM_WRITE_OUTSTANDING {2} \
+  CONFIG.AXI_Register.NUM_WRITE_THREADS {1} \
+  CONFIG.AXI_Register.PHASE {0.0} \
+  CONFIG.AXI_Register.PROTOCOL {AXI4LITE} \
+  CONFIG.AXI_Register.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.AXI_Register.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.AXI_Register.RUSER_WIDTH {0} \
+  CONFIG.AXI_Register.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.AXI_Register.WIZ_DATA_WIDTH {32} \
+  CONFIG.AXI_Register.WIZ_NUM_REG {8} \
+  CONFIG.AXI_Register.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.AXI_Register.WUSER_WIDTH {0} \
+  CONFIG.AXI_Register_CLK.ASSOCIATED_BUSIF {AXI_Register} \
+  CONFIG.AXI_Register_CLK.ASSOCIATED_PORT {} \
+  CONFIG.AXI_Register_CLK.ASSOCIATED_RESET {axi_register_aresetn} \
+  CONFIG.AXI_Register_CLK.CLK_DOMAIN {Test_Implementaiton_processing_system7_0_1_FCLK_CLK0} \
+  CONFIG.AXI_Register_CLK.FREQ_HZ {100000000} \
+  CONFIG.AXI_Register_CLK.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.AXI_Register_CLK.INSERT_VIP {0} \
+  CONFIG.AXI_Register_CLK.PHASE {0.0} \
+  CONFIG.AXI_Register_RST.INSERT_VIP {0} \
+  CONFIG.AXI_Register_RST.POLARITY {ACTIVE_LOW} \
+  CONFIG.AXI_StreamIn.CLK_DOMAIN {Test_Implementaiton_processing_system7_0_1_FCLK_CLK0} \
+  CONFIG.AXI_StreamIn.FREQ_HZ {100000000} \
+  CONFIG.AXI_StreamIn.HAS_TKEEP {0} \
+  CONFIG.AXI_StreamIn.HAS_TLAST {1} \
+  CONFIG.AXI_StreamIn.HAS_TREADY {1} \
+  CONFIG.AXI_StreamIn.HAS_TSTRB {1} \
+  CONFIG.AXI_StreamIn.INSERT_VIP {0} \
+  CONFIG.AXI_StreamIn.LAYERED_METADATA {undef} \
+  CONFIG.AXI_StreamIn.PHASE {0.0} \
+  CONFIG.AXI_StreamIn.TDATA_NUM_BYTES {4} \
+  CONFIG.AXI_StreamIn.TDEST_WIDTH {0} \
+  CONFIG.AXI_StreamIn.TID_WIDTH {0} \
+  CONFIG.AXI_StreamIn.TUSER_WIDTH {0} \
+  CONFIG.AXI_StreamIn.WIZ_DATA_WIDTH {32} \
+  CONFIG.AXI_StreamIn_CLK.ASSOCIATED_BUSIF {AXI_StreamIn} \
+  CONFIG.AXI_StreamIn_CLK.ASSOCIATED_PORT {} \
+  CONFIG.AXI_StreamIn_CLK.ASSOCIATED_RESET {axi_streamin_aresetn} \
+  CONFIG.AXI_StreamIn_CLK.CLK_DOMAIN {Test_Implementaiton_processing_system7_0_1_FCLK_CLK0} \
+  CONFIG.AXI_StreamIn_CLK.FREQ_HZ {100000000} \
+  CONFIG.AXI_StreamIn_CLK.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.AXI_StreamIn_CLK.INSERT_VIP {0} \
+  CONFIG.AXI_StreamIn_CLK.PHASE {0.0} \
+  CONFIG.AXI_StreamIn_RST.INSERT_VIP {0} \
+  CONFIG.AXI_StreamIn_RST.POLARITY {ACTIVE_LOW} \
+  CONFIG.AXI_StreamOut.CLK_DOMAIN {Test_Implementaiton_processing_system7_0_1_FCLK_CLK0} \
+  CONFIG.AXI_StreamOut.FREQ_HZ {100000000} \
+  CONFIG.AXI_StreamOut.HAS_TKEEP {0} \
+  CONFIG.AXI_StreamOut.HAS_TLAST {1} \
+  CONFIG.AXI_StreamOut.HAS_TREADY {1} \
+  CONFIG.AXI_StreamOut.HAS_TSTRB {1} \
+  CONFIG.AXI_StreamOut.INSERT_VIP {0} \
+  CONFIG.AXI_StreamOut.LAYERED_METADATA {undef} \
+  CONFIG.AXI_StreamOut.PHASE {0.0} \
+  CONFIG.AXI_StreamOut.TDATA_NUM_BYTES {4} \
+  CONFIG.AXI_StreamOut.TDEST_WIDTH {0} \
+  CONFIG.AXI_StreamOut.TID_WIDTH {0} \
+  CONFIG.AXI_StreamOut.TUSER_WIDTH {0} \
+  CONFIG.AXI_StreamOut.WIZ_DATA_WIDTH {32} \
+  CONFIG.AXI_StreamOut_CLK.ASSOCIATED_BUSIF {AXI_StreamOut} \
+  CONFIG.AXI_StreamOut_CLK.ASSOCIATED_PORT {} \
+  CONFIG.AXI_StreamOut_CLK.ASSOCIATED_RESET {axi_streamout_aresetn} \
+  CONFIG.AXI_StreamOut_CLK.CLK_DOMAIN {Test_Implementaiton_processing_system7_0_1_FCLK_CLK0} \
+  CONFIG.AXI_StreamOut_CLK.FREQ_HZ {100000000} \
+  CONFIG.AXI_StreamOut_CLK.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.AXI_StreamOut_CLK.INSERT_VIP {0} \
+  CONFIG.AXI_StreamOut_CLK.PHASE {0.0} \
+  CONFIG.AXI_StreamOut_RST.INSERT_VIP {0} \
+  CONFIG.AXI_StreamOut_RST.POLARITY {ACTIVE_LOW} \
+  CONFIG.C_AXI_Register_ADDR_WIDTH {5} \
+  CONFIG.C_AXI_Register_BASEADDR {0xFFFFFFFF} \
+  CONFIG.C_AXI_Register_DATA_WIDTH {32} \
+  CONFIG.C_AXI_Register_HIGHADDR {0x00000000} \
+  CONFIG.C_AXI_StreamIn_TDATA_WIDTH {32} \
+  CONFIG.C_AXI_StreamOut_START_COUNT {32} \
+  CONFIG.C_AXI_StreamOut_TDATA_WIDTH {32} \
+  CONFIG.Component_Name {Test_Implementaiton_SpaceWire_light_AXI_0_2} \
+  CONFIG.IRQ.PortWidth {1} \
+  CONFIG.IRQ.SENSITIVITY {LEVEL_HIGH} \
+  CONFIG.RXCHUNK {1} \
+  CONFIG.RXFIFOSIZE_BITS {10} \
+  CONFIG.SYSFREQ {100.0e6} \
+  CONFIG.TXCLKFREQ {100.0e6} \
+  CONFIG.TXFIFOSIZE_BITS {10} \
+  CONFIG.TX_clk.ASSOCIATED_BUSIF {} \
+  CONFIG.TX_clk.ASSOCIATED_PORT {} \
+  CONFIG.TX_clk.ASSOCIATED_RESET {} \
+  CONFIG.TX_clk.CLK_DOMAIN {Test_Implementaiton_processing_system7_0_1_FCLK_CLK0} \
+  CONFIG.TX_clk.FREQ_HZ {100000000} \
+  CONFIG.TX_clk.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.TX_clk.INSERT_VIP {0} \
+  CONFIG.TX_clk.PHASE {0.0} " [get_ips Test_Implementaiton_SpaceWire_light_AXI_0_2]
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Thu Aug 22 14:50:00 2024
+| Host         : DESKTOP-MEH5DGT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Test_Implementaiton_SpaceWire_light_AXI_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Test_Implementaiton_SpaceWire_light_AXI_0_2 (IRS:RomeoOBDH:SpaceWire_light_AXI:0.2) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Thu Aug 22 14:36:18 2024
+| Host         : DESKTOP-MEH5DGT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Test_Implementaiton_SpaceWire_light_AXI_0_2'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of Test_Implementaiton_SpaceWire_light_AXI_0_2 (IRS:RomeoOBDH:SpaceWire_light_AXI:0.2) from (Rev. 3) to (Rev. 4)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'Test_Implementaiton_SpaceWire_light_AXI_0_2'. These changes may impact your design.
+
+
+-Upgrade has added port 'IRQ'
+
+-Upgrade has added port 'SPW_Din'
+
+-Upgrade has added port 'SPW_Dout'
+
+-Upgrade has added port 'SPW_Sin'
+
+-Upgrade has added port 'SPW_Sout'
+
+-Upgrade has added port 'TX_clk'
+
+

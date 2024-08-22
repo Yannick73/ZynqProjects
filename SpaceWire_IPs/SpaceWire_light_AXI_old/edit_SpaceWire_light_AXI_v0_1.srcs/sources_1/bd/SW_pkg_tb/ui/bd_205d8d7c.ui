@@ -1,0 +1,18 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"65,-788",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.7.1 2023-07-26 3bc4126617 VDI=43 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace inst SpaceWire_light_AXI_0 -pg 1 -lvl 1 -x 740 -y -220 -defaultsOSRD
+levelinfo -pg 1 -80 740 890
+pagesize -pg 1 -db -bbox -sgen -80 -830 930 320
+"
+}
+{
+   "da_axi4_cnt":"6",
+   "da_axi4_s2mm_cnt":"2",
+   "da_clkrst_cnt":"4",
+   "da_ps7_cnt":"1"
+}
