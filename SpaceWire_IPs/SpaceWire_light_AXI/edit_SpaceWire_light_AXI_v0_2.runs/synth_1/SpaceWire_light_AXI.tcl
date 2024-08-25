@@ -58,7 +58,8 @@ if {$::dispatch::connected} {
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 3
 set_param checkpoint.writeSynthRtdsInDcp 1
-set_param synth.incrementalSynthesisCache C:/Users/Yannick/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-13916-DESKTOP-MEH5DGT/incrSyn
+set_param synth.incrementalSynthesisCache C:/Users/Yannick/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9884-DESKTOP-MEH5DGT/incrSyn
+set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 set_msg_config  -id {[BD 41-1306]}  -suppress 
@@ -112,6 +113,9 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc
+set_property used_in_implementation false [get_files F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc]
+
 set_param ips.enableIPCacheLiteLoad 1
 
 read_checkpoint -auto_incremental -incremental F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/utils_1/imports/synth_1/SpaceWire_light_AXI.dcp

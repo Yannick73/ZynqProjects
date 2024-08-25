@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Fri Aug 23 00:32:41 2024
-# Process ID: 2188
+# Start of session at: Sun Aug 25 18:34:55 2024
+# Process ID: 12584
 # Current directory: F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/impl_1
 # Command line: vivado.exe -log SpaceWire_light_AXI.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source SpaceWire_light_AXI.tcl -notrace
 # Log file: F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/impl_1/SpaceWire_light_AXI.vdi
@@ -17,8 +17,8 @@
 # CPU Physical cores:6
 # CPU Logical cores :12
 # Host memory       :17100 MB
-# Swap memory       :4294 MB
-# Total Virtual     :21395 MB
-# Available Virtual :4605 MB
+# Swap memory       :5948 MB
+# Total Virtual     :23049 MB
+# Available Virtual :7756 MB
 #-----------------------------------------------------------
 source SpaceWire_light_AXI.tcl -notrace

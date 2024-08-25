@@ -1,0 +1,24 @@
++====================+===================+========================================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                                    |
++====================+===================+========================================================+
+| SPW_Sin            | SPW_Sin           | SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT1/syncdff_ff1_reg/D |
+| SPW_Sin            | SPW_Sin           | SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT2/syncdff_ff1_reg/D |
+| SPW_Sin            | SPW_Sin           | SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT3/syncdff_ff1_reg/D |
+| SPW_Sin            | SPW_Sin           | SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT0/syncdff_ff1_reg/D |
+| SPW_Din            | SPW_Sin           | SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5][0]/D        |
+| SPW_Din            | SPW_Sin           | SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6][0]/D        |
+| SPW_Din            | SPW_Sin           | SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3][1]/D        |
+| SPW_Din            | SPW_Sin           | SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1][1]/D        |
+| SPW_Din            | SPW_Sin           | SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2][1]/D        |
+| SPW_Din            | SPW_Sin           | SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7][0]/D        |
+| SPW_Din            | SPW_Sin           | SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6][1]/D        |
+| SPW_Din            | SPW_Sin           | SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5][1]/D        |
+| SPW_Din            | SPW_Sin           | SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1][0]/D        |
+| SPW_Din            | SPW_Sin           | SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2][0]/D        |
+| SPW_Din            | SPW_Sin           | SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3][0]/D        |
+| SPW_Din            | SPW_Sin           | SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0][0]/D        |
+| SPW_Din            | SPW_Sin           | SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4][0]/D        |
+| SPW_Din            | SPW_Sin           | SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7][1]/D        |
+| SPW_Din            | SPW_Sin           | SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4][1]/D        |
+| SPW_Din            | SPW_Sin           | SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0][1]/D        |
++--------------------+-------------------+--------------------------------------------------------+

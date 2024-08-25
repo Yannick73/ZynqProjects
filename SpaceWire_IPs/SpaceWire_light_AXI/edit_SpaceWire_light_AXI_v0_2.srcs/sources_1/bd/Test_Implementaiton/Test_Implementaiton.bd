@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xCC6CFA53B4580162",
+      "boundary_crc": "0x9A95B84AFCECAF65",
       "device": "xc7z020clg484-1",
       "gen_directory": "../../../../edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton",
       "name": "Test_Implementaiton",
@@ -11,7 +11,8 @@
     },
     "design_tree": {
       "processing_system7_0": "",
-      "axi_dma_0": "",
+      "rst_ps7_0_100M": "",
+      "SpaceWire_light_AXI_0": "",
       "ps7_0_axi_periph": {
         "xbar": "",
         "s00_couplers": {
@@ -20,7 +21,7 @@
         "m00_couplers": {},
         "m01_couplers": {}
       },
-      "rst_ps7_0_100M": "",
+      "axi_dma_0": "",
       "axi_mem_intercon": {
         "xbar": "",
         "s00_couplers": {},
@@ -28,10 +29,7 @@
         "m00_couplers": {
           "auto_pc": ""
         }
-      },
-      "SpaceWire_light_AXI_0": "",
-      "xlconcat_0": "",
-      "clk_wiz_0": ""
+      }
     },
     "interface_ports": {
       "DDR": {
@@ -201,6 +199,20 @@
             "direction": "IO"
           }
         }
+      }
+    },
+    "ports": {
+      "SPW_Di": {
+        "direction": "I"
+      },
+      "SPW_Si": {
+        "direction": "I"
+      },
+      "SPW_So": {
+        "direction": "O"
+      },
+      "SPW_Do": {
+        "direction": "O"
       }
     },
     "components": {
@@ -1137,61 +1149,19 @@
           }
         }
       },
-      "axi_dma_0": {
-        "vlnv": "xilinx.com:ip:axi_dma:7.1",
-        "ip_revision": "32",
-        "xci_name": "Test_Implementaiton_axi_dma_0_2",
-        "xci_path": "ip\\Test_Implementaiton_axi_dma_0_2\\Test_Implementaiton_axi_dma_0_2.xci",
-        "inst_hier_path": "axi_dma_0",
-        "parameters": {
-          "c_include_sg": {
-            "value": "0"
-          },
-          "c_m_axis_mm2s_tdata_width": {
-            "value": "8"
-          },
-          "c_s_axis_s2mm_tdata_width": {
-            "value": "8"
-          }
-        },
-        "interface_ports": {
-          "M_AXI_MM2S": {
-            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
-            "mode": "Master",
-            "address_space_ref": "Data_MM2S",
-            "base_address": {
-              "minimum": "0x00000000",
-              "maximum": "0xFFFFFFFF",
-              "width": "32"
-            }
-          },
-          "M_AXI_S2MM": {
-            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
-            "mode": "Master",
-            "address_space_ref": "Data_S2MM",
-            "base_address": {
-              "minimum": "0x00000000",
-              "maximum": "0xFFFFFFFF",
-              "width": "32"
-            }
-          }
-        },
-        "addressing": {
-          "address_spaces": {
-            "Data_MM2S": {
-              "range": "4G",
-              "width": "32"
-            },
-            "Data_S2MM": {
-              "range": "4G",
-              "width": "32"
-            },
-            "Data_SG": {
-              "range": "4G",
-              "width": "32"
-            }
-          }
-        }
+      "rst_ps7_0_100M": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "ip_revision": "15",
+        "xci_name": "Test_Implementaiton_rst_ps7_0_100M_2",
+        "xci_path": "ip\\Test_Implementaiton_rst_ps7_0_100M_2\\Test_Implementaiton_rst_ps7_0_100M_2.xci",
+        "inst_hier_path": "rst_ps7_0_100M"
+      },
+      "SpaceWire_light_AXI_0": {
+        "vlnv": "IRS:RomeoOBDH:SpaceWire_light_AXI:0.2",
+        "ip_revision": "8",
+        "xci_name": "Test_Implementaiton_SpaceWire_light_AXI_0_2",
+        "xci_path": "ip\\Test_Implementaiton_SpaceWire_light_AXI_0_2\\Test_Implementaiton_SpaceWire_light_AXI_0_2.xci",
+        "inst_hier_path": "SpaceWire_light_AXI_0"
       },
       "ps7_0_axi_periph": {
         "vlnv": "xilinx.com:ip:axi_interconnect:2.1",
@@ -1592,18 +1562,60 @@
           }
         }
       },
-      "rst_ps7_0_100M": {
-        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
-        "ip_revision": "15",
-        "xci_name": "Test_Implementaiton_rst_ps7_0_100M_2",
-        "xci_path": "ip\\Test_Implementaiton_rst_ps7_0_100M_2\\Test_Implementaiton_rst_ps7_0_100M_2.xci",
-        "inst_hier_path": "rst_ps7_0_100M"
+      "axi_dma_0": {
+        "vlnv": "xilinx.com:ip:axi_dma:7.1",
+        "ip_revision": "32",
+        "xci_name": "Test_Implementaiton_axi_dma_0_3",
+        "xci_path": "ip\\Test_Implementaiton_axi_dma_0_3\\Test_Implementaiton_axi_dma_0_3.xci",
+        "inst_hier_path": "axi_dma_0",
+        "parameters": {
+          "c_include_sg": {
+            "value": "0"
+          },
+          "c_m_axis_mm2s_tdata_width": {
+            "value": "8"
+          }
+        },
+        "interface_ports": {
+          "M_AXI_MM2S": {
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "mode": "Master",
+            "address_space_ref": "Data_MM2S",
+            "base_address": {
+              "minimum": "0x00000000",
+              "maximum": "0xFFFFFFFF",
+              "width": "32"
+            }
+          },
+          "M_AXI_S2MM": {
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "mode": "Master",
+            "address_space_ref": "Data_S2MM",
+            "base_address": {
+              "minimum": "0x00000000",
+              "maximum": "0xFFFFFFFF",
+              "width": "32"
+            }
+          }
+        },
+        "addressing": {
+          "address_spaces": {
+            "Data_MM2S": {
+              "range": "4G",
+              "width": "32"
+            },
+            "Data_S2MM": {
+              "range": "4G",
+              "width": "32"
+            }
+          }
+        }
       },
       "axi_mem_intercon": {
         "vlnv": "xilinx.com:ip:axi_interconnect:2.1",
-        "xci_path": "ip\\Test_Implementaiton_axi_mem_intercon_0\\Test_Implementaiton_axi_mem_intercon_0.xci",
+        "xci_path": "ip\\Test_Implementaiton_axi_mem_intercon_1\\Test_Implementaiton_axi_mem_intercon_1.xci",
         "inst_hier_path": "axi_mem_intercon",
-        "xci_name": "Test_Implementaiton_axi_mem_intercon_0",
+        "xci_name": "Test_Implementaiton_axi_mem_intercon_1",
         "parameters": {
           "NUM_MI": {
             "value": "1"
@@ -1696,8 +1708,8 @@
           "xbar": {
             "vlnv": "xilinx.com:ip:axi_crossbar:2.1",
             "ip_revision": "32",
-            "xci_name": "Test_Implementaiton_xbar_2",
-            "xci_path": "ip\\Test_Implementaiton_xbar_2\\Test_Implementaiton_xbar_2.xci",
+            "xci_name": "Test_Implementaiton_xbar_4",
+            "xci_path": "ip\\Test_Implementaiton_xbar_4\\Test_Implementaiton_xbar_4.xci",
             "inst_hier_path": "axi_mem_intercon/xbar",
             "parameters": {
               "NUM_MI": {
@@ -2006,48 +2018,19 @@
             ]
           }
         }
-      },
-      "SpaceWire_light_AXI_0": {
-        "vlnv": "IRS:RomeoOBDH:SpaceWire_light_AXI:0.2",
-        "ip_revision": "8",
-        "xci_name": "Test_Implementaiton_SpaceWire_light_AXI_0_2",
-        "xci_path": "ip\\Test_Implementaiton_SpaceWire_light_AXI_0_2\\Test_Implementaiton_SpaceWire_light_AXI_0_2.xci",
-        "inst_hier_path": "SpaceWire_light_AXI_0"
-      },
-      "xlconcat_0": {
-        "vlnv": "xilinx.com:ip:xlconcat:2.1",
-        "ip_revision": "6",
-        "xci_name": "Test_Implementaiton_xlconcat_0_0",
-        "xci_path": "ip\\Test_Implementaiton_xlconcat_0_0\\Test_Implementaiton_xlconcat_0_0.xci",
-        "inst_hier_path": "xlconcat_0"
-      },
-      "clk_wiz_0": {
-        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
-        "ip_revision": "14",
-        "xci_name": "Test_Implementaiton_clk_wiz_0_0",
-        "xci_path": "ip\\Test_Implementaiton_clk_wiz_0_0\\Test_Implementaiton_clk_wiz_0_0.xci",
-        "inst_hier_path": "clk_wiz_0",
-        "parameters": {
-          "CLK_IN1_BOARD_INTERFACE": {
-            "value": "sys_clock"
-          },
-          "USE_BOARD_FLOW": {
-            "value": "true"
-          }
-        }
       }
     },
     "interface_nets": {
       "SpaceWire_light_AXI_0_AXI_StreamOut": {
         "interface_ports": [
-          "SpaceWire_light_AXI_0/AXI_StreamOut",
-          "axi_dma_0/S_AXIS_S2MM"
+          "axi_dma_0/S_AXIS_S2MM",
+          "SpaceWire_light_AXI_0/AXI_StreamOut"
         ]
       },
       "axi_dma_0_M_AXIS_MM2S": {
         "interface_ports": [
-          "SpaceWire_light_AXI_0/AXI_StreamIn",
-          "axi_dma_0/M_AXIS_MM2S"
+          "axi_dma_0/M_AXIS_MM2S",
+          "SpaceWire_light_AXI_0/AXI_StreamIn"
         ]
       },
       "axi_dma_0_M_AXI_MM2S": {
@@ -2100,40 +2083,58 @@
       }
     },
     "nets": {
-      "Net": {
+      "SPW_Di_1": {
         "ports": [
-          "clk_wiz_0/clk_out1",
-          "SpaceWire_light_AXI_0/SPW_TX_clk",
-          "SpaceWire_light_AXI_0/SPW_main_clk"
+          "SPW_Di",
+          "SpaceWire_light_AXI_0/SPW_Din"
+        ]
+      },
+      "SPW_Si_1": {
+        "ports": [
+          "SPW_Si",
+          "SpaceWire_light_AXI_0/SPW_Sin"
         ]
       },
       "SpaceWire_light_AXI_0_IRQ": {
         "ports": [
           "SpaceWire_light_AXI_0/IRQ",
-          "xlconcat_0/In1"
+          "processing_system7_0/IRQ_F2P"
+        ]
+      },
+      "SpaceWire_light_AXI_0_SPW_Dout": {
+        "ports": [
+          "SpaceWire_light_AXI_0/SPW_Dout",
+          "SPW_Do"
+        ]
+      },
+      "SpaceWire_light_AXI_0_SPW_Sout": {
+        "ports": [
+          "SpaceWire_light_AXI_0/SPW_Sout",
+          "SPW_So"
         ]
       },
       "processing_system7_0_FCLK_CLK0": {
         "ports": [
           "processing_system7_0/FCLK_CLK0",
-          "axi_dma_0/m_axi_mm2s_aclk",
-          "axi_mem_intercon/S00_ACLK",
-          "SpaceWire_light_AXI_0/axi_streamin_aclk",
-          "axi_dma_0/m_axi_s2mm_aclk",
-          "axi_mem_intercon/S01_ACLK",
-          "SpaceWire_light_AXI_0/axi_streamout_aclk",
-          "axi_dma_0/s_axi_lite_aclk",
-          "ps7_0_axi_periph/M00_ACLK",
-          "axi_mem_intercon/ACLK",
-          "axi_mem_intercon/M00_ACLK",
           "processing_system7_0/S_AXI_HP0_ACLK",
           "processing_system7_0/M_AXI_GP0_ACLK",
-          "ps7_0_axi_periph/S00_ACLK",
+          "rst_ps7_0_100M/slowest_sync_clk",
           "ps7_0_axi_periph/ACLK",
           "ps7_0_axi_periph/M01_ACLK",
+          "ps7_0_axi_periph/S00_ACLK",
+          "ps7_0_axi_periph/M00_ACLK",
+          "axi_dma_0/s_axi_lite_aclk",
+          "axi_mem_intercon/M00_ACLK",
+          "axi_dma_0/m_axi_mm2s_aclk",
+          "axi_mem_intercon/S00_ACLK",
+          "axi_mem_intercon/ACLK",
           "SpaceWire_light_AXI_0/axi_register_aclk",
-          "rst_ps7_0_100M/slowest_sync_clk",
-          "clk_wiz_0/clk_in1"
+          "SpaceWire_light_AXI_0/axi_streamin_aclk",
+          "SpaceWire_light_AXI_0/axi_streamout_aclk",
+          "axi_dma_0/m_axi_s2mm_aclk",
+          "axi_mem_intercon/S01_ACLK",
+          "SpaceWire_light_AXI_0/SPW_TX_clk",
+          "SpaceWire_light_AXI_0/SPW_main_clk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -2145,26 +2146,19 @@
       "rst_ps7_0_100M_peripheral_aresetn": {
         "ports": [
           "rst_ps7_0_100M/peripheral_aresetn",
+          "ps7_0_axi_periph/ARESETN",
+          "ps7_0_axi_periph/M01_ARESETN",
+          "ps7_0_axi_periph/M00_ARESETN",
           "ps7_0_axi_periph/S00_ARESETN",
           "axi_dma_0/axi_resetn",
-          "ps7_0_axi_periph/M00_ARESETN",
-          "ps7_0_axi_periph/ARESETN",
-          "axi_mem_intercon/S00_ARESETN",
           "axi_mem_intercon/M00_ARESETN",
+          "axi_mem_intercon/S00_ARESETN",
           "axi_mem_intercon/ARESETN",
-          "axi_mem_intercon/S01_ARESETN",
-          "ps7_0_axi_periph/M01_ARESETN",
           "SpaceWire_light_AXI_0/SPW_rst",
           "SpaceWire_light_AXI_0/axi_register_aresetn",
           "SpaceWire_light_AXI_0/axi_streamin_aresetn",
           "SpaceWire_light_AXI_0/axi_streamout_aresetn",
-          "clk_wiz_0/reset"
-        ]
-      },
-      "xlconcat_0_dout": {
-        "ports": [
-          "xlconcat_0/dout",
-          "processing_system7_0/IRQ_F2P"
+          "axi_mem_intercon/S01_ARESETN"
         ]
       }
     },
@@ -2201,15 +2195,6 @@
             }
           },
           "Data_S2MM": {
-            "segments": {
-              "SEG_processing_system7_0_HP0_DDR_LOWOCM": {
-                "address_block": "/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM",
-                "offset": "0x00000000",
-                "range": "512M"
-              }
-            }
-          },
-          "Data_SG": {
             "segments": {
               "SEG_processing_system7_0_HP0_DDR_LOWOCM": {
                 "address_block": "/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM",

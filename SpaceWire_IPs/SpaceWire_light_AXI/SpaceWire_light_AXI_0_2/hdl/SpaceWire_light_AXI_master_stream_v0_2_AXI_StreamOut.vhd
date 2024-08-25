@@ -10,7 +10,7 @@ entity SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut is
 		-- Do not modify the parameters beyond this line
 
 		-- Width of S_AXIS address bus. The slave accepts the read and write addresses of width C_M_AXIS_TDATA_WIDTH.
-		C_M_AXIS_TDATA_WIDTH	: integer	:= 8;
+		C_M_AXIS_TDATA_WIDTH	: integer	:= 8
 		-- Start count is the number of clock cycles the master will wait before initiating/issuing any transaction.
 		-- C_M_START_COUNT	: integer	:= 32
 	);

@@ -7,7 +7,12 @@ use SPWIP.SpwStream_pkg.all;
 entity SpaceWire_light_AXI is
 	generic (
 		-- Users to add parameters here
-
+        SYSFREQ : real range 1.0e6 to 1.0e9 := 100.0*1e6;
+        TXCLKFREQ : real range 1.0e6 to 1.0e9 := 100.0*1e6;
+        RXCHUNK : integer range 1 to 6 := 1;
+        RXFIFOSIZE_BITS : integer range 6 to 16 := 10;
+        TXFIFOSIZE_BITS : integer range 2 to 16 := 10;
+        ESCAPE_CHAR : std_logic_vector (7 downto 0) := x"7D";
 		-- User parameters ends
 		-- Do not modify the parameters beyond this line
 
@@ -119,6 +124,7 @@ architecture arch_imp of SpaceWire_light_AXI is
 
 	component SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn is
 		generic (
+        ESCAPE_CHAR : std_logic_vector (7 downto 0) := x"7D";
 		C_S_AXIS_TDATA_WIDTH	: integer	:= 8
 		);
 		port (
@@ -140,6 +146,7 @@ architecture arch_imp of SpaceWire_light_AXI is
 
 	component SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut is
 		generic (
+        ESCAPE_CHAR : std_logic_vector (7 downto 0) := x"7D";
 		C_M_AXIS_TDATA_WIDTH	: integer	:= 8;
 		C_M_START_COUNT	: integer	:= 32
 		);
@@ -202,6 +209,7 @@ SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register_inst : SpaceWire_light_AXI_slav
 -- Instantiation of Axi Bus Interface AXI_StreamIn
 SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn_inst : SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn
 	generic map (
+        ESCAPE_CHAR             => ESCAPE_CHAR, 
 		C_S_AXIS_TDATA_WIDTH	=> C_AXI_StreamIn_TDATA_WIDTH
 	)
 	port map (
@@ -224,6 +232,7 @@ SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn_inst : SpaceWire_light_AXI_sl
 -- Instantiation of Axi Bus Interface AXI_StreamOut
 SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut_inst : SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut
 	generic map (
+	    ESCAPE_CHAR             => ESCAPE_CHAR,
 		C_M_AXIS_TDATA_WIDTH	=> C_AXI_StreamOut_TDATA_WIDTH,
 		C_M_START_COUNT	=> C_AXI_StreamOut_START_COUNT
 	)
@@ -241,16 +250,11 @@ SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut_inst : SpaceWire_light_AXI_
 
     SPW_IF : SpwStream
     generic map (
---        SYSFREQ => Sysfreq,
---        TXCLKFREQ => TXCLKFREQ,
---        RXFIFOSIZE_BITS => RXFIFOSIZE_BITS,
---        TXFIFOSIZE_BITS => TXFIFOSIZE_BITS,
---        RXCHUNK => RXCHUNK
-        SYSFREQ  => 100.0*1e6,
-        TXCLKFREQ => 200.0*1e6,
-        RXFIFOSIZE_BITS => 6,
-        TXFIFOSIZE_BITS => 6,
-        RXCHUNK => 1
+        SYSFREQ => SYSFREQ,
+        TXCLKFREQ => TXCLKFREQ,
+        RXFIFOSIZE_BITS => RXFIFOSIZE_BITS,
+        TXFIFOSIZE_BITS => TXFIFOSIZE_BITS,
+        RXCHUNK => RXCHUNK
     )
     port map (
         -- Connect the wires to the main bus

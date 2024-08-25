@@ -8,12 +8,12 @@
   **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
   **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
   **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-  **** Start of session at: Fri Aug 23 00:31:13 2024
+  **** Start of session at: Sun Aug 25 18:32:39 2024
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source SpaceWire_light_AXI.tcl -notrace
-create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 578.109 ; gain = 239.926
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 574.027 ; gain = 233.688
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2024.1/data/ip'.
@@ -26,13 +26,15 @@ Command: synth_design -top SpaceWire_light_AXI -part xc7z020clg484-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Device 21-9227] Part: xc7z020clg484-1 does not have CEAM library.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 25256
+INFO: [Synth 8-7075] Helper process launched with PID 4256
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1041.012 ; gain = 447.434
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1462.766 ; gain = 449.844
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'SpaceWire_light_AXI' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:92]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
@@ -64,7 +66,7 @@ INFO: [Synth 8-3491] module 'SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOu
 INFO: [Synth 8-638] synthesizing module 'SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:45]
 	Parameter ESCAPE_CHAR bound to: 8'b01111101 
 	Parameter C_M_AXIS_TDATA_WIDTH bound to: 8 - type: integer 
-	Parameter C_M_START_COUNT bound to: 32 - type: integer 
+WARNING: [Synth 8-3819] Generic 'c_m_start_count' not present in instantiated entity will be ignored [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:233]
 WARNING: [Synth 8-613] shared variable will be implemented as local to architecture [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:49]
 WARNING: [Synth 8-614] signal 'M_AXIS_ARESETN' is read in the process but is not in the sensitivity list [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:55]
 WARNING: [Synth 8-614] signal 'M_AXIS_ARESETN' is read in the process but is not in the sensitivity list [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:77]
@@ -242,23 +244,66 @@ WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module SpaceWire_light_AXI_slave
 WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register is either unconnected or has no load
 WARNING: [Synth 8-7129] Port IRQ in module SpaceWire_light_AXI is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1432.047 ; gain = 838.469
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1849.699 ; gain = 836.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1432.047 ; gain = 838.469
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1849.699 ; gain = 836.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1849.699 ; gain = 836.777
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.278 . Memory (MB): peak = 1849.699 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc]
+Finished Parsing XDC File [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SpaceWire_light_AXI_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/SpaceWire_light_AXI_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1945.500 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.130 . Memory (MB): peak = 1945.500 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1945.500 ; gain = 932.578
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1432.047 ; gain = 838.469
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1945.500 ; gain = 932.578
 ---------------------------------------------------------------------------------
-INFO: [Device 21-403] Loading part xc7z020clg484-1
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property ASYNC_REG = true for SPW_IF/XMIT_FAST_INST/SYNCTXSYSFLIP0/syncdff_ff1_reg. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc, line 12).
+Applied set_property ASYNC_REG = true for SPW_IF/XMIT_FAST_INST/SYNCTXSYSFLIP0/syncdff_ff2_reg. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc, line 13).
+Applied set_property ASYNC_REG = true for SPW_IF/XMIT_FAST_INST/SYNCTXTXDIVSAFE/syncdff_ff1_reg. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc, line 14).
+Applied set_property ASYNC_REG = true for SPW_IF/XMIT_FAST_INST/SYNCTXTXDIVSAFE/syncdff_ff2_reg. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc, line 15).
+Applied set_property ASYNC_REG = true for SPW_IF/XMIT_FAST_INST/SYNCTXSYSFLIP1/syncdff_ff1_reg. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc, line 16).
+Applied set_property ASYNC_REG = true for SPW_IF/XMIT_FAST_INST/SYNCTXSYSFLIP1/syncdff_ff2_reg. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc, line 17).
+Applied set_property ASYNC_REG = true for SPW_IF/XMIT_FAST_INST/SYNCTXTXEN/syncdff_ff1_reg. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc, line 18).
+Applied set_property ASYNC_REG = true for SPW_IF/XMIT_FAST_INST/SYNCTXTXEN/syncdff_ff2_reg. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc, line 19).
+Applied set_property ASYNC_REG = true for SPW_IF/XMIT_FAST_INST/SYNCSYSTXFLIP1/syncdff_ff1_reg. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc, line 20).
+Applied set_property ASYNC_REG = true for SPW_IF/XMIT_FAST_INST/SYNCSYSTXFLIP1/syncdff_ff2_reg. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc, line 21).
+Applied set_property ASYNC_REG = true for SPW_IF/XMIT_FAST_INST/SYNCSYSTXFLIP0/syncdff_ff1_reg. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc, line 22).
+Applied set_property ASYNC_REG = true for SPW_IF/XMIT_FAST_INST/SYNCSYSTXFLIP0/syncdff_ff2_reg. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc, line 23).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1945.500 ; gain = 932.578
+---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_write_reg' in module 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register'
 INFO: [Synth 8-802] inferred FSM for state register 'state_read_reg' in module 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register'
 INFO: [Synth 8-802] inferred FSM for state register 'state_seq_reg[state]' in module 'SpwLink'
-INFO: [Device 21-9227] Part: xc7z020clg484-1 does not have CEAM library.
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -287,9 +332,8 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_read_reg' using enco
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_seq_reg[state]' using encoding 'one-hot' in module 'SpwLink'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 1468.805 ; gain = 875.227
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1945.500 ; gain = 932.578
 ---------------------------------------------------------------------------------
-No constraint files found.
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -350,27 +394,31 @@ BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-No constraint files found.
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 WARNING: [Synth 8-7129] Port IRQ in module SpaceWire_light_AXI is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 1742.090 ; gain = 1148.512
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 1945.500 ; gain = 932.578
 ---------------------------------------------------------------------------------
-No constraint files found.
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 1945.500 ; gain = 932.578
+---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 1742.090 ; gain = 1148.512
+Finished Timing Optimization : Time (s): cpu = 00:01:31 ; elapsed = 00:01:36 . Memory (MB): peak = 2062.805 ; gain = 1049.883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1742.090 ; gain = 1148.512
+Finished Technology Mapping : Time (s): cpu = 00:01:36 ; elapsed = 00:01:41 . Memory (MB): peak = 2062.805 ; gain = 1049.883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -388,37 +436,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 1742.090 ; gain = 1148.512
+Finished IO Insertion : Time (s): cpu = 00:01:41 ; elapsed = 00:01:47 . Memory (MB): peak = 2062.805 ; gain = 1049.883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 1742.090 ; gain = 1148.512
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:41 ; elapsed = 00:01:47 . Memory (MB): peak = 2062.805 ; gain = 1049.883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 1742.090 ; gain = 1148.512
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:42 ; elapsed = 00:01:48 . Memory (MB): peak = 2062.805 ; gain = 1049.883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 1742.090 ; gain = 1148.512
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:43 ; elapsed = 00:01:48 . Memory (MB): peak = 2062.805 ; gain = 1049.883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 1742.090 ; gain = 1148.512
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:43 ; elapsed = 00:01:48 . Memory (MB): peak = 2062.805 ; gain = 1049.883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 1742.090 ; gain = 1148.512
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:43 ; elapsed = 00:01:48 . Memory (MB): peak = 2062.805 ; gain = 1049.883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -436,15 +484,15 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     6|
 |2     |CARRY4 |    13|
-|3     |LUT1   |    52|
-|4     |LUT2   |    85|
-|5     |LUT3   |   121|
-|6     |LUT4   |    90|
-|7     |LUT5   |   104|
-|8     |LUT6   |  3678|
+|3     |LUT1   |    55|
+|4     |LUT2   |   644|
+|5     |LUT3   |   125|
+|6     |LUT4   |    75|
+|7     |LUT5   |   118|
+|8     |LUT6   |  3092|
 |9     |MUXF7  |  1224|
 |10    |MUXF8  |   612|
-|11    |FDCE   |  9617|
+|11    |FDCE   |  9591|
 |12    |FDPE   |    25|
 |13    |FDRE   |   173|
 |14    |FDSE   |     6|
@@ -452,62 +500,29 @@ Report Cell Usage:
 |16    |OBUF   |    55|
 |17    |OBUFT  |     1|
 +------+-------+------+
-
-Report Instance Areas: 
-+------+------------------------------------------------------------+-----------------------------------------------------+------+
-|      |Instance                                                    |Module                                               |Cells |
-+------+------------------------------------------------------------+-----------------------------------------------------+------+
-|1     |top                                                         |                                                     | 15888|
-|2     |  SPW_IF                                                    |SpwStream                                            | 15585|
-|3     |    LINK_INST                                               |SpwLink                                              |   133|
-|4     |    RECVFRONT_INST                                          |SpwRecvFront                                         |   116|
-|5     |      FIFOMEM                                               |SpwRam__parameterized2                               |    38|
-|6     |      RXRSTLOGIC                                            |SpwReset_6                                           |     2|
-|7     |      SYNCSYSBITCNT0                                        |SyncDff_7                                            |     4|
-|8     |      SYNCSYSBITCNT1                                        |SyncDff_8                                            |     3|
-|9     |      SYNCSYSBITCNT2                                        |SyncDff_9                                            |     3|
-|10    |      SYNCSYSBITCNT3                                        |SyncDff_10                                           |     4|
-|11    |      SYNCSYSHEADPTR0                                       |SyncDff_11                                           |     2|
-|12    |      SYNCSYSHEADPTR1                                       |SyncDff_12                                           |     3|
-|13    |      SYNCSYSHEADPTR2                                       |SyncDff_13                                           |     2|
-|14    |    RECV_INST                                               |SpwRecv                                              |   113|
-|15    |    SYSRSTLOGIC                                             |SpwReset                                             |     2|
-|16    |    TXMEM                                                   |SpwRam                                               | 14676|
-|17    |    TXRSTLOGIC                                              |SpwReset_0                                           |     3|
-|18    |    XMIT_FAST_INST                                          |SpwXmit_fast                                         |   252|
-|19    |      SYNCSYSTXFLIP0                                        |SyncDff                                              |    10|
-|20    |      SYNCSYSTXFLIP1                                        |SyncDff_1                                            |     4|
-|21    |      SYNCTXSYSFLIP0                                        |SyncDff_2                                            |     6|
-|22    |      SYNCTXSYSFLIP1                                        |SyncDff_3                                            |     3|
-|23    |      SYNCTXTXDIVSAFE                                       |SyncDff_4                                            |     4|
-|24    |      SYNCTXTXEN                                            |SyncDff_5                                            |    10|
-|25    |  SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut_inst |SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut |    20|
-|26    |  SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register_inst     |SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register     |    21|
-|27    |  SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn_inst   |SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn   |   173|
-+------+------------------------------------------------------------+-----------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 1742.090 ; gain = 1148.512
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:43 ; elapsed = 00:01:48 . Memory (MB): peak = 2062.805 ; gain = 1049.883
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 91 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 1742.090 ; gain = 1148.512
-Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 1742.090 ; gain = 1148.512
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:26 ; elapsed = 00:01:43 . Memory (MB): peak = 2062.805 ; gain = 954.082
+Synthesis Optimization Complete : Time (s): cpu = 00:01:43 ; elapsed = 00:01:48 . Memory (MB): peak = 2062.805 ; gain = 1049.883
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.156 . Memory (MB): peak = 1742.090 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.150 . Memory (MB): peak = 2062.805 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 1849 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 WARNING: [Netlist 29-101] Netlist 'SpaceWire_light_AXI' is not ideal for floorplanning, since the cellview 'SpwRam' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1742.090 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2062.805 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 35da5fce
+Synth Design complete | Checksum: 364ec3b2
 INFO: [Common 17-83] Releasing license: Synthesis
-96 Infos, 93 Warnings, 0 Critical Warnings and 0 Errors encountered.
+101 Infos, 94 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 1742.090 ; gain = 1154.832
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1742.090 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:50 ; elapsed = 00:01:56 . Memory (MB): peak = 2062.805 ; gain = 1478.652
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 2062.805 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/synth_1/SpaceWire_light_AXI.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file SpaceWire_light_AXI_utilization_synth.rpt -pb SpaceWire_light_AXI_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Aug 23 00:32:27 2024...
+INFO: [Common 17-206] Exiting Vivado at Sun Aug 25 18:34:47 2024...

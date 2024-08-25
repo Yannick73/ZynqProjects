@@ -97,6 +97,7 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 set_msg_config  -id {[BD 41-1306]}  -suppress 
@@ -110,7 +111,7 @@ set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 3
   set_param checkpoint.writeSynthRtdsInDcp 1
-  set_param synth.incrementalSynthesisCache C:/Users/Yannick/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-13916-DESKTOP-MEH5DGT/incrSyn
+  set_param synth.incrementalSynthesisCache C:/Users/Yannick/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9884-DESKTOP-MEH5DGT/incrSyn
   set_param runs.launchOptions { -jobs 12  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7z020clg484-1
@@ -129,6 +130,7 @@ OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/synth_1/SpaceWire_light_AXI.dcp
 OPTRACE "read constraints: implementation" START { }
+  read_xdc F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }
