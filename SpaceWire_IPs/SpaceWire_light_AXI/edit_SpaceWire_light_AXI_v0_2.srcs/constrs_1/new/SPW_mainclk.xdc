@@ -23,19 +23,26 @@ set_property ASYNC_REG true [get_cells SPW_IF/XMIT_FAST_INST/SYNCSYSTXFLIP1/sync
 set_property ASYNC_REG true [get_cells SPW_IF/XMIT_FAST_INST/SYNCSYSTXFLIP0/syncdff_ff1_reg]
 set_property ASYNC_REG true [get_cells SPW_IF/XMIT_FAST_INST/SYNCSYSTXFLIP0/syncdff_ff2_reg]
 create_clock -period 5.000 -name SPW_Din -waveform {0.000 2.500} [get_ports SPW_Din]
-set_input_jitter SPW_Din 0.0100
+set_input_jitter SPW_Din 0.010
 create_clock -period 5.000 -name SPW_Sin -waveform {0.000 2.500} [get_ports SPW_Sin]
-set_input_jitter SPW_Sin 0.0100
+set_input_jitter SPW_Sin 0.010
 create_clock -period 2.500 -name SPW_TX_clk -waveform {0.000 1.250} [get_ports SPW_TX_clk]
-set_input_jitter SPW_TX_clk 0.0100
+set_input_jitter SPW_TX_clk 0.010
 create_clock -period 10.000 -name SPW_main_clk -waveform {0.000 5.000} [get_ports SPW_main_clk]
-set_input_jitter SPW_main_clk 0.0100
+set_input_jitter SPW_main_clk 0.010
 create_clock -period 10.000 -name axi_register_aclk -waveform {0.000 5.000} [get_ports axi_register_aclk]
-set_input_jitter axi_register_aclk 0.0100
+set_input_jitter axi_register_aclk 0.010
 create_clock -period 10.000 -name axi_streamin_aclk -waveform {0.000 5.000} [get_ports axi_streamin_aclk]
-set_input_jitter axi_streamin_aclk 0.0100
+set_input_jitter axi_streamin_aclk 0.010
 create_clock -period 10.000 -name axi_streamout_aclk -waveform {0.000 5.000} [get_ports axi_streamout_aclk]
-set_input_jitter axi_streamout_aclk 0.0100
+set_input_jitter axi_streamout_aclk 0.010
+
+
+
+
+
+
+
 
 
 

@@ -77,14 +77,10 @@ entity SpwBlockRam is
    );
    port ( 
       RADDR  : in std_logic_vector (ABITS-1 downto 0);  --! read address.
-      REN    : in std_logic;                            --! read enable.
       WADDR  : in std_logic_vector (ABITS-1 downto 0);  --! write address.
       WDATA  : in std_logic_vector (8 downto 0);  --! write data.
       WEN    : in std_logic;                            --! write enable.
-      RCLK   : in std_logic;                            --! read clock.
-      WCLK   : in std_logic;                            --! write clock.
-      RRST_N : in std_logic;                            --! read clock syncd unit reset (active-low).
-      WRST_N : in std_logic;                            --! write clock syncd unit reset (active-low).
+      CLK   : in std_logic;                            --! read clock.
       RDATA  : out std_logic_vector (8 downto 0)  --! read data.
    );
 end entity SpwBlockRam;
@@ -97,15 +93,13 @@ architecture SpwBlockRam_rtl of SpwBlockRam is
    -----------------------------------------------------------------------------
    -- spwram_definitions - contains the constants, types and subtypes used in the SpwRam unit.
    -----------------------------------------------------------------------------
-   --! The type is an array of std_logic_vector.
    type mem_type is array(integer range <>) of std_logic_vector(8 downto 0);
-   -----------------------------------------------------------------------------
    signal s_mem : mem_type (0 to (2**ABITS - 1)); --! memory described as an array of std_logic_vector.
+   signal raddr_reg : std_logic_vector(ABITS - 1 downto 0);
 begin
    -----------------------------------------------------------------------------
    -- READ
-   RDATA <= s_mem(to_integer(unsigned(RADDR))) when REN ='1' else
-   (others => '0');
+    RDATA <= s_mem(to_integer(unsigned(raddr_reg)));
 
    -----------------------------------------------------------------------------
    -- Process write
@@ -116,15 +110,16 @@ begin
    --! \arg \ref     WCLK   - start the function (rising edge).
    --! \arg \ref     WRST_N - write clock domain reset (active-low).
    -----------------------------------------------------------------------------
-   write: process( WCLK, WRST_N )
+   process( CLK )
    begin
-      if ( rising_edge(WCLK) ) then
+      if ( rising_edge(CLK) ) then
          if ( WEN = '1' ) then
             s_mem(to_integer(unsigned(WADDR))) <= WDATA;
          end if; -- WEN
+         raddr_reg <= RADDR;
       end if; -- rising_edge(WCLK)
 
-   end process write;
+   end process;
 
 end architecture SpwBlockRam_rtl;
 

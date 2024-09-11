@@ -8,12 +8,12 @@
   **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
   **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
   **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-  **** Start of session at: Wed Sep 11 15:13:12 2024
+  **** Start of session at: Wed Sep 11 21:56:14 2024
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source SpaceWire_light_AXI.tcl -notrace
-create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 578.125 ; gain = 239.086
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 577.395 ; gain = 236.203
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Xilinx/ZynqProjects/ip_repo/myip/myip_1_0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2'.
@@ -33,14 +33,14 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 16864
+INFO: [Synth 8-7075] Helper process launched with PID 15016
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1463.988 ; gain = 449.223
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1463.555 ; gain = 448.582
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'SpaceWire_light_AXI' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:92]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
-INFO: [Synth 8-3491] module 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:5' bound to instance 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register_inst' of component 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:180]
+INFO: [Synth 8-3491] module 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:5' bound to instance 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register_inst' of component 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:197]
 INFO: [Synth 8-638] synthesizing module 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:86]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
@@ -48,57 +48,51 @@ INFO: [Synth 8-226] default block is never used [F:/Xilinx/ZynqProjects/SpaceWir
 INFO: [Synth 8-256] done synthesizing module 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register' (0#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:86]
 	Parameter ESCAPE_CHAR bound to: 8'b01111101 
 	Parameter C_S_AXIS_TDATA_WIDTH bound to: 8 - type: integer 
-INFO: [Synth 8-3491] module 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:5' bound to instance 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn_inst' of component 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:210]
+INFO: [Synth 8-3491] module 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:5' bound to instance 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn_inst' of component 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:227]
 INFO: [Synth 8-638] synthesizing module 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:50]
 	Parameter ESCAPE_CHAR bound to: 8'b01111101 
 	Parameter C_S_AXIS_TDATA_WIDTH bound to: 8 - type: integer 
 WARNING: [Synth 8-613] shared variable will be implemented as local to architecture [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:54]
 WARNING: [Synth 8-614] signal 'S_AXIS_ARESETN' is read in the process but is not in the sensitivity list [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:113]
 INFO: [Synth 8-256] done synthesizing module 'SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn' (0#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:50]
-WARNING: [Synth 8-5640] Port 'spw_rxvalid' is missing in component declaration [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:147]
-WARNING: [Synth 8-5640] Port 'spw_rxfifo' is missing in component declaration [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:147]
-WARNING: [Synth 8-5640] Port 'spw_rxflag' is missing in component declaration [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:147]
-WARNING: [Synth 8-5640] Port 'spw_rxread' is missing in component declaration [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:147]
-WARNING: [Synth 8-5640] Port 'spw_clk' is missing in component declaration [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:147]
 	Parameter ESCAPE_CHAR bound to: 8'b01111101 
 	Parameter C_M_AXIS_TDATA_WIDTH bound to: 8 - type: integer 
 	Parameter C_M_START_COUNT bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:5' bound to instance 'SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut_inst' of component 'SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:233]
+INFO: [Synth 8-3491] module 'SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:5' bound to instance 'SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut_inst' of component 'SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:250]
 INFO: [Synth 8-638] synthesizing module 'SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:45]
 	Parameter ESCAPE_CHAR bound to: 8'b01111101 
 	Parameter C_M_AXIS_TDATA_WIDTH bound to: 8 - type: integer 
-WARNING: [Synth 8-3819] Generic 'c_m_start_count' not present in instantiated entity will be ignored [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:233]
+WARNING: [Synth 8-3819] Generic 'c_m_start_count' not present in instantiated entity will be ignored [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:250]
 WARNING: [Synth 8-613] shared variable will be implemented as local to architecture [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:49]
 WARNING: [Synth 8-614] signal 'M_AXIS_ARESETN' is read in the process but is not in the sensitivity list [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:55]
-WARNING: [Synth 8-614] signal 'M_AXIS_ARESETN' is read in the process but is not in the sensitivity list [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:77]
 INFO: [Synth 8-256] done synthesizing module 'SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut' (0#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:45]
 	Parameter SYSFREQ bound to: 100000000.000000 - type: double 
-	Parameter TXCLKFREQ bound to: 100000000.000000 - type: double 
-	Parameter RXCHUNK bound to: 1 - type: integer 
-	Parameter RXFIFOSIZE_BITS bound to: 8 - type: integer 
-	Parameter TXFIFOSIZE_BITS bound to: 8 - type: integer 
-INFO: [Synth 8-3491] module 'SpwStream' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd:104' bound to instance 'SPW_IF' of component 'SpwStream' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:251]
+	Parameter TXCLKFREQ bound to: 400000000.000000 - type: double 
+	Parameter RXCHUNK bound to: 4 - type: integer 
+	Parameter RXFIFOSIZE_BITS bound to: 14 - type: integer 
+	Parameter TXFIFOSIZE_BITS bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'SpwStream' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd:104' bound to instance 'SPW_IF' of component 'SpwStream' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:274]
 INFO: [Synth 8-638] synthesizing module 'SpwStream' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd:165]
 	Parameter SYSFREQ bound to: 100000000.000000 - type: double 
-	Parameter TXCLKFREQ bound to: 100000000.000000 - type: double 
+	Parameter TXCLKFREQ bound to: 400000000.000000 - type: double 
 	Parameter RXIMPL bound to: 32'sb00000000000000000000000000000010 
 	Parameter TXIMPL bound to: 32'sb00000000000000000000000000000001 
-	Parameter RXCHUNK bound to: 1 - type: integer 
-	Parameter RXFIFOSIZE_BITS bound to: 8 - type: integer 
-	Parameter TXFIFOSIZE_BITS bound to: 8 - type: integer 
+	Parameter RXCHUNK bound to: 4 - type: integer 
+	Parameter RXFIFOSIZE_BITS bound to: 14 - type: integer 
+	Parameter TXFIFOSIZE_BITS bound to: 14 - type: integer 
 	Parameter RESET_TIME bound to: 640 - type: integer 
-INFO: [Synth 8-3491] module 'SpwLink' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwLink.vhd:78' bound to instance 'LINK_INST' of component 'SpwLink' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd:377]
+INFO: [Synth 8-3491] module 'SpwLink' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwLink.vhd:78' bound to instance 'LINK_INST' of component 'SpwLink' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd:373]
 INFO: [Synth 8-638] synthesizing module 'SpwLink' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwLink.vhd:98]
 	Parameter RESET_TIME bound to: 640 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'SpwLink' (0#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwLink.vhd:98]
 	Parameter DISCONNECT_TIME bound to: 84 - type: integer 
-	Parameter RXCHUNK bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'SpwRecv' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecv.vhd:85' bound to instance 'RECV_INST' of component 'SpwRecv' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd:381]
+	Parameter RXCHUNK bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'SpwRecv' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecv.vhd:85' bound to instance 'RECV_INST' of component 'SpwRecv' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd:377]
 INFO: [Synth 8-638] synthesizing module 'SpwRecv' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecv.vhd:105]
 	Parameter DISCONNECT_TIME bound to: 84 - type: integer 
-	Parameter RXCHUNK bound to: 1 - type: integer 
+	Parameter RXCHUNK bound to: 4 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'SpwRecv' (0#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecv.vhd:105]
-INFO: [Synth 8-3491] module 'SpwXmit_fast' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SpwXmit_fast.vhd:217' bound to instance 'XMIT_FAST_INST' of component 'SpwXmit_fast' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd:385]
+INFO: [Synth 8-3491] module 'SpwXmit_fast' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SpwXmit_fast.vhd:217' bound to instance 'XMIT_FAST_INST' of component 'SpwXmit_fast' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd:381]
 INFO: [Synth 8-638] synthesizing module 'SpwXmit_fast' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SpwXmit_fast.vhd:250]
 INFO: [Synth 8-3491] module 'SyncDff' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SyncDff.vhd:73' bound to instance 'SYNCTXSYSFLIP0' of component 'SyncDff' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SpwXmit_fast.vhd:307]
 INFO: [Synth 8-638] synthesizing module 'SyncDff' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SyncDff.vhd:89]
@@ -109,58 +103,59 @@ INFO: [Synth 8-3491] module 'SyncDff' declared at 'F:/Xilinx/ZynqProjects/SpaceW
 INFO: [Synth 8-3491] module 'SyncDff' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SyncDff.vhd:73' bound to instance 'SYNCSYSTXFLIP0' of component 'SyncDff' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SpwXmit_fast.vhd:319]
 INFO: [Synth 8-3491] module 'SyncDff' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SyncDff.vhd:73' bound to instance 'SYNCSYSTXFLIP1' of component 'SyncDff' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SpwXmit_fast.vhd:322]
 INFO: [Synth 8-256] done synthesizing module 'SpwXmit_fast' (0#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SpwXmit_fast.vhd:250]
-INFO: [Synth 8-3491] module 'SpwRecovClk' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecovClk.vhd:65' bound to instance 'RECOV_CLK_INST' of component 'SpwRecovClk' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd:388]
+INFO: [Synth 8-3491] module 'SpwRecovClk' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecovClk.vhd:65' bound to instance 'RECOV_CLK_INST' of component 'SpwRecovClk' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd:384]
 INFO: [Synth 8-638] synthesizing module 'SpwRecovClk' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecovClk.vhd:77]
 INFO: [Synth 8-3491] module 'CLKDriver' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd:99' bound to instance 'RXCLKBUF' of component 'CLKDriver' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecovClk.vhd:85]
 INFO: [Synth 8-638] synthesizing module 'CLKDriver' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd:109]
 INFO: [Synth 8-256] done synthesizing module 'CLKDriver' (0#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd:109]
 INFO: [Synth 8-256] done synthesizing module 'SpwRecovClk' (0#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecovClk.vhd:77]
-	Parameter ABITS bound to: 8 - type: integer 
-INFO: [Synth 8-3491] module 'SpwBlockRam' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpwStream_improved/SpwBlockRam.vhd:74' bound to instance 'RXMEM' of component 'SpwBlockRam' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd:391]
-INFO: [Synth 8-638] synthesizing module 'SpwBlockRam' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpwStream_improved/SpwBlockRam.vhd:96]
-	Parameter ABITS bound to: 8 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'SpwBlockRam' (0#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpwStream_improved/SpwBlockRam.vhd:96]
-	Parameter ABITS bound to: 8 - type: integer 
-INFO: [Synth 8-3491] module 'SpwBlockRam' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpwStream_improved/SpwBlockRam.vhd:74' bound to instance 'TXMEM' of component 'SpwBlockRam' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd:396]
-	Parameter RXCHUNK bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'SpwRecvFront' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:92' bound to instance 'RECVFRONT_INST' of component 'SpwRecvFront' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd:401]
+	Parameter ABITS bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'SpwBlockRam' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpwStream_improved/SpwBlockRam.vhd:74' bound to instance 'RXMEM' of component 'SpwBlockRam' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd:387]
+INFO: [Synth 8-638] synthesizing module 'SpwBlockRam' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpwStream_improved/SpwBlockRam.vhd:92]
+	Parameter ABITS bound to: 14 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'SpwBlockRam' (0#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpwStream_improved/SpwBlockRam.vhd:92]
+	Parameter ABITS bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'SpwBlockRam' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpwStream_improved/SpwBlockRam.vhd:74' bound to instance 'TXMEM' of component 'SpwBlockRam' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd:391]
+	Parameter RXCHUNK bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'SpwRecvFront' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:92' bound to instance 'RECVFRONT_INST' of component 'SpwRecvFront' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd:395]
 INFO: [Synth 8-638] synthesizing module 'SpwRecvFront' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:117]
-	Parameter RXCHUNK bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'Driver' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd:125' bound to instance 'DriverR' of component 'Driver' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:231]
+	Parameter RXCHUNK bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'Driver' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd:125' bound to instance 'DriverR' of component 'Driver' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:232]
 INFO: [Synth 8-638] synthesizing module 'Driver' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd:135]
 INFO: [Synth 8-256] done synthesizing module 'Driver' (0#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd:135]
-INFO: [Synth 8-3491] module 'Driver' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd:125' bound to instance 'DriverF' of component 'Driver' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:232]
-INFO: [Synth 8-3491] module 'Driver' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd:125' bound to instance 'DriverR' of component 'Driver' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:231]
-INFO: [Synth 8-3491] module 'Driver' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd:125' bound to instance 'DriverF' of component 'Driver' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:232]
-INFO: [Synth 8-3491] module 'Driver' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd:125' bound to instance 'DriverR' of component 'Driver' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:231]
-INFO: [Synth 8-3491] module 'Driver' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd:125' bound to instance 'DriverF' of component 'Driver' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:232]
-INFO: [Synth 8-3491] module 'Driver' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd:125' bound to instance 'DriverR' of component 'Driver' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:231]
-INFO: [Synth 8-3491] module 'Driver' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd:125' bound to instance 'DriverF' of component 'Driver' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:232]
-INFO: [Synth 8-3491] module 'SyncDff' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SyncDff.vhd:73' bound to instance 'SYNCSYSHEADPTR0' of component 'SyncDff' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:239]
-INFO: [Synth 8-3491] module 'SyncDff' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SyncDff.vhd:73' bound to instance 'SYNCSYSHEADPTR1' of component 'SyncDff' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:242]
-INFO: [Synth 8-3491] module 'SyncDff' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SyncDff.vhd:73' bound to instance 'SYNCSYSHEADPTR2' of component 'SyncDff' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:245]
-INFO: [Synth 8-3491] module 'SyncDff' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SyncDff.vhd:73' bound to instance 'SYNCSYSBITCNT0' of component 'SyncDff' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:248]
-INFO: [Synth 8-3491] module 'SyncDff' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SyncDff.vhd:73' bound to instance 'SYNCSYSBITCNT1' of component 'SyncDff' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:251]
-INFO: [Synth 8-3491] module 'SyncDff' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SyncDff.vhd:73' bound to instance 'SYNCSYSBITCNT2' of component 'SyncDff' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:254]
-INFO: [Synth 8-3491] module 'SyncDff' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SyncDff.vhd:73' bound to instance 'SYNCSYSBITCNT3' of component 'SyncDff' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:257]
+INFO: [Synth 8-3491] module 'Driver' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd:125' bound to instance 'DriverF' of component 'Driver' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:233]
+INFO: [Synth 8-3491] module 'Driver' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd:125' bound to instance 'DriverR' of component 'Driver' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:232]
+INFO: [Synth 8-3491] module 'Driver' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd:125' bound to instance 'DriverF' of component 'Driver' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:233]
+INFO: [Synth 8-3491] module 'Driver' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd:125' bound to instance 'DriverR' of component 'Driver' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:232]
+INFO: [Synth 8-3491] module 'Driver' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd:125' bound to instance 'DriverF' of component 'Driver' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:233]
+INFO: [Synth 8-3491] module 'Driver' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd:125' bound to instance 'DriverR' of component 'Driver' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:232]
+INFO: [Synth 8-3491] module 'Driver' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd:125' bound to instance 'DriverF' of component 'Driver' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:233]
+INFO: [Synth 8-3491] module 'Driver' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd:125' bound to instance 'SPW_DI_BUF' of component 'Driver' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:237]
+INFO: [Synth 8-3491] module 'SyncDff' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SyncDff.vhd:73' bound to instance 'SYNCSYSHEADPTR0' of component 'SyncDff' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:245]
+INFO: [Synth 8-3491] module 'SyncDff' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SyncDff.vhd:73' bound to instance 'SYNCSYSHEADPTR1' of component 'SyncDff' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:248]
+INFO: [Synth 8-3491] module 'SyncDff' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SyncDff.vhd:73' bound to instance 'SYNCSYSHEADPTR2' of component 'SyncDff' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:251]
+INFO: [Synth 8-3491] module 'SyncDff' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SyncDff.vhd:73' bound to instance 'SYNCSYSBITCNT0' of component 'SyncDff' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:254]
+INFO: [Synth 8-3491] module 'SyncDff' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SyncDff.vhd:73' bound to instance 'SYNCSYSBITCNT1' of component 'SyncDff' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:257]
+INFO: [Synth 8-3491] module 'SyncDff' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SyncDff.vhd:73' bound to instance 'SYNCSYSBITCNT2' of component 'SyncDff' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:260]
+INFO: [Synth 8-3491] module 'SyncDff' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SyncDff.vhd:73' bound to instance 'SYNCSYSBITCNT3' of component 'SyncDff' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:263]
 	Parameter RESET_LATENCY bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'SpwReset' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwReset.vhd:61' bound to instance 'RXRSTLOGIC' of component 'SpwReset' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:260]
+INFO: [Synth 8-3491] module 'SpwReset' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwReset.vhd:61' bound to instance 'RXRSTLOGIC' of component 'SpwReset' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:266]
 INFO: [Synth 8-638] synthesizing module 'SpwReset' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwReset.vhd:76]
 	Parameter RESET_LATENCY bound to: 1 - type: integer 
 WARNING: [Synth 8-11358] null range expression ignored [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwReset.vhd:99]
 INFO: [Synth 8-256] done synthesizing module 'SpwReset' (0#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwReset.vhd:76]
 	Parameter ABITS bound to: 3 - type: integer 
-	Parameter DBITS bound to: 2 - type: integer 
-INFO: [Synth 8-3491] module 'SpwRam' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRam.vhd:69' bound to instance 'FIFOMEM' of component 'SpwRam' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:264]
+	Parameter DBITS bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'SpwRam' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRam.vhd:69' bound to instance 'FIFOMEM' of component 'SpwRam' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:270]
 INFO: [Synth 8-638] synthesizing module 'SpwRam' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRam.vhd:92]
 	Parameter ABITS bound to: 3 - type: integer 
-	Parameter DBITS bound to: 2 - type: integer 
+	Parameter DBITS bound to: 4 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'SpwRam' (0#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRam.vhd:92]
 INFO: [Synth 8-256] done synthesizing module 'SpwRecvFront' (0#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:117]
 	Parameter RESET_LATENCY bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'SpwReset' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwReset.vhd:61' bound to instance 'TXRSTLOGIC' of component 'SpwReset' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd:406]
+INFO: [Synth 8-3491] module 'SpwReset' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwReset.vhd:61' bound to instance 'TXRSTLOGIC' of component 'SpwReset' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd:400]
 	Parameter RESET_LATENCY bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'SpwReset' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwReset.vhd:61' bound to instance 'SYSRSTLOGIC' of component 'SpwReset' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd:410]
+INFO: [Synth 8-3491] module 'SpwReset' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwReset.vhd:61' bound to instance 'SYSRSTLOGIC' of component 'SpwReset' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd:404]
 INFO: [Synth 8-256] done synthesizing module 'SpwStream' (0#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd:165]
 INFO: [Synth 8-256] done synthesizing module 'SpaceWire_light_AXI' (0#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:92]
 WARNING: [Synth 8-6014] Unused sequential element axi_awaddr_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:166]
@@ -175,17 +170,16 @@ WARNING: [Synth 8-6014] Unused sequential element slv_reg7_reg was removed.  [F:
 WARNING: [Synth 8-6014] Unused sequential element axi_araddr_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd:329]
 WARNING: [Synth 8-6014] Unused sequential element SPW_TXWRITE_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd:126]
 WARNING: [Synth 8-6014] Unused sequential element M_AXIS_TVALID_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:60]
-WARNING: [Synth 8-6014] Unused sequential element SPW_RXREAD_reg was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:88]
 WARNING: [Synth 8-3848] Net M_AXIS_TSTRB in module/entity SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut does not have driver. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:37]
 WARNING: [Synth 8-6014] Unused sequential element res_seq_reg[penderresc] was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecv.vhd:323]
-WARNING: [Synth 8-6014] Unused sequential element resrx_seq_reg[wr_cnt] was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:456]
+WARNING: [Synth 8-6014] Unused sequential element resrx_seq_reg[wr_cnt] was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:463]
+WARNING: [Synth 8-6014] Unused sequential element res_seq_reg[splitbit] was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:482]
+WARNING: [Synth 8-6014] Unused sequential element res_seq_reg[splitinx] was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:482]
+WARNING: [Synth 8-6014] Unused sequential element res_seq_reg[splitvalid] was removed.  [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:482]
 WARNING: [Synth 8-3848] Net IRQ in module/entity SpaceWire_light_AXI does not have driver. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:34]
 WARNING: [Synth 8-7129] Port RCLK in module SpwRam is either unconnected or has no load
 WARNING: [Synth 8-7129] Port RRST_N in module SpwRam is either unconnected or has no load
 WARNING: [Synth 8-7129] Port SPW_SI in module SpwRecvFront is either unconnected or has no load
-WARNING: [Synth 8-7129] Port RCLK in module SpwBlockRam is either unconnected or has no load
-WARNING: [Synth 8-7129] Port RRST_N in module SpwBlockRam is either unconnected or has no load
-WARNING: [Synth 8-7129] Port WRST_N in module SpwBlockRam is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_AXIS_TSTRB[0] in module SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXIS_TSTRB[0] in module SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXIS_TLAST in module SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn is either unconnected or has no load
@@ -243,18 +237,18 @@ WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module SpaceWire_light_AXI_slave
 WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register is either unconnected or has no load
 WARNING: [Synth 8-7129] Port IRQ in module SpaceWire_light_AXI is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1594.305 ; gain = 579.539
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1598.715 ; gain = 583.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1594.305 ; gain = 579.539
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1598.715 ; gain = 583.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1594.305 ; gain = 579.539
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1598.715 ; gain = 583.742
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1594.305 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1598.715 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -265,22 +259,22 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/SpaceWire_light_AXI_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1693.148 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1698.590 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1693.148 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1698.590 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1693.148 ; gain = 678.383
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1698.590 ; gain = 683.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1693.148 ; gain = 678.383
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1698.590 ; gain = 683.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -298,7 +292,7 @@ Applied set_property ASYNC_REG = true for SPW_IF/XMIT_FAST_INST/SYNCSYSTXFLIP1/s
 Applied set_property ASYNC_REG = true for SPW_IF/XMIT_FAST_INST/SYNCSYSTXFLIP0/syncdff_ff1_reg. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc, line 23).
 Applied set_property ASYNC_REG = true for SPW_IF/XMIT_FAST_INST/SYNCSYSTXFLIP0/syncdff_ff2_reg. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc, line 24).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1693.148 ; gain = 678.383
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1698.590 ; gain = 683.617
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_write_reg' in module 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register'
 INFO: [Synth 8-802] inferred FSM for state register 'state_read_reg' in module 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register'
@@ -330,17 +324,19 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_read_reg' using enco
                    s_run |                           000010 |                              101
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_seq_reg[state]' using encoding 'one-hot' in module 'SpwLink'
+WARNING: [Synth 8-6430] The Block RAM "SpwBlockRam:/s_mem_reg" may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1693.148 ; gain = 678.383
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1698.590 ; gain = 683.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input   15 Bit       Adders := 4     
+	   2 Input   14 Bit       Adders := 1     
 	   2 Input   11 Bit       Adders := 1     
-	   2 Input    9 Bit       Adders := 4     
-	   2 Input    8 Bit       Adders := 10    
+	   2 Input    8 Bit       Adders := 6     
 	   3 Input    7 Bit       Adders := 1     
 	   2 Input    6 Bit       Adders := 3     
 	   2 Input    4 Bit       Adders := 2     
@@ -348,39 +344,45 @@ Detailed RTL Component Info :
 	   2 Input    2 Bit       Adders := 3     
 	   3 Input    2 Bit       Adders := 3     
 +---XORs : 
-	   2 Input      1 Bit         XORs := 13    
+	   2 Input      1 Bit         XORs := 16    
 	   3 Input      1 Bit         XORs := 1     
 +---Registers : 
+	               15 Bit    Registers := 2     
+	               14 Bit    Registers := 3     
 	               11 Bit    Registers := 1     
 	               10 Bit    Registers := 3     
-	                9 Bit    Registers := 6     
-	                8 Bit    Registers := 25    
+	                9 Bit    Registers := 4     
+	                8 Bit    Registers := 22    
 	                6 Bit    Registers := 3     
-	                4 Bit    Registers := 3     
+	                4 Bit    Registers := 13    
 	                3 Bit    Registers := 5     
-	                2 Bit    Registers := 14    
-	                1 Bit    Registers := 128   
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 124   
++---RAMs : 
+	             144K Bit	(16384 X 9 bit)          RAMs := 2     
 +---Muxes : 
+	   4 Input   15 Bit        Muxes := 10    
+	   4 Input   14 Bit        Muxes := 2     
 	   2 Input   11 Bit        Muxes := 1     
-	   3 Input   10 Bit        Muxes := 1     
-	   2 Input   10 Bit        Muxes := 4     
-	   2 Input    9 Bit        Muxes := 7     
-	   4 Input    9 Bit        Muxes := 10    
-	   2 Input    8 Bit        Muxes := 17    
+	   3 Input   10 Bit        Muxes := 4     
+	   2 Input   10 Bit        Muxes := 7     
+	   2 Input    9 Bit        Muxes := 5     
+	   2 Input    8 Bit        Muxes := 35    
+	   4 Input    8 Bit        Muxes := 4     
 	   5 Input    8 Bit        Muxes := 1     
-	   4 Input    8 Bit        Muxes := 2     
+	   3 Input    7 Bit        Muxes := 1     
 	   2 Input    6 Bit        Muxes := 8     
 	   6 Input    6 Bit        Muxes := 1     
 	   2 Input    5 Bit        Muxes := 1     
-	   2 Input    4 Bit        Muxes := 4     
+	   2 Input    4 Bit        Muxes := 6     
 	   3 Input    3 Bit        Muxes := 1     
 	   2 Input    3 Bit        Muxes := 7     
 	   3 Input    2 Bit        Muxes := 1     
-	   2 Input    2 Bit        Muxes := 9     
-	   2 Input    1 Bit        Muxes := 113   
+	   2 Input    2 Bit        Muxes := 7     
+	   2 Input    1 Bit        Muxes := 221   
 	   3 Input    1 Bit        Muxes := 10    
 	   6 Input    1 Bit        Muxes := 7     
-	   4 Input    1 Bit        Muxes := 9     
+	   4 Input    1 Bit        Muxes := 30    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -467,23 +469,36 @@ WARNING: [Synth 8-7129] Port axi_register_wdata[8] in module SpaceWire_light_AXI
 WARNING: [Synth 8-7129] Port axi_register_wdata[7] in module SpaceWire_light_AXI is either unconnected or has no load
 WARNING: [Synth 8-7129] Port axi_register_wdata[6] in module SpaceWire_light_AXI is either unconnected or has no load
 WARNING: [Synth 8-7129] Port axi_register_wdata[5] in module SpaceWire_light_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_register_wdata[4] in module SpaceWire_light_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_register_wdata[3] in module SpaceWire_light_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_register_wdata[2] in module SpaceWire_light_AXI is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-6014] Unused sequential element SPW_IF/RXMEM/s_mem_reg was removed. 
+RAM Pipeline Warning: Read Address Register Found For RAM SPW_IF/RXMEM/s_mem_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM SPW_IF/RXMEM/s_mem_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM SPW_IF/RXMEM/s_mem_reg. We will not be able to pipeline it. This may degrade performance. 
+WARNING: [Synth 8-6430] The Block RAM "SpaceWire_light_AXI/SPW_IF/RXMEM/s_mem_reg" may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+RAM Pipeline Warning: Read Address Register Found For RAM SPW_IF/TXMEM/s_mem_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM SPW_IF/TXMEM/s_mem_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM SPW_IF/TXMEM/s_mem_reg. We will not be able to pipeline it. This may degrade performance. 
+WARNING: [Synth 8-6430] The Block RAM "SpaceWire_light_AXI/SPW_IF/TXMEM/s_mem_reg" may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+RAM Pipeline Warning: Read Address Register Found For RAM SPW_IF/RXMEM/s_mem_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM SPW_IF/TXMEM/s_mem_reg. We will not be able to pipeline it. This may degrade performance. 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1693.148 ; gain = 678.383
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1698.590 ; gain = 683.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
-Distributed RAM: Preliminary Mapping Report (see note below)
-+--------------------+------------------------+-----------+----------------------+--------------+
-|Module Name         | RTL Object             | Inference | Size (Depth x Width) | Primitives   | 
-+--------------------+------------------------+-----------+----------------------+--------------+
-|SpaceWire_light_AXI | SPW_IF/TXMEM/s_mem_reg | Implied   | 256 x 9              | RAM64M x 12  | 
-+--------------------+------------------------+-----------+----------------------+--------------+
+Block RAM: Preliminary Mapping Report (see note below)
++--------------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name         | RTL Object             | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|SpaceWire_light_AXI | SPW_IF/RXMEM/s_mem_reg | 16 K x 9(READ_FIRST)   | W |   | 16 K x 9(WRITE_FIRST)  |   | R | Port A and B     | 1      | 4      | 
+|SpaceWire_light_AXI | SPW_IF/TXMEM/s_mem_reg | 16 K x 9(READ_FIRST)   | W |   | 16 K x 9(WRITE_FIRST)  |   | R | Port A and B     | 1      | 4      | 
++--------------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 
-Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
@@ -491,24 +506,25 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1693.148 ; gain = 678.383
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1698.590 ; gain = 683.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1693.148 ; gain = 678.383
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1698.590 ; gain = 683.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
-Distributed RAM: Final Mapping Report
-+--------------------+------------------------+-----------+----------------------+--------------+
-|Module Name         | RTL Object             | Inference | Size (Depth x Width) | Primitives   | 
-+--------------------+------------------------+-----------+----------------------+--------------+
-|SpaceWire_light_AXI | SPW_IF/TXMEM/s_mem_reg | Implied   | 256 x 9              | RAM64M x 12  | 
-+--------------------+------------------------+-----------+----------------------+--------------+
+Block RAM: Final Mapping Report
++--------------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name         | RTL Object             | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|SpaceWire_light_AXI | SPW_IF/RXMEM/s_mem_reg | 16 K x 9(READ_FIRST)   | W |   | 16 K x 9(WRITE_FIRST)  |   | R | Port A and B     | 1      | 4      | 
+|SpaceWire_light_AXI | SPW_IF/TXMEM/s_mem_reg | 16 K x 9(READ_FIRST)   | W |   | 16 K x 9(WRITE_FIRST)  |   | R | Port A and B     | 1      | 4      | 
++--------------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -516,8 +532,18 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance SPW_IF/RXMEM/s_mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance SPW_IF/RXMEM/s_mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance SPW_IF/RXMEM/s_mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance SPW_IF/RXMEM/s_mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance SPW_IF/RXMEM/s_mem_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance SPW_IF/TXMEM/s_mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance SPW_IF/TXMEM/s_mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance SPW_IF/TXMEM/s_mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance SPW_IF/TXMEM/s_mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance SPW_IF/TXMEM/s_mem_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1693.148 ; gain = 678.383
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1698.590 ; gain = 683.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -535,37 +561,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1693.148 ; gain = 678.383
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1698.590 ; gain = 683.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1693.148 ; gain = 678.383
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1698.590 ; gain = 683.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1693.148 ; gain = 678.383
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1698.590 ; gain = 683.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1693.148 ; gain = 678.383
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1698.590 ; gain = 683.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1693.148 ; gain = 678.383
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1698.590 ; gain = 683.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1693.148 ; gain = 678.383
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1698.590 ; gain = 683.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -578,49 +604,49 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+-------+------+
-|      |Cell   |Count |
-+------+-------+------+
-|1     |BUFG   |     6|
-|2     |CARRY4 |     4|
-|3     |LUT1   |    15|
-|4     |LUT2   |    65|
-|5     |LUT3   |    91|
-|6     |LUT4   |    83|
-|7     |LUT5   |    61|
-|8     |LUT6   |   135|
-|9     |RAM64M |    12|
-|10    |FDCE   |   305|
-|11    |FDPE   |    25|
-|12    |FDRE   |    43|
-|13    |FDSE   |     1|
-|14    |IBUF   |    26|
-|15    |OBUF   |    54|
-|16    |OBUFT  |     2|
-+------+-------+------+
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     6|
+|2     |CARRY4   |    36|
+|3     |LUT1     |    44|
+|4     |LUT2     |    78|
+|5     |LUT3     |    98|
+|6     |LUT4     |    99|
+|7     |LUT5     |    93|
+|8     |LUT6     |   135|
+|9     |RAMB18E1 |     2|
+|10    |RAMB36E1 |     8|
+|11    |FDCE     |   385|
+|12    |FDPE     |    25|
+|13    |FDRE     |    70|
+|14    |FDSE     |     6|
+|15    |IBUF     |    26|
+|16    |OBUF     |    54|
+|17    |OBUFT    |     2|
++------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1693.148 ; gain = 678.383
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1698.590 ; gain = 683.617
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 91 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 1693.148 ; gain = 579.539
-Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1693.148 ; gain = 678.383
+Synthesis finished with 0 errors, 0 critical warnings and 93 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:33 . Memory (MB): peak = 1698.590 ; gain = 583.742
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1698.590 ; gain = 683.617
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1693.148 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1698.590 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 46 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1693.148 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1698.590 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 12 instances were transformed.
-  RAM64M => RAM64M (RAMD64E(x4)): 12 instances
+No Unisim elements were transformed.
 
-Synth Design complete | Checksum: fd327701
+Synth Design complete | Checksum: 4947f0ea
 INFO: [Common 17-83] Releasing license: Synthesis
-103 Infos, 164 Warnings, 0 Critical Warnings and 0 Errors encountered.
+114 Infos, 162 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1693.148 ; gain = 1106.062
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1693.148 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1698.590 ; gain = 1111.945
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1698.590 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/synth_1/SpaceWire_light_AXI.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file SpaceWire_light_AXI_utilization_synth.rpt -pb SpaceWire_light_AXI_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Sep 11 15:14:02 2024...
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 11 21:57:06 2024...

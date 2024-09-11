@@ -8,10 +8,10 @@ entity SpaceWire_light_AXI is
 	generic (
 		-- Users to add parameters here
         SYSFREQ : real range 1.0e6 to 1.0e9 := 100.0*1e6;
-        TXCLKFREQ : real range 1.0e6 to 1.0e9 := 100.0*1e6;
-        RXCHUNK : integer range 1 to 6 := 1;
-        RXFIFOSIZE_BITS : integer range 6 to 16 := 8;
-        TXFIFOSIZE_BITS : integer range 2 to 16 := 8;
+        TXCLKFREQ : real range 1.0e6 to 1.0e9 := 400.0*1e6;
+        RXCHUNK : integer range 1 to 6 := 4;
+        RXFIFOSIZE_BITS : integer range 6 to 16 := 14;
+        TXFIFOSIZE_BITS : integer range 2 to 16 := 14;
         ESCAPE_CHAR : std_logic_vector (7 downto 0) := x"7D";
 		-- User parameters ends
 		-- Do not modify the parameters beyond this line
@@ -151,6 +151,12 @@ architecture arch_imp of SpaceWire_light_AXI is
 		C_M_START_COUNT	: integer	:= 32
 		);
 		port (
+		SPW_RXVALID : in std_logic;
+        SPW_RXFIFO : in std_logic_vector (7 downto 0);
+        SPW_RXFLAG : in std_logic;
+        SPW_RXREAD : out std_logic;
+        SPW_CLK : in std_logic;
+        
 		M_AXIS_ACLK	: in std_logic;
 		M_AXIS_ARESETN	: in std_logic;
 		M_AXIS_TVALID	: out std_logic;
@@ -171,7 +177,18 @@ architecture arch_imp of SpaceWire_light_AXI is
     signal spw_txflag_signal : std_logic := '0';
     signal spw_txwrite_signal : std_logic := '0';
     signal spw_clk_signal : std_logic := '0';
-
+    
+    
+--	    SPW_RXVALID : in std_logic;
+--        SPW_RXFIFO : in std_logic_vector (7 downto 0);
+--        SPW_RXFLAG : in std_logic;
+--        SPW_RXREAD : out std_logic;
+--        SPW_CLK : in std_logic;
+    signal spw_rxvalid_signal : std_logic := '0';
+    signal spw_rxfifo_signal : std_logic_vector (7 downto 0) := x"00";
+    signal spw_rxflag_signal : std_logic := '0';
+    signal spw_rxread_signal : std_logic := '0';
+    
 begin
 
     spw_clk_signal <= SPW_main_clk;
@@ -237,6 +254,12 @@ SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut_inst : SpaceWire_light_AXI_
 		C_M_START_COUNT	=> C_AXI_StreamOut_START_COUNT
 	)
 	port map (
+	    SPW_RXVALID => spw_rxvalid_signal,
+        SPW_RXFIFO => spw_rxfifo_signal,
+        SPW_RXFLAG => spw_rxflag_signal,
+        SPW_RXREAD => spw_rxread_signal,
+        SPW_CLK => spw_clk_signal,
+        
 		M_AXIS_ACLK	=> axi_streamout_aclk,
 		M_AXIS_ARESETN	=> axi_streamout_aresetn,
 		M_AXIS_TVALID	=> axi_streamout_tvalid,
@@ -278,12 +301,19 @@ SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut_inst : SpaceWire_light_AXI_
         TICK_IN => '0',
         CTRL_IN => "00",
         TIME_IN => "000000",
+        -- write logic
         TXWRITE => spw_txwrite_signal,
         TXFLAG => spw_txflag_signal,
 --        TXFLAG => '0',
         TXDATA => spw_txfifo_signal,
---        TXDATA => x"00",
-        RXREAD => '0',
+--        TXDATA => x"00",       
+        
+        -- read logic
+        RXVALID => spw_rxvalid_signal,
+        RXDATA => spw_rxfifo_signal,
+        RXFLAG => spw_rxflag_signal,
+        RXREAD => spw_rxread_signal,
+        
         CNT_RST => '1',
         
         TXRDY => spw_txrdy_signal

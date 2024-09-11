@@ -115,7 +115,7 @@ begin
    write: process( WCLK, WRST_N )
    begin
       if ( WRST_N = '0' ) then
-         s_mem <= (others => (others => '0'));
+        s_mem <= (others => (others => '0'));
       elsif ( rising_edge(WCLK) ) then
          if ( WEN = '1' ) then
             s_mem(to_integer(unsigned(WADDR))) <= WDATA;

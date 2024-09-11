@@ -77,8 +77,12 @@ begin
     process(SPW_CLK)
         variable send_escape : boolean := false;
         variable read_spw_rx : boolean := false;
+        -- added flipflop dividing stage to improve timings
+        variable rxflag_ff : std_logic := '0';
+        variable rxfifo_ff : std_logic_vector (7 downto 0) := x"00";
     begin
-        if (rising_edge(SPW_CLK) and M_AXIS_ARESETN = '0') then  
+        if (rising_edge(SPW_CLK)) then
+            if (M_AXIS_ARESETN = '0') then  
                 -- reset
                 out_fifo <= x"00";
                 fifo_full <= '0';
@@ -86,41 +90,52 @@ begin
                 read_spw_rx := false;
                 escape_fifo <= x"00";
                 SPW_RXREAD <= '0';
+            else
+                -- normal case
+                if (SPW_RXVALID = '1' and M_AXIS_TREADY = '1') then
+                    -- SPW and AXI are ready for transfer, so safe the current data
+                    if (rxflag_ff = '1' or rxfifo_ff = ESCAPE_CHAR) then
+                        -- if either a control signal is issued, or the escape char is transmitted
+                        out_fifo <= ESCAPE_CHAR;
+                        fifo_full <= '1';
+                        send_escape := true;
+                        escape_fifo <= rxfifo_ff;
+                        read_spw_rx := true;
+                    elsif(send_escape) then
+                        -- in previous cycle, an escape was sent, so send now the char in question
+                        out_fifo <= escape_fifo;
+                        send_escape := false;
+                        fifo_full <= '1';
+                    else
+                        -- normal read case
+                        out_fifo <= rxfifo_ff;
+                        fifo_full <= '1';
+                        send_escape := false;
+                        read_spw_rx := true;
+                    end if;
+                
+                end if;
+                
+                if (fifo_full = '1' and fifo_clear) then
+                    fifo_full <= '0';
+                end if;
+                
+                if read_spw_rx then
+                    SPW_RXREAD <= '1';
+                else
+                    SPW_RXREAD <= '0';
+                end if;
+            end if;
         end if;
         
         if (falling_edge(SPW_CLK)) then
-            if (SPW_RXVALID = '1' and M_AXIS_TREADY = '1') then
-                -- SPW and AXI are ready for transfer, so safe the current data
-                if (SPW_RXFLAG = '1' or SPW_RXFIFO = ESCAPE_CHAR) then
-                    -- if either a control signal is issued, or the escape char is transmitted
-                    out_fifo <= ESCAPE_CHAR;
-                    fifo_full <= '1';
-                    send_escape := true;
-                    escape_fifo <= SPW_RXFIFO;
-                    read_spw_rx := true;
-                elsif(send_escape) then
-                    -- in previous cycle, an escape was sent, so send now the char in question
-                    out_fifo <= escape_fifo;
-                    send_escape := false;
-                    fifo_full <= '1';
-                else
-                    -- normal read case
-                    out_fifo <= SPW_RXFIFO;
-                    fifo_full <= '1';
-                    send_escape := false;
-                    read_spw_rx := true;
-                end if;
-            
-            end if;
-            
-            if (fifo_full = '1' and fifo_clear) then
-                fifo_full <= '0';
-            end if;
-            
-            if read_spw_rx then
-                SPW_RXREAD <= '1';
+            -- buffer the lines in flip flop for the next rising edge 
+            if(M_AXIS_ARESETN = '1') then
+                rxflag_ff := SPW_RXFLAG;
+                rxfifo_ff := SPW_RXFIFO;
             else
-                SPW_RXREAD <= '0';
+                rxflag_ff := '0';
+                rxfifo_ff := x"00";
             end if;
         end if; 
     

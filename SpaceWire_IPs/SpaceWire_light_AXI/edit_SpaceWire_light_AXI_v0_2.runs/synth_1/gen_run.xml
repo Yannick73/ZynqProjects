@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1726060389" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/SpaceWire_light_AXI.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1726084571" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/SpaceWire_light_AXI.dcp">
   <File Type="PA-TCL" Name="SpaceWire_light_AXI.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="SpaceWire_light_AXI_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="SpaceWire_light_AXI_reports.tcl"/>
   <File Type="RDS-RDS" Name="SpaceWire_light_AXI.vds"/>
   <File Type="RDS-UTIL" Name="SpaceWire_light_AXI_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="SpaceWire_light_AXI_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="SpaceWire_light_AXI.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="SpaceWire_light_AXI_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="SpaceWire_light_AXI_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/SpwStream_improved/Definitions/ModuleMap_pkg.vhd">

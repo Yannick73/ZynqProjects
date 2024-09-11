@@ -181,6 +181,7 @@ architecture SpwRecvFront_rtl of SpwRecvFront is
    -----------------------------------------------------------------------------
    signal rx_rst_n       : std_logic;                              --! synchronized reset signal for the RXCLK_IN domain of RXEN.
    -- Registers in RXCLK_IN domain ---------------------------------------------
+   signal ff_spw_di          : std_ulogic;                             --!!! buffer for the SPW_DI signal itself.
    signal ff_r_di1       : std_ulogic;                             --! first FF for SPW_DI (rising edge).
    signal ff_r_di2r      : std_ulogic;                             --! 2nd FF for SPW_DI (rising-rising). This bit is received last.
    signal ff_f_di1       : std_ulogic;                             --! first FF for SPW_DI (falling edge).
@@ -231,6 +232,11 @@ begin
       DriverR: Driver port map (rxcnt_r(i), rxcnt_rbuf(i));
       DriverF: Driver port map (rxcnt_f(i), rxcnt_fbuf(i));
    end generate BUF;
+   --!!! buffer the SPW_DI signal
+   --SPW_DI delay
+   SPW_DI_BUF: Driver
+   port map(SPW_DI, ff_spw_di);
+   --ff_spw_di <= SPW_DI;
    -----------------------------------------------------------------------------
    -- COUNTER MUX
    rxcnt_ddr <= rxcnt_fbuf when RXCLK_IN = '1' else rxcnt_rbuf;
@@ -311,14 +317,15 @@ begin
          ff_r_di2r <= '0';
          ff_r_di2f <= '0';
       elsif ( rising_edge(RXCLK_IN) ) then
-         ff_r_di1  <= SPW_DI;
+         ff_r_di1  <= ff_spw_di;
          ff_r_di2r <= ff_r_di1;
          ff_r_di2f <= ff_f_di1;
       end if; -- rising_edge(RXCLK_IN)
       if ( rx_rst_n = '0' ) then
          ff_f_di1  <= '0';
       elsif ( falling_edge(RXCLK_IN) ) then
-         ff_f_di1  <= SPW_DI;
+         ff_f_di1  <= ff_spw_di;
+         
       end if; -- falling_edge(RXCLK_IN)
    end process updateSpwRegs;
 

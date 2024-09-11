@@ -108,9 +108,9 @@ entity SpwStream is
       TXCLKFREQ         : real;                                         -- transmit clock
       RXIMPL            : spw_implementation_type   := impl_recovclk;   -- receiver using core clock
       TXIMPL            : spw_implementation_type   := impl_fast;       -- receiver using core clock
-      RXCHUNK           : integer range 1 to 6      := 1;               -- 1 in case of impl_generic
-      RXFIFOSIZE_BITS   : integer range 6 to 16     := 8;              -- 11 bit RXFIFO adress space = 2kB FIFO
-      TXFIFOSIZE_BITS   : integer range 2 to 16     := 8               -- 11 bit TXFIFO adress space = 2kB FIFO
+      RXCHUNK           : integer range 1 to 6      := 4;               -- 1 in case of impl_generic
+      RXFIFOSIZE_BITS   : integer range 6 to 16     := 14;              -- 11 bit RXFIFO adress space = 2kB FIFO
+      TXFIFOSIZE_BITS   : integer range 2 to 16     := 14               -- 11 bit TXFIFO adress space = 2kB FIFO
    ); 
    port ( 
       AUTOSTART   : in std_logic;                      --! Enables automatic link start on receipt of a NULL character.
@@ -341,16 +341,12 @@ architecture SpwStream_rtl of SpwStream is
          ABITS : integer -- number of address bits.
       );
       port ( 
-         RADDR  : in std_logic_vector (ABITS-1 downto 0);  -- read address.
-         REN    : in std_logic;                            -- read enable.
-         WADDR  : in std_logic_vector (ABITS-1 downto 0);  -- write address.
-         WDATA  : in std_logic_vector (8 downto 0);  -- write data.
-         WEN    : in std_logic;                            -- write enable.
-         RCLK   : in std_logic;                            -- read clock.
-         WCLK   : in std_logic;                            -- write clock.
-         RRST_N : in std_logic;                            -- read clock syncd unit reset (active-low).
-         WRST_N : in std_logic;                            -- write clock syncd unit reset (active-low).
-         RDATA  : out std_logic_vector (8 downto 0)  -- read data.
+         RADDR  : in std_logic_vector (ABITS-1 downto 0);  --! read address.
+         WADDR  : in std_logic_vector (ABITS-1 downto 0);  --! write address.
+         WDATA  : in std_logic_vector (8 downto 0);  --! write data.
+         WEN    : in std_logic;                            --! write enable.
+         CLK   : in std_logic;                            --! read clock.
+         RDATA  : out std_logic_vector (8 downto 0)  --! read data.
       );
    end component SpwBlockRam;
 
@@ -390,13 +386,11 @@ begin
 
    RXMEM: SpwBlockRam
    generic map(RXFIFOSIZE_BITS)
-   port map(s_rxfifo_raddr, '1',  s_rxfifo_waddr, s_rxfifo_wdata, s_rxfifo_wen, CLK, CLK,
-       sys_rst_n, sys_rst_n, s_rxfifo_rdata);
+   port map(s_rxfifo_raddr, s_rxfifo_waddr, s_rxfifo_wdata, s_rxfifo_wen, CLK, s_rxfifo_rdata);
 
    TXMEM: SpwBlockRam
    generic map(TXFIFOSIZE_BITS)
-   port map(s_txfifo_raddr, '1', s_txfifo_waddr, s_txfifo_wdata, s_txfifo_wen, CLK, CLK,
-       sys_rst_n, sys_rst_n, s_txfifo_rdata);
+   port map(s_txfifo_raddr, s_txfifo_waddr, s_txfifo_wdata, s_txfifo_wen, CLK, s_txfifo_rdata);
 
    RECVFRONT_INST: SpwRecvFront
    generic map(RXCHUNK)
