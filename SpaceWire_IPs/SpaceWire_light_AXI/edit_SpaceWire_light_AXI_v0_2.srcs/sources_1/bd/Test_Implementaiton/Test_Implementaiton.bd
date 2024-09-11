@@ -1161,7 +1161,21 @@
         "ip_revision": "8",
         "xci_name": "Test_Implementaiton_SpaceWire_light_AXI_0_2",
         "xci_path": "ip\\Test_Implementaiton_SpaceWire_light_AXI_0_2\\Test_Implementaiton_SpaceWire_light_AXI_0_2.xci",
-        "inst_hier_path": "SpaceWire_light_AXI_0"
+        "inst_hier_path": "SpaceWire_light_AXI_0",
+        "parameters": {
+          "RXCHUNK": {
+            "value": "4"
+          },
+          "RXFIFOSIZE_BITS": {
+            "value": "8"
+          },
+          "SYSFREQ": {
+            "value": "400.0e6"
+          },
+          "TXFIFOSIZE_BITS": {
+            "value": "8"
+          }
+        }
       },
       "ps7_0_axi_periph": {
         "vlnv": "xilinx.com:ip:axi_interconnect:2.1",
@@ -2128,13 +2142,13 @@
           "axi_dma_0/m_axi_mm2s_aclk",
           "axi_mem_intercon/S00_ACLK",
           "axi_mem_intercon/ACLK",
-          "SpaceWire_light_AXI_0/axi_register_aclk",
-          "SpaceWire_light_AXI_0/axi_streamin_aclk",
-          "SpaceWire_light_AXI_0/axi_streamout_aclk",
           "axi_dma_0/m_axi_s2mm_aclk",
           "axi_mem_intercon/S01_ACLK",
           "SpaceWire_light_AXI_0/SPW_TX_clk",
-          "SpaceWire_light_AXI_0/SPW_main_clk"
+          "SpaceWire_light_AXI_0/SPW_main_clk",
+          "SpaceWire_light_AXI_0/axi_register_aclk",
+          "SpaceWire_light_AXI_0/axi_streamin_aclk",
+          "SpaceWire_light_AXI_0/axi_streamout_aclk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -2154,11 +2168,11 @@
           "axi_mem_intercon/M00_ARESETN",
           "axi_mem_intercon/S00_ARESETN",
           "axi_mem_intercon/ARESETN",
+          "axi_mem_intercon/S01_ARESETN",
           "SpaceWire_light_AXI_0/SPW_rst",
           "SpaceWire_light_AXI_0/axi_register_aresetn",
           "SpaceWire_light_AXI_0/axi_streamin_aresetn",
-          "SpaceWire_light_AXI_0/axi_streamout_aresetn",
-          "axi_mem_intercon/S01_ARESETN"
+          "SpaceWire_light_AXI_0/axi_streamout_aresetn"
         ]
       }
     },

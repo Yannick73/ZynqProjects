@@ -10,8 +10,8 @@ entity SpaceWire_light_AXI is
         SYSFREQ : real range 1.0e6 to 1.0e9 := 100.0*1e6;
         TXCLKFREQ : real range 1.0e6 to 1.0e9 := 100.0*1e6;
         RXCHUNK : integer range 1 to 6 := 1;
-        RXFIFOSIZE_BITS : integer range 6 to 16 := 10;
-        TXFIFOSIZE_BITS : integer range 2 to 16 := 10;
+        RXFIFOSIZE_BITS : integer range 6 to 16 := 8;
+        TXFIFOSIZE_BITS : integer range 2 to 16 := 8;
         ESCAPE_CHAR : std_logic_vector (7 downto 0) := x"7D";
 		-- User parameters ends
 		-- Do not modify the parameters beyond this line

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date             : Sun Aug 25 18:37:08 2024
+| Date             : Wed Sep 11 15:17:16 2024
 | Host             : DESKTOP-MEH5DGT running 64-bit major release  (build 9200)
 | Command          : report_power -file SpaceWire_light_AXI_power_routed.rpt -pb SpaceWire_light_AXI_power_summary_routed.pb -rpx SpaceWire_light_AXI_power_routed.rpx
 | Design           : SpaceWire_light_AXI
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.149        |
+| Total On-Chip Power (W)  | 0.120        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.044        |
+| Dynamic (W)              | 0.016        |
 | Device Static (W)        | 0.105        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 83.3         |
-| Junction Temperature (C) | 26.7         |
+| Max Ambient (C)          | 83.6         |
+| Junction Temperature (C) | 26.4         |
 | Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -49,21 +49,21 @@ Table of Contents
 1.1 On-Chip Components
 ----------------------
 
-+----------------+-----------+----------+-----------+-----------------+
-| On-Chip        | Power (W) | Used     | Available | Utilization (%) |
-+----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.019 |        9 |       --- |             --- |
-| Slice Logic    |     0.009 |    15785 |       --- |             --- |
-|   LUT as Logic |     0.008 |     3671 |     53200 |            6.90 |
-|   F7/F8 Muxes  |    <0.001 |     1836 |     53200 |            3.45 |
-|   Register     |    <0.001 |     9795 |    106400 |            9.21 |
-|   CARRY4       |    <0.001 |       13 |     13300 |            0.10 |
-|   Others       |     0.000 |       32 |       --- |             --- |
-| Signals        |     0.014 |    11809 |       --- |             --- |
-| I/O            |     0.002 |       82 |       200 |           41.00 |
-| Static Power   |     0.105 |          |           |                 |
-| Total          |     0.149 |          |           |                 |
-+----------------+-----------+----------+-----------+-----------------+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Clocks                   |     0.012 |        9 |       --- |             --- |
+| Slice Logic              |     0.001 |      920 |       --- |             --- |
+|   LUT as Logic           |     0.001 |      361 |     53200 |            0.68 |
+|   Register               |    <0.001 |      382 |    106400 |            0.36 |
+|   LUT as Distributed RAM |    <0.001 |       48 |     17400 |            0.28 |
+|   CARRY4                 |    <0.001 |        4 |     13300 |            0.03 |
+|   Others                 |     0.000 |       32 |       --- |             --- |
+| Signals                  |    <0.001 |      621 |       --- |             --- |
+| I/O                      |     0.002 |       82 |       200 |           41.00 |
+| Static Power             |     0.105 |          |           |                 |
+| Total                    |     0.120 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
 
 
 1.2 Power Supply Summary
@@ -72,11 +72,11 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.050 |       0.043 |      0.008 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.022 |       0.015 |      0.007 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.010 |       0.000 |      0.010 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vcco18    |       1.800 |     0.002 |       0.001 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco18    |       1.800 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -85,7 +85,7 @@ Table of Contents
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccpint   |       1.000 |     0.017 |       0.000 |      0.017 |       NA    | Unspecified | NA         |
+| Vccpint   |       1.000 |     0.016 |       0.000 |      0.016 |       NA    | Unspecified | NA         |
 | Vccpaux   |       1.800 |     0.010 |       0.000 |      0.010 |       NA    | Unspecified | NA         |
 | Vccpll    |       1.800 |     0.003 |       0.000 |      0.003 |       NA    | Unspecified | NA         |
 | Vcco_ddr  |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -135,9 +135,9 @@ Table of Contents
 +--------------------+--------------------+-----------------+
 | Clock              | Domain             | Constraint (ns) |
 +--------------------+--------------------+-----------------+
-| SPW_Din            | SPW_Din            |            10.0 |
-| SPW_Sin            | SPW_Sin            |            10.0 |
-| SPW_TX_clk         | SPW_TX_clk         |            10.0 |
+| SPW_Din            | SPW_Din            |             5.0 |
+| SPW_Sin            | SPW_Sin            |             5.0 |
+| SPW_TX_clk         | SPW_TX_clk         |             2.5 |
 | SPW_main_clk       | SPW_main_clk       |            10.0 |
 | axi_register_aclk  | axi_register_aclk  |            10.0 |
 | axi_streamin_aclk  | axi_streamin_aclk  |            10.0 |
@@ -151,15 +151,13 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+-----------------------------------------------------------+-----------+
-| Name                                                      | Power (W) |
-+-----------------------------------------------------------+-----------+
-| SpaceWire_light_AXI                                       |     0.044 |
-|   SPW_IF                                                  |     0.038 |
-|     RECVFRONT_INST                                        |     0.002 |
-|     TXMEM                                                 |     0.023 |
-|     XMIT_FAST_INST                                        |     0.001 |
-|   SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn_inst |     0.003 |
-+-----------------------------------------------------------+-----------+
++---------------------+-----------+
+| Name                | Power (W) |
++---------------------+-----------+
+| SpaceWire_light_AXI |     0.016 |
+|   SPW_IF            |     0.011 |
+|     RECVFRONT_INST  |     0.004 |
+|     XMIT_FAST_INST  |     0.005 |
++---------------------+-----------+
 
 

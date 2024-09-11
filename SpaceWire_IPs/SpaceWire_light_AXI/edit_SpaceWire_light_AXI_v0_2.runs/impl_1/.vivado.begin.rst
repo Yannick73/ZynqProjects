@@ -1,65 +1,20 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Yannick" Host="DESKTOP-MEH5DGT" Pid="12632" HostCore="12" HostMemory="017100439552">
+    <Process Command="vivado.bat" Owner="Yannick" Host="DESKTOP-MEH5DGT" Pid="19480" HostCore="12" HostMemory="017100439552">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Yannick" Host="DESKTOP-MEH5DGT" Pid="24228" HostCore="12" HostMemory="017100439552">
+    <Process Command="vivado.bat" Owner="Yannick" Host="DESKTOP-MEH5DGT" Pid="19356" HostCore="12" HostMemory="017100439552">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Yannick" Host="DESKTOP-MEH5DGT" Pid="22204" HostCore="12" HostMemory="017100439552">
+    <Process Command="vivado.bat" Owner="Yannick" Host="DESKTOP-MEH5DGT" Pid="2952" HostCore="12" HostMemory="017100439552">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Yannick" Host="DESKTOP-MEH5DGT" Pid="17728" HostCore="12" HostMemory="017100439552">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Yannick" Host="DESKTOP-MEH5DGT" Pid="24680" HostCore="12" HostMemory="017100439552">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Yannick" Host="DESKTOP-MEH5DGT" Pid="19936" HostCore="12" HostMemory="017100439552">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Yannick" Host="DESKTOP-MEH5DGT" Pid="15940" HostCore="12" HostMemory="017100439552">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Yannick" Host="DESKTOP-MEH5DGT" Pid="15736" HostCore="12" HostMemory="017100439552">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Yannick" Host="DESKTOP-MEH5DGT" Pid="15468" HostCore="12" HostMemory="017100439552">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Yannick" Host="DESKTOP-MEH5DGT" Pid="26136" HostCore="12" HostMemory="017100439552">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Yannick" Host="DESKTOP-MEH5DGT" Pid="21840" HostCore="12" HostMemory="017100439552">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Yannick" Host="DESKTOP-MEH5DGT" Pid="17516" HostCore="12" HostMemory="017100439552">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Yannick" Host="DESKTOP-MEH5DGT" Pid="10344" HostCore="12" HostMemory="017100439552">
+    <Process Command="vivado.bat" Owner="Yannick" Host="DESKTOP-MEH5DGT" Pid="17480" HostCore="12" HostMemory="017100439552">
     </Process>
 </ProcessHandle>

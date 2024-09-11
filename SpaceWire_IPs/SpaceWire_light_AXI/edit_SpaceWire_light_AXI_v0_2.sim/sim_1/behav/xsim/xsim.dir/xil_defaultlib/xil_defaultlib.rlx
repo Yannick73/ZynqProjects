@@ -1,0 +1,10 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd,1726046200,vhdl,,,,spacewire_light_axi,,,,,,,,
+F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd,1724588590,vhdl,,,,spacewire_light_axi_master_stream_v0_2_axi_streamout,,,,,,,,
+F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd,1724319174,vhdl,,,,spacewire_light_axi_slave_lite_v0_2_axi_register,,,,,,,,
+F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd,1724358050,vhdl,,,,spacewire_light_axi_slave_stream_v0_2_axi_streamin,,,,,,,,
+F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/sim_1/new/default_link.vhd,1724173347,vhdl,,,,default_link,,,,,,,,
+F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/sim_1/new/exchange_data.vhd,1724178242,vhdl,,,,exchange_data,,,,,,,,

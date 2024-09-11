@@ -1,0 +1,24 @@
+# compile vhdl design source files
+vhdl SPWIP  \
+"../../../../edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd" \
+"../../../../edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/SpwRegisters_pkg.vhd" \
+"../../../../edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream_pkg.vhd" \
+"../../../../../SpwStream_improved/SpwBlockRam.vhd" \
+"../../../../edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/SpwProtocol_pkg.vhd" \
+"../../../../edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwLink.vhd" \
+"../../../../edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRam.vhd" \
+"../../../../edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecovClk.vhd" \
+"../../../../edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecv.vhd" \
+"../../../../edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SpwXmit_fast_pkg.vhd" \
+"../../../../edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd" \
+"../../../../edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFront_pkg.vhd" \
+"../../../../edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwReset.vhd" \
+"../../../../edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd" \
+"../../../../edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SpwXmit_fast.vhd" \
+"../../../../edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SyncDff.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../edit_SpaceWire_light_AXI_v0_2.srcs/sim_1/new/exchange_data.vhd" \
+
+# Do not sort compile order
+nosort

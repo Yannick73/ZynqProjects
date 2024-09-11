@@ -1,8 +1,8 @@
 -------------------------------------
 | Tool Version : Vivado v.2024.1
-| Date         : Sun Aug 25 18:35:33 2024
+| Date         : Wed Sep 11 15:16:03 2024
 | Host         : DESKTOP-MEH5DGT
-| Design       : design_1
+| Design       : checkpoint_SpaceWire_light_AXI
 | Device       : xc7z020-clg484-1--
 -------------------------------------
 

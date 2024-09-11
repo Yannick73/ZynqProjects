@@ -1,0 +1,34 @@
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: F:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L SPWIP -L xilinx_vip -L secureip -L xpm --snapshot exchange_data_behav xil_defaultlib.exchange_data -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package spwip.spwregisters_pkg
+Compiling package spwip.spwstream_pkg
+Compiling package spwip.spwprotocol_pkg
+Compiling package spwip.spwxmit_fast_pkg
+Compiling package spwip.spwrecvfront_pkg
+Compiling package spwip.modulemap_pkg
+Compiling architecture spwlink_rtl of entity spwip.SpwLink [\SpwLink(reset_time=640)\]
+Compiling architecture spwrecv_rtl of entity spwip.SpwRecv [\SpwRecv(disconnect_time=84,rxch...]
+Compiling architecture syncdff_rtl of entity spwip.SyncDff [syncdff_default]
+Compiling architecture spwxmit_fast_rtl of entity spwip.SpwXmit_fast [spwxmit_fast_default]
+Compiling architecture clkdriver_str of entity spwip.CLKDriver [clkdriver_default]
+Compiling architecture spwrecovclk_str of entity spwip.SpwRecovClk [spwrecovclk_default]
+Compiling architecture spwblockram_rtl of entity spwip.SpwBlockRam [\SpwBlockRam(abits=6)\]
+Compiling architecture driver_str of entity spwip.Driver [driver_default]
+Compiling architecture spwreset_rtl of entity spwip.SpwReset [\SpwReset(reset_latency=1)\]
+Compiling architecture spwram_rtl of entity spwip.SpwRam [\SpwRam(abits=3,dbits=2)\]
+Compiling architecture spwrecvfront_rtl of entity spwip.SpwRecvFront [\SpwRecvFront(rxchunk=1)\]
+Compiling architecture spwstream_rtl of entity spwip.SpwStream [\SpwStream(sysfreq=100000000.0,t...]
+Compiling architecture behavioral of entity xil_defaultlib.exchange_data
+Built simulation snapshot exchange_data_behav

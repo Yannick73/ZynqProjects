@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Sun Aug 25 18:37:04 2024
+| Date         : Wed Sep 11 15:17:15 2024
 | Host         : DESKTOP-MEH5DGT running 64-bit major release  (build 9200)
 | Command      : report_methodology -file SpaceWire_light_AXI_methodology_drc_routed.rpt -pb SpaceWire_light_AXI_methodology_drc_routed.pb -rpx SpaceWire_light_AXI_methodology_drc_routed.rpx
 | Design       : SpaceWire_light_AXI
@@ -20,10 +20,10 @@ Table of Contents
 1. REPORT SUMMARY
 -----------------
             Netlist: netlist
-          Floorplan: design_1
+          Floorplan: checkpoint_SpaceWire_light_AXI
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 59
+             Violations found: 86
 +-----------+------------------+------------------------------------------------+------------+
 | Rule      | Severity         | Description                                    | Violations |
 +-----------+------------------+------------------------------------------------+------------+
@@ -31,8 +31,8 @@ Table of Contents
 | TIMING-7  | Critical Warning | No common node between related clocks          | 10         |
 | TIMING-14 | Critical Warning | LUT on the clock tree                          | 1          |
 | LUTAR-1   | Warning          | LUT drives async reset alert                   | 1          |
+| TIMING-16 | Warning          | Large setup violation                          | 28         |
 | TIMING-18 | Warning          | Missing input or output delay                  | 36         |
-| ULMTCS-1  | Warning          | Control Sets use limits recommend reduction    | 1          |
 +-----------+------------------+------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -159,6 +159,146 @@ SPW_IF/RECV_INST/res_seq_reg[pendfct][1]/CLR,
 SPW_IF/RECV_INST/res_seq_reg[rxchar]/CLR,
 SPW_IF/RECV_INST/res_seq_reg[rxflag]/CLR,
 SPW_IF/RECV_INST/res_seq_reg[tick_out]/CLR (the first 15 of 40 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -1.018 ns between SPW_IF/RECVFRONT_INST/resrx_seq_reg[bufdata][1]/C (clocked by SPW_Din) and SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5][1]/D (clocked by SPW_Sin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -1.037 ns between SPW_IF/RECVFRONT_INST/rxcnt_r_reg[1]/C (clocked by SPW_Din) and SPW_IF/RECVFRONT_INST/rxcnt_r_reg[3]/D (clocked by SPW_Sin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -1.044 ns between SPW_IF/RECVFRONT_INST/rxcnt_f_reg[1]/C (clocked by SPW_Din) and SPW_IF/RECVFRONT_INST/rxcnt_f_reg[1]/D (clocked by SPW_Sin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -1.050 ns between SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr][1]/C (clocked by SPW_Din) and SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0][0]/D (clocked by SPW_Sin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -1.052 ns between SPW_IF/RECVFRONT_INST/rxcnt_r_reg[1]/C (clocked by SPW_Din) and SPW_IF/RECVFRONT_INST/rxcnt_r_reg[2]/D (clocked by SPW_Sin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -1.059 ns between SPW_IF/RECVFRONT_INST/resrx_seq_reg[bufwrite]/C (clocked by SPW_Din) and SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3][0]/D (clocked by SPW_Sin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -1.062 ns between SPW_IF/RECVFRONT_INST/resrx_seq_reg[bufwrite]/C (clocked by SPW_Din) and SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5][0]/D (clocked by SPW_Sin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -1.069 ns between SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr][2]/C (clocked by SPW_Din) and SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6][0]/D (clocked by SPW_Sin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -1.082 ns between SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr][2]/C (clocked by SPW_Din) and SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4][1]/D (clocked by SPW_Sin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -1.083 ns between SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr][2]/C (clocked by SPW_Din) and SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4][0]/D (clocked by SPW_Sin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -1.104 ns between SPW_IF/RECVFRONT_INST/ff_r_di2f_reg/C (clocked by SPW_Din) and SPW_IF/RECVFRONT_INST/resrx_seq_reg[bufdata][1]/D (clocked by SPW_Sin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -1.108 ns between SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr][0]_replica/C (clocked by SPW_Din) and SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3][1]/D (clocked by SPW_Sin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -1.139 ns between SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr][0]_replica/C (clocked by SPW_Din) and SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7][1]/D (clocked by SPW_Sin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -1.188 ns between SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr][1]/C (clocked by SPW_Din) and SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr_gray][0]/D (clocked by SPW_Sin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -1.190 ns between SPW_IF/RECVFRONT_INST/resrx_seq_reg[bufwrite]/C (clocked by SPW_Din) and SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr][0]/D (clocked by SPW_Sin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#16 Warning
+Large setup violation  
+There is a large setup violation of -1.247 ns between SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr][0]/C (clocked by SPW_Din) and SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr][0]_replica/D (clocked by SPW_Sin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#17 Warning
+Large setup violation  
+There is a large setup violation of -1.349 ns between SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr][1]/C (clocked by SPW_Din) and SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2][0]/D (clocked by SPW_Sin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#18 Warning
+Large setup violation  
+There is a large setup violation of -1.356 ns between SPW_Din (clocked by SPW_Din) and SPW_IF/RECVFRONT_INST/ff_r_di1_reg/D (clocked by SPW_Sin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#19 Warning
+Large setup violation  
+There is a large setup violation of -1.429 ns between SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr][2]/C (clocked by SPW_Din) and SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6][1]_replica/D (clocked by SPW_Sin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#20 Warning
+Large setup violation  
+There is a large setup violation of -1.435 ns between SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr][0]/C (clocked by SPW_Din) and SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2][1]/D (clocked by SPW_Sin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#21 Warning
+Large setup violation  
+There is a large setup violation of -1.526 ns between SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr][2]/C (clocked by SPW_Din) and SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4][0]_replica/D (clocked by SPW_Sin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#22 Warning
+Large setup violation  
+There is a large setup violation of -1.572 ns between SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr][0]_replica/C (clocked by SPW_Din) and SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7][1]_replica/D (clocked by SPW_Sin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#23 Warning
+Large setup violation  
+There is a large setup violation of -1.591 ns between SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr][1]/C (clocked by SPW_Din) and SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1][1]/D (clocked by SPW_Sin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#24 Warning
+Large setup violation  
+There is a large setup violation of -1.719 ns between SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr][0]_replica/C (clocked by SPW_Din) and SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3][1]_replica/D (clocked by SPW_Sin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#25 Warning
+Large setup violation  
+There is a large setup violation of -1.783 ns between SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr][2]/C (clocked by SPW_Din) and SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0][1]/D (clocked by SPW_Sin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#26 Warning
+Large setup violation  
+There is a large setup violation of -1.795 ns between SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr][0]_replica/C (clocked by SPW_Din) and SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1][0]/D (clocked by SPW_Sin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#27 Warning
+Large setup violation  
+There is a large setup violation of -2.054 ns between SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr][0]_replica/C (clocked by SPW_Din) and SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr][1]/D (clocked by SPW_Sin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#28 Warning
+Large setup violation  
+There is a large setup violation of -2.092 ns between SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr][1]/C (clocked by SPW_Din) and SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr][2]/D (clocked by SPW_Sin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-18#1 Warning
@@ -339,11 +479,6 @@ Related violations: <none>
 TIMING-18#36 Warning
 Missing input or output delay  
 An output delay is missing on axi_streamout_tvalid relative to the rising and/or falling clock edge(s) of axi_streamout_aclk.
-Related violations: <none>
-
-ULMTCS-1#1 Warning
-Control Sets use limits recommend reduction  
-This design uses 1053 control sets (vs. available limit of 13300, determined by 1 control set per CLB). This exceeds the control set use guideline of 7.5 percent. This is at a level where reduction is RECOMMENDED (see UG949). Use report_control_sets to get more details.
 Related violations: <none>
 
 

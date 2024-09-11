@@ -146,6 +146,28 @@ package SpwStream_pkg is
          RDATA  : out std_logic_vector (DBITS-1 downto 0)  -- read data.
       );
    end component SpwRam;
+   
+   -----------------------------------------------------------------------------
+   -- Component SpwBlockRam
+   --! \brief  Synchronous two-port RAM.
+   -----------------------------------------------------------------------------
+   component SpwBlockRam is 
+      generic ( 
+         ABITS : integer -- number of address bits.
+      );
+      port ( 
+         RADDR  : in std_logic_vector (ABITS-1 downto 0);  -- read address.
+         REN    : in std_logic;                            -- read enable.
+         WADDR  : in std_logic_vector (ABITS-1 downto 0);  -- write address.
+         WDATA  : in std_logic_vector (8 downto 0);  -- write data.
+         WEN    : in std_logic;                            -- write enable.
+         RCLK   : in std_logic;                            -- read clock.
+         WCLK   : in std_logic;                            -- write clock.
+         RRST_N : in std_logic;                            -- read clock syncd unit reset (active-low).
+         WRST_N : in std_logic;                            -- write clock syncd unit reset (active-low).
+         RDATA  : out std_logic_vector (8 downto 0)  -- read data.
+      );
+   end component SpwBlockRam;
 
    -----------------------------------------------------------------------------
    -- Component SpwReset
