@@ -153,6 +153,7 @@ S_AXI_HP0_WDATA,
 S_AXI_HP0_WSTRB, 
 IRQ_F2P, 
 FCLK_CLK0, 
+FCLK_CLK1, 
 FCLK_RESET0_N, 
 MIO, 
 DDR_CAS_n, 
@@ -271,8 +272,9 @@ input [5 : 0] S_AXI_HP0_AWID;
 input [5 : 0] S_AXI_HP0_WID;
 input [31 : 0] S_AXI_HP0_WDATA;
 input [3 : 0] S_AXI_HP0_WSTRB;
-input [1 : 0] IRQ_F2P;
+input [0 : 0] IRQ_F2P;
 output FCLK_CLK0;
+output FCLK_CLK1;
 output FCLK_RESET0_N;
 input [53 : 0] MIO;
 input DDR_CAS_n;
@@ -312,7 +314,7 @@ input PS_PORB;
     .C_S_AXI_HP3_DATA_WIDTH(64),
     .C_HIGH_OCM_EN(0),
     .C_FCLK_CLK0_FREQ(100.0),
-    .C_FCLK_CLK1_FREQ(10.0),
+    .C_FCLK_CLK1_FREQ(200.0),
     .C_FCLK_CLK2_FREQ(10.0),
     .C_FCLK_CLK3_FREQ(10.0),
 	.C_M_AXI_GP0_ENABLE_STATIC_REMAP(0),
@@ -675,7 +677,7 @@ input PS_PORB;
     .S_AXI_HP3_WSTRB(8'B0),
     .FCLK_CLK0(FCLK_CLK0),
 	
-    .FCLK_CLK1(),
+    .FCLK_CLK1(FCLK_CLK1),
 	
     .FCLK_CLK2(),
 	

@@ -2,7 +2,7 @@
 --Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
---Date        : Sun Aug 25 14:28:21 2024
+--Date        : Tue Sep 17 01:19:02 2024
 --Host        : DESKTOP-MEH5DGT running 64-bit major release  (build 9200)
 --Command     : generate_target Test_Implementaiton_wrapper.bd
 --Design      : Test_Implementaiton_wrapper
@@ -35,10 +35,10 @@ entity Test_Implementaiton_wrapper is
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
-    SPW_Di : in STD_LOGIC;
-    SPW_Do : out STD_LOGIC;
-    SPW_Si : in STD_LOGIC;
-    SPW_So : out STD_LOGIC
+    SPW_Din : in STD_LOGIC;
+    SPW_Dout : out STD_LOGIC;
+    SPW_Sin : in STD_LOGIC;
+    SPW_Sout : out STD_LOGIC
   );
 end Test_Implementaiton_wrapper;
 
@@ -66,10 +66,10 @@ architecture STRUCTURE of Test_Implementaiton_wrapper is
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
-    SPW_Di : in STD_LOGIC;
-    SPW_Si : in STD_LOGIC;
-    SPW_So : out STD_LOGIC;
-    SPW_Do : out STD_LOGIC
+    SPW_Din : in STD_LOGIC;
+    SPW_Sin : in STD_LOGIC;
+    SPW_Sout : out STD_LOGIC;
+    SPW_Dout : out STD_LOGIC
   );
   end component Test_Implementaiton;
 begin
@@ -96,9 +96,9 @@ Test_Implementaiton_i: component Test_Implementaiton
       FIXED_IO_ps_clk => FIXED_IO_ps_clk,
       FIXED_IO_ps_porb => FIXED_IO_ps_porb,
       FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
-      SPW_Di => SPW_Di,
-      SPW_Do => SPW_Do,
-      SPW_Si => SPW_Si,
-      SPW_So => SPW_So
+      SPW_Din => SPW_Din,
+      SPW_Dout => SPW_Dout,
+      SPW_Sin => SPW_Sin,
+      SPW_Sout => SPW_Sout
     );
 end STRUCTURE;

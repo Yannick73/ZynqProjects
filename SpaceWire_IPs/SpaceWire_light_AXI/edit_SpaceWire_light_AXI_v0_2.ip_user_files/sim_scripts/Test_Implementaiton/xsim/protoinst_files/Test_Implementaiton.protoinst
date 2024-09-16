@@ -58,8 +58,8 @@
 					"ports": {
 						"ACLK": { "actual": "m_axi_mm2s_aclk"},
 						"ARESETN": { "actual": "mm2s_prmry_reset_out_n"},
-						"TDATA": { "actual": "m_axis_mm2s_tdata[31:0]"},
-						"TKEEP": { "actual": "m_axis_mm2s_tkeep[3:0]"},
+						"TDATA": { "actual": "m_axis_mm2s_tdata[7:0]"},
+						"TKEEP": { "actual": "m_axis_mm2s_tkeep[0:0]"},
 						"TLAST": { "actual": "m_axis_mm2s_tlast"},
 						"TREADY": { "actual": "m_axis_mm2s_tready"},
 						"TVALID": { "actual": "m_axis_mm2s_tvalid"}

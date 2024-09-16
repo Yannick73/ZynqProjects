@@ -540,7 +540,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>570ee7c7</spirit:value>
+            <spirit:value>2b8cf000</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -556,7 +556,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>570ee7c7</spirit:value>
+            <spirit:value>2b8cf000</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1372,7 +1372,7 @@
       <spirit:file>
         <spirit:name>../edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SyncDff.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_b6fc6fc1</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_83f8f351</spirit:userFileType>
         <spirit:logicalName>SPWIP</spirit:logicalName>
       </spirit:file>
     </spirit:fileSet>
@@ -1644,15 +1644,15 @@
       <xilinx:displayName>SpaceWire_light_AXI_v0.2</xilinx:displayName>
       <xilinx:vendorDisplayName>Institute of Space Systems - University of Stuttgart</xilinx:vendorDisplayName>
       <xilinx:vendorURL>https://www.irs.uni-stuttgart.de/en/</xilinx:vendorURL>
-      <xilinx:coreRevision>8</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2024-08-22T20:33:20Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>9</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2024-09-16T23:04:29Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2024.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="adfe3a5e"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="331cd4ee"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="07624f58"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="a2c72dda"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="cb7c0838"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="e241d0eb"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="76c72da0"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="55c3a124"/>
     </xilinx:packagingInfo>

@@ -63,6 +63,7 @@ use ieee.std_logic_1164.all;
 
 --! IEEE standard numeric package
 use ieee.numeric_std.all;
+
 --------------------------------------------------------------------------------
 -- Entity SpwRam
 --! \brief        SpwRam - Synchronous two-port RAM.
@@ -94,8 +95,27 @@ architecture SpwBlockRam_rtl of SpwBlockRam is
    -- spwram_definitions - contains the constants, types and subtypes used in the SpwRam unit.
    -----------------------------------------------------------------------------
    type mem_type is array(integer range <>) of std_logic_vector(8 downto 0);
-   signal s_mem : mem_type (0 to (2**ABITS - 1)); --! memory described as an array of std_logic_vector.
-   signal raddr_reg : std_logic_vector(ABITS - 1 downto 0);
+   signal s_mem : mem_type (0 to (2**ABITS - 1)) := (others => (others => '0')); --! memory described as an array of std_logic_vector.
+   signal raddr_reg : std_logic_vector(ABITS - 1 downto 0) := (others => '0');
+   
+--    -----------------------------------------------------------------------------
+--    -- Component SpwBlockRam
+--    --! \brief  Synchronous two-port RAM.
+--    -----------------------------------------------------------------------------
+--    component SpwBlockRam is 
+--      generic ( 
+--         ABITS : integer -- number of address bits.
+--      );
+--      port ( 
+--         RADDR  : in std_logic_vector (ABITS-1 downto 0);  --! read address.
+--         WADDR  : in std_logic_vector (ABITS-1 downto 0);  --! write address.
+--         WDATA  : in std_logic_vector (8 downto 0);  --! write data.
+--         WEN    : in std_logic;                            --! write enable.
+--         CLK   : in std_logic;                            --! read clock.
+--         RDATA  : out std_logic_vector (8 downto 0)  --! read data.
+--      );
+--    end component SpwBlockRam;
+
 begin
    -----------------------------------------------------------------------------
    -- READ

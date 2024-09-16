@@ -1,13 +1,14 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x9A95B84AFCECAF65",
+      "boundary_crc": "0xFC94C28634679C4A",
       "device": "xc7z020clg484-1",
       "gen_directory": "../../../../edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton",
       "name": "Test_Implementaiton",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
-      "synth_flow_mode": "Hierarchical",
-      "tool_version": "2024.1"
+      "synth_flow_mode": "None",
+      "tool_version": "2024.1",
+      "validated": "true"
     },
     "design_tree": {
       "processing_system7_0": "",
@@ -202,16 +203,16 @@
       }
     },
     "ports": {
-      "SPW_Di": {
+      "SPW_Din": {
         "direction": "I"
       },
-      "SPW_Si": {
+      "SPW_Sin": {
         "direction": "I"
       },
-      "SPW_So": {
+      "SPW_Sout": {
         "direction": "O"
       },
-      "SPW_Do": {
+      "SPW_Dout": {
         "direction": "O"
       }
     },
@@ -242,7 +243,7 @@
             "value": "100.000000"
           },
           "PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ": {
-            "value": "10.000000"
+            "value": "200.000000"
           },
           "PCW_ACT_FPGA2_PERIPHERAL_FREQMHZ": {
             "value": "10.000000"
@@ -299,7 +300,7 @@
             "value": "100000000"
           },
           "PCW_CLK1_FREQ": {
-            "value": "10000000"
+            "value": "200000000"
           },
           "PCW_CLK2_FREQ": {
             "value": "10000000"
@@ -337,6 +338,9 @@
           "PCW_ENET_RESET_SELECT": {
             "value": "Share reset pin"
           },
+          "PCW_EN_CLK1_PORT": {
+            "value": "1"
+          },
           "PCW_EN_EMIO_TTC0": {
             "value": "1"
           },
@@ -364,10 +368,19 @@
           "PCW_EN_USB0": {
             "value": "1"
           },
+          "PCW_FCLK_CLK1_BUF": {
+            "value": "TRUE"
+          },
           "PCW_FPGA0_PERIPHERAL_FREQMHZ": {
             "value": "100"
           },
+          "PCW_FPGA1_PERIPHERAL_FREQMHZ": {
+            "value": "200"
+          },
           "PCW_FPGA_FCLK0_ENABLE": {
+            "value": "1"
+          },
+          "PCW_FPGA_FCLK1_ENABLE": {
             "value": "1"
           },
           "PCW_GPIO_MIO_GPIO_ENABLE": {
@@ -1158,22 +1171,25 @@
       },
       "SpaceWire_light_AXI_0": {
         "vlnv": "IRS:RomeoOBDH:SpaceWire_light_AXI:0.2",
-        "ip_revision": "8",
+        "ip_revision": "9",
         "xci_name": "Test_Implementaiton_SpaceWire_light_AXI_0_2",
         "xci_path": "ip\\Test_Implementaiton_SpaceWire_light_AXI_0_2\\Test_Implementaiton_SpaceWire_light_AXI_0_2.xci",
         "inst_hier_path": "SpaceWire_light_AXI_0",
         "parameters": {
           "RXCHUNK": {
-            "value": "4"
+            "value": "2"
           },
           "RXFIFOSIZE_BITS": {
-            "value": "8"
+            "value": "16"
           },
           "SYSFREQ": {
-            "value": "400.0e6"
+            "value": "100.0e6"
+          },
+          "TXCLKFREQ": {
+            "value": "200.0e6"
           },
           "TXFIFOSIZE_BITS": {
-            "value": "8"
+            "value": "12"
           }
         }
       },
@@ -2099,13 +2115,13 @@
     "nets": {
       "SPW_Di_1": {
         "ports": [
-          "SPW_Di",
+          "SPW_Din",
           "SpaceWire_light_AXI_0/SPW_Din"
         ]
       },
       "SPW_Si_1": {
         "ports": [
-          "SPW_Si",
+          "SPW_Sin",
           "SpaceWire_light_AXI_0/SPW_Sin"
         ]
       },
@@ -2118,13 +2134,13 @@
       "SpaceWire_light_AXI_0_SPW_Dout": {
         "ports": [
           "SpaceWire_light_AXI_0/SPW_Dout",
-          "SPW_Do"
+          "SPW_Dout"
         ]
       },
       "SpaceWire_light_AXI_0_SPW_Sout": {
         "ports": [
           "SpaceWire_light_AXI_0/SPW_Sout",
-          "SPW_So"
+          "SPW_Sout"
         ]
       },
       "processing_system7_0_FCLK_CLK0": {
@@ -2144,11 +2160,16 @@
           "axi_mem_intercon/ACLK",
           "axi_dma_0/m_axi_s2mm_aclk",
           "axi_mem_intercon/S01_ACLK",
-          "SpaceWire_light_AXI_0/SPW_TX_clk",
           "SpaceWire_light_AXI_0/SPW_main_clk",
           "SpaceWire_light_AXI_0/axi_register_aclk",
           "SpaceWire_light_AXI_0/axi_streamin_aclk",
           "SpaceWire_light_AXI_0/axi_streamout_aclk"
+        ]
+      },
+      "processing_system7_0_FCLK_CLK1": {
+        "ports": [
+          "processing_system7_0/FCLK_CLK1",
+          "SpaceWire_light_AXI_0/SPW_TX_clk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {

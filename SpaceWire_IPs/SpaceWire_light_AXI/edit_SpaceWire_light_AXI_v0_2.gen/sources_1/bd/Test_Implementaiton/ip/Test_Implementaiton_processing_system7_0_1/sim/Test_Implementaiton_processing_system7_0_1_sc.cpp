@@ -92,7 +92,7 @@ Test_Implementaiton_processing_system7_0_1_sc::Test_Implementaiton_processing_sy
     model_param_props.addLong("C_S_AXI_HP3_DATA_WIDTH", "64");
     model_param_props.addLong("C_M_AXI_GP0_THREAD_ID_WIDTH", "12");
     model_param_props.addLong("C_M_AXI_GP1_THREAD_ID_WIDTH", "12");
-    model_param_props.addLong("C_NUM_F2P_INTR_INPUTS", "2");
+    model_param_props.addLong("C_NUM_F2P_INTR_INPUTS", "1");
     model_param_props.addLong("C_DQ_WIDTH", "32");
     model_param_props.addLong("C_DQS_WIDTH", "4");
     model_param_props.addLong("C_DM_WIDTH", "4");
@@ -113,7 +113,7 @@ Test_Implementaiton_processing_system7_0_1_sc::Test_Implementaiton_processing_sy
     model_param_props.addString("C_IRQ_F2P_MODE", "DIRECT");
     model_param_props.addString("C_PS7_SI_REV", "PRODUCTION");
     model_param_props.addString("C_FCLK_CLK0_BUF", "TRUE");
-    model_param_props.addString("C_FCLK_CLK1_BUF", "FALSE");
+    model_param_props.addString("C_FCLK_CLK1_BUF", "TRUE");
     model_param_props.addString("C_FCLK_CLK2_BUF", "FALSE");
     model_param_props.addString("C_FCLK_CLK3_BUF", "FALSE");
     model_param_props.addString("C_PACKAGE_NAME", "clg484");

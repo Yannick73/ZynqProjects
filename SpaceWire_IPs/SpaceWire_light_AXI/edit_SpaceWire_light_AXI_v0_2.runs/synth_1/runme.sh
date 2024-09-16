@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log SpaceWire_light_AXI.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SpaceWire_light_AXI.tcl
+EAStep vivado -log Test_Implementaiton_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Test_Implementaiton_wrapper.tcl
