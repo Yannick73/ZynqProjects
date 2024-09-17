@@ -113,7 +113,7 @@ Test_Implementaiton_processing_system7_0_1_sc::Test_Implementaiton_processing_sy
     model_param_props.addString("C_IRQ_F2P_MODE", "DIRECT");
     model_param_props.addString("C_PS7_SI_REV", "PRODUCTION");
     model_param_props.addString("C_FCLK_CLK0_BUF", "TRUE");
-    model_param_props.addString("C_FCLK_CLK1_BUF", "TRUE");
+    model_param_props.addString("C_FCLK_CLK1_BUF", "FALSE");
     model_param_props.addString("C_FCLK_CLK2_BUF", "FALSE");
     model_param_props.addString("C_FCLK_CLK3_BUF", "FALSE");
     model_param_props.addString("C_PACKAGE_NAME", "clg484");

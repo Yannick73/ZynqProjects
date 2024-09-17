@@ -6,8 +6,6 @@
 # -> 100MHz SPW core (core needs to be a fourth or at least a sixth of max Rxclk, per SPW light doc)
 # -> 100MHz AXI to be synchronous to SPW
 
-set_property DRIVE 12 [get_ports {axi_register_rdata[6]}]
-set_property SLEW SLOW [get_ports {axi_register_rdata[6]}]
 set_property DRIVE 12 [get_ports SPW_Dout]
 
 #set_property ASYNC_REG true [get_cells SPW_IF/XMIT_FAST_INST/SYNCTXSYSFLIP0/syncdff_ff1_reg]
@@ -22,20 +20,10 @@ set_property DRIVE 12 [get_ports SPW_Dout]
 #set_property ASYNC_REG true [get_cells SPW_IF/XMIT_FAST_INST/SYNCSYSTXFLIP1/syncdff_ff2_reg]
 #set_property ASYNC_REG true [get_cells SPW_IF/XMIT_FAST_INST/SYNCSYSTXFLIP0/syncdff_ff1_reg]
 #set_property ASYNC_REG true [get_cells SPW_IF/XMIT_FAST_INST/SYNCSYSTXFLIP0/syncdff_ff2_reg]
-create_clock -period 10.000 -name SPW_Din -waveform {0.000 5.000} [get_ports SPW_Din]
-set_input_jitter SPW_Din 0.010
-create_clock -period 10.000 -name SPW_Sin -waveform {0.000 5.000} [get_ports SPW_Sin]
-set_input_jitter SPW_Sin 0.010
-create_clock -period 5.000 -name SPW_TX_clk -waveform {0.000 2.500} [get_ports SPW_TX_clk]
-set_input_jitter SPW_TX_clk 0.010
-create_clock -period 10.000 -name SPW_main_clk -waveform {0.000 5.000} [get_ports SPW_main_clk]
-set_input_jitter SPW_main_clk 0.010
-create_clock -period 10.000 -name axi_register_aclk -waveform {0.000 5.000} [get_ports axi_register_aclk]
-set_input_jitter axi_register_aclk 0.010
-create_clock -period 10.000 -name axi_streamin_aclk -waveform {0.000 5.000} [get_ports axi_streamin_aclk]
-set_input_jitter axi_streamin_aclk 0.010
-create_clock -period 10.000 -name axi_streamout_aclk -waveform {0.000 5.000} [get_ports axi_streamout_aclk]
-set_input_jitter axi_streamout_aclk 0.010
+create_clock -period 12.500 -name SPW_Din -waveform {0.000 6.250} [get_ports SPW_Din]
+set_input_jitter SPW_Din 0.330
+create_clock -period 12.500 -name SPW_Sin -waveform {0.000 6.250} [get_ports SPW_Sin]
+set_input_jitter SPW_Sin 0.330
 
 
 
@@ -84,3 +72,39 @@ set_input_jitter axi_streamout_aclk 0.010
 #set_input_delay -clock [::get_clocks_ren SPW_main_clk] -max -add_delay 4.000 [get_ports SPW_rst]
 #set_clock_groups -asynchronous -group [::get_clocks_ren SPW_main_clk] -group [::get_clocks_ren SPW_TX_clk]
 #set_clock_groups -asynchronous -group [::get_clocks_ren SPW_TX_clk] -group [::get_clocks_ren SPW_main_clk]
+
+
+
+set_property ASYNC_REG true [get_cells Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/XMIT_FAST_INST/SYNCSYSTXFLIP0/buf_ff0_reg]
+set_property ASYNC_REG true [get_cells Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/XMIT_FAST_INST/SYNCSYSTXFLIP0/syncdff_ff2_reg]
+set_property ASYNC_REG true [get_cells Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/XMIT_FAST_INST/SYNCSYSTXFLIP1/buf_ff0_reg]
+set_property ASYNC_REG true [get_cells Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/XMIT_FAST_INST/SYNCSYSTXFLIP1/syncdff_ff2_reg]
+set_property ASYNC_REG true [get_cells Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/XMIT_FAST_INST/SYNCTXTXDIVSAFE/buf_ff0_reg]
+set_property ASYNC_REG true [get_cells Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/XMIT_FAST_INST/SYNCTXTXDIVSAFE/syncdff_ff2_reg]
+set_property ASYNC_REG true [get_cells Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/XMIT_FAST_INST/SYNCTXSYSFLIP1/buf_ff0_reg]
+set_property ASYNC_REG true [get_cells Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/XMIT_FAST_INST/SYNCTXSYSFLIP1/syncdff_ff2_reg]
+set_property ASYNC_REG true [get_cells Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/XMIT_FAST_INST/SYNCTXSYSFLIP0/buf_ff0_reg]
+set_property ASYNC_REG true [get_cells Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/XMIT_FAST_INST/SYNCTXSYSFLIP0/syncdff_ff2_reg]
+set_property ASYNC_REG true [get_cells {Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/TXRSTLOGIC/reset_reg_reg[1]}]
+set_property ASYNC_REG true [get_cells {Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/TXRSTLOGIC/reset_reg_reg[0]}]
+set_property ASYNC_REG true [get_cells Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/XMIT_FAST_INST/SYNCTXTXEN/buf_ff0_reg]
+set_property ASYNC_REG true [get_cells Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/XMIT_FAST_INST/SYNCTXTXEN/syncdff_ff2_reg]
+set_property ASYNC_REG true [get_cells Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/ff_r_di2f_reg]
+set_property ASYNC_REG true [get_cells Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/ff_r_di2r_reg]
+set_property ASYNC_REG true [get_cells Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/ff_f_di1_reg]
+set_property ASYNC_REG true [get_cells {Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/resrx_seq_reg[bufdata][1]}]
+set_property ASYNC_REG true [get_cells Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/ff_r_di1_reg]
+set_property ASYNC_REG true [get_cells {Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/resrx_seq_reg[bufdata][0]}]
+set_output_delay -clock [get_clocks clk_fpga_1] -min -add_delay 1.000 [get_ports SPW_Dout]
+set_output_delay -clock [get_clocks clk_fpga_1] -max -add_delay 8.000 [get_ports SPW_Dout]
+set_output_delay -clock [get_clocks clk_fpga_1] -min -add_delay 1.000 [get_ports SPW_Sout]
+set_output_delay -clock [get_clocks clk_fpga_1] -max -add_delay 8.000 [get_ports SPW_Sout]
+set_clock_groups -asynchronous -group [get_clocks clk_fpga_1] -group [get_clocks clk_fpga_0]
+set_clock_groups -asynchronous -group [get_clocks clk_fpga_0] -group [get_clocks clk_fpga_1]
+set_false_path -from [get_clocks clk_fpga_0] -to [get_clocks SPW_Din]
+set_false_path -from [get_clocks clk_fpga_0] -to [get_clocks SPW_Sin]
+set_clock_groups -asynchronous -group [get_clocks SPW_Sin] -group [get_clocks SPW_Din]
+set_clock_groups -asynchronous -group [get_clocks SPW_Din] -group [get_clocks SPW_Sin]
+
+
+

@@ -1,8 +1,0 @@
-+====================+===================+===================================================================================================+
-| Launch Setup Clock | Launch Hold Clock | Pin                                                                                               |
-+====================+===================+===================================================================================================+
-| SPW_Sin            | SPW_Din           | Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT2/buf_ff0_reg/D |
-| SPW_Sin            | SPW_Sin           | Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT1/buf_ff0_reg/D |
-| SPW_Sin            | SPW_Din           | Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT0/buf_ff0_reg/D |
-| SPW_Sin            | SPW_Sin           | Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT3/buf_ff0_reg/D |
-+--------------------+-------------------+---------------------------------------------------------------------------------------------------+

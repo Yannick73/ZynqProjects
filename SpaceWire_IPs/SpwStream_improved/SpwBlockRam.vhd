@@ -96,7 +96,7 @@ architecture SpwBlockRam_rtl of SpwBlockRam is
    -----------------------------------------------------------------------------
    type mem_type is array(integer range <>) of std_logic_vector(8 downto 0);
    signal s_mem : mem_type (0 to (2**ABITS - 1)) := (others => (others => '0')); --! memory described as an array of std_logic_vector.
-   signal raddr_reg : std_logic_vector(ABITS - 1 downto 0) := (others => '0');
+   signal raddr_buf : std_logic_vector(ABITS - 1 downto 0) := (others => '0');
    
 --    -----------------------------------------------------------------------------
 --    -- Component SpwBlockRam
@@ -119,7 +119,7 @@ architecture SpwBlockRam_rtl of SpwBlockRam is
 begin
    -----------------------------------------------------------------------------
    -- READ
-    RDATA <= s_mem(to_integer(unsigned(raddr_reg)));
+    RDATA <= s_mem(to_integer(unsigned(raddr_buf)));
 
    -----------------------------------------------------------------------------
    -- Process write
@@ -136,7 +136,7 @@ begin
          if ( WEN = '1' ) then
             s_mem(to_integer(unsigned(WADDR))) <= WDATA;
          end if; -- WEN
-         raddr_reg <= RADDR;
+         raddr_buf <= RADDR;
       end if; -- rising_edge(WCLK)
 
    end process;

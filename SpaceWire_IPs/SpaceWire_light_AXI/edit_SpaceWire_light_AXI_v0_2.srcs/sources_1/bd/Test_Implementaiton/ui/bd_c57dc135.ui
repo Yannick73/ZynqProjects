@@ -1,48 +1,50 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.855436",
-   "Default View_TopLeft":"1031,-7",
+   "Default View_ScaleFactor":"1.38079",
+   "Default View_TopLeft":"515,226",
    "ExpandedHierarchyInLayout":"",
-   "guistr":"# # String gsaved with Nlview 7.7.1 2023-07-26 3bc4126617 VDI=43 GEI=38 GUI=JA:21.0
+   "guistr":"# # String gsaved with Nlview 7.7.1 2023-07-26 3bc4126617 VDI=43 GEI=38 GUI=JA:21.0 threadsafe
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -lvl 6 -x 1980 -y 80 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 6 -x 1980 -y 100 -defaultsOSRD
-preplace port port-id_SPW_Din -pg 1 -lvl 0 -x 0 -y 700 -defaultsOSRD
-preplace port port-id_SPW_Sin -pg 1 -lvl 0 -x 0 -y 720 -defaultsOSRD
-preplace port port-id_SPW_Sout -pg 1 -lvl 6 -x 1980 -y 810 -defaultsOSRD
-preplace port port-id_SPW_Dout -pg 1 -lvl 6 -x 1980 -y 790 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 5 -x 1690 -y 160 -defaultsOSRD
-preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 200 -y 820 -defaultsOSRD
-preplace inst SpaceWire_light_AXI_0 -pg 1 -lvl 5 -x 1690 -y 780 -defaultsOSRD
-preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 530 -y 460 -defaultsOSRD
-preplace inst axi_dma_0 -pg 1 -lvl 3 -x 880 -y 500 -defaultsOSRD
-preplace inst axi_mem_intercon -pg 1 -lvl 4 -x 1230 -y 480 -defaultsOSRD
-preplace netloc SPW_Di_1 1 0 5 NJ 700 NJ 700 NJ 700 NJ 700 NJ
-preplace netloc SPW_Si_1 1 0 5 NJ 720 NJ 720 NJ 720 NJ 720 NJ
-preplace netloc SpaceWire_light_AXI_0_IRQ 1 4 2 1450 360 1960
-preplace netloc SpaceWire_light_AXI_0_SPW_Dout 1 5 1 NJ 790
-preplace netloc SpaceWire_light_AXI_0_SPW_Sout 1 5 1 NJ 810
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 20 600 370 600 700 620 1060 330 1420 340 1930
-preplace netloc processing_system7_0_FCLK_CLK1 1 4 2 1450 370 1950
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 6 30 640 NJ 640 NJ 640 NJ 640 1410J 600 1940
-preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 4 380 610 710 630 1080 630 1380
-preplace netloc SpaceWire_light_AXI_0_AXI_StreamOut 1 2 4 710 300 NJ 300 1440J 350 1930
-preplace netloc axi_dma_0_M_AXIS_MM2S 1 3 2 1070J 650 1390
-preplace netloc axi_dma_0_M_AXI_MM2S 1 3 1 1050 390n
-preplace netloc axi_dma_0_M_AXI_S2MM 1 3 1 1070 410n
-preplace netloc axi_mem_intercon_M00_AXI 1 4 1 1380 140n
-preplace netloc processing_system7_0_DDR 1 5 1 1960J 70n
-preplace netloc processing_system7_0_FIXED_IO 1 5 1 1960J 90n
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 5 380 310 NJ 310 NJ 310 1430J 330 1960
-preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 N 450
-preplace netloc ps7_0_axi_periph_M01_AXI 1 2 3 680 320 NJ 320 1400J
-levelinfo -pg 1 0 200 530 880 1230 1690 1980
-pagesize -pg 1 -db -bbox -sgen -120 -10 2100 960
+preplace port DDR -pg 1 -lvl 6 -x 1960 -y 110 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 6 -x 1960 -y 130 -defaultsOSRD
+preplace port port-id_SPW_Din -pg 1 -lvl 0 -x 0 -y 590 -defaultsOSRD
+preplace port port-id_SPW_Sin -pg 1 -lvl 0 -x 0 -y 610 -defaultsOSRD
+preplace port port-id_SPW_Sout -pg 1 -lvl 6 -x 1960 -y 700 -defaultsOSRD
+preplace port port-id_SPW_Dout -pg 1 -lvl 6 -x 1960 -y 680 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 4 -x 1360 -y 190 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 200 -y 710 -defaultsOSRD
+preplace inst SpaceWire_light_AXI_0 -pg 1 -lvl 4 -x 1360 -y 670 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 540 -y 370 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 3 -x 890 -y 410 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 5 -x 1790 -y 440 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 3 -x 890 -y 680 -defaultsOSRD
+preplace netloc SPW_Di_1 1 0 4 NJ 590 NJ 590 NJ 590 NJ
+preplace netloc SPW_Si_1 1 0 4 NJ 610 NJ 610 NJ 610 NJ
+preplace netloc SpaceWire_light_AXI_0_IRQ 1 3 2 1120 360 1610
+preplace netloc SpaceWire_light_AXI_0_SPW_Dout 1 4 2 NJ 680 N
+preplace netloc SpaceWire_light_AXI_0_SPW_Sout 1 4 2 NJ 700 N
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 5 30 430 380 230 700 230 1090 380 1630
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 5 30 810 NJ 810 720J 550 1060J 470 1600
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 4 390 510 710 540 1120 480 1640
+preplace netloc clk_wiz_0_TX_clk 1 3 1 1060 630n
+preplace netloc clk_wiz_0_SPW_core_clk 1 3 1 1070 650n
+preplace netloc SpaceWire_light_AXI_0_AXI_StreamOut 1 2 3 720 530 1070J 490 1600
+preplace netloc axi_dma_0_M_AXIS_MM2S 1 3 1 1080J 390n
+preplace netloc axi_dma_0_M_AXI_MM2S 1 3 2 NJ 350 NJ
+preplace netloc axi_dma_0_M_AXI_S2MM 1 3 2 N 370 NJ
+preplace netloc axi_mem_intercon_M00_AXI 1 3 3 1110 460 1620J 590 1940
+preplace netloc processing_system7_0_DDR 1 4 2 NJ 110 N
+preplace netloc processing_system7_0_FIXED_IO 1 4 2 NJ 130 N
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 4 390 30 NJ 30 NJ 30 1600
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 N 360
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 2 690 290 1100J
+levelinfo -pg 1 0 200 540 890 1360 1790 1960
+pagesize -pg 1 -db -bbox -sgen -120 0 2080 850
 "
 }
 {
-   "da_axi4_cnt":"16",
-   "da_board_cnt":"3",
-   "da_clkrst_cnt":"17",
+   "da_axi4_cnt":"18",
+   "da_board_cnt":"5",
+   "da_clkrst_cnt":"27",
    "da_ps7_cnt":"2"
 }

@@ -1,11 +1,8 @@
-set_property PACKAGE_PIN AA9 [get_ports SPW_Din]
+set_property PACKAGE_PIN V10 [get_ports SPW_Din]        # JB3
 set_property IOSTANDARD LVCMOS33 [get_ports SPW_Din]
-set_property PACKAGE_PIN Y10 [get_ports SPW_Sin]
+set_property PACKAGE_PIN W8 [get_ports SPW_Sin]         # JB4
 set_property IOSTANDARD LVCMOS33 [get_ports SPW_Sin]
-set_property PACKAGE_PIN AA11 [get_ports SPW_Dout]
+set_property PACKAGE_PIN V9 [get_ports SPW_Dout]        # JB9
 set_property IOSTANDARD LVCMOS33 [get_ports SPW_Dout]
-set_property PACKAGE_PIN Y11 [get_ports SPW_Sout]
+set_property PACKAGE_PIN V8 [get_ports SPW_Sout]        # JB10
 set_property IOSTANDARD LVCMOS33 [get_ports SPW_Sout]
-
-
-

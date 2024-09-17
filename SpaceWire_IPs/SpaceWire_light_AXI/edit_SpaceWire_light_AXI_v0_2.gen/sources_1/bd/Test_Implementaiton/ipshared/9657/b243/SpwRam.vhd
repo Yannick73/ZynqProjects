@@ -96,12 +96,13 @@ architecture SpwRam_rtl of SpwRam is
    --! The type is an array of std_logic_vector.
    type mem_type is array(integer range <>) of std_logic_vector(DBITS-1 downto 0);
    -----------------------------------------------------------------------------
-   signal s_mem : mem_type (0 to (2**ABITS - 1)); --! memory described as an array of std_logic_vector.
-   signal pre_clk_buf : std_logic_vector(DBITS-1 downto 0);
+   signal s_mem : mem_type (0 to (2**ABITS - 1)) := (others => (others => '0')); --! memory described as an array of std_logic_vector.
+--   signal pre_clk_buf : std_logic_vector(DBITS-1 downto 0);
+   signal raddr_buf : std_logic_vector(ABITS - 1 downto 0) := (others => '0');
 begin
    -----------------------------------------------------------------------------
    -- READ
-   RDATA <= s_mem(to_integer(unsigned(RADDR))) when REN ='1' else
+   RDATA <= s_mem(to_integer(unsigned(raddr_buf))) when REN ='1' else
    (others => '0');
 
    -----------------------------------------------------------------------------
@@ -117,19 +118,26 @@ begin
    begin
       if ( WRST_N = '0' ) then
         s_mem <= (others => (others => '0'));
-      elsif ( rising_edge(WCLK) ) then
-         if ( WEN = '1' ) then
-            s_mem(to_integer(unsigned(WADDR))) <= pre_clk_buf;
-         end if; -- WEN
+      elsif ( rising_edge(WCLK) and WEN = '1' ) then
+        s_mem(to_integer(unsigned(WADDR))) <= WDATA;
       end if; -- rising_edge(WCLK)
       
       -- pre-flip-flop for clock stability
-      if ( WRST_N = '0') then
-        pre_clk_buf <= (others => '0');
-      elsif ( falling_edge(WCLK) ) then
-        pre_clk_buf <= WDATA;
-      end if;
+--      if ( WRST_N = '0') then
+--        pre_clk_buf <= (others => '0');
+--      elsif ( falling_edge(WCLK) ) then
+--        pre_clk_buf <= WDATA;
+--      end if;
    end process write;
+   
+   read_buf: process ( RCLK, RRST_N )
+   begin
+        if ( RRST_N = '0') then
+            raddr_buf <= (others => '0');
+        elsif ( rising_edge(RCLK) ) then
+            raddr_buf <= RADDR;
+        end if;
+   end process read_buf;
 
 end architecture SpwRam_rtl;
 

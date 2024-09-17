@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Tue Sep 17 01:24:04 2024
-# Process ID: 12264
+# Start of session at: Tue Sep 17 19:50:44 2024
+# Process ID: 23036
 # Current directory: F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/synth_1
 # Command line: vivado.exe -log Test_Implementaiton_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Test_Implementaiton_wrapper.tcl
 # Log file: F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/synth_1/Test_Implementaiton_wrapper.vds
@@ -17,12 +17,12 @@
 # CPU Physical cores:6
 # CPU Logical cores :12
 # Host memory       :17100 MB
-# Swap memory       :5637 MB
-# Total Virtual     :22737 MB
-# Available Virtual :8664 MB
+# Swap memory       :6174 MB
+# Total Virtual     :23274 MB
+# Available Virtual :4993 MB
 #-----------------------------------------------------------
 source Test_Implementaiton_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 578.141 ; gain = 238.027
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 575.676 ; gain = 237.492
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Xilinx/ZynqProjects/ip_repo/myip/myip_1_0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2'.
@@ -42,15 +42,15 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 26124
+INFO: [Synth 8-7075] Helper process launched with PID 2816
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1487.266 ; gain = 448.871
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1488.672 ; gain = 449.297
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-8943] 'spacewire_light_axi' is not compiled in library 'spwip' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_SpaceWire_light_AXI_0_2/synth/Test_Implementaiton_SpaceWire_light_AXI_0_2.vhd:57]
 INFO: [Synth 8-638] synthesizing module 'Test_Implementaiton_wrapper' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/hdl/Test_Implementaiton_wrapper.vhd:45]
 INFO: [Synth 8-3491] module 'Test_Implementaiton' declared at 'f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/synth/Test_Implementaiton.vhd:2337' bound to instance 'Test_Implementaiton_i' of component 'Test_Implementaiton' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/hdl/Test_Implementaiton_wrapper.vhd:76]
 INFO: [Synth 8-638] synthesizing module 'Test_Implementaiton' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/synth/Test_Implementaiton.vhd:2371]
-INFO: [Synth 8-3491] module 'Test_Implementaiton_SpaceWire_light_AXI_0_2' declared at 'f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_SpaceWire_light_AXI_0_2/synth/Test_Implementaiton_SpaceWire_light_AXI_0_2.vhd:59' bound to instance 'SpaceWire_light_AXI_0' of component 'Test_Implementaiton_SpaceWire_light_AXI_0_2' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/synth/Test_Implementaiton.vhd:2854]
+INFO: [Synth 8-3491] module 'Test_Implementaiton_SpaceWire_light_AXI_0_2' declared at 'f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_SpaceWire_light_AXI_0_2/synth/Test_Implementaiton_SpaceWire_light_AXI_0_2.vhd:59' bound to instance 'SpaceWire_light_AXI_0' of component 'Test_Implementaiton_SpaceWire_light_AXI_0_2' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/synth/Test_Implementaiton.vhd:2862]
 INFO: [Synth 8-638] synthesizing module 'Test_Implementaiton_SpaceWire_light_AXI_0_2' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_SpaceWire_light_AXI_0_2/synth/Test_Implementaiton_SpaceWire_light_AXI_0_2.vhd:107]
 	Parameter C_AXI_StreamOut_TDATA_WIDTH bound to: 8 - type: integer 
 	Parameter C_AXI_StreamOut_START_COUNT bound to: 32 - type: integer 
@@ -80,19 +80,19 @@ WARNING: [Synth 8-3819] Generic 'c_m_start_count' not present in instantiated en
 WARNING: [Synth 8-613] shared variable will be implemented as local to architecture [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:49]
 WARNING: [Synth 8-614] signal 'M_AXIS_ARESETN' is read in the process but is not in the sensitivity list [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:55]
 INFO: [Synth 8-256] done synthesizing module 'SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut' (0#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd:45]
-	Parameter SYSFREQ bound to: 100000000.000000 - type: double 
-	Parameter TXCLKFREQ bound to: 400000000.000000 - type: double 
-	Parameter RXCHUNK bound to: 4 - type: integer 
-	Parameter RXFIFOSIZE_BITS bound to: 16 - type: integer 
-	Parameter TXFIFOSIZE_BITS bound to: 16 - type: integer 
+	Parameter SYSFREQ bound to: 40000000.000000 - type: double 
+	Parameter TXCLKFREQ bound to: 80000000.000000 - type: double 
+	Parameter RXCHUNK bound to: 2 - type: integer 
+	Parameter RXFIFOSIZE_BITS bound to: 12 - type: integer 
+	Parameter TXFIFOSIZE_BITS bound to: 12 - type: integer 
 INFO: [Synth 8-3491] module 'SpwStream' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd:107' bound to instance 'SPW_IF' of component 'SpwStream' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:274]
 INFO: [Synth 8-638] synthesizing module 'SpwStream' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd:168]
-	Parameter RESET_TIME bound to: 640 - type: integer 
+	Parameter RESET_TIME bound to: 256 - type: integer 
 INFO: [Synth 8-3491] module 'SpwLink' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwLink.vhd:78' bound to instance 'LINK_INST' of component 'SpwLink' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd:377]
 INFO: [Synth 8-638] synthesizing module 'SpwLink' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwLink.vhd:98]
 INFO: [Synth 8-256] done synthesizing module 'SpwLink' (0#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwLink.vhd:98]
-	Parameter DISCONNECT_TIME bound to: 84 - type: integer 
-	Parameter RXCHUNK bound to: 4 - type: integer 
+	Parameter DISCONNECT_TIME bound to: 33 - type: integer 
+	Parameter RXCHUNK bound to: 2 - type: integer 
 INFO: [Synth 8-3491] module 'SpwRecv' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecv.vhd:85' bound to instance 'RECV_INST' of component 'SpwRecv' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd:381]
 INFO: [Synth 8-638] synthesizing module 'SpwRecv' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecv.vhd:105]
 INFO: [Synth 8-256] done synthesizing module 'SpwRecv' (0#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecv.vhd:105]
@@ -113,13 +113,13 @@ INFO: [Synth 8-3491] module 'CLKDriver' declared at 'F:/Xilinx/ZynqProjects/Spac
 INFO: [Synth 8-638] synthesizing module 'CLKDriver' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd:109]
 INFO: [Synth 8-256] done synthesizing module 'CLKDriver' (0#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd:109]
 INFO: [Synth 8-256] done synthesizing module 'SpwRecovClk' (0#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecovClk.vhd:77]
-	Parameter ABITS bound to: 16 - type: integer 
+	Parameter ABITS bound to: 12 - type: integer 
 INFO: [Synth 8-3491] module 'SpwBlockRam' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpwStream_improved/SpwBlockRam.vhd:75' bound to instance 'RXMEM' of component 'SpwBlockRam' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd:391]
 INFO: [Synth 8-638] synthesizing module 'SpwBlockRam' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpwStream_improved/SpwBlockRam.vhd:93]
 INFO: [Synth 8-256] done synthesizing module 'SpwBlockRam' (0#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpwStream_improved/SpwBlockRam.vhd:93]
-	Parameter ABITS bound to: 16 - type: integer 
+	Parameter ABITS bound to: 12 - type: integer 
 INFO: [Synth 8-3491] module 'SpwBlockRam' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpwStream_improved/SpwBlockRam.vhd:75' bound to instance 'TXMEM' of component 'SpwBlockRam' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd:395]
-	Parameter RXCHUNK bound to: 4 - type: integer 
+	Parameter RXCHUNK bound to: 2 - type: integer 
 INFO: [Synth 8-3491] module 'SpwRecvFront' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:92' bound to instance 'RECVFRONT_INST' of component 'SpwRecvFront' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd:399]
 INFO: [Synth 8-638] synthesizing module 'SpwRecvFront' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:117]
 INFO: [Synth 8-3491] module 'Driver' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd:125' bound to instance 'DriverR' of component 'Driver' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:235]
@@ -132,7 +132,6 @@ INFO: [Synth 8-3491] module 'Driver' declared at 'F:/Xilinx/ZynqProjects/SpaceWi
 INFO: [Synth 8-3491] module 'Driver' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd:125' bound to instance 'DriverF' of component 'Driver' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:236]
 INFO: [Synth 8-3491] module 'Driver' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd:125' bound to instance 'DriverR' of component 'Driver' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:235]
 INFO: [Synth 8-3491] module 'Driver' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd:125' bound to instance 'DriverF' of component 'Driver' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:236]
-INFO: [Synth 8-3491] module 'Driver' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd:125' bound to instance 'CLK_BUF' of component 'Driver' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:239]
 INFO: [Synth 8-3491] module 'SyncDff' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SyncDff.vhd:73' bound to instance 'SYNCSYSHEADPTR0' of component 'SyncDff' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:246]
 INFO: [Synth 8-3491] module 'SyncDff' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SyncDff.vhd:73' bound to instance 'SYNCSYSHEADPTR1' of component 'SyncDff' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:249]
 INFO: [Synth 8-3491] module 'SyncDff' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SyncDff.vhd:73' bound to instance 'SYNCSYSHEADPTR2' of component 'SyncDff' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:252]
@@ -140,17 +139,18 @@ INFO: [Synth 8-3491] module 'SyncDff' declared at 'F:/Xilinx/ZynqProjects/SpaceW
 INFO: [Synth 8-3491] module 'SyncDff' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SyncDff.vhd:73' bound to instance 'SYNCSYSBITCNT1' of component 'SyncDff' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:258]
 INFO: [Synth 8-3491] module 'SyncDff' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SyncDff.vhd:73' bound to instance 'SYNCSYSBITCNT2' of component 'SyncDff' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:261]
 INFO: [Synth 8-3491] module 'SyncDff' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SyncDff.vhd:73' bound to instance 'SYNCSYSBITCNT3' of component 'SyncDff' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:264]
-	Parameter RESET_LATENCY bound to: 4 - type: integer 
+	Parameter RESET_LATENCY bound to: 2 - type: integer 
 INFO: [Synth 8-3491] module 'SpwReset' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwReset.vhd:64' bound to instance 'RXRSTLOGIC' of component 'SpwReset' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:267]
 INFO: [Synth 8-638] synthesizing module 'SpwReset' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwReset.vhd:79]
 INFO: [Synth 8-256] done synthesizing module 'SpwReset' (0#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwReset.vhd:79]
 	Parameter ABITS bound to: 3 - type: integer 
-	Parameter DBITS bound to: 4 - type: integer 
+	Parameter DBITS bound to: 2 - type: integer 
 INFO: [Synth 8-3491] module 'SpwRam' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRam.vhd:69' bound to instance 'FIFOMEM' of component 'SpwRam' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:271]
 INFO: [Synth 8-638] synthesizing module 'SpwRam' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRam.vhd:92]
+WARNING: [Synth 8-614] signal 'WEN' is read in the process but is not in the sensitivity list [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRam.vhd:117]
 INFO: [Synth 8-256] done synthesizing module 'SpwRam' (0#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRam.vhd:92]
 INFO: [Synth 8-256] done synthesizing module 'SpwRecvFront' (0#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd:117]
-	Parameter RESET_LATENCY bound to: 4 - type: integer 
+	Parameter RESET_LATENCY bound to: 2 - type: integer 
 INFO: [Synth 8-3491] module 'SpwReset' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwReset.vhd:64' bound to instance 'TXRSTLOGIC' of component 'SpwReset' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd:404]
 	Parameter RESET_LATENCY bound to: 1 - type: integer 
 INFO: [Synth 8-3491] module 'SpwReset' declared at 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwReset.vhd:64' bound to instance 'SYSRSTLOGIC' of component 'SpwReset' [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd:408]
@@ -160,8 +160,8 @@ INFO: [Synth 8-256] done synthesizing module 'SpwReset__parameterized2' (0#1) [F
 INFO: [Synth 8-256] done synthesizing module 'SpwStream' (0#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd:168]
 INFO: [Synth 8-256] done synthesizing module 'SpaceWire_light_AXI' (0#1) [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd:92]
 INFO: [Synth 8-256] done synthesizing module 'Test_Implementaiton_SpaceWire_light_AXI_0_2' (0#1) [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_SpaceWire_light_AXI_0_2/synth/Test_Implementaiton_SpaceWire_light_AXI_0_2.vhd:107]
-WARNING: [Synth 8-5640] Port 'axi_dma_tstvec' is missing in component declaration [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/synth/Test_Implementaiton.vhd:2557]
-INFO: [Synth 8-3491] module 'Test_Implementaiton_axi_dma_0_3' declared at 'f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_axi_dma_0_3/synth/Test_Implementaiton_axi_dma_0_3.vhd:59' bound to instance 'axi_dma_0' of component 'Test_Implementaiton_axi_dma_0_3' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/synth/Test_Implementaiton.vhd:2900]
+WARNING: [Synth 8-5640] Port 'axi_dma_tstvec' is missing in component declaration [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/synth/Test_Implementaiton.vhd:2556]
+INFO: [Synth 8-3491] module 'Test_Implementaiton_axi_dma_0_3' declared at 'f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_axi_dma_0_3/synth/Test_Implementaiton_axi_dma_0_3.vhd:59' bound to instance 'axi_dma_0' of component 'Test_Implementaiton_axi_dma_0_3' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/synth/Test_Implementaiton.vhd:2908]
 INFO: [Synth 8-638] synthesizing module 'Test_Implementaiton_axi_dma_0_3' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_axi_dma_0_3/synth/Test_Implementaiton_axi_dma_0_3.vhd:128]
 	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 10 - type: integer 
 	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
@@ -490,7 +490,7 @@ INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_full_wrap' (0#1
 INFO: [Synth 8-256] done synthesizing module 'axi_datamover' (0#1) [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/bf20/hdl/axi_datamover_v5_1_vh_rfs.vhd:55201]
 INFO: [Synth 8-256] done synthesizing module 'axi_dma' (0#1) [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/8830/hdl/axi_dma_v7_1_vh_rfs.vhd:22149]
 INFO: [Synth 8-256] done synthesizing module 'Test_Implementaiton_axi_dma_0_3' (0#1) [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_axi_dma_0_3/synth/Test_Implementaiton_axi_dma_0_3.vhd:128]
-INFO: [Synth 8-638] synthesizing module 'Test_Implementaiton_axi_mem_intercon_1' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/synth/Test_Implementaiton.vhd:1211]
+INFO: [Synth 8-638] synthesizing module 'Test_Implementaiton_axi_mem_intercon_2' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/synth/Test_Implementaiton.vhd:1211]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_5VDXT1' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/synth/Test_Implementaiton.vhd:101]
 INFO: [Synth 8-3491] module 'Test_Implementaiton_auto_pc_1' declared at 'f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_auto_pc_1/synth/Test_Implementaiton_auto_pc_1.v:53' bound to instance 'auto_pc' of component 'Test_Implementaiton_auto_pc_1' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/synth/Test_Implementaiton.vhd:344]
 INFO: [Synth 8-6157] synthesizing module 'Test_Implementaiton_auto_pc_1' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_auto_pc_1/synth/Test_Implementaiton_auto_pc_1.v:53]
@@ -524,8 +524,8 @@ INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1B89UE3' [f:/Xilinx/Zy
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1B89UE3' (0#1) [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/synth/Test_Implementaiton.vhd:673]
 INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_1JU8A4F' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/synth/Test_Implementaiton.vhd:1076]
 INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_1JU8A4F' (0#1) [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/synth/Test_Implementaiton.vhd:1076]
-INFO: [Synth 8-3491] module 'Test_Implementaiton_xbar_4' declared at 'f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_xbar_4/synth/Test_Implementaiton_xbar_4.v:53' bound to instance 'xbar' of component 'Test_Implementaiton_xbar_4' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/synth/Test_Implementaiton.vhd:1668]
-INFO: [Synth 8-6157] synthesizing module 'Test_Implementaiton_xbar_4' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_xbar_4/synth/Test_Implementaiton_xbar_4.v:53]
+INFO: [Synth 8-3491] module 'Test_Implementaiton_xbar_5' declared at 'f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_xbar_5/synth/Test_Implementaiton_xbar_5.v:53' bound to instance 'xbar' of component 'Test_Implementaiton_xbar_5' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/synth/Test_Implementaiton.vhd:1668]
+INFO: [Synth 8-6157] synthesizing module 'Test_Implementaiton_xbar_5' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_xbar_5/synth/Test_Implementaiton_xbar_5.v:53]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_32_axi_crossbar' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/e9d8/hdl/axi_crossbar_v2_1_vl_rfs.v:4871]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_32_crossbar' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/e9d8/hdl/axi_crossbar_v2_1_vl_rfs.v:2232]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_32_si_transactor' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/e9d8/hdl/axi_crossbar_v2_1_vl_rfs.v:3791]
@@ -610,9 +610,37 @@ INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_mux_enc
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_32_addr_arbiter' (0#1) [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/e9d8/hdl/axi_crossbar_v2_1_vl_rfs.v:420]
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_32_crossbar' (0#1) [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/e9d8/hdl/axi_crossbar_v2_1_vl_rfs.v:2232]
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_32_axi_crossbar' (0#1) [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/e9d8/hdl/axi_crossbar_v2_1_vl_rfs.v:4871]
-INFO: [Synth 8-6155] done synthesizing module 'Test_Implementaiton_xbar_4' (0#1) [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_xbar_4/synth/Test_Implementaiton_xbar_4.v:53]
-INFO: [Synth 8-256] done synthesizing module 'Test_Implementaiton_axi_mem_intercon_1' (0#1) [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/synth/Test_Implementaiton.vhd:1211]
-INFO: [Synth 8-3491] module 'Test_Implementaiton_processing_system7_0_1' declared at 'f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/synth/Test_Implementaiton_processing_system7_0_1.v:53' bound to instance 'processing_system7_0' of component 'Test_Implementaiton_processing_system7_0_1' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/synth/Test_Implementaiton.vhd:3044]
+INFO: [Synth 8-6155] done synthesizing module 'Test_Implementaiton_xbar_5' (0#1) [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_xbar_5/synth/Test_Implementaiton_xbar_5.v:53]
+INFO: [Synth 8-256] done synthesizing module 'Test_Implementaiton_axi_mem_intercon_2' (0#1) [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/synth/Test_Implementaiton.vhd:1211]
+INFO: [Synth 8-3491] module 'Test_Implementaiton_clk_wiz_0_0' declared at 'f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_clk_wiz_0_0/Test_Implementaiton_clk_wiz_0_0.v:66' bound to instance 'clk_wiz_0' of component 'Test_Implementaiton_clk_wiz_0_0' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/synth/Test_Implementaiton.vhd:3052]
+INFO: [Synth 8-6157] synthesizing module 'Test_Implementaiton_clk_wiz_0_0' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_clk_wiz_0_0/Test_Implementaiton_clk_wiz_0_0.v:66]
+INFO: [Synth 8-6157] synthesizing module 'Test_Implementaiton_clk_wiz_0_0_clk_wiz' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_clk_wiz_0_0/Test_Implementaiton_clk_wiz_0_0_clk_wiz.v:66]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [F:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:73643]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (0#1) [F:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:73643]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [F:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:82388]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 25.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 25.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 12.500000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 25 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (0#1) [F:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:82388]
+INFO: [Synth 8-6157] synthesizing module 'BUFH' [F:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:2199]
+INFO: [Synth 8-6155] done synthesizing module 'BUFH' (0#1) [F:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:2199]
+INFO: [Synth 8-6155] done synthesizing module 'Test_Implementaiton_clk_wiz_0_0_clk_wiz' (0#1) [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_clk_wiz_0_0/Test_Implementaiton_clk_wiz_0_0_clk_wiz.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'Test_Implementaiton_clk_wiz_0_0' (0#1) [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_clk_wiz_0_0/Test_Implementaiton_clk_wiz_0_0.v:66]
+INFO: [Synth 8-3491] module 'Test_Implementaiton_processing_system7_0_1' declared at 'f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/synth/Test_Implementaiton_processing_system7_0_1.v:53' bound to instance 'processing_system7_0' of component 'Test_Implementaiton_processing_system7_0_1' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/synth/Test_Implementaiton.vhd:3059]
 INFO: [Synth 8-6157] synthesizing module 'Test_Implementaiton_processing_system7_0_1' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/synth/Test_Implementaiton_processing_system7_0_1.v:53]
 INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/hdl/verilog/processing_system7_v5_5_processing_system7.v:152]
 INFO: [Synth 8-6157] synthesizing module 'BUFG' [F:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:1951]
@@ -622,20 +650,20 @@ INFO: [Synth 8-6155] done synthesizing module 'BIBUF' (0#1) [F:/Xilinx/Vivado/20
 INFO: [Synth 8-6157] synthesizing module 'PS7' [F:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:115258]
 INFO: [Synth 8-6155] done synthesizing module 'PS7' (0#1) [F:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:115258]
 INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (0#1) [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/hdl/verilog/processing_system7_v5_5_processing_system7.v:152]
-WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/synth/Test_Implementaiton_processing_system7_0_1.v:491]
-WARNING: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/synth/Test_Implementaiton_processing_system7_0_1.v:491]
-WARNING: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/synth/Test_Implementaiton_processing_system7_0_1.v:491]
-WARNING: [Synth 8-7071] port 'S_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/synth/Test_Implementaiton_processing_system7_0_1.v:491]
-WARNING: [Synth 8-7071] port 'S_AXI_ACP_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/synth/Test_Implementaiton_processing_system7_0_1.v:491]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/synth/Test_Implementaiton_processing_system7_0_1.v:491]
-WARNING: [Synth 8-7071] port 'S_AXI_HP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/synth/Test_Implementaiton_processing_system7_0_1.v:491]
-WARNING: [Synth 8-7071] port 'S_AXI_HP2_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/synth/Test_Implementaiton_processing_system7_0_1.v:491]
-WARNING: [Synth 8-7071] port 'S_AXI_HP3_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/synth/Test_Implementaiton_processing_system7_0_1.v:491]
-WARNING: [Synth 8-7071] port 'DMA0_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/synth/Test_Implementaiton_processing_system7_0_1.v:491]
-WARNING: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/synth/Test_Implementaiton_processing_system7_0_1.v:491]
-WARNING: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/synth/Test_Implementaiton_processing_system7_0_1.v:491]
-WARNING: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/synth/Test_Implementaiton_processing_system7_0_1.v:491]
-WARNING: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/synth/Test_Implementaiton_processing_system7_0_1.v:491]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/synth/Test_Implementaiton_processing_system7_0_1.v:487]
+WARNING: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/synth/Test_Implementaiton_processing_system7_0_1.v:487]
+WARNING: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/synth/Test_Implementaiton_processing_system7_0_1.v:487]
+WARNING: [Synth 8-7071] port 'S_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/synth/Test_Implementaiton_processing_system7_0_1.v:487]
+WARNING: [Synth 8-7071] port 'S_AXI_ACP_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/synth/Test_Implementaiton_processing_system7_0_1.v:487]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/synth/Test_Implementaiton_processing_system7_0_1.v:487]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/synth/Test_Implementaiton_processing_system7_0_1.v:487]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/synth/Test_Implementaiton_processing_system7_0_1.v:487]
+WARNING: [Synth 8-7071] port 'S_AXI_HP3_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/synth/Test_Implementaiton_processing_system7_0_1.v:487]
+WARNING: [Synth 8-7071] port 'DMA0_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/synth/Test_Implementaiton_processing_system7_0_1.v:487]
+WARNING: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/synth/Test_Implementaiton_processing_system7_0_1.v:487]
+WARNING: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/synth/Test_Implementaiton_processing_system7_0_1.v:487]
+WARNING: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/synth/Test_Implementaiton_processing_system7_0_1.v:487]
+WARNING: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/synth/Test_Implementaiton_processing_system7_0_1.v:487]
 INFO: [Synth 8-6155] done synthesizing module 'Test_Implementaiton_processing_system7_0_1' (0#1) [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/synth/Test_Implementaiton_processing_system7_0_1.v:53]
 INFO: [Synth 8-638] synthesizing module 'Test_Implementaiton_ps7_0_axi_periph_1' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/synth/Test_Implementaiton.vhd:1869]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_SB66SM' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/synth/Test_Implementaiton.vhd:472]
@@ -677,31 +705,21 @@ INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_31_b2
 INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_31_b2s_r_channel' (0#1) [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4155]
 INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_31_axi_register_slice__parameterized0' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:3718]
 INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
-INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' (0#1) [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
-INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
-INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' (0#1) [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized3' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized3' (0#1) [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized4' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized4' (0#1) [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized5' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized5' (0#1) [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized6' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
 INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized6' (0#1) [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_31_axi_register_slice__parameterized0' (0#1) [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:3718]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' (0#1) [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' (0#1) [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized3' (0#1) [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized4' (0#1) [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized5' (0#1) [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_31_axi_register_slice' is unconnected for instance 'SI_REG' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4871]
 WARNING: [Synth 8-7023] instance 'SI_REG' of module 'axi_register_slice_v2_1_31_axi_register_slice' has 93 connections declared, but only 92 given [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4871]
-INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized1' (0#1) [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
-INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized1' (0#1) [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized7' (0#1) [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
-INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_31_axi_register_slice' is unconnected for instance 'MI_REG' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:5126]
 WARNING: [Synth 8-7023] instance 'MI_REG' of module 'axi_register_slice_v2_1_31_axi_register_slice' has 93 connections declared, but only 92 given [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:5126]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1O8KDY0' (0#1) [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/synth/Test_Implementaiton.vhd:785]
 INFO: [Synth 8-3491] module 'Test_Implementaiton_xbar_3' declared at 'f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_xbar_3/synth/Test_Implementaiton_xbar_3.v:53' bound to instance 'xbar' of component 'Test_Implementaiton_xbar_3' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/synth/Test_Implementaiton.vhd:2270]
 INFO: [Synth 8-256] done synthesizing module 'Test_Implementaiton_ps7_0_axi_periph_1' (0#1) [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/synth/Test_Implementaiton.vhd:1869]
-INFO: [Synth 8-3491] module 'Test_Implementaiton_rst_ps7_0_100M_2' declared at 'f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_rst_ps7_0_100M_2/synth/Test_Implementaiton_rst_ps7_0_100M_2.vhd:59' bound to instance 'rst_ps7_0_100M' of component 'Test_Implementaiton_rst_ps7_0_100M_2' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/synth/Test_Implementaiton.vhd:3254]
+INFO: [Synth 8-3491] module 'Test_Implementaiton_rst_ps7_0_100M_2' declared at 'f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_rst_ps7_0_100M_2/synth/Test_Implementaiton_rst_ps7_0_100M_2.vhd:59' bound to instance 'rst_ps7_0_100M' of component 'Test_Implementaiton_rst_ps7_0_100M_2' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/synth/Test_Implementaiton.vhd:3268]
 INFO: [Synth 8-638] synthesizing module 'Test_Implementaiton_rst_ps7_0_100M_2' [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_rst_ps7_0_100M_2/synth/Test_Implementaiton_rst_ps7_0_100M_2.vhd:74]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
@@ -956,19 +974,19 @@ WARNING: [Synth 8-7129] Port m_axi_ruser[0] in module axi_infrastructure_v1_1_0_
 WARNING: [Synth 8-7129] Port s_axi_awid[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized1 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1940.879 ; gain = 902.484
+Finished RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1911.953 ; gain = 872.578
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1940.879 ; gain = 902.484
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1911.953 ; gain = 872.578
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1940.879 ; gain = 902.484
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1911.953 ; gain = 872.578
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.528 . Memory (MB): peak = 1940.879 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.525 . Memory (MB): peak = 1911.953 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -988,35 +1006,53 @@ Parsing XDC File [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_
 Finished Parsing XDC File [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_axi_dma_0_3/Test_Implementaiton_axi_dma_0_3.xdc] for cell 'Test_Implementaiton_i/axi_dma_0/U0'
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_axi_dma_0_3/Test_Implementaiton_axi_dma_0_3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Test_Implementaiton_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Test_Implementaiton_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_clk_wiz_0_0/Test_Implementaiton_clk_wiz_0_0_board.xdc] for cell 'Test_Implementaiton_i/clk_wiz_0/inst'
+Finished Parsing XDC File [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_clk_wiz_0_0/Test_Implementaiton_clk_wiz_0_0_board.xdc] for cell 'Test_Implementaiton_i/clk_wiz_0/inst'
+Parsing XDC File [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_clk_wiz_0_0/Test_Implementaiton_clk_wiz_0_0.xdc] for cell 'Test_Implementaiton_i/clk_wiz_0/inst'
+Finished Parsing XDC File [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_clk_wiz_0_0/Test_Implementaiton_clk_wiz_0_0.xdc] for cell 'Test_Implementaiton_i/clk_wiz_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_clk_wiz_0_0/Test_Implementaiton_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Test_Implementaiton_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Test_Implementaiton_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
 Parsing XDC File [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc]
-WARNING: [Vivado 12-584] No ports matched 'axi_register_rdata[6]'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:9]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:9]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'axi_register_rdata[6]'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:10]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:10]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'SPW_TX_clk'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:29]
-CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports SPW_TX_clk]'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:29]
+WARNING: [Vivado 12-627] No clocks matched 'clk_fpga_1'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:98]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:98]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock [get_clocks clk_fpga_1]'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:98]
 Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-WARNING: [Vivado 12-584] No ports matched 'SPW_main_clk'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:31]
-CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports SPW_main_clk]'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:31]
+WARNING: [Vivado 12-627] No clocks matched 'clk_fpga_1'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:99]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:99]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock [get_clocks clk_fpga_1]'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:99]
 Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-WARNING: [Vivado 12-584] No ports matched 'axi_register_aclk'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:33]
-CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports axi_register_aclk]'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:33]
+WARNING: [Vivado 12-627] No clocks matched 'clk_fpga_1'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:100]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:100]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock [get_clocks clk_fpga_1]'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:100]
 Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-WARNING: [Vivado 12-584] No ports matched 'axi_streamin_aclk'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:35]
-CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports axi_streamin_aclk]'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:35]
+WARNING: [Vivado 12-627] No clocks matched 'clk_fpga_1'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:101]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:101]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock [get_clocks clk_fpga_1]'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:101]
 Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-WARNING: [Vivado 12-584] No ports matched 'axi_streamout_aclk'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:37]
-CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports axi_streamout_aclk]'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:37]
+WARNING: [Vivado 12-627] No clocks matched 'clk_fpga_1'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:102]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:102]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks clk_fpga_1]'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:102]
 Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:102]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-5201] set_clock_groups: cannot set the clock group when only one non-empty group remains. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:102]
+WARNING: [Vivado 12-627] No clocks matched 'clk_fpga_1'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:103]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:103]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks clk_fpga_1]'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:103]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:103]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-5201] set_clock_groups: cannot set the clock group when only one non-empty group remains. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:103]
 Finished Parsing XDC File [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Test_Implementaiton_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Test_Implementaiton_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_pins.xdc]
+CRITICAL WARNING: [Common 17-161] Invalid option value '#' specified for 'objects'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_pins.xdc:1]
+CRITICAL WARNING: [Common 17-161] Invalid option value '#' specified for 'objects'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_pins.xdc:3]
+CRITICAL WARNING: [Common 17-161] Invalid option value '#' specified for 'objects'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_pins.xdc:5]
+CRITICAL WARNING: [Common 17-161] Invalid option value '#' specified for 'objects'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_pins.xdc:7]
 Finished Parsing XDC File [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_pins.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_pins.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Test_Implementaiton_wrapper_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/Test_Implementaiton_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/synth_1/dont_touch.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Test_Implementaiton_wrapper_propImpl.xdc].
@@ -1028,31 +1064,52 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/Test_Impleme
 INFO: [Project 1-1714] 6 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2037.742 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1998.383 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 25 instances were transformed.
   FDR => FDRE: 24 instances
   SRL16 => SRL16E: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.110 . Memory (MB): peak = 2037.742 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.112 . Memory (MB): peak = 1998.383 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2037.742 ; gain = 999.348
+Finished Constraint Validation : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1998.383 ; gain = 959.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2037.742 ; gain = 999.348
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1998.383 ; gain = 959.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for Test_Implementaiton_i/processing_system7_0/inst. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/synth_1/dont_touch.xdc, line 42).
-Applied set_property KEEP_HIERARCHY = SOFT for Test_Implementaiton_i/rst_ps7_0_100M/U0. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/synth_1/dont_touch.xdc, line 45).
-Applied set_property KEEP_HIERARCHY = SOFT for Test_Implementaiton_i/axi_dma_0/U0. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/synth_1/dont_touch.xdc, line 53).
+Applied set_property ASYNC_REG = true for Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/XMIT_FAST_INST/SYNCSYSTXFLIP0/buf_ff0_reg. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc, line 78).
+Applied set_property ASYNC_REG = true for Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/XMIT_FAST_INST/SYNCSYSTXFLIP0/syncdff_ff2_reg. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc, line 79).
+Applied set_property ASYNC_REG = true for Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/XMIT_FAST_INST/SYNCSYSTXFLIP1/buf_ff0_reg. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc, line 80).
+Applied set_property ASYNC_REG = true for Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/XMIT_FAST_INST/SYNCSYSTXFLIP1/syncdff_ff2_reg. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc, line 81).
+Applied set_property ASYNC_REG = true for Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/XMIT_FAST_INST/SYNCTXTXDIVSAFE/buf_ff0_reg. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc, line 82).
+Applied set_property ASYNC_REG = true for Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/XMIT_FAST_INST/SYNCTXTXDIVSAFE/syncdff_ff2_reg. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc, line 83).
+Applied set_property ASYNC_REG = true for Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/XMIT_FAST_INST/SYNCTXSYSFLIP1/buf_ff0_reg. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc, line 84).
+Applied set_property ASYNC_REG = true for Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/XMIT_FAST_INST/SYNCTXSYSFLIP1/syncdff_ff2_reg. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc, line 85).
+Applied set_property ASYNC_REG = true for Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/XMIT_FAST_INST/SYNCTXSYSFLIP0/buf_ff0_reg. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc, line 86).
+Applied set_property ASYNC_REG = true for Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/XMIT_FAST_INST/SYNCTXSYSFLIP0/syncdff_ff2_reg. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc, line 87).
+Applied set_property ASYNC_REG = true for Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/TXRSTLOGIC/reset_reg_reg. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc, line 88).
+Applied set_property ASYNC_REG = true for Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/TXRSTLOGIC/reset_reg_reg. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc, line 89).
+Applied set_property ASYNC_REG = true for Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/XMIT_FAST_INST/SYNCTXTXEN/buf_ff0_reg. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc, line 90).
+Applied set_property ASYNC_REG = true for Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/XMIT_FAST_INST/SYNCTXTXEN/syncdff_ff2_reg. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc, line 91).
+Applied set_property ASYNC_REG = true for Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/ff_r_di2f_reg. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc, line 92).
+Applied set_property ASYNC_REG = true for Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/ff_r_di2r_reg. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc, line 93).
+Applied set_property ASYNC_REG = true for Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/ff_f_di1_reg. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc, line 94).
+Applied set_property ASYNC_REG = true for Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/\resrx_seq_reg[bufdata] . (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc, line 95).
+Applied set_property ASYNC_REG = true for Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/ff_r_di1_reg. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc, line 96).
+Applied set_property ASYNC_REG = true for Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/\resrx_seq_reg[bufdata] . (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc, line 97).
+Applied set_property KEEP_HIERARCHY = SOFT for Test_Implementaiton_i/processing_system7_0/inst. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/synth_1/dont_touch.xdc, line 45).
+Applied set_property KEEP_HIERARCHY = SOFT for Test_Implementaiton_i/rst_ps7_0_100M/U0. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/synth_1/dont_touch.xdc, line 48).
+Applied set_property KEEP_HIERARCHY = SOFT for Test_Implementaiton_i/axi_dma_0/U0. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/synth_1/dont_touch.xdc, line 54).
+Applied set_property KEEP_HIERARCHY = SOFT for Test_Implementaiton_i/clk_wiz_0/inst. (constraint file  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/synth_1/dont_touch.xdc, line 60).
 Applied set_property KEEP_HIERARCHY = SOFT for Test_Implementaiton_i. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for Test_Implementaiton_i/processing_system7_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for Test_Implementaiton_i/rst_ps7_0_100M. (constraint file  auto generated constraint).
@@ -1064,6 +1121,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for Test_Implementaiton_i/axi_dma_0. 
 Applied set_property KEEP_HIERARCHY = SOFT for Test_Implementaiton_i/axi_mem_intercon/xbar. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for Test_Implementaiton_i/axi_mem_intercon/m00_couplers/auto_pc. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for Test_Implementaiton_i/axi_mem_intercon. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Test_Implementaiton_i/clk_wiz_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for Test_Implementaiton_i/axi_mem_intercon/m00_couplers/auto_pc/inst/\gen_axi4_axi3.axi3_conv_inst /\USE_WRITE.write_addr_inst /\USE_BURSTS.cmd_queue /inst/fifo_gen_inst/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for Test_Implementaiton_i/axi_mem_intercon/m00_couplers/auto_pc/inst/\gen_axi4_axi3.axi3_conv_inst /\USE_WRITE.write_addr_inst /\USE_B_CHANNEL.cmd_b_queue /inst/fifo_gen_inst/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for Test_Implementaiton_i/axi_mem_intercon/m00_couplers/auto_pc/inst/\gen_axi4_axi3.axi3_conv_inst /\USE_READ.USE_SPLIT_R.read_addr_inst /\USE_R_CHANNEL.cmd_queue /inst/fifo_gen_inst/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint).
@@ -1071,7 +1129,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for Test_Implementaiton_i/axi_dma_0/U
 Applied set_property KEEP_HIERARCHY = SOFT for Test_Implementaiton_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER /\GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT /I_DATA_FIFO/\BLK_MEM.I_SYNC_FIFOGEN_FIFO /\xpm_fifo_instance.xpm_fifo_sync_inst . (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for Test_Implementaiton_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER /\GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT /I_XD_FIFO/\NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO /\xpm_fifo_instance.xpm_fifo_sync_inst . (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 2037.742 ; gain = 999.348
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1998.383 ; gain = 959.008
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_write_reg' in module 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register'
 INFO: [Synth 8-802] inferred FSM for state register 'state_read_reg' in module 'SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register'
@@ -1266,7 +1324,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_protocol_converter_v2_1_31_b2s_rd_cmd_fsm'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 2037.742 ; gain = 999.348
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1998.383 ; gain = 959.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -1274,10 +1332,10 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input   32 Bit       Adders := 2     
-	   2 Input   17 Bit       Adders := 4     
-	   2 Input   16 Bit       Adders := 4     
+	   2 Input   16 Bit       Adders := 3     
 	   3 Input   14 Bit       Adders := 1     
-	   2 Input   12 Bit       Adders := 8     
+	   2 Input   13 Bit       Adders := 4     
+	   2 Input   12 Bit       Adders := 9     
 	   2 Input   11 Bit       Adders := 1     
 	   2 Input    9 Bit       Adders := 2     
 	   2 Input    8 Bit       Adders := 17    
@@ -1299,7 +1357,7 @@ Detailed RTL Component Info :
 	   4 Input    2 Bit       Adders := 3     
 	   2 Input    1 Bit       Adders := 2     
 +---XORs : 
-	   2 Input      1 Bit         XORs := 83    
+	   2 Input      1 Bit         XORs := 81    
 	   3 Input      1 Bit         XORs := 1     
 +---Registers : 
 	              153 Bit    Registers := 2     
@@ -1314,10 +1372,10 @@ Detailed RTL Component Info :
 	               35 Bit    Registers := 1     
 	               32 Bit    Registers := 17    
 	               23 Bit    Registers := 2     
-	               17 Bit    Registers := 2     
-	               16 Bit    Registers := 11    
+	               16 Bit    Registers := 8     
 	               14 Bit    Registers := 14    
-	               12 Bit    Registers := 11    
+	               13 Bit    Registers := 2     
+	               12 Bit    Registers := 14    
 	               11 Bit    Registers := 1     
 	               10 Bit    Registers := 6     
 	                9 Bit    Registers := 8     
@@ -1325,12 +1383,12 @@ Detailed RTL Component Info :
 	                7 Bit    Registers := 13    
 	                6 Bit    Registers := 9     
 	                5 Bit    Registers := 30    
-	                4 Bit    Registers := 87    
-	                3 Bit    Registers := 33    
-	                2 Bit    Registers := 65    
-	                1 Bit    Registers := 789   
+	                4 Bit    Registers := 74    
+	                3 Bit    Registers := 34    
+	                2 Bit    Registers := 77    
+	                1 Bit    Registers := 791   
 +---RAMs : 
-	             576K Bit	(65536 X 9 bit)          RAMs := 2     
+	              36K Bit	(4096 X 9 bit)          RAMs := 2     
 	               4K Bit	(128 X 39 bit)          RAMs := 1     
 	               4K Bit	(128 X 38 bit)          RAMs := 1     
 	              144 Bit	(16 X 9 bit)          RAMs := 1     
@@ -1344,21 +1402,21 @@ Detailed RTL Component Info :
 	   2 Input   32 Bit        Muxes := 15    
 	   8 Input   32 Bit        Muxes := 2     
 	   2 Input   23 Bit        Muxes := 3     
-	   4 Input   17 Bit        Muxes := 10    
-	   4 Input   16 Bit        Muxes := 2     
 	   2 Input   16 Bit        Muxes := 10    
 	   3 Input   16 Bit        Muxes := 2     
 	   2 Input   14 Bit        Muxes := 7     
 	   4 Input   14 Bit        Muxes := 2     
 	   3 Input   14 Bit        Muxes := 1     
+	   4 Input   13 Bit        Muxes := 10    
+	   4 Input   12 Bit        Muxes := 2     
 	   8 Input   12 Bit        Muxes := 2     
 	   2 Input   12 Bit        Muxes := 6     
 	   2 Input   11 Bit        Muxes := 3     
-	   3 Input   10 Bit        Muxes := 4     
-	   2 Input   10 Bit        Muxes := 7     
+	   3 Input   10 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 5     
 	   2 Input    9 Bit        Muxes := 9     
-	   2 Input    8 Bit        Muxes := 61    
-	   4 Input    8 Bit        Muxes := 5     
+	   2 Input    8 Bit        Muxes := 49    
+	   4 Input    8 Bit        Muxes := 3     
 	   5 Input    8 Bit        Muxes := 1     
 	   8 Input    8 Bit        Muxes := 1     
 	   3 Input    8 Bit        Muxes := 1     
@@ -1368,20 +1426,20 @@ Detailed RTL Component Info :
 	   2 Input    6 Bit        Muxes := 9     
 	   6 Input    6 Bit        Muxes := 1     
 	   2 Input    5 Bit        Muxes := 9     
-	   2 Input    4 Bit        Muxes := 55    
+	   2 Input    4 Bit        Muxes := 53    
 	   4 Input    4 Bit        Muxes := 6     
 	   3 Input    4 Bit        Muxes := 3     
 	   3 Input    3 Bit        Muxes := 2     
 	   2 Input    3 Bit        Muxes := 25    
 	   6 Input    3 Bit        Muxes := 2     
 	   3 Input    2 Bit        Muxes := 5     
-	   2 Input    2 Bit        Muxes := 197   
+	   2 Input    2 Bit        Muxes := 199   
 	   4 Input    2 Bit        Muxes := 28    
 	   5 Input    2 Bit        Muxes := 3     
-	   2 Input    1 Bit        Muxes := 558   
+	   2 Input    1 Bit        Muxes := 486   
 	   3 Input    1 Bit        Muxes := 32    
 	   6 Input    1 Bit        Muxes := 14    
-	   4 Input    1 Bit        Muxes := 53    
+	   4 Input    1 Bit        Muxes := 39    
 	   8 Input    1 Bit        Muxes := 3     
 	   7 Input    1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
@@ -1435,9 +1493,9 @@ INFO: [Synth 8-3332] Sequential element (I_RST_MODULE/REG_HRD_RST/GENERATE_LEVEL
 INFO: [Synth 8-3332] Sequential element (I_RST_MODULE/REG_HRD_RST_OUT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_dma.
 INFO: [Synth 8-3332] Sequential element (I_RST_MODULE/REG_HRD_RST_OUT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_dma.
 INFO: [Synth 8-3332] Sequential element (I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/FSM_onehot_sig_csm_state_reg[3]) is unused and will be removed from module axi_dma.
-INFO: [Synth 8-3332] Sequential element (inst/gen_samd.crossbar_samd/gen_slave_slots[1].gen_si_write.wdata_router_w/wrouter_aw_fifo/FSM_onehot_state_reg[2]) is unused and will be removed from module Test_Implementaiton_xbar_4.
-INFO: [Synth 8-3332] Sequential element (inst/gen_samd.crossbar_samd/gen_master_slots[0].gen_mi_write.wdata_mux_w/gen_wmux.wmux_aw_fifo/FSM_onehot_state_reg[2]) is unused and will be removed from module Test_Implementaiton_xbar_4.
-INFO: [Synth 8-3332] Sequential element (inst/gen_samd.crossbar_samd/gen_master_slots[1].gen_mi_write.wdata_mux_w/gen_wmux.wmux_aw_fifo/FSM_onehot_state_reg[2]) is unused and will be removed from module Test_Implementaiton_xbar_4.
+INFO: [Synth 8-3332] Sequential element (inst/gen_samd.crossbar_samd/gen_slave_slots[1].gen_si_write.wdata_router_w/wrouter_aw_fifo/FSM_onehot_state_reg[2]) is unused and will be removed from module Test_Implementaiton_xbar_5.
+INFO: [Synth 8-3332] Sequential element (inst/gen_samd.crossbar_samd/gen_master_slots[0].gen_mi_write.wdata_mux_w/gen_wmux.wmux_aw_fifo/FSM_onehot_state_reg[2]) is unused and will be removed from module Test_Implementaiton_xbar_5.
+INFO: [Synth 8-3332] Sequential element (inst/gen_samd.crossbar_samd/gen_master_slots[1].gen_mi_write.wdata_mux_w/gen_wmux.wmux_aw_fifo/FSM_onehot_state_reg[2]) is unused and will be removed from module Test_Implementaiton_xbar_5.
 WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
 WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
 WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module proc_sys_reset.
@@ -1451,7 +1509,7 @@ WARNING: [Synth 8-3332] Sequential element (BSR_OUT_DFF[0].FDRE_BSR) is unused a
 WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N) is unused and will be removed from module proc_sys_reset.
 WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 2037.742 ; gain = 999.348
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 1998.383 ; gain = 959.008
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -1463,8 +1521,8 @@ Block RAM: Preliminary Mapping Report (see note below)
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 |Module Name                                                                                                                                                                                                                                                    | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|Test_Implementaiton_i/SpaceWire_light_AXI_0                                                                                                                                                                                                                    | U0/SPW_IF/RXMEM/s_mem_reg        | 64 K x 9(READ_FIRST)   | W |   | 64 K x 9(WRITE_FIRST)  |   | R | Port A and B     | 0      | 18     | 
-|Test_Implementaiton_i/SpaceWire_light_AXI_0                                                                                                                                                                                                                    | U0/SPW_IF/TXMEM/s_mem_reg        | 64 K x 9(READ_FIRST)   | W |   | 64 K x 9(WRITE_FIRST)  |   | R | Port A and B     | 0      | 18     | 
+|Test_Implementaiton_i/SpaceWire_light_AXI_0                                                                                                                                                                                                                    | U0/SPW_IF/RXMEM/s_mem_reg        | 4 K x 9(READ_FIRST)    | W |   | 4 K x 9(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|Test_Implementaiton_i/SpaceWire_light_AXI_0                                                                                                                                                                                                                    | U0/SPW_IF/TXMEM/s_mem_reg        | 4 K x 9(READ_FIRST)    | W |   | 4 K x 9(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
 |Test_Implementaiton_i/axi_dma_0/U0/\I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst          | gen_wr_a.gen_word_narrow.mem_reg | 128 x 39(NO_CHANGE)    | W |   | 128 x 39(NO_CHANGE)    |   | R | Port A and B     | 0      | 1      | 
 |Test_Implementaiton_i/axi_dma_0/U0/\I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | 128 x 38(NO_CHANGE)    | W |   | 128 x 38(NO_CHANGE)    |   | R | Port A and B     | 0      | 1      | 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
@@ -1487,8 +1545,10 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Test_Implementaiton_i/clk_wiz_0/inst/clk_in1' to pin 'Test_Implementaiton_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:08 ; elapsed = 00:01:12 . Memory (MB): peak = 2037.742 ; gain = 999.348
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 1998.383 ; gain = 959.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -1496,7 +1556,7 @@ Start Timing Optimization
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:10 ; elapsed = 00:01:13 . Memory (MB): peak = 2037.742 ; gain = 999.348
+Finished Timing Optimization : Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 1998.383 ; gain = 959.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1506,8 +1566,8 @@ Block RAM: Final Mapping Report
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 |Module Name                                                                                                                                                                                                                                                    | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|Test_Implementaiton_i/SpaceWire_light_AXI_0                                                                                                                                                                                                                    | U0/SPW_IF/RXMEM/s_mem_reg        | 64 K x 9(READ_FIRST)   | W |   | 64 K x 9(WRITE_FIRST)  |   | R | Port A and B     | 0      | 18     | 
-|Test_Implementaiton_i/SpaceWire_light_AXI_0                                                                                                                                                                                                                    | U0/SPW_IF/TXMEM/s_mem_reg        | 64 K x 9(READ_FIRST)   | W |   | 64 K x 9(WRITE_FIRST)  |   | R | Port A and B     | 0      | 18     | 
+|Test_Implementaiton_i/SpaceWire_light_AXI_0                                                                                                                                                                                                                    | U0/SPW_IF/RXMEM/s_mem_reg        | 4 K x 9(READ_FIRST)    | W |   | 4 K x 9(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|Test_Implementaiton_i/SpaceWire_light_AXI_0                                                                                                                                                                                                                    | U0/SPW_IF/TXMEM/s_mem_reg        | 4 K x 9(READ_FIRST)    | W |   | 4 K x 9(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
 |Test_Implementaiton_i/axi_dma_0/U0/\I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst          | gen_wr_a.gen_word_narrow.mem_reg | 128 x 39(NO_CHANGE)    | W |   | 128 x 39(NO_CHANGE)    |   | R | Port A and B     | 0      | 1      | 
 |Test_Implementaiton_i/axi_dma_0/U0/\I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | 128 x 38(NO_CHANGE)    | W |   | 128 x 38(NO_CHANGE)    |   | R | Port A and B     | 0      | 1      | 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
@@ -1528,26 +1588,10 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-7052] The timing for the instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RXMEM/s_mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RXMEM/s_mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RXMEM/s_mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RXMEM/s_mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RXMEM/s_mem_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RXMEM/s_mem_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RXMEM/s_mem_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RXMEM/s_mem_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RXMEM/s_mem_reg_1_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/TXMEM/s_mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/TXMEM/s_mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/TXMEM/s_mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/TXMEM/s_mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/TXMEM/s_mem_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/TXMEM/s_mem_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/TXMEM/s_mem_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/TXMEM/s_mem_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/TXMEM/s_mem_reg_1_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RXMEM/s_mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/TXMEM/s_mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:13 ; elapsed = 00:01:16 . Memory (MB): peak = 2037.742 ; gain = 999.348
+Finished Technology Mapping : Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 1998.383 ; gain = 959.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1567,37 +1611,37 @@ Finished Final Netlist Cleanup
 WARNING: [Synth 8-3295] tying undriven pin I_AXI_DMA_REG_MODULE/strm_valid_int2_inferred:in0 to constant 0
 WARNING: [Synth 8-3295] tying undriven pin I_AXI_DMA_REG_MODULE/strm_valid_int_cdc_to_inferred:in0 to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:18 ; elapsed = 00:01:21 . Memory (MB): peak = 2037.742 ; gain = 999.348
+Finished IO Insertion : Time (s): cpu = 00:01:16 ; elapsed = 00:01:18 . Memory (MB): peak = 1998.383 ; gain = 959.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:18 ; elapsed = 00:01:21 . Memory (MB): peak = 2037.742 ; gain = 999.348
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:16 ; elapsed = 00:01:18 . Memory (MB): peak = 1998.383 ; gain = 959.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 2037.742 ; gain = 999.348
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:17 ; elapsed = 00:01:19 . Memory (MB): peak = 1998.383 ; gain = 959.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 2037.742 ; gain = 999.348
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:17 ; elapsed = 00:01:19 . Memory (MB): peak = 1998.383 ; gain = 959.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 2037.742 ; gain = 999.348
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:17 ; elapsed = 00:01:19 . Memory (MB): peak = 1998.383 ; gain = 959.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 2037.742 ; gain = 999.348
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:17 ; elapsed = 00:01:19 . Memory (MB): peak = 1998.383 ; gain = 959.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1635,58 +1679,62 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+---------+------+
-|      |Cell     |Count |
-+------+---------+------+
-|1     |BIBUF    |   130|
-|2     |BUFG     |     3|
-|3     |CARRY4   |   110|
-|4     |LUT1     |   197|
-|5     |LUT2     |   454|
-|6     |LUT3     |   770|
-|7     |LUT4     |   511|
-|8     |LUT5     |   580|
-|9     |LUT6     |   723|
-|10    |PS7      |     1|
-|11    |RAM32M   |     4|
-|12    |RAMB36E1 |    38|
-|15    |SRL16    |     1|
-|16    |SRL16E   |   166|
-|17    |SRLC32E  |    50|
-|18    |FDCE     |   489|
-|19    |FDPE     |    58|
-|20    |FDR      |    12|
-|21    |FDRE     |  2769|
-|22    |FDSE     |   122|
-|23    |IBUF     |     2|
-|24    |OBUF     |     2|
-+------+---------+------+
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BIBUF      |   130|
+|2     |BUFG       |     2|
+|3     |BUFH       |     3|
+|4     |CARRY4     |   102|
+|5     |LUT1       |   189|
+|6     |LUT2       |   425|
+|7     |LUT3       |   755|
+|8     |LUT4       |   496|
+|9     |LUT5       |   575|
+|10    |LUT6       |   692|
+|11    |MMCME2_ADV |     1|
+|12    |PS7        |     1|
+|13    |RAM32M     |     4|
+|14    |RAMB36E1   |     4|
+|16    |SRL16      |     1|
+|17    |SRL16E     |   166|
+|18    |SRLC32E    |    50|
+|19    |FDCE       |   442|
+|20    |FDPE       |    57|
+|21    |FDR        |    12|
+|22    |FDRE       |  2769|
+|23    |FDSE       |   122|
+|24    |IBUF       |     3|
+|25    |OBUF       |     2|
++------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 2037.742 ; gain = 999.348
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:17 ; elapsed = 00:01:19 . Memory (MB): peak = 1998.383 ; gain = 959.008
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 2214 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:49 ; elapsed = 00:01:15 . Memory (MB): peak = 2037.742 ; gain = 902.484
-Synthesis Optimization Complete : Time (s): cpu = 00:01:19 ; elapsed = 00:01:23 . Memory (MB): peak = 2037.742 ; gain = 999.348
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:46 ; elapsed = 00:01:12 . Memory (MB): peak = 1998.383 ; gain = 872.578
+Synthesis Optimization Complete : Time (s): cpu = 00:01:17 ; elapsed = 00:01:20 . Memory (MB): peak = 1998.383 ; gain = 959.008
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.260 . Memory (MB): peak = 2037.742 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 165 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.255 . Memory (MB): peak = 1998.383 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 124 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. Test_Implementaiton_i/clk_wiz_0/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2037.742 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1998.383 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 17 instances were transformed.
   FDR => FDRE: 12 instances
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
   SRL16 => SRL16E: 1 instance 
 
-Synth Design complete | Checksum: c932861a
+Synth Design complete | Checksum: 9e2e27d1
 INFO: [Common 17-83] Releasing license: Synthesis
-667 Infos, 260 Warnings, 7 Critical Warnings and 0 Errors encountered.
+660 Infos, 261 Warnings, 14 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:28 ; elapsed = 00:01:31 . Memory (MB): peak = 2037.742 ; gain = 1425.059
+synth_design: Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 1998.383 ; gain = 1387.770
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 2037.742 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1998.383 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/synth_1/Test_Implementaiton_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file Test_Implementaiton_wrapper_utilization_synth.rpt -pb Test_Implementaiton_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Sep 17 01:25:50 2024...
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 17 19:52:25 2024...

@@ -2,7 +2,7 @@
 --Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
---Date        : Tue Sep 17 01:19:02 2024
+--Date        : Tue Sep 17 18:51:44 2024
 --Host        : DESKTOP-MEH5DGT running 64-bit major release  (build 9200)
 --Command     : generate_target Test_Implementaiton.bd
 --Design      : Test_Implementaiton
@@ -1128,7 +1128,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity Test_Implementaiton_axi_mem_intercon_1 is
+entity Test_Implementaiton_axi_mem_intercon_2 is
   port (
     ACLK : in STD_LOGIC;
     ARESETN : in STD_LOGIC;
@@ -1206,10 +1206,10 @@ entity Test_Implementaiton_axi_mem_intercon_1 is
     S01_AXI_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
     S01_AXI_wvalid : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end Test_Implementaiton_axi_mem_intercon_1;
+end Test_Implementaiton_axi_mem_intercon_2;
 
-architecture STRUCTURE of Test_Implementaiton_axi_mem_intercon_1 is
-  component Test_Implementaiton_xbar_4 is
+architecture STRUCTURE of Test_Implementaiton_axi_mem_intercon_2 is
+  component Test_Implementaiton_xbar_5 is
   port (
     aclk : in STD_LOGIC;
     aresetn : in STD_LOGIC;
@@ -1290,7 +1290,7 @@ architecture STRUCTURE of Test_Implementaiton_axi_mem_intercon_1 is
     m_axi_rvalid : in STD_LOGIC_VECTOR ( 0 to 0 );
     m_axi_rready : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  end component Test_Implementaiton_xbar_4;
+  end component Test_Implementaiton_xbar_5;
   signal axi_mem_intercon_ACLK_net : STD_LOGIC;
   signal axi_mem_intercon_ARESETN_net : STD_LOGIC;
   signal axi_mem_intercon_to_s00_couplers_ARADDR : STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -1665,7 +1665,7 @@ s01_couplers: entity work.s01_couplers_imp_1JU8A4F
       S_AXI_wstrb(3 downto 0) => axi_mem_intercon_to_s01_couplers_WSTRB(3 downto 0),
       S_AXI_wvalid(0) => axi_mem_intercon_to_s01_couplers_WVALID(0)
     );
-xbar: component Test_Implementaiton_xbar_4
+xbar: component Test_Implementaiton_xbar_5
      port map (
       aclk => axi_mem_intercon_ACLK_net,
       aresetn => axi_mem_intercon_ARESETN_net,
@@ -2363,7 +2363,7 @@ entity Test_Implementaiton is
     SPW_Sout : out STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of Test_Implementaiton : entity is "Test_Implementaiton,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=Test_Implementaiton,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=16,numReposBlks=8,numNonXlnxBlks=1,numHierBlks=8,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=16,da_board_cnt=3,da_clkrst_cnt=17,da_ps7_cnt=2,synth_mode=None}";
+  attribute CORE_GENERATION_INFO of Test_Implementaiton : entity is "Test_Implementaiton,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=Test_Implementaiton,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=17,numReposBlks=9,numNonXlnxBlks=1,numHierBlks=8,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=18,da_board_cnt=5,da_clkrst_cnt=27,da_ps7_cnt=2,synth_mode=None}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of Test_Implementaiton : entity is "Test_Implementaiton.hwdef";
 end Test_Implementaiton;
@@ -2468,7 +2468,6 @@ architecture STRUCTURE of Test_Implementaiton is
     S_AXI_HP0_WSTRB : in STD_LOGIC_VECTOR ( 3 downto 0 );
     IRQ_F2P : in STD_LOGIC_VECTOR ( 0 to 0 );
     FCLK_CLK0 : out STD_LOGIC;
-    FCLK_CLK1 : out STD_LOGIC;
     FCLK_RESET0_N : out STD_LOGIC;
     MIO : inout STD_LOGIC_VECTOR ( 53 downto 0 );
     DDR_CAS_n : inout STD_LOGIC;
@@ -2621,6 +2620,14 @@ architecture STRUCTURE of Test_Implementaiton is
     s2mm_introut : out STD_LOGIC
   );
   end component Test_Implementaiton_axi_dma_0_3;
+  component Test_Implementaiton_clk_wiz_0_0 is
+  port (
+    resetn : in STD_LOGIC;
+    clk_in1 : in STD_LOGIC;
+    TX_clk : out STD_LOGIC;
+    SPW_core_clk : out STD_LOGIC
+  );
+  end component Test_Implementaiton_clk_wiz_0_0;
   signal SPW_Di_1 : STD_LOGIC;
   signal SPW_Si_1 : STD_LOGIC;
   signal SpaceWire_light_AXI_0_AXI_StreamOut_TDATA : STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -2701,6 +2708,8 @@ architecture STRUCTURE of Test_Implementaiton is
   signal axi_mem_intercon_M00_AXI_WREADY : STD_LOGIC;
   signal axi_mem_intercon_M00_AXI_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal axi_mem_intercon_M00_AXI_WVALID : STD_LOGIC;
+  signal clk_wiz_0_SPW_core_clk : STD_LOGIC;
+  signal clk_wiz_0_TX_clk : STD_LOGIC;
   signal processing_system7_0_DDR_ADDR : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal processing_system7_0_DDR_BA : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal processing_system7_0_DDR_CAS_N : STD_LOGIC;
@@ -2717,7 +2726,6 @@ architecture STRUCTURE of Test_Implementaiton is
   signal processing_system7_0_DDR_RESET_N : STD_LOGIC;
   signal processing_system7_0_DDR_WE_N : STD_LOGIC;
   signal processing_system7_0_FCLK_CLK0 : STD_LOGIC;
-  signal processing_system7_0_FCLK_CLK1 : STD_LOGIC;
   signal processing_system7_0_FCLK_RESET0_N : STD_LOGIC;
   signal processing_system7_0_FIXED_IO_DDR_VRN : STD_LOGIC;
   signal processing_system7_0_FIXED_IO_DDR_VRP : STD_LOGIC;
@@ -2858,8 +2866,8 @@ SpaceWire_light_AXI_0: component Test_Implementaiton_SpaceWire_light_AXI_0_2
       SPW_Dout => SpaceWire_light_AXI_0_SPW_Dout,
       SPW_Sin => SPW_Si_1,
       SPW_Sout => SpaceWire_light_AXI_0_SPW_Sout,
-      SPW_TX_clk => processing_system7_0_FCLK_CLK1,
-      SPW_main_clk => processing_system7_0_FCLK_CLK0,
+      SPW_TX_clk => clk_wiz_0_TX_clk,
+      SPW_main_clk => clk_wiz_0_SPW_core_clk,
       SPW_rst => rst_ps7_0_100M_peripheral_aresetn(0),
       axi_register_aclk => processing_system7_0_FCLK_CLK0,
       axi_register_araddr(4 downto 0) => ps7_0_axi_periph_M01_AXI_ARADDR(4 downto 0),
@@ -2963,7 +2971,7 @@ axi_dma_0: component Test_Implementaiton_axi_dma_0_3
       s_axis_s2mm_tready => SpaceWire_light_AXI_0_AXI_StreamOut_TREADY,
       s_axis_s2mm_tvalid => SpaceWire_light_AXI_0_AXI_StreamOut_TVALID
     );
-axi_mem_intercon: entity work.Test_Implementaiton_axi_mem_intercon_1
+axi_mem_intercon: entity work.Test_Implementaiton_axi_mem_intercon_2
      port map (
       ACLK => processing_system7_0_FCLK_CLK0,
       ARESETN => rst_ps7_0_100M_peripheral_aresetn(0),
@@ -3041,6 +3049,13 @@ axi_mem_intercon: entity work.Test_Implementaiton_axi_mem_intercon_1
       S01_AXI_wstrb(3 downto 0) => axi_dma_0_M_AXI_S2MM_WSTRB(3 downto 0),
       S01_AXI_wvalid(0) => axi_dma_0_M_AXI_S2MM_WVALID
     );
+clk_wiz_0: component Test_Implementaiton_clk_wiz_0_0
+     port map (
+      SPW_core_clk => clk_wiz_0_SPW_core_clk,
+      TX_clk => clk_wiz_0_TX_clk,
+      clk_in1 => processing_system7_0_FCLK_CLK0,
+      resetn => processing_system7_0_FCLK_RESET0_N
+    );
 processing_system7_0: component Test_Implementaiton_processing_system7_0_1
      port map (
       DDR_Addr(14 downto 0) => DDR_addr(14 downto 0),
@@ -3065,7 +3080,6 @@ processing_system7_0: component Test_Implementaiton_processing_system7_0_1
       ENET0_MDIO_O => NLW_processing_system7_0_ENET0_MDIO_O_UNCONNECTED,
       ENET0_MDIO_T => NLW_processing_system7_0_ENET0_MDIO_T_UNCONNECTED,
       FCLK_CLK0 => processing_system7_0_FCLK_CLK0,
-      FCLK_CLK1 => processing_system7_0_FCLK_CLK1,
       FCLK_RESET0_N => processing_system7_0_FCLK_RESET0_N,
       IRQ_F2P(0) => SpaceWire_light_AXI_0_IRQ,
       MIO(53 downto 0) => FIXED_IO_mio(53 downto 0),

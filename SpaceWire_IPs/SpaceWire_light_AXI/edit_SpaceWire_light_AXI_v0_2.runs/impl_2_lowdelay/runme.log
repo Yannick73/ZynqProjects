@@ -1,0 +1,1865 @@
+
+*** Running vivado
+    with args -log Test_Implementaiton_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source Test_Implementaiton_wrapper.tcl -notrace
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Tue Sep 17 19:52:33 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source Test_Implementaiton_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 576.859 ; gain = 236.074
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Xilinx/ZynqProjects/ip_repo/myip/myip_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2024.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.cache/ip 
+Command: link_design -top Test_Implementaiton_wrapper -part xc7z020clg484-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Device 21-9227] Part: xc7z020clg484-1 does not have CEAM library.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.218 . Memory (MB): peak = 1044.895 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 111 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/Test_Implementaiton_processing_system7_0_1.xdc] for cell 'Test_Implementaiton_i/processing_system7_0/inst'
+Finished Parsing XDC File [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/Test_Implementaiton_processing_system7_0_1.xdc] for cell 'Test_Implementaiton_i/processing_system7_0/inst'
+Parsing XDC File [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_rst_ps7_0_100M_2/Test_Implementaiton_rst_ps7_0_100M_2_board.xdc] for cell 'Test_Implementaiton_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_rst_ps7_0_100M_2/Test_Implementaiton_rst_ps7_0_100M_2_board.xdc] for cell 'Test_Implementaiton_i/rst_ps7_0_100M/U0'
+Parsing XDC File [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_rst_ps7_0_100M_2/Test_Implementaiton_rst_ps7_0_100M_2.xdc] for cell 'Test_Implementaiton_i/rst_ps7_0_100M/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_rst_ps7_0_100M_2/Test_Implementaiton_rst_ps7_0_100M_2.xdc:50]
+Finished Parsing XDC File [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_rst_ps7_0_100M_2/Test_Implementaiton_rst_ps7_0_100M_2.xdc] for cell 'Test_Implementaiton_i/rst_ps7_0_100M/U0'
+Parsing XDC File [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_axi_dma_0_3/Test_Implementaiton_axi_dma_0_3.xdc] for cell 'Test_Implementaiton_i/axi_dma_0/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_axi_dma_0_3/Test_Implementaiton_axi_dma_0_3.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_axi_dma_0_3/Test_Implementaiton_axi_dma_0_3.xdc:56]
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_axi_dma_0_3/Test_Implementaiton_axi_dma_0_3.xdc:61]
+Finished Parsing XDC File [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_axi_dma_0_3/Test_Implementaiton_axi_dma_0_3.xdc] for cell 'Test_Implementaiton_i/axi_dma_0/U0'
+Parsing XDC File [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_clk_wiz_0_0/Test_Implementaiton_clk_wiz_0_0_board.xdc] for cell 'Test_Implementaiton_i/clk_wiz_0/inst'
+Finished Parsing XDC File [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_clk_wiz_0_0/Test_Implementaiton_clk_wiz_0_0_board.xdc] for cell 'Test_Implementaiton_i/clk_wiz_0/inst'
+Parsing XDC File [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_clk_wiz_0_0/Test_Implementaiton_clk_wiz_0_0.xdc] for cell 'Test_Implementaiton_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_clk_wiz_0_0/Test_Implementaiton_clk_wiz_0_0.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_clk_wiz_0_0/Test_Implementaiton_clk_wiz_0_0.xdc:54]
+get_clocks: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1773.617 ; gain = 581.320
+Finished Parsing XDC File [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_clk_wiz_0_0/Test_Implementaiton_clk_wiz_0_0.xdc] for cell 'Test_Implementaiton_i/clk_wiz_0/inst'
+Parsing XDC File [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc]
+WARNING: [Vivado 12-627] No clocks matched 'clk_fpga_1'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:98]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:98]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock [get_clocks clk_fpga_1]'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:98]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'clk_fpga_1'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:99]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:99]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock [get_clocks clk_fpga_1]'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:99]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'clk_fpga_1'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:100]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:100]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock [get_clocks clk_fpga_1]'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:100]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'clk_fpga_1'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:101]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:101]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock [get_clocks clk_fpga_1]'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:101]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'clk_fpga_1'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:102]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:102]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks clk_fpga_1]'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:102]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:102]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-5201] set_clock_groups: cannot set the clock group when only one non-empty group remains. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:102]
+WARNING: [Vivado 12-627] No clocks matched 'clk_fpga_1'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:103]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:103]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks clk_fpga_1]'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:103]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:103]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-5201] set_clock_groups: cannot set the clock group when only one non-empty group remains. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc:103]
+Finished Parsing XDC File [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc]
+Parsing XDC File [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_pins.xdc]
+CRITICAL WARNING: [Common 17-161] Invalid option value '#' specified for 'objects'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_pins.xdc:1]
+CRITICAL WARNING: [Common 17-161] Invalid option value '#' specified for 'objects'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_pins.xdc:3]
+CRITICAL WARNING: [Common 17-161] Invalid option value '#' specified for 'objects'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_pins.xdc:5]
+CRITICAL WARNING: [Common 17-161] Invalid option value '#' specified for 'objects'. [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_pins.xdc:7]
+Finished Parsing XDC File [F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_pins.xdc]
+Parsing XDC File [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_axi_dma_0_3/Test_Implementaiton_axi_dma_0_3_clocks.xdc] for cell 'Test_Implementaiton_i/axi_dma_0/U0'
+Finished Parsing XDC File [f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_axi_dma_0_3/Test_Implementaiton_axi_dma_0_3_clocks.xdc] for cell 'Test_Implementaiton_i/axi_dma_0/U0'
+INFO: [Project 1-1714] 6 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 1 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1773.617 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
+
+22 Infos, 11 Warnings, 14 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1773.617 ; gain = 1160.387
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1773.617 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1ad5b7a99
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.334 . Memory (MB): peak = 1773.617 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 1ad5b7a99
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2122.840 ; gain = 0.000
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1ad5b7a99
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2122.840 ; gain = 0.000
+Phase 1 Initialization | Checksum: 1ad5b7a99
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2122.840 ; gain = 0.000
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 1ad5b7a99
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.130 . Memory (MB): peak = 2122.840 ; gain = 0.000
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 1ad5b7a99
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.146 . Memory (MB): peak = 2122.840 ; gain = 0.000
+Phase 2 Timer Update And Timing Data Collection | Checksum: 1ad5b7a99
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.148 . Memory (MB): peak = 2122.840 ; gain = 0.000
+
+Phase 3 Retarget
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-1566] Pulled 3 inverters resulting in an inversion of 27 pins
+INFO: [Opt 31-138] Pushed 4 inverter(s) to 9 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 11a18cc56
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.284 . Memory (MB): peak = 2122.840 ; gain = 0.000
+Retarget | Checksum: 11a18cc56
+INFO: [Opt 31-389] Phase Retarget created 1 cells and removed 77 cells
+INFO: [Opt 31-1021] In phase Retarget, 28 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 11a18cc56
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.325 . Memory (MB): peak = 2122.840 ; gain = 0.000
+Constant propagation | Checksum: 11a18cc56
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 27 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+Phase 5 Sweep | Checksum: 160d76938
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.497 . Memory (MB): peak = 2122.840 ; gain = 0.000
+Sweep | Checksum: 160d76938
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 7 cells
+INFO: [Opt 31-1021] In phase Sweep, 97 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: 11f593772
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.574 . Memory (MB): peak = 2122.840 ; gain = 0.000
+BUFG optimization | Checksum: 11f593772
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 11f593772
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.626 . Memory (MB): peak = 2122.840 ; gain = 0.000
+Shift Register Optimization | Checksum: 11f593772
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 160d76938
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.652 . Memory (MB): peak = 2122.840 ; gain = 0.000
+Post Processing Netlist | Checksum: 160d76938
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 33 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 7e6fa628
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.775 . Memory (MB): peak = 2122.840 ; gain = 0.000
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2122.840 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 7e6fa628
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.786 . Memory (MB): peak = 2122.840 ; gain = 0.000
+Phase 9 Finalization | Checksum: 7e6fa628
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.788 . Memory (MB): peak = 2122.840 ; gain = 0.000
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               1  |              77  |                                             28  |
+|  Constant propagation         |               0  |               0  |                                             27  |
+|  Sweep                        |               0  |               7  |                                             97  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             33  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 7e6fa628
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.791 . Memory (MB): peak = 2122.840 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 4 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 3 newly gated: 1 Total Ports: 8
+Number of Flops added for Enable Generation: 2
+
+Ending PowerOpt Patch Enables Task | Checksum: 148bb2ee2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 148bb2ee2
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2273.242 ; gain = 150.402
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 7365d386
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.459 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Ending Final Cleanup Task | Checksum: 7365d386
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 7365d386
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2273.242 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+51 Infos, 11 Warnings, 14 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 2273.242 ; gain = 499.625
+INFO: [Vivado 12-24828] Executing command : report_drc -file Test_Implementaiton_wrapper_drc_opted.rpt -pb Test_Implementaiton_wrapper_drc_opted.pb -rpx Test_Implementaiton_wrapper_drc_opted.rpx
+Command: report_drc -file Test_Implementaiton_wrapper_drc_opted.rpt -pb Test_Implementaiton_wrapper_drc_opted.pb -rpx Test_Implementaiton_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/impl_2_lowdelay/Test_Implementaiton_wrapper_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.113 . Memory (MB): peak = 2273.242 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/impl_2_lowdelay/Test_Implementaiton_wrapper_opt.dcp' has been generated.
+Command: place_design -directive AltSpreadLogic_low
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Vivado_Tcl 4-2302] The placer was invoked with the 'AltSpreadLogic_low' directive.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 21 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 5c94b659
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 153568434
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.644 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 20e8bef1a
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 20e8bef1a
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 20e8bef1a
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1ab20e824
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1e4d56bc6
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 1e4d56bc6
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 UpdateTiming Before Physical Synthesis
+Phase 2.4.1 UpdateTiming Before Physical Synthesis | Checksum: 10e1d21f5
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 2.4.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 263 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 94 nets or LUTs. Breaked 0 LUT, combined 94 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1401] No candidate cells found for Shift Register optimization.
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |             94  |                    94  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |             94  |                    94  |           0  |           9  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.2 Physical Synthesis In Placer | Checksum: 19b7a2f7c
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Phase 2.4 Global Placement Core | Checksum: 196de36eb
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 196de36eb
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1046bfae8
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 16ae90825
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1e6e6b751
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 146fc7357
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 1c2fb187d
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 1d68abd3e
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 1ab1b2e0b
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 1f9885a43
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 11ddd0a07
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 11ddd0a07
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1abe3a389
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.367 | TNS=-24.334 |
+Phase 1 Physical Synthesis Initialization | Checksum: 10e9a4e51
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.232 . Memory (MB): peak = 2273.242 ; gain = 0.000
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: e0dd595c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.266 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1abe3a389
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-3.034. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: dcc0bbda
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:33 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:33 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: dcc0bbda
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:33 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: dcc0bbda
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:33 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                1x1|
+|___________|___________________|___________________|
+|      South|                1x1|                1x1|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: dcc0bbda
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:33 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: dcc0bbda
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:33 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:33 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 170a5e4f8
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:33 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Ending Placer Task | Checksum: 15d1fa095
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:33 . Memory (MB): peak = 2273.242 ; gain = 0.000
+95 Infos, 11 Warnings, 14 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:36 . Memory (MB): peak = 2273.242 ; gain = 0.000
+INFO: [Vivado 12-24838] Running report commands "report_control_sets, report_io, report_utilization" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_io -file Test_Implementaiton_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 2273.242 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_utilization -file Test_Implementaiton_wrapper_utilization_placed.rpt -pb Test_Implementaiton_wrapper_utilization_placed.pb
+INFO: [Vivado 12-24828] Executing command : report_control_sets -verbose -file Test_Implementaiton_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2273.242 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.505 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2273.242 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/impl_2_lowdelay/Test_Implementaiton_wrapper_placed.dcp' has been generated.
+Command: phys_opt_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: Explore
+
+Starting Initial Update Timing Task
+WARNING: [Timing 38-172] LUT was found on clock network. Both rising/falling clock edges are propagated from LUT output pin. Use set_clock_sense to specify if that clock should be inverted or not. e.g. set_clock_sense -positive/-negative Test_Implementaiton_i/SpaceWire_light_AXI_0/reset_reg[1]_i_3/O
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.736 . Memory (MB): peak = 2273.242 ; gain = 0.000
+INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 1.00s |  WALL: 0.76s
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.034 | TNS=-22.960 |
+Phase 1 Physical Synthesis Initialization | Checksum: c86f93e6
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.449 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 2 SLR Crossing Optimization
+Phase 2 SLR Crossing Optimization | Checksum: c86f93e6
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.468 . Memory (MB): peak = 2273.242 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.034 | TNS=-22.960 |
+
+Phase 3 Fanout Optimization
+INFO: [Physopt 32-64] No nets found for fanout-optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 3 Fanout Optimization | Checksum: c86f93e6
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.533 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 4 Single Cell Placement Optimization
+INFO: [Physopt 32-660] Identified 44 candidate nets for placement-based optimization.
+INFO: [Physopt 32-663] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2]_2[0].  Re-placed instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2][0]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/D[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_1
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_2_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_2
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/Q[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/res_seq_reg[bufdout][0]
+INFO: [Physopt 32-663] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6]_6[1].  Re-placed instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6][1]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/D[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_1
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_3_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_3
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/Q[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/res_seq_reg[bufdout][1]
+INFO: [Physopt 32-663] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3]_3[1].  Re-placed instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3][1]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_2_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_2
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2]_2[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2][1]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7]_7[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7][1]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3]_3[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3][0]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6]_6[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6][0]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_3_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_3
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7]_7[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7][0]
+INFO: [Physopt 32-663] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg_n_0_[3].  Re-placed instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg[3]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT2/BinToGray03_out.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT2/buf_ff0_i_1__0
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT2/buf_ff0_reg_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT2/buf_ff0_reg
+INFO: [Physopt 32-663] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[2].  Re-placed instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[2]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT1/BinToGray01_out.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT1/buf_ff0_i_1
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT1/buf_ff0_reg_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT1/buf_ff0_reg
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5]_5[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5][1]
+INFO: [Physopt 32-663] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg_n_0_[2].  Re-placed instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg[2]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1]_1[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1][1]
+INFO: [Physopt 32-663] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[3].  Re-placed instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[3]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1]_1[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1][0]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/p_0_in2_in.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_ddr
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT3/buf_ff0_reg_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT3/buf_ff0_reg
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5]_5[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5][0]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0]_0[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0][0]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/A.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg[1]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4]_4[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4][1]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT0/buf_ff0_i_1__1_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT0/buf_ff0_i_1__1
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT0/buf_ff0_reg_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT0/buf_ff0_reg
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0]_0[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0][1]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4]_4[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4][0]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[1]
+INFO: [Physopt 32-663] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr][2].  Re-placed instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr][2]
+INFO: [Physopt 32-663] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSHEADPTR2/buf_ff0_reg_n_0.  Re-placed instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSHEADPTR2/buf_ff0_reg
+INFO: [Physopt 32-663] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/DI.  Re-placed instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr_gray][1]
+INFO: [Physopt 32-663] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSHEADPTR1/buf_ff0_reg_n_0.  Re-placed instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSHEADPTR1/buf_ff0_reg
+INFO: [Physopt 32-663] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr_gray_n_0_][0].  Re-placed instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr_gray][0]
+INFO: [Physopt 32-663] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSHEADPTR0/buf_ff0.  Re-placed instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSHEADPTR0/buf_ff0_reg
+INFO: [Physopt 32-661] Optimized 13 nets.  Re-placed 13 instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 13 nets or cells. Created 0 new cell, deleted 0 existing cell and moved 13 existing cells
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.980 | TNS=-22.393 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Phase 4 Single Cell Placement Optimization | Checksum: 14dde9bec
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 5 Multi Cell Placement Optimization
+INFO: [Physopt 32-660] Identified 44 candidate nets for placement-based optimization.
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2]_2[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2][1]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/D[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_1/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_2_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_2/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2]_2[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2][0]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/D[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_1/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_2_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_2/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7]_7[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7][1]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_3_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_3/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3]_3[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3][0]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3]_3[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3][1]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6]_6[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6][1]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6]_6[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6][0]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_3_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_3/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7]_7[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7][0]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5]_5[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5][1]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1]_1[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1][1]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1]_1[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1][0]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg_n_0_[2].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg[2]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT2/BinToGray03_out.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT2/buf_ff0_i_1__0/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[2].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[2]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT1/BinToGray01_out.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT1/buf_ff0_i_1/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[3].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[3]/Q
+INFO: [Physopt 32-663] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/p_0_in2_in.  Re-placed instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_ddr/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5]_5[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5][0]/Q
+INFO: [Physopt 32-663] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg_n_0_[3].  Re-placed instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg[3]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0]_0[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0][0]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/A.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg[1]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4]_4[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4][1]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT0/buf_ff0_i_1__1_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT0/buf_ff0_i_1__1/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0]_0[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0][1]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4]_4[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4][0]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[1]/Q
+INFO: [Physopt 32-661] Optimized 2 nets.  Re-placed 4 instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 2 nets or cells. Created 0 new cell, deleted 0 existing cell and moved 4 existing cells
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.980 | TNS=-22.230 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Phase 5 Multi Cell Placement Optimization | Checksum: fb68fe4f
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 6 Rewire
+INFO: [Physopt 32-246] Starting Signal Push optimization...
+INFO: [Physopt 32-241] No nets found for rewiring () optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Phase 6 Rewire | Checksum: fb68fe4f
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 7 Critical Cell Optimization
+INFO: [Physopt 32-46] Identified 22 candidate nets for critical-cell optimization.
+INFO: [Physopt 32-81] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2]_2[1]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2]_2[0]. Replicated 1 times.
+INFO: [Physopt 32-572] Net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7]_7[1] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3]_3[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3]_3[1] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6]_6[0]. Replicated 1 times.
+INFO: [Physopt 32-572] Net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7]_7[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5]_5[1] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1]_1[1] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1]_1[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg_n_0_[2]. Replicated 2 times.
+INFO: [Physopt 32-81] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[2]. Replicated 2 times.
+INFO: [Physopt 32-572] Net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5]_5[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[3]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0]_0[0]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/A. Replicated 2 times.
+INFO: [Physopt 32-572] Net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4]_4[1] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg_n_0_[3] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0]_0[1] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4]_4[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[1]. Replicated 2 times.
+INFO: [Physopt 32-232] Optimized 9 nets. Created 13 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 9 nets or cells. Created 13 new cells, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.970 | TNS=-22.058 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Phase 7 Critical Cell Optimization | Checksum: 1d0649fed
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 8 Fanout Optimization
+INFO: [Physopt 32-64] No nets found for fanout-optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 8 Fanout Optimization | Checksum: 1d0649fed
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 9 Single Cell Placement Optimization
+INFO: [Physopt 32-660] Identified 48 candidate nets for placement-based optimization.
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/D[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_1
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_2_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_2
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2]_2[1]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2][1]_replica
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/Q[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/res_seq_reg[bufdout][1]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/D[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_1
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_2_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_2
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2]_2[0]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2][0]_replica
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/Q[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/res_seq_reg[bufdout][0]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7]_7[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7][1]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_3_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_3
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3]_3[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3][0]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3]_3[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3][1]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6]_6[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6][1]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_3_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_3
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6]_6[0]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6][0]_replica
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7]_7[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7][0]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5]_5[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5][1]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1]_1[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1][1]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1]_1[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1][0]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT1/BinToGray01_out.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT1/buf_ff0_i_1
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[2]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[2]_replica
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT1/buf_ff0_reg_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT1/buf_ff0_reg
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5]_5[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5][0]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[3]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[3]_replica
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT2/BinToGray03_out.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT2/buf_ff0_i_1__0
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT2/buf_ff0_reg_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT2/buf_ff0_reg
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg_n_0_[2]_repN_1.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg[2]_replica_1
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0]_0[0]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0][0]_replica
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4]_4[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4][1]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg_n_0_[3].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg[3]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/A_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg[1]_replica
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/p_0_in2_in.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_ddr
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT3/buf_ff0_reg_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT3/buf_ff0_reg
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0]_0[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0][1]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/A_repN_1.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg[1]_replica_1
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT0/buf_ff0_i_1__1_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT0/buf_ff0_i_1__1
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT0/buf_ff0_reg_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT0/buf_ff0_reg
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg_n_0_[2]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg[2]_replica
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4]_4[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4][0]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[1]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[1]_replica
+INFO: [Physopt 32-663] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr][2].  Re-placed instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr][2]
+INFO: [Physopt 32-663] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSHEADPTR2/buf_ff0_reg_n_0.  Re-placed instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSHEADPTR2/buf_ff0_reg
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[1]_repN_1.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[1]_replica_1
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[2]_repN_1.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[2]_replica_1
+INFO: [Physopt 32-663] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr_gray_n_0_][0].  Re-placed instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr_gray][0]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSHEADPTR0/buf_ff0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSHEADPTR0/buf_ff0_reg
+INFO: [Physopt 32-663] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/DI.  Re-placed instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr_gray][1]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSHEADPTR1/buf_ff0_reg_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSHEADPTR1/buf_ff0_reg
+INFO: [Physopt 32-661] Optimized 4 nets.  Re-placed 4 instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 4 nets or cells. Created 0 new cell, deleted 0 existing cell and moved 4 existing cells
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.970 | TNS=-21.997 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Phase 9 Single Cell Placement Optimization | Checksum: 1d552a2ba
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 10 Multi Cell Placement Optimization
+INFO: [Physopt 32-660] Identified 48 candidate nets for placement-based optimization.
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/D[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_1/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_2_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_2/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2]_2[1]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2][1]_replica/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/D[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_1/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_2_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_2/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2]_2[0]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2][0]_replica/Q
+INFO: [Physopt 32-663] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7]_7[1].  Re-placed instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7][1]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_3_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_3/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3]_3[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3][0]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3]_3[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3][1]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6]_6[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6][1]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_3_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_3/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6]_6[0]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6][0]_replica/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7]_7[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7][0]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5]_5[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5][1]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1]_1[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1][1]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1]_1[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1][0]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT1/BinToGray01_out.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT1/buf_ff0_i_1/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[2]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[2]_replica/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5]_5[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5][0]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[3]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[3]_replica/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT2/BinToGray03_out.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT2/buf_ff0_i_1__0/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg_n_0_[2]_repN_1.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg[2]_replica_1/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0]_0[0]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0][0]_replica/Q
+INFO: [Physopt 32-663] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4]_4[1].  Re-placed instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4][1]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg_n_0_[3].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg[3]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/A_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg[1]_replica/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/p_0_in2_in.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_ddr/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0]_0[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0][1]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/A_repN_1.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg[1]_replica_1/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT0/buf_ff0_i_1__1_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT0/buf_ff0_i_1__1/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg_n_0_[2]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg[2]_replica/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4]_4[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4][0]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[1]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[1]_replica/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[1]_repN_1.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[1]_replica_1/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[2]_repN_1.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[2]_replica_1/Q
+INFO: [Physopt 32-661] Optimized 2 nets.  Re-placed 4 instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 2 nets or cells. Created 0 new cell, deleted 0 existing cell and moved 4 existing cells
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.970 | TNS=-21.997 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Phase 10 Multi Cell Placement Optimization | Checksum: 1dc7c6ec9
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 11 Rewire
+INFO: [Physopt 32-246] Starting Signal Push optimization...
+INFO: [Physopt 32-241] No nets found for rewiring () optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Phase 11 Rewire | Checksum: 1dc7c6ec9
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 12 Critical Cell Optimization
+INFO: [Physopt 32-46] Identified 14 candidate nets for critical-cell optimization.
+INFO: [Physopt 32-572] Net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3]_3[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3]_3[1] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6]_6[1]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7]_7[1]. Replicated 1 times.
+INFO: [Physopt 32-572] Net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7]_7[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5]_5[1]. Replicated 1 times.
+INFO: [Physopt 32-572] Net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1]_1[1] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1]_1[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5]_5[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[3]_repN was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg_n_0_[3] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0]_0[1] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4]_4[1]. Replicated 1 times.
+INFO: [Physopt 32-572] Net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4]_4[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-232] Optimized 4 nets. Created 4 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 4 nets or cells. Created 4 new cells, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.970 | TNS=-21.997 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Phase 12 Critical Cell Optimization | Checksum: d03e3cfa
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 13 SLR Crossing Optimization
+Phase 13 SLR Crossing Optimization | Checksum: d03e3cfa
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 14 Fanout Optimization
+INFO: [Physopt 32-64] No nets found for fanout-optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 14 Fanout Optimization | Checksum: d03e3cfa
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 15 Single Cell Placement Optimization
+INFO: [Physopt 32-660] Identified 48 candidate nets for placement-based optimization.
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/D[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_1
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_2_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_2
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2]_2[1]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2][1]_replica
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/Q[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/res_seq_reg[bufdout][1]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/D[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_1
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_2_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_2
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2]_2[0]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2][0]_replica
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/Q[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/res_seq_reg[bufdout][0]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3]_3[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3][0]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3]_3[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3][1]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_3_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_3
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6]_6[1]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6][1]_replica
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_3_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_3
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6]_6[0]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6][0]_replica
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7]_7[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7][0]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7]_7[1]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7][1]_replica
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1]_1[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1][1]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1]_1[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1][0]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5]_5[1]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5][1]_replica
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT1/BinToGray01_out.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT1/buf_ff0_i_1
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[2]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[2]_replica
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT1/buf_ff0_reg_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT1/buf_ff0_reg
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5]_5[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5][0]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[3]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[3]_replica
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT2/BinToGray03_out.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT2/buf_ff0_i_1__0
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT2/buf_ff0_reg_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT2/buf_ff0_reg
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg_n_0_[2]_repN_1.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg[2]_replica_1
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0]_0[0]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0][0]_replica
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg_n_0_[3].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg[3]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/A_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg[1]_replica
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/p_0_in2_in.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_ddr
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT3/buf_ff0_reg_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT3/buf_ff0_reg
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0]_0[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0][1]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/A_repN_1.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg[1]_replica_1
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT0/buf_ff0_i_1__1_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT0/buf_ff0_i_1__1
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT0/buf_ff0_reg_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT0/buf_ff0_reg
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg_n_0_[2]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg[2]_replica
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4]_4[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4][0]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4]_4[1]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4][1]_replica
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[1]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[1]_replica
+INFO: [Physopt 32-663] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[1]_repN_1.  Re-placed instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[1]_replica_1
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr][2].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr][2]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSHEADPTR2/buf_ff0_reg_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSHEADPTR2/buf_ff0_reg
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[2]_repN_1.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[2]_replica_1
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr_gray_n_0_][0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr_gray][0]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSHEADPTR0/buf_ff0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSHEADPTR0/buf_ff0_reg
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/DI.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr_gray][1]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSHEADPTR1/buf_ff0_reg_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSHEADPTR1/buf_ff0_reg
+INFO: [Physopt 32-661] Optimized 1 net.  Re-placed 1 instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 1 net or cell. Created 0 new cell, deleted 0 existing cell and moved 1 existing cell
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.970 | TNS=-21.997 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Phase 15 Single Cell Placement Optimization | Checksum: 14572cbb3
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 16 Multi Cell Placement Optimization
+INFO: [Physopt 32-660] Identified 48 candidate nets for placement-based optimization.
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/D[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_1/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_2_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_2/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2]_2[1]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2][1]_replica/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/D[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_1/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_2_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_2/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2]_2[0]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2][0]_replica/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3]_3[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3][0]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3]_3[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3][1]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_3_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_3/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6]_6[1]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6][1]_replica/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_3_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_3/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6]_6[0]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6][0]_replica/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7]_7[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7][0]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7]_7[1]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7][1]_replica/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1]_1[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1][1]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1]_1[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1][0]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5]_5[1]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5][1]_replica/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT1/BinToGray01_out.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT1/buf_ff0_i_1/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[2]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[2]_replica/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5]_5[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5][0]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[3]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[3]_replica/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT2/BinToGray03_out.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT2/buf_ff0_i_1__0/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg_n_0_[2]_repN_1.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg[2]_replica_1/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0]_0[0]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0][0]_replica/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg_n_0_[3].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg[3]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/A_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg[1]_replica/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/p_0_in2_in.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_ddr/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0]_0[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0][1]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/A_repN_1.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg[1]_replica_1/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT0/buf_ff0_i_1__1_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT0/buf_ff0_i_1__1/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg_n_0_[2]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg[2]_replica/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4]_4[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4][0]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4]_4[1]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4][1]_replica/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[1]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[1]_replica/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[1]_repN_1.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[1]_replica_1/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[2]_repN_1.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[2]_replica_1/Q
+INFO: [Physopt 32-661] Optimized 0 net.  Re-placed 0 instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Phase 16 Multi Cell Placement Optimization | Checksum: 1c11d735e
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 17 Rewire
+INFO: [Physopt 32-246] Starting Signal Push optimization...
+INFO: [Physopt 32-241] No nets found for rewiring () optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Phase 17 Rewire | Checksum: 1c11d735e
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 18 Critical Cell Optimization
+INFO: [Physopt 32-46] Identified 8 candidate nets for critical-cell optimization.
+INFO: [Physopt 32-572] Net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3]_3[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3]_3[1] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7]_7[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1]_1[1] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1]_1[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5]_5[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[3]_repN was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0]_0[1] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Phase 18 Critical Cell Optimization | Checksum: 1b607839d
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 19 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 19 DSP Register Optimization | Checksum: 1b607839d
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 20 BRAM Register Optimization
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 20 BRAM Register Optimization | Checksum: 1b607839d
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 21 URAM Register Optimization
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 21 URAM Register Optimization | Checksum: 1b607839d
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 22 Shift Register Optimization
+INFO: [Physopt 32-1401] No candidate cells found for Shift Register optimization.
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 22 Shift Register Optimization | Checksum: 1b607839d
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 23 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 23 DSP Register Optimization | Checksum: 1b607839d
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 24 BRAM Register Optimization
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 24 BRAM Register Optimization | Checksum: 1b607839d
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 25 URAM Register Optimization
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 25 URAM Register Optimization | Checksum: 1b607839d
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 26 Shift Register Optimization
+INFO: [Physopt 32-1401] No candidate cells found for Shift Register optimization.
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 26 Shift Register Optimization | Checksum: 1b607839d
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 27 Critical Pin Optimization
+INFO: [Physopt 32-606] Identified 8 candidate nets for critical-pin optimization.
+INFO: [Physopt 32-608] Optimized 2 nets.  Swapped 32 pins.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 2 nets or cells. Created 0 new cell, deleted 0 existing cell and moved 32 existing cells
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.970 | TNS=-21.956 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Phase 27 Critical Pin Optimization | Checksum: 1b607839d
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 28 Very High Fanout Optimization
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 28 Very High Fanout Optimization | Checksum: 1b607839d
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 29 Single Cell Placement Optimization
+INFO: [Physopt 32-660] Identified 48 candidate nets for placement-based optimization.
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/D[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_1
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_2_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_2
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2]_2[1]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2][1]_replica
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/Q[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/res_seq_reg[bufdout][1]
+INFO: [Physopt 32-663] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1]_1[0].  Re-placed instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1][0]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/D[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_1
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_2_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_2
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/Q[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/res_seq_reg[bufdout][0]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3]_3[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3][1]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_3_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_3
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6]_6[1]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6][1]_replica
+INFO: [Physopt 32-663] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3]_3[0].  Re-placed instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3][0]
+INFO: [Physopt 32-663] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5]_5[0].  Re-placed instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5][0]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_3_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_3
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7]_7[1]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7][1]_replica
+INFO: [Physopt 32-663] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0]_0[0]_repN.  Re-placed instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0][0]_replica
+INFO: [Physopt 32-663] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7]_7[0].  Re-placed instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7][0]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1]_1[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1][1]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5]_5[1]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5][1]_replica
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT1/BinToGray01_out.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT1/buf_ff0_i_1
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[2]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[2]_replica
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT1/buf_ff0_reg_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT1/buf_ff0_reg
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[3]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[3]_replica
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT2/BinToGray03_out.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT2/buf_ff0_i_1__0
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT2/buf_ff0_reg_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT2/buf_ff0_reg
+INFO: [Physopt 32-663] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6]_6[0]_repN.  Re-placed instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6][0]_replica
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg_n_0_[2]_repN_1.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg[2]_replica_1
+INFO: [Physopt 32-663] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2]_2[0]_repN.  Re-placed instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2][0]_replica
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg_n_0_[3].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg[3]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/A_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg[1]_replica
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/p_0_in2_in.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_ddr
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT3/buf_ff0_reg_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT3/buf_ff0_reg
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0]_0[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0][1]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/A_repN_1.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg[1]_replica_1
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT0/buf_ff0_i_1__1_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT0/buf_ff0_i_1__1
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT0/buf_ff0_reg_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT0/buf_ff0_reg
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg_n_0_[2]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg[2]_replica
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4]_4[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4][0]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4]_4[1]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4][1]_replica
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[1]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[1]_replica
+INFO: [Physopt 32-663] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr][2].  Re-placed instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr][2]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSHEADPTR2/buf_ff0_reg_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSHEADPTR2/buf_ff0_reg
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[1]_repN_1.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[1]_replica_1
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[2]_repN_1.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[2]_replica_1
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr_gray_n_0_][0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr_gray][0]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSHEADPTR0/buf_ff0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSHEADPTR0/buf_ff0_reg
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/DI.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/resrx_seq_reg[headptr_gray][1]
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSHEADPTR1/buf_ff0_reg_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSHEADPTR1/buf_ff0_reg
+INFO: [Physopt 32-661] Optimized 8 nets.  Re-placed 8 instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 8 nets or cells. Created 0 new cell, deleted 0 existing cell and moved 8 existing cells
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.970 | TNS=-21.836 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Phase 29 Single Cell Placement Optimization | Checksum: 163df9f3c
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 30 Multi Cell Placement Optimization
+INFO: [Physopt 32-660] Identified 48 candidate nets for placement-based optimization.
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/D[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_1/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_2_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_2/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2]_2[1]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2][1]_replica/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3]_3[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3][1]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_3_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_3/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6]_6[1]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6][1]_replica/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1]_1[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1][0]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/D[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_1/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_2_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_2/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7]_7[1]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7][1]_replica/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5]_5[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5][0]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_3_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_3/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1]_1[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1][1]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3]_3[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3][0]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7]_7[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[7][0]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5]_5[1]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[5][1]_replica/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT1/BinToGray01_out.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT1/buf_ff0_i_1/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[2]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[2]_replica/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0]_0[0]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0][0]_replica/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[3]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[3]_replica/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT2/BinToGray03_out.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT2/buf_ff0_i_1__0/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg_n_0_[2]_repN_1.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg[2]_replica_1/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg_n_0_[3].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg[3]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/A_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg[1]_replica/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/p_0_in2_in.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_ddr/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0]_0[1].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0][1]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2]_2[0]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2][0]_replica/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/A_repN_1.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg[1]_replica_1/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT0/buf_ff0_i_1__1_n_0.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT0/buf_ff0_i_1__1/O
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6]_6[0]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6][0]_replica/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg_n_0_[2]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_r_reg[2]_replica/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4]_4[0].  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4][0]/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4]_4[1]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[4][1]_replica/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[1]_repN.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[1]_replica/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[1]_repN_1.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[1]_replica_1/Q
+INFO: [Physopt 32-662] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[2]_repN_1.  Did not re-place instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/rxcnt_f_reg[2]_replica_1/Q
+INFO: [Physopt 32-661] Optimized 0 net.  Re-placed 0 instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Phase 30 Multi Cell Placement Optimization | Checksum: 1b832d9db
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:14 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 31 SLR Crossing Optimization
+Phase 31 SLR Crossing Optimization | Checksum: 1b832d9db
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:14 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 32 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.970 | TNS=-21.836 |
+INFO: [Physopt 32-702] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/Q[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[2]_2[1]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/D[1]. Critical path length was reduced through logic transformation on cell Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_1_comp.
+INFO: [Physopt 32-735] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.912 | TNS=-21.778 |
+INFO: [Physopt 32-702] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[3]_3[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_2_n_0.  Re-placed instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_2_comp_1
+INFO: [Physopt 32-735] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.856 | TNS=-21.722 |
+INFO: [Physopt 32-702] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[6]_6[1]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/D[1]. Critical path length was reduced through logic transformation on cell Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_1_comp_1.
+INFO: [Physopt 32-735] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.839 | TNS=-21.705 |
+INFO: [Physopt 32-663] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1]_1[1].  Re-placed instance Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1][1]
+INFO: [Physopt 32-735] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[1]_1[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.821 | TNS=-21.687 |
+INFO: [Physopt 32-702] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0]_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/D[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/reset_reg[1]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net SPW_Din_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/Q[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0]_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/D[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/reset_reg[1]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net SPW_Din_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.821 | TNS=-21.687 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Phase 32 Critical Path Optimization | Checksum: 1b832d9db
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:16 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 33 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.821 | TNS=-21.687 |
+INFO: [Physopt 32-702] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/Q[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0]_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/D[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/reset_reg[1]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net SPW_Din_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/Q[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/s_mem_reg[0]_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/D[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Test_Implementaiton_i/SpaceWire_light_AXI_0/reset_reg[1]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net SPW_Din_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.821 | TNS=-21.687 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Phase 33 Critical Path Optimization | Checksum: 1b832d9db
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:16 . Memory (MB): peak = 2273.242 ; gain = 0.000
+
+Phase 34 BRAM Enable Optimization
+Phase 34 BRAM Enable Optimization | Checksum: 1b832d9db
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:16 . Memory (MB): peak = 2273.242 ; gain = 0.000
+INFO: [Physopt 32-960] Skip hold-fix as initial WHS does not violate hold threshold 250 ps
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2273.242 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-2.821 | TNS=-21.687 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization            |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Fanout                  |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           3  |  00:00:00  |
+|  Single Cell Placement   |          0.054  |          0.748  |            0  |              0  |                    26  |           0  |           4  |  00:00:05  |
+|  Multi Cell Placement    |          0.000  |          0.163  |            0  |              0  |                     4  |           0  |           4  |  00:00:06  |
+|  Rewire                  |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           3  |  00:00:00  |
+|  Critical Cell           |          0.010  |          0.172  |           17  |              0  |                    13  |           0  |           3  |  00:00:02  |
+|  SLR Crossing            |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           3  |  00:00:00  |
+|  DSP Register            |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           2  |  00:00:00  |
+|  BRAM Register           |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           2  |  00:00:00  |
+|  URAM Register           |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           2  |  00:00:00  |
+|  Shift Register          |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           2  |  00:00:00  |
+|  Critical Pin            |          0.000  |          0.041  |            0  |              0  |                     2  |           0  |           1  |  00:00:00  |
+|  Very High Fanout        |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Enable             |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path           |          0.149  |          0.149  |            0  |              0  |                     4  |           0  |           2  |  00:00:02  |
+|  Total                   |          0.213  |          1.273  |           17  |              0  |                    49  |           0  |          33  |  00:00:16  |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 166635d77
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:16 . Memory (MB): peak = 2273.242 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+615 Infos, 12 Warnings, 14 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:17 . Memory (MB): peak = 2273.242 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.509 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2273.242 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.580 . Memory (MB): peak = 2273.242 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/impl_2_lowdelay/Test_Implementaiton_wrapper_physopt.dcp' has been generated.
+Command: route_design -directive AlternateCLBRouting
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'AlternateCLBRouting'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 93f9dac8 ConstDB: 0 ShapeSum: 6d01c007 RouteDB: 15f972f0
+Post Restoration Checksum: NetGraph: d3c4e8c6 | NumContArr: 240fa9f1 | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 27d2687f1
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 2363.867 ; gain = 90.625
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 27d2687f1
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 2363.867 ; gain = 90.625
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 27d2687f1
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 2363.867 ; gain = 90.625
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 139676da1
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:24 . Memory (MB): peak = 2420.633 ; gain = 147.391
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.647 | TNS=-20.115| WHS=-3.532 | THS=-208.299|
+
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 5.17759e-05 %
+  Global Horizontal Routing Utilization  = 8.45166e-05 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 5371
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 5371
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 1e449d852
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:25 . Memory (MB): peak = 2426.570 ; gain = 153.328
+
+Phase 3 Global Routing
+Phase 3 Global Routing | Checksum: 1e449d852
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:25 . Memory (MB): peak = 2426.570 ; gain = 153.328
+
+Phase 4 Initial Routing
+
+Phase 4.1 Initial Net Routing Pass
+Phase 4.1 Initial Net Routing Pass | Checksum: 1b450ca40
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:29 . Memory (MB): peak = 2701.578 ; gain = 428.336
+Phase 4 Initial Routing | Checksum: 1b450ca40
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:29 . Memory (MB): peak = 2701.578 ; gain = 428.336
+INFO: [Route 35-580] Design has 9 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++====================+===================+===================================================================================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                                                                               |
++====================+===================+===================================================================================================+
+| SPW_Din            | SPW_Din           | Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT2/buf_ff0_reg/D |
+| SPW_Din            | SPW_Din           | Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT1/buf_ff0_reg/D |
+| SPW_Din            | SPW_Din           | Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT3/buf_ff0_reg/D |
+| SPW_Din            | SPW_Din           | Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT0/buf_ff0_reg/D |
+| SPW_Din            | SPW_Sin           | Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/res_seq_reg[bufdout][1]/D    |
++--------------------+-------------------+---------------------------------------------------------------------------------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
+
+Phase 5 Rip-up And Reroute
+
+Phase 5.1 Global Iteration 0
+ Number of Nodes with overlaps = 288
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.318 | TNS=-37.567| WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Global Iteration 0 | Checksum: 1c44dbc5b
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:49 . Memory (MB): peak = 2866.578 ; gain = 593.336
+
+Phase 5.2 Global Iteration 1
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.552 | TNS=-38.032| WHS=N/A    | THS=N/A    |
+
+Phase 5.2 Global Iteration 1 | Checksum: 2e9924708
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:51 . Memory (MB): peak = 2866.578 ; gain = 593.336
+Phase 5 Rip-up And Reroute | Checksum: 2e9924708
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:51 . Memory (MB): peak = 2866.578 ; gain = 593.336
+
+Phase 6 Delay and Skew Optimization
+
+Phase 6.1 Delay CleanUp
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 28b1e2445
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:51 . Memory (MB): peak = 2866.578 ; gain = 593.336
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.318 | TNS=-37.567| WHS=N/A    | THS=N/A    |
+
+Phase 6.1 Delay CleanUp | Checksum: 28b1e2445
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:51 . Memory (MB): peak = 2866.578 ; gain = 593.336
+
+Phase 6.2 Clock Skew Optimization
+Phase 6.2 Clock Skew Optimization | Checksum: 28b1e2445
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:51 . Memory (MB): peak = 2866.578 ; gain = 593.336
+Phase 6 Delay and Skew Optimization | Checksum: 28b1e2445
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:51 . Memory (MB): peak = 2866.578 ; gain = 593.336
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Hold Fix Iter
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.318 | TNS=-37.567| WHS=-0.263 | THS=-0.766 |
+
+Phase 7.1 Hold Fix Iter | Checksum: 1dc80e626
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:51 . Memory (MB): peak = 2866.578 ; gain = 593.336
+
+Phase 7.2 Non Free Resource Hold Fix Iter
+Phase 7.2 Non Free Resource Hold Fix Iter | Checksum: 26f106379
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:51 . Memory (MB): peak = 2866.578 ; gain = 593.336
+WARNING: [Route 35-468] The router encountered 22 pins that are both setup-critical and hold-critical and tried to fix hold violations at the expense of setup slack. Such pins are:
+	Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/LINK_INST/res_seq[bitshift][8]_i_1/I0
+	Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSHEADPTR2/buf_ff0_reg/D
+	Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_1_comp_1/I4
+	Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_1_comp_1/I3
+	Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_3_comp_1/I4
+	Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_1_comp_1/I1
+	Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_1/I0
+	Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_1/I2
+	Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSHEADPTR1/buf_ff0_reg/D
+	Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT0/buf_ff0_i_1__1/I1
+	.. and 12 more pins.
+
+Phase 7 Post Hold Fix | Checksum: 26f106379
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:51 . Memory (MB): peak = 2866.578 ; gain = 593.336
+
+Phase 8 Timing Verification
+
+Phase 8.1 Update Timing
+Phase 8.1 Update Timing | Checksum: 1f9c36630
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:52 . Memory (MB): peak = 2866.578 ; gain = 593.336
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.318 | TNS=-37.957| WHS=0.051  | THS=0.000  |
+
+Phase 8 Timing Verification | Checksum: 1f9c36630
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:52 . Memory (MB): peak = 2866.578 ; gain = 593.336
+
+Phase 9 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.03769 %
+  Global Horizontal Routing Utilization  = 1.07708 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+--GLOBAL Congestion:
+Utilization threshold used for congestion level computation: 0.85
+Congestion Report
+North Dir 1x1 Area, Max Cong = 57.6577%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 45.045%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 48.5294%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 60.2941%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 9 Route finalize | Checksum: 1f9c36630
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:52 . Memory (MB): peak = 2866.578 ; gain = 593.336
+
+Phase 10 Verifying routed nets
+
+ Verification completed successfully
+Phase 10 Verifying routed nets | Checksum: 1f9c36630
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:52 . Memory (MB): peak = 2866.578 ; gain = 593.336
+
+Phase 11 Depositing Routes
+Phase 11 Depositing Routes | Checksum: 2726f1424
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:52 . Memory (MB): peak = 2866.578 ; gain = 593.336
+
+Phase 12 Incr Placement Change
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2866.578 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-4.315. For the most accurate timing information please run report_timing.
+Ending IncrPlace Task | Checksum: 181636b46
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 2866.578 ; gain = 0.000
+Google Cpuprofiler is only supported on Linux.
+Phase 12 Incr Placement Change | Checksum: 181636b46
+
+Time (s): cpu = 00:01:18 ; elapsed = 00:01:03 . Memory (MB): peak = 2866.578 ; gain = 593.336
+
+Phase 13 Build RT Design
+Checksum: PlaceDB: acc2d65b ConstDB: 0 ShapeSum: b72781d3 RouteDB: 1d791318
+Post Restoration Checksum: NetGraph: 4b2d5c7c | NumContArr: 31e2b843 | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 13 Build RT Design | Checksum: 2026209f9
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:01:03 . Memory (MB): peak = 2866.578 ; gain = 593.336
+
+Phase 14 Router Initialization
+
+Phase 14.1 Fix Topology Constraints
+Phase 14.1 Fix Topology Constraints | Checksum: 2026209f9
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:01:03 . Memory (MB): peak = 2866.578 ; gain = 593.336
+
+Phase 14.2 Pre Route Cleanup
+Phase 14.2 Pre Route Cleanup | Checksum: 2cf635b1a
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:01:03 . Memory (MB): peak = 2866.578 ; gain = 593.336
+ Number of Nodes with overlaps = 0
+
+Phase 14.3 Update Timing
+Phase 14.3 Update Timing | Checksum: 1b8cf6a4c
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:01:05 . Memory (MB): peak = 2866.578 ; gain = 593.336
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.320 | TNS=-33.906| WHS=-4.153 | THS=-209.235|
+
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.03143 %
+  Global Horizontal Routing Utilization  = 1.07294 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 60
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 38
+  Number of Partially Routed Nets     = 22
+  Number of Node Overlaps             = 0
+
+Phase 14 Router Initialization | Checksum: 17c1daf92
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:01:05 . Memory (MB): peak = 2866.578 ; gain = 593.336
+
+Phase 15 Global Routing
+Phase 15 Global Routing | Checksum: 17c1daf92
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:01:05 . Memory (MB): peak = 2866.578 ; gain = 593.336
+
+Phase 16 Initial Routing
+
+Phase 16.1 Initial Net Routing Pass
+Phase 16.1 Initial Net Routing Pass | Checksum: 225fe5fd9
+
+Time (s): cpu = 00:01:26 ; elapsed = 00:01:06 . Memory (MB): peak = 2866.578 ; gain = 593.336
+Phase 16 Initial Routing | Checksum: 225fe5fd9
+
+Time (s): cpu = 00:01:26 ; elapsed = 00:01:06 . Memory (MB): peak = 2866.578 ; gain = 593.336
+INFO: [Route 35-580] Design has 25 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++====================+===================+===================================================================================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                                                                               |
++====================+===================+===================================================================================================+
+| SPW_Sin            | SPW_Din           | Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT2/buf_ff0_reg/D |
+| SPW_Sin            | SPW_Din           | Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT1/buf_ff0_reg/D |
+| SPW_Sin            | SPW_Din           | Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT3/buf_ff0_reg/D |
+| SPW_Sin            | SPW_Din           | Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSBITCNT0/buf_ff0_reg/D |
+| SPW_Din            | SPW_Din           | Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/ff_pre_f_reg/D               |
++--------------------+-------------------+---------------------------------------------------------------------------------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
+
+Phase 17 Rip-up And Reroute
+
+Phase 17.1 Global Iteration 0
+ Number of Nodes with overlaps = 25
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.385 | TNS=-39.625| WHS=N/A    | THS=N/A    |
+
+Phase 17.1 Global Iteration 0 | Checksum: 2ba9c1e4d
+
+Time (s): cpu = 00:01:31 ; elapsed = 00:01:10 . Memory (MB): peak = 2866.578 ; gain = 593.336
+
+Phase 17.2 Global Iteration 1
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.473 | TNS=-39.710| WHS=N/A    | THS=N/A    |
+
+Phase 17.2 Global Iteration 1 | Checksum: 24691c5f3
+
+Time (s): cpu = 00:01:34 ; elapsed = 00:01:12 . Memory (MB): peak = 2866.578 ; gain = 593.336
+Phase 17 Rip-up And Reroute | Checksum: 24691c5f3
+
+Time (s): cpu = 00:01:34 ; elapsed = 00:01:12 . Memory (MB): peak = 2866.578 ; gain = 593.336
+
+Phase 18 Delay and Skew Optimization
+
+Phase 18.1 Delay CleanUp
+
+Phase 18.1.1 Update Timing
+Phase 18.1.1 Update Timing | Checksum: 2349eaab7
+
+Time (s): cpu = 00:01:34 ; elapsed = 00:01:13 . Memory (MB): peak = 2866.578 ; gain = 593.336
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.385 | TNS=-39.625| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 18.1 Delay CleanUp | Checksum: 2ccefb244
+
+Time (s): cpu = 00:01:35 ; elapsed = 00:01:13 . Memory (MB): peak = 2866.578 ; gain = 593.336
+
+Phase 18.2 Clock Skew Optimization
+Phase 18.2 Clock Skew Optimization | Checksum: 2ccefb244
+
+Time (s): cpu = 00:01:35 ; elapsed = 00:01:13 . Memory (MB): peak = 2866.578 ; gain = 593.336
+Phase 18 Delay and Skew Optimization | Checksum: 2ccefb244
+
+Time (s): cpu = 00:01:35 ; elapsed = 00:01:13 . Memory (MB): peak = 2866.578 ; gain = 593.336
+
+Phase 19 Post Hold Fix
+
+Phase 19.1 Hold Fix Iter
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.385 | TNS=-39.625| WHS=-0.260 | THS=-0.260 |
+
+Phase 19.1 Hold Fix Iter | Checksum: 1ac72e035
+
+Time (s): cpu = 00:01:35 ; elapsed = 00:01:13 . Memory (MB): peak = 2866.578 ; gain = 593.336
+
+Phase 19.2 Non Free Resource Hold Fix Iter
+Phase 19.2 Non Free Resource Hold Fix Iter | Checksum: 24e23cd73
+
+Time (s): cpu = 00:01:35 ; elapsed = 00:01:13 . Memory (MB): peak = 2866.578 ; gain = 593.336
+WARNING: [Route 35-468] The router encountered 6 pins that are both setup-critical and hold-critical and tried to fix hold violations at the expense of setup slack. Such pins are:
+	Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/LINK_INST/reset_reg[1]_i_2/I0
+	Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSHEADPTR2/buf_ff0_reg/D
+	Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][1]_i_3_comp_1/I3
+	Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_1/I0
+	Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/res_seq[bufdout][0]_i_3/I0
+	Test_Implementaiton_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/SYNCSYSHEADPTR1/buf_ff0_reg/D
+
+Phase 19 Post Hold Fix | Checksum: 24e23cd73
+
+Time (s): cpu = 00:01:35 ; elapsed = 00:01:13 . Memory (MB): peak = 2866.578 ; gain = 593.336
+
+Phase 20 Timing Verification
+
+Phase 20.1 Update Timing
+Phase 20.1 Update Timing | Checksum: 1c254478e
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:01:13 . Memory (MB): peak = 2866.578 ; gain = 593.336
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.385 | TNS=-39.625| WHS=0.051  | THS=0.000  |
+
+Phase 20 Timing Verification | Checksum: 1c254478e
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:01:13 . Memory (MB): peak = 2866.578 ; gain = 593.336
+
+Phase 21 Reset Design
+INFO: [Route 35-307] 5383 nets already restored were skipped.
+Post Restoration Checksum: NetGraph: e724564a | NumContArr: 5d230f25 | Constraints: c2a8fa9d | Timing: 3b32db2b
+
+Phase 21.1 Create Timer
+Phase 21.1 Create Timer | Checksum: 242233b37
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:01:13 . Memory (MB): peak = 2866.578 ; gain = 593.336
+Phase 21 Reset Design | Checksum: 242233b37
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:01:14 . Memory (MB): peak = 2866.578 ; gain = 593.336
+
+Phase 22 Post Process Routing
+Phase 22 Post Process Routing | Checksum: 242233b37
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:01:14 . Memory (MB): peak = 2866.578 ; gain = 593.336
+
+Phase 23 Post Router Timing
+WARNING: [Timing 38-172] LUT was found on clock network. Both rising/falling clock edges are propagated from LUT output pin. Use set_clock_sense to specify if that clock should be inverted or not. e.g. set_clock_sense -positive/-negative Test_Implementaiton_i/SpaceWire_light_AXI_0/reset_reg[1]_i_3/O
+INFO: [Route 35-20] Post Routing Timing Summary | WNS=-4.315 | TNS=-37.929| WHS=0.053  | THS=0.000  |
+
+Phase 23 Post Router Timing | Checksum: 22dfee76c
+
+Time (s): cpu = 00:01:39 ; elapsed = 00:01:15 . Memory (MB): peak = 2866.578 ; gain = 593.336
+CRITICAL WARNING: [Route 35-39] The design did not meet timing requirements. Please run report_timing_summary for detailed reports.
+Resolution: Verify that the timing was met or had small violations at all previous steps (synthesis, placement, power_opt, and phys_opt). Run report_timing_summary and analyze individual timing paths.
+INFO: [Route 35-253] TNS is the sum of the worst slack violation on every endpoint in the design. Review the paths with the biggest WNS violations in the timing reports and modify your constraints or your design to improve both WNS and TNS.
+Total Elapsed time in route_design: 74.85 secs
+
+Phase 24 Post-Route Event Processing
+Phase 24 Post-Route Event Processing | Checksum: 190960882
+
+Time (s): cpu = 00:01:39 ; elapsed = 00:01:15 . Memory (MB): peak = 2866.578 ; gain = 593.336
+INFO: [Route 35-16] Router Completed Successfully
+Ending Routing Task | Checksum: 190960882
+
+Time (s): cpu = 00:01:39 ; elapsed = 00:01:15 . Memory (MB): peak = 2866.578 ; gain = 593.336
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+646 Infos, 15 Warnings, 15 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:43 ; elapsed = 00:01:18 . Memory (MB): peak = 2866.578 ; gain = 593.336
+INFO: [Vivado 12-24828] Executing command : report_drc -file Test_Implementaiton_wrapper_drc_routed.rpt -pb Test_Implementaiton_wrapper_drc_routed.pb -rpx Test_Implementaiton_wrapper_drc_routed.rpx
+Command: report_drc -file Test_Implementaiton_wrapper_drc_routed.rpt -pb Test_Implementaiton_wrapper_drc_routed.pb -rpx Test_Implementaiton_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/impl_2_lowdelay/Test_Implementaiton_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [Vivado 12-24828] Executing command : report_methodology -file Test_Implementaiton_wrapper_methodology_drc_routed.rpt -pb Test_Implementaiton_wrapper_methodology_drc_routed.pb -rpx Test_Implementaiton_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file Test_Implementaiton_wrapper_methodology_drc_routed.rpt -pb Test_Implementaiton_wrapper_methodology_drc_routed.pb -rpx Test_Implementaiton_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Timing 38-172] LUT was found on clock network. Both rising/falling clock edges are propagated from LUT output pin. Use set_clock_sense to specify if that clock should be inverted or not. e.g. set_clock_sense -positive/-negative Test_Implementaiton_i/SpaceWire_light_AXI_0/reset_reg[1]_i_3/O
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/impl_2_lowdelay/Test_Implementaiton_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -report_unconstrained -file Test_Implementaiton_wrapper_timing_summary_routed.rpt -pb Test_Implementaiton_wrapper_timing_summary_routed.pb -rpx Test_Implementaiton_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [Vivado 12-24838] Running report commands "report_incremental_reuse, report_route_status" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_incremental_reuse -file Test_Implementaiton_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [Vivado 12-24828] Executing command : report_route_status -file Test_Implementaiton_wrapper_route_status.rpt -pb Test_Implementaiton_wrapper_route_status.pb
+INFO: [Vivado 12-24828] Executing command : report_power -file Test_Implementaiton_wrapper_power_routed.rpt -pb Test_Implementaiton_wrapper_power_summary_routed.pb -rpx Test_Implementaiton_wrapper_power_routed.rpx
+Command: report_power -file Test_Implementaiton_wrapper_power_routed.rpt -pb Test_Implementaiton_wrapper_power_summary_routed.pb -rpx Test_Implementaiton_wrapper_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+663 Infos, 17 Warnings, 16 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [Vivado 12-24828] Executing command : report_clock_utilization -file Test_Implementaiton_wrapper_clock_utilization_routed.rpt
+WARNING: [Device 21-9320] Failed to find the Oracle tile group with name 'HSR_BOUNDARY_TOP'. This is required for Clock regions and Virtual grid.
+WARNING: [Device 21-2174] Failed to initialize Virtual grid.
+INFO: [Vivado 12-24828] Executing command : report_bus_skew -warn_on_violation -file Test_Implementaiton_wrapper_bus_skew_routed.rpt -pb Test_Implementaiton_wrapper_bus_skew_routed.pb -rpx Test_Implementaiton_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+generate_parallel_reports: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 2866.578 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 2866.578 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.494 . Memory (MB): peak = 2866.578 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2866.578 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.087 . Memory (MB): peak = 2866.578 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2866.578 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2866.578 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.613 . Memory (MB): peak = 2866.578 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/impl_2_lowdelay/Test_Implementaiton_wrapper_routed.dcp' has been generated.
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 17 19:55:43 2024...

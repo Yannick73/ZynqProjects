@@ -30,7 +30,8 @@
         "m00_couplers": {
           "auto_pc": ""
         }
-      }
+      },
+      "clk_wiz_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -240,10 +241,10 @@
             "value": "10.000000"
           },
           "PCW_ACT_FPGA0_PERIPHERAL_FREQMHZ": {
-            "value": "100.000000"
+            "value": "40.000000"
           },
           "PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ": {
-            "value": "200.000000"
+            "value": "10.000000"
           },
           "PCW_ACT_FPGA2_PERIPHERAL_FREQMHZ": {
             "value": "10.000000"
@@ -297,10 +298,10 @@
             "value": "650"
           },
           "PCW_CLK0_FREQ": {
-            "value": "100000000"
+            "value": "40000000"
           },
           "PCW_CLK1_FREQ": {
-            "value": "200000000"
+            "value": "10000000"
           },
           "PCW_CLK2_FREQ": {
             "value": "10000000"
@@ -339,7 +340,7 @@
             "value": "Share reset pin"
           },
           "PCW_EN_CLK1_PORT": {
-            "value": "1"
+            "value": "0"
           },
           "PCW_EN_EMIO_TTC0": {
             "value": "1"
@@ -368,19 +369,13 @@
           "PCW_EN_USB0": {
             "value": "1"
           },
-          "PCW_FCLK_CLK1_BUF": {
-            "value": "TRUE"
-          },
           "PCW_FPGA0_PERIPHERAL_FREQMHZ": {
-            "value": "100"
+            "value": "40"
           },
           "PCW_FPGA1_PERIPHERAL_FREQMHZ": {
-            "value": "200"
+            "value": "50"
           },
           "PCW_FPGA_FCLK0_ENABLE": {
-            "value": "1"
-          },
-          "PCW_FPGA_FCLK1_ENABLE": {
             "value": "1"
           },
           "PCW_GPIO_MIO_GPIO_ENABLE": {
@@ -1180,13 +1175,13 @@
             "value": "2"
           },
           "RXFIFOSIZE_BITS": {
-            "value": "16"
+            "value": "12"
           },
           "SYSFREQ": {
-            "value": "100.0e6"
+            "value": "40.0e6"
           },
           "TXCLKFREQ": {
-            "value": "200.0e6"
+            "value": "80.0e6"
           },
           "TXFIFOSIZE_BITS": {
             "value": "12"
@@ -1643,9 +1638,9 @@
       },
       "axi_mem_intercon": {
         "vlnv": "xilinx.com:ip:axi_interconnect:2.1",
-        "xci_path": "ip\\Test_Implementaiton_axi_mem_intercon_1\\Test_Implementaiton_axi_mem_intercon_1.xci",
+        "xci_path": "ip\\Test_Implementaiton_axi_mem_intercon_2\\Test_Implementaiton_axi_mem_intercon_2.xci",
         "inst_hier_path": "axi_mem_intercon",
-        "xci_name": "Test_Implementaiton_axi_mem_intercon_1",
+        "xci_name": "Test_Implementaiton_axi_mem_intercon_2",
         "parameters": {
           "NUM_MI": {
             "value": "1"
@@ -1738,8 +1733,8 @@
           "xbar": {
             "vlnv": "xilinx.com:ip:axi_crossbar:2.1",
             "ip_revision": "32",
-            "xci_name": "Test_Implementaiton_xbar_4",
-            "xci_path": "ip\\Test_Implementaiton_xbar_4\\Test_Implementaiton_xbar_4.xci",
+            "xci_name": "Test_Implementaiton_xbar_5",
+            "xci_path": "ip\\Test_Implementaiton_xbar_5\\Test_Implementaiton_xbar_5.xci",
             "inst_hier_path": "axi_mem_intercon/xbar",
             "parameters": {
               "NUM_MI": {
@@ -2048,6 +2043,126 @@
             ]
           }
         }
+      },
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "ip_revision": "14",
+        "xci_name": "Test_Implementaiton_clk_wiz_0_0",
+        "xci_path": "ip\\Test_Implementaiton_clk_wiz_0_0\\Test_Implementaiton_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "parameters": {
+          "CLKIN1_JITTER_PS": {
+            "value": "6600.000000000001"
+          },
+          "CLKIN1_UI_JITTER": {
+            "value": "0.66"
+          },
+          "CLKOUT1_DRIVES": {
+            "value": "BUFH"
+          },
+          "CLKOUT1_JITTER": {
+            "value": "1739.237"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "98.575"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "80.000"
+          },
+          "CLKOUT2_DRIVES": {
+            "value": "BUFH"
+          },
+          "CLKOUT2_JITTER": {
+            "value": "2821.107"
+          },
+          "CLKOUT2_PHASE_ERROR": {
+            "value": "98.575"
+          },
+          "CLKOUT2_REQUESTED_OUT_FREQ": {
+            "value": "40.000"
+          },
+          "CLKOUT2_USED": {
+            "value": "true"
+          },
+          "CLKOUT3_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT4_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT5_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT6_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT7_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLK_OUT1_PORT": {
+            "value": "TX_clk"
+          },
+          "CLK_OUT2_PORT": {
+            "value": "SPW_core_clk"
+          },
+          "FEEDBACK_SOURCE": {
+            "value": "FDBK_AUTO"
+          },
+          "MMCM_BANDWIDTH": {
+            "value": "OPTIMIZED"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "25.000"
+          },
+          "MMCM_CLKIN1_PERIOD": {
+            "value": "25.000"
+          },
+          "MMCM_CLKIN2_PERIOD": {
+            "value": "10.0"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "12.500"
+          },
+          "MMCM_CLKOUT1_DIVIDE": {
+            "value": "25"
+          },
+          "MMCM_COMPENSATION": {
+            "value": "ZHOLD"
+          },
+          "MMCM_DIVCLK_DIVIDE": {
+            "value": "1"
+          },
+          "MMCM_REF_JITTER1": {
+            "value": "0.660"
+          },
+          "NUM_OUT_CLKS": {
+            "value": "2"
+          },
+          "PRIMITIVE": {
+            "value": "MMCM"
+          },
+          "RESET_PORT": {
+            "value": "resetn"
+          },
+          "RESET_TYPE": {
+            "value": "ACTIVE_LOW"
+          },
+          "USE_CLKFB_STOPPED": {
+            "value": "false"
+          },
+          "USE_INCLK_STOPPED": {
+            "value": "false"
+          },
+          "USE_LOCKED": {
+            "value": "false"
+          },
+          "USE_POWER_DOWN": {
+            "value": "false"
+          },
+          "USE_RESET": {
+            "value": "true"
+          }
+        }
       }
     },
     "interface_nets": {
@@ -2143,39 +2258,46 @@
           "SPW_Sout"
         ]
       },
+      "clk_wiz_0_SPW_core_clk": {
+        "ports": [
+          "clk_wiz_0/SPW_core_clk",
+          "SpaceWire_light_AXI_0/SPW_main_clk"
+        ]
+      },
+      "clk_wiz_0_TX_clk": {
+        "ports": [
+          "clk_wiz_0/TX_clk",
+          "SpaceWire_light_AXI_0/SPW_TX_clk"
+        ]
+      },
       "processing_system7_0_FCLK_CLK0": {
         "ports": [
           "processing_system7_0/FCLK_CLK0",
+          "axi_dma_0/m_axi_mm2s_aclk",
+          "axi_dma_0/m_axi_s2mm_aclk",
+          "axi_dma_0/s_axi_lite_aclk",
+          "ps7_0_axi_periph/M00_ACLK",
           "processing_system7_0/S_AXI_HP0_ACLK",
           "processing_system7_0/M_AXI_GP0_ACLK",
-          "rst_ps7_0_100M/slowest_sync_clk",
+          "ps7_0_axi_periph/S00_ACLK",
           "ps7_0_axi_periph/ACLK",
           "ps7_0_axi_periph/M01_ACLK",
-          "ps7_0_axi_periph/S00_ACLK",
-          "ps7_0_axi_periph/M00_ACLK",
-          "axi_dma_0/s_axi_lite_aclk",
-          "axi_mem_intercon/M00_ACLK",
-          "axi_dma_0/m_axi_mm2s_aclk",
-          "axi_mem_intercon/S00_ACLK",
+          "rst_ps7_0_100M/slowest_sync_clk",
           "axi_mem_intercon/ACLK",
-          "axi_dma_0/m_axi_s2mm_aclk",
+          "axi_mem_intercon/S00_ACLK",
+          "axi_mem_intercon/M00_ACLK",
           "axi_mem_intercon/S01_ACLK",
-          "SpaceWire_light_AXI_0/SPW_main_clk",
+          "clk_wiz_0/clk_in1",
           "SpaceWire_light_AXI_0/axi_register_aclk",
           "SpaceWire_light_AXI_0/axi_streamin_aclk",
           "SpaceWire_light_AXI_0/axi_streamout_aclk"
         ]
       },
-      "processing_system7_0_FCLK_CLK1": {
-        "ports": [
-          "processing_system7_0/FCLK_CLK1",
-          "SpaceWire_light_AXI_0/SPW_TX_clk"
-        ]
-      },
       "processing_system7_0_FCLK_RESET0_N": {
         "ports": [
           "processing_system7_0/FCLK_RESET0_N",
-          "rst_ps7_0_100M/ext_reset_in"
+          "rst_ps7_0_100M/ext_reset_in",
+          "clk_wiz_0/resetn"
         ]
       },
       "rst_ps7_0_100M_peripheral_aresetn": {
@@ -2186,8 +2308,8 @@
           "ps7_0_axi_periph/M00_ARESETN",
           "ps7_0_axi_periph/S00_ARESETN",
           "axi_dma_0/axi_resetn",
-          "axi_mem_intercon/M00_ARESETN",
           "axi_mem_intercon/S00_ARESETN",
+          "axi_mem_intercon/M00_ARESETN",
           "axi_mem_intercon/ARESETN",
           "axi_mem_intercon/S01_ARESETN",
           "SpaceWire_light_AXI_0/SPW_rst",

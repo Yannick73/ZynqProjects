@@ -236,8 +236,8 @@ begin
       DriverF: Driver port map (rxcnt_f(i), rxcnt_fbuf(i));
    end generate BUF;
    
-   CLK_BUF: Driver
-   port map (RXCLK_IN, ff_update_clk_buf);
+--   CLK_BUF: Driver
+--   port map (RXCLK_IN, ff_update_clk_buf);
    -----------------------------------------------------------------------------
    -- COUNTER MUX
    rxcnt_ddr <= rxcnt_fbuf when RXCLK_IN = '1' else rxcnt_rbuf;
@@ -311,30 +311,30 @@ begin
    --! \arg \ref     RXCLK_IN - recovery clock (rising and falling edge).
    --! \arg \ref     rx_rst_n - synd reset signal to RXCLK_IN (active-low).
    -----------------------------------------------------------------------------
-   updateSpwRegs: process( ff_update_clk_buf, rx_rst_n )
+   updateSpwRegs: process( RXCLK_IN, rx_rst_n )
    begin
       if ( rx_rst_n = '0' ) then
          ff_r_di1  <= '0';
          ff_r_di2r <= '0';
          ff_r_di2f <= '0';
          -- pre falling edge buffer
-         --ff_pre_f <= '0';
-      elsif ( rising_edge(ff_update_clk_buf) ) then
-         ff_r_di1  <= SPW_DI;
+         ff_pre_f <= '0';
+      elsif ( rising_edge(RXCLK_IN) ) then
+         ff_r_di1  <= ff_pre_r;
          ff_r_di2r <= ff_r_di1;
          ff_r_di2f <= ff_f_di1;
          -- pre falling edge buffer
-         --ff_pre_f <= SPW_DI;
+         ff_pre_f <= SPW_DI;
       end if; -- rising_edge(RXCLK_IN)
       
       if ( rx_rst_n = '0' ) then
          ff_f_di1  <= '0';
          -- pre rising edge buffer
-         --ff_pre_r <= '0';
-      elsif ( falling_edge(ff_update_clk_buf) ) then
-         ff_f_di1  <= SPW_DI;
+         ff_pre_r <= '0';
+      elsif ( falling_edge(RXCLK_IN) ) then
+         ff_f_di1  <= ff_pre_f;
          -- pre rising edge buffer         
-         --ff_pre_r <= SPW_DI;
+         ff_pre_r <= SPW_DI;
       end if; -- falling_edge(RXCLK_IN)
    end process updateSpwRegs;
 
