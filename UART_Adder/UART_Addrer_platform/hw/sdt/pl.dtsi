@@ -1,0 +1,31 @@
+/ {
+	amba_pl: amba_pl {
+		ranges;
+		compatible = "simple-bus";
+		#address-cells = <1>;
+		#size-cells = <1>;
+		axi_uartlite_0: axi_uartlite@42c00000 {
+			interrupts = < 0 28 1 >;
+			compatible = "xlnx,axi-uartlite-2.0" , "xlnx,xps-uartlite-1.00.a";
+			xlnx,uartlite-board-interface = "Custom";
+			xlnx,s-axi-aclk-freq-hz-d = <100>;
+			interrupt-parent = <&intc>;
+			xlnx,rable = <0>;
+			xlnx,ip-name = "axi_uartlite";
+			reg = <0x42c00000 0x10000>;
+			xlnx,baudrate = <9600>;
+			clocks = <&clkc 15>;
+			current-speed = <9600>;
+			xlnx,use-parity = <0>;
+			xlnx,edk-iptype = "PERIPHERAL";
+			xlnx,odd-parity = <0>;
+			status = "okay";
+			clock-names = "s_axi_aclk";
+			xlnx,use-board-flow;
+			interrupt-names = "interrupt";
+			xlnx,name = "axi_uartlite_0";
+			xlnx,data-bits = <8>;
+			xlnx,parity = "No_Parity";
+		};
+	};
+};

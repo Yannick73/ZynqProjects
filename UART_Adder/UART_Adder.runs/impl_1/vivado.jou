@@ -3,22 +3,22 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Thu Jul 25 17:43:41 2024
-# Process ID: 23856
-# Current directory: F:/Xilinx/Projects/UART_Adder/UART_Adder.runs/impl_1
+# Start of session at: Fri Oct  4 12:29:13 2024
+# Process ID: 3716
+# Current directory: C:/Xilinx/ZynqProjects/UART_Adder/UART_Adder.runs/impl_1
 # Command line: vivado.exe -log UART_Adder_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source UART_Adder_wrapper.tcl -notrace
-# Log file: F:/Xilinx/Projects/UART_Adder/UART_Adder.runs/impl_1/UART_Adder_wrapper.vdi
-# Journal file: F:/Xilinx/Projects/UART_Adder/UART_Adder.runs/impl_1\vivado.jou
-# Running On        :DESKTOP-MEH5DGT
+# Log file: C:/Xilinx/ZynqProjects/UART_Adder/UART_Adder.runs/impl_1/UART_Adder_wrapper.vdi
+# Journal file: C:/Xilinx/ZynqProjects/UART_Adder/UART_Adder.runs/impl_1\vivado.jou
+# Running On        :DESKTOP-0QJOVG1
 # Platform          :Windows Server 2016 or Windows 10
 # Operating System  :19045
-# Processor Detail  :AMD Ryzen 5 3600 6-Core Processor              
-# CPU Frequency     :3593 MHz
-# CPU Physical cores:6
-# CPU Logical cores :12
-# Host memory       :17100 MB
-# Swap memory       :3758 MB
-# Total Virtual     :20858 MB
-# Available Virtual :7337 MB
+# Processor Detail  :AMD Ryzen 7 2700U with Radeon Vega Mobile Gfx  
+# CPU Frequency     :2196 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :16779 MB
+# Swap memory       :2550 MB
+# Total Virtual     :19329 MB
+# Available Virtual :12051 MB
 #-----------------------------------------------------------
 source UART_Adder_wrapper.tcl -notrace

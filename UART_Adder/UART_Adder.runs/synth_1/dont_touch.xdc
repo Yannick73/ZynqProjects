@@ -12,13 +12,13 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==UART_Adder_
 # IP: bd/UART_Adder/ip/UART_Adder_axi_uartlite_0_0/UART_Adder_axi_uartlite_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==UART_Adder_axi_uartlite_0_0 || ORIG_REF_NAME==UART_Adder_axi_uartlite_0_0} -quiet] -quiet
 
+# IP: bd/UART_Adder/ip/UART_Adder_auto_pc_0/UART_Adder_auto_pc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==UART_Adder_auto_pc_0 || ORIG_REF_NAME==UART_Adder_auto_pc_0} -quiet] -quiet
+
 # IP: bd/UART_Adder/ip/UART_Adder_ps7_0_axi_periph_0/UART_Adder_ps7_0_axi_periph_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==UART_Adder_ps7_0_axi_periph_0 || ORIG_REF_NAME==UART_Adder_ps7_0_axi_periph_0} -quiet] -quiet
 
 # IP: bd/UART_Adder/ip/UART_Adder_rst_ps7_0_100M_0/UART_Adder_rst_ps7_0_100M_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==UART_Adder_rst_ps7_0_100M_0 || ORIG_REF_NAME==UART_Adder_rst_ps7_0_100M_0} -quiet] -quiet
 
-# IP: bd/UART_Adder/ip/UART_Adder_auto_pc_0/UART_Adder_auto_pc_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==UART_Adder_auto_pc_0 || ORIG_REF_NAME==UART_Adder_auto_pc_0} -quiet] -quiet
-
-# XDC: f:/Xilinx/Projects/UART_Adder/UART_Adder.gen/sources_1/bd/UART_Adder/UART_Adder_ooc.xdc
+# XDC: c:/Xilinx/ZynqProjects/UART_Adder/UART_Adder.gen/sources_1/bd/UART_Adder/UART_Adder_ooc.xdc

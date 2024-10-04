@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "F:/Xilinx/Projects/UART_Adder/UART_Adder.runs/synth_1/UART_Adder_wrapper.tcl"
+  variable script "C:/Xilinx/ZynqProjects/UART_Adder/UART_Adder.runs/synth_1/UART_Adder_wrapper.tcl"
   variable category "vivado_synth"
 }
 
@@ -56,11 +56,9 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 3
-set_param checkpoint.writeSynthRtdsInDcp 1
-set_param synth.incrementalSynthesisCache C:/Users/Yannick/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9748-DESKTOP-MEH5DGT/incrSyn
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
+set_param chipscope.maxJobs 2
+set_msg_config -id {HDL-1065} -limit 10000
+set_msg_config  -id {17-179}  -suppress 
 set_msg_config  -id {[BD 41-1306]}  -suppress 
 set_msg_config  -id {[BD 41-1271]}  -suppress 
 OPTRACE "Creating in-memory project" START { }
@@ -70,26 +68,26 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir F:/Xilinx/Projects/UART_Adder/UART_Adder.cache/wt [current_project]
-set_property parent.project_path F:/Xilinx/Projects/UART_Adder/UART_Adder.xpr [current_project]
+set_property webtalk.parent_dir C:/Xilinx/ZynqProjects/UART_Adder/UART_Adder.cache/wt [current_project]
+set_property parent.project_path C:/Xilinx/ZynqProjects/UART_Adder/UART_Adder.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo f:/Xilinx/Projects/UART_Adder/UART_Adder.cache/ip [current_project]
+set_property ip_output_repo c:/Xilinx/ZynqProjects/UART_Adder/UART_Adder.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib F:/Xilinx/Projects/UART_Adder/UART_Adder.gen/sources_1/bd/UART_Adder/hdl/UART_Adder_wrapper.v
-add_files F:/Xilinx/Projects/UART_Adder/UART_Adder.srcs/sources_1/bd/UART_Adder/UART_Adder.bd
-set_property used_in_implementation false [get_files -all f:/Xilinx/Projects/UART_Adder/UART_Adder.gen/sources_1/bd/UART_Adder/ip/UART_Adder_processing_system7_0_0/UART_Adder_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all f:/Xilinx/Projects/UART_Adder/UART_Adder.gen/sources_1/bd/UART_Adder/ip/UART_Adder_axi_uartlite_0_0/UART_Adder_axi_uartlite_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all f:/Xilinx/Projects/UART_Adder/UART_Adder.gen/sources_1/bd/UART_Adder/ip/UART_Adder_axi_uartlite_0_0/UART_Adder_axi_uartlite_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all f:/Xilinx/Projects/UART_Adder/UART_Adder.gen/sources_1/bd/UART_Adder/ip/UART_Adder_axi_uartlite_0_0/UART_Adder_axi_uartlite_0_0.xdc]
-set_property used_in_implementation false [get_files -all f:/Xilinx/Projects/UART_Adder/UART_Adder.gen/sources_1/bd/UART_Adder/ip/UART_Adder_rst_ps7_0_100M_0/UART_Adder_rst_ps7_0_100M_0_board.xdc]
-set_property used_in_implementation false [get_files -all f:/Xilinx/Projects/UART_Adder/UART_Adder.gen/sources_1/bd/UART_Adder/ip/UART_Adder_rst_ps7_0_100M_0/UART_Adder_rst_ps7_0_100M_0.xdc]
-set_property used_in_implementation false [get_files -all f:/Xilinx/Projects/UART_Adder/UART_Adder.gen/sources_1/bd/UART_Adder/ip/UART_Adder_rst_ps7_0_100M_0/UART_Adder_rst_ps7_0_100M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all f:/Xilinx/Projects/UART_Adder/UART_Adder.gen/sources_1/bd/UART_Adder/ip/UART_Adder_auto_pc_0/UART_Adder_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all f:/Xilinx/Projects/UART_Adder/UART_Adder.gen/sources_1/bd/UART_Adder/UART_Adder_ooc.xdc]
+read_verilog -library xil_defaultlib C:/Xilinx/ZynqProjects/UART_Adder/UART_Adder.gen/sources_1/bd/UART_Adder/hdl/UART_Adder_wrapper.v
+add_files C:/Xilinx/ZynqProjects/UART_Adder/UART_Adder.srcs/sources_1/bd/UART_Adder/UART_Adder.bd
+set_property used_in_implementation false [get_files -all c:/Xilinx/ZynqProjects/UART_Adder/UART_Adder.gen/sources_1/bd/UART_Adder/ip/UART_Adder_processing_system7_0_0/UART_Adder_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Xilinx/ZynqProjects/UART_Adder/UART_Adder.gen/sources_1/bd/UART_Adder/ip/UART_Adder_axi_uartlite_0_0/UART_Adder_axi_uartlite_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Xilinx/ZynqProjects/UART_Adder/UART_Adder.gen/sources_1/bd/UART_Adder/ip/UART_Adder_axi_uartlite_0_0/UART_Adder_axi_uartlite_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Xilinx/ZynqProjects/UART_Adder/UART_Adder.gen/sources_1/bd/UART_Adder/ip/UART_Adder_axi_uartlite_0_0/UART_Adder_axi_uartlite_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Xilinx/ZynqProjects/UART_Adder/UART_Adder.gen/sources_1/bd/UART_Adder/ip/UART_Adder_auto_pc_0/UART_Adder_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Xilinx/ZynqProjects/UART_Adder/UART_Adder.gen/sources_1/bd/UART_Adder/ip/UART_Adder_rst_ps7_0_100M_0/UART_Adder_rst_ps7_0_100M_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Xilinx/ZynqProjects/UART_Adder/UART_Adder.gen/sources_1/bd/UART_Adder/ip/UART_Adder_rst_ps7_0_100M_0/UART_Adder_rst_ps7_0_100M_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Xilinx/ZynqProjects/UART_Adder/UART_Adder.gen/sources_1/bd/UART_Adder/ip/UART_Adder_rst_ps7_0_100M_0/UART_Adder_rst_ps7_0_100M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Xilinx/ZynqProjects/UART_Adder/UART_Adder.gen/sources_1/bd/UART_Adder/UART_Adder_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -100,14 +98,14 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc F:/Xilinx/Projects/UART_Adder/UART_Adder.srcs/constrs_1/new/uart.xdc
-set_property used_in_implementation false [get_files F:/Xilinx/Projects/UART_Adder/UART_Adder.srcs/constrs_1/new/uart.xdc]
+read_xdc C:/Xilinx/ZynqProjects/UART_Adder/UART_Adder.srcs/constrs_1/new/uart.xdc
+set_property used_in_implementation false [get_files C:/Xilinx/ZynqProjects/UART_Adder/UART_Adder.srcs/constrs_1/new/uart.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental F:/Xilinx/Projects/UART_Adder/UART_Adder.srcs/utils_1/imports/synth_1/UART_Adder_wrapper.dcp
+read_checkpoint -auto_incremental -incremental C:/Xilinx/ZynqProjects/UART_Adder/UART_Adder.srcs/utils_1/imports/synth_1/UART_Adder_wrapper.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
