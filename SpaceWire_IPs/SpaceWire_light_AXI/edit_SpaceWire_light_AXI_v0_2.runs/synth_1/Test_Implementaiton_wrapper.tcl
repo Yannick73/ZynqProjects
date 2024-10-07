@@ -58,7 +58,7 @@ if {$::dispatch::connected} {
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 3
 set_param checkpoint.writeSynthRtdsInDcp 1
-set_param synth.incrementalSynthesisCache C:/Users/Yannick/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-10924-DESKTOP-MEH5DGT/incrSyn
+set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 set_msg_config  -id {[BD 41-1306]}  -suppress 
@@ -76,10 +76,7 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:zedboard:part0:1.1 [current_project]
-set_property ip_repo_paths {
-  f:/Xilinx/ZynqProjects/ip_repo/myip/myip_1_0
-  f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2
-} [current_project]
+set_property ip_repo_paths f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2 [current_project]
 update_ip_catalog
 set_property ip_output_repo f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
@@ -93,35 +90,37 @@ read_vhdl -library xil_defaultlib {
   F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd
 }
 read_vhdl -library SPWIP {
-  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpwStream_improved/SpwBlockRam_pkg.vhd
-  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd
-  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/SpwRegisters_pkg.vhd
-  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream_pkg.vhd
-  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpwStream_improved/SpwBlockRam.vhd
-  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/SpwProtocol_pkg.vhd
-  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwLink.vhd
-  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRam.vhd
-  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecovClk.vhd
-  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecv.vhd
   F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SpwXmit_fast_pkg.vhd
-  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd
-  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFront_pkg.vhd
-  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwReset.vhd
-  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd
   F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SpwXmit_fast.vhd
+  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/ModuleMap_pkg.vhd
+  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecovClk.vhd
+  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/SpwProtocol_pkg.vhd
+  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/Definitions/SpwRegisters_pkg.vhd
   F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwXmit_fast/SyncDff.vhd
+  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwLink.vhd
+  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecv.vhd
+  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwReset.vhd
+  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFront_pkg.vhd
+  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream.vhd
+  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwStream_pkg.vhd
+  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd
+  F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/SpwStream_improved/SpwRam.vhd
 }
 add_files F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/sources_1/bd/Test_Implementaiton/Test_Implementaiton.bd
 set_property used_in_implementation false [get_files -all f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/Test_Implementaiton_processing_system7_0_1.xdc]
 set_property used_in_implementation false [get_files -all f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_rst_ps7_0_100M_2/Test_Implementaiton_rst_ps7_0_100M_2_board.xdc]
 set_property used_in_implementation false [get_files -all f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_rst_ps7_0_100M_2/Test_Implementaiton_rst_ps7_0_100M_2.xdc]
+set_property used_in_implementation false [get_files -all f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_rst_ps7_0_100M_2/Test_Implementaiton_rst_ps7_0_100M_2_ooc.xdc]
 set_property used_in_implementation false [get_files -all f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_axi_dma_0_3/Test_Implementaiton_axi_dma_0_3.xdc]
 set_property used_in_implementation false [get_files -all f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_axi_dma_0_3/Test_Implementaiton_axi_dma_0_3_clocks.xdc]
+set_property used_in_implementation false [get_files -all f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_axi_dma_0_3/Test_Implementaiton_axi_dma_0_3_ooc.xdc]
 set_property used_in_implementation false [get_files -all f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_clk_wiz_0_0/Test_Implementaiton_clk_wiz_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_clk_wiz_0_0/Test_Implementaiton_clk_wiz_0_0.xdc]
 set_property used_in_implementation false [get_files -all f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_clk_wiz_0_0/Test_Implementaiton_clk_wiz_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_auto_pc_0/Test_Implementaiton_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_xbar_5/Test_Implementaiton_xbar_5_ooc.xdc]
+set_property used_in_implementation false [get_files -all f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_xbar_4/Test_Implementaiton_xbar_4_ooc.xdc]
 set_property used_in_implementation false [get_files -all f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_auto_pc_1/Test_Implementaiton_auto_pc_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_auto_pc_0/Test_Implementaiton_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/Test_Implementaiton_ooc.xdc]
 
 OPTRACE "Adding files" END { }

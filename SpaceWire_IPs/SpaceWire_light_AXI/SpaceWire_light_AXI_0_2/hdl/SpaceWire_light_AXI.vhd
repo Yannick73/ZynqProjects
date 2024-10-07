@@ -7,8 +7,8 @@ use SPWIP.SpwStream_pkg.all;
 entity SpaceWire_light_AXI is
 	generic (
 		-- Users to add parameters here
-        SYSFREQ : real range 1.0e6 to 1.0e9 := 40.0e6;
-        TXCLKFREQ : real range 1.0e6 to 1.0e9 := 80.0e6;
+        SYSFREQ : real range 1.0e6 to 1.0e9 := 20.0e6;
+        TXCLKFREQ : real range 1.0e6 to 1.0e9 := 40.0e6;
         RXCHUNK : integer range 1 to 6 := 2;
         RXFIFOSIZE_BITS : integer range 6 to 16 := 12;
         TXFIFOSIZE_BITS : integer range 2 to 16 := 12;

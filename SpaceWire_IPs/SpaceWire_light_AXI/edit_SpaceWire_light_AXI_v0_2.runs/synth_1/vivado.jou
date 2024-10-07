@@ -1,10 +1,10 @@
 #-----------------------------------------------------------
-# Vivado v2024.1 (64-bit)
-# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
-# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
-# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Tue Sep 17 19:50:44 2024
-# Process ID: 23036
+# Vivado v2024.1.2 (64-bit)
+# SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
+# IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+# SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+# Start of session at: Mon Oct  7 22:31:33 2024
+# Process ID: 1800
 # Current directory: F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/synth_1
 # Command line: vivado.exe -log Test_Implementaiton_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Test_Implementaiton_wrapper.tcl
 # Log file: F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/synth_1/Test_Implementaiton_wrapper.vds
@@ -17,8 +17,8 @@
 # CPU Physical cores:6
 # CPU Logical cores :12
 # Host memory       :17100 MB
-# Swap memory       :6174 MB
-# Total Virtual     :23274 MB
-# Available Virtual :4993 MB
+# Swap memory       :5368 MB
+# Total Virtual     :22469 MB
+# Available Virtual :5874 MB
 #-----------------------------------------------------------
 source Test_Implementaiton_wrapper.tcl -notrace

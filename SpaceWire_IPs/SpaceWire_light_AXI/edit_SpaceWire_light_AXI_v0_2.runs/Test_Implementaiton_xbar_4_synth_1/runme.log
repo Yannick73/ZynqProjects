@@ -1,0 +1,30 @@
+
+*** Running vivado
+    with args -log Test_Implementaiton_xbar_4.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Test_Implementaiton_xbar_4.tcl
+
+
+
+****** Vivado v2024.1.2 (64-bit)
+  **** SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
+  **** IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+  **** SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+  **** Start of session at: Mon Oct  7 21:44:30 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source Test_Implementaiton_xbar_4.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 579.586 ; gain = 173.168
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/SpaceWire_light_AXI_0_2'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2024.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: Test_Implementaiton_xbar_4
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry d62455006f62f0bf to dir: F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/Test_Implementaiton_xbar_4_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.cache/ip/2024.1.2/d/6/d62455006f62f0bf/Test_Implementaiton_xbar_4.dcp to F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/Test_Implementaiton_xbar_4_synth_1/Test_Implementaiton_xbar_4.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.cache/ip/2024.1.2/d/6/d62455006f62f0bf/Test_Implementaiton_xbar_4_sim_netlist.v to F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/Test_Implementaiton_xbar_4_synth_1/Test_Implementaiton_xbar_4_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.cache/ip/2024.1.2/d/6/d62455006f62f0bf/Test_Implementaiton_xbar_4_sim_netlist.vhdl to F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/Test_Implementaiton_xbar_4_synth_1/Test_Implementaiton_xbar_4_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.cache/ip/2024.1.2/d/6/d62455006f62f0bf/Test_Implementaiton_xbar_4_stub.v to F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/Test_Implementaiton_xbar_4_synth_1/Test_Implementaiton_xbar_4_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.cache/ip/2024.1.2/d/6/d62455006f62f0bf/Test_Implementaiton_xbar_4_stub.vhdl to F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/Test_Implementaiton_xbar_4_synth_1/Test_Implementaiton_xbar_4_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP Test_Implementaiton_xbar_4, cache-ID = d62455006f62f0bf.
+INFO: [Common 17-206] Exiting Vivado at Mon Oct  7 21:44:42 2024...

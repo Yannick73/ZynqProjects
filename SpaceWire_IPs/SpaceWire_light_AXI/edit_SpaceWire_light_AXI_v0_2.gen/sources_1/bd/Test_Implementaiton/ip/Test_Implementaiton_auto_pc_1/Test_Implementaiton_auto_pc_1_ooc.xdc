@@ -1,10 +1,9 @@
-################################################################################
-# (c) Copyright 2013 Advanced Micro Devices, Inc. All rights reserved.
+# (c) Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+# (c) Copyright 2022-2024 Advanced Micro Devices, Inc. All rights reserved.
 # 
 # This file contains confidential and proprietary information
-# of Advanced Micro Devices, Inc. and is protected under U.S. and
-# international copyright and other intellectual property
-# laws.
+# of AMD and is protected under U.S. and international copyright
+# and other intellectual property laws.
 # 
 # DISCLAIMER
 # This disclaimer is not a license and does not grant any
@@ -44,7 +43,15 @@
 # 
 # THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
 # PART OF THIS FILE AT ALL TIMES.
+# 
+# DO NOT MODIFY THIS FILE.
+# #########################################################
 #
-################################################################################
-create_clock -period 100.0 -name aclk [get_ports aclk]
+# This XDC is used only in OOC mode for synthesis, implementation
+#
+# #########################################################
+
+
+create_clock -period 50 -name aclk [get_ports aclk]
+
 

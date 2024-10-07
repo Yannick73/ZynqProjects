@@ -88,7 +88,7 @@ use SPWIP.SpwProtocol_pkg.all;
 --! SPWIP registers definition.
 use SPWIP.SpwRegisters_pkg.all;
 --! block RAM
-use SPWIP.SpwBlockRam_pkg.all;
+-- use SPWIP.SpwBlockRam_pkg.all;
 --use SPWIP.SpwStream_pkg.all;
 
 --------------------------------------------------------------------------------
@@ -339,19 +339,19 @@ architecture SpwStream_rtl of SpwStream is
       );
    end component SpwRam;
    
---   component SpwBlockRam is 
---      generic ( 
---         ABITS : integer -- number of address bits.
---      );
---      port ( 
---         RADDR  : in std_logic_vector (ABITS-1 downto 0);  --! read address.
---         WADDR  : in std_logic_vector (ABITS-1 downto 0);  --! write address.
---         WDATA  : in std_logic_vector (8 downto 0);  --! write data.
---         WEN    : in std_logic;                            --! write enable.
---         CLK   : in std_logic;                            --! read clock.
---         RDATA  : out std_logic_vector (8 downto 0)  --! read data.
---      );
---   end component SpwBlockRam;
+   component SpwBlockRam is 
+      generic ( 
+         ABITS : integer -- number of address bits.
+      );
+      port ( 
+         RADDR  : in std_logic_vector (ABITS-1 downto 0);  --! read address.
+         WADDR  : in std_logic_vector (ABITS-1 downto 0);  --! write address.
+         WDATA  : in std_logic_vector (8 downto 0);  --! write data.
+         WEN    : in std_logic;                            --! write enable.
+         CLK   : in std_logic;                            --! read clock.
+         RDATA  : out std_logic_vector (8 downto 0)  --! read data.
+      );
+   end component SpwBlockRam;
    
 
    -----------------------------------------------------------------------------

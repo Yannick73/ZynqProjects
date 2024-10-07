@@ -4,7 +4,7 @@
     "xci_name": "Test_Implementaiton_axi_mem_intercon_2",
     "cell_name": "axi_mem_intercon",
     "component_reference": "xilinx.com:ip:axi_interconnect:2.1",
-    "ip_revision": "32",
+    "ip_revision": "33",
     "gen_directory": "../../../../../../edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_axi_mem_intercon_2",
     "parameters": {
       "component_parameters": {
@@ -340,12 +340,12 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator_AppCore" } ],
-        "IPREVISION": [ { "value": "32" } ],
+        "IPREVISION": [ { "value": "33" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_axi_mem_intercon_2" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
-        "SWVERSION": [ { "value": "2024.1" } ],
+        "SWVERSION": [ { "value": "2024.1.2" } ],
         "SYNTHESISFLOW": [ { "value": "GLOBAL" } ]
       }
     }

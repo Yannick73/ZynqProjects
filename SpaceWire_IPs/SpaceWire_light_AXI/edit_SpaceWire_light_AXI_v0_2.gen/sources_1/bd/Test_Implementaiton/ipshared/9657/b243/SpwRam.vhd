@@ -141,6 +141,86 @@ begin
 
 end architecture SpwRam_rtl;
 
+
+--! standard library
+library ieee;
+--! IEEE standard logic package
+use ieee.std_logic_1164.all;
+
+--! IEEE standard numeric package
+use ieee.numeric_std.all;
+
+entity SpwBlockRam is 
+   generic ( 
+      ABITS : integer --! number of address bits.
+   );
+   port ( 
+      RADDR  : in std_logic_vector (ABITS-1 downto 0);  --! read address.
+      WADDR  : in std_logic_vector (ABITS-1 downto 0);  --! write address.
+      WDATA  : in std_logic_vector (8 downto 0);  --! write data.
+      WEN    : in std_logic;                            --! write enable.
+      CLK   : in std_logic;                            --! read clock.
+      RDATA  : out std_logic_vector (8 downto 0)  --! read data.
+   );
+end entity SpwBlockRam;
+
+--------------------------------------------------------------------------------
+-- Architecture SpwRam_rtl
+--! \brief  RTL implementation of a generic synchronous two-port RAM.
+--------------------------------------------------------------------------------
+architecture SpwBlockRam_rtl of SpwBlockRam is 
+   -----------------------------------------------------------------------------
+   -- spwram_definitions - contains the constants, types and subtypes used in the SpwRam unit.
+   -----------------------------------------------------------------------------
+   type mem_type is array(integer range <>) of std_logic_vector(8 downto 0);
+   signal s_mem : mem_type (0 to (2**ABITS - 1)) := (others => (others => '0')); --! memory described as an array of std_logic_vector.
+   signal raddr_buf : std_logic_vector(ABITS - 1 downto 0) := (others => '0');
+   
+--    -----------------------------------------------------------------------------
+--    -- Component SpwBlockRam
+--    --! \brief  Synchronous two-port RAM.
+--    -----------------------------------------------------------------------------
+--    component SpwBlockRam is 
+--      generic ( 
+--         ABITS : integer -- number of address bits.
+--      );
+--      port ( 
+--         RADDR  : in std_logic_vector (ABITS-1 downto 0);  --! read address.
+--         WADDR  : in std_logic_vector (ABITS-1 downto 0);  --! write address.
+--         WDATA  : in std_logic_vector (8 downto 0);  --! write data.
+--         WEN    : in std_logic;                            --! write enable.
+--         CLK   : in std_logic;                            --! read clock.
+--         RDATA  : out std_logic_vector (8 downto 0)  --! read data.
+--      );
+--    end component SpwBlockRam;
+
+begin
+   -----------------------------------------------------------------------------
+   -- READ
+    RDATA <= s_mem(to_integer(unsigned(raddr_buf)));
+
+   -----------------------------------------------------------------------------
+   -- Process write
+   --! \brief        Write operation.
+   --! \details      The process models the write operation.
+   --!               [sequential process]
+   --! - Sensitive To
+   --! \arg \ref     WCLK   - start the function (rising edge).
+   --! \arg \ref     WRST_N - write clock domain reset (active-low).
+   -----------------------------------------------------------------------------
+   process( CLK )
+   begin
+      if ( rising_edge(CLK) ) then
+         if ( WEN = '1' ) then
+            s_mem(to_integer(unsigned(WADDR))) <= WDATA;
+         end if; -- WEN
+         raddr_buf <= RADDR;
+      end if; -- rising_edge(WCLK)
+
+   end process;
+
+end architecture SpwBlockRam_rtl;
+
 --------------------------------------------------------------------------------
 -- end SpwRam.vhd
 --------------------------------------------------------------------------------

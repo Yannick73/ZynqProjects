@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Root MajorVersion="0" MinorVersion="43">
-  <CompositeFile CompositeFileTopName="Test_Implementaiton" CanBeSetAsTop="true" CanDisplayChildGraph="true">
+  <CompositeFile CompositeFileTopName="Test_Implementaiton" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1726594555"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1726594555"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1726594555"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1726594555"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1728332573"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1728332573"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1728332573"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1728332573"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="synth\Test_Implementaiton.vhd" Type="VHDL">
         <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
