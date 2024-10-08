@@ -2,7 +2,7 @@
 --Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
---Date        : Mon Oct  7 22:22:51 2024
+--Date        : Tue Oct  8 13:32:10 2024
 --Host        : DESKTOP-MEH5DGT running 64-bit major release  (build 9200)
 --Command     : generate_target Test_Implementaiton.bd
 --Design      : Test_Implementaiton
@@ -99,7 +99,7 @@ entity m00_couplers_imp_5VDXT1 is
 end m00_couplers_imp_5VDXT1;
 
 architecture STRUCTURE of m00_couplers_imp_5VDXT1 is
-  component Test_Implementaiton_auto_pc_0 is
+  component Test_Implementaiton_auto_pc_1 is
   port (
     aclk : in STD_LOGIC;
     aresetn : in STD_LOGIC;
@@ -181,7 +181,7 @@ architecture STRUCTURE of m00_couplers_imp_5VDXT1 is
     m_axi_rvalid : in STD_LOGIC;
     m_axi_rready : out STD_LOGIC
   );
-  end component Test_Implementaiton_auto_pc_0;
+  end component Test_Implementaiton_auto_pc_1;
   signal S_ACLK_1 : STD_LOGIC;
   signal S_ARESETN_1 : STD_LOGIC;
   signal auto_pc_to_m00_couplers_ARADDR : STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -341,7 +341,7 @@ begin
   m00_couplers_to_auto_pc_WLAST <= S_AXI_wlast;
   m00_couplers_to_auto_pc_WSTRB(3 downto 0) <= S_AXI_wstrb(3 downto 0);
   m00_couplers_to_auto_pc_WVALID <= S_AXI_wvalid;
-auto_pc: component Test_Implementaiton_auto_pc_0
+auto_pc: component Test_Implementaiton_auto_pc_1
      port map (
       aclk => S_ACLK_1,
       aresetn => S_ARESETN_1,
@@ -783,7 +783,7 @@ entity s00_couplers_imp_1O8KDY0 is
 end s00_couplers_imp_1O8KDY0;
 
 architecture STRUCTURE of s00_couplers_imp_1O8KDY0 is
-  component Test_Implementaiton_auto_pc_1 is
+  component Test_Implementaiton_auto_pc_0 is
   port (
     aclk : in STD_LOGIC;
     aresetn : in STD_LOGIC;
@@ -845,7 +845,7 @@ architecture STRUCTURE of s00_couplers_imp_1O8KDY0 is
     m_axi_rvalid : in STD_LOGIC;
     m_axi_rready : out STD_LOGIC
   );
-  end component Test_Implementaiton_auto_pc_1;
+  end component Test_Implementaiton_auto_pc_0;
   signal S_ACLK_1 : STD_LOGIC;
   signal S_ARESETN_1 : STD_LOGIC;
   signal auto_pc_to_s00_couplers_ARADDR : STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -965,7 +965,7 @@ begin
   s00_couplers_to_auto_pc_WLAST <= S_AXI_wlast;
   s00_couplers_to_auto_pc_WSTRB(3 downto 0) <= S_AXI_wstrb(3 downto 0);
   s00_couplers_to_auto_pc_WVALID <= S_AXI_wvalid;
-auto_pc: component Test_Implementaiton_auto_pc_1
+auto_pc: component Test_Implementaiton_auto_pc_0
      port map (
       aclk => S_ACLK_1,
       aresetn => S_ARESETN_1,
@@ -2363,7 +2363,7 @@ entity Test_Implementaiton is
     SPW_Sout : out STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of Test_Implementaiton : entity is "Test_Implementaiton,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=Test_Implementaiton,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=17,numReposBlks=9,numNonXlnxBlks=1,numHierBlks=8,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=18,da_board_cnt=5,da_clkrst_cnt=27,da_ps7_cnt=2,synth_mode=Hierarchical}";
+  attribute CORE_GENERATION_INFO of Test_Implementaiton : entity is "Test_Implementaiton,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=Test_Implementaiton,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=17,numReposBlks=9,numNonXlnxBlks=1,numHierBlks=8,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=19,da_board_cnt=6,da_clkrst_cnt=28,da_mb_cnt=2,da_ps7_cnt=2,synth_mode=Hierarchical}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of Test_Implementaiton : entity is "Test_Implementaiton.hwdef";
 end Test_Implementaiton;
@@ -2492,20 +2492,6 @@ architecture STRUCTURE of Test_Implementaiton is
     PS_PORB : inout STD_LOGIC
   );
   end component Test_Implementaiton_processing_system7_0_1;
-  component Test_Implementaiton_rst_ps7_0_100M_2 is
-  port (
-    slowest_sync_clk : in STD_LOGIC;
-    ext_reset_in : in STD_LOGIC;
-    aux_reset_in : in STD_LOGIC;
-    mb_debug_sys_rst : in STD_LOGIC;
-    dcm_locked : in STD_LOGIC;
-    mb_reset : out STD_LOGIC;
-    bus_struct_reset : out STD_LOGIC_VECTOR ( 0 to 0 );
-    peripheral_reset : out STD_LOGIC_VECTOR ( 0 to 0 );
-    interconnect_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 );
-    peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
-  );
-  end component Test_Implementaiton_rst_ps7_0_100M_2;
   component Test_Implementaiton_SpaceWire_light_AXI_0_2 is
   port (
     IRQ : out STD_LOGIC;
@@ -2628,6 +2614,20 @@ architecture STRUCTURE of Test_Implementaiton is
     SPW_core_clk : out STD_LOGIC
   );
   end component Test_Implementaiton_clk_wiz_0_0;
+  component Test_Implementaiton_rst_ps7_0_100M_2 is
+  port (
+    slowest_sync_clk : in STD_LOGIC;
+    ext_reset_in : in STD_LOGIC;
+    aux_reset_in : in STD_LOGIC;
+    mb_debug_sys_rst : in STD_LOGIC;
+    dcm_locked : in STD_LOGIC;
+    mb_reset : out STD_LOGIC;
+    bus_struct_reset : out STD_LOGIC_VECTOR ( 0 to 0 );
+    peripheral_reset : out STD_LOGIC_VECTOR ( 0 to 0 );
+    interconnect_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 );
+    peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
+  );
+  end component Test_Implementaiton_rst_ps7_0_100M_2;
   signal SPW_Di_1 : STD_LOGIC;
   signal SPW_Si_1 : STD_LOGIC;
   signal SpaceWire_light_AXI_0_AXI_StreamOut_TDATA : STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -2710,6 +2710,7 @@ architecture STRUCTURE of Test_Implementaiton is
   signal axi_mem_intercon_M00_AXI_WVALID : STD_LOGIC;
   signal clk_wiz_0_SPW_core_clk : STD_LOGIC;
   signal clk_wiz_0_TX_clk : STD_LOGIC;
+  signal microblaze_0_Clk : STD_LOGIC;
   signal processing_system7_0_DDR_ADDR : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal processing_system7_0_DDR_BA : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal processing_system7_0_DDR_CAS_N : STD_LOGIC;
@@ -2725,7 +2726,6 @@ architecture STRUCTURE of Test_Implementaiton is
   signal processing_system7_0_DDR_RAS_N : STD_LOGIC;
   signal processing_system7_0_DDR_RESET_N : STD_LOGIC;
   signal processing_system7_0_DDR_WE_N : STD_LOGIC;
-  signal processing_system7_0_FCLK_CLK0 : STD_LOGIC;
   signal processing_system7_0_FCLK_RESET0_N : STD_LOGIC;
   signal processing_system7_0_FIXED_IO_DDR_VRN : STD_LOGIC;
   signal processing_system7_0_FIXED_IO_DDR_VRP : STD_LOGIC;
@@ -2869,7 +2869,7 @@ SpaceWire_light_AXI_0: component Test_Implementaiton_SpaceWire_light_AXI_0_2
       SPW_TX_clk => clk_wiz_0_TX_clk,
       SPW_main_clk => clk_wiz_0_SPW_core_clk,
       SPW_rst => rst_ps7_0_100M_peripheral_aresetn(0),
-      axi_register_aclk => processing_system7_0_FCLK_CLK0,
+      axi_register_aclk => microblaze_0_Clk,
       axi_register_araddr(4 downto 0) => ps7_0_axi_periph_M01_AXI_ARADDR(4 downto 0),
       axi_register_aresetn => rst_ps7_0_100M_peripheral_aresetn(0),
       axi_register_arprot(2 downto 0) => ps7_0_axi_periph_M01_AXI_ARPROT(2 downto 0),
@@ -2890,14 +2890,14 @@ SpaceWire_light_AXI_0: component Test_Implementaiton_SpaceWire_light_AXI_0_2
       axi_register_wready => ps7_0_axi_periph_M01_AXI_WREADY,
       axi_register_wstrb(3 downto 0) => ps7_0_axi_periph_M01_AXI_WSTRB(3 downto 0),
       axi_register_wvalid => ps7_0_axi_periph_M01_AXI_WVALID(0),
-      axi_streamin_aclk => processing_system7_0_FCLK_CLK0,
+      axi_streamin_aclk => microblaze_0_Clk,
       axi_streamin_aresetn => rst_ps7_0_100M_peripheral_aresetn(0),
       axi_streamin_tdata(7 downto 0) => axi_dma_0_M_AXIS_MM2S_TDATA(7 downto 0),
       axi_streamin_tlast => axi_dma_0_M_AXIS_MM2S_TLAST,
       axi_streamin_tready => axi_dma_0_M_AXIS_MM2S_TREADY,
       axi_streamin_tstrb(0) => '1',
       axi_streamin_tvalid => axi_dma_0_M_AXIS_MM2S_TVALID,
-      axi_streamout_aclk => processing_system7_0_FCLK_CLK0,
+      axi_streamout_aclk => microblaze_0_Clk,
       axi_streamout_aresetn => rst_ps7_0_100M_peripheral_aresetn(0),
       axi_streamout_tdata(7 downto 0) => SpaceWire_light_AXI_0_AXI_StreamOut_TDATA(7 downto 0),
       axi_streamout_tlast => SpaceWire_light_AXI_0_AXI_StreamOut_TLAST,
@@ -2908,7 +2908,7 @@ SpaceWire_light_AXI_0: component Test_Implementaiton_SpaceWire_light_AXI_0_2
 axi_dma_0: component Test_Implementaiton_axi_dma_0_3
      port map (
       axi_resetn => rst_ps7_0_100M_peripheral_aresetn(0),
-      m_axi_mm2s_aclk => processing_system7_0_FCLK_CLK0,
+      m_axi_mm2s_aclk => microblaze_0_Clk,
       m_axi_mm2s_araddr(31 downto 0) => axi_dma_0_M_AXI_MM2S_ARADDR(31 downto 0),
       m_axi_mm2s_arburst(1 downto 0) => axi_dma_0_M_AXI_MM2S_ARBURST(1 downto 0),
       m_axi_mm2s_arcache(3 downto 0) => axi_dma_0_M_AXI_MM2S_ARCACHE(3 downto 0),
@@ -2922,7 +2922,7 @@ axi_dma_0: component Test_Implementaiton_axi_dma_0_3
       m_axi_mm2s_rready => axi_dma_0_M_AXI_MM2S_RREADY,
       m_axi_mm2s_rresp(1 downto 0) => axi_dma_0_M_AXI_MM2S_RRESP(1 downto 0),
       m_axi_mm2s_rvalid => axi_dma_0_M_AXI_MM2S_RVALID(0),
-      m_axi_s2mm_aclk => processing_system7_0_FCLK_CLK0,
+      m_axi_s2mm_aclk => microblaze_0_Clk,
       m_axi_s2mm_awaddr(31 downto 0) => axi_dma_0_M_AXI_S2MM_AWADDR(31 downto 0),
       m_axi_s2mm_awburst(1 downto 0) => axi_dma_0_M_AXI_S2MM_AWBURST(1 downto 0),
       m_axi_s2mm_awcache(3 downto 0) => axi_dma_0_M_AXI_S2MM_AWCACHE(3 downto 0),
@@ -2948,7 +2948,7 @@ axi_dma_0: component Test_Implementaiton_axi_dma_0_3
       mm2s_prmry_reset_out_n => NLW_axi_dma_0_mm2s_prmry_reset_out_n_UNCONNECTED,
       s2mm_introut => NLW_axi_dma_0_s2mm_introut_UNCONNECTED,
       s2mm_prmry_reset_out_n => NLW_axi_dma_0_s2mm_prmry_reset_out_n_UNCONNECTED,
-      s_axi_lite_aclk => processing_system7_0_FCLK_CLK0,
+      s_axi_lite_aclk => microblaze_0_Clk,
       s_axi_lite_araddr(9 downto 0) => ps7_0_axi_periph_M00_AXI_ARADDR(9 downto 0),
       s_axi_lite_arready => ps7_0_axi_periph_M00_AXI_ARREADY,
       s_axi_lite_arvalid => ps7_0_axi_periph_M00_AXI_ARVALID,
@@ -2973,9 +2973,9 @@ axi_dma_0: component Test_Implementaiton_axi_dma_0_3
     );
 axi_mem_intercon: entity work.Test_Implementaiton_axi_mem_intercon_2
      port map (
-      ACLK => processing_system7_0_FCLK_CLK0,
+      ACLK => microblaze_0_Clk,
       ARESETN => rst_ps7_0_100M_peripheral_aresetn(0),
-      M00_ACLK => processing_system7_0_FCLK_CLK0,
+      M00_ACLK => microblaze_0_Clk,
       M00_ARESETN => rst_ps7_0_100M_peripheral_aresetn(0),
       M00_AXI_araddr(31 downto 0) => axi_mem_intercon_M00_AXI_ARADDR(31 downto 0),
       M00_AXI_arburst(1 downto 0) => axi_mem_intercon_M00_AXI_ARBURST(1 downto 0),
@@ -3015,7 +3015,7 @@ axi_mem_intercon: entity work.Test_Implementaiton_axi_mem_intercon_2
       M00_AXI_wready => axi_mem_intercon_M00_AXI_WREADY,
       M00_AXI_wstrb(3 downto 0) => axi_mem_intercon_M00_AXI_WSTRB(3 downto 0),
       M00_AXI_wvalid => axi_mem_intercon_M00_AXI_WVALID,
-      S00_ACLK => processing_system7_0_FCLK_CLK0,
+      S00_ACLK => microblaze_0_Clk,
       S00_ARESETN => rst_ps7_0_100M_peripheral_aresetn(0),
       S00_AXI_araddr(31 downto 0) => axi_dma_0_M_AXI_MM2S_ARADDR(31 downto 0),
       S00_AXI_arburst(1 downto 0) => axi_dma_0_M_AXI_MM2S_ARBURST(1 downto 0),
@@ -3030,7 +3030,7 @@ axi_mem_intercon: entity work.Test_Implementaiton_axi_mem_intercon_2
       S00_AXI_rready(0) => axi_dma_0_M_AXI_MM2S_RREADY,
       S00_AXI_rresp(1 downto 0) => axi_dma_0_M_AXI_MM2S_RRESP(1 downto 0),
       S00_AXI_rvalid(0) => axi_dma_0_M_AXI_MM2S_RVALID(0),
-      S01_ACLK => processing_system7_0_FCLK_CLK0,
+      S01_ACLK => microblaze_0_Clk,
       S01_ARESETN => rst_ps7_0_100M_peripheral_aresetn(0),
       S01_AXI_awaddr(31 downto 0) => axi_dma_0_M_AXI_S2MM_AWADDR(31 downto 0),
       S01_AXI_awburst(1 downto 0) => axi_dma_0_M_AXI_S2MM_AWBURST(1 downto 0),
@@ -3053,7 +3053,7 @@ clk_wiz_0: component Test_Implementaiton_clk_wiz_0_0
      port map (
       SPW_core_clk => clk_wiz_0_SPW_core_clk,
       TX_clk => clk_wiz_0_TX_clk,
-      clk_in1 => processing_system7_0_FCLK_CLK0,
+      clk_in1 => microblaze_0_Clk,
       resetn => processing_system7_0_FCLK_RESET0_N
     );
 processing_system7_0: component Test_Implementaiton_processing_system7_0_1
@@ -3079,11 +3079,11 @@ processing_system7_0: component Test_Implementaiton_processing_system7_0_1
       ENET0_MDIO_MDC => NLW_processing_system7_0_ENET0_MDIO_MDC_UNCONNECTED,
       ENET0_MDIO_O => NLW_processing_system7_0_ENET0_MDIO_O_UNCONNECTED,
       ENET0_MDIO_T => NLW_processing_system7_0_ENET0_MDIO_T_UNCONNECTED,
-      FCLK_CLK0 => processing_system7_0_FCLK_CLK0,
+      FCLK_CLK0 => microblaze_0_Clk,
       FCLK_RESET0_N => processing_system7_0_FCLK_RESET0_N,
       IRQ_F2P(0) => SpaceWire_light_AXI_0_IRQ,
       MIO(53 downto 0) => FIXED_IO_mio(53 downto 0),
-      M_AXI_GP0_ACLK => processing_system7_0_FCLK_CLK0,
+      M_AXI_GP0_ACLK => microblaze_0_Clk,
       M_AXI_GP0_ARADDR(31 downto 0) => processing_system7_0_M_AXI_GP0_ARADDR(31 downto 0),
       M_AXI_GP0_ARBURST(1 downto 0) => processing_system7_0_M_AXI_GP0_ARBURST(1 downto 0),
       M_AXI_GP0_ARCACHE(3 downto 0) => processing_system7_0_M_AXI_GP0_ARCACHE(3 downto 0),
@@ -3126,7 +3126,7 @@ processing_system7_0: component Test_Implementaiton_processing_system7_0_1
       PS_PORB => FIXED_IO_ps_porb,
       PS_SRSTB => FIXED_IO_ps_srstb,
       SDIO0_WP => '0',
-      S_AXI_HP0_ACLK => processing_system7_0_FCLK_CLK0,
+      S_AXI_HP0_ACLK => microblaze_0_Clk,
       S_AXI_HP0_ARADDR(31 downto 0) => axi_mem_intercon_M00_AXI_ARADDR(31 downto 0),
       S_AXI_HP0_ARBURST(1 downto 0) => axi_mem_intercon_M00_AXI_ARBURST(1 downto 0),
       S_AXI_HP0_ARCACHE(3 downto 0) => axi_mem_intercon_M00_AXI_ARCACHE(3 downto 0),
@@ -3183,9 +3183,9 @@ processing_system7_0: component Test_Implementaiton_processing_system7_0_1
     );
 ps7_0_axi_periph: entity work.Test_Implementaiton_ps7_0_axi_periph_1
      port map (
-      ACLK => processing_system7_0_FCLK_CLK0,
+      ACLK => microblaze_0_Clk,
       ARESETN => rst_ps7_0_100M_peripheral_aresetn(0),
-      M00_ACLK => processing_system7_0_FCLK_CLK0,
+      M00_ACLK => microblaze_0_Clk,
       M00_ARESETN => rst_ps7_0_100M_peripheral_aresetn(0),
       M00_AXI_araddr(31 downto 0) => ps7_0_axi_periph_M00_AXI_ARADDR(31 downto 0),
       M00_AXI_arready => ps7_0_axi_periph_M00_AXI_ARREADY,
@@ -3203,7 +3203,7 @@ ps7_0_axi_periph: entity work.Test_Implementaiton_ps7_0_axi_periph_1
       M00_AXI_wdata(31 downto 0) => ps7_0_axi_periph_M00_AXI_WDATA(31 downto 0),
       M00_AXI_wready => ps7_0_axi_periph_M00_AXI_WREADY,
       M00_AXI_wvalid => ps7_0_axi_periph_M00_AXI_WVALID,
-      M01_ACLK => processing_system7_0_FCLK_CLK0,
+      M01_ACLK => microblaze_0_Clk,
       M01_ARESETN => rst_ps7_0_100M_peripheral_aresetn(0),
       M01_AXI_araddr(31 downto 0) => ps7_0_axi_periph_M01_AXI_ARADDR(31 downto 0),
       M01_AXI_arprot(2 downto 0) => ps7_0_axi_periph_M01_AXI_ARPROT(2 downto 0),
@@ -3224,7 +3224,7 @@ ps7_0_axi_periph: entity work.Test_Implementaiton_ps7_0_axi_periph_1
       M01_AXI_wready(0) => ps7_0_axi_periph_M01_AXI_WREADY,
       M01_AXI_wstrb(3 downto 0) => ps7_0_axi_periph_M01_AXI_WSTRB(3 downto 0),
       M01_AXI_wvalid(0) => ps7_0_axi_periph_M01_AXI_WVALID(0),
-      S00_ACLK => processing_system7_0_FCLK_CLK0,
+      S00_ACLK => microblaze_0_Clk,
       S00_ARESETN => rst_ps7_0_100M_peripheral_aresetn(0),
       S00_AXI_araddr(31 downto 0) => processing_system7_0_M_AXI_GP0_ARADDR(31 downto 0),
       S00_AXI_arburst(1 downto 0) => processing_system7_0_M_AXI_GP0_ARBURST(1 downto 0),
@@ -3276,6 +3276,6 @@ rst_ps7_0_100M: component Test_Implementaiton_rst_ps7_0_100M_2
       mb_reset => NLW_rst_ps7_0_100M_mb_reset_UNCONNECTED,
       peripheral_aresetn(0) => rst_ps7_0_100M_peripheral_aresetn(0),
       peripheral_reset(0) => NLW_rst_ps7_0_100M_peripheral_reset_UNCONNECTED(0),
-      slowest_sync_clk => processing_system7_0_FCLK_CLK0
+      slowest_sync_clk => microblaze_0_Clk
     );
 end STRUCTURE;

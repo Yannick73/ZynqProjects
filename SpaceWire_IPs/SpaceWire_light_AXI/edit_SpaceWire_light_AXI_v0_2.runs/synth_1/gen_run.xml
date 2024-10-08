@@ -1,35 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1728333090" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/SpaceWire_light_AXI.dcp">
-  <File Type="PA-TCL" Name="Test_Implementaiton_wrapper.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="Test_Implementaiton_wrapper_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="Test_Implementaiton_wrapper_reports.tcl"/>
-  <File Type="RDS-RDS" Name="Test_Implementaiton_wrapper.vds"/>
-  <File Type="RDS-UTIL" Name="Test_Implementaiton_wrapper_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="Test_Implementaiton_wrapper_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="Test_Implementaiton_wrapper.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="Test_Implementaiton_wrapper_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="Test_Implementaiton_wrapper_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1728411032" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/SpaceWire_light_AXI.dcp">
+  <File Type="PA-TCL" Name="SPW_ZynqSetup_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="SPW_ZynqSetup_wrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="SPW_ZynqSetup_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="SPW_ZynqSetup_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="SPW_ZynqSetup_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="SPW_ZynqSetup_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="SPW_ZynqSetup_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="SPW_ZynqSetup_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="SPW_ZynqSetup_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/bd/Test_Implementaiton/Test_Implementaiton.bd">
+    <File Path="$PSRCDIR/sources_1/bd/SPW_ZynqSetup/SPW_ZynqSetup.bd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/SpaceWire_light_AXI_0_2/component.xml">
-      <FileInfo SFType="IPXACT"/>
-    </File>
-    <File Path="$PGENDIR/sources_1/bd/Test_Implementaiton/hdl/Test_Implementaiton_wrapper.vhd">
+    <File Path="$PGENDIR/sources_1/bd/SPW_ZynqSetup/hdl/SPW_ZynqSetup_wrapper.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PPRDIR/SpaceWire_light_AXI_0_2/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
     <File Path="$PPRDIR/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd">
       <FileInfo>
         <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -37,6 +38,7 @@
     <File Path="$PPRDIR/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd">
       <FileInfo>
         <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -44,6 +46,7 @@
     <File Path="$PPRDIR/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd">
       <FileInfo>
         <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -51,6 +54,7 @@
     <File Path="$PPRDIR/SpaceWire_light_AXI_0_2/hdl/SpaceWire_light_AXI.vhd">
       <FileInfo>
         <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -58,6 +62,7 @@
     <File Path="$PSRCDIR/SpwStream_improved/SpwXmit_fast/SpwXmit_fast_pkg.vhd">
       <FileInfo>
         <Attr Name="Library" Val="SPWIP"/>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -65,6 +70,7 @@
     <File Path="$PSRCDIR/SpwStream_improved/SpwXmit_fast/SpwXmit_fast.vhd">
       <FileInfo>
         <Attr Name="Library" Val="SPWIP"/>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -72,6 +78,7 @@
     <File Path="$PSRCDIR/SpwStream_improved/Definitions/ModuleMap_pkg.vhd">
       <FileInfo>
         <Attr Name="Library" Val="SPWIP"/>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -79,6 +86,7 @@
     <File Path="$PSRCDIR/SpwStream_improved/SpwRecovClk.vhd">
       <FileInfo>
         <Attr Name="Library" Val="SPWIP"/>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -86,6 +94,7 @@
     <File Path="$PSRCDIR/SpwStream_improved/Definitions/SpwProtocol_pkg.vhd">
       <FileInfo>
         <Attr Name="Library" Val="SPWIP"/>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -93,6 +102,7 @@
     <File Path="$PSRCDIR/SpwStream_improved/Definitions/SpwRegisters_pkg.vhd">
       <FileInfo>
         <Attr Name="Library" Val="SPWIP"/>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -100,6 +110,7 @@
     <File Path="$PSRCDIR/SpwStream_improved/SpwXmit_fast/SyncDff.vhd">
       <FileInfo>
         <Attr Name="Library" Val="SPWIP"/>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -107,6 +118,7 @@
     <File Path="$PSRCDIR/SpwStream_improved/SpwLink.vhd">
       <FileInfo>
         <Attr Name="Library" Val="SPWIP"/>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -114,6 +126,7 @@
     <File Path="$PSRCDIR/SpwStream_improved/SpwRecv.vhd">
       <FileInfo>
         <Attr Name="Library" Val="SPWIP"/>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -121,6 +134,7 @@
     <File Path="$PSRCDIR/SpwStream_improved/SpwReset.vhd">
       <FileInfo>
         <Attr Name="Library" Val="SPWIP"/>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -128,6 +142,7 @@
     <File Path="$PSRCDIR/SpwStream_improved/SpwRecvFront/SpwRecvFront_pkg.vhd">
       <FileInfo>
         <Attr Name="Library" Val="SPWIP"/>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -135,6 +150,7 @@
     <File Path="$PSRCDIR/SpwStream_improved/SpwStream.vhd">
       <FileInfo>
         <Attr Name="Library" Val="SPWIP"/>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -142,6 +158,7 @@
     <File Path="$PSRCDIR/SpwStream_improved/SpwStream_pkg.vhd">
       <FileInfo>
         <Attr Name="Library" Val="SPWIP"/>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -149,6 +166,7 @@
     <File Path="$PSRCDIR/SpwStream_improved/SpwRecvFront/SpwRecvFrontXor.vhd">
       <FileInfo>
         <Attr Name="Library" Val="SPWIP"/>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -156,13 +174,14 @@
     <File Path="$PSRCDIR/SpwStream_improved/SpwRam.vhd">
       <FileInfo>
         <Attr Name="Library" Val="SPWIP"/>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="Test_Implementaiton_wrapper"/>
+      <Option Name="TopModule" Val="SPW_ZynqSetup_wrapper"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
@@ -202,11 +221,7 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="Test_Implementaiton_processing_system7_0_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="Test_Implementaiton_SpaceWire_light_AXI_0_2"/>
-  <BlockFileSet Type="BlockSrcs" Name="Test_Implementaiton_rst_ps7_0_100M_2"/>
-  <BlockFileSet Type="BlockSrcs" Name="Test_Implementaiton_xbar_5"/>
-  <BlockFileSet Type="BlockSrcs" Name="Test_Implementaiton_clk_wiz_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Test_Implementaiton_axi_dma_0_3"/>
-  <BlockFileSet Type="BlockSrcs" Name="Test_Implementaiton_xbar_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="SPW_ZynqSetup_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="SPW_ZynqSetup_clk_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="SPW_ZynqSetup_SpaceWire_light_AXI_0_0"/>
 </GenRun>

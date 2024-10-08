@@ -2,7 +2,7 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
--- Date        : Mon Oct  7 22:24:20 2024
+-- Date        : Tue Oct  8 13:34:16 2024
 -- Host        : DESKTOP-MEH5DGT running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_SpaceWire_light_AXI_0_2/Test_Implementaiton_SpaceWire_light_AXI_0_2_sim_netlist.vhdl
@@ -79,8 +79,8 @@ architecture STRUCTURE of Test_Implementaiton_SpaceWire_light_AXI_0_2_SpaceWire_
   signal send_escape : STD_LOGIC;
   signal send_escape_i_1_n_0 : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \M_AXIS_TDATA[7]__0_i_1\ : label is "soft_lutpair84";
-  attribute SOFT_HLUTNM of M_AXIS_TVALID_i_1 : label is "soft_lutpair84";
+  attribute SOFT_HLUTNM of \M_AXIS_TDATA[7]__0_i_1\ : label is "soft_lutpair85";
+  attribute SOFT_HLUTNM of M_AXIS_TVALID_i_1 : label is "soft_lutpair85";
 begin
   SPW_RXREAD <= \^spw_rxread\;
   axi_streamout_tdata(7 downto 0) <= \^axi_streamout_tdata\(7 downto 0);
@@ -1178,10 +1178,10 @@ architecture STRUCTURE of Test_Implementaiton_SpaceWire_light_AXI_0_2_SpaceWire_
   signal txflag_fifo : STD_LOGIC;
   signal txflag_fifo_i_1_n_0 : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \char_fifo[2]_i_1\ : label is "soft_lutpair85";
-  attribute SOFT_HLUTNM of \char_fifo[3]_i_1\ : label is "soft_lutpair86";
-  attribute SOFT_HLUTNM of \char_fifo[4]_i_1\ : label is "soft_lutpair86";
-  attribute SOFT_HLUTNM of \char_fifo[6]_i_3\ : label is "soft_lutpair85";
+  attribute SOFT_HLUTNM of \char_fifo[2]_i_1\ : label is "soft_lutpair86";
+  attribute SOFT_HLUTNM of \char_fifo[3]_i_1\ : label is "soft_lutpair87";
+  attribute SOFT_HLUTNM of \char_fifo[4]_i_1\ : label is "soft_lutpair87";
+  attribute SOFT_HLUTNM of \char_fifo[6]_i_3\ : label is "soft_lutpair86";
 begin
   SPW_TXWRITE <= \^spw_txwrite\;
 \SPW_TXFIFO_reg[0]\: unisim.vcomponents.FDRE
@@ -2366,11 +2366,12 @@ entity Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwLink is
   port (
     \state_seq_reg[timerdone]__0\ : out STD_LOGIC;
     \xmiti[fct_in]\ : out STD_LOGIC;
+    \state_seq_reg[errcred]__0\ : out STD_LOGIC;
     recv_rxen : out STD_LOGIC;
+    \state_seq_reg[timercnt][9]_0\ : out STD_LOGIC;
     \FSM_onehot_state_seq_reg[state][3]_0\ : out STD_LOGIC;
     \FSM_onehot_state_seq_reg[state][5]_0\ : out STD_LOGIC_VECTOR ( 3 downto 0 );
     \FSM_onehot_state_seq_reg[state][1]_0\ : out STD_LOGIC;
-    \state_seq_reg[timercnt][6]_0\ : out STD_LOGIC;
     \vres[txdiscard]\ : out STD_LOGIC;
     \vres[txpacket]5_out\ : out STD_LOGIC;
     E : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -2391,15 +2392,15 @@ entity Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwLink is
     Q : in STD_LOGIC_VECTOR ( 5 downto 0 );
     \state_seq_reg[rx_null_fct]_0\ : in STD_LOGIC;
     \recvo[gotfct]\ : in STD_LOGIC;
+    \state_seq_reg[timerdone]_0\ : in STD_LOGIC;
     \recvo[gotnull]\ : in STD_LOGIC;
     \FSM_onehot_state_seq_reg[state][0]_0\ : in STD_LOGIC;
     \FSM_onehot_state_seq_reg[state][0]_1\ : in STD_LOGIC;
     \FSM_onehot_state_seq_reg[state][0]_2\ : in STD_LOGIC;
-    \state_seq_reg[timercnt][0]_0\ : in STD_LOGIC;
-    \recvo[rxchar]\ : in STD_LOGIC;
     \recvo[tick_out]\ : in STD_LOGIC;
     \res_seq_reg[allow_fct]__0\ : in STD_LOGIC;
     \res_seq_reg[pend_fct]__0\ : in STD_LOGIC;
+    \recvo[rxchar]\ : in STD_LOGIC;
     \res_seq_reg[txdiscard]_0\ : in STD_LOGIC;
     D : in STD_LOGIC_VECTOR ( 0 to 0 );
     \res_seq_reg[txdiscard]_1\ : in STD_LOGIC;
@@ -2431,10 +2432,10 @@ architecture STRUCTURE of Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwLink is
   signal \FSM_onehot_state_seq[state][0]_i_1_n_0\ : STD_LOGIC;
   signal \FSM_onehot_state_seq[state][1]_i_1_n_0\ : STD_LOGIC;
   signal \FSM_onehot_state_seq[state][5]_i_10_n_0\ : STD_LOGIC;
+  signal \FSM_onehot_state_seq[state][5]_i_12_n_0\ : STD_LOGIC;
   signal \FSM_onehot_state_seq[state][5]_i_1_n_0\ : STD_LOGIC;
-  signal \FSM_onehot_state_seq[state][5]_i_3_n_0\ : STD_LOGIC;
   signal \FSM_onehot_state_seq[state][5]_i_4_n_0\ : STD_LOGIC;
-  signal \FSM_onehot_state_seq[state][5]_i_5_n_0\ : STD_LOGIC;
+  signal \FSM_onehot_state_seq[state][5]_i_6_n_0\ : STD_LOGIC;
   signal \FSM_onehot_state_seq[state][5]_i_7_n_0\ : STD_LOGIC;
   signal \^fsm_onehot_state_seq_reg[state][1]_0\ : STD_LOGIC;
   signal \^fsm_onehot_state_seq_reg[state][5]_0\ : STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -2457,7 +2458,7 @@ architecture STRUCTURE of Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwLink is
   signal \res_seq[txfull]_i_3_n_0\ : STD_LOGIC;
   signal \^res_seq_reg[txdiscard]\ : STD_LOGIC;
   signal \^res_seq_reg[txfiforoom][12]\ : STD_LOGIC_VECTOR ( 12 downto 0 );
-  signal \state_com[timercnt]\ : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal \state_com[timercnt]\ : STD_LOGIC_VECTOR ( 9 downto 0 );
   signal \state_seq[errcred]_i_1_n_0\ : STD_LOGIC;
   signal \state_seq[errcred]_i_2_n_0\ : STD_LOGIC;
   signal \state_seq[errcred]_i_3_n_0\ : STD_LOGIC;
@@ -2465,11 +2466,17 @@ architecture STRUCTURE of Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwLink is
   signal \state_seq[errcred]_i_5_n_0\ : STD_LOGIC;
   signal \state_seq[rx_null_fct]_i_1_n_0\ : STD_LOGIC;
   signal \state_seq[rxen]_i_1_n_0\ : STD_LOGIC;
+  signal \state_seq[timercnt][1]_i_2_n_0\ : STD_LOGIC;
   signal \state_seq[timercnt][2]_i_2_n_0\ : STD_LOGIC;
   signal \state_seq[timercnt][3]_i_2_n_0\ : STD_LOGIC;
   signal \state_seq[timercnt][4]_i_2_n_0\ : STD_LOGIC;
   signal \state_seq[timercnt][5]_i_2_n_0\ : STD_LOGIC;
+  signal \state_seq[timercnt][6]_i_2_n_0\ : STD_LOGIC;
   signal \state_seq[timercnt][7]_i_2_n_0\ : STD_LOGIC;
+  signal \state_seq[timercnt][8]_i_2_n_0\ : STD_LOGIC;
+  signal \state_seq[timercnt][9]_i_2_n_0\ : STD_LOGIC;
+  signal \state_seq[timercnt][9]_i_3_n_0\ : STD_LOGIC;
+  signal \state_seq[timercnt][9]_i_4_n_0\ : STD_LOGIC;
   signal \state_seq[timerdone]_i_1_n_0\ : STD_LOGIC;
   signal \state_seq[tx_credit][0]_i_1_n_0\ : STD_LOGIC;
   signal \state_seq[tx_credit][1]_i_1_n_0\ : STD_LOGIC;
@@ -2483,10 +2490,10 @@ architecture STRUCTURE of Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwLink is
   signal \state_seq[tx_credit][5]_i_4_n_0\ : STD_LOGIC;
   signal \state_seq[xmit_fct_in]_i_1_n_0\ : STD_LOGIC;
   signal \state_seq[xmit_fct_in]_i_2_n_0\ : STD_LOGIC;
-  signal \state_seq_reg[errcred]__0\ : STD_LOGIC;
+  signal \^state_seq_reg[errcred]__0\ : STD_LOGIC;
   signal \state_seq_reg[rx_credit]\ : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal \state_seq_reg[rx_null_fct]__0\ : STD_LOGIC;
-  signal \^state_seq_reg[timercnt][6]_0\ : STD_LOGIC;
+  signal \^state_seq_reg[timercnt][9]_0\ : STD_LOGIC;
   signal \state_seq_reg[timercnt_n_0_][0]\ : STD_LOGIC;
   signal \state_seq_reg[timercnt_n_0_][1]\ : STD_LOGIC;
   signal \state_seq_reg[timercnt_n_0_][2]\ : STD_LOGIC;
@@ -2495,6 +2502,8 @@ architecture STRUCTURE of Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwLink is
   signal \state_seq_reg[timercnt_n_0_][5]\ : STD_LOGIC;
   signal \state_seq_reg[timercnt_n_0_][6]\ : STD_LOGIC;
   signal \state_seq_reg[timercnt_n_0_][7]\ : STD_LOGIC;
+  signal \state_seq_reg[timercnt_n_0_][8]\ : STD_LOGIC;
+  signal \state_seq_reg[timercnt_n_0_][9]\ : STD_LOGIC;
   signal \^state_seq_reg[timerdone]__0\ : STD_LOGIC;
   signal \state_seq_reg[tx_credit]\ : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal \^state_seq_reg[tx_credit][3]_0\ : STD_LOGIC;
@@ -2525,6 +2534,9 @@ architecture STRUCTURE of Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwLink is
   signal \NLW_vstate[rx_credit]0_carry__0_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
   attribute SOFT_HLUTNM : string;
   attribute SOFT_HLUTNM of \FSM_onehot_state_seq[state][0]_i_1\ : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of \FSM_onehot_state_seq[state][1]_i_1\ : label is "soft_lutpair10";
+  attribute SOFT_HLUTNM of \FSM_onehot_state_seq[state][5]_i_10\ : label is "soft_lutpair6";
+  attribute SOFT_HLUTNM of \FSM_onehot_state_seq[state][5]_i_7\ : label is "soft_lutpair10";
   attribute FSM_ENCODED_STATES : string;
   attribute FSM_ENCODED_STATES of \FSM_onehot_state_seq_reg[state][0]\ : label is "s_errorwait:100000,s_ready:010000,s_started:001000,s_connecting:000100,s_run:000010,s_errorreset:000001";
   attribute FSM_ENCODED_STATES of \FSM_onehot_state_seq_reg[state][1]\ : label is "s_errorwait:100000,s_ready:010000,s_started:001000,s_connecting:000100,s_run:000010,s_errorreset:000001";
@@ -2532,33 +2544,34 @@ architecture STRUCTURE of Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwLink is
   attribute FSM_ENCODED_STATES of \FSM_onehot_state_seq_reg[state][3]\ : label is "s_errorwait:100000,s_ready:010000,s_started:001000,s_connecting:000100,s_run:000010,s_errorreset:000001";
   attribute FSM_ENCODED_STATES of \FSM_onehot_state_seq_reg[state][4]\ : label is "s_errorwait:100000,s_ready:010000,s_started:001000,s_connecting:000100,s_run:000010,s_errorreset:000001";
   attribute FSM_ENCODED_STATES of \FSM_onehot_state_seq_reg[state][5]\ : label is "s_errorwait:100000,s_ready:010000,s_started:001000,s_connecting:000100,s_run:000010,s_errorreset:000001";
-  attribute SOFT_HLUTNM of \res_seq[allow_char]_i_1\ : label is "soft_lutpair6";
+  attribute SOFT_HLUTNM of \res_seq[allow_char]_i_1\ : label is "soft_lutpair7";
   attribute SOFT_HLUTNM of \res_seq[allow_fct]_i_1\ : label is "soft_lutpair5";
-  attribute SOFT_HLUTNM of \res_seq[bitcntp_gray][2]_i_1\ : label is "soft_lutpair13";
-  attribute SOFT_HLUTNM of \res_seq[bitcntp_gray][3]_i_1\ : label is "soft_lutpair13";
-  attribute SOFT_HLUTNM of \res_seq[bitshift][8]_i_1\ : label is "soft_lutpair10";
-  attribute SOFT_HLUTNM of \res_seq[inbvalid]_i_1\ : label is "soft_lutpair10";
-  attribute SOFT_HLUTNM of \res_seq[pend_data][8]_i_1\ : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of \res_seq[token1][fctpiggy]_i_4\ : label is "soft_lutpair6";
+  attribute SOFT_HLUTNM of \res_seq[bitcntp_gray][1]_i_1\ : label is "soft_lutpair15";
+  attribute SOFT_HLUTNM of \res_seq[bitcntp_gray][2]_i_1\ : label is "soft_lutpair15";
+  attribute SOFT_HLUTNM of \res_seq[bitcntp_gray][3]_i_1\ : label is "soft_lutpair14";
+  attribute SOFT_HLUTNM of \res_seq[bitshift][8]_i_1\ : label is "soft_lutpair11";
+  attribute SOFT_HLUTNM of \res_seq[inbvalid]_i_1\ : label is "soft_lutpair11";
+  attribute SOFT_HLUTNM of \res_seq[pend_data][8]_i_1\ : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of \res_seq[token1][fctpiggy]_i_4\ : label is "soft_lutpair7";
   attribute SOFT_HLUTNM of \res_seq[txfifo_rvalid]_i_1\ : label is "soft_lutpair3";
   attribute SOFT_HLUTNM of \res_seq[txfiforoom][12]_i_1\ : label is "soft_lutpair3";
-  attribute SOFT_HLUTNM of \reset_reg[1]_i_2\ : label is "soft_lutpair4";
-  attribute SOFT_HLUTNM of \state_seq[errcred]_i_1\ : label is "soft_lutpair8";
-  attribute SOFT_HLUTNM of \state_seq[errcred]_i_4\ : label is "soft_lutpair7";
-  attribute SOFT_HLUTNM of \state_seq[rx_credit][1]_i_1\ : label is "soft_lutpair12";
-  attribute SOFT_HLUTNM of \state_seq[rx_credit][2]_i_1\ : label is "soft_lutpair12";
-  attribute SOFT_HLUTNM of \state_seq[rx_credit][3]_i_1\ : label is "soft_lutpair11";
-  attribute SOFT_HLUTNM of \state_seq[rx_credit][4]_i_1\ : label is "soft_lutpair11";
-  attribute SOFT_HLUTNM of \state_seq[rx_credit][5]_i_1\ : label is "soft_lutpair8";
-  attribute SOFT_HLUTNM of \state_seq[rxen]_i_1\ : label is "soft_lutpair4";
-  attribute SOFT_HLUTNM of \state_seq[timercnt][2]_i_2\ : label is "soft_lutpair9";
-  attribute SOFT_HLUTNM of \state_seq[timercnt][3]_i_2\ : label is "soft_lutpair9";
-  attribute SOFT_HLUTNM of \state_seq[timercnt][4]_i_2\ : label is "soft_lutpair2";
-  attribute SOFT_HLUTNM of \state_seq[timercnt][5]_i_2\ : label is "soft_lutpair2";
-  attribute SOFT_HLUTNM of \state_seq[tx_credit][0]_i_1\ : label is "soft_lutpair1";
-  attribute SOFT_HLUTNM of \state_seq[tx_credit][1]_i_1\ : label is "soft_lutpair1";
-  attribute SOFT_HLUTNM of \state_seq[tx_credit][3]_i_2\ : label is "soft_lutpair7";
-  attribute SOFT_HLUTNM of \state_seq[tx_credit][4]_i_1\ : label is "soft_lutpair0";
+  attribute SOFT_HLUTNM of \reset_reg[1]_i_2\ : label is "soft_lutpair14";
+  attribute SOFT_HLUTNM of \state_seq[errcred]_i_1\ : label is "soft_lutpair9";
+  attribute SOFT_HLUTNM of \state_seq[errcred]_i_4\ : label is "soft_lutpair8";
+  attribute SOFT_HLUTNM of \state_seq[rx_credit][1]_i_1\ : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of \state_seq[rx_credit][2]_i_1\ : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of \state_seq[rx_credit][3]_i_1\ : label is "soft_lutpair12";
+  attribute SOFT_HLUTNM of \state_seq[rx_credit][4]_i_1\ : label is "soft_lutpair12";
+  attribute SOFT_HLUTNM of \state_seq[rx_credit][5]_i_1\ : label is "soft_lutpair9";
+  attribute SOFT_HLUTNM of \state_seq[timercnt][1]_i_2\ : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of \state_seq[timercnt][2]_i_2\ : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of \state_seq[timercnt][3]_i_2\ : label is "soft_lutpair0";
+  attribute SOFT_HLUTNM of \state_seq[timercnt][8]_i_3\ : label is "soft_lutpair6";
+  attribute SOFT_HLUTNM of \state_seq[timercnt][9]_i_4\ : label is "soft_lutpair0";
+  attribute SOFT_HLUTNM of \state_seq[tx_credit][0]_i_1\ : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of \state_seq[tx_credit][1]_i_1\ : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of \state_seq[tx_credit][3]_i_2\ : label is "soft_lutpair8";
+  attribute SOFT_HLUTNM of \state_seq[tx_credit][4]_i_1\ : label is "soft_lutpair1";
   attribute ADDER_THRESHOLD : integer;
   attribute ADDER_THRESHOLD of \vstate[rx_credit]0_carry\ : label is 35;
   attribute ADDER_THRESHOLD of \vstate[rx_credit]0_carry__0\ : label is 35;
@@ -2568,7 +2581,8 @@ begin
   recv_rxen <= \^recv_rxen\;
   \res_seq_reg[txdiscard]\ <= \^res_seq_reg[txdiscard]\;
   \res_seq_reg[txfiforoom][12]\(12 downto 0) <= \^res_seq_reg[txfiforoom][12]\(12 downto 0);
-  \state_seq_reg[timercnt][6]_0\ <= \^state_seq_reg[timercnt][6]_0\;
+  \state_seq_reg[errcred]__0\ <= \^state_seq_reg[errcred]__0\;
+  \state_seq_reg[timercnt][9]_0\ <= \^state_seq_reg[timercnt][9]_0\;
   \state_seq_reg[timerdone]__0\ <= \^state_seq_reg[timerdone]__0\;
   \state_seq_reg[tx_credit][3]_0\ <= \^state_seq_reg[tx_credit][3]_0\;
   \xmiti[fct_in]\ <= \^xmiti[fct_in]\;
@@ -2577,7 +2591,7 @@ begin
       INIT => X"FFAE"
     )
         port map (
-      I0 => \FSM_onehot_state_seq[state][5]_i_5_n_0\,
+      I0 => \FSM_onehot_state_seq[state][5]_i_6_n_0\,
       I1 => p_0_in9_in,
       I2 => \state_seq_reg[rx_null_fct]_0\,
       I3 => \^fsm_onehot_state_seq_reg[state][5]_0\(0),
@@ -2594,42 +2608,40 @@ begin
     );
 \FSM_onehot_state_seq[state][5]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"FFFFFFFFFFFFFFE0"
+      INIT => X"FFFFFFF4FFFFFFFF"
     )
         port map (
-      I0 => \state_seq_reg[rx_null_fct]__0\,
-      I1 => \recvo[gotfct]\,
-      I2 => p_0_in9_in,
-      I3 => \FSM_onehot_state_seq[state][5]_i_3_n_0\,
-      I4 => \FSM_onehot_state_seq[state][5]_i_4_n_0\,
-      I5 => \FSM_onehot_state_seq[state][5]_i_5_n_0\,
+      I0 => \state_seq_reg[rx_null_fct]_0\,
+      I1 => p_0_in9_in,
+      I2 => \FSM_onehot_state_seq[state][5]_i_4_n_0\,
+      I3 => \state_seq_reg[timerdone]_0\,
+      I4 => \FSM_onehot_state_seq[state][5]_i_6_n_0\,
+      I5 => \FSM_onehot_state_seq[state][5]_i_7_n_0\,
       O => \FSM_onehot_state_seq[state][5]_i_1_n_0\
     );
-\FSM_onehot_state_seq[state][5]_i_10\: unisim.vcomponents.LUT2
+\FSM_onehot_state_seq[state][5]_i_10\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"AAEA"
+    )
+        port map (
+      I0 => \recvo[tick_out]\,
+      I1 => \^state_seq_reg[timerdone]__0\,
+      I2 => \state_seq[timercnt][9]_i_2_n_0\,
+      I3 => \state_seq_reg[timercnt_n_0_][9]\,
+      O => \FSM_onehot_state_seq[state][5]_i_10_n_0\
+    );
+\FSM_onehot_state_seq[state][5]_i_12\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"E"
     )
         port map (
       I0 => \^fsm_onehot_state_seq_reg[state][5]_0\(2),
       I1 => \^fsm_onehot_state_seq_reg[state][5]_0\(3),
-      O => \FSM_onehot_state_seq[state][5]_i_10_n_0\
-    );
-\FSM_onehot_state_seq[state][5]_i_3\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"FFFFFFF8C8C8C8C8"
-    )
-        port map (
-      I0 => \state_seq_reg[errcred]__0\,
-      I1 => \^fsm_onehot_state_seq_reg[state][5]_0\(0),
-      I2 => \state_seq_reg[timercnt][0]_0\,
-      I3 => \recvo[rxchar]\,
-      I4 => \FSM_onehot_state_seq[state][5]_i_7_n_0\,
-      I5 => p_0_in9_in,
-      O => \FSM_onehot_state_seq[state][5]_i_3_n_0\
+      O => \FSM_onehot_state_seq[state][5]_i_12_n_0\
     );
 \FSM_onehot_state_seq[state][5]_i_4\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"F000F000FFFFF888"
+      INIT => X"FFFFF888F000F000"
     )
         port map (
       I0 => \^state_seq_reg[timerdone]__0\,
@@ -2637,30 +2649,30 @@ begin
       I2 => \recvo[gotnull]\,
       I3 => \^fsm_onehot_state_seq_reg[state][5]_0\(1),
       I4 => \FSM_onehot_state_seq_reg[state_n_0_][0]\,
-      I5 => \^state_seq_reg[timercnt][6]_0\,
+      I5 => \^state_seq_reg[timercnt][9]_0\,
       O => \FSM_onehot_state_seq[state][5]_i_4_n_0\
     );
-\FSM_onehot_state_seq[state][5]_i_5\: unisim.vcomponents.LUT6
+\FSM_onehot_state_seq[state][5]_i_6\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"FFFFA8FFA8AAA8AA"
     )
         port map (
       I0 => \^fsm_onehot_state_seq_reg[state][5]_0\(1),
       I1 => \FSM_onehot_state_seq_reg[state][0]_0\,
-      I2 => \FSM_onehot_state_seq[state][5]_i_7_n_0\,
+      I2 => \FSM_onehot_state_seq[state][5]_i_10_n_0\,
       I3 => \FSM_onehot_state_seq_reg[state][0]_1\,
       I4 => \FSM_onehot_state_seq_reg[state][0]_2\,
-      I5 => \FSM_onehot_state_seq[state][5]_i_10_n_0\,
-      O => \FSM_onehot_state_seq[state][5]_i_5_n_0\
+      I5 => \FSM_onehot_state_seq[state][5]_i_12_n_0\,
+      O => \FSM_onehot_state_seq[state][5]_i_6_n_0\
     );
 \FSM_onehot_state_seq[state][5]_i_7\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"AE"
+      INIT => X"1F"
     )
         port map (
-      I0 => \recvo[tick_out]\,
-      I1 => \^state_seq_reg[timerdone]__0\,
-      I2 => \^state_seq_reg[timercnt][6]_0\,
+      I0 => \recvo[gotfct]\,
+      I1 => \state_seq_reg[rx_null_fct]__0\,
+      I2 => p_0_in9_in,
       O => \FSM_onehot_state_seq[state][5]_i_7_n_0\
     );
 \FSM_onehot_state_seq_reg[state][0]\: unisim.vcomponents.FDPE
@@ -3005,26 +3017,26 @@ begin
     );
 \res_seq[txfiforoom][10]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"AFCAA0CA"
+      INIT => X"F0CCAAF0"
     )
         port map (
-      I0 => \res_seq_reg[txfifo_rvalid]\(10),
-      I1 => \res_seq_reg[txfiforoom][11]\(2),
-      I2 => SPW_TXWRITE,
-      I3 => \^res_seq_reg[txdiscard]\,
-      I4 => \vres[txfiforoom]0_in\(10),
+      I0 => \res_seq_reg[txfiforoom][11]\(2),
+      I1 => \vres[txfiforoom]0_in\(10),
+      I2 => \res_seq_reg[txfifo_rvalid]\(10),
+      I3 => SPW_TXWRITE,
+      I4 => \^res_seq_reg[txdiscard]\,
       O => \^res_seq_reg[txfiforoom][12]\(10)
     );
 \res_seq[txfiforoom][11]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"F0CCAAF0"
+      INIT => X"AFCAA0CA"
     )
         port map (
-      I0 => \res_seq_reg[txfiforoom][11]\(3),
-      I1 => \vres[txfiforoom]0_in\(11),
-      I2 => \res_seq_reg[txfifo_rvalid]\(11),
-      I3 => SPW_TXWRITE,
-      I4 => \^res_seq_reg[txdiscard]\,
+      I0 => \res_seq_reg[txfifo_rvalid]\(11),
+      I1 => \res_seq_reg[txfiforoom][11]\(3),
+      I2 => SPW_TXWRITE,
+      I3 => \^res_seq_reg[txdiscard]\,
+      I4 => \vres[txfiforoom]0_in\(11),
       O => \^res_seq_reg[txfiforoom][12]\(11)
     );
 \res_seq[txfiforoom][12]_i_1\: unisim.vcomponents.LUT5
@@ -3154,9 +3166,9 @@ begin
         port map (
       I0 => \res_seq[txfull]_i_2_n_0\,
       I1 => \res_seq[txfull]_i_3_n_0\,
-      I2 => \^res_seq_reg[txfiforoom][12]\(9),
+      I2 => \^res_seq_reg[txfiforoom][12]\(12),
       I3 => \^res_seq_reg[txfiforoom][12]\(2),
-      I4 => \^res_seq_reg[txfiforoom][12]\(4),
+      I4 => \^res_seq_reg[txfiforoom][12]\(11),
       O => \res_com[txfull]\
     );
 \res_seq[txfull]_i_2\: unisim.vcomponents.LUT6
@@ -3164,12 +3176,12 @@ begin
       INIT => X"0000000000000001"
     )
         port map (
-      I0 => \^res_seq_reg[txfiforoom][12]\(1),
-      I1 => \^res_seq_reg[txfiforoom][12]\(11),
-      I2 => \^res_seq_reg[txfiforoom][12]\(12),
-      I3 => \^res_seq_reg[txfiforoom][12]\(3),
-      I4 => \^res_seq_reg[txfiforoom][12]\(6),
-      I5 => \^res_seq_reg[txfiforoom][12]\(5),
+      I0 => \^res_seq_reg[txfiforoom][12]\(3),
+      I1 => \^res_seq_reg[txfiforoom][12]\(10),
+      I2 => \^res_seq_reg[txfiforoom][12]\(7),
+      I3 => \^res_seq_reg[txfiforoom][12]\(0),
+      I4 => \^res_seq_reg[txfiforoom][12]\(9),
+      I5 => \^res_seq_reg[txfiforoom][12]\(8),
       O => \res_seq[txfull]_i_2_n_0\
     );
 \res_seq[txfull]_i_3\: unisim.vcomponents.LUT4
@@ -3177,10 +3189,10 @@ begin
       INIT => X"FFFE"
     )
         port map (
-      I0 => \^res_seq_reg[txfiforoom][12]\(7),
-      I1 => \^res_seq_reg[txfiforoom][12]\(10),
-      I2 => \^res_seq_reg[txfiforoom][12]\(0),
-      I3 => \^res_seq_reg[txfiforoom][12]\(8),
+      I0 => \^res_seq_reg[txfiforoom][12]\(4),
+      I1 => \^res_seq_reg[txfiforoom][12]\(5),
+      I2 => \^res_seq_reg[txfiforoom][12]\(1),
+      I3 => \^res_seq_reg[txfiforoom][12]\(6),
       O => \res_seq[txfull]_i_3_n_0\
     );
 \res_seq[txpacket]_i_1\: unisim.vcomponents.LUT4
@@ -3204,13 +3216,13 @@ begin
     );
 \state_seq[errcred]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"F7F0"
+      INIT => X"FBF0"
     )
         port map (
-      I0 => \FSM_onehot_state_seq_reg[state_n_0_][0]\,
-      I1 => \^state_seq_reg[timercnt][6]_0\,
+      I0 => \^state_seq_reg[timercnt][9]_0\,
+      I1 => \FSM_onehot_state_seq_reg[state_n_0_][0]\,
       I2 => \state_seq[errcred]_i_2_n_0\,
-      I3 => \state_seq_reg[errcred]__0\,
+      I3 => \^state_seq_reg[errcred]__0\,
       O => \state_seq[errcred]_i_1_n_0\
     );
 \state_seq[errcred]_i_2\: unisim.vcomponents.LUT6
@@ -3326,178 +3338,146 @@ begin
       I5 => \state_seq_reg[rx_null_fct]__0\,
       O => \state_seq[rx_null_fct]_i_1_n_0\
     );
-\state_seq[rxen]_i_1\: unisim.vcomponents.LUT5
+\state_seq[rxen]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"55035500"
+      INIT => X"A0A0A0A3A0A0A0A0"
     )
         port map (
-      I0 => \^state_seq_reg[timercnt][6]_0\,
-      I1 => \FSM_onehot_state_seq[state][5]_i_5_n_0\,
-      I2 => \FSM_onehot_state_seq[state][5]_i_3_n_0\,
-      I3 => \FSM_onehot_state_seq_reg[state_n_0_][0]\,
-      I4 => \^recv_rxen\,
+      I0 => \^state_seq_reg[timercnt][9]_0\,
+      I1 => \FSM_onehot_state_seq[state][5]_i_6_n_0\,
+      I2 => \FSM_onehot_state_seq_reg[state_n_0_][0]\,
+      I3 => \state_seq_reg[timerdone]_0\,
+      I4 => \state_seq[timercnt][9]_i_3_n_0\,
+      I5 => \^recv_rxen\,
       O => \state_seq[rxen]_i_1_n_0\
     );
-\state_seq[timercnt][0]_i_1\: unisim.vcomponents.LUT5
+\state_seq[timercnt][0]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00000100"
+      INIT => X"0000000000000001"
     )
         port map (
-      I0 => \FSM_onehot_state_seq[state][5]_i_3_n_0\,
+      I0 => \state_seq[timercnt][9]_i_3_n_0\,
       I1 => \FSM_onehot_state_seq[state][5]_i_4_n_0\,
-      I2 => \FSM_onehot_state_seq[state][5]_i_5_n_0\,
-      I3 => \^state_seq_reg[timercnt][6]_0\,
-      I4 => \state_seq_reg[timercnt_n_0_][0]\,
+      I2 => \state_seq_reg[timerdone]_0\,
+      I3 => \FSM_onehot_state_seq[state][5]_i_6_n_0\,
+      I4 => \^state_seq_reg[timercnt][9]_0\,
+      I5 => \state_seq_reg[timercnt_n_0_][0]\,
       O => \state_com[timercnt]\(0)
     );
 \state_seq[timercnt][1]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"0100000000000100"
+      INIT => X"000000000000000B"
     )
         port map (
-      I0 => \FSM_onehot_state_seq[state][5]_i_3_n_0\,
-      I1 => \FSM_onehot_state_seq[state][5]_i_4_n_0\,
-      I2 => \FSM_onehot_state_seq[state][5]_i_5_n_0\,
-      I3 => \^state_seq_reg[timercnt][6]_0\,
-      I4 => \state_seq_reg[timercnt_n_0_][0]\,
-      I5 => \state_seq_reg[timercnt_n_0_][1]\,
+      I0 => \state_seq_reg[rx_null_fct]_0\,
+      I1 => p_0_in9_in,
+      I2 => \FSM_onehot_state_seq[state][5]_i_4_n_0\,
+      I3 => \state_seq_reg[timerdone]_0\,
+      I4 => \FSM_onehot_state_seq[state][5]_i_6_n_0\,
+      I5 => \state_seq[timercnt][1]_i_2_n_0\,
       O => \state_com[timercnt]\(1)
+    );
+\state_seq[timercnt][1]_i_2\: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"F6"
+    )
+        port map (
+      I0 => \state_seq_reg[timercnt_n_0_][1]\,
+      I1 => \state_seq_reg[timercnt_n_0_][0]\,
+      I2 => \^state_seq_reg[timercnt][9]_0\,
+      O => \state_seq[timercnt][1]_i_2_n_0\
     );
 \state_seq[timercnt][2]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"0100000000000100"
+      INIT => X"000000000000000B"
     )
         port map (
-      I0 => \FSM_onehot_state_seq[state][5]_i_3_n_0\,
-      I1 => \FSM_onehot_state_seq[state][5]_i_4_n_0\,
-      I2 => \FSM_onehot_state_seq[state][5]_i_5_n_0\,
-      I3 => \^state_seq_reg[timercnt][6]_0\,
-      I4 => \state_seq_reg[timercnt_n_0_][2]\,
+      I0 => \state_seq_reg[rx_null_fct]_0\,
+      I1 => p_0_in9_in,
+      I2 => \FSM_onehot_state_seq[state][5]_i_4_n_0\,
+      I3 => \state_seq_reg[timerdone]_0\,
+      I4 => \FSM_onehot_state_seq[state][5]_i_6_n_0\,
       I5 => \state_seq[timercnt][2]_i_2_n_0\,
       O => \state_com[timercnt]\(2)
     );
-\state_seq[timercnt][2]_i_2\: unisim.vcomponents.LUT2
+\state_seq[timercnt][2]_i_2\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"E"
+      INIT => X"FF1E"
     )
         port map (
       I0 => \state_seq_reg[timercnt_n_0_][0]\,
       I1 => \state_seq_reg[timercnt_n_0_][1]\,
+      I2 => \state_seq_reg[timercnt_n_0_][2]\,
+      I3 => \^state_seq_reg[timercnt][9]_0\,
       O => \state_seq[timercnt][2]_i_2_n_0\
     );
 \state_seq[timercnt][3]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"0100000000000100"
+      INIT => X"000000000000000B"
     )
         port map (
-      I0 => \FSM_onehot_state_seq[state][5]_i_3_n_0\,
-      I1 => \FSM_onehot_state_seq[state][5]_i_4_n_0\,
-      I2 => \FSM_onehot_state_seq[state][5]_i_5_n_0\,
-      I3 => \^state_seq_reg[timercnt][6]_0\,
-      I4 => \state_seq_reg[timercnt_n_0_][3]\,
+      I0 => \state_seq_reg[rx_null_fct]_0\,
+      I1 => p_0_in9_in,
+      I2 => \FSM_onehot_state_seq[state][5]_i_4_n_0\,
+      I3 => \state_seq_reg[timerdone]_0\,
+      I4 => \FSM_onehot_state_seq[state][5]_i_6_n_0\,
       I5 => \state_seq[timercnt][3]_i_2_n_0\,
       O => \state_com[timercnt]\(3)
     );
-\state_seq[timercnt][3]_i_2\: unisim.vcomponents.LUT3
+\state_seq[timercnt][3]_i_2\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"FE"
+      INIT => X"FFFF01FE"
     )
         port map (
       I0 => \state_seq_reg[timercnt_n_0_][2]\,
       I1 => \state_seq_reg[timercnt_n_0_][1]\,
       I2 => \state_seq_reg[timercnt_n_0_][0]\,
+      I3 => \state_seq_reg[timercnt_n_0_][3]\,
+      I4 => \^state_seq_reg[timercnt][9]_0\,
       O => \state_seq[timercnt][3]_i_2_n_0\
     );
 \state_seq[timercnt][4]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"0100000000000100"
+      INIT => X"000000000000000B"
     )
         port map (
-      I0 => \FSM_onehot_state_seq[state][5]_i_3_n_0\,
-      I1 => \FSM_onehot_state_seq[state][5]_i_4_n_0\,
-      I2 => \FSM_onehot_state_seq[state][5]_i_5_n_0\,
-      I3 => \^state_seq_reg[timercnt][6]_0\,
-      I4 => \state_seq_reg[timercnt_n_0_][4]\,
+      I0 => \state_seq_reg[rx_null_fct]_0\,
+      I1 => p_0_in9_in,
+      I2 => \FSM_onehot_state_seq[state][5]_i_4_n_0\,
+      I3 => \state_seq_reg[timerdone]_0\,
+      I4 => \FSM_onehot_state_seq[state][5]_i_6_n_0\,
       I5 => \state_seq[timercnt][4]_i_2_n_0\,
       O => \state_com[timercnt]\(4)
     );
-\state_seq[timercnt][4]_i_2\: unisim.vcomponents.LUT4
+\state_seq[timercnt][4]_i_2\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"FFFE"
+      INIT => X"FFFFFFFF0001FFFE"
     )
         port map (
       I0 => \state_seq_reg[timercnt_n_0_][3]\,
       I1 => \state_seq_reg[timercnt_n_0_][0]\,
       I2 => \state_seq_reg[timercnt_n_0_][1]\,
       I3 => \state_seq_reg[timercnt_n_0_][2]\,
+      I4 => \state_seq_reg[timercnt_n_0_][4]\,
+      I5 => \^state_seq_reg[timercnt][9]_0\,
       O => \state_seq[timercnt][4]_i_2_n_0\
     );
 \state_seq[timercnt][5]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"0100000000000100"
+      INIT => X"0000000000000001"
     )
         port map (
-      I0 => \FSM_onehot_state_seq[state][5]_i_3_n_0\,
+      I0 => \state_seq[timercnt][9]_i_3_n_0\,
       I1 => \FSM_onehot_state_seq[state][5]_i_4_n_0\,
-      I2 => \FSM_onehot_state_seq[state][5]_i_5_n_0\,
-      I3 => \^state_seq_reg[timercnt][6]_0\,
-      I4 => \state_seq_reg[timercnt_n_0_][5]\,
+      I2 => \state_seq_reg[timerdone]_0\,
+      I3 => \FSM_onehot_state_seq[state][5]_i_6_n_0\,
+      I4 => \^state_seq_reg[timercnt][9]_0\,
       I5 => \state_seq[timercnt][5]_i_2_n_0\,
       O => \state_com[timercnt]\(5)
     );
-\state_seq[timercnt][5]_i_2\: unisim.vcomponents.LUT5
+\state_seq[timercnt][5]_i_2\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"FFFFFFFE"
-    )
-        port map (
-      I0 => \state_seq_reg[timercnt_n_0_][4]\,
-      I1 => \state_seq_reg[timercnt_n_0_][2]\,
-      I2 => \state_seq_reg[timercnt_n_0_][1]\,
-      I3 => \state_seq_reg[timercnt_n_0_][0]\,
-      I4 => \state_seq_reg[timercnt_n_0_][3]\,
-      O => \state_seq[timercnt][5]_i_2_n_0\
-    );
-\state_seq[timercnt][6]_i_1\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"0100000100000000"
-    )
-        port map (
-      I0 => \FSM_onehot_state_seq[state][5]_i_3_n_0\,
-      I1 => \FSM_onehot_state_seq[state][5]_i_4_n_0\,
-      I2 => \FSM_onehot_state_seq[state][5]_i_5_n_0\,
-      I3 => \state_seq_reg[timercnt_n_0_][6]\,
-      I4 => \state_seq[timercnt][7]_i_2_n_0\,
-      I5 => \^state_seq_reg[timercnt][6]_0\,
-      O => \state_com[timercnt]\(6)
-    );
-\state_seq[timercnt][6]_i_2\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"FFFFFFFE"
-    )
-        port map (
-      I0 => \state_seq[timercnt][4]_i_2_n_0\,
-      I1 => \state_seq_reg[timercnt_n_0_][6]\,
-      I2 => \state_seq_reg[timercnt_n_0_][7]\,
-      I3 => \state_seq_reg[timercnt_n_0_][4]\,
-      I4 => \state_seq_reg[timercnt_n_0_][5]\,
-      O => \^state_seq_reg[timercnt][6]_0\
-    );
-\state_seq[timercnt][7]_i_1\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"FFFFFFFFFFFFFFE1"
-    )
-        port map (
-      I0 => \state_seq_reg[timercnt_n_0_][6]\,
-      I1 => \state_seq[timercnt][7]_i_2_n_0\,
-      I2 => \state_seq_reg[timercnt_n_0_][7]\,
-      I3 => \FSM_onehot_state_seq[state][5]_i_3_n_0\,
-      I4 => \FSM_onehot_state_seq[state][5]_i_4_n_0\,
-      I5 => \FSM_onehot_state_seq[state][5]_i_5_n_0\,
-      O => \state_com[timercnt]\(7)
-    );
-\state_seq[timercnt][7]_i_2\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"FFFFFFFFFFFFFFFE"
+      INIT => X"5555555555555556"
     )
         port map (
       I0 => \state_seq_reg[timercnt_n_0_][5]\,
@@ -3506,18 +3486,153 @@ begin
       I3 => \state_seq_reg[timercnt_n_0_][1]\,
       I4 => \state_seq_reg[timercnt_n_0_][2]\,
       I5 => \state_seq_reg[timercnt_n_0_][4]\,
-      O => \state_seq[timercnt][7]_i_2_n_0\
+      O => \state_seq[timercnt][5]_i_2_n_0\
     );
-\state_seq[timerdone]_i_1\: unisim.vcomponents.LUT5
+\state_seq[timercnt][6]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00030001"
+      INIT => X"000000000000000B"
     )
         port map (
-      I0 => \^state_seq_reg[timercnt][6]_0\,
-      I1 => \FSM_onehot_state_seq[state][5]_i_3_n_0\,
+      I0 => \state_seq_reg[rx_null_fct]_0\,
+      I1 => p_0_in9_in,
       I2 => \FSM_onehot_state_seq[state][5]_i_4_n_0\,
-      I3 => \FSM_onehot_state_seq[state][5]_i_5_n_0\,
-      I4 => \^state_seq_reg[timerdone]__0\,
+      I3 => \state_seq_reg[timerdone]_0\,
+      I4 => \FSM_onehot_state_seq[state][5]_i_6_n_0\,
+      I5 => \state_seq[timercnt][6]_i_2_n_0\,
+      O => \state_com[timercnt]\(6)
+    );
+\state_seq[timercnt][6]_i_2\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"AAABFFFE"
+    )
+        port map (
+      I0 => \^state_seq_reg[timercnt][9]_0\,
+      I1 => \state_seq_reg[timercnt_n_0_][5]\,
+      I2 => \state_seq[timercnt][9]_i_4_n_0\,
+      I3 => \state_seq_reg[timercnt_n_0_][4]\,
+      I4 => \state_seq_reg[timercnt_n_0_][6]\,
+      O => \state_seq[timercnt][6]_i_2_n_0\
+    );
+\state_seq[timercnt][7]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"FFFFFFFFFFFFFFBA"
+    )
+        port map (
+      I0 => \state_seq[timercnt][7]_i_2_n_0\,
+      I1 => \state_seq_reg[rx_null_fct]_0\,
+      I2 => p_0_in9_in,
+      I3 => \FSM_onehot_state_seq[state][5]_i_4_n_0\,
+      I4 => \state_seq_reg[timerdone]_0\,
+      I5 => \FSM_onehot_state_seq[state][5]_i_6_n_0\,
+      O => \state_com[timercnt]\(7)
+    );
+\state_seq[timercnt][7]_i_2\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"AAAAAAA9"
+    )
+        port map (
+      I0 => \state_seq_reg[timercnt_n_0_][7]\,
+      I1 => \state_seq_reg[timercnt_n_0_][5]\,
+      I2 => \state_seq[timercnt][9]_i_4_n_0\,
+      I3 => \state_seq_reg[timercnt_n_0_][4]\,
+      I4 => \state_seq_reg[timercnt_n_0_][6]\,
+      O => \state_seq[timercnt][7]_i_2_n_0\
+    );
+\state_seq[timercnt][8]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"0000000000010000"
+    )
+        port map (
+      I0 => \state_seq[timercnt][9]_i_3_n_0\,
+      I1 => \FSM_onehot_state_seq[state][5]_i_4_n_0\,
+      I2 => \state_seq_reg[timerdone]_0\,
+      I3 => \FSM_onehot_state_seq[state][5]_i_6_n_0\,
+      I4 => \state_seq[timercnt][8]_i_2_n_0\,
+      I5 => \^state_seq_reg[timercnt][9]_0\,
+      O => \state_com[timercnt]\(8)
+    );
+\state_seq[timercnt][8]_i_2\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"AAAAAAAAAAAAAAA9"
+    )
+        port map (
+      I0 => \state_seq_reg[timercnt_n_0_][8]\,
+      I1 => \state_seq_reg[timercnt_n_0_][5]\,
+      I2 => \state_seq_reg[timercnt_n_0_][4]\,
+      I3 => \state_seq_reg[timercnt_n_0_][7]\,
+      I4 => \state_seq_reg[timercnt_n_0_][6]\,
+      I5 => \state_seq[timercnt][9]_i_4_n_0\,
+      O => \state_seq[timercnt][8]_i_2_n_0\
+    );
+\state_seq[timercnt][8]_i_3\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => \state_seq[timercnt][9]_i_2_n_0\,
+      I1 => \state_seq_reg[timercnt_n_0_][9]\,
+      O => \^state_seq_reg[timercnt][9]_0\
+    );
+\state_seq[timercnt][9]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"FFFFFFFFFFFFFFF6"
+    )
+        port map (
+      I0 => \state_seq[timercnt][9]_i_2_n_0\,
+      I1 => \state_seq_reg[timercnt_n_0_][9]\,
+      I2 => \state_seq[timercnt][9]_i_3_n_0\,
+      I3 => \FSM_onehot_state_seq[state][5]_i_4_n_0\,
+      I4 => \state_seq_reg[timerdone]_0\,
+      I5 => \FSM_onehot_state_seq[state][5]_i_6_n_0\,
+      O => \state_com[timercnt]\(9)
+    );
+\state_seq[timercnt][9]_i_2\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"0000000000000001"
+    )
+        port map (
+      I0 => \state_seq_reg[timercnt_n_0_][8]\,
+      I1 => \state_seq_reg[timercnt_n_0_][5]\,
+      I2 => \state_seq_reg[timercnt_n_0_][4]\,
+      I3 => \state_seq_reg[timercnt_n_0_][7]\,
+      I4 => \state_seq_reg[timercnt_n_0_][6]\,
+      I5 => \state_seq[timercnt][9]_i_4_n_0\,
+      O => \state_seq[timercnt][9]_i_2_n_0\
+    );
+\state_seq[timercnt][9]_i_3\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"A888AAAA"
+    )
+        port map (
+      I0 => p_0_in9_in,
+      I1 => \recvo[tick_out]\,
+      I2 => \^state_seq_reg[timerdone]__0\,
+      I3 => \^state_seq_reg[timercnt][9]_0\,
+      I4 => \FSM_onehot_state_seq_reg[state][0]_1\,
+      O => \state_seq[timercnt][9]_i_3_n_0\
+    );
+\state_seq[timercnt][9]_i_4\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"FFFE"
+    )
+        port map (
+      I0 => \state_seq_reg[timercnt_n_0_][3]\,
+      I1 => \state_seq_reg[timercnt_n_0_][0]\,
+      I2 => \state_seq_reg[timercnt_n_0_][1]\,
+      I3 => \state_seq_reg[timercnt_n_0_][2]\,
+      O => \state_seq[timercnt][9]_i_4_n_0\
+    );
+\state_seq[timerdone]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"0000000300000002"
+    )
+        port map (
+      I0 => \^state_seq_reg[timercnt][9]_0\,
+      I1 => \state_seq[timercnt][9]_i_3_n_0\,
+      I2 => \FSM_onehot_state_seq[state][5]_i_4_n_0\,
+      I3 => \state_seq_reg[timerdone]_0\,
+      I4 => \FSM_onehot_state_seq[state][5]_i_6_n_0\,
+      I5 => \^state_seq_reg[timerdone]__0\,
       O => \state_seq[timerdone]_i_1_n_0\
     );
 \state_seq[tx_credit][0]_i_1\: unisim.vcomponents.LUT4
@@ -3641,12 +3756,12 @@ begin
     );
 \state_seq[xmit_fct_in]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"08083B08"
+      INIT => X"8080B380"
     )
         port map (
       I0 => \^xmiti[fct_in]\,
       I1 => \FSM_onehot_state_seq_reg[state_n_0_][0]\,
-      I2 => \^state_seq_reg[timercnt][6]_0\,
+      I2 => \^state_seq_reg[timercnt][9]_0\,
       I3 => \state_seq[xmit_fct_in]_i_2_n_0\,
       I4 => \p_1_out_inferred__0/i__carry__0_n_2\,
       O => \state_seq[xmit_fct_in]_i_1_n_0\
@@ -3670,7 +3785,7 @@ begin
       CE => '1',
       CLR => \state_seq_reg[rxen]_1\,
       D => \state_seq[errcred]_i_1_n_0\,
-      Q => \state_seq_reg[errcred]__0\
+      Q => \^state_seq_reg[errcred]__0\
     );
 \state_seq_reg[rx_credit][0]\: unisim.vcomponents.FDCE
      port map (
@@ -3799,6 +3914,22 @@ begin
       D => \state_com[timercnt]\(7),
       PRE => \state_seq_reg[rxen]_1\,
       Q => \state_seq_reg[timercnt_n_0_][7]\
+    );
+\state_seq_reg[timercnt][8]\: unisim.vcomponents.FDCE
+     port map (
+      C => SPW_main_clk,
+      CE => '1',
+      CLR => \state_seq_reg[rxen]_1\,
+      D => \state_com[timercnt]\(8),
+      Q => \state_seq_reg[timercnt_n_0_][8]\
+    );
+\state_seq_reg[timercnt][9]\: unisim.vcomponents.FDPE
+     port map (
+      C => SPW_main_clk,
+      CE => '1',
+      D => \state_com[timercnt]\(9),
+      PRE => \state_seq_reg[rxen]_1\,
+      Q => \state_seq_reg[timercnt_n_0_][9]\
     );
 \state_seq_reg[timerdone]\: unisim.vcomponents.FDCE
      port map (
@@ -4538,14 +4669,11 @@ entity Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv is
     \res_seq_reg[tick_out]_0\ : out STD_LOGIC_VECTOR ( 2 downto 0 );
     \res_seq_reg[rxchar]_0\ : out STD_LOGIC;
     \state_seq_reg[timerdone]\ : out STD_LOGIC;
-    \res_seq_reg[bit_seen]_0\ : out STD_LOGIC;
+    \FSM_onehot_state_seq_reg[state][1]\ : out STD_LOGIC;
     \res_seq_reg[gotfct]_0\ : out STD_LOGIC;
     \res_seq_reg[gotfct]_1\ : out STD_LOGIC;
     \vres[rxpacket]7_out\ : out STD_LOGIC;
-    \res_seq_reg[rxfiforoom][4]\ : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    \res_seq_reg[rxfiforoom][10]\ : out STD_LOGIC;
-    \res_seq_reg[rxfiforoom][8]\ : out STD_LOGIC;
-    \res_seq_reg[rxfiforoom][10]_0\ : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    \res_seq_reg[rxfiforoom][10]\ : out STD_LOGIC_VECTOR ( 2 downto 0 );
     WEN : out STD_LOGIC;
     \res_com[rxfifo_rvalid]\ : out STD_LOGIC;
     \res_com[rxemptydiscard]\ : out STD_LOGIC;
@@ -4558,16 +4686,14 @@ entity Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv is
     \FSM_onehot_state_seq_reg[state][4]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \FSM_onehot_state_seq_reg[state][2]\ : in STD_LOGIC;
     \state_seq_reg[timerdone]__0\ : in STD_LOGIC;
+    \state_seq_reg[errcred]__0\ : in STD_LOGIC;
     D : in STD_LOGIC_VECTOR ( 0 to 0 );
     \res_seq_reg[datareg][0]_0\ : in STD_LOGIC;
     \res_seq_reg[rxpacket]\ : in STD_LOGIC;
-    \res_seq_reg[rxfifo_rvalid]1\ : in STD_LOGIC;
-    \res_seq_reg[rxroom][2]\ : in STD_LOGIC;
-    \res_seq_reg[rxroom][2]_0\ : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    \res_seq_reg[rxfifo_rvalid]\ : in STD_LOGIC_VECTOR ( 5 downto 0 );
-    \vres[rxfiforoom]0_in\ : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    \res_seq_reg[rxfifo_rvalid]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    \vres[rxfiforoom]0_in\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     SPW_RXREAD : in STD_LOGIC;
-    \vres[rxfiforoom]\ : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    \vres[rxfiforoom]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \res_seq_reg[rxfull]__0\ : in STD_LOGIC;
     \res_seq_reg[rxeep]__0\ : in STD_LOGIC;
     s_mem_reg : in STD_LOGIC
@@ -4577,7 +4703,7 @@ entity Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv is
 end Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv;
 
 architecture STRUCTURE of Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv is
-  signal \FSM_onehot_state_seq[state][4]_i_3_n_0\ : STD_LOGIC;
+  signal \FSM_onehot_state_seq[state][5]_i_8_n_0\ : STD_LOGIC;
   signal \^q\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \^wen\ : STD_LOGIC;
   signal p_0_in : STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -4647,9 +4773,6 @@ architecture STRUCTURE of Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv is
   signal \res_seq_reg[pendfct_n_0_][0]\ : STD_LOGIC;
   signal \res_seq_reg[pendfct_n_0_][1]\ : STD_LOGIC;
   signal \^res_seq_reg[rxchar]_0\ : STD_LOGIC;
-  signal \^res_seq_reg[rxfiforoom][10]\ : STD_LOGIC;
-  signal \^res_seq_reg[rxfiforoom][10]_0\ : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal \^res_seq_reg[rxfiforoom][8]\ : STD_LOGIC;
   signal s_mem_reg_i_23_n_0 : STD_LOGIC;
   signal sel0 : STD_LOGIC_VECTOR ( 4 downto 0 );
   signal \^state_seq_reg[timerdone]\ : STD_LOGIC;
@@ -4658,46 +4781,44 @@ architecture STRUCTURE of Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv is
   signal \vres[rxflag]6_out\ : STD_LOGIC;
   signal \vres[tick_out]12_out\ : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \FSM_onehot_state_seq[state][2]_i_1\ : label is "soft_lutpair36";
-  attribute SOFT_HLUTNM of \FSM_onehot_state_seq[state][2]_i_2\ : label is "soft_lutpair37";
-  attribute SOFT_HLUTNM of \FSM_onehot_state_seq[state][3]_i_1\ : label is "soft_lutpair30";
-  attribute SOFT_HLUTNM of \FSM_onehot_state_seq[state][4]_i_1\ : label is "soft_lutpair30";
-  attribute SOFT_HLUTNM of \FSM_onehot_state_seq[state][4]_i_2\ : label is "soft_lutpair22";
-  attribute SOFT_HLUTNM of \FSM_onehot_state_seq[state][5]_i_6\ : label is "soft_lutpair22";
-  attribute SOFT_HLUTNM of \FSM_onehot_state_seq[state][5]_i_8\ : label is "soft_lutpair36";
+  attribute SOFT_HLUTNM of \FSM_onehot_state_seq[state][2]_i_1\ : label is "soft_lutpair37";
+  attribute SOFT_HLUTNM of \FSM_onehot_state_seq[state][3]_i_1\ : label is "soft_lutpair31";
+  attribute SOFT_HLUTNM of \FSM_onehot_state_seq[state][4]_i_1\ : label is "soft_lutpair31";
+  attribute SOFT_HLUTNM of \FSM_onehot_state_seq[state][5]_i_11\ : label is "soft_lutpair38";
+  attribute SOFT_HLUTNM of \FSM_onehot_state_seq[state][5]_i_3\ : label is "soft_lutpair38";
   attribute SOFT_HLUTNM of \FSM_onehot_state_seq[state][5]_i_9\ : label is "soft_lutpair37";
-  attribute SOFT_HLUTNM of \res_seq[bitcnt][0]_i_1\ : label is "soft_lutpair35";
-  attribute SOFT_HLUTNM of \res_seq[bitcnt][1]_i_1\ : label is "soft_lutpair35";
-  attribute SOFT_HLUTNM of \res_seq[bitcnt][3]_i_1\ : label is "soft_lutpair24";
-  attribute SOFT_HLUTNM of \res_seq[bitcnt][4]_i_1\ : label is "soft_lutpair34";
-  attribute SOFT_HLUTNM of \res_seq[bitcnt][5]_i_1\ : label is "soft_lutpair34";
-  attribute SOFT_HLUTNM of \res_seq[bitcnt][6]_i_1\ : label is "soft_lutpair33";
-  attribute SOFT_HLUTNM of \res_seq[bitcnt][7]_i_1\ : label is "soft_lutpair33";
-  attribute SOFT_HLUTNM of \res_seq[bitcnt][8]_i_1\ : label is "soft_lutpair32";
-  attribute SOFT_HLUTNM of \res_seq[bitcnt][8]_i_2\ : label is "soft_lutpair28";
-  attribute SOFT_HLUTNM of \res_seq[bitcnt][9]_i_1\ : label is "soft_lutpair31";
-  attribute SOFT_HLUTNM of \res_seq[bitcnt][9]_i_3\ : label is "soft_lutpair24";
-  attribute SOFT_HLUTNM of \res_seq[control]_i_1\ : label is "soft_lutpair31";
-  attribute SOFT_HLUTNM of \res_seq[datareg][5]_i_1\ : label is "soft_lutpair39";
-  attribute SOFT_HLUTNM of \res_seq[datareg][6]_i_1\ : label is "soft_lutpair39";
-  attribute SOFT_HLUTNM of \res_seq[datareg][7]_i_2\ : label is "soft_lutpair26";
-  attribute SOFT_HLUTNM of \res_seq[datareg][7]_i_3\ : label is "soft_lutpair27";
-  attribute SOFT_HLUTNM of \res_seq[disccnt][1]_i_1\ : label is "soft_lutpair38";
-  attribute SOFT_HLUTNM of \res_seq[disccnt][2]_i_1\ : label is "soft_lutpair21";
-  attribute SOFT_HLUTNM of \res_seq[disccnt][3]_i_1\ : label is "soft_lutpair21";
-  attribute SOFT_HLUTNM of \res_seq[disccnt][5]_i_1\ : label is "soft_lutpair23";
-  attribute SOFT_HLUTNM of \res_seq[disccnt][6]_i_2\ : label is "soft_lutpair23";
-  attribute SOFT_HLUTNM of \res_seq[disccnt][6]_i_3\ : label is "soft_lutpair38";
-  attribute SOFT_HLUTNM of \res_seq[erresc]_i_2\ : label is "soft_lutpair25";
-  attribute SOFT_HLUTNM of \res_seq[errpar]_i_2\ : label is "soft_lutpair27";
-  attribute SOFT_HLUTNM of \res_seq[gotfct]_i_3\ : label is "soft_lutpair25";
-  attribute SOFT_HLUTNM of \res_seq[null_seen]_i_3\ : label is "soft_lutpair28";
-  attribute SOFT_HLUTNM of \res_seq[pendfct][0]_i_1\ : label is "soft_lutpair40";
-  attribute SOFT_HLUTNM of \res_seq[pendfct][1]_i_1\ : label is "soft_lutpair40";
-  attribute SOFT_HLUTNM of \res_seq[rxchar]_i_2\ : label is "soft_lutpair26";
-  attribute SOFT_HLUTNM of \res_seq[rxemptydiscard]_i_1\ : label is "soft_lutpair29";
-  attribute SOFT_HLUTNM of \res_seq[rxpacket]_i_1\ : label is "soft_lutpair29";
-  attribute SOFT_HLUTNM of \res_seq[tick_out]_i_3\ : label is "soft_lutpair32";
+  attribute SOFT_HLUTNM of \res_seq[bitcnt][0]_i_1\ : label is "soft_lutpair36";
+  attribute SOFT_HLUTNM of \res_seq[bitcnt][1]_i_1\ : label is "soft_lutpair36";
+  attribute SOFT_HLUTNM of \res_seq[bitcnt][3]_i_1\ : label is "soft_lutpair25";
+  attribute SOFT_HLUTNM of \res_seq[bitcnt][4]_i_1\ : label is "soft_lutpair35";
+  attribute SOFT_HLUTNM of \res_seq[bitcnt][5]_i_1\ : label is "soft_lutpair35";
+  attribute SOFT_HLUTNM of \res_seq[bitcnt][6]_i_1\ : label is "soft_lutpair34";
+  attribute SOFT_HLUTNM of \res_seq[bitcnt][7]_i_1\ : label is "soft_lutpair34";
+  attribute SOFT_HLUTNM of \res_seq[bitcnt][8]_i_1\ : label is "soft_lutpair33";
+  attribute SOFT_HLUTNM of \res_seq[bitcnt][8]_i_2\ : label is "soft_lutpair29";
+  attribute SOFT_HLUTNM of \res_seq[bitcnt][9]_i_1\ : label is "soft_lutpair32";
+  attribute SOFT_HLUTNM of \res_seq[bitcnt][9]_i_3\ : label is "soft_lutpair25";
+  attribute SOFT_HLUTNM of \res_seq[control]_i_1\ : label is "soft_lutpair32";
+  attribute SOFT_HLUTNM of \res_seq[datareg][5]_i_1\ : label is "soft_lutpair40";
+  attribute SOFT_HLUTNM of \res_seq[datareg][6]_i_1\ : label is "soft_lutpair40";
+  attribute SOFT_HLUTNM of \res_seq[datareg][7]_i_2\ : label is "soft_lutpair27";
+  attribute SOFT_HLUTNM of \res_seq[datareg][7]_i_3\ : label is "soft_lutpair28";
+  attribute SOFT_HLUTNM of \res_seq[disccnt][1]_i_1\ : label is "soft_lutpair39";
+  attribute SOFT_HLUTNM of \res_seq[disccnt][2]_i_1\ : label is "soft_lutpair23";
+  attribute SOFT_HLUTNM of \res_seq[disccnt][3]_i_1\ : label is "soft_lutpair23";
+  attribute SOFT_HLUTNM of \res_seq[disccnt][5]_i_1\ : label is "soft_lutpair24";
+  attribute SOFT_HLUTNM of \res_seq[disccnt][6]_i_2\ : label is "soft_lutpair24";
+  attribute SOFT_HLUTNM of \res_seq[disccnt][6]_i_3\ : label is "soft_lutpair39";
+  attribute SOFT_HLUTNM of \res_seq[erresc]_i_2\ : label is "soft_lutpair26";
+  attribute SOFT_HLUTNM of \res_seq[errpar]_i_2\ : label is "soft_lutpair28";
+  attribute SOFT_HLUTNM of \res_seq[gotfct]_i_3\ : label is "soft_lutpair26";
+  attribute SOFT_HLUTNM of \res_seq[null_seen]_i_3\ : label is "soft_lutpair29";
+  attribute SOFT_HLUTNM of \res_seq[pendfct][0]_i_1\ : label is "soft_lutpair41";
+  attribute SOFT_HLUTNM of \res_seq[pendfct][1]_i_1\ : label is "soft_lutpair41";
+  attribute SOFT_HLUTNM of \res_seq[rxchar]_i_2\ : label is "soft_lutpair27";
+  attribute SOFT_HLUTNM of \res_seq[rxemptydiscard]_i_1\ : label is "soft_lutpair30";
+  attribute SOFT_HLUTNM of \res_seq[rxpacket]_i_1\ : label is "soft_lutpair30";
+  attribute SOFT_HLUTNM of \res_seq[tick_out]_i_3\ : label is "soft_lutpair33";
 begin
   Q(0) <= \^q\(0);
   WEN <= \^wen\;
@@ -4708,9 +4829,6 @@ begin
   \res_seq_reg[bitcnt][0]_0\ <= \^res_seq_reg[bitcnt][0]_0\;
   \res_seq_reg[parity]__0\ <= \^res_seq_reg[parity]__0\;
   \res_seq_reg[rxchar]_0\ <= \^res_seq_reg[rxchar]_0\;
-  \res_seq_reg[rxfiforoom][10]\ <= \^res_seq_reg[rxfiforoom][10]\;
-  \res_seq_reg[rxfiforoom][10]_0\(3 downto 0) <= \^res_seq_reg[rxfiforoom][10]_0\(3 downto 0);
-  \res_seq_reg[rxfiforoom][8]\ <= \^res_seq_reg[rxfiforoom][8]\;
   \state_seq_reg[timerdone]\ <= \^state_seq_reg[timerdone]\;
 \FSM_onehot_state_seq[state][2]_i_1\: unisim.vcomponents.LUT4
     generic map(
@@ -4722,17 +4840,6 @@ begin
       I2 => \^recvo[gotfct]\,
       I3 => \^recvo[gotnull]\,
       O => \res_seq_reg[tick_out]_0\(0)
-    );
-\FSM_onehot_state_seq[state][2]_i_2\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"008A"
-    )
-        port map (
-      I0 => \^res_seq_reg[rxchar]_0\,
-      I1 => \FSM_onehot_state_seq_reg[state][2]\,
-      I2 => \state_seq_reg[timerdone]__0\,
-      I3 => \^recvo[tick_out]\,
-      O => \^state_seq_reg[timerdone]\
     );
 \FSM_onehot_state_seq[state][3]_i_1\: unisim.vcomponents.LUT4
     generic map(
@@ -4765,10 +4872,43 @@ begin
       I1 => \recvo[errpar]\,
       I2 => \recvo[erresc]\,
       I3 => \res_seq_reg[bit_seen]__0\,
-      I4 => \FSM_onehot_state_seq[state][4]_i_3_n_0\,
+      I4 => \FSM_onehot_state_seq[state][5]_i_8_n_0\,
       O => \^res_seq_reg[rxchar]_0\
     );
-\FSM_onehot_state_seq[state][4]_i_3\: unisim.vcomponents.LUT5
+\FSM_onehot_state_seq[state][5]_i_11\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"E"
+    )
+        port map (
+      I0 => \^recvo[gotfct]\,
+      I1 => \^recvo[tick_out]\,
+      O => \res_seq_reg[gotfct]_0\
+    );
+\FSM_onehot_state_seq[state][5]_i_3\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"002A"
+    )
+        port map (
+      I0 => \^res_seq_reg[rxchar]_0\,
+      I1 => \FSM_onehot_state_seq_reg[state][2]\,
+      I2 => \state_seq_reg[timerdone]__0\,
+      I3 => \^recvo[tick_out]\,
+      O => \^state_seq_reg[timerdone]\
+    );
+\FSM_onehot_state_seq[state][5]_i_5\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"AAAAAAAAAAAAAA20"
+    )
+        port map (
+      I0 => \FSM_onehot_state_seq_reg[state][4]\(0),
+      I1 => \FSM_onehot_state_seq[state][5]_i_8_n_0\,
+      I2 => \res_seq_reg[bit_seen]__0\,
+      I3 => \recvo[erresc]\,
+      I4 => \recvo[errpar]\,
+      I5 => \state_seq_reg[errcred]__0\,
+      O => \FSM_onehot_state_seq_reg[state][1]\
+    );
+\FSM_onehot_state_seq[state][5]_i_8\: unisim.vcomponents.LUT5
     generic map(
       INIT => X"FFFFFFFE"
     )
@@ -4778,20 +4918,9 @@ begin
       I2 => \res_seq_reg[disccnt]\(7),
       I3 => \res_seq_reg[disccnt]\(4),
       I4 => \res_seq_reg[disccnt]\(5),
-      O => \FSM_onehot_state_seq[state][4]_i_3_n_0\
+      O => \FSM_onehot_state_seq[state][5]_i_8_n_0\
     );
-\FSM_onehot_state_seq[state][5]_i_6\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"FFF4"
-    )
-        port map (
-      I0 => \FSM_onehot_state_seq[state][4]_i_3_n_0\,
-      I1 => \res_seq_reg[bit_seen]__0\,
-      I2 => \recvo[erresc]\,
-      I3 => \recvo[errpar]\,
-      O => \res_seq_reg[bit_seen]_0\
-    );
-\FSM_onehot_state_seq[state][5]_i_8\: unisim.vcomponents.LUT2
+\FSM_onehot_state_seq[state][5]_i_9\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"2"
     )
@@ -4799,15 +4928,6 @@ begin
       I0 => \^recvo[gotfct]\,
       I1 => \^recvo[gotnull]\,
       O => \res_seq_reg[gotfct]_1\
-    );
-\FSM_onehot_state_seq[state][5]_i_9\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"E"
-    )
-        port map (
-      I0 => \^recvo[gotfct]\,
-      I1 => \^recvo[tick_out]\,
-      O => \res_seq_reg[gotfct]_0\
     );
 \res_seq[bitcnt][0]_i_1\: unisim.vcomponents.LUT4
     generic map(
@@ -5132,7 +5252,7 @@ begin
     );
 \res_seq[disccnt][2]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"5401"
+      INIT => X"FEAB"
     )
         port map (
       I0 => recv_inact,
@@ -5192,14 +5312,14 @@ begin
     );
 \res_seq[disccnt][6]_i_2\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"0000FE01"
+      INIT => X"FFFEAAAB"
     )
         port map (
-      I0 => \res_seq[disccnt][6]_i_3_n_0\,
-      I1 => \res_seq_reg[disccnt]\(4),
-      I2 => \res_seq_reg[disccnt]\(5),
-      I3 => \res_seq_reg[disccnt]\(6),
-      I4 => recv_inact,
+      I0 => recv_inact,
+      I1 => \res_seq[disccnt][6]_i_3_n_0\,
+      I2 => \res_seq_reg[disccnt]\(4),
+      I3 => \res_seq_reg[disccnt]\(5),
+      I4 => \res_seq_reg[disccnt]\(6),
       O => \res_com[disccnt]\(6)
     );
 \res_seq[disccnt][6]_i_3\: unisim.vcomponents.LUT4
@@ -5495,11 +5615,11 @@ begin
       INIT => X"0434C7F7"
     )
         port map (
-      I0 => \vres[rxfiforoom]0_in\(5),
+      I0 => \vres[rxfiforoom]0_in\(3),
       I1 => SPW_RXREAD,
       I2 => \^wen\,
-      I3 => \vres[rxfiforoom]\(5),
-      I4 => \res_seq_reg[rxfifo_rvalid]\(5),
+      I3 => \vres[rxfiforoom]\(3),
+      I4 => \res_seq_reg[rxfifo_rvalid]\(3),
       O => \res_com[rxfifo_rvalid]\
     );
 \res_seq[rxfiforoom][10]_i_1\: unisim.vcomponents.LUT5
@@ -5507,12 +5627,12 @@ begin
       INIT => X"AFCAA0CA"
     )
         port map (
-      I0 => \res_seq_reg[rxfifo_rvalid]\(4),
-      I1 => \vres[rxfiforoom]0_in\(4),
+      I0 => \res_seq_reg[rxfifo_rvalid]\(2),
+      I1 => \vres[rxfiforoom]0_in\(2),
       I2 => SPW_RXREAD,
       I3 => \^wen\,
-      I4 => \vres[rxfiforoom]\(4),
-      O => \^res_seq_reg[rxfiforoom][10]_0\(3)
+      I4 => \vres[rxfiforoom]\(2),
+      O => \res_seq_reg[rxfiforoom][10]\(2)
     );
 \res_seq[rxfiforoom][2]_i_1\: unisim.vcomponents.LUT5
     generic map(
@@ -5524,9 +5644,9 @@ begin
       I2 => SPW_RXREAD,
       I3 => \^wen\,
       I4 => \vres[rxfiforoom]\(0),
-      O => \^res_seq_reg[rxfiforoom][10]_0\(0)
+      O => \res_seq_reg[rxfiforoom][10]\(0)
     );
-\res_seq[rxfiforoom][4]_i_1\: unisim.vcomponents.LUT5
+\res_seq[rxfiforoom][8]_i_1\: unisim.vcomponents.LUT5
     generic map(
       INIT => X"AFCAA0CA"
     )
@@ -5536,31 +5656,7 @@ begin
       I2 => SPW_RXREAD,
       I3 => \^wen\,
       I4 => \vres[rxfiforoom]\(1),
-      O => \^res_seq_reg[rxfiforoom][10]_0\(1)
-    );
-\res_seq[rxfiforoom][8]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"AFCAA0CA"
-    )
-        port map (
-      I0 => \res_seq_reg[rxfifo_rvalid]\(2),
-      I1 => \vres[rxfiforoom]0_in\(2),
-      I2 => SPW_RXREAD,
-      I3 => \^wen\,
-      I4 => \vres[rxfiforoom]\(2),
-      O => \^res_seq_reg[rxfiforoom][8]\
-    );
-\res_seq[rxfiforoom][9]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"AFCAA0CA"
-    )
-        port map (
-      I0 => \res_seq_reg[rxfifo_rvalid]\(3),
-      I1 => \vres[rxfiforoom]0_in\(3),
-      I2 => SPW_RXREAD,
-      I3 => \^wen\,
-      I4 => \vres[rxfiforoom]\(3),
-      O => \^res_seq_reg[rxfiforoom][10]_0\(2)
+      O => \res_seq_reg[rxfiforoom][10]\(1)
     );
 \res_seq[rxflag]_i_1\: unisim.vcomponents.LUT6
     generic map(
@@ -5575,17 +5671,6 @@ begin
       I5 => \recvo[rxflag]\,
       O => \res_seq[rxflag]_i_1_n_0\
     );
-\res_seq[rxfull]_i_3\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"FFFE"
-    )
-        port map (
-      I0 => \^res_seq_reg[rxfiforoom][10]_0\(3),
-      I1 => \res_seq_reg[rxroom][2]_0\(1),
-      I2 => \^res_seq_reg[rxfiforoom][10]_0\(2),
-      I3 => \res_seq_reg[rxroom][2]_0\(0),
-      O => \^res_seq_reg[rxfiforoom][10]\
-    );
 \res_seq[rxpacket]_i_1\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"7040"
@@ -5596,30 +5681,6 @@ begin
       I2 => \FSM_onehot_state_seq_reg[state][4]\(0),
       I3 => \res_seq_reg[rxpacket]\,
       O => \vres[rxpacket]7_out\
-    );
-\res_seq[rxroom][2]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"FFFFFFFE"
-    )
-        port map (
-      I0 => \^res_seq_reg[rxfiforoom][10]\,
-      I1 => \^res_seq_reg[rxfiforoom][8]\,
-      I2 => \res_seq_reg[rxfifo_rvalid]1\,
-      I3 => \res_seq_reg[rxroom][2]\,
-      I4 => \^res_seq_reg[rxfiforoom][10]_0\(0),
-      O => \res_seq_reg[rxfiforoom][4]\(0)
-    );
-\res_seq[rxroom][4]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"FFFFFFFE"
-    )
-        port map (
-      I0 => \^res_seq_reg[rxfiforoom][10]_0\(1),
-      I1 => \^res_seq_reg[rxfiforoom][10]\,
-      I2 => \^res_seq_reg[rxfiforoom][8]\,
-      I3 => \res_seq_reg[rxfifo_rvalid]1\,
-      I4 => \res_seq_reg[rxroom][2]\,
-      O => \res_seq_reg[rxfiforoom][4]\(1)
     );
 \res_seq[tick_out]_i_1\: unisim.vcomponents.LUT5
     generic map(
@@ -6319,8 +6380,8 @@ architecture STRUCTURE of Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff is
   signal syncdff_ff1_reg_n_0 : STD_LOGIC;
   signal syncdff_ff2_reg_n_0 : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \res_seq[sent_fct]_i_2\ : label is "soft_lutpair41";
-  attribute SOFT_HLUTNM of \res_seq[tokmux]_i_2\ : label is "soft_lutpair41";
+  attribute SOFT_HLUTNM of \res_seq[sent_fct]_i_2\ : label is "soft_lutpair42";
+  attribute SOFT_HLUTNM of \res_seq[tokmux]_i_2\ : label is "soft_lutpair42";
 begin
 buf_ff0_reg: unisim.vcomponents.FDCE
     generic map(
@@ -6586,10 +6647,17 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_11 is
   port (
-    \syncsys[headptr_gray]\ : out STD_LOGIC_VECTOR ( 0 to 0 );
+    D : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    \res_seq_reg[tailptr_gray]_0_sp_1\ : out STD_LOGIC;
+    \state_seq_reg[rxen]\ : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    \res_com[tailptr_gray]\ : out STD_LOGIC_VECTOR ( 0 to 0 );
     Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     SPW_main_clk : in STD_LOGIC;
-    buf_ff0_reg_0 : in STD_LOGIC
+    buf_ff0_reg_0 : in STD_LOGIC;
+    \res_seq_reg[tailptr_gray][2]\ : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    \res_seq_reg[tailptr_gray][0]_0\ : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    recv_rxen : in STD_LOGIC;
+    \res_seq_reg[tailptr_gray]\ : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_11 : entity is "SyncDff";
@@ -6597,8 +6665,16 @@ end Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_11;
 
 architecture STRUCTURE of Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_11 is
   signal buf_ff0 : STD_LOGIC;
+  signal \res_seq_reg[tailptr_gray]_0_sn_1\ : STD_LOGIC;
   signal syncdff_ff1 : STD_LOGIC;
+  signal \syncsys[headptr_gray]\ : STD_LOGIC_VECTOR ( 0 to 0 );
+  attribute SOFT_HLUTNM : string;
+  attribute SOFT_HLUTNM of \res_seq[tailptr][1]_i_1\ : label is "soft_lutpair18";
+  attribute SOFT_HLUTNM of \res_seq[tailptr_gray][0]_i_1\ : label is "soft_lutpair18";
+  attribute SOFT_HLUTNM of \res_seq[tailptr_gray][1]_i_1\ : label is "soft_lutpair17";
+  attribute SOFT_HLUTNM of \res_seq[tailptr_gray][2]_i_1\ : label is "soft_lutpair17";
 begin
+  \res_seq_reg[tailptr_gray]_0_sp_1\ <= \res_seq_reg[tailptr_gray]_0_sn_1\;
 buf_ff0_reg: unisim.vcomponents.FDCE
     generic map(
       INIT => '0',
@@ -6610,6 +6686,75 @@ buf_ff0_reg: unisim.vcomponents.FDCE
       CLR => buf_ff0_reg_0,
       D => Q(0),
       Q => buf_ff0
+    );
+\res_seq[tailptr][0]_i_1\: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"82"
+    )
+        port map (
+      I0 => recv_rxen,
+      I1 => \res_seq_reg[tailptr_gray]_0_sn_1\,
+      I2 => \res_seq_reg[tailptr_gray][0]_0\(0),
+      O => \state_seq_reg[rxen]\(0)
+    );
+\res_seq[tailptr][1]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"A208"
+    )
+        port map (
+      I0 => recv_rxen,
+      I1 => \res_seq_reg[tailptr_gray][0]_0\(0),
+      I2 => \res_seq_reg[tailptr_gray]_0_sn_1\,
+      I3 => \res_seq_reg[tailptr_gray][0]_0\(1),
+      O => \state_seq_reg[rxen]\(1)
+    );
+\res_seq[tailptr_gray][0]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"4B00"
+    )
+        port map (
+      I0 => \res_seq_reg[tailptr_gray][0]_0\(0),
+      I1 => \res_seq_reg[tailptr_gray]_0_sn_1\,
+      I2 => \res_seq_reg[tailptr_gray][0]_0\(1),
+      I3 => recv_rxen,
+      O => D(0)
+    );
+\res_seq[tailptr_gray][1]_i_1\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"45BA0000"
+    )
+        port map (
+      I0 => \res_seq_reg[tailptr_gray][0]_0\(1),
+      I1 => \res_seq_reg[tailptr_gray]_0_sn_1\,
+      I2 => \res_seq_reg[tailptr_gray][0]_0\(0),
+      I3 => \res_seq_reg[tailptr_gray]\(2),
+      I4 => recv_rxen,
+      O => D(1)
+    );
+\res_seq[tailptr_gray][1]_i_2\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"9009000000009009"
+    )
+        port map (
+      I0 => \res_seq_reg[tailptr_gray]\(0),
+      I1 => \syncsys[headptr_gray]\(0),
+      I2 => \res_seq_reg[tailptr_gray]\(1),
+      I3 => \res_seq_reg[tailptr_gray][2]\(0),
+      I4 => \res_seq_reg[tailptr_gray][2]\(1),
+      I5 => \res_seq_reg[tailptr_gray]\(2),
+      O => \res_seq_reg[tailptr_gray]_0_sn_1\
+    );
+\res_seq[tailptr_gray][2]_i_1\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"A2AA0800"
+    )
+        port map (
+      I0 => recv_rxen,
+      I1 => \res_seq_reg[tailptr_gray][0]_0\(1),
+      I2 => \res_seq_reg[tailptr_gray]_0_sn_1\,
+      I3 => \res_seq_reg[tailptr_gray][0]_0\(0),
+      I4 => \res_seq_reg[tailptr_gray]\(2),
+      O => \res_com[tailptr_gray]\(0)
     );
 syncdff_ff1_reg: unisim.vcomponents.FDCE
      port map (
@@ -6634,7 +6779,7 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_12 is
   port (
-    \syncsys[headptr_gray]\ : out STD_LOGIC_VECTOR ( 0 to 0 );
+    syncdff_ff2_reg_0 : out STD_LOGIC_VECTOR ( 0 to 0 );
     Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     SPW_main_clk : in STD_LOGIC;
     buf_ff0_reg_0 : in STD_LOGIC
@@ -6673,7 +6818,7 @@ syncdff_ff2_reg: unisim.vcomponents.FDCE
       CE => '1',
       CLR => buf_ff0_reg_0,
       D => syncdff_ff1_reg_n_0,
-      Q => \syncsys[headptr_gray]\(0)
+      Q => syncdff_ff2_reg_0(0)
     );
 end STRUCTURE;
 library IEEE;
@@ -6682,17 +6827,10 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_13 is
   port (
-    D : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    \res_seq_reg[tailptr_gray]_2_sp_1\ : out STD_LOGIC;
-    \state_seq_reg[rxen]\ : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    \res_com[tailptr_gray]\ : out STD_LOGIC_VECTOR ( 0 to 0 );
+    syncdff_ff2_reg_0 : out STD_LOGIC_VECTOR ( 0 to 0 );
     \resrx_seq_reg[headptr]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     SPW_main_clk : in STD_LOGIC;
-    buf_ff0_reg_0 : in STD_LOGIC;
-    \res_seq_reg[tailptr_gray][2]_0\ : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    Q : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    recv_rxen : in STD_LOGIC;
-    \res_seq_reg[tailptr_gray]\ : in STD_LOGIC_VECTOR ( 2 downto 0 )
+    buf_ff0_reg_0 : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_13 : entity is "SyncDff";
@@ -6700,16 +6838,8 @@ end Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_13;
 
 architecture STRUCTURE of Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_13 is
   signal buf_ff0_reg_n_0 : STD_LOGIC;
-  signal \res_seq_reg[tailptr_gray]_2_sn_1\ : STD_LOGIC;
   signal syncdff_ff1_reg_n_0 : STD_LOGIC;
-  signal \syncsys[headptr_gray]\ : STD_LOGIC_VECTOR ( 2 to 2 );
-  attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \res_seq[tailptr][1]_i_1\ : label is "soft_lutpair16";
-  attribute SOFT_HLUTNM of \res_seq[tailptr_gray][0]_i_1\ : label is "soft_lutpair16";
-  attribute SOFT_HLUTNM of \res_seq[tailptr_gray][1]_i_1\ : label is "soft_lutpair15";
-  attribute SOFT_HLUTNM of \res_seq[tailptr_gray][2]_i_1\ : label is "soft_lutpair15";
 begin
-  \res_seq_reg[tailptr_gray]_2_sp_1\ <= \res_seq_reg[tailptr_gray]_2_sn_1\;
 buf_ff0_reg: unisim.vcomponents.FDCE
     generic map(
       INIT => '0',
@@ -6721,75 +6851,6 @@ buf_ff0_reg: unisim.vcomponents.FDCE
       CLR => buf_ff0_reg_0,
       D => \resrx_seq_reg[headptr]\(0),
       Q => buf_ff0_reg_n_0
-    );
-\res_seq[tailptr][0]_i_1\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"82"
-    )
-        port map (
-      I0 => recv_rxen,
-      I1 => \res_seq_reg[tailptr_gray]_2_sn_1\,
-      I2 => Q(0),
-      O => \state_seq_reg[rxen]\(0)
-    );
-\res_seq[tailptr][1]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"A208"
-    )
-        port map (
-      I0 => recv_rxen,
-      I1 => Q(0),
-      I2 => \res_seq_reg[tailptr_gray]_2_sn_1\,
-      I3 => Q(1),
-      O => \state_seq_reg[rxen]\(1)
-    );
-\res_seq[tailptr_gray][0]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"4B00"
-    )
-        port map (
-      I0 => Q(0),
-      I1 => \res_seq_reg[tailptr_gray]_2_sn_1\,
-      I2 => Q(1),
-      I3 => recv_rxen,
-      O => D(0)
-    );
-\res_seq[tailptr_gray][1]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"45BA0000"
-    )
-        port map (
-      I0 => Q(1),
-      I1 => \res_seq_reg[tailptr_gray]_2_sn_1\,
-      I2 => Q(0),
-      I3 => \res_seq_reg[tailptr_gray]\(2),
-      I4 => recv_rxen,
-      O => D(1)
-    );
-\res_seq[tailptr_gray][1]_i_2\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"9009000000009009"
-    )
-        port map (
-      I0 => \res_seq_reg[tailptr_gray]\(2),
-      I1 => \syncsys[headptr_gray]\(2),
-      I2 => \res_seq_reg[tailptr_gray]\(0),
-      I3 => \res_seq_reg[tailptr_gray][2]_0\(0),
-      I4 => \res_seq_reg[tailptr_gray][2]_0\(1),
-      I5 => \res_seq_reg[tailptr_gray]\(1),
-      O => \res_seq_reg[tailptr_gray]_2_sn_1\
-    );
-\res_seq[tailptr_gray][2]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"A2AA0800"
-    )
-        port map (
-      I0 => recv_rxen,
-      I1 => Q(1),
-      I2 => \res_seq_reg[tailptr_gray]_2_sn_1\,
-      I3 => Q(0),
-      I4 => \res_seq_reg[tailptr_gray]\(2),
-      O => \res_com[tailptr_gray]\(0)
     );
 syncdff_ff1_reg: unisim.vcomponents.FDCE
      port map (
@@ -6805,7 +6866,7 @@ syncdff_ff2_reg: unisim.vcomponents.FDCE
       CE => '1',
       CLR => buf_ff0_reg_0,
       D => syncdff_ff1_reg_n_0,
-      Q => \syncsys[headptr_gray]\(2)
+      Q => syncdff_ff2_reg_0(0)
     );
 end STRUCTURE;
 library IEEE;
@@ -6988,10 +7049,15 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_4 is
   port (
-    E : out STD_LOGIC_VECTOR ( 0 to 0 );
+    \res_seq_reg[txdivreg]_0_sp_1\ : out STD_LOGIC;
+    \res_seq_reg[txdivnorm]\ : out STD_LOGIC;
     \res_seq_reg[txdivsafe]__0\ : in STD_LOGIC;
     SPW_TX_clk : in STD_LOGIC;
-    buf_ff0_reg_0 : in STD_LOGIC
+    buf_ff0_reg_0 : in STD_LOGIC;
+    \res_seq_reg[txdivreg]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
+    \restx_seq_reg[txclkdiv][0]\ : in STD_LOGIC;
+    \res_seq_reg[txdivnorm]__0\ : in STD_LOGIC;
+    \restx_seq_reg[txdivnorm]\ : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_4 : entity is "SyncDff";
@@ -6999,8 +7065,14 @@ end Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_4;
 
 architecture STRUCTURE of Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_4 is
   signal buf_ff0_reg_n_0 : STD_LOGIC;
+  signal \res_seq_reg[txdivreg]_0_sn_1\ : STD_LOGIC;
   signal syncdff_ff1_reg_n_0 : STD_LOGIC;
+  signal syncdff_ff2 : STD_LOGIC;
+  attribute SOFT_HLUTNM : string;
+  attribute SOFT_HLUTNM of \restx_seq[txclkdiv][0]_i_1\ : label is "soft_lutpair43";
+  attribute SOFT_HLUTNM of \restx_seq[txdivnorm]_i_1\ : label is "soft_lutpair43";
 begin
+  \res_seq_reg[txdivreg]_0_sp_1\ <= \res_seq_reg[txdivreg]_0_sn_1\;
 buf_ff0_reg: unisim.vcomponents.FDCE
     generic map(
       INIT => '0',
@@ -7012,6 +7084,26 @@ buf_ff0_reg: unisim.vcomponents.FDCE
       CLR => buf_ff0_reg_0,
       D => \res_seq_reg[txdivsafe]__0\,
       Q => buf_ff0_reg_n_0
+    );
+\restx_seq[txclkdiv][0]_i_1\: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"B8"
+    )
+        port map (
+      I0 => \res_seq_reg[txdivreg]\(0),
+      I1 => syncdff_ff2,
+      I2 => \restx_seq_reg[txclkdiv][0]\,
+      O => \res_seq_reg[txdivreg]_0_sn_1\
+    );
+\restx_seq[txdivnorm]_i_1\: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"B8"
+    )
+        port map (
+      I0 => \res_seq_reg[txdivnorm]__0\,
+      I1 => syncdff_ff2,
+      I2 => \restx_seq_reg[txdivnorm]\,
+      O => \res_seq_reg[txdivnorm]\
     );
 syncdff_ff1_reg: unisim.vcomponents.FDCE
      port map (
@@ -7027,7 +7119,7 @@ syncdff_ff2_reg: unisim.vcomponents.FDCE
       CE => '1',
       CLR => buf_ff0_reg_0,
       D => syncdff_ff1_reg_n_0,
-      Q => E(0)
+      Q => syncdff_ff2
     );
 end STRUCTURE;
 library IEEE;
@@ -7072,10 +7164,10 @@ architecture STRUCTURE of Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_5 
   signal syncdff_ff1_reg_n_0 : STD_LOGIC;
   signal \^synctx[txen]\ : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \restx_seq[b_update]_i_1\ : label is "soft_lutpair42";
-  attribute SOFT_HLUTNM of \restx_seq[c_esc]_i_1\ : label is "soft_lutpair43";
-  attribute SOFT_HLUTNM of \restx_seq[e_count][9]_i_1\ : label is "soft_lutpair43";
-  attribute SOFT_HLUTNM of \restx_seq[e_valid]_i_1\ : label is "soft_lutpair42";
+  attribute SOFT_HLUTNM of \restx_seq[b_update]_i_1\ : label is "soft_lutpair44";
+  attribute SOFT_HLUTNM of \restx_seq[c_esc]_i_1\ : label is "soft_lutpair45";
+  attribute SOFT_HLUTNM of \restx_seq[e_count][9]_i_1\ : label is "soft_lutpair45";
+  attribute SOFT_HLUTNM of \restx_seq[e_valid]_i_1\ : label is "soft_lutpair44";
 begin
   \synctx[txen]\ <= \^synctx[txen]\;
 buf_ff0_reg: unisim.vcomponents.FDCE
@@ -7226,8 +7318,8 @@ architecture STRUCTURE of Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_7 
   signal syncdff_ff1_reg_n_0 : STD_LOGIC;
   signal \syncsys[rxcnt_ddr_gray]\ : STD_LOGIC_VECTOR ( 0 to 0 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \res_seq[bitcntp_gray][0]_i_1\ : label is "soft_lutpair14";
-  attribute SOFT_HLUTNM of \res_seq[inact]_i_2\ : label is "soft_lutpair14";
+  attribute SOFT_HLUTNM of \res_seq[bitcntp_gray][0]_i_1\ : label is "soft_lutpair16";
+  attribute SOFT_HLUTNM of \res_seq[inact]_i_2\ : label is "soft_lutpair16";
 begin
 \buf_ff0_i_1__1\: unisim.vcomponents.LUT4
     generic map(
@@ -7441,18 +7533,18 @@ entity Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecvFront is
     syncdff_ff2_reg : out STD_LOGIC_VECTOR ( 2 downto 0 );
     recv_inact : out STD_LOGIC;
     recv_inbvalid : out STD_LOGIC;
-    \res_seq_reg[tailptr_gray][2]_0\ : out STD_LOGIC;
     \res_seq_reg[bufdout][1]_0\ : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    \res_seq_reg[tailptr_gray][0]_0\ : out STD_LOGIC;
     D : out STD_LOGIC_VECTOR ( 0 to 0 );
     SPW_Din : in STD_LOGIC;
     SPW_main_clk : in STD_LOGIC;
     buf_ff0_reg : in STD_LOGIC;
     \vres[inbvalid]0_out\ : in STD_LOGIC;
+    \res_seq_reg[datareg][0]\ : in STD_LOGIC;
+    \res_seq_reg[parity]__0\ : in STD_LOGIC;
     recv_rxen : in STD_LOGIC;
     SPW_Sin : in STD_LOGIC;
-    \res_seq_reg[parity]__0\ : in STD_LOGIC;
-    \res_seq_reg[datareg][0]\ : in STD_LOGIC;
     \res_seq_reg[disccnt][0]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \res_seq_reg[bitcntp_gray][3]_0\ : in STD_LOGIC_VECTOR ( 2 downto 0 );
     load : in STD_LOGIC
@@ -7469,8 +7561,8 @@ architecture STRUCTURE of Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecvFro
   signal FIFOMEM_n_1 : STD_LOGIC;
   signal \^q\ : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal RXRSTLOGIC_n_0 : STD_LOGIC;
-  signal SYNCSYSHEADPTR2_n_0 : STD_LOGIC;
-  signal SYNCSYSHEADPTR2_n_1 : STD_LOGIC;
+  signal SYNCSYSHEADPTR0_n_0 : STD_LOGIC;
+  signal SYNCSYSHEADPTR0_n_1 : STD_LOGIC;
   signal ff_f_di1 : STD_LOGIC;
   signal ff_pre_f : STD_LOGIC;
   signal ff_pre_r : STD_LOGIC;
@@ -7496,18 +7588,18 @@ architecture STRUCTURE of Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecvFro
   signal \rxcnt_r_reg_n_0_[2]\ : STD_LOGIC;
   signal \rxcnt_r_reg_n_0_[3]\ : STD_LOGIC;
   signal \^syncdff_ff2_reg\ : STD_LOGIC_VECTOR ( 2 downto 0 );
-  signal \syncsys[headptr_gray]\ : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal \syncsys[headptr_gray]\ : STD_LOGIC_VECTOR ( 2 downto 1 );
   signal \vres[inact]1_out\ : STD_LOGIC;
   signal \vresrx[headptr]\ : STD_LOGIC_VECTOR ( 1 downto 0 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \resrx_seq[headptr][1]_i_1\ : label is "soft_lutpair18";
-  attribute SOFT_HLUTNM of \resrx_seq[headptr][2]_i_1\ : label is "soft_lutpair17";
-  attribute SOFT_HLUTNM of \resrx_seq[headptr_gray][0]_i_1\ : label is "soft_lutpair18";
-  attribute SOFT_HLUTNM of \resrx_seq[headptr_gray][1]_i_1\ : label is "soft_lutpair17";
-  attribute SOFT_HLUTNM of \rxcnt_f[2]_i_1\ : label is "soft_lutpair20";
-  attribute SOFT_HLUTNM of \rxcnt_f[3]_i_1\ : label is "soft_lutpair20";
-  attribute SOFT_HLUTNM of \rxcnt_r[2]_i_1\ : label is "soft_lutpair19";
-  attribute SOFT_HLUTNM of \rxcnt_r[3]_i_1\ : label is "soft_lutpair19";
+  attribute SOFT_HLUTNM of \resrx_seq[headptr][1]_i_1\ : label is "soft_lutpair20";
+  attribute SOFT_HLUTNM of \resrx_seq[headptr][2]_i_1\ : label is "soft_lutpair19";
+  attribute SOFT_HLUTNM of \resrx_seq[headptr_gray][0]_i_1\ : label is "soft_lutpair20";
+  attribute SOFT_HLUTNM of \resrx_seq[headptr_gray][1]_i_1\ : label is "soft_lutpair19";
+  attribute SOFT_HLUTNM of \rxcnt_f[2]_i_1\ : label is "soft_lutpair22";
+  attribute SOFT_HLUTNM of \rxcnt_f[3]_i_1\ : label is "soft_lutpair22";
+  attribute SOFT_HLUTNM of \rxcnt_r[2]_i_1\ : label is "soft_lutpair21";
+  attribute SOFT_HLUTNM of \rxcnt_r[3]_i_1\ : label is "soft_lutpair21";
 begin
   Q(1 downto 0) <= \^q\(1 downto 0);
   recv_inact <= \^recv_inact\;
@@ -7580,32 +7672,32 @@ SYNCSYSBITCNT3: entity work.Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_
     );
 SYNCSYSHEADPTR0: entity work.Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_11
      port map (
+      D(1) => SYNCSYSHEADPTR0_n_0,
+      D(0) => SYNCSYSHEADPTR0_n_1,
       Q(0) => \resrx_seq_reg[headptr_gray_n_0_][0]\,
       SPW_main_clk => SPW_main_clk,
       buf_ff0_reg_0 => buf_ff0_reg,
-      \syncsys[headptr_gray]\(0) => \syncsys[headptr_gray]\(0)
+      recv_rxen => recv_rxen,
+      \res_com[tailptr_gray]\(0) => \res_com[tailptr_gray]\(2),
+      \res_seq_reg[tailptr_gray]\(2 downto 0) => \res_seq_reg[tailptr_gray]\(2 downto 0),
+      \res_seq_reg[tailptr_gray][0]_0\(1 downto 0) => \res_seq_reg[tailptr]\(1 downto 0),
+      \res_seq_reg[tailptr_gray][2]\(1 downto 0) => \syncsys[headptr_gray]\(2 downto 1),
+      \res_seq_reg[tailptr_gray]_0_sp_1\ => \res_seq_reg[tailptr_gray][0]_0\,
+      \state_seq_reg[rxen]\(1 downto 0) => \res_com[tailptr]\(1 downto 0)
     );
 SYNCSYSHEADPTR1: entity work.Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_12
      port map (
       Q(0) => DI,
       SPW_main_clk => SPW_main_clk,
       buf_ff0_reg_0 => buf_ff0_reg,
-      \syncsys[headptr_gray]\(0) => \syncsys[headptr_gray]\(1)
+      syncdff_ff2_reg_0(0) => \syncsys[headptr_gray]\(1)
     );
 SYNCSYSHEADPTR2: entity work.Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_13
      port map (
-      D(1) => SYNCSYSHEADPTR2_n_0,
-      D(0) => SYNCSYSHEADPTR2_n_1,
-      Q(1 downto 0) => \res_seq_reg[tailptr]\(1 downto 0),
       SPW_main_clk => SPW_main_clk,
       buf_ff0_reg_0 => buf_ff0_reg,
-      recv_rxen => recv_rxen,
-      \res_com[tailptr_gray]\(0) => \res_com[tailptr_gray]\(2),
-      \res_seq_reg[tailptr_gray]\(2 downto 0) => \res_seq_reg[tailptr_gray]\(2 downto 0),
-      \res_seq_reg[tailptr_gray][2]_0\(1 downto 0) => \syncsys[headptr_gray]\(1 downto 0),
-      \res_seq_reg[tailptr_gray]_2_sp_1\ => \res_seq_reg[tailptr_gray][2]_0\,
       \resrx_seq_reg[headptr]\(0) => \resrx_seq_reg[headptr]\(2),
-      \state_seq_reg[rxen]\(1 downto 0) => \res_com[tailptr]\(1 downto 0)
+      syncdff_ff2_reg_0(0) => \syncsys[headptr_gray]\(2)
     );
 ff_f_di1_reg: unisim.vcomponents.FDCE
     generic map(
@@ -7663,13 +7755,13 @@ ff_r_di2r_reg: unisim.vcomponents.FDCE
     );
 \res_seq[datareg][0]_i_2\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"5569"
+      INIT => X"5665"
     )
         port map (
       I0 => \^q\(1),
-      I1 => \res_seq_reg[parity]__0\,
-      I2 => \^q\(0),
-      I3 => \res_seq_reg[datareg][0]\,
+      I1 => \res_seq_reg[datareg][0]\,
+      I2 => \res_seq_reg[parity]__0\,
+      I3 => \^q\(0),
       O => \res_seq_reg[bufdout][1]_0\
     );
 \res_seq[disccnt][0]_i_1\: unisim.vcomponents.LUT2
@@ -7766,7 +7858,7 @@ ff_r_di2r_reg: unisim.vcomponents.FDCE
       C => SPW_main_clk,
       CE => '1',
       CLR => buf_ff0_reg,
-      D => SYNCSYSHEADPTR2_n_1,
+      D => SYNCSYSHEADPTR0_n_1,
       Q => \res_seq_reg[tailptr_gray]\(0)
     );
 \res_seq_reg[tailptr_gray][1]\: unisim.vcomponents.FDCE
@@ -7774,7 +7866,7 @@ ff_r_di2r_reg: unisim.vcomponents.FDCE
       C => SPW_main_clk,
       CE => '1',
       CLR => buf_ff0_reg,
-      D => SYNCSYSHEADPTR2_n_0,
+      D => SYNCSYSHEADPTR0_n_0,
       Q => \res_seq_reg[tailptr_gray]\(1)
     );
 \res_seq_reg[tailptr_gray][2]\: unisim.vcomponents.FDCE
@@ -8049,7 +8141,6 @@ entity Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast is
     \res_seq_reg[pend_char]_0\ : in STD_LOGIC;
     \res_seq_reg[txfifo_rvalid]__0\ : in STD_LOGIC;
     \res_seq_reg[txdiscard]__0\ : in STD_LOGIC;
-    \res_seq_reg[txdivreg][3]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     D : in STD_LOGIC_VECTOR ( 8 downto 0 )
   );
@@ -8069,6 +8160,8 @@ architecture STRUCTURE of Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fa
   signal SYNCTXSYSFLIP0_n_1 : STD_LOGIC;
   signal SYNCTXSYSFLIP0_n_2 : STD_LOGIC;
   signal SYNCTXSYSFLIP1_n_1 : STD_LOGIC;
+  signal SYNCTXTXDIVSAFE_n_0 : STD_LOGIC;
+  signal SYNCTXTXDIVSAFE_n_1 : STD_LOGIC;
   signal SYNCTXTXEN_n_1 : STD_LOGIC;
   signal SYNCTXTXEN_n_2 : STD_LOGIC;
   signal SYNCTXTXEN_n_3 : STD_LOGIC;
@@ -8093,8 +8186,6 @@ architecture STRUCTURE of Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fa
   signal \res_seq[tokmux]_i_3_n_0\ : STD_LOGIC;
   signal \res_seq[txdivnorm]_i_1_n_0\ : STD_LOGIC;
   signal \res_seq[txdivreg][0]_i_1_n_0\ : STD_LOGIC;
-  signal \res_seq[txdivreg][1]_i_1_n_0\ : STD_LOGIC;
-  signal \res_seq[txdivreg][3]_i_1_n_0\ : STD_LOGIC;
   signal \res_seq[txdivsafe]_i_1_n_0\ : STD_LOGIC;
   signal \res_seq[txenreg]_i_1_n_0\ : STD_LOGIC;
   signal \^res_seq_reg[allow_char]__0\ : STD_LOGIC;
@@ -8123,7 +8214,7 @@ architecture STRUCTURE of Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fa
   signal \res_seq_reg[token1][flag_n_0_]\ : STD_LOGIC;
   signal \res_seq_reg[tokmux]__0\ : STD_LOGIC;
   signal \res_seq_reg[txdivnorm]__0\ : STD_LOGIC;
-  signal \res_seq_reg[txdivreg]\ : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal \res_seq_reg[txdivreg]\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \res_seq_reg[txdivsafe]__0\ : STD_LOGIC;
   signal \res_seq_reg[txdivtmp]\ : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal \res_seq_reg[txenreg]__0\ : STD_LOGIC;
@@ -8162,6 +8253,7 @@ architecture STRUCTURE of Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fa
   signal \restx_seq[e_shift][8]_i_1_n_0\ : STD_LOGIC;
   signal \restx_seq[e_shift][9]_i_1_n_0\ : STD_LOGIC;
   signal \restx_seq[f_spwdo]_i_1_n_0\ : STD_LOGIC;
+  signal \restx_seq[txclkcnt][1]_i_1_n_0\ : STD_LOGIC;
   signal \restx_seq[txclkcnt][2]_i_1_n_0\ : STD_LOGIC;
   signal \restx_seq[txclkcnt][4]_i_1_n_0\ : STD_LOGIC;
   signal \restx_seq[txclkcnt][5]_i_1_n_0\ : STD_LOGIC;
@@ -8231,8 +8323,6 @@ architecture STRUCTURE of Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fa
   signal \restx_seq_reg[txclkcy_n_0_][0]\ : STD_LOGIC;
   signal \restx_seq_reg[txclkcy_n_0_][2]\ : STD_LOGIC;
   signal \restx_seq_reg[txclkdiv_n_0_][0]\ : STD_LOGIC;
-  signal \restx_seq_reg[txclkdiv_n_0_][1]\ : STD_LOGIC;
-  signal \restx_seq_reg[txclkdiv_n_0_][3]\ : STD_LOGIC;
   signal \restx_seq_reg[txclkdone_n_0_][0]\ : STD_LOGIC;
   signal \restx_seq_reg[txclkdone_n_0_][1]\ : STD_LOGIC;
   signal \restx_seq_reg[txclken]__0\ : STD_LOGIC;
@@ -8240,7 +8330,6 @@ architecture STRUCTURE of Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fa
   signal \restx_seq_reg[txdivnorm_n_0_]\ : STD_LOGIC;
   signal \restx_seq_reg[txflip_n_0_0]\ : STD_LOGIC;
   signal \restx_seq_reg[txflip_n_0_1]\ : STD_LOGIC;
-  signal syncdff_ff2 : STD_LOGIC;
   signal \synctx[sysflip1]\ : STD_LOGIC;
   signal \synctx[txen]\ : STD_LOGIC;
   signal \v[token0][tick]\ : STD_LOGIC;
@@ -8254,7 +8343,7 @@ architecture STRUCTURE of Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fa
   signal \vtx[e_parity]1_out\ : STD_LOGIC;
   signal \vtx[f_spwso]__0\ : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \res_seq[pend_char]_i_2\ : label is "soft_lutpair45";
+  attribute SOFT_HLUTNM of \res_seq[pend_char]_i_2\ : label is "soft_lutpair47";
   attribute SOFT_HLUTNM of \res_seq[token1][char][0]_i_1\ : label is "soft_lutpair63";
   attribute SOFT_HLUTNM of \res_seq[token1][char][1]_i_1\ : label is "soft_lutpair63";
   attribute SOFT_HLUTNM of \res_seq[token1][char][2]_i_1\ : label is "soft_lutpair64";
@@ -8263,71 +8352,69 @@ architecture STRUCTURE of Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fa
   attribute SOFT_HLUTNM of \res_seq[token1][char][5]_i_1\ : label is "soft_lutpair65";
   attribute SOFT_HLUTNM of \res_seq[token1][char][6]_i_1\ : label is "soft_lutpair66";
   attribute SOFT_HLUTNM of \res_seq[token1][char][7]_i_1\ : label is "soft_lutpair66";
-  attribute SOFT_HLUTNM of \res_seq[token1][fctpiggy]_i_2\ : label is "soft_lutpair46";
-  attribute SOFT_HLUTNM of \res_seq[token1][fctpiggy]_i_3\ : label is "soft_lutpair45";
-  attribute SOFT_HLUTNM of \res_seq[tokmux]_i_3\ : label is "soft_lutpair46";
+  attribute SOFT_HLUTNM of \res_seq[token1][fctpiggy]_i_2\ : label is "soft_lutpair48";
+  attribute SOFT_HLUTNM of \res_seq[token1][fctpiggy]_i_3\ : label is "soft_lutpair47";
+  attribute SOFT_HLUTNM of \res_seq[tokmux]_i_3\ : label is "soft_lutpair48";
   attribute SOFT_HLUTNM of \res_seq[txdivnorm]_i_1\ : label is "soft_lutpair53";
   attribute SOFT_HLUTNM of \res_seq[txdivreg][0]_i_1\ : label is "soft_lutpair53";
-  attribute SOFT_HLUTNM of \res_seq[txdivreg][1]_i_1\ : label is "soft_lutpair49";
-  attribute SOFT_HLUTNM of \res_seq[txdivreg][3]_i_1\ : label is "soft_lutpair48";
-  attribute SOFT_HLUTNM of \res_seq[txdivsafe]_i_1\ : label is "soft_lutpair48";
-  attribute SOFT_HLUTNM of \res_seq[txdivtmp][0]_i_1\ : label is "soft_lutpair49";
-  attribute SOFT_HLUTNM of \res_seq[txdivtmp][1]_i_1\ : label is "soft_lutpair47";
-  attribute SOFT_HLUTNM of \res_seq[txenreg]_i_1\ : label is "soft_lutpair47";
-  attribute SOFT_HLUTNM of \restx_seq[b_token][char][0]_i_1\ : label is "soft_lutpair67";
-  attribute SOFT_HLUTNM of \restx_seq[b_token][char][1]_i_1\ : label is "soft_lutpair67";
-  attribute SOFT_HLUTNM of \restx_seq[b_token][char][2]_i_1\ : label is "soft_lutpair68";
-  attribute SOFT_HLUTNM of \restx_seq[b_token][char][3]_i_1\ : label is "soft_lutpair68";
-  attribute SOFT_HLUTNM of \restx_seq[b_token][char][4]_i_1\ : label is "soft_lutpair69";
-  attribute SOFT_HLUTNM of \restx_seq[b_token][char][5]_i_1\ : label is "soft_lutpair69";
-  attribute SOFT_HLUTNM of \restx_seq[b_token][char][6]_i_1\ : label is "soft_lutpair70";
-  attribute SOFT_HLUTNM of \restx_seq[b_token][char][7]_i_1\ : label is "soft_lutpair70";
-  attribute SOFT_HLUTNM of \restx_seq[b_token][fct]_i_1\ : label is "soft_lutpair78";
-  attribute SOFT_HLUTNM of \restx_seq[b_token][fctpiggy]_i_1\ : label is "soft_lutpair78";
-  attribute SOFT_HLUTNM of \restx_seq[c_bits][3]_i_1\ : label is "soft_lutpair81";
-  attribute SOFT_HLUTNM of \restx_seq[c_bits][4]_i_1\ : label is "soft_lutpair81";
-  attribute SOFT_HLUTNM of \restx_seq[c_bits][5]_i_1\ : label is "soft_lutpair80";
-  attribute SOFT_HLUTNM of \restx_seq[c_bits][6]_i_1\ : label is "soft_lutpair80";
-  attribute SOFT_HLUTNM of \restx_seq[c_bits][7]_i_1\ : label is "soft_lutpair79";
-  attribute SOFT_HLUTNM of \restx_seq[c_bits][8]_i_1\ : label is "soft_lutpair79";
-  attribute SOFT_HLUTNM of \restx_seq[d_bits][1]_i_1\ : label is "soft_lutpair58";
-  attribute SOFT_HLUTNM of \restx_seq[d_bits][2]_i_1\ : label is "soft_lutpair58";
+  attribute SOFT_HLUTNM of \res_seq[txdivsafe]_i_1\ : label is "soft_lutpair67";
+  attribute SOFT_HLUTNM of \res_seq[txdivtmp][0]_i_1\ : label is "soft_lutpair67";
+  attribute SOFT_HLUTNM of \res_seq[txdivtmp][1]_i_1\ : label is "soft_lutpair49";
+  attribute SOFT_HLUTNM of \res_seq[txenreg]_i_1\ : label is "soft_lutpair49";
+  attribute SOFT_HLUTNM of \restx_seq[b_token][char][0]_i_1\ : label is "soft_lutpair68";
+  attribute SOFT_HLUTNM of \restx_seq[b_token][char][1]_i_1\ : label is "soft_lutpair68";
+  attribute SOFT_HLUTNM of \restx_seq[b_token][char][2]_i_1\ : label is "soft_lutpair69";
+  attribute SOFT_HLUTNM of \restx_seq[b_token][char][3]_i_1\ : label is "soft_lutpair69";
+  attribute SOFT_HLUTNM of \restx_seq[b_token][char][4]_i_1\ : label is "soft_lutpair70";
+  attribute SOFT_HLUTNM of \restx_seq[b_token][char][5]_i_1\ : label is "soft_lutpair70";
+  attribute SOFT_HLUTNM of \restx_seq[b_token][char][6]_i_1\ : label is "soft_lutpair71";
+  attribute SOFT_HLUTNM of \restx_seq[b_token][char][7]_i_1\ : label is "soft_lutpair71";
+  attribute SOFT_HLUTNM of \restx_seq[b_token][fct]_i_1\ : label is "soft_lutpair79";
+  attribute SOFT_HLUTNM of \restx_seq[b_token][fctpiggy]_i_1\ : label is "soft_lutpair79";
+  attribute SOFT_HLUTNM of \restx_seq[c_bits][3]_i_1\ : label is "soft_lutpair82";
+  attribute SOFT_HLUTNM of \restx_seq[c_bits][4]_i_1\ : label is "soft_lutpair82";
+  attribute SOFT_HLUTNM of \restx_seq[c_bits][5]_i_1\ : label is "soft_lutpair81";
+  attribute SOFT_HLUTNM of \restx_seq[c_bits][6]_i_1\ : label is "soft_lutpair81";
+  attribute SOFT_HLUTNM of \restx_seq[c_bits][7]_i_1\ : label is "soft_lutpair80";
+  attribute SOFT_HLUTNM of \restx_seq[c_bits][8]_i_1\ : label is "soft_lutpair80";
+  attribute SOFT_HLUTNM of \restx_seq[d_bits][1]_i_1\ : label is "soft_lutpair57";
+  attribute SOFT_HLUTNM of \restx_seq[d_bits][2]_i_1\ : label is "soft_lutpair57";
   attribute SOFT_HLUTNM of \restx_seq[d_bits][3]_i_1\ : label is "soft_lutpair55";
-  attribute SOFT_HLUTNM of \restx_seq[d_bits][4]_i_1\ : label is "soft_lutpair59";
-  attribute SOFT_HLUTNM of \restx_seq[d_bits][5]_i_1\ : label is "soft_lutpair59";
-  attribute SOFT_HLUTNM of \restx_seq[d_bits][6]_i_1\ : label is "soft_lutpair60";
-  attribute SOFT_HLUTNM of \restx_seq[d_bits][7]_i_1\ : label is "soft_lutpair60";
-  attribute SOFT_HLUTNM of \restx_seq[e_count][1]_i_1\ : label is "soft_lutpair71";
-  attribute SOFT_HLUTNM of \restx_seq[e_count][2]_i_1\ : label is "soft_lutpair71";
-  attribute SOFT_HLUTNM of \restx_seq[e_count][3]_i_1\ : label is "soft_lutpair57";
-  attribute SOFT_HLUTNM of \restx_seq[e_count][4]_i_1\ : label is "soft_lutpair72";
-  attribute SOFT_HLUTNM of \restx_seq[e_count][5]_i_1\ : label is "soft_lutpair72";
-  attribute SOFT_HLUTNM of \restx_seq[e_count][6]_i_1\ : label is "soft_lutpair73";
-  attribute SOFT_HLUTNM of \restx_seq[e_count][7]_i_1\ : label is "soft_lutpair73";
-  attribute SOFT_HLUTNM of \restx_seq[e_count][9]_i_2\ : label is "soft_lutpair57";
-  attribute SOFT_HLUTNM of \restx_seq[e_shift][0]_i_1\ : label is "soft_lutpair61";
-  attribute SOFT_HLUTNM of \restx_seq[e_shift][1]_i_1\ : label is "soft_lutpair61";
-  attribute SOFT_HLUTNM of \restx_seq[e_shift][2]_i_1\ : label is "soft_lutpair74";
-  attribute SOFT_HLUTNM of \restx_seq[e_shift][3]_i_1\ : label is "soft_lutpair74";
-  attribute SOFT_HLUTNM of \restx_seq[e_shift][4]_i_1\ : label is "soft_lutpair75";
-  attribute SOFT_HLUTNM of \restx_seq[e_shift][5]_i_1\ : label is "soft_lutpair75";
-  attribute SOFT_HLUTNM of \restx_seq[e_shift][6]_i_1\ : label is "soft_lutpair76";
-  attribute SOFT_HLUTNM of \restx_seq[e_shift][7]_i_1\ : label is "soft_lutpair76";
-  attribute SOFT_HLUTNM of \restx_seq[e_shift][8]_i_1\ : label is "soft_lutpair77";
-  attribute SOFT_HLUTNM of \restx_seq[e_shift][9]_i_1\ : label is "soft_lutpair77";
+  attribute SOFT_HLUTNM of \restx_seq[d_bits][4]_i_1\ : label is "soft_lutpair58";
+  attribute SOFT_HLUTNM of \restx_seq[d_bits][5]_i_1\ : label is "soft_lutpair58";
+  attribute SOFT_HLUTNM of \restx_seq[d_bits][6]_i_1\ : label is "soft_lutpair59";
+  attribute SOFT_HLUTNM of \restx_seq[d_bits][7]_i_1\ : label is "soft_lutpair59";
+  attribute SOFT_HLUTNM of \restx_seq[e_count][1]_i_1\ : label is "soft_lutpair72";
+  attribute SOFT_HLUTNM of \restx_seq[e_count][2]_i_1\ : label is "soft_lutpair72";
+  attribute SOFT_HLUTNM of \restx_seq[e_count][3]_i_1\ : label is "soft_lutpair56";
+  attribute SOFT_HLUTNM of \restx_seq[e_count][4]_i_1\ : label is "soft_lutpair73";
+  attribute SOFT_HLUTNM of \restx_seq[e_count][5]_i_1\ : label is "soft_lutpair73";
+  attribute SOFT_HLUTNM of \restx_seq[e_count][6]_i_1\ : label is "soft_lutpair74";
+  attribute SOFT_HLUTNM of \restx_seq[e_count][7]_i_1\ : label is "soft_lutpair74";
+  attribute SOFT_HLUTNM of \restx_seq[e_count][9]_i_2\ : label is "soft_lutpair56";
+  attribute SOFT_HLUTNM of \restx_seq[e_shift][0]_i_1\ : label is "soft_lutpair60";
+  attribute SOFT_HLUTNM of \restx_seq[e_shift][1]_i_1\ : label is "soft_lutpair60";
+  attribute SOFT_HLUTNM of \restx_seq[e_shift][2]_i_1\ : label is "soft_lutpair75";
+  attribute SOFT_HLUTNM of \restx_seq[e_shift][3]_i_1\ : label is "soft_lutpair75";
+  attribute SOFT_HLUTNM of \restx_seq[e_shift][4]_i_1\ : label is "soft_lutpair76";
+  attribute SOFT_HLUTNM of \restx_seq[e_shift][5]_i_1\ : label is "soft_lutpair76";
+  attribute SOFT_HLUTNM of \restx_seq[e_shift][6]_i_1\ : label is "soft_lutpair77";
+  attribute SOFT_HLUTNM of \restx_seq[e_shift][7]_i_1\ : label is "soft_lutpair77";
+  attribute SOFT_HLUTNM of \restx_seq[e_shift][8]_i_1\ : label is "soft_lutpair78";
+  attribute SOFT_HLUTNM of \restx_seq[e_shift][9]_i_1\ : label is "soft_lutpair78";
   attribute SOFT_HLUTNM of \restx_seq[f_spwdo]_i_1\ : label is "soft_lutpair54";
-  attribute SOFT_HLUTNM of \restx_seq[txclkcnt][0]_i_1\ : label is "soft_lutpair56";
-  attribute SOFT_HLUTNM of \restx_seq[txclkcnt][1]_i_1\ : label is "soft_lutpair56";
+  attribute SOFT_HLUTNM of \restx_seq[txclkcnt][0]_i_1\ : label is "soft_lutpair61";
+  attribute SOFT_HLUTNM of \restx_seq[txclkcnt][1]_i_1\ : label is "soft_lutpair61";
   attribute SOFT_HLUTNM of \restx_seq[txclkcnt][2]_i_1\ : label is "soft_lutpair62";
   attribute SOFT_HLUTNM of \restx_seq[txclkcnt][3]_i_1\ : label is "soft_lutpair50";
   attribute SOFT_HLUTNM of \restx_seq[txclkcnt][4]_i_1\ : label is "soft_lutpair62";
   attribute SOFT_HLUTNM of \restx_seq[txclkcnt][5]_i_1\ : label is "soft_lutpair51";
   attribute SOFT_HLUTNM of \restx_seq[txclkcnt][6]_i_1\ : label is "soft_lutpair52";
   attribute SOFT_HLUTNM of \restx_seq[txclkcnt][7]_i_1\ : label is "soft_lutpair52";
-  attribute SOFT_HLUTNM of \restx_seq[txclkcy][0]_i_1\ : label is "soft_lutpair44";
+  attribute SOFT_HLUTNM of \restx_seq[txclkcy][0]_i_1\ : label is "soft_lutpair46";
   attribute SOFT_HLUTNM of \restx_seq[txclkcy][1]_i_1\ : label is "soft_lutpair50";
   attribute SOFT_HLUTNM of \restx_seq[txclkcy][2]_i_1\ : label is "soft_lutpair51";
-  attribute SOFT_HLUTNM of \restx_seq[txclkdone][0]_i_1\ : label is "soft_lutpair44";
+  attribute SOFT_HLUTNM of \restx_seq[txclkdone][0]_i_1\ : label is "soft_lutpair46";
   attribute SOFT_HLUTNM of \vtx[d_cnt10]\ : label is "soft_lutpair55";
   attribute SOFT_HLUTNM of \vtx[f_spwso]\ : label is "soft_lutpair54";
 begin
@@ -8407,10 +8494,15 @@ SYNCTXSYSFLIP1: entity work.Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_
     );
 SYNCTXTXDIVSAFE: entity work.Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_4
      port map (
-      E(0) => syncdff_ff2,
       SPW_TX_clk => SPW_TX_clk,
       buf_ff0_reg_0 => buf_ff0_reg_0,
-      \res_seq_reg[txdivsafe]__0\ => \res_seq_reg[txdivsafe]__0\
+      \res_seq_reg[txdivnorm]\ => SYNCTXTXDIVSAFE_n_1,
+      \res_seq_reg[txdivnorm]__0\ => \res_seq_reg[txdivnorm]__0\,
+      \res_seq_reg[txdivreg]\(0) => \res_seq_reg[txdivreg]\(0),
+      \res_seq_reg[txdivreg]_0_sp_1\ => SYNCTXTXDIVSAFE_n_0,
+      \res_seq_reg[txdivsafe]__0\ => \res_seq_reg[txdivsafe]__0\,
+      \restx_seq_reg[txclkdiv][0]\ => \restx_seq_reg[txclkdiv_n_0_][0]\,
+      \restx_seq_reg[txdivnorm]\ => \restx_seq_reg[txdivnorm_n_0_]\
     );
 SYNCTXTXEN: entity work.Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_5
      port map (
@@ -8607,30 +8699,6 @@ SYNCTXTXEN: entity work.Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_5
       I2 => \res_seq_reg[txdivtmp]\(1),
       I3 => \res_seq_reg[txdivreg]\(0),
       O => \res_seq[txdivreg][0]_i_1_n_0\
-    );
-\res_seq[txdivreg][1]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"FFFD0001"
-    )
-        port map (
-      I0 => \res_seq_reg[txdivreg][3]_0\(0),
-      I1 => \res_seq_reg[txdivtmp]\(1),
-      I2 => \res_seq_reg[txdivtmp]\(0),
-      I3 => \res_seq_reg[txdivsafe]__0\,
-      I4 => \res_seq_reg[txdivreg]\(1),
-      O => \res_seq[txdivreg][1]_i_1_n_0\
-    );
-\res_seq[txdivreg][3]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"FFFE0002"
-    )
-        port map (
-      I0 => \res_seq_reg[txdivreg][3]_0\(0),
-      I1 => \res_seq_reg[txdivtmp]\(1),
-      I2 => \res_seq_reg[txdivtmp]\(0),
-      I3 => \res_seq_reg[txdivsafe]__0\,
-      I4 => \res_seq_reg[txdivreg]\(3),
-      O => \res_seq[txdivreg][3]_i_1_n_0\
     );
 \res_seq[txdivsafe]_i_1\: unisim.vcomponents.LUT3
     generic map(
@@ -8999,22 +9067,6 @@ SYNCTXTXEN: entity work.Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_5
       CLR => buf_ff0_reg,
       D => \res_seq[txdivreg][0]_i_1_n_0\,
       Q => \res_seq_reg[txdivreg]\(0)
-    );
-\res_seq_reg[txdivreg][1]\: unisim.vcomponents.FDCE
-     port map (
-      C => SPW_main_clk,
-      CE => '1',
-      CLR => buf_ff0_reg,
-      D => \res_seq[txdivreg][1]_i_1_n_0\,
-      Q => \res_seq_reg[txdivreg]\(1)
-    );
-\res_seq_reg[txdivreg][3]\: unisim.vcomponents.FDCE
-     port map (
-      C => SPW_main_clk,
-      CE => '1',
-      CLR => buf_ff0_reg,
-      D => \res_seq[txdivreg][3]_i_1_n_0\,
-      Q => \res_seq_reg[txdivreg]\(3)
     );
 \res_seq_reg[txdivsafe]\: unisim.vcomponents.FDCE
      port map (
@@ -9552,16 +9604,15 @@ SYNCTXTXEN: entity work.Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_5
       I2 => \restx_seq_reg[txclkcnt_n_0_][0]\,
       O => \restx_com[txclkcnt]\(0)
     );
-\restx_seq[txclkcnt][1]_i_1\: unisim.vcomponents.LUT4
+\restx_seq[txclkcnt][1]_i_1\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"B88B"
+      INIT => X"41"
     )
         port map (
-      I0 => \restx_seq_reg[txclkdiv_n_0_][1]\,
-      I1 => \restx_seq_reg[txclken]__0\,
+      I0 => \restx_seq_reg[txclken]__0\,
+      I1 => \restx_seq_reg[txclkcnt_n_0_][1]\,
       I2 => \restx_seq_reg[txclkcnt_n_0_][0]\,
-      I3 => \restx_seq_reg[txclkcnt_n_0_][1]\,
-      O => \restx_com[txclkcnt]\(1)
+      O => \restx_seq[txclkcnt][1]_i_1_n_0\
     );
 \restx_seq[txclkcnt][2]_i_1\: unisim.vcomponents.LUT3
     generic map(
@@ -9578,7 +9629,7 @@ SYNCTXTXEN: entity work.Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_5
       INIT => X"BB8B88B8"
     )
         port map (
-      I0 => \restx_seq_reg[txclkdiv_n_0_][3]\,
+      I0 => \restx_seq_reg[txclkdiv_n_0_][0]\,
       I1 => \restx_seq_reg[txclken]__0\,
       I2 => \restx_seq_reg[txclkcy_n_0_][0]\,
       I3 => p_1_in(0),
@@ -10192,7 +10243,7 @@ SYNCTXTXEN: entity work.Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_5
       C => SPW_TX_clk,
       CE => '1',
       CLR => buf_ff0_reg_0,
-      D => \restx_com[txclkcnt]\(1),
+      D => \restx_seq[txclkcnt][1]_i_1_n_0\,
       Q => \restx_seq_reg[txclkcnt_n_0_][1]\
     );
 \restx_seq_reg[txclkcnt][2]\: unisim.vcomponents.FDCE
@@ -10270,26 +10321,10 @@ SYNCTXTXEN: entity work.Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_5
 \restx_seq_reg[txclkdiv][0]\: unisim.vcomponents.FDCE
      port map (
       C => SPW_TX_clk,
-      CE => syncdff_ff2,
+      CE => '1',
       CLR => buf_ff0_reg_0,
-      D => \res_seq_reg[txdivreg]\(0),
+      D => SYNCTXTXDIVSAFE_n_0,
       Q => \restx_seq_reg[txclkdiv_n_0_][0]\
-    );
-\restx_seq_reg[txclkdiv][1]\: unisim.vcomponents.FDCE
-     port map (
-      C => SPW_TX_clk,
-      CE => syncdff_ff2,
-      CLR => buf_ff0_reg_0,
-      D => \res_seq_reg[txdivreg]\(1),
-      Q => \restx_seq_reg[txclkdiv_n_0_][1]\
-    );
-\restx_seq_reg[txclkdiv][3]\: unisim.vcomponents.FDCE
-     port map (
-      C => SPW_TX_clk,
-      CE => syncdff_ff2,
-      CLR => buf_ff0_reg_0,
-      D => \res_seq_reg[txdivreg]\(3),
-      Q => \restx_seq_reg[txclkdiv_n_0_][3]\
     );
 \restx_seq_reg[txclkdone][0]\: unisim.vcomponents.FDCE
      port map (
@@ -10336,9 +10371,9 @@ SYNCTXTXEN: entity work.Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_5
 \restx_seq_reg[txdivnorm]\: unisim.vcomponents.FDCE
      port map (
       C => SPW_TX_clk,
-      CE => syncdff_ff2,
+      CE => '1',
       CLR => buf_ff0_reg_0,
-      D => \res_seq_reg[txdivnorm]__0\,
+      D => SYNCTXTXDIVSAFE_n_1,
       Q => \restx_seq_reg[txdivnorm_n_0_]\
     );
 \restx_seq_reg[txflip0]\: unisim.vcomponents.FDCE
@@ -10456,26 +10491,23 @@ entity Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwStream is
 end Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwStream;
 
 architecture STRUCTURE of Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwStream is
-  signal LINK_INST_n_29 : STD_LOGIC;
-  signal LINK_INST_n_3 : STD_LOGIC;
+  signal LINK_INST_n_10 : STD_LOGIC;
+  signal LINK_INST_n_30 : STD_LOGIC;
   signal LINK_INST_n_4 : STD_LOGIC;
   signal LINK_INST_n_5 : STD_LOGIC;
   signal LINK_INST_n_6 : STD_LOGIC;
+  signal LINK_INST_n_7 : STD_LOGIC;
   signal LINK_INST_n_8 : STD_LOGIC;
-  signal LINK_INST_n_9 : STD_LOGIC;
   signal RECVFRONT_INST_n_5 : STD_LOGIC;
-  signal RECVFRONT_INST_n_6 : STD_LOGIC;
+  signal RECVFRONT_INST_n_8 : STD_LOGIC;
   signal RECV_INST_n_10 : STD_LOGIC;
   signal RECV_INST_n_11 : STD_LOGIC;
   signal RECV_INST_n_12 : STD_LOGIC;
   signal RECV_INST_n_13 : STD_LOGIC;
   signal RECV_INST_n_14 : STD_LOGIC;
+  signal RECV_INST_n_16 : STD_LOGIC;
+  signal RECV_INST_n_17 : STD_LOGIC;
   signal RECV_INST_n_18 : STD_LOGIC;
-  signal RECV_INST_n_19 : STD_LOGIC;
-  signal RECV_INST_n_20 : STD_LOGIC;
-  signal RECV_INST_n_21 : STD_LOGIC;
-  signal RECV_INST_n_22 : STD_LOGIC;
-  signal RECV_INST_n_23 : STD_LOGIC;
   signal RECV_INST_n_6 : STD_LOGIC;
   signal RECV_INST_n_7 : STD_LOGIC;
   signal RECV_INST_n_8 : STD_LOGIC;
@@ -10645,10 +10677,13 @@ architecture STRUCTURE of Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwStream 
   signal \res_seq[rxfiforoom][1]_i_1_n_0\ : STD_LOGIC;
   signal \res_seq[rxfiforoom][3]_i_1_n_0\ : STD_LOGIC;
   signal \res_seq[rxfiforoom][3]_i_3_n_0\ : STD_LOGIC;
+  signal \res_seq[rxfiforoom][4]_i_1_n_0\ : STD_LOGIC;
   signal \res_seq[rxfiforoom][5]_i_1_n_0\ : STD_LOGIC;
   signal \res_seq[rxfiforoom][6]_i_1_n_0\ : STD_LOGIC;
   signal \res_seq[rxfiforoom][7]_i_1_n_0\ : STD_LOGIC;
+  signal \res_seq[rxfiforoom][9]_i_1_n_0\ : STD_LOGIC;
   signal \res_seq[rxfull]_i_2_n_0\ : STD_LOGIC;
+  signal \res_seq[rxfull]_i_3_n_0\ : STD_LOGIC;
   signal \res_seq[txfiforoom][3]_i_3_n_0\ : STD_LOGIC;
   signal \res_seq_reg[allow_char]__0\ : STD_LOGIC;
   signal \res_seq_reg[allow_fct]__0\ : STD_LOGIC;
@@ -10729,6 +10764,7 @@ architecture STRUCTURE of Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwStream 
   signal \res_seq_reg[txpacket_n_0_]\ : STD_LOGIC;
   signal s_txfifo_rdata : STD_LOGIC_VECTOR ( 8 downto 0 );
   signal \^sel\ : STD_LOGIC;
+  signal \state_seq_reg[errcred]__0\ : STD_LOGIC;
   signal \state_seq_reg[timerdone]__0\ : STD_LOGIC;
   signal \syncsys[rxcnt_ddr_gray]\ : STD_LOGIC_VECTOR ( 3 downto 1 );
   signal sys_rst_n : STD_LOGIC;
@@ -10757,7 +10793,7 @@ architecture STRUCTURE of Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwStream 
   signal \NLW_res_seq_reg[txfifo_rvalid]_i_2_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \NLW_res_seq_reg[txfifo_rvalid]_i_2_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 1 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \escape_fifo[7]_i_1\ : label is "soft_lutpair82";
+  attribute SOFT_HLUTNM of \escape_fifo[7]_i_1\ : label is "soft_lutpair83";
   attribute ADDER_THRESHOLD : integer;
   attribute ADDER_THRESHOLD of \i_/i_/i___22_carry\ : label is 11;
   attribute ADDER_THRESHOLD of \i_/i_/i___22_carry__0\ : label is 11;
@@ -10776,9 +10812,9 @@ architecture STRUCTURE of Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwStream 
   attribute ADDER_THRESHOLD of \minusOp_inferred__0/i__carry__0\ : label is 35;
   attribute ADDER_THRESHOLD of \minusOp_inferred__0/i__carry__1\ : label is 35;
   attribute ADDER_THRESHOLD of \minusOp_inferred__0/i__carry__2\ : label is 35;
-  attribute SOFT_HLUTNM of \out_fifo[6]_i_1\ : label is "soft_lutpair83";
-  attribute SOFT_HLUTNM of \out_fifo[7]_i_2\ : label is "soft_lutpair83";
-  attribute SOFT_HLUTNM of \out_fifo[7]_i_3\ : label is "soft_lutpair82";
+  attribute SOFT_HLUTNM of \out_fifo[6]_i_1\ : label is "soft_lutpair84";
+  attribute SOFT_HLUTNM of \out_fifo[7]_i_2\ : label is "soft_lutpair84";
+  attribute SOFT_HLUTNM of \out_fifo[7]_i_3\ : label is "soft_lutpair83";
   attribute ADDER_THRESHOLD of \res_seq_reg[rxfifo_rvalid]_i_2\ : label is 35;
   attribute ADDER_THRESHOLD of \res_seq_reg[rxfiforoom][11]_i_2\ : label is 35;
   attribute ADDER_THRESHOLD of \res_seq_reg[rxfiforoom][3]_i_2\ : label is 35;
@@ -10800,14 +10836,14 @@ LINK_INST: entity work.Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwLink
       \FSM_onehot_state_seq_reg[state][0]_0\ => RECV_INST_n_14,
       \FSM_onehot_state_seq_reg[state][0]_1\ => RECV_INST_n_10,
       \FSM_onehot_state_seq_reg[state][0]_2\ => RECV_INST_n_13,
-      \FSM_onehot_state_seq_reg[state][1]_0\ => LINK_INST_n_8,
-      \FSM_onehot_state_seq_reg[state][3]_0\ => LINK_INST_n_3,
+      \FSM_onehot_state_seq_reg[state][1]_0\ => LINK_INST_n_10,
+      \FSM_onehot_state_seq_reg[state][3]_0\ => LINK_INST_n_5,
       \FSM_onehot_state_seq_reg[state][4]_0\(2) => RECV_INST_n_7,
       \FSM_onehot_state_seq_reg[state][4]_0\(1) => RECV_INST_n_8,
       \FSM_onehot_state_seq_reg[state][4]_0\(0) => RECV_INST_n_9,
-      \FSM_onehot_state_seq_reg[state][5]_0\(3) => LINK_INST_n_4,
-      \FSM_onehot_state_seq_reg[state][5]_0\(2) => LINK_INST_n_5,
-      \FSM_onehot_state_seq_reg[state][5]_0\(1) => LINK_INST_n_6,
+      \FSM_onehot_state_seq_reg[state][5]_0\(3) => LINK_INST_n_6,
+      \FSM_onehot_state_seq_reg[state][5]_0\(2) => LINK_INST_n_7,
+      \FSM_onehot_state_seq_reg[state][5]_0\(1) => LINK_INST_n_8,
       \FSM_onehot_state_seq_reg[state][5]_0\(0) => p_0_in10_in,
       O(0) => \minusOp_carry__2_n_7\,
       Q(5) => \res_seq_reg[rxroom_n_0_][5]\,
@@ -10828,7 +10864,7 @@ LINK_INST: entity work.Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwLink
       \res_com[txfull]\ => \res_com[txfull]\,
       \res_seq_reg[allow_char]__0\ => \res_seq_reg[allow_char]__0\,
       \res_seq_reg[allow_fct]__0\ => \res_seq_reg[allow_fct]__0\,
-      \res_seq_reg[inbvalid]\ => RECVFRONT_INST_n_5,
+      \res_seq_reg[inbvalid]\ => RECVFRONT_INST_n_8,
       \res_seq_reg[pend_char]__0\ => \res_seq_reg[pend_char]__0\,
       \res_seq_reg[pend_fct]__0\ => \res_seq_reg[pend_fct]__0\,
       \res_seq_reg[rxeep]\ => \res_seq_reg[rxpacket_n_0_]\,
@@ -10866,13 +10902,14 @@ LINK_INST: entity work.Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwLink
       \res_seq_reg[txfiforoom][7]\(2) => \minusOp_carry__0_n_5\,
       \res_seq_reg[txfiforoom][7]\(1) => \minusOp_carry__0_n_6\,
       \res_seq_reg[txfiforoom][7]\(0) => \minusOp_carry__0_n_7\,
+      \state_seq_reg[errcred]__0\ => \state_seq_reg[errcred]__0\,
       \state_seq_reg[rx_null_fct]_0\ => RECV_INST_n_11,
       \state_seq_reg[rxen]_0\(2 downto 0) => \res_com[bitcntp_gray]\(3 downto 1),
       \state_seq_reg[rxen]_1\ => SYSRSTLOGIC_n_1,
-      \state_seq_reg[timercnt][0]_0\ => RECV_INST_n_12,
-      \state_seq_reg[timercnt][6]_0\ => LINK_INST_n_9,
+      \state_seq_reg[timercnt][9]_0\ => LINK_INST_n_4,
+      \state_seq_reg[timerdone]_0\ => RECV_INST_n_12,
       \state_seq_reg[timerdone]__0\ => \state_seq_reg[timerdone]__0\,
-      \state_seq_reg[tx_credit][3]_0\ => LINK_INST_n_29,
+      \state_seq_reg[tx_credit][3]_0\ => LINK_INST_n_30,
       \syncsys[rxcnt_ddr_gray]\(2 downto 0) => \syncsys[rxcnt_ddr_gray]\(3 downto 1),
       sys_rst_n => sys_rst_n,
       \v[allow_char]\ => \v[allow_char]\,
@@ -10896,11 +10933,11 @@ RECVFRONT_INST: entity work.Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecvF
       recv_inbvalid => recv_inbvalid,
       recv_rxen => recv_rxen,
       \res_seq_reg[bitcntp_gray][3]_0\(2 downto 0) => \res_com[bitcntp_gray]\(3 downto 1),
-      \res_seq_reg[bufdout][1]_0\ => RECVFRONT_INST_n_6,
+      \res_seq_reg[bufdout][1]_0\ => RECVFRONT_INST_n_5,
       \res_seq_reg[datareg][0]\ => RECV_INST_n_6,
       \res_seq_reg[disccnt][0]\(0) => \res_seq_reg[disccnt]\(0),
       \res_seq_reg[parity]__0\ => \res_seq_reg[parity]__0\,
-      \res_seq_reg[tailptr_gray][2]_0\ => RECVFRONT_INST_n_5,
+      \res_seq_reg[tailptr_gray][0]_0\ => RECVFRONT_INST_n_8,
       syncdff_ff2_reg(2 downto 0) => \syncsys[rxcnt_ddr_gray]\(3 downto 1),
       \vres[inbvalid]0_out\ => \vres[inbvalid]0_out\
     );
@@ -10908,10 +10945,11 @@ RECV_INST: entity work.Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
      port map (
       AR(0) => \res_seq_reg[bit_seen]0\,
       D(0) => \res_com[disccnt]\(0),
-      \FSM_onehot_state_seq_reg[state][2]\ => LINK_INST_n_9,
-      \FSM_onehot_state_seq_reg[state][4]\(3) => LINK_INST_n_4,
-      \FSM_onehot_state_seq_reg[state][4]\(2) => LINK_INST_n_5,
-      \FSM_onehot_state_seq_reg[state][4]\(1) => LINK_INST_n_6,
+      \FSM_onehot_state_seq_reg[state][1]\ => RECV_INST_n_12,
+      \FSM_onehot_state_seq_reg[state][2]\ => LINK_INST_n_4,
+      \FSM_onehot_state_seq_reg[state][4]\(3) => LINK_INST_n_6,
+      \FSM_onehot_state_seq_reg[state][4]\(2) => LINK_INST_n_7,
+      \FSM_onehot_state_seq_reg[state][4]\(1) => LINK_INST_n_8,
       \FSM_onehot_state_seq_reg[state][4]\(0) => p_0_in10_in,
       Q(0) => \res_seq_reg[disccnt]\(0),
       SPW_RXREAD => SPW_RXREAD,
@@ -10926,48 +10964,37 @@ RECV_INST: entity work.Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
       \recvo[tick_out]\ => \recvo[tick_out]\,
       \res_com[rxemptydiscard]\ => \res_com[rxemptydiscard]\,
       \res_com[rxfifo_rvalid]\ => \res_com[rxfifo_rvalid]\,
-      \res_seq_reg[bit_seen]_0\ => RECV_INST_n_12,
       \res_seq_reg[bitcnt][0]_0\ => RECV_INST_n_6,
       \res_seq_reg[bitshift][8]_0\(1 downto 0) => recv_inbits(1 downto 0),
-      \res_seq_reg[datareg][0]_0\ => RECVFRONT_INST_n_6,
+      \res_seq_reg[datareg][0]_0\ => RECVFRONT_INST_n_5,
       \res_seq_reg[gotfct]_0\ => RECV_INST_n_13,
       \res_seq_reg[gotfct]_1\ => RECV_INST_n_14,
       \res_seq_reg[parity]__0\ => \res_seq_reg[parity]__0\,
       \res_seq_reg[rxchar]_0\ => RECV_INST_n_10,
       \res_seq_reg[rxeep]__0\ => \res_seq_reg[rxeep]__0\,
-      \res_seq_reg[rxfifo_rvalid]\(5) => \res_seq_reg[rxfiforoom_n_0_][12]\,
-      \res_seq_reg[rxfifo_rvalid]\(4) => \res_seq_reg[rxfiforoom_n_0_][10]\,
-      \res_seq_reg[rxfifo_rvalid]\(3) => \res_seq_reg[rxfiforoom_n_0_][9]\,
-      \res_seq_reg[rxfifo_rvalid]\(2) => \res_seq_reg[rxfiforoom_n_0_][8]\,
-      \res_seq_reg[rxfifo_rvalid]\(1) => \res_seq_reg[rxfiforoom_n_0_][4]\,
+      \res_seq_reg[rxfifo_rvalid]\(3) => \res_seq_reg[rxfiforoom_n_0_][12]\,
+      \res_seq_reg[rxfifo_rvalid]\(2) => \res_seq_reg[rxfiforoom_n_0_][10]\,
+      \res_seq_reg[rxfifo_rvalid]\(1) => \res_seq_reg[rxfiforoom_n_0_][8]\,
       \res_seq_reg[rxfifo_rvalid]\(0) => \res_seq_reg[rxfiforoom_n_0_][2]\,
-      \res_seq_reg[rxfifo_rvalid]1\ => \res_seq_reg[rxfifo_rvalid]1\,
-      \res_seq_reg[rxfiforoom][10]\ => RECV_INST_n_18,
-      \res_seq_reg[rxfiforoom][10]_0\(3) => RECV_INST_n_20,
-      \res_seq_reg[rxfiforoom][10]_0\(2) => RECV_INST_n_21,
-      \res_seq_reg[rxfiforoom][10]_0\(1) => RECV_INST_n_22,
-      \res_seq_reg[rxfiforoom][10]_0\(0) => RECV_INST_n_23,
-      \res_seq_reg[rxfiforoom][4]\(1) => \res_com[rxroom]\(4),
-      \res_seq_reg[rxfiforoom][4]\(0) => \res_com[rxroom]\(2),
-      \res_seq_reg[rxfiforoom][8]\ => RECV_INST_n_19,
+      \res_seq_reg[rxfiforoom][10]\(2) => RECV_INST_n_16,
+      \res_seq_reg[rxfiforoom][10]\(1) => RECV_INST_n_17,
+      \res_seq_reg[rxfiforoom][10]\(0) => RECV_INST_n_18,
       \res_seq_reg[rxfull]__0\ => \res_seq_reg[rxfull]__0\,
       \res_seq_reg[rxpacket]\ => \res_seq_reg[rxpacket_n_0_]\,
-      \res_seq_reg[rxroom][2]\ => \res_seq[rxfiforoom][7]_i_1_n_0\,
-      \res_seq_reg[rxroom][2]_0\(1) => \res_seq[rxfiforoom][11]_i_1_n_0\,
-      \res_seq_reg[rxroom][2]_0\(0) => \res_seq[rxfiforoom][6]_i_1_n_0\,
       \res_seq_reg[tick_out]_0\(2) => RECV_INST_n_7,
       \res_seq_reg[tick_out]_0\(1) => RECV_INST_n_8,
       \res_seq_reg[tick_out]_0\(0) => RECV_INST_n_9,
       s_mem_reg => \res_seq_reg[rxemptydiscard_n_0_]\,
+      \state_seq_reg[errcred]__0\ => \state_seq_reg[errcred]__0\,
       \state_seq_reg[timerdone]\ => RECV_INST_n_11,
       \state_seq_reg[timerdone]__0\ => \state_seq_reg[timerdone]__0\,
-      \vres[rxfiforoom]\(5) => \vres[rxfiforoom]\(12),
-      \vres[rxfiforoom]\(4 downto 2) => \vres[rxfiforoom]\(10 downto 8),
-      \vres[rxfiforoom]\(1) => \vres[rxfiforoom]\(4),
+      \vres[rxfiforoom]\(3) => \vres[rxfiforoom]\(12),
+      \vres[rxfiforoom]\(2) => \vres[rxfiforoom]\(10),
+      \vres[rxfiforoom]\(1) => \vres[rxfiforoom]\(8),
       \vres[rxfiforoom]\(0) => \vres[rxfiforoom]\(2),
-      \vres[rxfiforoom]0_in\(5) => \vres[rxfiforoom]0_in\(12),
-      \vres[rxfiforoom]0_in\(4 downto 2) => \vres[rxfiforoom]0_in\(10 downto 8),
-      \vres[rxfiforoom]0_in\(1) => \vres[rxfiforoom]0_in\(4),
+      \vres[rxfiforoom]0_in\(3) => \vres[rxfiforoom]0_in\(12),
+      \vres[rxfiforoom]0_in\(2) => \vres[rxfiforoom]0_in\(10),
+      \vres[rxfiforoom]0_in\(1) => \vres[rxfiforoom]0_in\(8),
       \vres[rxfiforoom]0_in\(0) => \vres[rxfiforoom]0_in\(2),
       \vres[rxpacket]7_out\ => \vres[rxpacket]7_out\
     );
@@ -11021,15 +11048,14 @@ XMIT_FAST_INST: entity work.Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_
       buf_ff0_reg_0 => TXRSTLOGIC_n_0,
       \recvo[rxchar]\ => \recvo[rxchar]\,
       \res_seq_reg[allow_char]__0\ => \res_seq_reg[allow_char]__0\,
-      \res_seq_reg[allow_fct]_0\ => LINK_INST_n_3,
+      \res_seq_reg[allow_fct]_0\ => LINK_INST_n_5,
       \res_seq_reg[allow_fct]__0\ => \res_seq_reg[allow_fct]__0\,
-      \res_seq_reg[pend_char]_0\ => LINK_INST_n_29,
+      \res_seq_reg[pend_char]_0\ => LINK_INST_n_30,
       \res_seq_reg[pend_char]__0\ => \res_seq_reg[pend_char]__0\,
       \res_seq_reg[pend_fct]__0\ => \res_seq_reg[pend_fct]__0\,
       \res_seq_reg[sent_fct]__0\ => \res_seq_reg[sent_fct]__0\,
-      \res_seq_reg[token1][char][7]_0\ => LINK_INST_n_8,
+      \res_seq_reg[token1][char][7]_0\ => LINK_INST_n_10,
       \res_seq_reg[txdiscard]__0\ => \res_seq_reg[txdiscard]__0\,
-      \res_seq_reg[txdivreg][3]_0\(0) => p_0_in10_in,
       \res_seq_reg[txfifo_rvalid]__0\ => \res_seq_reg[txfifo_rvalid]__0\,
       \v[allow_char]\ => \v[allow_char]\,
       \xmiti[fct_in]\ => \xmiti[fct_in]\
@@ -11661,6 +11687,18 @@ minusOp_carry_i_4: unisim.vcomponents.LUT2
       I1 => \^rxvalid\,
       O => \res_seq[rxfiforoom][3]_i_3_n_0\
     );
+\res_seq[rxfiforoom][4]_i_1\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"AFCAA0CA"
+    )
+        port map (
+      I0 => \res_seq_reg[rxfiforoom_n_0_][4]\,
+      I1 => \vres[rxfiforoom]\(4),
+      I2 => WEN,
+      I3 => SPW_RXREAD,
+      I4 => \vres[rxfiforoom]0_in\(4),
+      O => \res_seq[rxfiforoom][4]_i_1_n_0\
+    );
 \res_seq[rxfiforoom][5]_i_1\: unisim.vcomponents.LUT5
     generic map(
       INIT => X"AFCAA0CA"
@@ -11697,6 +11735,18 @@ minusOp_carry_i_4: unisim.vcomponents.LUT2
       I4 => \vres[rxfiforoom]0_in\(7),
       O => \res_seq[rxfiforoom][7]_i_1_n_0\
     );
+\res_seq[rxfiforoom][9]_i_1\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"AFCAA0CA"
+    )
+        port map (
+      I0 => \res_seq_reg[rxfiforoom_n_0_][9]\,
+      I1 => \vres[rxfiforoom]\(9),
+      I2 => WEN,
+      I3 => SPW_RXREAD,
+      I4 => \vres[rxfiforoom]0_in\(9),
+      O => \res_seq[rxfiforoom][9]_i_1_n_0\
+    );
 \res_seq[rxfull]_i_1\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"0000000000000002"
@@ -11705,9 +11755,9 @@ minusOp_carry_i_4: unisim.vcomponents.LUT2
       I0 => \res_seq[rxfull]_i_2_n_0\,
       I1 => \res_seq[rxfiforoom][7]_i_1_n_0\,
       I2 => \res_seq_reg[rxfifo_rvalid]1\,
-      I3 => RECV_INST_n_19,
-      I4 => RECV_INST_n_18,
-      I5 => RECV_INST_n_22,
+      I3 => RECV_INST_n_17,
+      I4 => \res_seq[rxfull]_i_3_n_0\,
+      I5 => \res_seq[rxfiforoom][4]_i_1_n_0\,
       O => \res_com[rxfull]\
     );
 \res_seq[rxfull]_i_2\: unisim.vcomponents.LUT5
@@ -11716,19 +11766,30 @@ minusOp_carry_i_4: unisim.vcomponents.LUT2
     )
         port map (
       I0 => \res_seq[rxfiforoom][1]_i_1_n_0\,
-      I1 => \res_seq[rxfiforoom][5]_i_1_n_0\,
-      I2 => \res_seq[rxfiforoom][0]_i_1_n_0\,
-      I3 => RECV_INST_n_23,
-      I4 => \res_seq[rxfiforoom][3]_i_1_n_0\,
+      I1 => RECV_INST_n_18,
+      I2 => \res_seq[rxfiforoom][3]_i_1_n_0\,
+      I3 => \res_seq[rxfiforoom][0]_i_1_n_0\,
+      I4 => \res_seq[rxfiforoom][5]_i_1_n_0\,
       O => \res_seq[rxfull]_i_2_n_0\
+    );
+\res_seq[rxfull]_i_3\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"FFFE"
+    )
+        port map (
+      I0 => RECV_INST_n_16,
+      I1 => \res_seq[rxfiforoom][11]_i_1_n_0\,
+      I2 => \res_seq[rxfiforoom][9]_i_1_n_0\,
+      I3 => \res_seq[rxfiforoom][6]_i_1_n_0\,
+      O => \res_seq[rxfull]_i_3_n_0\
     );
 \res_seq[rxroom][0]_i_1\: unisim.vcomponents.LUT5
     generic map(
       INIT => X"FFFFFFFE"
     )
         port map (
-      I0 => RECV_INST_n_18,
-      I1 => RECV_INST_n_19,
+      I0 => \res_seq[rxfull]_i_3_n_0\,
+      I1 => RECV_INST_n_17,
       I2 => \res_seq_reg[rxfifo_rvalid]1\,
       I3 => \res_seq[rxfiforoom][7]_i_1_n_0\,
       I4 => \res_seq[rxfiforoom][0]_i_1_n_0\,
@@ -11739,32 +11800,56 @@ minusOp_carry_i_4: unisim.vcomponents.LUT2
       INIT => X"FFFFFFFE"
     )
         port map (
-      I0 => RECV_INST_n_18,
-      I1 => RECV_INST_n_19,
+      I0 => \res_seq[rxfull]_i_3_n_0\,
+      I1 => RECV_INST_n_17,
       I2 => \res_seq_reg[rxfifo_rvalid]1\,
       I3 => \res_seq[rxfiforoom][7]_i_1_n_0\,
       I4 => \res_seq[rxfiforoom][1]_i_1_n_0\,
       O => \res_com[rxroom]\(1)
+    );
+\res_seq[rxroom][2]_i_1\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"FFFFFFFE"
+    )
+        port map (
+      I0 => \res_seq[rxfull]_i_3_n_0\,
+      I1 => RECV_INST_n_17,
+      I2 => \res_seq_reg[rxfifo_rvalid]1\,
+      I3 => \res_seq[rxfiforoom][7]_i_1_n_0\,
+      I4 => RECV_INST_n_18,
+      O => \res_com[rxroom]\(2)
     );
 \res_seq[rxroom][3]_i_1\: unisim.vcomponents.LUT5
     generic map(
       INIT => X"FFFFFFFE"
     )
         port map (
-      I0 => RECV_INST_n_18,
-      I1 => RECV_INST_n_19,
+      I0 => \res_seq[rxfull]_i_3_n_0\,
+      I1 => RECV_INST_n_17,
       I2 => \res_seq_reg[rxfifo_rvalid]1\,
       I3 => \res_seq[rxfiforoom][7]_i_1_n_0\,
       I4 => \res_seq[rxfiforoom][3]_i_1_n_0\,
       O => \res_com[rxroom]\(3)
+    );
+\res_seq[rxroom][4]_i_1\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"FFFFFFFE"
+    )
+        port map (
+      I0 => \res_seq[rxfiforoom][4]_i_1_n_0\,
+      I1 => \res_seq[rxfull]_i_3_n_0\,
+      I2 => RECV_INST_n_17,
+      I3 => \res_seq_reg[rxfifo_rvalid]1\,
+      I4 => \res_seq[rxfiforoom][7]_i_1_n_0\,
+      O => \res_com[rxroom]\(4)
     );
 \res_seq[rxroom][5]_i_1\: unisim.vcomponents.LUT5
     generic map(
       INIT => X"FFFFFFFE"
     )
         port map (
-      I0 => RECV_INST_n_18,
-      I1 => RECV_INST_n_19,
+      I0 => \res_seq[rxfull]_i_3_n_0\,
+      I1 => RECV_INST_n_17,
       I2 => \res_seq_reg[rxfifo_rvalid]1\,
       I3 => \res_seq[rxfiforoom][7]_i_1_n_0\,
       I4 => \res_seq[rxfiforoom][5]_i_1_n_0\,
@@ -12019,7 +12104,7 @@ minusOp_carry_i_4: unisim.vcomponents.LUT2
       C => SPW_main_clk,
       CE => '1',
       CLR => SYSRSTLOGIC_n_1,
-      D => RECV_INST_n_20,
+      D => RECV_INST_n_16,
       Q => \res_seq_reg[rxfiforoom_n_0_][10]\
     );
 \res_seq_reg[rxfiforoom][11]\: unisim.vcomponents.FDCE
@@ -12066,7 +12151,7 @@ minusOp_carry_i_4: unisim.vcomponents.LUT2
       C => SPW_main_clk,
       CE => '1',
       CLR => SYSRSTLOGIC_n_1,
-      D => RECV_INST_n_23,
+      D => RECV_INST_n_18,
       Q => \res_seq_reg[rxfiforoom_n_0_][2]\
     );
 \res_seq_reg[rxfiforoom][3]\: unisim.vcomponents.FDCE
@@ -12098,7 +12183,7 @@ minusOp_carry_i_4: unisim.vcomponents.LUT2
       C => SPW_main_clk,
       CE => '1',
       CLR => SYSRSTLOGIC_n_1,
-      D => RECV_INST_n_22,
+      D => \res_seq[rxfiforoom][4]_i_1_n_0\,
       Q => \res_seq_reg[rxfiforoom_n_0_][4]\
     );
 \res_seq_reg[rxfiforoom][5]\: unisim.vcomponents.FDCE
@@ -12145,7 +12230,7 @@ minusOp_carry_i_4: unisim.vcomponents.LUT2
       C => SPW_main_clk,
       CE => '1',
       CLR => SYSRSTLOGIC_n_1,
-      D => RECV_INST_n_19,
+      D => RECV_INST_n_17,
       Q => \res_seq_reg[rxfiforoom_n_0_][8]\
     );
 \res_seq_reg[rxfiforoom][9]\: unisim.vcomponents.FDCE
@@ -12153,7 +12238,7 @@ minusOp_carry_i_4: unisim.vcomponents.LUT2
       C => SPW_main_clk,
       CE => '1',
       CLR => SYSRSTLOGIC_n_1,
-      D => RECV_INST_n_21,
+      D => \res_seq[rxfiforoom][9]_i_1_n_0\,
       Q => \res_seq_reg[rxfiforoom_n_0_][9]\
     );
 \res_seq_reg[rxfull]\: unisim.vcomponents.FDCE
@@ -12811,13 +12896,13 @@ architecture STRUCTURE of Test_Implementaiton_SpaceWire_light_AXI_0_2 is
   attribute x_interface_parameter : string;
   attribute x_interface_parameter of IRQ : signal is "XIL_INTERFACENAME IRQ, SENSITIVITY LEVEL_HIGH, PortWidth 1";
   attribute x_interface_info of SPW_TX_clk : signal is "xilinx.com:signal:clock:1.0 SPW_TX_clk CLK";
-  attribute x_interface_parameter of SPW_TX_clk : signal is "XIL_INTERFACENAME SPW_TX_clk, FREQ_HZ 40000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0";
+  attribute x_interface_parameter of SPW_TX_clk : signal is "XIL_INTERFACENAME SPW_TX_clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0";
   attribute x_interface_info of SPW_main_clk : signal is "xilinx.com:signal:clock:1.0 SPW_main_clk CLK";
-  attribute x_interface_parameter of SPW_main_clk : signal is "XIL_INTERFACENAME SPW_main_clk, FREQ_HZ 20000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0";
+  attribute x_interface_parameter of SPW_main_clk : signal is "XIL_INTERFACENAME SPW_main_clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0";
   attribute x_interface_info of SPW_rst : signal is "xilinx.com:signal:reset:1.0 SPW_rst RST";
   attribute x_interface_parameter of SPW_rst : signal is "XIL_INTERFACENAME SPW_rst, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   attribute x_interface_info of axi_register_aclk : signal is "xilinx.com:signal:clock:1.0 AXI_Register_CLK CLK";
-  attribute x_interface_parameter of axi_register_aclk : signal is "XIL_INTERFACENAME AXI_Register_CLK, ASSOCIATED_BUSIF AXI_Register, ASSOCIATED_RESET axi_register_aresetn, FREQ_HZ 20000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN Test_Implementaiton_processing_system7_0_1_FCLK_CLK0, INSERT_VIP 0";
+  attribute x_interface_parameter of axi_register_aclk : signal is "XIL_INTERFACENAME AXI_Register_CLK, ASSOCIATED_BUSIF AXI_Register, ASSOCIATED_RESET axi_register_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN Test_Implementaiton_processing_system7_0_1_FCLK_CLK0, INSERT_VIP 0";
   attribute x_interface_info of axi_register_aresetn : signal is "xilinx.com:signal:reset:1.0 AXI_Register_RST RST";
   attribute x_interface_parameter of axi_register_aresetn : signal is "XIL_INTERFACENAME AXI_Register_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   attribute x_interface_info of axi_register_arready : signal is "xilinx.com:interface:aximm:1.0 AXI_Register ARREADY";
@@ -12831,25 +12916,25 @@ architecture STRUCTURE of Test_Implementaiton_SpaceWire_light_AXI_0_2 is
   attribute x_interface_info of axi_register_wready : signal is "xilinx.com:interface:aximm:1.0 AXI_Register WREADY";
   attribute x_interface_info of axi_register_wvalid : signal is "xilinx.com:interface:aximm:1.0 AXI_Register WVALID";
   attribute x_interface_info of axi_streamin_aclk : signal is "xilinx.com:signal:clock:1.0 AXI_StreamIn_CLK CLK";
-  attribute x_interface_parameter of axi_streamin_aclk : signal is "XIL_INTERFACENAME AXI_StreamIn_CLK, ASSOCIATED_BUSIF AXI_StreamIn, ASSOCIATED_RESET axi_streamin_aresetn, FREQ_HZ 20000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN Test_Implementaiton_processing_system7_0_1_FCLK_CLK0, INSERT_VIP 0";
+  attribute x_interface_parameter of axi_streamin_aclk : signal is "XIL_INTERFACENAME AXI_StreamIn_CLK, ASSOCIATED_BUSIF AXI_StreamIn, ASSOCIATED_RESET axi_streamin_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN Test_Implementaiton_processing_system7_0_1_FCLK_CLK0, INSERT_VIP 0";
   attribute x_interface_info of axi_streamin_aresetn : signal is "xilinx.com:signal:reset:1.0 AXI_StreamIn_RST RST";
   attribute x_interface_parameter of axi_streamin_aresetn : signal is "XIL_INTERFACENAME AXI_StreamIn_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   attribute x_interface_info of axi_streamin_tlast : signal is "xilinx.com:interface:axis:1.0 AXI_StreamIn TLAST";
   attribute x_interface_info of axi_streamin_tready : signal is "xilinx.com:interface:axis:1.0 AXI_StreamIn TREADY";
-  attribute x_interface_parameter of axi_streamin_tready : signal is "XIL_INTERFACENAME AXI_StreamIn, WIZ_DATA_WIDTH 32, TDATA_NUM_BYTES 1, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 20000000, PHASE 0.0, CLK_DOMAIN Test_Implementaiton_processing_system7_0_1_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0";
+  attribute x_interface_parameter of axi_streamin_tready : signal is "XIL_INTERFACENAME AXI_StreamIn, WIZ_DATA_WIDTH 32, TDATA_NUM_BYTES 1, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN Test_Implementaiton_processing_system7_0_1_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0";
   attribute x_interface_info of axi_streamin_tvalid : signal is "xilinx.com:interface:axis:1.0 AXI_StreamIn TVALID";
   attribute x_interface_info of axi_streamout_aclk : signal is "xilinx.com:signal:clock:1.0 AXI_StreamOut_CLK CLK";
-  attribute x_interface_parameter of axi_streamout_aclk : signal is "XIL_INTERFACENAME AXI_StreamOut_CLK, ASSOCIATED_BUSIF AXI_StreamOut, ASSOCIATED_RESET axi_streamout_aresetn, FREQ_HZ 20000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN Test_Implementaiton_processing_system7_0_1_FCLK_CLK0, INSERT_VIP 0";
+  attribute x_interface_parameter of axi_streamout_aclk : signal is "XIL_INTERFACENAME AXI_StreamOut_CLK, ASSOCIATED_BUSIF AXI_StreamOut, ASSOCIATED_RESET axi_streamout_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN Test_Implementaiton_processing_system7_0_1_FCLK_CLK0, INSERT_VIP 0";
   attribute x_interface_info of axi_streamout_aresetn : signal is "xilinx.com:signal:reset:1.0 AXI_StreamOut_RST RST";
   attribute x_interface_parameter of axi_streamout_aresetn : signal is "XIL_INTERFACENAME AXI_StreamOut_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   attribute x_interface_info of axi_streamout_tlast : signal is "xilinx.com:interface:axis:1.0 AXI_StreamOut TLAST";
   attribute x_interface_info of axi_streamout_tready : signal is "xilinx.com:interface:axis:1.0 AXI_StreamOut TREADY";
   attribute x_interface_info of axi_streamout_tvalid : signal is "xilinx.com:interface:axis:1.0 AXI_StreamOut TVALID";
-  attribute x_interface_parameter of axi_streamout_tvalid : signal is "XIL_INTERFACENAME AXI_StreamOut, WIZ_DATA_WIDTH 32, TDATA_NUM_BYTES 1, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 20000000, PHASE 0.0, CLK_DOMAIN Test_Implementaiton_processing_system7_0_1_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0";
+  attribute x_interface_parameter of axi_streamout_tvalid : signal is "XIL_INTERFACENAME AXI_StreamOut, WIZ_DATA_WIDTH 32, TDATA_NUM_BYTES 1, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN Test_Implementaiton_processing_system7_0_1_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0";
   attribute x_interface_info of axi_register_araddr : signal is "xilinx.com:interface:aximm:1.0 AXI_Register ARADDR";
   attribute x_interface_info of axi_register_arprot : signal is "xilinx.com:interface:aximm:1.0 AXI_Register ARPROT";
   attribute x_interface_info of axi_register_awaddr : signal is "xilinx.com:interface:aximm:1.0 AXI_Register AWADDR";
-  attribute x_interface_parameter of axi_register_awaddr : signal is "XIL_INTERFACENAME AXI_Register, WIZ_DATA_WIDTH 32, WIZ_NUM_REG 8, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 20000000, ID_WIDTH 0, ADDR_WIDTH 5, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN Test_Implementaiton_processing_system7_0_1_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute x_interface_parameter of axi_register_awaddr : signal is "XIL_INTERFACENAME AXI_Register, WIZ_DATA_WIDTH 32, WIZ_NUM_REG 8, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 5, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN Test_Implementaiton_processing_system7_0_1_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   attribute x_interface_info of axi_register_awprot : signal is "xilinx.com:interface:aximm:1.0 AXI_Register AWPROT";
   attribute x_interface_info of axi_register_bresp : signal is "xilinx.com:interface:aximm:1.0 AXI_Register BRESP";
   attribute x_interface_info of axi_register_rdata : signal is "xilinx.com:interface:aximm:1.0 AXI_Register RDATA";

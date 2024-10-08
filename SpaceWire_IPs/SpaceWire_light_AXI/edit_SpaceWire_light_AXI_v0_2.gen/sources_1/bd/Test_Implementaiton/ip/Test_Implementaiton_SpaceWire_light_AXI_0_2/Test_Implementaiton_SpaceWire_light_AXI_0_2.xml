@@ -199,7 +199,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.AXI_REGISTER.FREQ_HZ">20000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.AXI_REGISTER.FREQ_HZ">100000000</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -577,7 +577,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.AXI_STREAMIN.FREQ_HZ">20000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.AXI_STREAMIN.FREQ_HZ">100000000</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -748,7 +748,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.AXI_STREAMOUT.FREQ_HZ">20000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.AXI_STREAMOUT.FREQ_HZ">100000000</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -850,7 +850,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.AXI_STREAMOUT_CLK.FREQ_HZ">20000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.AXI_STREAMOUT_CLK.FREQ_HZ">100000000</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -961,7 +961,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.AXI_REGISTER_CLK.FREQ_HZ">20000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.AXI_REGISTER_CLK.FREQ_HZ">100000000</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -1072,7 +1072,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.AXI_STREAMIN_CLK.FREQ_HZ">20000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.AXI_STREAMIN_CLK.FREQ_HZ">100000000</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -1211,7 +1211,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.SPW_TX_CLK.FREQ_HZ">40000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.SPW_TX_CLK.FREQ_HZ">100000000</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -1301,7 +1301,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.SPW_MAIN_CLK.FREQ_HZ">20000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.SPW_MAIN_CLK.FREQ_HZ">100000000</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -1408,11 +1408,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Oct 07 20:24:20 UTC 2024</spirit:value>
+            <spirit:value>Tue Oct 08 11:34:16 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d3f628d5</spirit:value>
+            <spirit:value>9:ddbd7a76</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1426,11 +1426,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Oct 07 20:22:51 UTC 2024</spirit:value>
+            <spirit:value>Tue Oct 08 11:32:33 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d3f628d5</spirit:value>
+            <spirit:value>9:ddbd7a76</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1441,7 +1441,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d3f628d5</spirit:value>
+            <spirit:value>9:ddbd7a76</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1457,11 +1457,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Oct 07 20:22:51 UTC 2024</spirit:value>
+            <spirit:value>Tue Oct 08 11:32:33 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:90f23a4c</spirit:value>
+            <spirit:value>9:a5e4cd09</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1477,11 +1477,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Oct 07 20:22:51 UTC 2024</spirit:value>
+            <spirit:value>Tue Oct 08 11:32:33 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:90f23a4c</spirit:value>
+            <spirit:value>9:a5e4cd09</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1497,11 +1497,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Oct 07 20:22:51 UTC 2024</spirit:value>
+            <spirit:value>Tue Oct 08 11:32:33 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d3f628d5</spirit:value>
+            <spirit:value>9:ddbd7a76</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1517,11 +1517,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Oct 07 20:22:51 UTC 2024</spirit:value>
+            <spirit:value>Tue Oct 08 11:32:33 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d3f628d5</spirit:value>
+            <spirit:value>9:ddbd7a76</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2562,12 +2562,12 @@
     <spirit:parameter>
       <spirit:name>SYSFREQ</spirit:name>
       <spirit:displayName>Sysfreq</spirit:displayName>
-      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.SYSFREQ" spirit:minimum="1000000.0" spirit:maximum="1.0E9">20.0e6</spirit:value>
+      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.SYSFREQ" spirit:minimum="1000000.0" spirit:maximum="1.0E9">100.0e6</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>TXCLKFREQ</spirit:name>
       <spirit:displayName>Txclkfreq</spirit:displayName>
-      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.TXCLKFREQ" spirit:minimum="1000000.0" spirit:maximum="1.0E9">40.0e6</spirit:value>
+      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.TXCLKFREQ" spirit:minimum="1000000.0" spirit:maximum="1.0E9">100.0e6</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>RXCHUNK</spirit:name>

@@ -1,0 +1,190 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
+| Date         : Tue Oct  8 20:13:10 2024
+| Host         : DESKTOP-MEH5DGT running 64-bit major release  (build 9200)
+| Command      : report_methodology -file SPW_ZynqSetup_wrapper_methodology_drc_routed.rpt -pb SPW_ZynqSetup_wrapper_methodology_drc_routed.pb -rpx SPW_ZynqSetup_wrapper_methodology_drc_routed.rpx
+| Design       : SPW_ZynqSetup_wrapper
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 17
++-----------+------------------+----------------------------------------------------+------------+
+| Rule      | Severity         | Description                                        | Violations |
++-----------+------------------+----------------------------------------------------+------------+
+| TIMING-4  | Critical Warning | Invalid primary clock redefinition on a clock tree | 1          |
+| TIMING-6  | Critical Warning | No common primary clock between related clocks     | 3          |
+| TIMING-7  | Critical Warning | No common node between related clocks              | 3          |
+| TIMING-14 | Critical Warning | LUT on the clock tree                              | 1          |
+| TIMING-27 | Critical Warning | Invalid primary clock on hierarchical pin          | 1          |
+| TIMING-35 | Critical Warning | No common node in paths with the same clock        | 2          |
+| LUTAR-1   | Warning          | LUT drives async reset alert                       | 4          |
+| TIMING-10 | Warning          | Missing property on synchronizer                   | 1          |
+| XDCB-2    | Warning          | Clock defined on multiple objects                  | 1          |
++-----------+------------------+----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-4#1 Critical Warning
+Invalid primary clock redefinition on a clock tree  
+Invalid clock redefinition on a clock tree. The primary clock SPW_ZynqSetup_i/clk_wiz_0/inst/clk_in1 is defined downstream of clock clk_fpga_0 and overrides its insertion delay and/or waveform definition
+Related violations: <none>
+
+TIMING-6#1 Critical Warning
+No common primary clock between related clocks  
+The clocks TX_clk_SPW_ZynqSetup_clk_wiz_0_0 and clk_fpga_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks TX_clk_SPW_ZynqSetup_clk_wiz_0_0] -to [get_clocks clk_fpga_0]
+Related violations: <none>
+
+TIMING-6#2 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_fpga_0 and TX_clk_SPW_ZynqSetup_clk_wiz_0_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_fpga_0] -to [get_clocks TX_clk_SPW_ZynqSetup_clk_wiz_0_0]
+Related violations: <none>
+
+TIMING-6#3 Critical Warning
+No common primary clock between related clocks  
+The clocks virtual_rxclk and clk_fpga_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks virtual_rxclk] -to [get_clocks clk_fpga_0]
+Related violations: <none>
+
+TIMING-7#1 Critical Warning
+No common node between related clocks  
+The clocks TX_clk_SPW_ZynqSetup_clk_wiz_0_0 and clk_fpga_0 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks TX_clk_SPW_ZynqSetup_clk_wiz_0_0] -to [get_clocks clk_fpga_0]
+Related violations: <none>
+
+TIMING-7#2 Critical Warning
+No common node between related clocks  
+The clocks clk_fpga_0 and TX_clk_SPW_ZynqSetup_clk_wiz_0_0 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_fpga_0] -to [get_clocks TX_clk_SPW_ZynqSetup_clk_wiz_0_0]
+Related violations: <none>
+
+TIMING-7#3 Critical Warning
+No common node between related clocks  
+The clocks virtual_rxclk and clk_fpga_0 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks virtual_rxclk] -to [get_clocks clk_fpga_0]
+Related violations: <none>
+
+TIMING-14#1 Critical Warning
+LUT on the clock tree  
+The LUT SPW_ZynqSetup_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/FIFOMEM/reset_reg[1]_i_1 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-27#1 Critical Warning
+Invalid primary clock on hierarchical pin  
+A primary clock SPW_ZynqSetup_i/clk_wiz_0/inst/clk_in1 is created on an inappropriate internal pin SPW_ZynqSetup_i/clk_wiz_0/inst/clk_in1. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
+Related violations: <none>
+
+TIMING-35#1 Critical Warning
+No common node in paths with the same clock  
+The clock virtual_rxclk has paths without a common node. First path found between SPW_Din and SPW_ZynqSetup_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/ff_pre_f_reg/D. Please review clock constraints
+Related violations: <none>
+
+TIMING-35#2 Critical Warning
+No common node in paths with the same clock  
+The clock virtual_rxclk has paths without a common node. First path found between SPW_Din and SPW_ZynqSetup_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECVFRONT_INST/ff_pre_r_reg/D. Please review clock constraints
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell SPW_ZynqSetup_i/SpaceWire_light_AXI_0/U0/SPW_IF/LINK_INST/res_seq[bitshift][8]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) SPW_ZynqSetup_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECV_INST/res_seq_reg[disccnt][4]/CLR,
+SPW_ZynqSetup_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECV_INST/res_seq_reg[disccnt][5]/CLR,
+SPW_ZynqSetup_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECV_INST/res_seq_reg[disccnt][6]/CLR,
+SPW_ZynqSetup_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECV_INST/res_seq_reg[disccnt][7]/CLR,
+SPW_ZynqSetup_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECV_INST/res_seq_reg[erresc]/CLR,
+SPW_ZynqSetup_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECV_INST/res_seq_reg[errpar]/CLR,
+SPW_ZynqSetup_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECV_INST/res_seq_reg[escaped]/CLR,
+SPW_ZynqSetup_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECV_INST/res_seq_reg[gotfct]/CLR,
+SPW_ZynqSetup_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECV_INST/res_seq_reg[null_seen]/CLR,
+SPW_ZynqSetup_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECV_INST/res_seq_reg[parity]/CLR,
+SPW_ZynqSetup_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECV_INST/res_seq_reg[pendfct][0]/CLR,
+SPW_ZynqSetup_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECV_INST/res_seq_reg[pendfct][1]/CLR,
+SPW_ZynqSetup_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECV_INST/res_seq_reg[rxchar]/CLR,
+SPW_ZynqSetup_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECV_INST/res_seq_reg[rxflag]/CLR,
+SPW_ZynqSetup_i/SpaceWire_light_AXI_0/U0/SPW_IF/RECV_INST/res_seq_reg[tick_out]/CLR
+ (the first 15 of 48 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/gpregsm1.curr_fwft_state[1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[2]/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[3]/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[4]/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[1]/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[2]/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[4]/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[0]/PRE,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[1]/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[2]/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[3]/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[4]/CLR
+ (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/gpregsm1.curr_fwft_state[1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[2]/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[3]/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[4]/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[1]/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[2]/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[4]/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[0]/PRE,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[1]/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[2]/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[3]/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[4]/CLR
+ (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/gpregsm1.curr_fwft_state[1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[2]/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[3]/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[4]/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[1]/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[2]/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[4]/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[0]/PRE,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[1]/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[2]/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[3]/CLR,
+SPW_ZynqSetup_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[4]/CLR
+ (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-10#1 Warning
+Missing property on synchronizer  
+One or more logic synchronizer has been detected between 2 clock domains but the synchronizer does not have the property ASYNC_REG defined on one or both registers. It is recommended to run report_cdc for a complete and detailed CDC coverage
+Related violations: <none>
+
+XDCB-2#1 Warning
+Clock defined on multiple objects  
+The clock virtual_rxclk is defined on multiple objects. Although this is logically functional for timing analysis, it cannot exist in hardware. It is recommended to define a primary clock on a single object.
+create_clock -period 25.000 -name virtual_rxclk -waveform {0.000 12.500} [get_ports -filter { NAME =~  "*SPW*" && DIRECTION == "IN" }]
+F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.srcs/constrs_1/new/SPW_mainclk.xdc (Line: 13)
+Related violations: <none>
+
+

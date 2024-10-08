@@ -26,7 +26,7 @@ eval( EAInclude(ISEJScriptLib) );
 // pre-commands:
 ISETouchFile( "init_design", "begin" );
 ISEStep( "vivado",
-         "-log Test_Implementaiton_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source Test_Implementaiton_wrapper.tcl -notrace" );
+         "-log SPW_ZynqSetup_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source SPW_ZynqSetup_wrapper.tcl -notrace" );
 
 
 

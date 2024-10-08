@@ -1,0 +1,31 @@
+vhdl xil_defaultlib  \
+"../../../bd/SPW_ZynqSetup/ipshared/9657/hdl/SpaceWire_light_AXI_slave_lite_v0_2_AXI_Register.vhd" \
+"../../../bd/SPW_ZynqSetup/ipshared/9657/hdl/SpaceWire_light_AXI_slave_stream_v0_2_AXI_StreamIn.vhd" \
+"../../../bd/SPW_ZynqSetup/ipshared/9657/hdl/SpaceWire_light_AXI_master_stream_v0_2_AXI_StreamOut.vhd" \
+"../../../bd/SPW_ZynqSetup/ipshared/9657/hdl/SpaceWire_light_AXI.vhd" \
+
+vhdl SPWIP  \
+"../../../bd/SPW_ZynqSetup/ipshared/9657/a5ad/ModuleMap_pkg.vhd" \
+"../../../bd/SPW_ZynqSetup/ipshared/9657/a5ad/SpwRegisters_pkg.vhd" \
+"../../../bd/SPW_ZynqSetup/ipshared/9657/b243/SpwStream_pkg.vhd" \
+"../../../bd/SPW_ZynqSetup/ipshared/9657/a5ad/SpwProtocol_pkg.vhd" \
+"../../../bd/SPW_ZynqSetup/ipshared/9657/b243/SpwLink.vhd" \
+"../../../bd/SPW_ZynqSetup/ipshared/9657/b243/SpwRam.vhd" \
+"../../../bd/SPW_ZynqSetup/ipshared/9657/b243/SpwRecovClk.vhd" \
+"../../../bd/SPW_ZynqSetup/ipshared/9657/b243/SpwRecv.vhd" \
+"../../../bd/SPW_ZynqSetup/ipshared/9657/eda7/SpwXmit_fast_pkg.vhd" \
+"../../../bd/SPW_ZynqSetup/ipshared/9657/a803/SpwRecvFrontXor.vhd" \
+"../../../bd/SPW_ZynqSetup/ipshared/9657/a803/SpwRecvFront_pkg.vhd" \
+"../../../bd/SPW_ZynqSetup/ipshared/9657/b243/SpwReset.vhd" \
+"../../../bd/SPW_ZynqSetup/ipshared/9657/b243/SpwStream.vhd" \
+"../../../bd/SPW_ZynqSetup/ipshared/9657/eda7/SpwXmit_fast.vhd" \
+"../../../bd/SPW_ZynqSetup/ipshared/9657/eda7/SyncDff.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../bd/SPW_ZynqSetup/ip/SPW_ZynqSetup_SpaceWire_light_AXI_0_0/sim/SPW_ZynqSetup_SpaceWire_light_AXI_0_0.vhd" \
+"../../../bd/SPW_ZynqSetup/ip/SPW_ZynqSetup_axi_dma_0_0/sim/SPW_ZynqSetup_axi_dma_0_0.vhd" \
+"../../../bd/SPW_ZynqSetup/ip/SPW_ZynqSetup_rst_ps7_0_100M_0/sim/SPW_ZynqSetup_rst_ps7_0_100M_0.vhd" \
+"../../../bd/SPW_ZynqSetup/sim/SPW_ZynqSetup.vhd" \
+
+# Do not sort compile order
+nosort

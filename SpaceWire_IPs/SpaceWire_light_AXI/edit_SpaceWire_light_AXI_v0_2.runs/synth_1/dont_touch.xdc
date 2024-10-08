@@ -5,40 +5,40 @@
 
 # XDC: new/SPW_pins.xdc
 
-# Block Designs: bd/Test_Implementaiton/Test_Implementaiton.bd
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_Implementaiton || ORIG_REF_NAME==Test_Implementaiton} -quiet] -quiet
+# Block Designs: bd/SPW_ZynqSetup/SPW_ZynqSetup.bd
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==SPW_ZynqSetup || ORIG_REF_NAME==SPW_ZynqSetup} -quiet] -quiet
 
-# IP: bd/Test_Implementaiton/ip/Test_Implementaiton_processing_system7_0_1/Test_Implementaiton_processing_system7_0_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_Implementaiton_processing_system7_0_1 || ORIG_REF_NAME==Test_Implementaiton_processing_system7_0_1} -quiet] -quiet
+# IP: bd/SPW_ZynqSetup/ip/SPW_ZynqSetup_SpaceWire_light_AXI_0_0/SPW_ZynqSetup_SpaceWire_light_AXI_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==SPW_ZynqSetup_SpaceWire_light_AXI_0_0 || ORIG_REF_NAME==SPW_ZynqSetup_SpaceWire_light_AXI_0_0} -quiet] -quiet
 
-# IP: bd/Test_Implementaiton/ip/Test_Implementaiton_rst_ps7_0_100M_2/Test_Implementaiton_rst_ps7_0_100M_2.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_Implementaiton_rst_ps7_0_100M_2 || ORIG_REF_NAME==Test_Implementaiton_rst_ps7_0_100M_2} -quiet] -quiet
+# IP: bd/SPW_ZynqSetup/ip/SPW_ZynqSetup_axi_dma_0_0/SPW_ZynqSetup_axi_dma_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==SPW_ZynqSetup_axi_dma_0_0 || ORIG_REF_NAME==SPW_ZynqSetup_axi_dma_0_0} -quiet] -quiet
 
-# IP: bd/Test_Implementaiton/ip/Test_Implementaiton_SpaceWire_light_AXI_0_2/Test_Implementaiton_SpaceWire_light_AXI_0_2.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_Implementaiton_SpaceWire_light_AXI_0_2 || ORIG_REF_NAME==Test_Implementaiton_SpaceWire_light_AXI_0_2} -quiet] -quiet
+# IP: bd/SPW_ZynqSetup/ip/SPW_ZynqSetup_xbar_0/SPW_ZynqSetup_xbar_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==SPW_ZynqSetup_xbar_0 || ORIG_REF_NAME==SPW_ZynqSetup_xbar_0} -quiet] -quiet
 
-# IP: bd/Test_Implementaiton/ip/Test_Implementaiton_ps7_0_axi_periph_1/Test_Implementaiton_ps7_0_axi_periph_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_Implementaiton_ps7_0_axi_periph_1 || ORIG_REF_NAME==Test_Implementaiton_ps7_0_axi_periph_1} -quiet] -quiet
+# IP: bd/SPW_ZynqSetup/ip/SPW_ZynqSetup_axi_mem_intercon_0/SPW_ZynqSetup_axi_mem_intercon_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==SPW_ZynqSetup_axi_mem_intercon_0 || ORIG_REF_NAME==SPW_ZynqSetup_axi_mem_intercon_0} -quiet] -quiet
 
-# IP: bd/Test_Implementaiton/ip/Test_Implementaiton_axi_dma_0_3/Test_Implementaiton_axi_dma_0_3.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_Implementaiton_axi_dma_0_3 || ORIG_REF_NAME==Test_Implementaiton_axi_dma_0_3} -quiet] -quiet
+# IP: bd/SPW_ZynqSetup/ip/SPW_ZynqSetup_processing_system7_0_0/SPW_ZynqSetup_processing_system7_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==SPW_ZynqSetup_processing_system7_0_0 || ORIG_REF_NAME==SPW_ZynqSetup_processing_system7_0_0} -quiet] -quiet
 
-# IP: bd/Test_Implementaiton/ip/Test_Implementaiton_axi_mem_intercon_2/Test_Implementaiton_axi_mem_intercon_2.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_Implementaiton_axi_mem_intercon_2 || ORIG_REF_NAME==Test_Implementaiton_axi_mem_intercon_2} -quiet] -quiet
+# IP: bd/SPW_ZynqSetup/ip/SPW_ZynqSetup_xbar_1/SPW_ZynqSetup_xbar_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==SPW_ZynqSetup_xbar_1 || ORIG_REF_NAME==SPW_ZynqSetup_xbar_1} -quiet] -quiet
 
-# IP: bd/Test_Implementaiton/ip/Test_Implementaiton_clk_wiz_0_0/Test_Implementaiton_clk_wiz_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_Implementaiton_clk_wiz_0_0 || ORIG_REF_NAME==Test_Implementaiton_clk_wiz_0_0} -quiet] -quiet
+# IP: bd/SPW_ZynqSetup/ip/SPW_ZynqSetup_ps7_0_axi_periph_0/SPW_ZynqSetup_ps7_0_axi_periph_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==SPW_ZynqSetup_ps7_0_axi_periph_0 || ORIG_REF_NAME==SPW_ZynqSetup_ps7_0_axi_periph_0} -quiet] -quiet
 
-# IP: bd/Test_Implementaiton/ip/Test_Implementaiton_xbar_5/Test_Implementaiton_xbar_5.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_Implementaiton_xbar_5 || ORIG_REF_NAME==Test_Implementaiton_xbar_5} -quiet] -quiet
+# IP: bd/SPW_ZynqSetup/ip/SPW_ZynqSetup_rst_ps7_0_100M_0/SPW_ZynqSetup_rst_ps7_0_100M_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==SPW_ZynqSetup_rst_ps7_0_100M_0 || ORIG_REF_NAME==SPW_ZynqSetup_rst_ps7_0_100M_0} -quiet] -quiet
 
-# IP: bd/Test_Implementaiton/ip/Test_Implementaiton_xbar_4/Test_Implementaiton_xbar_4.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_Implementaiton_xbar_4 || ORIG_REF_NAME==Test_Implementaiton_xbar_4} -quiet] -quiet
+# IP: bd/SPW_ZynqSetup/ip/SPW_ZynqSetup_clk_wiz_0_0/SPW_ZynqSetup_clk_wiz_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==SPW_ZynqSetup_clk_wiz_0_0 || ORIG_REF_NAME==SPW_ZynqSetup_clk_wiz_0_0} -quiet] -quiet
 
-# IP: bd/Test_Implementaiton/ip/Test_Implementaiton_auto_pc_1/Test_Implementaiton_auto_pc_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_Implementaiton_auto_pc_1 || ORIG_REF_NAME==Test_Implementaiton_auto_pc_1} -quiet] -quiet
+# IP: bd/SPW_ZynqSetup/ip/SPW_ZynqSetup_auto_pc_0/SPW_ZynqSetup_auto_pc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==SPW_ZynqSetup_auto_pc_0 || ORIG_REF_NAME==SPW_ZynqSetup_auto_pc_0} -quiet] -quiet
 
-# IP: bd/Test_Implementaiton/ip/Test_Implementaiton_auto_pc_0/Test_Implementaiton_auto_pc_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_Implementaiton_auto_pc_0 || ORIG_REF_NAME==Test_Implementaiton_auto_pc_0} -quiet] -quiet
+# IP: bd/SPW_ZynqSetup/ip/SPW_ZynqSetup_auto_pc_1/SPW_ZynqSetup_auto_pc_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==SPW_ZynqSetup_auto_pc_1 || ORIG_REF_NAME==SPW_ZynqSetup_auto_pc_1} -quiet] -quiet
 
-# XDC: f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/Test_Implementaiton_ooc.xdc
+# XDC: f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/SPW_ZynqSetup/SPW_ZynqSetup_ooc.xdc

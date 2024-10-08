@@ -2,7 +2,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
-// Date        : Mon Oct  7 22:24:20 2024
+// Date        : Tue Oct  8 13:34:15 2024
 // Host        : DESKTOP-MEH5DGT running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_SpaceWire_light_AXI_0_2/Test_Implementaiton_SpaceWire_light_AXI_0_2_sim_netlist.v
@@ -64,12 +64,12 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2
   output SPW_Sout;
   input SPW_Din;
   input SPW_Sin;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 SPW_TX_clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME SPW_TX_clk, FREQ_HZ 40000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *) input SPW_TX_clk;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 SPW_main_clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME SPW_main_clk, FREQ_HZ 20000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *) input SPW_main_clk;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 SPW_TX_clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME SPW_TX_clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *) input SPW_TX_clk;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 SPW_main_clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME SPW_main_clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *) input SPW_main_clk;
   (* x_interface_info = "xilinx.com:signal:reset:1.0 SPW_rst RST" *) (* x_interface_parameter = "XIL_INTERFACENAME SPW_rst, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input SPW_rst;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 AXI_Register_CLK CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME AXI_Register_CLK, ASSOCIATED_BUSIF AXI_Register, ASSOCIATED_RESET axi_register_aresetn, FREQ_HZ 20000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN Test_Implementaiton_processing_system7_0_1_FCLK_CLK0, INSERT_VIP 0" *) input axi_register_aclk;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 AXI_Register_CLK CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME AXI_Register_CLK, ASSOCIATED_BUSIF AXI_Register, ASSOCIATED_RESET axi_register_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN Test_Implementaiton_processing_system7_0_1_FCLK_CLK0, INSERT_VIP 0" *) input axi_register_aclk;
   (* x_interface_info = "xilinx.com:signal:reset:1.0 AXI_Register_RST RST" *) (* x_interface_parameter = "XIL_INTERFACENAME AXI_Register_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input axi_register_aresetn;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXI_Register AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME AXI_Register, WIZ_DATA_WIDTH 32, WIZ_NUM_REG 8, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 20000000, ID_WIDTH 0, ADDR_WIDTH 5, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN Test_Implementaiton_processing_system7_0_1_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [4:0]axi_register_awaddr;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXI_Register AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME AXI_Register, WIZ_DATA_WIDTH 32, WIZ_NUM_REG 8, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 5, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN Test_Implementaiton_processing_system7_0_1_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [4:0]axi_register_awaddr;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXI_Register AWPROT" *) input [2:0]axi_register_awprot;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXI_Register AWVALID" *) input axi_register_awvalid;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXI_Register AWREADY" *) output axi_register_awready;
@@ -88,16 +88,16 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXI_Register RRESP" *) output [1:0]axi_register_rresp;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXI_Register RVALID" *) output axi_register_rvalid;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 AXI_Register RREADY" *) input axi_register_rready;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 AXI_StreamIn_CLK CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME AXI_StreamIn_CLK, ASSOCIATED_BUSIF AXI_StreamIn, ASSOCIATED_RESET axi_streamin_aresetn, FREQ_HZ 20000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN Test_Implementaiton_processing_system7_0_1_FCLK_CLK0, INSERT_VIP 0" *) input axi_streamin_aclk;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 AXI_StreamIn_CLK CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME AXI_StreamIn_CLK, ASSOCIATED_BUSIF AXI_StreamIn, ASSOCIATED_RESET axi_streamin_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN Test_Implementaiton_processing_system7_0_1_FCLK_CLK0, INSERT_VIP 0" *) input axi_streamin_aclk;
   (* x_interface_info = "xilinx.com:signal:reset:1.0 AXI_StreamIn_RST RST" *) (* x_interface_parameter = "XIL_INTERFACENAME AXI_StreamIn_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input axi_streamin_aresetn;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 AXI_StreamIn TREADY" *) (* x_interface_parameter = "XIL_INTERFACENAME AXI_StreamIn, WIZ_DATA_WIDTH 32, TDATA_NUM_BYTES 1, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 20000000, PHASE 0.0, CLK_DOMAIN Test_Implementaiton_processing_system7_0_1_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output axi_streamin_tready;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 AXI_StreamIn TREADY" *) (* x_interface_parameter = "XIL_INTERFACENAME AXI_StreamIn, WIZ_DATA_WIDTH 32, TDATA_NUM_BYTES 1, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN Test_Implementaiton_processing_system7_0_1_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output axi_streamin_tready;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 AXI_StreamIn TDATA" *) input [7:0]axi_streamin_tdata;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 AXI_StreamIn TSTRB" *) input [0:0]axi_streamin_tstrb;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 AXI_StreamIn TLAST" *) input axi_streamin_tlast;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 AXI_StreamIn TVALID" *) input axi_streamin_tvalid;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 AXI_StreamOut_CLK CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME AXI_StreamOut_CLK, ASSOCIATED_BUSIF AXI_StreamOut, ASSOCIATED_RESET axi_streamout_aresetn, FREQ_HZ 20000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN Test_Implementaiton_processing_system7_0_1_FCLK_CLK0, INSERT_VIP 0" *) input axi_streamout_aclk;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 AXI_StreamOut_CLK CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME AXI_StreamOut_CLK, ASSOCIATED_BUSIF AXI_StreamOut, ASSOCIATED_RESET axi_streamout_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN Test_Implementaiton_processing_system7_0_1_FCLK_CLK0, INSERT_VIP 0" *) input axi_streamout_aclk;
   (* x_interface_info = "xilinx.com:signal:reset:1.0 AXI_StreamOut_RST RST" *) (* x_interface_parameter = "XIL_INTERFACENAME AXI_StreamOut_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input axi_streamout_aresetn;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 AXI_StreamOut TVALID" *) (* x_interface_parameter = "XIL_INTERFACENAME AXI_StreamOut, WIZ_DATA_WIDTH 32, TDATA_NUM_BYTES 1, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 20000000, PHASE 0.0, CLK_DOMAIN Test_Implementaiton_processing_system7_0_1_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output axi_streamout_tvalid;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 AXI_StreamOut TVALID" *) (* x_interface_parameter = "XIL_INTERFACENAME AXI_StreamOut, WIZ_DATA_WIDTH 32, TDATA_NUM_BYTES 1, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN Test_Implementaiton_processing_system7_0_1_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output axi_streamout_tvalid;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 AXI_StreamOut TDATA" *) output [7:0]axi_streamout_tdata;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 AXI_StreamOut TSTRB" *) output [0:0]axi_streamout_tstrb;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 AXI_StreamOut TLAST" *) output axi_streamout_tlast;
@@ -531,7 +531,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpaceWire_light_AXI_master_st
         .I2(fifo_full),
         .I3(M_AXIS_TDATA_reg[6]),
         .O(\M_AXIS_TDATA[6]__0_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair84" *) 
+  (* SOFT_HLUTNM = "soft_lutpair85" *) 
   LUT4 #(
     .INIT(16'hFB08)) 
     \M_AXIS_TDATA[7]__0_i_1 
@@ -652,7 +652,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpaceWire_light_AXI_master_st
         .D(\M_AXIS_TDATA[7]__0_i_1_n_0 ),
         .Q(axi_streamout_tdata[7]),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair84" *) 
+  (* SOFT_HLUTNM = "soft_lutpair85" *) 
   LUT2 #(
     .INIT(4'h2)) 
     M_AXIS_TVALID_i_1
@@ -1432,7 +1432,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpaceWire_light_AXI_slave_str
         .I3(axi_streamin_tdata[1]),
         .I4(char_fifo[1]),
         .O(\char_fifo[1]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair85" *) 
+  (* SOFT_HLUTNM = "soft_lutpair86" *) 
   LUT3 #(
     .INIT(8'h08)) 
     \char_fifo[2]_i_1 
@@ -1440,7 +1440,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpaceWire_light_AXI_slave_str
         .I1(axi_streamin_aresetn),
         .I2(previous_escape_reg_n_0),
         .O(\char_fifo[2]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair86" *) 
+  (* SOFT_HLUTNM = "soft_lutpair87" *) 
   LUT3 #(
     .INIT(8'h08)) 
     \char_fifo[3]_i_1 
@@ -1448,7 +1448,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpaceWire_light_AXI_slave_str
         .I1(axi_streamin_aresetn),
         .I2(previous_escape_reg_n_0),
         .O(\char_fifo[3]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair86" *) 
+  (* SOFT_HLUTNM = "soft_lutpair87" *) 
   LUT3 #(
     .INIT(8'h08)) 
     \char_fifo[4]_i_1 
@@ -1479,7 +1479,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpaceWire_light_AXI_slave_str
         .I1(previous_escape5_out),
         .I2(axi_streamin_aresetn),
         .O(\char_fifo[6]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair85" *) 
+  (* SOFT_HLUTNM = "soft_lutpair86" *) 
   LUT3 #(
     .INIT(8'h40)) 
     \char_fifo[6]_i_3 
@@ -2305,11 +2305,12 @@ endmodule
 module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwLink
    (\state_seq_reg[timerdone]__0 ,
     \xmiti[fct_in] ,
+    \state_seq_reg[errcred]__0 ,
     recv_rxen,
+    \state_seq_reg[timercnt][9]_0 ,
     \FSM_onehot_state_seq_reg[state][3]_0 ,
     \FSM_onehot_state_seq_reg[state][5]_0 ,
     \FSM_onehot_state_seq_reg[state][1]_0 ,
-    \state_seq_reg[timercnt][6]_0 ,
     \vres[txdiscard] ,
     \vres[txpacket]5_out ,
     E,
@@ -2330,15 +2331,15 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwLink
     Q,
     \state_seq_reg[rx_null_fct]_0 ,
     \recvo[gotfct] ,
+    \state_seq_reg[timerdone]_0 ,
     \recvo[gotnull] ,
     \FSM_onehot_state_seq_reg[state][0]_0 ,
     \FSM_onehot_state_seq_reg[state][0]_1 ,
     \FSM_onehot_state_seq_reg[state][0]_2 ,
-    \state_seq_reg[timercnt][0]_0 ,
-    \recvo[rxchar] ,
     \recvo[tick_out] ,
     \res_seq_reg[allow_fct]__0 ,
     \res_seq_reg[pend_fct]__0 ,
+    \recvo[rxchar] ,
     \res_seq_reg[txdiscard]_0 ,
     D,
     \res_seq_reg[txdiscard]_1 ,
@@ -2363,11 +2364,12 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwLink
     \FSM_onehot_state_seq_reg[state][4]_0 );
   output \state_seq_reg[timerdone]__0 ;
   output \xmiti[fct_in] ;
+  output \state_seq_reg[errcred]__0 ;
   output recv_rxen;
+  output \state_seq_reg[timercnt][9]_0 ;
   output \FSM_onehot_state_seq_reg[state][3]_0 ;
   output [3:0]\FSM_onehot_state_seq_reg[state][5]_0 ;
   output \FSM_onehot_state_seq_reg[state][1]_0 ;
-  output \state_seq_reg[timercnt][6]_0 ;
   output \vres[txdiscard] ;
   output \vres[txpacket]5_out ;
   output [0:0]E;
@@ -2388,15 +2390,15 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwLink
   input [5:0]Q;
   input \state_seq_reg[rx_null_fct]_0 ;
   input \recvo[gotfct] ;
+  input \state_seq_reg[timerdone]_0 ;
   input \recvo[gotnull] ;
   input \FSM_onehot_state_seq_reg[state][0]_0 ;
   input \FSM_onehot_state_seq_reg[state][0]_1 ;
   input \FSM_onehot_state_seq_reg[state][0]_2 ;
-  input \state_seq_reg[timercnt][0]_0 ;
-  input \recvo[rxchar] ;
   input \recvo[tick_out] ;
   input \res_seq_reg[allow_fct]__0 ;
   input \res_seq_reg[pend_fct]__0 ;
+  input \recvo[rxchar] ;
   input \res_seq_reg[txdiscard]_0 ;
   input [0:0]D;
   input \res_seq_reg[txdiscard]_1 ;
@@ -2427,10 +2429,10 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwLink
   wire \FSM_onehot_state_seq[state][0]_i_1_n_0 ;
   wire \FSM_onehot_state_seq[state][1]_i_1_n_0 ;
   wire \FSM_onehot_state_seq[state][5]_i_10_n_0 ;
+  wire \FSM_onehot_state_seq[state][5]_i_12_n_0 ;
   wire \FSM_onehot_state_seq[state][5]_i_1_n_0 ;
-  wire \FSM_onehot_state_seq[state][5]_i_3_n_0 ;
   wire \FSM_onehot_state_seq[state][5]_i_4_n_0 ;
-  wire \FSM_onehot_state_seq[state][5]_i_5_n_0 ;
+  wire \FSM_onehot_state_seq[state][5]_i_6_n_0 ;
   wire \FSM_onehot_state_seq[state][5]_i_7_n_0 ;
   wire \FSM_onehot_state_seq_reg[state][0]_0 ;
   wire \FSM_onehot_state_seq_reg[state][0]_1 ;
@@ -2486,7 +2488,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwLink
   wire [12:0]\res_seq_reg[txfiforoom][12] ;
   wire [3:0]\res_seq_reg[txfiforoom][3] ;
   wire [3:0]\res_seq_reg[txfiforoom][7] ;
-  wire [7:0]\state_com[timercnt] ;
+  wire [9:0]\state_com[timercnt] ;
   wire \state_seq[errcred]_i_1_n_0 ;
   wire \state_seq[errcred]_i_2_n_0 ;
   wire \state_seq[errcred]_i_3_n_0 ;
@@ -2494,11 +2496,17 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwLink
   wire \state_seq[errcred]_i_5_n_0 ;
   wire \state_seq[rx_null_fct]_i_1_n_0 ;
   wire \state_seq[rxen]_i_1_n_0 ;
+  wire \state_seq[timercnt][1]_i_2_n_0 ;
   wire \state_seq[timercnt][2]_i_2_n_0 ;
   wire \state_seq[timercnt][3]_i_2_n_0 ;
   wire \state_seq[timercnt][4]_i_2_n_0 ;
   wire \state_seq[timercnt][5]_i_2_n_0 ;
+  wire \state_seq[timercnt][6]_i_2_n_0 ;
   wire \state_seq[timercnt][7]_i_2_n_0 ;
+  wire \state_seq[timercnt][8]_i_2_n_0 ;
+  wire \state_seq[timercnt][9]_i_2_n_0 ;
+  wire \state_seq[timercnt][9]_i_3_n_0 ;
+  wire \state_seq[timercnt][9]_i_4_n_0 ;
   wire \state_seq[timerdone]_i_1_n_0 ;
   wire \state_seq[tx_credit][0]_i_1_n_0 ;
   wire \state_seq[tx_credit][1]_i_1_n_0 ;
@@ -2518,8 +2526,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwLink
   wire \state_seq_reg[rx_null_fct]__0 ;
   wire [2:0]\state_seq_reg[rxen]_0 ;
   wire \state_seq_reg[rxen]_1 ;
-  wire \state_seq_reg[timercnt][0]_0 ;
-  wire \state_seq_reg[timercnt][6]_0 ;
+  wire \state_seq_reg[timercnt][9]_0 ;
   wire \state_seq_reg[timercnt_n_0_][0] ;
   wire \state_seq_reg[timercnt_n_0_][1] ;
   wire \state_seq_reg[timercnt_n_0_][2] ;
@@ -2528,6 +2535,9 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwLink
   wire \state_seq_reg[timercnt_n_0_][5] ;
   wire \state_seq_reg[timercnt_n_0_][6] ;
   wire \state_seq_reg[timercnt_n_0_][7] ;
+  wire \state_seq_reg[timercnt_n_0_][8] ;
+  wire \state_seq_reg[timercnt_n_0_][9] ;
+  wire \state_seq_reg[timerdone]_0 ;
   wire \state_seq_reg[timerdone]__0 ;
   wire [5:0]\state_seq_reg[tx_credit] ;
   wire \state_seq_reg[tx_credit][3]_0 ;
@@ -2569,11 +2579,12 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwLink
   LUT4 #(
     .INIT(16'hFFAE)) 
     \FSM_onehot_state_seq[state][0]_i_1 
-       (.I0(\FSM_onehot_state_seq[state][5]_i_5_n_0 ),
+       (.I0(\FSM_onehot_state_seq[state][5]_i_6_n_0 ),
         .I1(p_0_in9_in),
         .I2(\state_seq_reg[rx_null_fct]_0 ),
         .I3(\FSM_onehot_state_seq_reg[state][5]_0 [0]),
         .O(\FSM_onehot_state_seq[state][0]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \FSM_onehot_state_seq[state][1]_i_1 
@@ -2581,57 +2592,57 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwLink
         .I1(\state_seq_reg[rx_null_fct]_0 ),
         .O(\FSM_onehot_state_seq[state][1]_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFE0)) 
+    .INIT(64'hFFFFFFF4FFFFFFFF)) 
     \FSM_onehot_state_seq[state][5]_i_1 
-       (.I0(\state_seq_reg[rx_null_fct]__0 ),
-        .I1(\recvo[gotfct] ),
-        .I2(p_0_in9_in),
-        .I3(\FSM_onehot_state_seq[state][5]_i_3_n_0 ),
-        .I4(\FSM_onehot_state_seq[state][5]_i_4_n_0 ),
-        .I5(\FSM_onehot_state_seq[state][5]_i_5_n_0 ),
+       (.I0(\state_seq_reg[rx_null_fct]_0 ),
+        .I1(p_0_in9_in),
+        .I2(\FSM_onehot_state_seq[state][5]_i_4_n_0 ),
+        .I3(\state_seq_reg[timerdone]_0 ),
+        .I4(\FSM_onehot_state_seq[state][5]_i_6_n_0 ),
+        .I5(\FSM_onehot_state_seq[state][5]_i_7_n_0 ),
         .O(\FSM_onehot_state_seq[state][5]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  LUT4 #(
+    .INIT(16'hAAEA)) 
+    \FSM_onehot_state_seq[state][5]_i_10 
+       (.I0(\recvo[tick_out] ),
+        .I1(\state_seq_reg[timerdone]__0 ),
+        .I2(\state_seq[timercnt][9]_i_2_n_0 ),
+        .I3(\state_seq_reg[timercnt_n_0_][9] ),
+        .O(\FSM_onehot_state_seq[state][5]_i_10_n_0 ));
   LUT2 #(
     .INIT(4'hE)) 
-    \FSM_onehot_state_seq[state][5]_i_10 
+    \FSM_onehot_state_seq[state][5]_i_12 
        (.I0(\FSM_onehot_state_seq_reg[state][5]_0 [2]),
         .I1(\FSM_onehot_state_seq_reg[state][5]_0 [3]),
-        .O(\FSM_onehot_state_seq[state][5]_i_10_n_0 ));
+        .O(\FSM_onehot_state_seq[state][5]_i_12_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFFFFF8C8C8C8C8)) 
-    \FSM_onehot_state_seq[state][5]_i_3 
-       (.I0(\state_seq_reg[errcred]__0 ),
-        .I1(\FSM_onehot_state_seq_reg[state][5]_0 [0]),
-        .I2(\state_seq_reg[timercnt][0]_0 ),
-        .I3(\recvo[rxchar] ),
-        .I4(\FSM_onehot_state_seq[state][5]_i_7_n_0 ),
-        .I5(p_0_in9_in),
-        .O(\FSM_onehot_state_seq[state][5]_i_3_n_0 ));
-  LUT6 #(
-    .INIT(64'hF000F000FFFFF888)) 
+    .INIT(64'hFFFFF888F000F000)) 
     \FSM_onehot_state_seq[state][5]_i_4 
        (.I0(\state_seq_reg[timerdone]__0 ),
         .I1(\FSM_onehot_state_seq_reg[state][5]_0 [3]),
         .I2(\recvo[gotnull] ),
         .I3(\FSM_onehot_state_seq_reg[state][5]_0 [1]),
         .I4(\FSM_onehot_state_seq_reg[state_n_0_][0] ),
-        .I5(\state_seq_reg[timercnt][6]_0 ),
+        .I5(\state_seq_reg[timercnt][9]_0 ),
         .O(\FSM_onehot_state_seq[state][5]_i_4_n_0 ));
   LUT6 #(
     .INIT(64'hFFFFA8FFA8AAA8AA)) 
-    \FSM_onehot_state_seq[state][5]_i_5 
+    \FSM_onehot_state_seq[state][5]_i_6 
        (.I0(\FSM_onehot_state_seq_reg[state][5]_0 [1]),
         .I1(\FSM_onehot_state_seq_reg[state][0]_0 ),
-        .I2(\FSM_onehot_state_seq[state][5]_i_7_n_0 ),
+        .I2(\FSM_onehot_state_seq[state][5]_i_10_n_0 ),
         .I3(\FSM_onehot_state_seq_reg[state][0]_1 ),
         .I4(\FSM_onehot_state_seq_reg[state][0]_2 ),
-        .I5(\FSM_onehot_state_seq[state][5]_i_10_n_0 ),
-        .O(\FSM_onehot_state_seq[state][5]_i_5_n_0 ));
+        .I5(\FSM_onehot_state_seq[state][5]_i_12_n_0 ),
+        .O(\FSM_onehot_state_seq[state][5]_i_6_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
   LUT3 #(
-    .INIT(8'hAE)) 
+    .INIT(8'h1F)) 
     \FSM_onehot_state_seq[state][5]_i_7 
-       (.I0(\recvo[tick_out] ),
-        .I1(\state_seq_reg[timerdone]__0 ),
-        .I2(\state_seq_reg[timercnt][6]_0 ),
+       (.I0(\recvo[gotfct] ),
+        .I1(\state_seq_reg[rx_null_fct]__0 ),
+        .I2(p_0_in9_in),
         .O(\FSM_onehot_state_seq[state][5]_i_7_n_0 ));
   (* FSM_ENCODED_STATES = "s_errorwait:100000,s_ready:010000,s_started:001000,s_connecting:000100,s_run:000010,s_errorreset:000001" *) 
   FDPE #(
@@ -2758,7 +2769,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwLink
         .DI({1'b0,1'b0,\vstate[xmit_fct_in]4 [5:4]}),
         .O(\NLW_p_1_out_inferred__0/i__carry__0_O_UNCONNECTED [3:0]),
         .S({1'b0,1'b0,i__carry__0_i_3__0_n_0,i__carry__0_i_4__0_n_0}));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
   LUT4 #(
     .INIT(16'h0008)) 
     \res_seq[allow_char]_i_1 
@@ -2775,41 +2786,42 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwLink
         .I1(p_0_in9_in),
         .I2(\FSM_onehot_state_seq_reg[state][5]_0 [0]),
         .O(\FSM_onehot_state_seq_reg[state][3]_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \res_seq[bitcntp_gray][1]_i_1 
        (.I0(recv_rxen),
         .I1(\syncsys[rxcnt_ddr_gray] [0]),
         .O(\state_seq_reg[rxen]_0 [0]));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \res_seq[bitcntp_gray][2]_i_1 
        (.I0(recv_rxen),
         .I1(\syncsys[rxcnt_ddr_gray] [1]),
         .O(\state_seq_reg[rxen]_0 [1]));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \res_seq[bitcntp_gray][3]_i_1 
        (.I0(recv_rxen),
         .I1(\syncsys[rxcnt_ddr_gray] [2]),
         .O(\state_seq_reg[rxen]_0 [2]));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
   LUT2 #(
     .INIT(4'h7)) 
     \res_seq[bitshift][8]_i_1 
        (.I0(recv_rxen),
         .I1(sys_rst_n),
         .O(AR));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
   LUT2 #(
     .INIT(4'h2)) 
     \res_seq[inbvalid]_i_1 
        (.I0(recv_rxen),
         .I1(\res_seq_reg[inbvalid] ),
         .O(\vres[inbvalid]0_out ));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT1 #(
     .INIT(2'h1)) 
     \res_seq[pend_data][8]_i_1 
@@ -2823,7 +2835,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwLink
         .I2(\FSM_onehot_state_seq_reg[state][5]_0 [0]),
         .I3(\res_seq_reg[rxeep] ),
         .O(\vres[rxeep]3_out ));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
   LUT3 #(
     .INIT(8'h01)) 
     \res_seq[token1][fctpiggy]_i_4 
@@ -2881,22 +2893,22 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwLink
         .I4(\vres[txfiforoom]0_in [0]),
         .O(\res_seq_reg[txfiforoom][12] [0]));
   LUT5 #(
-    .INIT(32'hAFCAA0CA)) 
-    \res_seq[txfiforoom][10]_i_1 
-       (.I0(\res_seq_reg[txfifo_rvalid] [10]),
-        .I1(\res_seq_reg[txfiforoom][11] [2]),
-        .I2(SPW_TXWRITE),
-        .I3(\res_seq_reg[txdiscard] ),
-        .I4(\vres[txfiforoom]0_in [10]),
-        .O(\res_seq_reg[txfiforoom][12] [10]));
-  LUT5 #(
     .INIT(32'hF0CCAAF0)) 
-    \res_seq[txfiforoom][11]_i_1 
-       (.I0(\res_seq_reg[txfiforoom][11] [3]),
-        .I1(\vres[txfiforoom]0_in [11]),
-        .I2(\res_seq_reg[txfifo_rvalid] [11]),
+    \res_seq[txfiforoom][10]_i_1 
+       (.I0(\res_seq_reg[txfiforoom][11] [2]),
+        .I1(\vres[txfiforoom]0_in [10]),
+        .I2(\res_seq_reg[txfifo_rvalid] [10]),
         .I3(SPW_TXWRITE),
         .I4(\res_seq_reg[txdiscard] ),
+        .O(\res_seq_reg[txfiforoom][12] [10]));
+  LUT5 #(
+    .INIT(32'hAFCAA0CA)) 
+    \res_seq[txfiforoom][11]_i_1 
+       (.I0(\res_seq_reg[txfifo_rvalid] [11]),
+        .I1(\res_seq_reg[txfiforoom][11] [3]),
+        .I2(SPW_TXWRITE),
+        .I3(\res_seq_reg[txdiscard] ),
+        .I4(\vres[txfiforoom]0_in [11]),
         .O(\res_seq_reg[txfiforoom][12] [11]));
   (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT5 #(
@@ -2994,27 +3006,27 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwLink
     \res_seq[txfull]_i_1 
        (.I0(\res_seq[txfull]_i_2_n_0 ),
         .I1(\res_seq[txfull]_i_3_n_0 ),
-        .I2(\res_seq_reg[txfiforoom][12] [9]),
+        .I2(\res_seq_reg[txfiforoom][12] [12]),
         .I3(\res_seq_reg[txfiforoom][12] [2]),
-        .I4(\res_seq_reg[txfiforoom][12] [4]),
+        .I4(\res_seq_reg[txfiforoom][12] [11]),
         .O(\res_com[txfull] ));
   LUT6 #(
     .INIT(64'h0000000000000001)) 
     \res_seq[txfull]_i_2 
-       (.I0(\res_seq_reg[txfiforoom][12] [1]),
-        .I1(\res_seq_reg[txfiforoom][12] [11]),
-        .I2(\res_seq_reg[txfiforoom][12] [12]),
-        .I3(\res_seq_reg[txfiforoom][12] [3]),
-        .I4(\res_seq_reg[txfiforoom][12] [6]),
-        .I5(\res_seq_reg[txfiforoom][12] [5]),
+       (.I0(\res_seq_reg[txfiforoom][12] [3]),
+        .I1(\res_seq_reg[txfiforoom][12] [10]),
+        .I2(\res_seq_reg[txfiforoom][12] [7]),
+        .I3(\res_seq_reg[txfiforoom][12] [0]),
+        .I4(\res_seq_reg[txfiforoom][12] [9]),
+        .I5(\res_seq_reg[txfiforoom][12] [8]),
         .O(\res_seq[txfull]_i_2_n_0 ));
   LUT4 #(
     .INIT(16'hFFFE)) 
     \res_seq[txfull]_i_3 
-       (.I0(\res_seq_reg[txfiforoom][12] [7]),
-        .I1(\res_seq_reg[txfiforoom][12] [10]),
-        .I2(\res_seq_reg[txfiforoom][12] [0]),
-        .I3(\res_seq_reg[txfiforoom][12] [8]),
+       (.I0(\res_seq_reg[txfiforoom][12] [4]),
+        .I1(\res_seq_reg[txfiforoom][12] [5]),
+        .I2(\res_seq_reg[txfiforoom][12] [1]),
+        .I3(\res_seq_reg[txfiforoom][12] [6]),
         .O(\res_seq[txfull]_i_3_n_0 ));
   LUT4 #(
     .INIT(16'h808A)) 
@@ -3024,18 +3036,18 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwLink
         .I2(\state_seq[tx_credit][5]_i_3_n_0 ),
         .I3(D),
         .O(\vres[txpacket]5_out ));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT1 #(
     .INIT(2'h1)) 
     \reset_reg[1]_i_2 
        (.I0(recv_rxen),
         .O(load));
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
   LUT4 #(
-    .INIT(16'hF7F0)) 
+    .INIT(16'hFBF0)) 
     \state_seq[errcred]_i_1 
-       (.I0(\FSM_onehot_state_seq_reg[state_n_0_][0] ),
-        .I1(\state_seq_reg[timercnt][6]_0 ),
+       (.I0(\state_seq_reg[timercnt][9]_0 ),
+        .I1(\FSM_onehot_state_seq_reg[state_n_0_][0] ),
         .I2(\state_seq[errcred]_i_2_n_0 ),
         .I3(\state_seq_reg[errcred]__0 ),
         .O(\state_seq[errcred]_i_1_n_0 ));
@@ -3057,7 +3069,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwLink
         .I2(\state_seq_reg[rx_credit] [4]),
         .I3(\state_seq_reg[rx_credit] [3]),
         .O(\state_seq[errcred]_i_3_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
   LUT4 #(
     .INIT(16'hFFFE)) 
     \state_seq[errcred]_i_4 
@@ -3080,35 +3092,35 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwLink
        (.I0(\vstate[rx_credit]0_carry_n_7 ),
         .I1(\FSM_onehot_state_seq_reg[state_n_0_][0] ),
         .O(\vstate[rx_credit] [0]));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
   LUT2 #(
     .INIT(4'h2)) 
     \state_seq[rx_credit][1]_i_1 
        (.I0(\vstate[rx_credit]0_carry_n_6 ),
         .I1(\FSM_onehot_state_seq_reg[state_n_0_][0] ),
         .O(\vstate[rx_credit] [1]));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
   LUT2 #(
     .INIT(4'h2)) 
     \state_seq[rx_credit][2]_i_1 
        (.I0(\vstate[rx_credit]0_carry_n_5 ),
         .I1(\FSM_onehot_state_seq_reg[state_n_0_][0] ),
         .O(\vstate[rx_credit] [2]));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT2 #(
     .INIT(4'h2)) 
     \state_seq[rx_credit][3]_i_1 
        (.I0(\vstate[rx_credit]0_carry_n_4 ),
         .I1(\FSM_onehot_state_seq_reg[state_n_0_][0] ),
         .O(\vstate[rx_credit] [3]));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT2 #(
     .INIT(4'h2)) 
     \state_seq[rx_credit][4]_i_1 
        (.I0(\vstate[rx_credit]0_carry__0_n_7 ),
         .I1(\FSM_onehot_state_seq_reg[state_n_0_][0] ),
         .O(\vstate[rx_credit] [4]));
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
   LUT2 #(
     .INIT(4'h2)) 
     \state_seq[rx_credit][5]_i_1 
@@ -3125,158 +3137,237 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwLink
         .I4(\state_seq_reg[rx_null_fct]_0 ),
         .I5(\state_seq_reg[rx_null_fct]__0 ),
         .O(\state_seq[rx_null_fct]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
-  LUT5 #(
-    .INIT(32'h55035500)) 
+  LUT6 #(
+    .INIT(64'hA0A0A0A3A0A0A0A0)) 
     \state_seq[rxen]_i_1 
-       (.I0(\state_seq_reg[timercnt][6]_0 ),
-        .I1(\FSM_onehot_state_seq[state][5]_i_5_n_0 ),
-        .I2(\FSM_onehot_state_seq[state][5]_i_3_n_0 ),
-        .I3(\FSM_onehot_state_seq_reg[state_n_0_][0] ),
-        .I4(recv_rxen),
+       (.I0(\state_seq_reg[timercnt][9]_0 ),
+        .I1(\FSM_onehot_state_seq[state][5]_i_6_n_0 ),
+        .I2(\FSM_onehot_state_seq_reg[state_n_0_][0] ),
+        .I3(\state_seq_reg[timerdone]_0 ),
+        .I4(\state_seq[timercnt][9]_i_3_n_0 ),
+        .I5(recv_rxen),
         .O(\state_seq[rxen]_i_1_n_0 ));
-  LUT5 #(
-    .INIT(32'h00000100)) 
+  LUT6 #(
+    .INIT(64'h0000000000000001)) 
     \state_seq[timercnt][0]_i_1 
-       (.I0(\FSM_onehot_state_seq[state][5]_i_3_n_0 ),
+       (.I0(\state_seq[timercnt][9]_i_3_n_0 ),
         .I1(\FSM_onehot_state_seq[state][5]_i_4_n_0 ),
-        .I2(\FSM_onehot_state_seq[state][5]_i_5_n_0 ),
-        .I3(\state_seq_reg[timercnt][6]_0 ),
-        .I4(\state_seq_reg[timercnt_n_0_][0] ),
+        .I2(\state_seq_reg[timerdone]_0 ),
+        .I3(\FSM_onehot_state_seq[state][5]_i_6_n_0 ),
+        .I4(\state_seq_reg[timercnt][9]_0 ),
+        .I5(\state_seq_reg[timercnt_n_0_][0] ),
         .O(\state_com[timercnt] [0]));
   LUT6 #(
-    .INIT(64'h0100000000000100)) 
+    .INIT(64'h000000000000000B)) 
     \state_seq[timercnt][1]_i_1 
-       (.I0(\FSM_onehot_state_seq[state][5]_i_3_n_0 ),
-        .I1(\FSM_onehot_state_seq[state][5]_i_4_n_0 ),
-        .I2(\FSM_onehot_state_seq[state][5]_i_5_n_0 ),
-        .I3(\state_seq_reg[timercnt][6]_0 ),
-        .I4(\state_seq_reg[timercnt_n_0_][0] ),
-        .I5(\state_seq_reg[timercnt_n_0_][1] ),
+       (.I0(\state_seq_reg[rx_null_fct]_0 ),
+        .I1(p_0_in9_in),
+        .I2(\FSM_onehot_state_seq[state][5]_i_4_n_0 ),
+        .I3(\state_seq_reg[timerdone]_0 ),
+        .I4(\FSM_onehot_state_seq[state][5]_i_6_n_0 ),
+        .I5(\state_seq[timercnt][1]_i_2_n_0 ),
         .O(\state_com[timercnt] [1]));
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  LUT3 #(
+    .INIT(8'hF6)) 
+    \state_seq[timercnt][1]_i_2 
+       (.I0(\state_seq_reg[timercnt_n_0_][1] ),
+        .I1(\state_seq_reg[timercnt_n_0_][0] ),
+        .I2(\state_seq_reg[timercnt][9]_0 ),
+        .O(\state_seq[timercnt][1]_i_2_n_0 ));
   LUT6 #(
-    .INIT(64'h0100000000000100)) 
+    .INIT(64'h000000000000000B)) 
     \state_seq[timercnt][2]_i_1 
-       (.I0(\FSM_onehot_state_seq[state][5]_i_3_n_0 ),
-        .I1(\FSM_onehot_state_seq[state][5]_i_4_n_0 ),
-        .I2(\FSM_onehot_state_seq[state][5]_i_5_n_0 ),
-        .I3(\state_seq_reg[timercnt][6]_0 ),
-        .I4(\state_seq_reg[timercnt_n_0_][2] ),
+       (.I0(\state_seq_reg[rx_null_fct]_0 ),
+        .I1(p_0_in9_in),
+        .I2(\FSM_onehot_state_seq[state][5]_i_4_n_0 ),
+        .I3(\state_seq_reg[timerdone]_0 ),
+        .I4(\FSM_onehot_state_seq[state][5]_i_6_n_0 ),
         .I5(\state_seq[timercnt][2]_i_2_n_0 ),
         .O(\state_com[timercnt] [2]));
-  (* SOFT_HLUTNM = "soft_lutpair9" *) 
-  LUT2 #(
-    .INIT(4'hE)) 
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  LUT4 #(
+    .INIT(16'hFF1E)) 
     \state_seq[timercnt][2]_i_2 
        (.I0(\state_seq_reg[timercnt_n_0_][0] ),
         .I1(\state_seq_reg[timercnt_n_0_][1] ),
+        .I2(\state_seq_reg[timercnt_n_0_][2] ),
+        .I3(\state_seq_reg[timercnt][9]_0 ),
         .O(\state_seq[timercnt][2]_i_2_n_0 ));
   LUT6 #(
-    .INIT(64'h0100000000000100)) 
+    .INIT(64'h000000000000000B)) 
     \state_seq[timercnt][3]_i_1 
-       (.I0(\FSM_onehot_state_seq[state][5]_i_3_n_0 ),
-        .I1(\FSM_onehot_state_seq[state][5]_i_4_n_0 ),
-        .I2(\FSM_onehot_state_seq[state][5]_i_5_n_0 ),
-        .I3(\state_seq_reg[timercnt][6]_0 ),
-        .I4(\state_seq_reg[timercnt_n_0_][3] ),
+       (.I0(\state_seq_reg[rx_null_fct]_0 ),
+        .I1(p_0_in9_in),
+        .I2(\FSM_onehot_state_seq[state][5]_i_4_n_0 ),
+        .I3(\state_seq_reg[timerdone]_0 ),
+        .I4(\FSM_onehot_state_seq[state][5]_i_6_n_0 ),
         .I5(\state_seq[timercnt][3]_i_2_n_0 ),
         .O(\state_com[timercnt] [3]));
-  (* SOFT_HLUTNM = "soft_lutpair9" *) 
-  LUT3 #(
-    .INIT(8'hFE)) 
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT5 #(
+    .INIT(32'hFFFF01FE)) 
     \state_seq[timercnt][3]_i_2 
        (.I0(\state_seq_reg[timercnt_n_0_][2] ),
         .I1(\state_seq_reg[timercnt_n_0_][1] ),
         .I2(\state_seq_reg[timercnt_n_0_][0] ),
+        .I3(\state_seq_reg[timercnt_n_0_][3] ),
+        .I4(\state_seq_reg[timercnt][9]_0 ),
         .O(\state_seq[timercnt][3]_i_2_n_0 ));
   LUT6 #(
-    .INIT(64'h0100000000000100)) 
+    .INIT(64'h000000000000000B)) 
     \state_seq[timercnt][4]_i_1 
-       (.I0(\FSM_onehot_state_seq[state][5]_i_3_n_0 ),
-        .I1(\FSM_onehot_state_seq[state][5]_i_4_n_0 ),
-        .I2(\FSM_onehot_state_seq[state][5]_i_5_n_0 ),
-        .I3(\state_seq_reg[timercnt][6]_0 ),
-        .I4(\state_seq_reg[timercnt_n_0_][4] ),
+       (.I0(\state_seq_reg[rx_null_fct]_0 ),
+        .I1(p_0_in9_in),
+        .I2(\FSM_onehot_state_seq[state][5]_i_4_n_0 ),
+        .I3(\state_seq_reg[timerdone]_0 ),
+        .I4(\FSM_onehot_state_seq[state][5]_i_6_n_0 ),
         .I5(\state_seq[timercnt][4]_i_2_n_0 ),
         .O(\state_com[timercnt] [4]));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
-  LUT4 #(
-    .INIT(16'hFFFE)) 
+  LUT6 #(
+    .INIT(64'hFFFFFFFF0001FFFE)) 
     \state_seq[timercnt][4]_i_2 
        (.I0(\state_seq_reg[timercnt_n_0_][3] ),
         .I1(\state_seq_reg[timercnt_n_0_][0] ),
         .I2(\state_seq_reg[timercnt_n_0_][1] ),
         .I3(\state_seq_reg[timercnt_n_0_][2] ),
+        .I4(\state_seq_reg[timercnt_n_0_][4] ),
+        .I5(\state_seq_reg[timercnt][9]_0 ),
         .O(\state_seq[timercnt][4]_i_2_n_0 ));
   LUT6 #(
-    .INIT(64'h0100000000000100)) 
+    .INIT(64'h0000000000000001)) 
     \state_seq[timercnt][5]_i_1 
-       (.I0(\FSM_onehot_state_seq[state][5]_i_3_n_0 ),
+       (.I0(\state_seq[timercnt][9]_i_3_n_0 ),
         .I1(\FSM_onehot_state_seq[state][5]_i_4_n_0 ),
-        .I2(\FSM_onehot_state_seq[state][5]_i_5_n_0 ),
-        .I3(\state_seq_reg[timercnt][6]_0 ),
-        .I4(\state_seq_reg[timercnt_n_0_][5] ),
+        .I2(\state_seq_reg[timerdone]_0 ),
+        .I3(\FSM_onehot_state_seq[state][5]_i_6_n_0 ),
+        .I4(\state_seq_reg[timercnt][9]_0 ),
         .I5(\state_seq[timercnt][5]_i_2_n_0 ),
         .O(\state_com[timercnt] [5]));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
-  LUT5 #(
-    .INIT(32'hFFFFFFFE)) 
+  LUT6 #(
+    .INIT(64'h5555555555555556)) 
     \state_seq[timercnt][5]_i_2 
-       (.I0(\state_seq_reg[timercnt_n_0_][4] ),
-        .I1(\state_seq_reg[timercnt_n_0_][2] ),
-        .I2(\state_seq_reg[timercnt_n_0_][1] ),
-        .I3(\state_seq_reg[timercnt_n_0_][0] ),
-        .I4(\state_seq_reg[timercnt_n_0_][3] ),
-        .O(\state_seq[timercnt][5]_i_2_n_0 ));
-  LUT6 #(
-    .INIT(64'h0100000100000000)) 
-    \state_seq[timercnt][6]_i_1 
-       (.I0(\FSM_onehot_state_seq[state][5]_i_3_n_0 ),
-        .I1(\FSM_onehot_state_seq[state][5]_i_4_n_0 ),
-        .I2(\FSM_onehot_state_seq[state][5]_i_5_n_0 ),
-        .I3(\state_seq_reg[timercnt_n_0_][6] ),
-        .I4(\state_seq[timercnt][7]_i_2_n_0 ),
-        .I5(\state_seq_reg[timercnt][6]_0 ),
-        .O(\state_com[timercnt] [6]));
-  LUT5 #(
-    .INIT(32'hFFFFFFFE)) 
-    \state_seq[timercnt][6]_i_2 
-       (.I0(\state_seq[timercnt][4]_i_2_n_0 ),
-        .I1(\state_seq_reg[timercnt_n_0_][6] ),
-        .I2(\state_seq_reg[timercnt_n_0_][7] ),
-        .I3(\state_seq_reg[timercnt_n_0_][4] ),
-        .I4(\state_seq_reg[timercnt_n_0_][5] ),
-        .O(\state_seq_reg[timercnt][6]_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFE1)) 
-    \state_seq[timercnt][7]_i_1 
-       (.I0(\state_seq_reg[timercnt_n_0_][6] ),
-        .I1(\state_seq[timercnt][7]_i_2_n_0 ),
-        .I2(\state_seq_reg[timercnt_n_0_][7] ),
-        .I3(\FSM_onehot_state_seq[state][5]_i_3_n_0 ),
-        .I4(\FSM_onehot_state_seq[state][5]_i_4_n_0 ),
-        .I5(\FSM_onehot_state_seq[state][5]_i_5_n_0 ),
-        .O(\state_com[timercnt] [7]));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \state_seq[timercnt][7]_i_2 
        (.I0(\state_seq_reg[timercnt_n_0_][5] ),
         .I1(\state_seq_reg[timercnt_n_0_][3] ),
         .I2(\state_seq_reg[timercnt_n_0_][0] ),
         .I3(\state_seq_reg[timercnt_n_0_][1] ),
         .I4(\state_seq_reg[timercnt_n_0_][2] ),
         .I5(\state_seq_reg[timercnt_n_0_][4] ),
-        .O(\state_seq[timercnt][7]_i_2_n_0 ));
-  LUT5 #(
-    .INIT(32'h00030001)) 
-    \state_seq[timerdone]_i_1 
-       (.I0(\state_seq_reg[timercnt][6]_0 ),
-        .I1(\FSM_onehot_state_seq[state][5]_i_3_n_0 ),
+        .O(\state_seq[timercnt][5]_i_2_n_0 ));
+  LUT6 #(
+    .INIT(64'h000000000000000B)) 
+    \state_seq[timercnt][6]_i_1 
+       (.I0(\state_seq_reg[rx_null_fct]_0 ),
+        .I1(p_0_in9_in),
         .I2(\FSM_onehot_state_seq[state][5]_i_4_n_0 ),
-        .I3(\FSM_onehot_state_seq[state][5]_i_5_n_0 ),
-        .I4(\state_seq_reg[timerdone]__0 ),
+        .I3(\state_seq_reg[timerdone]_0 ),
+        .I4(\FSM_onehot_state_seq[state][5]_i_6_n_0 ),
+        .I5(\state_seq[timercnt][6]_i_2_n_0 ),
+        .O(\state_com[timercnt] [6]));
+  LUT5 #(
+    .INIT(32'hAAABFFFE)) 
+    \state_seq[timercnt][6]_i_2 
+       (.I0(\state_seq_reg[timercnt][9]_0 ),
+        .I1(\state_seq_reg[timercnt_n_0_][5] ),
+        .I2(\state_seq[timercnt][9]_i_4_n_0 ),
+        .I3(\state_seq_reg[timercnt_n_0_][4] ),
+        .I4(\state_seq_reg[timercnt_n_0_][6] ),
+        .O(\state_seq[timercnt][6]_i_2_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFFFFFFFFFFFFBA)) 
+    \state_seq[timercnt][7]_i_1 
+       (.I0(\state_seq[timercnt][7]_i_2_n_0 ),
+        .I1(\state_seq_reg[rx_null_fct]_0 ),
+        .I2(p_0_in9_in),
+        .I3(\FSM_onehot_state_seq[state][5]_i_4_n_0 ),
+        .I4(\state_seq_reg[timerdone]_0 ),
+        .I5(\FSM_onehot_state_seq[state][5]_i_6_n_0 ),
+        .O(\state_com[timercnt] [7]));
+  LUT5 #(
+    .INIT(32'hAAAAAAA9)) 
+    \state_seq[timercnt][7]_i_2 
+       (.I0(\state_seq_reg[timercnt_n_0_][7] ),
+        .I1(\state_seq_reg[timercnt_n_0_][5] ),
+        .I2(\state_seq[timercnt][9]_i_4_n_0 ),
+        .I3(\state_seq_reg[timercnt_n_0_][4] ),
+        .I4(\state_seq_reg[timercnt_n_0_][6] ),
+        .O(\state_seq[timercnt][7]_i_2_n_0 ));
+  LUT6 #(
+    .INIT(64'h0000000000010000)) 
+    \state_seq[timercnt][8]_i_1 
+       (.I0(\state_seq[timercnt][9]_i_3_n_0 ),
+        .I1(\FSM_onehot_state_seq[state][5]_i_4_n_0 ),
+        .I2(\state_seq_reg[timerdone]_0 ),
+        .I3(\FSM_onehot_state_seq[state][5]_i_6_n_0 ),
+        .I4(\state_seq[timercnt][8]_i_2_n_0 ),
+        .I5(\state_seq_reg[timercnt][9]_0 ),
+        .O(\state_com[timercnt] [8]));
+  LUT6 #(
+    .INIT(64'hAAAAAAAAAAAAAAA9)) 
+    \state_seq[timercnt][8]_i_2 
+       (.I0(\state_seq_reg[timercnt_n_0_][8] ),
+        .I1(\state_seq_reg[timercnt_n_0_][5] ),
+        .I2(\state_seq_reg[timercnt_n_0_][4] ),
+        .I3(\state_seq_reg[timercnt_n_0_][7] ),
+        .I4(\state_seq_reg[timercnt_n_0_][6] ),
+        .I5(\state_seq[timercnt][9]_i_4_n_0 ),
+        .O(\state_seq[timercnt][8]_i_2_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \state_seq[timercnt][8]_i_3 
+       (.I0(\state_seq[timercnt][9]_i_2_n_0 ),
+        .I1(\state_seq_reg[timercnt_n_0_][9] ),
+        .O(\state_seq_reg[timercnt][9]_0 ));
+  LUT6 #(
+    .INIT(64'hFFFFFFFFFFFFFFF6)) 
+    \state_seq[timercnt][9]_i_1 
+       (.I0(\state_seq[timercnt][9]_i_2_n_0 ),
+        .I1(\state_seq_reg[timercnt_n_0_][9] ),
+        .I2(\state_seq[timercnt][9]_i_3_n_0 ),
+        .I3(\FSM_onehot_state_seq[state][5]_i_4_n_0 ),
+        .I4(\state_seq_reg[timerdone]_0 ),
+        .I5(\FSM_onehot_state_seq[state][5]_i_6_n_0 ),
+        .O(\state_com[timercnt] [9]));
+  LUT6 #(
+    .INIT(64'h0000000000000001)) 
+    \state_seq[timercnt][9]_i_2 
+       (.I0(\state_seq_reg[timercnt_n_0_][8] ),
+        .I1(\state_seq_reg[timercnt_n_0_][5] ),
+        .I2(\state_seq_reg[timercnt_n_0_][4] ),
+        .I3(\state_seq_reg[timercnt_n_0_][7] ),
+        .I4(\state_seq_reg[timercnt_n_0_][6] ),
+        .I5(\state_seq[timercnt][9]_i_4_n_0 ),
+        .O(\state_seq[timercnt][9]_i_2_n_0 ));
+  LUT5 #(
+    .INIT(32'hA888AAAA)) 
+    \state_seq[timercnt][9]_i_3 
+       (.I0(p_0_in9_in),
+        .I1(\recvo[tick_out] ),
+        .I2(\state_seq_reg[timerdone]__0 ),
+        .I3(\state_seq_reg[timercnt][9]_0 ),
+        .I4(\FSM_onehot_state_seq_reg[state][0]_1 ),
+        .O(\state_seq[timercnt][9]_i_3_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    \state_seq[timercnt][9]_i_4 
+       (.I0(\state_seq_reg[timercnt_n_0_][3] ),
+        .I1(\state_seq_reg[timercnt_n_0_][0] ),
+        .I2(\state_seq_reg[timercnt_n_0_][1] ),
+        .I3(\state_seq_reg[timercnt_n_0_][2] ),
+        .O(\state_seq[timercnt][9]_i_4_n_0 ));
+  LUT6 #(
+    .INIT(64'h0000000300000002)) 
+    \state_seq[timerdone]_i_1 
+       (.I0(\state_seq_reg[timercnt][9]_0 ),
+        .I1(\state_seq[timercnt][9]_i_3_n_0 ),
+        .I2(\FSM_onehot_state_seq[state][5]_i_4_n_0 ),
+        .I3(\state_seq_reg[timerdone]_0 ),
+        .I4(\FSM_onehot_state_seq[state][5]_i_6_n_0 ),
+        .I5(\state_seq_reg[timerdone]__0 ),
         .O(\state_seq[timerdone]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT4 #(
     .INIT(16'h4015)) 
     \state_seq[tx_credit][0]_i_1 
@@ -3285,7 +3376,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwLink
         .I2(\state_seq[tx_credit][5]_i_3_n_0 ),
         .I3(\state_seq_reg[tx_credit] [0]),
         .O(\state_seq[tx_credit][0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT5 #(
     .INIT(32'h54440111)) 
     \state_seq[tx_credit][1]_i_1 
@@ -3315,14 +3406,14 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwLink
         .I4(\state_seq_reg[tx_credit] [2]),
         .I5(\state_seq[tx_credit][3]_i_2_n_0 ),
         .O(\state_seq[tx_credit][3]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
   LUT2 #(
     .INIT(4'hE)) 
     \state_seq[tx_credit][3]_i_2 
        (.I0(\state_seq_reg[tx_credit] [0]),
         .I1(\state_seq_reg[tx_credit] [1]),
         .O(\state_seq[tx_credit][3]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT5 #(
     .INIT(32'h14141441)) 
     \state_seq[tx_credit][4]_i_1 
@@ -3370,11 +3461,11 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwLink
         .I5(\state_seq_reg[tx_credit] [2]),
         .O(\state_seq[tx_credit][5]_i_4_n_0 ));
   LUT5 #(
-    .INIT(32'h08083B08)) 
+    .INIT(32'h8080B380)) 
     \state_seq[xmit_fct_in]_i_1 
        (.I0(\xmiti[fct_in] ),
         .I1(\FSM_onehot_state_seq_reg[state_n_0_][0] ),
-        .I2(\state_seq_reg[timercnt][6]_0 ),
+        .I2(\state_seq_reg[timercnt][9]_0 ),
         .I3(\state_seq[xmit_fct_in]_i_2_n_0 ),
         .I4(\p_1_out_inferred__0/i__carry__0_n_2 ),
         .O(\state_seq[xmit_fct_in]_i_1_n_0 ));
@@ -3490,6 +3581,18 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwLink
         .D(\state_com[timercnt] [7]),
         .PRE(\state_seq_reg[rxen]_1 ),
         .Q(\state_seq_reg[timercnt_n_0_][7] ));
+  FDCE \state_seq_reg[timercnt][8] 
+       (.C(SPW_main_clk),
+        .CE(1'b1),
+        .CLR(\state_seq_reg[rxen]_1 ),
+        .D(\state_com[timercnt] [8]),
+        .Q(\state_seq_reg[timercnt_n_0_][8] ));
+  FDPE \state_seq_reg[timercnt][9] 
+       (.C(SPW_main_clk),
+        .CE(1'b1),
+        .D(\state_com[timercnt] [9]),
+        .PRE(\state_seq_reg[rxen]_1 ),
+        .Q(\state_seq_reg[timercnt_n_0_][9] ));
   FDCE \state_seq_reg[timerdone] 
        (.C(SPW_main_clk),
         .CE(1'b1),
@@ -4064,14 +4167,11 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
     \res_seq_reg[tick_out]_0 ,
     \res_seq_reg[rxchar]_0 ,
     \state_seq_reg[timerdone] ,
-    \res_seq_reg[bit_seen]_0 ,
+    \FSM_onehot_state_seq_reg[state][1] ,
     \res_seq_reg[gotfct]_0 ,
     \res_seq_reg[gotfct]_1 ,
     \vres[rxpacket]7_out ,
-    \res_seq_reg[rxfiforoom][4] ,
     \res_seq_reg[rxfiforoom][10] ,
-    \res_seq_reg[rxfiforoom][8] ,
-    \res_seq_reg[rxfiforoom][10]_0 ,
     WEN,
     \res_com[rxfifo_rvalid] ,
     \res_com[rxemptydiscard] ,
@@ -4084,12 +4184,10 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
     \FSM_onehot_state_seq_reg[state][4] ,
     \FSM_onehot_state_seq_reg[state][2] ,
     \state_seq_reg[timerdone]__0 ,
+    \state_seq_reg[errcred]__0 ,
     D,
     \res_seq_reg[datareg][0]_0 ,
     \res_seq_reg[rxpacket] ,
-    \res_seq_reg[rxfifo_rvalid]1 ,
-    \res_seq_reg[rxroom][2] ,
-    \res_seq_reg[rxroom][2]_0 ,
     \res_seq_reg[rxfifo_rvalid] ,
     \vres[rxfiforoom]0_in ,
     SPW_RXREAD,
@@ -4107,14 +4205,11 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
   output [2:0]\res_seq_reg[tick_out]_0 ;
   output \res_seq_reg[rxchar]_0 ;
   output \state_seq_reg[timerdone] ;
-  output \res_seq_reg[bit_seen]_0 ;
+  output \FSM_onehot_state_seq_reg[state][1] ;
   output \res_seq_reg[gotfct]_0 ;
   output \res_seq_reg[gotfct]_1 ;
   output \vres[rxpacket]7_out ;
-  output [1:0]\res_seq_reg[rxfiforoom][4] ;
-  output \res_seq_reg[rxfiforoom][10] ;
-  output \res_seq_reg[rxfiforoom][8] ;
-  output [3:0]\res_seq_reg[rxfiforoom][10]_0 ;
+  output [2:0]\res_seq_reg[rxfiforoom][10] ;
   output WEN;
   output \res_com[rxfifo_rvalid] ;
   output \res_com[rxemptydiscard] ;
@@ -4127,23 +4222,22 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
   input [3:0]\FSM_onehot_state_seq_reg[state][4] ;
   input \FSM_onehot_state_seq_reg[state][2] ;
   input \state_seq_reg[timerdone]__0 ;
+  input \state_seq_reg[errcred]__0 ;
   input [0:0]D;
   input \res_seq_reg[datareg][0]_0 ;
   input \res_seq_reg[rxpacket] ;
-  input \res_seq_reg[rxfifo_rvalid]1 ;
-  input \res_seq_reg[rxroom][2] ;
-  input [1:0]\res_seq_reg[rxroom][2]_0 ;
-  input [5:0]\res_seq_reg[rxfifo_rvalid] ;
-  input [5:0]\vres[rxfiforoom]0_in ;
+  input [3:0]\res_seq_reg[rxfifo_rvalid] ;
+  input [3:0]\vres[rxfiforoom]0_in ;
   input SPW_RXREAD;
-  input [5:0]\vres[rxfiforoom] ;
+  input [3:0]\vres[rxfiforoom] ;
   input \res_seq_reg[rxfull]__0 ;
   input \res_seq_reg[rxeep]__0 ;
   input s_mem_reg;
 
   wire [0:0]AR;
   wire [0:0]D;
-  wire \FSM_onehot_state_seq[state][4]_i_3_n_0 ;
+  wire \FSM_onehot_state_seq[state][5]_i_8_n_0 ;
+  wire \FSM_onehot_state_seq_reg[state][1] ;
   wire \FSM_onehot_state_seq_reg[state][2] ;
   wire [3:0]\FSM_onehot_state_seq_reg[state][4] ;
   wire [0:0]Q;
@@ -4201,7 +4295,6 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
   wire \res_seq[rxflag]_i_1_n_0 ;
   wire \res_seq[tick_out]_i_2_n_0 ;
   wire \res_seq[tick_out]_i_3_n_0 ;
-  wire \res_seq_reg[bit_seen]_0 ;
   wire \res_seq_reg[bit_seen]__0 ;
   wire \res_seq_reg[bitcnt][0]_0 ;
   wire \res_seq_reg[bitcnt_n_0_][0] ;
@@ -4228,31 +4321,26 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
   wire \res_seq_reg[pendfct_n_0_][1] ;
   wire \res_seq_reg[rxchar]_0 ;
   wire \res_seq_reg[rxeep]__0 ;
-  wire [5:0]\res_seq_reg[rxfifo_rvalid] ;
-  wire \res_seq_reg[rxfifo_rvalid]1 ;
-  wire \res_seq_reg[rxfiforoom][10] ;
-  wire [3:0]\res_seq_reg[rxfiforoom][10]_0 ;
-  wire [1:0]\res_seq_reg[rxfiforoom][4] ;
-  wire \res_seq_reg[rxfiforoom][8] ;
+  wire [3:0]\res_seq_reg[rxfifo_rvalid] ;
+  wire [2:0]\res_seq_reg[rxfiforoom][10] ;
   wire \res_seq_reg[rxfull]__0 ;
   wire \res_seq_reg[rxpacket] ;
-  wire \res_seq_reg[rxroom][2] ;
-  wire [1:0]\res_seq_reg[rxroom][2]_0 ;
   wire [2:0]\res_seq_reg[tick_out]_0 ;
   wire s_mem_reg;
   wire s_mem_reg_i_23_n_0;
   wire [4:0]sel0;
+  wire \state_seq_reg[errcred]__0 ;
   wire \state_seq_reg[timerdone] ;
   wire \state_seq_reg[timerdone]__0 ;
   wire [7:0]\vres[datareg]__0 ;
   wire \vres[rxchar]9_out ;
-  wire [5:0]\vres[rxfiforoom] ;
-  wire [5:0]\vres[rxfiforoom]0_in ;
+  wire [3:0]\vres[rxfiforoom] ;
+  wire [3:0]\vres[rxfiforoom]0_in ;
   wire \vres[rxflag]6_out ;
   wire \vres[rxpacket]7_out ;
   wire \vres[tick_out]12_out ;
 
-  (* SOFT_HLUTNM = "soft_lutpair36" *) 
+  (* SOFT_HLUTNM = "soft_lutpair37" *) 
   LUT4 #(
     .INIT(16'h8808)) 
     \FSM_onehot_state_seq[state][2]_i_1 
@@ -4261,16 +4349,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
         .I2(\recvo[gotfct] ),
         .I3(\recvo[gotnull] ),
         .O(\res_seq_reg[tick_out]_0 [0]));
-  (* SOFT_HLUTNM = "soft_lutpair37" *) 
-  LUT4 #(
-    .INIT(16'h008A)) 
-    \FSM_onehot_state_seq[state][2]_i_2 
-       (.I0(\res_seq_reg[rxchar]_0 ),
-        .I1(\FSM_onehot_state_seq_reg[state][2] ),
-        .I2(\state_seq_reg[timerdone]__0 ),
-        .I3(\recvo[tick_out] ),
-        .O(\state_seq_reg[timerdone] ));
-  (* SOFT_HLUTNM = "soft_lutpair30" *) 
+  (* SOFT_HLUTNM = "soft_lutpair31" *) 
   LUT4 #(
     .INIT(16'h0200)) 
     \FSM_onehot_state_seq[state][3]_i_1 
@@ -4279,7 +4358,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
         .I2(\recvo[gotfct] ),
         .I3(\FSM_onehot_state_seq_reg[state][4] [2]),
         .O(\res_seq_reg[tick_out]_0 [1]));
-  (* SOFT_HLUTNM = "soft_lutpair30" *) 
+  (* SOFT_HLUTNM = "soft_lutpair31" *) 
   LUT4 #(
     .INIT(16'h0200)) 
     \FSM_onehot_state_seq[state][4]_i_1 
@@ -4288,7 +4367,6 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
         .I2(\recvo[gotfct] ),
         .I3(\FSM_onehot_state_seq_reg[state][4] [3]),
         .O(\res_seq_reg[tick_out]_0 [2]));
-  (* SOFT_HLUTNM = "soft_lutpair22" *) 
   LUT5 #(
     .INIT(32'h01010001)) 
     \FSM_onehot_state_seq[state][4]_i_2 
@@ -4296,41 +4374,51 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
         .I1(\recvo[errpar] ),
         .I2(\recvo[erresc] ),
         .I3(\res_seq_reg[bit_seen]__0 ),
-        .I4(\FSM_onehot_state_seq[state][4]_i_3_n_0 ),
+        .I4(\FSM_onehot_state_seq[state][5]_i_8_n_0 ),
         .O(\res_seq_reg[rxchar]_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair38" *) 
+  LUT2 #(
+    .INIT(4'hE)) 
+    \FSM_onehot_state_seq[state][5]_i_11 
+       (.I0(\recvo[gotfct] ),
+        .I1(\recvo[tick_out] ),
+        .O(\res_seq_reg[gotfct]_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair38" *) 
+  LUT4 #(
+    .INIT(16'h002A)) 
+    \FSM_onehot_state_seq[state][5]_i_3 
+       (.I0(\res_seq_reg[rxchar]_0 ),
+        .I1(\FSM_onehot_state_seq_reg[state][2] ),
+        .I2(\state_seq_reg[timerdone]__0 ),
+        .I3(\recvo[tick_out] ),
+        .O(\state_seq_reg[timerdone] ));
+  LUT6 #(
+    .INIT(64'hAAAAAAAAAAAAAA20)) 
+    \FSM_onehot_state_seq[state][5]_i_5 
+       (.I0(\FSM_onehot_state_seq_reg[state][4] [0]),
+        .I1(\FSM_onehot_state_seq[state][5]_i_8_n_0 ),
+        .I2(\res_seq_reg[bit_seen]__0 ),
+        .I3(\recvo[erresc] ),
+        .I4(\recvo[errpar] ),
+        .I5(\state_seq_reg[errcred]__0 ),
+        .O(\FSM_onehot_state_seq_reg[state][1] ));
   LUT5 #(
     .INIT(32'hFFFFFFFE)) 
-    \FSM_onehot_state_seq[state][4]_i_3 
+    \FSM_onehot_state_seq[state][5]_i_8 
        (.I0(\res_seq[disccnt][6]_i_3_n_0 ),
         .I1(\res_seq_reg[disccnt] [6]),
         .I2(\res_seq_reg[disccnt] [7]),
         .I3(\res_seq_reg[disccnt] [4]),
         .I4(\res_seq_reg[disccnt] [5]),
-        .O(\FSM_onehot_state_seq[state][4]_i_3_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair22" *) 
-  LUT4 #(
-    .INIT(16'hFFF4)) 
-    \FSM_onehot_state_seq[state][5]_i_6 
-       (.I0(\FSM_onehot_state_seq[state][4]_i_3_n_0 ),
-        .I1(\res_seq_reg[bit_seen]__0 ),
-        .I2(\recvo[erresc] ),
-        .I3(\recvo[errpar] ),
-        .O(\res_seq_reg[bit_seen]_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair36" *) 
+        .O(\FSM_onehot_state_seq[state][5]_i_8_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair37" *) 
   LUT2 #(
     .INIT(4'h2)) 
-    \FSM_onehot_state_seq[state][5]_i_8 
+    \FSM_onehot_state_seq[state][5]_i_9 
        (.I0(\recvo[gotfct] ),
         .I1(\recvo[gotnull] ),
         .O(\res_seq_reg[gotfct]_1 ));
-  (* SOFT_HLUTNM = "soft_lutpair37" *) 
-  LUT2 #(
-    .INIT(4'hE)) 
-    \FSM_onehot_state_seq[state][5]_i_9 
-       (.I0(\recvo[gotfct] ),
-        .I1(\recvo[tick_out] ),
-        .O(\res_seq_reg[gotfct]_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair35" *) 
+  (* SOFT_HLUTNM = "soft_lutpair36" *) 
   LUT4 #(
     .INIT(16'h0010)) 
     \res_seq[bitcnt][0]_i_1 
@@ -4339,7 +4427,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
         .I2(\res_seq_reg[bitcnt_n_0_][2] ),
         .I3(\res_seq[bitcnt][9]_i_2_n_0 ),
         .O(p_0_in__0[0]));
-  (* SOFT_HLUTNM = "soft_lutpair35" *) 
+  (* SOFT_HLUTNM = "soft_lutpair36" *) 
   LUT4 #(
     .INIT(16'h0010)) 
     \res_seq[bitcnt][1]_i_1 
@@ -4358,7 +4446,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
         .I4(\res_seq_reg[bitcnt_n_0_][1] ),
         .I5(\res_seq[bitcnt][9]_i_2_n_0 ),
         .O(p_0_in__0[2]));
-  (* SOFT_HLUTNM = "soft_lutpair24" *) 
+  (* SOFT_HLUTNM = "soft_lutpair25" *) 
   LUT5 #(
     .INIT(32'hF0F0FCFA)) 
     \res_seq[bitcnt][3]_i_1 
@@ -4368,7 +4456,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
         .I3(\res_seq_reg[bitcnt_n_0_][1] ),
         .I4(\res_seq_reg[bitcnt][0]_0 ),
         .O(p_0_in__0[3]));
-  (* SOFT_HLUTNM = "soft_lutpair34" *) 
+  (* SOFT_HLUTNM = "soft_lutpair35" *) 
   LUT4 #(
     .INIT(16'h0010)) 
     \res_seq[bitcnt][4]_i_1 
@@ -4377,7 +4465,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
         .I2(\res_seq_reg[bitcnt_n_0_][6] ),
         .I3(\res_seq[bitcnt][9]_i_2_n_0 ),
         .O(p_0_in__0[4]));
-  (* SOFT_HLUTNM = "soft_lutpair34" *) 
+  (* SOFT_HLUTNM = "soft_lutpair35" *) 
   LUT4 #(
     .INIT(16'h0010)) 
     \res_seq[bitcnt][5]_i_1 
@@ -4386,7 +4474,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
         .I2(\res_seq_reg[bitcnt_n_0_][7] ),
         .I3(\res_seq[bitcnt][9]_i_2_n_0 ),
         .O(p_0_in__0[5]));
-  (* SOFT_HLUTNM = "soft_lutpair33" *) 
+  (* SOFT_HLUTNM = "soft_lutpair34" *) 
   LUT4 #(
     .INIT(16'h0010)) 
     \res_seq[bitcnt][6]_i_1 
@@ -4395,7 +4483,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
         .I2(\res_seq_reg[bitcnt_n_0_][8] ),
         .I3(\res_seq[bitcnt][9]_i_2_n_0 ),
         .O(p_0_in__0[6]));
-  (* SOFT_HLUTNM = "soft_lutpair33" *) 
+  (* SOFT_HLUTNM = "soft_lutpair34" *) 
   LUT4 #(
     .INIT(16'h0010)) 
     \res_seq[bitcnt][7]_i_1 
@@ -4414,7 +4502,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
         .I4(sel0[0]),
         .I5(\res_seq[null_seen]_i_4_n_0 ),
         .O(\res_seq_reg[bitcnt][0]_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair32" *) 
+  (* SOFT_HLUTNM = "soft_lutpair33" *) 
   LUT4 #(
     .INIT(16'h0004)) 
     \res_seq[bitcnt][8]_i_1 
@@ -4423,7 +4511,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
         .I2(\res_seq_reg[bitshift][8]_0 [0]),
         .I3(\res_seq[bitcnt][9]_i_2_n_0 ),
         .O(p_0_in__0[8]));
-  (* SOFT_HLUTNM = "soft_lutpair28" *) 
+  (* SOFT_HLUTNM = "soft_lutpair29" *) 
   LUT5 #(
     .INIT(32'h00000040)) 
     \res_seq[bitcnt][8]_i_2 
@@ -4433,7 +4521,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
         .I3(\res_seq_reg[bitshift_n_0_][0] ),
         .I4(\recvo[gotnull] ),
         .O(\res_seq[bitcnt][8]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair31" *) 
+  (* SOFT_HLUTNM = "soft_lutpair32" *) 
   LUT3 #(
     .INIT(8'h01)) 
     \res_seq[bitcnt][9]_i_1 
@@ -4451,14 +4539,14 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
         .I4(\res_seq[null_seen]_i_2_n_0 ),
         .I5(\res_seq[null_seen]_i_3_n_0 ),
         .O(\res_seq[bitcnt][9]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair24" *) 
+  (* SOFT_HLUTNM = "soft_lutpair25" *) 
   LUT2 #(
     .INIT(4'hB)) 
     \res_seq[bitcnt][9]_i_3 
        (.I0(\res_seq_reg[bitcnt][0]_0 ),
         .I1(\res_seq_reg[bitcnt_n_0_][1] ),
         .O(\res_seq[bitcnt][9]_i_3_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair31" *) 
+  (* SOFT_HLUTNM = "soft_lutpair32" *) 
   LUT4 #(
     .INIT(16'hF4B0)) 
     \res_seq[control]_i_1 
@@ -4528,7 +4616,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
         .I3(\res_seq[tick_out]_i_2_n_0 ),
         .I4(sel0[4]),
         .O(\vres[datareg]__0 [4]));
-  (* SOFT_HLUTNM = "soft_lutpair39" *) 
+  (* SOFT_HLUTNM = "soft_lutpair40" *) 
   LUT4 #(
     .INIT(16'h00E2)) 
     \res_seq[datareg][5]_i_1 
@@ -4537,7 +4625,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
         .I2(sel0[4]),
         .I3(\res_seq_reg[control]__0 ),
         .O(\vres[datareg]__0 [5]));
-  (* SOFT_HLUTNM = "soft_lutpair39" *) 
+  (* SOFT_HLUTNM = "soft_lutpair40" *) 
   LUT4 #(
     .INIT(16'h00E2)) 
     \res_seq[datareg][6]_i_1 
@@ -4556,7 +4644,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
         .I4(p_0_in[0]),
         .I5(\res_seq[rxchar]_i_2_n_0 ),
         .O(\vres[rxflag]6_out ));
-  (* SOFT_HLUTNM = "soft_lutpair26" *) 
+  (* SOFT_HLUTNM = "soft_lutpair27" *) 
   LUT5 #(
     .INIT(32'h4F4F4F00)) 
     \res_seq[datareg][7]_i_2 
@@ -4566,7 +4654,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
         .I3(\res_seq[datareg][7]_i_3_n_0 ),
         .I4(\res_seq_reg[bitshift_n_0_][8] ),
         .O(\vres[datareg]__0 [7]));
-  (* SOFT_HLUTNM = "soft_lutpair27" *) 
+  (* SOFT_HLUTNM = "soft_lutpair28" *) 
   LUT5 #(
     .INIT(32'hFFFF69FF)) 
     \res_seq[datareg][7]_i_3 
@@ -4576,7 +4664,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
         .I3(\res_seq_reg[bitcnt_n_0_][1] ),
         .I4(\res_seq_reg[bitcnt][0]_0 ),
         .O(\res_seq[datareg][7]_i_3_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair38" *) 
+  (* SOFT_HLUTNM = "soft_lutpair39" *) 
   LUT3 #(
     .INIT(8'h41)) 
     \res_seq[disccnt][1]_i_1 
@@ -4584,16 +4672,16 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
         .I1(\res_seq_reg[disccnt] [1]),
         .I2(Q),
         .O(\res_seq[disccnt][1]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair21" *) 
+  (* SOFT_HLUTNM = "soft_lutpair23" *) 
   LUT4 #(
-    .INIT(16'h5401)) 
+    .INIT(16'hFEAB)) 
     \res_seq[disccnt][2]_i_1 
        (.I0(recv_inact),
         .I1(Q),
         .I2(\res_seq_reg[disccnt] [1]),
         .I3(\res_seq_reg[disccnt] [2]),
         .O(\res_seq[disccnt][2]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair21" *) 
+  (* SOFT_HLUTNM = "soft_lutpair23" *) 
   LUT5 #(
     .INIT(32'h55540001)) 
     \res_seq[disccnt][3]_i_1 
@@ -4613,7 +4701,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
         .I4(\res_seq_reg[disccnt] [2]),
         .I5(\res_seq_reg[disccnt] [4]),
         .O(\res_com[disccnt] [4]));
-  (* SOFT_HLUTNM = "soft_lutpair23" *) 
+  (* SOFT_HLUTNM = "soft_lutpair24" *) 
   LUT4 #(
     .INIT(16'h00E1)) 
     \res_seq[disccnt][5]_i_1 
@@ -4632,17 +4720,17 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
         .I4(\res_seq_reg[disccnt] [6]),
         .I5(\res_seq[disccnt][6]_i_3_n_0 ),
         .O(\res_seq[disccnt][6]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair23" *) 
+  (* SOFT_HLUTNM = "soft_lutpair24" *) 
   LUT5 #(
-    .INIT(32'h0000FE01)) 
+    .INIT(32'hFFFEAAAB)) 
     \res_seq[disccnt][6]_i_2 
-       (.I0(\res_seq[disccnt][6]_i_3_n_0 ),
-        .I1(\res_seq_reg[disccnt] [4]),
-        .I2(\res_seq_reg[disccnt] [5]),
-        .I3(\res_seq_reg[disccnt] [6]),
-        .I4(recv_inact),
+       (.I0(recv_inact),
+        .I1(\res_seq[disccnt][6]_i_3_n_0 ),
+        .I2(\res_seq_reg[disccnt] [4]),
+        .I3(\res_seq_reg[disccnt] [5]),
+        .I4(\res_seq_reg[disccnt] [6]),
         .O(\res_com[disccnt] [6]));
-  (* SOFT_HLUTNM = "soft_lutpair38" *) 
+  (* SOFT_HLUTNM = "soft_lutpair39" *) 
   LUT4 #(
     .INIT(16'hFFFE)) 
     \res_seq[disccnt][6]_i_3 
@@ -4678,7 +4766,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
         .I4(\res_seq[erresc]_i_3_n_0 ),
         .I5(\recvo[erresc] ),
         .O(\res_seq[erresc]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair25" *) 
+  (* SOFT_HLUTNM = "soft_lutpair26" *) 
   LUT3 #(
     .INIT(8'hF1)) 
     \res_seq[erresc]_i_2 
@@ -4706,7 +4794,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
         .I4(\res_seq_reg[bitcnt_n_0_][0] ),
         .I5(\recvo[errpar] ),
         .O(\res_seq[errpar]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair27" *) 
+  (* SOFT_HLUTNM = "soft_lutpair28" *) 
   LUT5 #(
     .INIT(32'h00006900)) 
     \res_seq[errpar]_i_2 
@@ -4755,7 +4843,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
         .I4(p_0_in[0]),
         .I5(\res_seq_reg[escaped]__0 ),
         .O(\res_seq[gotfct]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair25" *) 
+  (* SOFT_HLUTNM = "soft_lutpair26" *) 
   LUT5 #(
     .INIT(32'h00000010)) 
     \res_seq[gotfct]_i_3 
@@ -4784,7 +4872,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
         .I3(sel0[0]),
         .I4(sel0[3]),
         .O(\res_seq[null_seen]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair28" *) 
+  (* SOFT_HLUTNM = "soft_lutpair29" *) 
   LUT5 #(
     .INIT(32'hAAAABAAA)) 
     \res_seq[null_seen]_i_3 
@@ -4814,7 +4902,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
         .I4(\res_seq_reg[bitcnt_n_0_][1] ),
         .I5(\res_seq[bitcnt][9]_i_2_n_0 ),
         .O(\res_seq[parity]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair40" *) 
+  (* SOFT_HLUTNM = "soft_lutpair41" *) 
   LUT3 #(
     .INIT(8'hC2)) 
     \res_seq[pendfct][0]_i_1 
@@ -4822,7 +4910,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
         .I1(recv_inbvalid),
         .I2(\res_seq_reg[pendfct_n_0_][0] ),
         .O(\res_seq[pendfct][0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair40" *) 
+  (* SOFT_HLUTNM = "soft_lutpair41" *) 
   LUT3 #(
     .INIT(8'hE0)) 
     \res_seq[pendfct][1]_i_1 
@@ -4838,7 +4926,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
         .I2(recv_inbvalid),
         .I3(\res_seq_reg[escaped]__0 ),
         .O(\vres[rxchar]9_out ));
-  (* SOFT_HLUTNM = "soft_lutpair26" *) 
+  (* SOFT_HLUTNM = "soft_lutpair27" *) 
   LUT4 #(
     .INIT(16'hAA82)) 
     \res_seq[rxchar]_i_2 
@@ -4857,7 +4945,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
         .I4(p_0_in[1]),
         .I5(p_0_in[0]),
         .O(\res_seq[rxchar]_i_3_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair29" *) 
+  (* SOFT_HLUTNM = "soft_lutpair30" *) 
   LUT5 #(
     .INIT(32'hEFFF4000)) 
     \res_seq[rxemptydiscard]_i_1 
@@ -4870,21 +4958,21 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
   LUT5 #(
     .INIT(32'h0434C7F7)) 
     \res_seq[rxfifo_rvalid]_i_1 
-       (.I0(\vres[rxfiforoom]0_in [5]),
+       (.I0(\vres[rxfiforoom]0_in [3]),
         .I1(SPW_RXREAD),
         .I2(WEN),
-        .I3(\vres[rxfiforoom] [5]),
-        .I4(\res_seq_reg[rxfifo_rvalid] [5]),
+        .I3(\vres[rxfiforoom] [3]),
+        .I4(\res_seq_reg[rxfifo_rvalid] [3]),
         .O(\res_com[rxfifo_rvalid] ));
   LUT5 #(
     .INIT(32'hAFCAA0CA)) 
     \res_seq[rxfiforoom][10]_i_1 
-       (.I0(\res_seq_reg[rxfifo_rvalid] [4]),
-        .I1(\vres[rxfiforoom]0_in [4]),
+       (.I0(\res_seq_reg[rxfifo_rvalid] [2]),
+        .I1(\vres[rxfiforoom]0_in [2]),
         .I2(SPW_RXREAD),
         .I3(WEN),
-        .I4(\vres[rxfiforoom] [4]),
-        .O(\res_seq_reg[rxfiforoom][10]_0 [3]));
+        .I4(\vres[rxfiforoom] [2]),
+        .O(\res_seq_reg[rxfiforoom][10] [2]));
   LUT5 #(
     .INIT(32'hAFCAA0CA)) 
     \res_seq[rxfiforoom][2]_i_1 
@@ -4893,34 +4981,16 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
         .I2(SPW_RXREAD),
         .I3(WEN),
         .I4(\vres[rxfiforoom] [0]),
-        .O(\res_seq_reg[rxfiforoom][10]_0 [0]));
+        .O(\res_seq_reg[rxfiforoom][10] [0]));
   LUT5 #(
     .INIT(32'hAFCAA0CA)) 
-    \res_seq[rxfiforoom][4]_i_1 
+    \res_seq[rxfiforoom][8]_i_1 
        (.I0(\res_seq_reg[rxfifo_rvalid] [1]),
         .I1(\vres[rxfiforoom]0_in [1]),
         .I2(SPW_RXREAD),
         .I3(WEN),
         .I4(\vres[rxfiforoom] [1]),
-        .O(\res_seq_reg[rxfiforoom][10]_0 [1]));
-  LUT5 #(
-    .INIT(32'hAFCAA0CA)) 
-    \res_seq[rxfiforoom][8]_i_1 
-       (.I0(\res_seq_reg[rxfifo_rvalid] [2]),
-        .I1(\vres[rxfiforoom]0_in [2]),
-        .I2(SPW_RXREAD),
-        .I3(WEN),
-        .I4(\vres[rxfiforoom] [2]),
-        .O(\res_seq_reg[rxfiforoom][8] ));
-  LUT5 #(
-    .INIT(32'hAFCAA0CA)) 
-    \res_seq[rxfiforoom][9]_i_1 
-       (.I0(\res_seq_reg[rxfifo_rvalid] [3]),
-        .I1(\vres[rxfiforoom]0_in [3]),
-        .I2(SPW_RXREAD),
-        .I3(WEN),
-        .I4(\vres[rxfiforoom] [3]),
-        .O(\res_seq_reg[rxfiforoom][10]_0 [2]));
+        .O(\res_seq_reg[rxfiforoom][10] [1]));
   LUT6 #(
     .INIT(64'hEFFFEFEFE000E0E0)) 
     \res_seq[rxflag]_i_1 
@@ -4931,15 +5001,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
         .I4(\res_seq[rxchar]_i_2_n_0 ),
         .I5(\recvo[rxflag] ),
         .O(\res_seq[rxflag]_i_1_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \res_seq[rxfull]_i_3 
-       (.I0(\res_seq_reg[rxfiforoom][10]_0 [3]),
-        .I1(\res_seq_reg[rxroom][2]_0 [1]),
-        .I2(\res_seq_reg[rxfiforoom][10]_0 [2]),
-        .I3(\res_seq_reg[rxroom][2]_0 [0]),
-        .O(\res_seq_reg[rxfiforoom][10] ));
-  (* SOFT_HLUTNM = "soft_lutpair29" *) 
+  (* SOFT_HLUTNM = "soft_lutpair30" *) 
   LUT4 #(
     .INIT(16'h7040)) 
     \res_seq[rxpacket]_i_1 
@@ -4948,24 +5010,6 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
         .I2(\FSM_onehot_state_seq_reg[state][4] [0]),
         .I3(\res_seq_reg[rxpacket] ),
         .O(\vres[rxpacket]7_out ));
-  LUT5 #(
-    .INIT(32'hFFFFFFFE)) 
-    \res_seq[rxroom][2]_i_1 
-       (.I0(\res_seq_reg[rxfiforoom][10] ),
-        .I1(\res_seq_reg[rxfiforoom][8] ),
-        .I2(\res_seq_reg[rxfifo_rvalid]1 ),
-        .I3(\res_seq_reg[rxroom][2] ),
-        .I4(\res_seq_reg[rxfiforoom][10]_0 [0]),
-        .O(\res_seq_reg[rxfiforoom][4] [0]));
-  LUT5 #(
-    .INIT(32'hFFFFFFFE)) 
-    \res_seq[rxroom][4]_i_1 
-       (.I0(\res_seq_reg[rxfiforoom][10]_0 [1]),
-        .I1(\res_seq_reg[rxfiforoom][10] ),
-        .I2(\res_seq_reg[rxfiforoom][8] ),
-        .I3(\res_seq_reg[rxfifo_rvalid]1 ),
-        .I4(\res_seq_reg[rxroom][2] ),
-        .O(\res_seq_reg[rxfiforoom][4] [1]));
   LUT5 #(
     .INIT(32'h08880808)) 
     \res_seq[tick_out]_i_1 
@@ -4985,7 +5029,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv
         .I4(\res_seq_reg[bitcnt][0]_0 ),
         .I5(\res_seq_reg[bitshift][8]_0 [0]),
         .O(\res_seq[tick_out]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair32" *) 
+  (* SOFT_HLUTNM = "soft_lutpair33" *) 
   LUT3 #(
     .INIT(8'h60)) 
     \res_seq[tick_out]_i_3 
@@ -5358,36 +5402,36 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecvFront
    (syncdff_ff2_reg,
     recv_inact,
     recv_inbvalid,
-    \res_seq_reg[tailptr_gray][2]_0 ,
     \res_seq_reg[bufdout][1]_0 ,
     Q,
+    \res_seq_reg[tailptr_gray][0]_0 ,
     D,
     SPW_Din,
     SPW_main_clk,
     buf_ff0_reg,
     \vres[inbvalid]0_out ,
+    \res_seq_reg[datareg][0] ,
+    \res_seq_reg[parity]__0 ,
     recv_rxen,
     SPW_Sin,
-    \res_seq_reg[parity]__0 ,
-    \res_seq_reg[datareg][0] ,
     \res_seq_reg[disccnt][0] ,
     \res_seq_reg[bitcntp_gray][3]_0 ,
     load);
   output [2:0]syncdff_ff2_reg;
   output recv_inact;
   output recv_inbvalid;
-  output \res_seq_reg[tailptr_gray][2]_0 ;
   output \res_seq_reg[bufdout][1]_0 ;
   output [1:0]Q;
+  output \res_seq_reg[tailptr_gray][0]_0 ;
   output [0:0]D;
   input SPW_Din;
   input SPW_main_clk;
   input buf_ff0_reg;
   input \vres[inbvalid]0_out ;
+  input \res_seq_reg[datareg][0] ;
+  input \res_seq_reg[parity]__0 ;
   input recv_rxen;
   input SPW_Sin;
-  input \res_seq_reg[parity]__0 ;
-  input \res_seq_reg[datareg][0] ;
   input [0:0]\res_seq_reg[disccnt][0] ;
   input [2:0]\res_seq_reg[bitcntp_gray][3]_0 ;
   input load;
@@ -5403,8 +5447,8 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecvFront
   wire SPW_Din;
   wire SPW_Sin;
   wire SPW_main_clk;
-  wire SYNCSYSHEADPTR2_n_0;
-  wire SYNCSYSHEADPTR2_n_1;
+  wire SYNCSYSHEADPTR0_n_0;
+  wire SYNCSYSHEADPTR0_n_1;
   wire buf_ff0_reg;
   wire ff_f_di1;
   wire ff_pre_f;
@@ -5429,7 +5473,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecvFront
   wire \res_seq_reg[parity]__0 ;
   wire [1:0]\res_seq_reg[tailptr] ;
   wire [2:0]\res_seq_reg[tailptr_gray] ;
-  wire \res_seq_reg[tailptr_gray][2]_0 ;
+  wire \res_seq_reg[tailptr_gray][0]_0 ;
   wire [1:0]\resrx_com[bufdata] ;
   wire [1:0]\resrx_seq_reg[bufdata] ;
   wire \resrx_seq_reg[bufwrite_n_0_] ;
@@ -5440,7 +5484,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecvFront
   wire \rxcnt_r_reg_n_0_[2] ;
   wire \rxcnt_r_reg_n_0_[3] ;
   wire [2:0]syncdff_ff2_reg;
-  wire [1:0]\syncsys[headptr_gray] ;
+  wire [2:1]\syncsys[headptr_gray] ;
   wire \vres[inact]1_out ;
   wire \vres[inbvalid]0_out ;
   wire [1:0]\vresrx[headptr] ;
@@ -5497,27 +5541,27 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecvFront
         .p_0_in2_in(p_0_in2_in),
         .syncdff_ff2_reg_0(syncdff_ff2_reg[2]));
   Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_11 SYNCSYSHEADPTR0
-       (.Q(\resrx_seq_reg[headptr_gray_n_0_][0] ),
-        .SPW_main_clk(SPW_main_clk),
-        .buf_ff0_reg_0(buf_ff0_reg),
-        .\syncsys[headptr_gray] (\syncsys[headptr_gray] [0]));
-  Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_12 SYNCSYSHEADPTR1
-       (.Q(DI),
-        .SPW_main_clk(SPW_main_clk),
-        .buf_ff0_reg_0(buf_ff0_reg),
-        .\syncsys[headptr_gray] (\syncsys[headptr_gray] [1]));
-  Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_13 SYNCSYSHEADPTR2
-       (.D({SYNCSYSHEADPTR2_n_0,SYNCSYSHEADPTR2_n_1}),
-        .Q(\res_seq_reg[tailptr] ),
+       (.D({SYNCSYSHEADPTR0_n_0,SYNCSYSHEADPTR0_n_1}),
+        .Q(\resrx_seq_reg[headptr_gray_n_0_][0] ),
         .SPW_main_clk(SPW_main_clk),
         .buf_ff0_reg_0(buf_ff0_reg),
         .recv_rxen(recv_rxen),
         .\res_com[tailptr_gray] (\res_com[tailptr_gray] ),
         .\res_seq_reg[tailptr_gray] (\res_seq_reg[tailptr_gray] ),
-        .\res_seq_reg[tailptr_gray][2]_0 (\syncsys[headptr_gray] ),
-        .\res_seq_reg[tailptr_gray]_2_sp_1 (\res_seq_reg[tailptr_gray][2]_0 ),
-        .\resrx_seq_reg[headptr] (\resrx_seq_reg[headptr] [2]),
+        .\res_seq_reg[tailptr_gray][0]_0 (\res_seq_reg[tailptr] ),
+        .\res_seq_reg[tailptr_gray][2] (\syncsys[headptr_gray] ),
+        .\res_seq_reg[tailptr_gray]_0_sp_1 (\res_seq_reg[tailptr_gray][0]_0 ),
         .\state_seq_reg[rxen] (\res_com[tailptr] ));
+  Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_12 SYNCSYSHEADPTR1
+       (.Q(DI),
+        .SPW_main_clk(SPW_main_clk),
+        .buf_ff0_reg_0(buf_ff0_reg),
+        .syncdff_ff2_reg_0(\syncsys[headptr_gray] [1]));
+  Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_13 SYNCSYSHEADPTR2
+       (.SPW_main_clk(SPW_main_clk),
+        .buf_ff0_reg_0(buf_ff0_reg),
+        .\resrx_seq_reg[headptr] (\resrx_seq_reg[headptr] [2]),
+        .syncdff_ff2_reg_0(\syncsys[headptr_gray] [2]));
   FDCE #(
     .IS_C_INVERTED(1'b1)) 
     ff_f_di1_reg
@@ -5559,12 +5603,12 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecvFront
         .D(ff_r_di1),
         .Q(\resrx_com[bufdata] [0]));
   LUT4 #(
-    .INIT(16'h5569)) 
+    .INIT(16'h5665)) 
     \res_seq[datareg][0]_i_2 
        (.I0(Q[1]),
-        .I1(\res_seq_reg[parity]__0 ),
-        .I2(Q[0]),
-        .I3(\res_seq_reg[datareg][0] ),
+        .I1(\res_seq_reg[datareg][0] ),
+        .I2(\res_seq_reg[parity]__0 ),
+        .I3(Q[0]),
         .O(\res_seq_reg[bufdout][1]_0 ));
   LUT2 #(
     .INIT(4'h1)) 
@@ -5636,13 +5680,13 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecvFront
        (.C(SPW_main_clk),
         .CE(1'b1),
         .CLR(buf_ff0_reg),
-        .D(SYNCSYSHEADPTR2_n_1),
+        .D(SYNCSYSHEADPTR0_n_1),
         .Q(\res_seq_reg[tailptr_gray] [0]));
   FDCE \res_seq_reg[tailptr_gray][1] 
        (.C(SPW_main_clk),
         .CE(1'b1),
         .CLR(buf_ff0_reg),
-        .D(SYNCSYSHEADPTR2_n_0),
+        .D(SYNCSYSHEADPTR0_n_0),
         .Q(\res_seq_reg[tailptr_gray] [1]));
   FDCE \res_seq_reg[tailptr_gray][2] 
        (.C(SPW_main_clk),
@@ -5656,7 +5700,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecvFront
        (.I0(\resrx_seq_reg[headptr] [0]),
         .I1(\resrx_seq_reg[bufwrite_n_0_] ),
         .O(\vresrx[headptr] [0]));
-  (* SOFT_HLUTNM = "soft_lutpair18" *) 
+  (* SOFT_HLUTNM = "soft_lutpair20" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \resrx_seq[headptr][1]_i_1 
@@ -5664,7 +5708,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecvFront
         .I1(\resrx_seq_reg[bufwrite_n_0_] ),
         .I2(\resrx_seq_reg[headptr] [1]),
         .O(\vresrx[headptr] [1]));
-  (* SOFT_HLUTNM = "soft_lutpair17" *) 
+  (* SOFT_HLUTNM = "soft_lutpair19" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \resrx_seq[headptr][2]_i_1 
@@ -5673,7 +5717,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecvFront
         .I2(\resrx_seq_reg[headptr] [1]),
         .I3(\resrx_seq_reg[headptr] [2]),
         .O(p_10_in));
-  (* SOFT_HLUTNM = "soft_lutpair18" *) 
+  (* SOFT_HLUTNM = "soft_lutpair20" *) 
   LUT3 #(
     .INIT(8'h56)) 
     \resrx_seq[headptr_gray][0]_i_1 
@@ -5681,7 +5725,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecvFront
         .I1(\resrx_seq_reg[bufwrite_n_0_] ),
         .I2(\resrx_seq_reg[headptr] [0]),
         .O(BinToGray[0]));
-  (* SOFT_HLUTNM = "soft_lutpair17" *) 
+  (* SOFT_HLUTNM = "soft_lutpair19" *) 
   LUT4 #(
     .INIT(16'h5666)) 
     \resrx_seq[headptr_gray][1]_i_1 
@@ -5751,14 +5795,14 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecvFront
     \rxcnt_f[1]_i_1 
        (.I0(rxcnt_f_reg[1]),
         .O(plusOp__0[1]));
-  (* SOFT_HLUTNM = "soft_lutpair20" *) 
+  (* SOFT_HLUTNM = "soft_lutpair22" *) 
   LUT2 #(
     .INIT(4'h6)) 
     \rxcnt_f[2]_i_1 
        (.I0(rxcnt_f_reg[1]),
         .I1(rxcnt_f_reg[2]),
         .O(plusOp__0[2]));
-  (* SOFT_HLUTNM = "soft_lutpair20" *) 
+  (* SOFT_HLUTNM = "soft_lutpair22" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \rxcnt_f[3]_i_1 
@@ -5795,14 +5839,14 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecvFront
     \rxcnt_r[1]_i_1 
        (.I0(A),
         .O(plusOp[1]));
-  (* SOFT_HLUTNM = "soft_lutpair19" *) 
+  (* SOFT_HLUTNM = "soft_lutpair21" *) 
   LUT2 #(
     .INIT(4'h6)) 
     \rxcnt_r[2]_i_1 
        (.I0(A),
         .I1(\rxcnt_r_reg_n_0_[2] ),
         .O(plusOp[2]));
-  (* SOFT_HLUTNM = "soft_lutpair19" *) 
+  (* SOFT_HLUTNM = "soft_lutpair21" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \rxcnt_r[3]_i_1 
@@ -5994,27 +6038,24 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwStream
   wire [7:0]DOBDO;
   wire [0:0]DOPBDOP;
   wire [0:0]E;
-  wire LINK_INST_n_29;
-  wire LINK_INST_n_3;
+  wire LINK_INST_n_10;
+  wire LINK_INST_n_30;
   wire LINK_INST_n_4;
   wire LINK_INST_n_5;
   wire LINK_INST_n_6;
+  wire LINK_INST_n_7;
   wire LINK_INST_n_8;
-  wire LINK_INST_n_9;
   wire [7:0]Q;
   wire RECVFRONT_INST_n_5;
-  wire RECVFRONT_INST_n_6;
+  wire RECVFRONT_INST_n_8;
   wire RECV_INST_n_10;
   wire RECV_INST_n_11;
   wire RECV_INST_n_12;
   wire RECV_INST_n_13;
   wire RECV_INST_n_14;
+  wire RECV_INST_n_16;
+  wire RECV_INST_n_17;
   wire RECV_INST_n_18;
-  wire RECV_INST_n_19;
-  wire RECV_INST_n_20;
-  wire RECV_INST_n_21;
-  wire RECV_INST_n_22;
-  wire RECV_INST_n_23;
   wire RECV_INST_n_6;
   wire RECV_INST_n_7;
   wire RECV_INST_n_8;
@@ -6199,10 +6240,13 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwStream
   wire \res_seq[rxfiforoom][1]_i_1_n_0 ;
   wire \res_seq[rxfiforoom][3]_i_1_n_0 ;
   wire \res_seq[rxfiforoom][3]_i_3_n_0 ;
+  wire \res_seq[rxfiforoom][4]_i_1_n_0 ;
   wire \res_seq[rxfiforoom][5]_i_1_n_0 ;
   wire \res_seq[rxfiforoom][6]_i_1_n_0 ;
   wire \res_seq[rxfiforoom][7]_i_1_n_0 ;
+  wire \res_seq[rxfiforoom][9]_i_1_n_0 ;
   wire \res_seq[rxfull]_i_2_n_0 ;
+  wire \res_seq[rxfull]_i_3_n_0 ;
   wire \res_seq[txfiforoom][3]_i_3_n_0 ;
   wire \res_seq_reg[allow_char]__0 ;
   wire \res_seq_reg[allow_fct]__0 ;
@@ -6286,6 +6330,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwStream
   wire \res_seq_reg[txpacket_n_0_] ;
   wire [8:0]s_txfifo_rdata;
   wire sel;
+  wire \state_seq_reg[errcred]__0 ;
   wire \state_seq_reg[timerdone]__0 ;
   wire [3:1]\syncsys[rxcnt_ddr_gray] ;
   wire sys_rst_n;
@@ -6322,10 +6367,10 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwStream
         .\FSM_onehot_state_seq_reg[state][0]_0 (RECV_INST_n_14),
         .\FSM_onehot_state_seq_reg[state][0]_1 (RECV_INST_n_10),
         .\FSM_onehot_state_seq_reg[state][0]_2 (RECV_INST_n_13),
-        .\FSM_onehot_state_seq_reg[state][1]_0 (LINK_INST_n_8),
-        .\FSM_onehot_state_seq_reg[state][3]_0 (LINK_INST_n_3),
+        .\FSM_onehot_state_seq_reg[state][1]_0 (LINK_INST_n_10),
+        .\FSM_onehot_state_seq_reg[state][3]_0 (LINK_INST_n_5),
         .\FSM_onehot_state_seq_reg[state][4]_0 ({RECV_INST_n_7,RECV_INST_n_8,RECV_INST_n_9}),
-        .\FSM_onehot_state_seq_reg[state][5]_0 ({LINK_INST_n_4,LINK_INST_n_5,LINK_INST_n_6,p_0_in10_in}),
+        .\FSM_onehot_state_seq_reg[state][5]_0 ({LINK_INST_n_6,LINK_INST_n_7,LINK_INST_n_8,p_0_in10_in}),
         .O(minusOp_carry__2_n_7),
         .Q({\res_seq_reg[rxroom_n_0_][5] ,\res_seq_reg[rxroom_n_0_][4] ,\res_seq_reg[rxroom_n_0_][3] ,\res_seq_reg[rxroom_n_0_][2] ,\res_seq_reg[rxroom_n_0_][1] ,\res_seq_reg[rxroom_n_0_][0] }),
         .SPW_TXWRITE(SPW_TXWRITE),
@@ -6340,7 +6385,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwStream
         .\res_com[txfull] (\res_com[txfull] ),
         .\res_seq_reg[allow_char]__0 (\res_seq_reg[allow_char]__0 ),
         .\res_seq_reg[allow_fct]__0 (\res_seq_reg[allow_fct]__0 ),
-        .\res_seq_reg[inbvalid] (RECVFRONT_INST_n_5),
+        .\res_seq_reg[inbvalid] (RECVFRONT_INST_n_8),
         .\res_seq_reg[pend_char]__0 (\res_seq_reg[pend_char]__0 ),
         .\res_seq_reg[pend_fct]__0 (\res_seq_reg[pend_fct]__0 ),
         .\res_seq_reg[rxeep] (\res_seq_reg[rxpacket_n_0_] ),
@@ -6357,13 +6402,14 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwStream
         .\res_seq_reg[txfiforoom][12] (\vres[txfiforoom] ),
         .\res_seq_reg[txfiforoom][3] ({minusOp_carry_n_4,minusOp_carry_n_5,minusOp_carry_n_6,minusOp_carry_n_7}),
         .\res_seq_reg[txfiforoom][7] ({minusOp_carry__0_n_4,minusOp_carry__0_n_5,minusOp_carry__0_n_6,minusOp_carry__0_n_7}),
+        .\state_seq_reg[errcred]__0 (\state_seq_reg[errcred]__0 ),
         .\state_seq_reg[rx_null_fct]_0 (RECV_INST_n_11),
         .\state_seq_reg[rxen]_0 (\res_com[bitcntp_gray] ),
         .\state_seq_reg[rxen]_1 (SYSRSTLOGIC_n_1),
-        .\state_seq_reg[timercnt][0]_0 (RECV_INST_n_12),
-        .\state_seq_reg[timercnt][6]_0 (LINK_INST_n_9),
+        .\state_seq_reg[timercnt][9]_0 (LINK_INST_n_4),
+        .\state_seq_reg[timerdone]_0 (RECV_INST_n_12),
         .\state_seq_reg[timerdone]__0 (\state_seq_reg[timerdone]__0 ),
-        .\state_seq_reg[tx_credit][3]_0 (LINK_INST_n_29),
+        .\state_seq_reg[tx_credit][3]_0 (LINK_INST_n_30),
         .\syncsys[rxcnt_ddr_gray] (\syncsys[rxcnt_ddr_gray] ),
         .sys_rst_n(sys_rst_n),
         .\v[allow_char] (\v[allow_char] ),
@@ -6385,18 +6431,19 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwStream
         .recv_inbvalid(recv_inbvalid),
         .recv_rxen(recv_rxen),
         .\res_seq_reg[bitcntp_gray][3]_0 (\res_com[bitcntp_gray] ),
-        .\res_seq_reg[bufdout][1]_0 (RECVFRONT_INST_n_6),
+        .\res_seq_reg[bufdout][1]_0 (RECVFRONT_INST_n_5),
         .\res_seq_reg[datareg][0] (RECV_INST_n_6),
         .\res_seq_reg[disccnt][0] (\res_seq_reg[disccnt] ),
         .\res_seq_reg[parity]__0 (\res_seq_reg[parity]__0 ),
-        .\res_seq_reg[tailptr_gray][2]_0 (RECVFRONT_INST_n_5),
+        .\res_seq_reg[tailptr_gray][0]_0 (RECVFRONT_INST_n_8),
         .syncdff_ff2_reg(\syncsys[rxcnt_ddr_gray] ),
         .\vres[inbvalid]0_out (\vres[inbvalid]0_out ));
   Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwRecv RECV_INST
        (.AR(\res_seq_reg[bit_seen]0 ),
         .D(\res_com[disccnt] ),
-        .\FSM_onehot_state_seq_reg[state][2] (LINK_INST_n_9),
-        .\FSM_onehot_state_seq_reg[state][4] ({LINK_INST_n_4,LINK_INST_n_5,LINK_INST_n_6,p_0_in10_in}),
+        .\FSM_onehot_state_seq_reg[state][1] (RECV_INST_n_12),
+        .\FSM_onehot_state_seq_reg[state][2] (LINK_INST_n_4),
+        .\FSM_onehot_state_seq_reg[state][4] ({LINK_INST_n_6,LINK_INST_n_7,LINK_INST_n_8,p_0_in10_in}),
         .Q(\res_seq_reg[disccnt] ),
         .SPW_RXREAD(SPW_RXREAD),
         .SPW_main_clk(SPW_main_clk),
@@ -6410,31 +6457,25 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwStream
         .\recvo[tick_out] (\recvo[tick_out] ),
         .\res_com[rxemptydiscard] (\res_com[rxemptydiscard] ),
         .\res_com[rxfifo_rvalid] (\res_com[rxfifo_rvalid] ),
-        .\res_seq_reg[bit_seen]_0 (RECV_INST_n_12),
         .\res_seq_reg[bitcnt][0]_0 (RECV_INST_n_6),
         .\res_seq_reg[bitshift][8]_0 (recv_inbits),
-        .\res_seq_reg[datareg][0]_0 (RECVFRONT_INST_n_6),
+        .\res_seq_reg[datareg][0]_0 (RECVFRONT_INST_n_5),
         .\res_seq_reg[gotfct]_0 (RECV_INST_n_13),
         .\res_seq_reg[gotfct]_1 (RECV_INST_n_14),
         .\res_seq_reg[parity]__0 (\res_seq_reg[parity]__0 ),
         .\res_seq_reg[rxchar]_0 (RECV_INST_n_10),
         .\res_seq_reg[rxeep]__0 (\res_seq_reg[rxeep]__0 ),
-        .\res_seq_reg[rxfifo_rvalid] ({\res_seq_reg[rxfiforoom_n_0_][12] ,\res_seq_reg[rxfiforoom_n_0_][10] ,\res_seq_reg[rxfiforoom_n_0_][9] ,\res_seq_reg[rxfiforoom_n_0_][8] ,\res_seq_reg[rxfiforoom_n_0_][4] ,\res_seq_reg[rxfiforoom_n_0_][2] }),
-        .\res_seq_reg[rxfifo_rvalid]1 (\res_seq_reg[rxfifo_rvalid]1 ),
-        .\res_seq_reg[rxfiforoom][10] (RECV_INST_n_18),
-        .\res_seq_reg[rxfiforoom][10]_0 ({RECV_INST_n_20,RECV_INST_n_21,RECV_INST_n_22,RECV_INST_n_23}),
-        .\res_seq_reg[rxfiforoom][4] ({\res_com[rxroom] [4],\res_com[rxroom] [2]}),
-        .\res_seq_reg[rxfiforoom][8] (RECV_INST_n_19),
+        .\res_seq_reg[rxfifo_rvalid] ({\res_seq_reg[rxfiforoom_n_0_][12] ,\res_seq_reg[rxfiforoom_n_0_][10] ,\res_seq_reg[rxfiforoom_n_0_][8] ,\res_seq_reg[rxfiforoom_n_0_][2] }),
+        .\res_seq_reg[rxfiforoom][10] ({RECV_INST_n_16,RECV_INST_n_17,RECV_INST_n_18}),
         .\res_seq_reg[rxfull]__0 (\res_seq_reg[rxfull]__0 ),
         .\res_seq_reg[rxpacket] (\res_seq_reg[rxpacket_n_0_] ),
-        .\res_seq_reg[rxroom][2] (\res_seq[rxfiforoom][7]_i_1_n_0 ),
-        .\res_seq_reg[rxroom][2]_0 ({\res_seq[rxfiforoom][11]_i_1_n_0 ,\res_seq[rxfiforoom][6]_i_1_n_0 }),
         .\res_seq_reg[tick_out]_0 ({RECV_INST_n_7,RECV_INST_n_8,RECV_INST_n_9}),
         .s_mem_reg(\res_seq_reg[rxemptydiscard_n_0_] ),
+        .\state_seq_reg[errcred]__0 (\state_seq_reg[errcred]__0 ),
         .\state_seq_reg[timerdone] (RECV_INST_n_11),
         .\state_seq_reg[timerdone]__0 (\state_seq_reg[timerdone]__0 ),
-        .\vres[rxfiforoom] ({\vres[rxfiforoom] [12],\vres[rxfiforoom] [10:8],\vres[rxfiforoom] [4],\vres[rxfiforoom] [2]}),
-        .\vres[rxfiforoom]0_in ({\vres[rxfiforoom]0_in [12],\vres[rxfiforoom]0_in [10:8],\vres[rxfiforoom]0_in [4],\vres[rxfiforoom]0_in [2]}),
+        .\vres[rxfiforoom] ({\vres[rxfiforoom] [12],\vres[rxfiforoom] [10],\vres[rxfiforoom] [8],\vres[rxfiforoom] [2]}),
+        .\vres[rxfiforoom]0_in ({\vres[rxfiforoom]0_in [12],\vres[rxfiforoom]0_in [10],\vres[rxfiforoom]0_in [8],\vres[rxfiforoom]0_in [2]}),
         .\vres[rxpacket]7_out (\vres[rxpacket]7_out ));
   Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwBlockRam RXMEM
        (.ADDRARDADDR(\res_seq_reg[rxfifo_waddr] ),
@@ -6477,15 +6518,14 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwStream
         .buf_ff0_reg_0(TXRSTLOGIC_n_0),
         .\recvo[rxchar] (\recvo[rxchar] ),
         .\res_seq_reg[allow_char]__0 (\res_seq_reg[allow_char]__0 ),
-        .\res_seq_reg[allow_fct]_0 (LINK_INST_n_3),
+        .\res_seq_reg[allow_fct]_0 (LINK_INST_n_5),
         .\res_seq_reg[allow_fct]__0 (\res_seq_reg[allow_fct]__0 ),
-        .\res_seq_reg[pend_char]_0 (LINK_INST_n_29),
+        .\res_seq_reg[pend_char]_0 (LINK_INST_n_30),
         .\res_seq_reg[pend_char]__0 (\res_seq_reg[pend_char]__0 ),
         .\res_seq_reg[pend_fct]__0 (\res_seq_reg[pend_fct]__0 ),
         .\res_seq_reg[sent_fct]__0 (\res_seq_reg[sent_fct]__0 ),
-        .\res_seq_reg[token1][char][7]_0 (LINK_INST_n_8),
+        .\res_seq_reg[token1][char][7]_0 (LINK_INST_n_10),
         .\res_seq_reg[txdiscard]__0 (\res_seq_reg[txdiscard]__0 ),
-        .\res_seq_reg[txdivreg][3]_0 (p_0_in10_in),
         .\res_seq_reg[txfifo_rvalid]__0 (\res_seq_reg[txfifo_rvalid]__0 ),
         .\v[allow_char] (\v[allow_char] ),
         .\xmiti[fct_in] (\xmiti[fct_in] ));
@@ -6494,7 +6534,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwStream
     axi_streamout_tlast_INST_0
        (.I0(RXVALID),
         .O(axi_streamout_tlast));
-  (* SOFT_HLUTNM = "soft_lutpair82" *) 
+  (* SOFT_HLUTNM = "soft_lutpair83" *) 
   LUT3 #(
     .INIT(8'h08)) 
     \escape_fifo[7]_i_1 
@@ -6785,21 +6825,21 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwStream
         .DI({1'b0,1'b0,1'b0,1'b0}),
         .O({\NLW_minusOp_inferred__0/i__carry__2_O_UNCONNECTED [3:1],\vres[rxfiforoom] [12]}),
         .S({1'b0,1'b0,1'b0,i__carry__2_i_1_n_0}));
-  (* SOFT_HLUTNM = "soft_lutpair83" *) 
+  (* SOFT_HLUTNM = "soft_lutpair84" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \out_fifo[6]_i_1 
        (.I0(RXVALID),
         .I1(axi_streamout_tready),
         .O(\res_seq_reg[rxfifo_rvalid]_1 ));
-  (* SOFT_HLUTNM = "soft_lutpair83" *) 
+  (* SOFT_HLUTNM = "soft_lutpair84" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \out_fifo[7]_i_2 
        (.I0(axi_streamout_tready),
         .I1(RXVALID),
         .O(out_fifo0));
-  (* SOFT_HLUTNM = "soft_lutpair82" *) 
+  (* SOFT_HLUTNM = "soft_lutpair83" *) 
   LUT4 #(
     .INIT(16'h08FF)) 
     \out_fifo[7]_i_3 
@@ -6861,6 +6901,15 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwStream
         .O(\res_seq[rxfiforoom][3]_i_3_n_0 ));
   LUT5 #(
     .INIT(32'hAFCAA0CA)) 
+    \res_seq[rxfiforoom][4]_i_1 
+       (.I0(\res_seq_reg[rxfiforoom_n_0_][4] ),
+        .I1(\vres[rxfiforoom] [4]),
+        .I2(WEN),
+        .I3(SPW_RXREAD),
+        .I4(\vres[rxfiforoom]0_in [4]),
+        .O(\res_seq[rxfiforoom][4]_i_1_n_0 ));
+  LUT5 #(
+    .INIT(32'hAFCAA0CA)) 
     \res_seq[rxfiforoom][5]_i_1 
        (.I0(\res_seq_reg[rxfiforoom_n_0_][5] ),
         .I1(\vres[rxfiforoom] [5]),
@@ -6886,30 +6935,47 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwStream
         .I3(SPW_RXREAD),
         .I4(\vres[rxfiforoom]0_in [7]),
         .O(\res_seq[rxfiforoom][7]_i_1_n_0 ));
+  LUT5 #(
+    .INIT(32'hAFCAA0CA)) 
+    \res_seq[rxfiforoom][9]_i_1 
+       (.I0(\res_seq_reg[rxfiforoom_n_0_][9] ),
+        .I1(\vres[rxfiforoom] [9]),
+        .I2(WEN),
+        .I3(SPW_RXREAD),
+        .I4(\vres[rxfiforoom]0_in [9]),
+        .O(\res_seq[rxfiforoom][9]_i_1_n_0 ));
   LUT6 #(
     .INIT(64'h0000000000000002)) 
     \res_seq[rxfull]_i_1 
        (.I0(\res_seq[rxfull]_i_2_n_0 ),
         .I1(\res_seq[rxfiforoom][7]_i_1_n_0 ),
         .I2(\res_seq_reg[rxfifo_rvalid]1 ),
-        .I3(RECV_INST_n_19),
-        .I4(RECV_INST_n_18),
-        .I5(RECV_INST_n_22),
+        .I3(RECV_INST_n_17),
+        .I4(\res_seq[rxfull]_i_3_n_0 ),
+        .I5(\res_seq[rxfiforoom][4]_i_1_n_0 ),
         .O(\res_com[rxfull] ));
   LUT5 #(
     .INIT(32'h00000001)) 
     \res_seq[rxfull]_i_2 
        (.I0(\res_seq[rxfiforoom][1]_i_1_n_0 ),
-        .I1(\res_seq[rxfiforoom][5]_i_1_n_0 ),
-        .I2(\res_seq[rxfiforoom][0]_i_1_n_0 ),
-        .I3(RECV_INST_n_23),
-        .I4(\res_seq[rxfiforoom][3]_i_1_n_0 ),
+        .I1(RECV_INST_n_18),
+        .I2(\res_seq[rxfiforoom][3]_i_1_n_0 ),
+        .I3(\res_seq[rxfiforoom][0]_i_1_n_0 ),
+        .I4(\res_seq[rxfiforoom][5]_i_1_n_0 ),
         .O(\res_seq[rxfull]_i_2_n_0 ));
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    \res_seq[rxfull]_i_3 
+       (.I0(RECV_INST_n_16),
+        .I1(\res_seq[rxfiforoom][11]_i_1_n_0 ),
+        .I2(\res_seq[rxfiforoom][9]_i_1_n_0 ),
+        .I3(\res_seq[rxfiforoom][6]_i_1_n_0 ),
+        .O(\res_seq[rxfull]_i_3_n_0 ));
   LUT5 #(
     .INIT(32'hFFFFFFFE)) 
     \res_seq[rxroom][0]_i_1 
-       (.I0(RECV_INST_n_18),
-        .I1(RECV_INST_n_19),
+       (.I0(\res_seq[rxfull]_i_3_n_0 ),
+        .I1(RECV_INST_n_17),
         .I2(\res_seq_reg[rxfifo_rvalid]1 ),
         .I3(\res_seq[rxfiforoom][7]_i_1_n_0 ),
         .I4(\res_seq[rxfiforoom][0]_i_1_n_0 ),
@@ -6917,26 +6983,44 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwStream
   LUT5 #(
     .INIT(32'hFFFFFFFE)) 
     \res_seq[rxroom][1]_i_1 
-       (.I0(RECV_INST_n_18),
-        .I1(RECV_INST_n_19),
+       (.I0(\res_seq[rxfull]_i_3_n_0 ),
+        .I1(RECV_INST_n_17),
         .I2(\res_seq_reg[rxfifo_rvalid]1 ),
         .I3(\res_seq[rxfiforoom][7]_i_1_n_0 ),
         .I4(\res_seq[rxfiforoom][1]_i_1_n_0 ),
         .O(\res_com[rxroom] [1]));
   LUT5 #(
     .INIT(32'hFFFFFFFE)) 
+    \res_seq[rxroom][2]_i_1 
+       (.I0(\res_seq[rxfull]_i_3_n_0 ),
+        .I1(RECV_INST_n_17),
+        .I2(\res_seq_reg[rxfifo_rvalid]1 ),
+        .I3(\res_seq[rxfiforoom][7]_i_1_n_0 ),
+        .I4(RECV_INST_n_18),
+        .O(\res_com[rxroom] [2]));
+  LUT5 #(
+    .INIT(32'hFFFFFFFE)) 
     \res_seq[rxroom][3]_i_1 
-       (.I0(RECV_INST_n_18),
-        .I1(RECV_INST_n_19),
+       (.I0(\res_seq[rxfull]_i_3_n_0 ),
+        .I1(RECV_INST_n_17),
         .I2(\res_seq_reg[rxfifo_rvalid]1 ),
         .I3(\res_seq[rxfiforoom][7]_i_1_n_0 ),
         .I4(\res_seq[rxfiforoom][3]_i_1_n_0 ),
         .O(\res_com[rxroom] [3]));
   LUT5 #(
     .INIT(32'hFFFFFFFE)) 
+    \res_seq[rxroom][4]_i_1 
+       (.I0(\res_seq[rxfiforoom][4]_i_1_n_0 ),
+        .I1(\res_seq[rxfull]_i_3_n_0 ),
+        .I2(RECV_INST_n_17),
+        .I3(\res_seq_reg[rxfifo_rvalid]1 ),
+        .I4(\res_seq[rxfiforoom][7]_i_1_n_0 ),
+        .O(\res_com[rxroom] [4]));
+  LUT5 #(
+    .INIT(32'hFFFFFFFE)) 
     \res_seq[rxroom][5]_i_1 
-       (.I0(RECV_INST_n_18),
-        .I1(RECV_INST_n_19),
+       (.I0(\res_seq[rxfull]_i_3_n_0 ),
+        .I1(RECV_INST_n_17),
         .I2(\res_seq_reg[rxfifo_rvalid]1 ),
         .I3(\res_seq[rxfiforoom][7]_i_1_n_0 ),
         .I4(\res_seq[rxfiforoom][5]_i_1_n_0 ),
@@ -7127,7 +7211,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwStream
        (.C(SPW_main_clk),
         .CE(1'b1),
         .CLR(SYSRSTLOGIC_n_1),
-        .D(RECV_INST_n_20),
+        .D(RECV_INST_n_16),
         .Q(\res_seq_reg[rxfiforoom_n_0_][10] ));
   FDCE \res_seq_reg[rxfiforoom][11] 
        (.C(SPW_main_clk),
@@ -7159,7 +7243,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwStream
        (.C(SPW_main_clk),
         .CE(1'b1),
         .CLR(SYSRSTLOGIC_n_1),
-        .D(RECV_INST_n_23),
+        .D(RECV_INST_n_18),
         .Q(\res_seq_reg[rxfiforoom_n_0_][2] ));
   FDCE \res_seq_reg[rxfiforoom][3] 
        (.C(SPW_main_clk),
@@ -7179,7 +7263,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwStream
        (.C(SPW_main_clk),
         .CE(1'b1),
         .CLR(SYSRSTLOGIC_n_1),
-        .D(RECV_INST_n_22),
+        .D(\res_seq[rxfiforoom][4]_i_1_n_0 ),
         .Q(\res_seq_reg[rxfiforoom_n_0_][4] ));
   FDCE \res_seq_reg[rxfiforoom][5] 
        (.C(SPW_main_clk),
@@ -7211,13 +7295,13 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwStream
        (.C(SPW_main_clk),
         .CE(1'b1),
         .CLR(SYSRSTLOGIC_n_1),
-        .D(RECV_INST_n_19),
+        .D(RECV_INST_n_17),
         .Q(\res_seq_reg[rxfiforoom_n_0_][8] ));
   FDCE \res_seq_reg[rxfiforoom][9] 
        (.C(SPW_main_clk),
         .CE(1'b1),
         .CLR(SYSRSTLOGIC_n_1),
-        .D(RECV_INST_n_21),
+        .D(\res_seq[rxfiforoom][9]_i_1_n_0 ),
         .Q(\res_seq_reg[rxfiforoom_n_0_][9] ));
   FDCE \res_seq_reg[rxfull] 
        (.C(SPW_main_clk),
@@ -7569,7 +7653,6 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
     \res_seq_reg[pend_char]_0 ,
     \res_seq_reg[txfifo_rvalid]__0 ,
     \res_seq_reg[txdiscard]__0 ,
-    \res_seq_reg[txdivreg][3]_0 ,
     E,
     D);
   output \res_seq_reg[allow_fct]__0 ;
@@ -7592,7 +7675,6 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
   input \res_seq_reg[pend_char]_0 ;
   input \res_seq_reg[txfifo_rvalid]__0 ;
   input \res_seq_reg[txdiscard]__0 ;
-  input [0:0]\res_seq_reg[txdivreg][3]_0 ;
   input [0:0]E;
   input [8:0]D;
 
@@ -7614,6 +7696,8 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
   wire SYNCTXSYSFLIP0_n_1;
   wire SYNCTXSYSFLIP0_n_2;
   wire SYNCTXSYSFLIP1_n_1;
+  wire SYNCTXTXDIVSAFE_n_0;
+  wire SYNCTXTXDIVSAFE_n_1;
   wire SYNCTXTXEN_n_1;
   wire SYNCTXTXEN_n_2;
   wire SYNCTXTXEN_n_3;
@@ -7641,8 +7725,6 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
   wire \res_seq[tokmux]_i_3_n_0 ;
   wire \res_seq[txdivnorm]_i_1_n_0 ;
   wire \res_seq[txdivreg][0]_i_1_n_0 ;
-  wire \res_seq[txdivreg][1]_i_1_n_0 ;
-  wire \res_seq[txdivreg][3]_i_1_n_0 ;
   wire \res_seq[txdivsafe]_i_1_n_0 ;
   wire \res_seq[txenreg]_i_1_n_0 ;
   wire \res_seq_reg[allow_char]__0 ;
@@ -7675,8 +7757,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
   wire \res_seq_reg[tokmux]__0 ;
   wire \res_seq_reg[txdiscard]__0 ;
   wire \res_seq_reg[txdivnorm]__0 ;
-  wire [3:0]\res_seq_reg[txdivreg] ;
-  wire [0:0]\res_seq_reg[txdivreg][3]_0 ;
+  wire [0:0]\res_seq_reg[txdivreg] ;
   wire \res_seq_reg[txdivsafe]__0 ;
   wire [1:0]\res_seq_reg[txdivtmp] ;
   wire \res_seq_reg[txenreg]__0 ;
@@ -7716,6 +7797,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
   wire \restx_seq[e_shift][8]_i_1_n_0 ;
   wire \restx_seq[e_shift][9]_i_1_n_0 ;
   wire \restx_seq[f_spwdo]_i_1_n_0 ;
+  wire \restx_seq[txclkcnt][1]_i_1_n_0 ;
   wire \restx_seq[txclkcnt][2]_i_1_n_0 ;
   wire \restx_seq[txclkcnt][4]_i_1_n_0 ;
   wire \restx_seq[txclkcnt][5]_i_1_n_0 ;
@@ -7785,8 +7867,6 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
   wire \restx_seq_reg[txclkcy_n_0_][0] ;
   wire \restx_seq_reg[txclkcy_n_0_][2] ;
   wire \restx_seq_reg[txclkdiv_n_0_][0] ;
-  wire \restx_seq_reg[txclkdiv_n_0_][1] ;
-  wire \restx_seq_reg[txclkdiv_n_0_][3] ;
   wire \restx_seq_reg[txclkdone_n_0_][0] ;
   wire \restx_seq_reg[txclkdone_n_0_][1] ;
   wire \restx_seq_reg[txclken]__0 ;
@@ -7794,7 +7874,6 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
   wire \restx_seq_reg[txdivnorm_n_0_] ;
   wire \restx_seq_reg[txflip_n_0_0] ;
   wire \restx_seq_reg[txflip_n_0_1] ;
-  wire syncdff_ff2;
   wire \synctx[sysflip1] ;
   wire \synctx[txen] ;
   wire \v[allow_char] ;
@@ -7872,10 +7951,15 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .\synctx[sysflip1] (\synctx[sysflip1] ),
         .\synctx[txen] (\synctx[txen] ));
   Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_4 SYNCTXTXDIVSAFE
-       (.E(syncdff_ff2),
-        .SPW_TX_clk(SPW_TX_clk),
+       (.SPW_TX_clk(SPW_TX_clk),
         .buf_ff0_reg_0(buf_ff0_reg_0),
-        .\res_seq_reg[txdivsafe]__0 (\res_seq_reg[txdivsafe]__0 ));
+        .\res_seq_reg[txdivnorm] (SYNCTXTXDIVSAFE_n_1),
+        .\res_seq_reg[txdivnorm]__0 (\res_seq_reg[txdivnorm]__0 ),
+        .\res_seq_reg[txdivreg] (\res_seq_reg[txdivreg] ),
+        .\res_seq_reg[txdivreg]_0_sp_1 (SYNCTXTXDIVSAFE_n_0),
+        .\res_seq_reg[txdivsafe]__0 (\res_seq_reg[txdivsafe]__0 ),
+        .\restx_seq_reg[txclkdiv][0] (\restx_seq_reg[txclkdiv_n_0_][0] ),
+        .\restx_seq_reg[txdivnorm] (\restx_seq_reg[txdivnorm_n_0_] ));
   Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_5 SYNCTXTXEN
        (.E(SYNCTXTXEN_n_1),
         .Q(\restx_seq_reg[e_count_n_0_][0] ),
@@ -7903,7 +7987,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .\synctx[txen] (\synctx[txen] ),
         .\vtx[b_update] (\vtx[b_update] ),
         .\vtx[e_parity]1_out (\vtx[e_parity]1_out ));
-  (* SOFT_HLUTNM = "soft_lutpair45" *) 
+  (* SOFT_HLUTNM = "soft_lutpair47" *) 
   LUT5 #(
     .INIT(32'h00000040)) 
     \res_seq[pend_char]_i_2 
@@ -7984,7 +8068,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I1(\res_seq_reg[pend_fct]__0 ),
         .I2(\xmiti[fct_in] ),
         .O(vhavetoken0));
-  (* SOFT_HLUTNM = "soft_lutpair46" *) 
+  (* SOFT_HLUTNM = "soft_lutpair48" *) 
   LUT5 #(
     .INIT(32'hE0000000)) 
     \res_seq[token1][fctpiggy]_i_2 
@@ -7994,7 +8078,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I3(\res_seq_reg[pend_char]__0 ),
         .I4(\res_seq_reg[allow_char]__0 ),
         .O(\vtoken[fctpiggy] ));
-  (* SOFT_HLUTNM = "soft_lutpair45" *) 
+  (* SOFT_HLUTNM = "soft_lutpair47" *) 
   LUT2 #(
     .INIT(4'h7)) 
     \res_seq[token1][fctpiggy]_i_3 
@@ -8008,7 +8092,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I1(\res_seq_reg[pend_char]__0 ),
         .I2(\res_seq_reg[allow_char]__0 ),
         .O(\vtoken[flag] ));
-  (* SOFT_HLUTNM = "soft_lutpair46" *) 
+  (* SOFT_HLUTNM = "soft_lutpair48" *) 
   LUT5 #(
     .INIT(32'h00077777)) 
     \res_seq[tokmux]_i_3 
@@ -8034,29 +8118,9 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
        (.I0(\res_seq_reg[txdivsafe]__0 ),
         .I1(\res_seq_reg[txdivtmp] [0]),
         .I2(\res_seq_reg[txdivtmp] [1]),
-        .I3(\res_seq_reg[txdivreg] [0]),
+        .I3(\res_seq_reg[txdivreg] ),
         .O(\res_seq[txdivreg][0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair49" *) 
-  LUT5 #(
-    .INIT(32'hFFFD0001)) 
-    \res_seq[txdivreg][1]_i_1 
-       (.I0(\res_seq_reg[txdivreg][3]_0 ),
-        .I1(\res_seq_reg[txdivtmp] [1]),
-        .I2(\res_seq_reg[txdivtmp] [0]),
-        .I3(\res_seq_reg[txdivsafe]__0 ),
-        .I4(\res_seq_reg[txdivreg] [1]),
-        .O(\res_seq[txdivreg][1]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair48" *) 
-  LUT5 #(
-    .INIT(32'hFFFE0002)) 
-    \res_seq[txdivreg][3]_i_1 
-       (.I0(\res_seq_reg[txdivreg][3]_0 ),
-        .I1(\res_seq_reg[txdivtmp] [1]),
-        .I2(\res_seq_reg[txdivtmp] [0]),
-        .I3(\res_seq_reg[txdivsafe]__0 ),
-        .I4(\res_seq_reg[txdivreg] [3]),
-        .O(\res_seq[txdivreg][3]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair48" *) 
+  (* SOFT_HLUTNM = "soft_lutpair67" *) 
   LUT3 #(
     .INIT(8'hE1)) 
     \res_seq[txdivsafe]_i_1 
@@ -8064,13 +8128,13 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I1(\res_seq_reg[txdivtmp] [0]),
         .I2(\res_seq_reg[txdivsafe]__0 ),
         .O(\res_seq[txdivsafe]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair49" *) 
+  (* SOFT_HLUTNM = "soft_lutpair67" *) 
   LUT1 #(
     .INIT(2'h1)) 
     \res_seq[txdivtmp][0]_i_1 
        (.I0(\res_seq_reg[txdivtmp] [0]),
         .O(\res_com[txdivtmp] [0]));
-  (* SOFT_HLUTNM = "soft_lutpair47" *) 
+  (* SOFT_HLUTNM = "soft_lutpair49" *) 
   LUT3 #(
     .INIT(8'h98)) 
     \res_seq[txdivtmp][1]_i_1 
@@ -8078,7 +8142,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I1(\res_seq_reg[txdivtmp] [1]),
         .I2(\res_seq_reg[txdivsafe]__0 ),
         .O(\res_com[txdivtmp] [1]));
-  (* SOFT_HLUTNM = "soft_lutpair47" *) 
+  (* SOFT_HLUTNM = "soft_lutpair49" *) 
   LUT5 #(
     .INIT(32'h55550001)) 
     \res_seq[txenreg]_i_1 
@@ -8333,19 +8397,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .CE(1'b1),
         .CLR(buf_ff0_reg),
         .D(\res_seq[txdivreg][0]_i_1_n_0 ),
-        .Q(\res_seq_reg[txdivreg] [0]));
-  FDCE \res_seq_reg[txdivreg][1] 
-       (.C(SPW_main_clk),
-        .CE(1'b1),
-        .CLR(buf_ff0_reg),
-        .D(\res_seq[txdivreg][1]_i_1_n_0 ),
-        .Q(\res_seq_reg[txdivreg] [1]));
-  FDCE \res_seq_reg[txdivreg][3] 
-       (.C(SPW_main_clk),
-        .CE(1'b1),
-        .CLR(buf_ff0_reg),
-        .D(\res_seq[txdivreg][3]_i_1_n_0 ),
-        .Q(\res_seq_reg[txdivreg] [3]));
+        .Q(\res_seq_reg[txdivreg] ));
   FDCE \res_seq_reg[txdivsafe] 
        (.C(SPW_main_clk),
         .CE(1'b1),
@@ -8377,7 +8429,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I1(\restx_seq_reg[txclkpre]__0 ),
         .I2(\restx_seq_reg[txdivnorm_n_0_] ),
         .O(\restx_com[txclkpre]__0 ));
-  (* SOFT_HLUTNM = "soft_lutpair67" *) 
+  (* SOFT_HLUTNM = "soft_lutpair68" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \restx_seq[b_token][char][0]_i_1 
@@ -8385,7 +8437,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I1(\res_seq_reg[token0][char] [0]),
         .I2(\restx_seq_reg[b_mux]__0 ),
         .O(\restx_seq[b_token][char][0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair67" *) 
+  (* SOFT_HLUTNM = "soft_lutpair68" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \restx_seq[b_token][char][1]_i_1 
@@ -8393,7 +8445,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I1(\res_seq_reg[token0][char] [1]),
         .I2(\restx_seq_reg[b_mux]__0 ),
         .O(\restx_seq[b_token][char][1]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair68" *) 
+  (* SOFT_HLUTNM = "soft_lutpair69" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \restx_seq[b_token][char][2]_i_1 
@@ -8401,7 +8453,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I1(\res_seq_reg[token0][char] [2]),
         .I2(\restx_seq_reg[b_mux]__0 ),
         .O(\restx_seq[b_token][char][2]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair68" *) 
+  (* SOFT_HLUTNM = "soft_lutpair69" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \restx_seq[b_token][char][3]_i_1 
@@ -8409,7 +8461,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I1(\res_seq_reg[token0][char] [3]),
         .I2(\restx_seq_reg[b_mux]__0 ),
         .O(\restx_seq[b_token][char][3]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair69" *) 
+  (* SOFT_HLUTNM = "soft_lutpair70" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \restx_seq[b_token][char][4]_i_1 
@@ -8417,7 +8469,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I1(\res_seq_reg[token0][char] [4]),
         .I2(\restx_seq_reg[b_mux]__0 ),
         .O(\restx_seq[b_token][char][4]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair69" *) 
+  (* SOFT_HLUTNM = "soft_lutpair70" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \restx_seq[b_token][char][5]_i_1 
@@ -8425,7 +8477,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I1(\res_seq_reg[token0][char] [5]),
         .I2(\restx_seq_reg[b_mux]__0 ),
         .O(\restx_seq[b_token][char][5]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair70" *) 
+  (* SOFT_HLUTNM = "soft_lutpair71" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \restx_seq[b_token][char][6]_i_1 
@@ -8433,7 +8485,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I1(\res_seq_reg[token0][char] [6]),
         .I2(\restx_seq_reg[b_mux]__0 ),
         .O(\restx_seq[b_token][char][6]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair70" *) 
+  (* SOFT_HLUTNM = "soft_lutpair71" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \restx_seq[b_token][char][7]_i_1 
@@ -8441,7 +8493,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I1(\res_seq_reg[token0][char] [7]),
         .I2(\restx_seq_reg[b_mux]__0 ),
         .O(\restx_seq[b_token][char][7]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair78" *) 
+  (* SOFT_HLUTNM = "soft_lutpair79" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \restx_seq[b_token][fct]_i_1 
@@ -8449,7 +8501,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I1(\restx_seq_reg[b_mux]__0 ),
         .I2(\res_seq_reg[token0][fct_n_0_] ),
         .O(\restx_seq[b_token][fct]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair78" *) 
+  (* SOFT_HLUTNM = "soft_lutpair79" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \restx_seq[b_token][fctpiggy]_i_1 
@@ -8478,49 +8530,49 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I1(\restx_seq_reg[b_token][flag]__0 ),
         .I2(\restx_seq_reg[b_token][char] [1]),
         .O(\restx_seq[c_bits][2]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair81" *) 
+  (* SOFT_HLUTNM = "soft_lutpair82" *) 
   LUT2 #(
     .INIT(4'h2)) 
     \restx_seq[c_bits][3]_i_1 
        (.I0(\restx_seq_reg[b_token][char] [2]),
         .I1(\restx_seq_reg[b_token][flag]__0 ),
         .O(\restx_seq[c_bits][3]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair81" *) 
+  (* SOFT_HLUTNM = "soft_lutpair82" *) 
   LUT2 #(
     .INIT(4'h2)) 
     \restx_seq[c_bits][4]_i_1 
        (.I0(\restx_seq_reg[b_token][char] [3]),
         .I1(\restx_seq_reg[b_token][flag]__0 ),
         .O(\restx_seq[c_bits][4]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair80" *) 
+  (* SOFT_HLUTNM = "soft_lutpair81" *) 
   LUT2 #(
     .INIT(4'h2)) 
     \restx_seq[c_bits][5]_i_1 
        (.I0(\restx_seq_reg[b_token][char] [4]),
         .I1(\restx_seq_reg[b_token][flag]__0 ),
         .O(\restx_seq[c_bits][5]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair80" *) 
+  (* SOFT_HLUTNM = "soft_lutpair81" *) 
   LUT2 #(
     .INIT(4'h2)) 
     \restx_seq[c_bits][6]_i_1 
        (.I0(\restx_seq_reg[b_token][char] [5]),
         .I1(\restx_seq_reg[b_token][flag]__0 ),
         .O(\restx_seq[c_bits][6]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair79" *) 
+  (* SOFT_HLUTNM = "soft_lutpair80" *) 
   LUT2 #(
     .INIT(4'h2)) 
     \restx_seq[c_bits][7]_i_1 
        (.I0(\restx_seq_reg[b_token][char] [6]),
         .I1(\restx_seq_reg[b_token][flag]__0 ),
         .O(\restx_seq[c_bits][7]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair79" *) 
+  (* SOFT_HLUTNM = "soft_lutpair80" *) 
   LUT2 #(
     .INIT(4'h2)) 
     \restx_seq[c_bits][8]_i_1 
        (.I0(\restx_seq_reg[b_token][char] [7]),
         .I1(\restx_seq_reg[b_token][flag]__0 ),
         .O(\restx_seq[c_bits][8]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair58" *) 
+  (* SOFT_HLUTNM = "soft_lutpair57" *) 
   LUT4 #(
     .INIT(16'hF2FF)) 
     \restx_seq[d_bits][1]_i_1 
@@ -8529,7 +8581,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I2(\restx_seq_reg[c_esc_n_0_] ),
         .I3(\synctx[txen] ),
         .O(\restx_com[d_bits] [1]));
-  (* SOFT_HLUTNM = "soft_lutpair58" *) 
+  (* SOFT_HLUTNM = "soft_lutpair57" *) 
   LUT4 #(
     .INIT(16'hF2FF)) 
     \restx_seq[d_bits][2]_i_1 
@@ -8547,7 +8599,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I2(\restx_seq_reg[c_bits_n_0_][3] ),
         .I3(\restx_seq_reg[c_fct_n_0_] ),
         .O(\restx_com[d_bits] [3]));
-  (* SOFT_HLUTNM = "soft_lutpair59" *) 
+  (* SOFT_HLUTNM = "soft_lutpair58" *) 
   LUT4 #(
     .INIT(16'h0020)) 
     \restx_seq[d_bits][4]_i_1 
@@ -8556,7 +8608,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I2(\restx_seq_reg[c_bits_n_0_][4] ),
         .I3(\restx_seq_reg[c_fct_n_0_] ),
         .O(\restx_com[d_bits] [4]));
-  (* SOFT_HLUTNM = "soft_lutpair59" *) 
+  (* SOFT_HLUTNM = "soft_lutpair58" *) 
   LUT4 #(
     .INIT(16'h0020)) 
     \restx_seq[d_bits][5]_i_1 
@@ -8565,7 +8617,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I2(\restx_seq_reg[c_bits_n_0_][5] ),
         .I3(\restx_seq_reg[c_fct_n_0_] ),
         .O(\restx_com[d_bits] [5]));
-  (* SOFT_HLUTNM = "soft_lutpair60" *) 
+  (* SOFT_HLUTNM = "soft_lutpair59" *) 
   LUT4 #(
     .INIT(16'h0020)) 
     \restx_seq[d_bits][6]_i_1 
@@ -8574,7 +8626,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I2(\restx_seq_reg[c_bits_n_0_][6] ),
         .I3(\restx_seq_reg[c_fct_n_0_] ),
         .O(\restx_com[d_bits] [6]));
-  (* SOFT_HLUTNM = "soft_lutpair60" *) 
+  (* SOFT_HLUTNM = "soft_lutpair59" *) 
   LUT4 #(
     .INIT(16'h0020)) 
     \restx_seq[d_bits][7]_i_1 
@@ -8598,7 +8650,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I1(\restx_seq_reg[e_count_n_0_][1] ),
         .I2(\synctx[txen] ),
         .O(\restx_com[e_count] [0]));
-  (* SOFT_HLUTNM = "soft_lutpair71" *) 
+  (* SOFT_HLUTNM = "soft_lutpair72" *) 
   LUT3 #(
     .INIT(8'h20)) 
     \restx_seq[e_count][1]_i_1 
@@ -8606,7 +8658,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I1(\restx_seq_reg[e_count_n_0_][0] ),
         .I2(\restx_seq_reg[e_count_n_0_][2] ),
         .O(\restx_com[e_count] [1]));
-  (* SOFT_HLUTNM = "soft_lutpair71" *) 
+  (* SOFT_HLUTNM = "soft_lutpair72" *) 
   LUT3 #(
     .INIT(8'h20)) 
     \restx_seq[e_count][2]_i_1 
@@ -8614,7 +8666,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I1(\restx_seq_reg[e_count_n_0_][0] ),
         .I2(p_0_in),
         .O(\restx_com[e_count] [2]));
-  (* SOFT_HLUTNM = "soft_lutpair57" *) 
+  (* SOFT_HLUTNM = "soft_lutpair56" *) 
   LUT4 #(
     .INIT(16'hA808)) 
     \restx_seq[e_count][3]_i_1 
@@ -8623,7 +8675,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I2(\restx_seq_reg[e_count_n_0_][0] ),
         .I3(\restx_seq_reg[d_bits_n_0_][0] ),
         .O(\restx_com[e_count] [3]));
-  (* SOFT_HLUTNM = "soft_lutpair72" *) 
+  (* SOFT_HLUTNM = "soft_lutpair73" *) 
   LUT3 #(
     .INIT(8'h20)) 
     \restx_seq[e_count][4]_i_1 
@@ -8631,7 +8683,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I1(\restx_seq_reg[e_count_n_0_][0] ),
         .I2(\restx_seq_reg[e_count_n_0_][5] ),
         .O(\restx_com[e_count] [4]));
-  (* SOFT_HLUTNM = "soft_lutpair72" *) 
+  (* SOFT_HLUTNM = "soft_lutpair73" *) 
   LUT3 #(
     .INIT(8'h20)) 
     \restx_seq[e_count][5]_i_1 
@@ -8639,7 +8691,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I1(\restx_seq_reg[e_count_n_0_][0] ),
         .I2(\restx_seq_reg[e_count_n_0_][6] ),
         .O(\restx_com[e_count] [5]));
-  (* SOFT_HLUTNM = "soft_lutpair73" *) 
+  (* SOFT_HLUTNM = "soft_lutpair74" *) 
   LUT3 #(
     .INIT(8'h20)) 
     \restx_seq[e_count][6]_i_1 
@@ -8647,7 +8699,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I1(\restx_seq_reg[e_count_n_0_][0] ),
         .I2(\restx_seq_reg[e_count_n_0_][7] ),
         .O(\restx_com[e_count] [6]));
-  (* SOFT_HLUTNM = "soft_lutpair73" *) 
+  (* SOFT_HLUTNM = "soft_lutpair74" *) 
   LUT3 #(
     .INIT(8'h20)) 
     \restx_seq[e_count][7]_i_1 
@@ -8662,7 +8714,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I1(\restx_seq_reg[e_count_n_0_][0] ),
         .I2(\restx_seq_reg[e_count_n_0_][9] ),
         .O(\restx_com[e_count] [8]));
-  (* SOFT_HLUTNM = "soft_lutpair57" *) 
+  (* SOFT_HLUTNM = "soft_lutpair56" *) 
   LUT3 #(
     .INIT(8'h80)) 
     \restx_seq[e_count][9]_i_2 
@@ -8670,7 +8722,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I1(\restx_seq_reg[d_cnt10]__0 ),
         .I2(\restx_seq_reg[e_count_n_0_][0] ),
         .O(\restx_com[e_count] [9]));
-  (* SOFT_HLUTNM = "soft_lutpair61" *) 
+  (* SOFT_HLUTNM = "soft_lutpair60" *) 
   LUT4 #(
     .INIT(16'h9F90)) 
     \restx_seq[e_shift][0]_i_1 
@@ -8679,7 +8731,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I2(\restx_seq_reg[e_count_n_0_][0] ),
         .I3(\restx_seq_reg[e_shift_n_0_][1] ),
         .O(\restx_seq[e_shift][0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair61" *) 
+  (* SOFT_HLUTNM = "soft_lutpair60" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \restx_seq[e_shift][1]_i_1 
@@ -8687,7 +8739,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I1(\restx_seq_reg[e_count_n_0_][0] ),
         .I2(\restx_seq_reg[e_shift_n_0_][2] ),
         .O(\restx_seq[e_shift][1]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair74" *) 
+  (* SOFT_HLUTNM = "soft_lutpair75" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \restx_seq[e_shift][2]_i_1 
@@ -8695,7 +8747,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I1(\restx_seq_reg[e_count_n_0_][0] ),
         .I2(\restx_seq_reg[e_shift_n_0_][3] ),
         .O(\restx_seq[e_shift][2]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair74" *) 
+  (* SOFT_HLUTNM = "soft_lutpair75" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \restx_seq[e_shift][3]_i_1 
@@ -8703,7 +8755,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I1(\restx_seq_reg[e_count_n_0_][0] ),
         .I2(\restx_seq_reg[e_shift_n_0_][4] ),
         .O(\restx_seq[e_shift][3]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair75" *) 
+  (* SOFT_HLUTNM = "soft_lutpair76" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \restx_seq[e_shift][4]_i_1 
@@ -8711,7 +8763,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I1(\restx_seq_reg[e_count_n_0_][0] ),
         .I2(\restx_seq_reg[e_shift_n_0_][5] ),
         .O(\restx_seq[e_shift][4]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair75" *) 
+  (* SOFT_HLUTNM = "soft_lutpair76" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \restx_seq[e_shift][5]_i_1 
@@ -8719,7 +8771,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I1(\restx_seq_reg[e_count_n_0_][0] ),
         .I2(\restx_seq_reg[e_shift_n_0_][6] ),
         .O(\restx_seq[e_shift][5]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair76" *) 
+  (* SOFT_HLUTNM = "soft_lutpair77" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \restx_seq[e_shift][6]_i_1 
@@ -8727,7 +8779,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I1(\restx_seq_reg[e_count_n_0_][0] ),
         .I2(\restx_seq_reg[e_shift_n_0_][7] ),
         .O(\restx_seq[e_shift][6]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair76" *) 
+  (* SOFT_HLUTNM = "soft_lutpair77" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \restx_seq[e_shift][7]_i_1 
@@ -8735,7 +8787,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I1(\restx_seq_reg[e_count_n_0_][0] ),
         .I2(\restx_seq_reg[e_shift_n_0_][8] ),
         .O(\restx_seq[e_shift][7]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair77" *) 
+  (* SOFT_HLUTNM = "soft_lutpair78" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \restx_seq[e_shift][8]_i_1 
@@ -8743,7 +8795,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I1(\restx_seq_reg[e_count_n_0_][0] ),
         .I2(\restx_seq_reg[e_shift_n_0_][9] ),
         .O(\restx_seq[e_shift][8]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair77" *) 
+  (* SOFT_HLUTNM = "soft_lutpair78" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \restx_seq[e_shift][9]_i_1 
@@ -8759,7 +8811,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I2(\restx_seq_reg[f_spwdo]__0 ),
         .I3(\restx_seq_reg[f_spwso]__0 ),
         .O(\restx_seq[f_spwdo]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair56" *) 
+  (* SOFT_HLUTNM = "soft_lutpair61" *) 
   LUT3 #(
     .INIT(8'h8B)) 
     \restx_seq[txclkcnt][0]_i_1 
@@ -8767,15 +8819,14 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I1(\restx_seq_reg[txclken]__0 ),
         .I2(\restx_seq_reg[txclkcnt_n_0_][0] ),
         .O(\restx_com[txclkcnt] [0]));
-  (* SOFT_HLUTNM = "soft_lutpair56" *) 
-  LUT4 #(
-    .INIT(16'hB88B)) 
+  (* SOFT_HLUTNM = "soft_lutpair61" *) 
+  LUT3 #(
+    .INIT(8'h41)) 
     \restx_seq[txclkcnt][1]_i_1 
-       (.I0(\restx_seq_reg[txclkdiv_n_0_][1] ),
-        .I1(\restx_seq_reg[txclken]__0 ),
+       (.I0(\restx_seq_reg[txclken]__0 ),
+        .I1(\restx_seq_reg[txclkcnt_n_0_][1] ),
         .I2(\restx_seq_reg[txclkcnt_n_0_][0] ),
-        .I3(\restx_seq_reg[txclkcnt_n_0_][1] ),
-        .O(\restx_com[txclkcnt] [1]));
+        .O(\restx_seq[txclkcnt][1]_i_1_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair62" *) 
   LUT3 #(
     .INIT(8'h14)) 
@@ -8788,7 +8839,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
   LUT5 #(
     .INIT(32'hBB8B88B8)) 
     \restx_seq[txclkcnt][3]_i_1 
-       (.I0(\restx_seq_reg[txclkdiv_n_0_][3] ),
+       (.I0(\restx_seq_reg[txclkdiv_n_0_][0] ),
         .I1(\restx_seq_reg[txclken]__0 ),
         .I2(\restx_seq_reg[txclkcy_n_0_][0] ),
         .I3(p_1_in[0]),
@@ -8828,7 +8879,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I2(p_1_in5_in[0]),
         .I3(\restx_seq_reg[txclkcy_n_0_][2] ),
         .O(\restx_seq[txclkcnt][7]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair44" *) 
+  (* SOFT_HLUTNM = "soft_lutpair46" *) 
   LUT3 #(
     .INIT(8'h01)) 
     \restx_seq[txclkcy][0]_i_1 
@@ -8854,7 +8905,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .I2(p_0_in38_in),
         .I3(\restx_seq_reg[txclken]__0 ),
         .O(\restx_seq[txclkcy][2]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair44" *) 
+  (* SOFT_HLUTNM = "soft_lutpair46" *) 
   LUT5 #(
     .INIT(32'h00010000)) 
     \restx_seq[txclkdone][0]_i_1 
@@ -9255,7 +9306,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
        (.C(SPW_TX_clk),
         .CE(1'b1),
         .CLR(buf_ff0_reg_0),
-        .D(\restx_com[txclkcnt] [1]),
+        .D(\restx_seq[txclkcnt][1]_i_1_n_0 ),
         .Q(\restx_seq_reg[txclkcnt_n_0_][1] ));
   FDCE \restx_seq_reg[txclkcnt][2] 
        (.C(SPW_TX_clk),
@@ -9313,22 +9364,10 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .Q(\restx_seq_reg[txclkcy_n_0_][2] ));
   FDCE \restx_seq_reg[txclkdiv][0] 
        (.C(SPW_TX_clk),
-        .CE(syncdff_ff2),
+        .CE(1'b1),
         .CLR(buf_ff0_reg_0),
-        .D(\res_seq_reg[txdivreg] [0]),
+        .D(SYNCTXTXDIVSAFE_n_0),
         .Q(\restx_seq_reg[txclkdiv_n_0_][0] ));
-  FDCE \restx_seq_reg[txclkdiv][1] 
-       (.C(SPW_TX_clk),
-        .CE(syncdff_ff2),
-        .CLR(buf_ff0_reg_0),
-        .D(\res_seq_reg[txdivreg] [1]),
-        .Q(\restx_seq_reg[txclkdiv_n_0_][1] ));
-  FDCE \restx_seq_reg[txclkdiv][3] 
-       (.C(SPW_TX_clk),
-        .CE(syncdff_ff2),
-        .CLR(buf_ff0_reg_0),
-        .D(\res_seq_reg[txdivreg] [3]),
-        .Q(\restx_seq_reg[txclkdiv_n_0_][3] ));
   FDCE \restx_seq_reg[txclkdone][0] 
        (.C(SPW_TX_clk),
         .CE(1'b1),
@@ -9362,9 +9401,9 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SpwXmit_fast
         .Q(\restx_seq_reg[txclkpre]__0 ));
   FDCE \restx_seq_reg[txdivnorm] 
        (.C(SPW_TX_clk),
-        .CE(syncdff_ff2),
+        .CE(1'b1),
         .CLR(buf_ff0_reg_0),
-        .D(\res_seq_reg[txdivnorm]__0 ),
+        .D(SYNCTXTXDIVSAFE_n_1),
         .Q(\restx_seq_reg[txdivnorm_n_0_] ));
   FDCE \restx_seq_reg[txflip0] 
        (.C(SPW_TX_clk),
@@ -9544,7 +9583,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff
         .I4(\xmiti[fct_in] ),
         .I5(\res_seq_reg[sent_fct]__0 ),
         .O(\res_seq_reg[allow_fct] ));
-  (* SOFT_HLUTNM = "soft_lutpair41" *) 
+  (* SOFT_HLUTNM = "soft_lutpair42" *) 
   LUT5 #(
     .INIT(32'h0FF06666)) 
     \res_seq[sent_fct]_i_2 
@@ -9584,7 +9623,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff
         .I4(\res_seq_reg[tokmux]_1 ),
         .I5(\res_seq_reg[token0][char][7] ),
         .O(\res_seq_reg[sysflip1] ));
-  (* SOFT_HLUTNM = "soft_lutpair41" *) 
+  (* SOFT_HLUTNM = "soft_lutpair42" *) 
   LUT3 #(
     .INIT(8'h41)) 
     \res_seq[tokmux]_i_2 
@@ -9731,22 +9770,45 @@ endmodule
 
 (* ORIG_REF_NAME = "SyncDff" *) 
 module Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_11
-   (\syncsys[headptr_gray] ,
+   (D,
+    \res_seq_reg[tailptr_gray]_0_sp_1 ,
+    \state_seq_reg[rxen] ,
+    \res_com[tailptr_gray] ,
     Q,
     SPW_main_clk,
-    buf_ff0_reg_0);
-  output [0:0]\syncsys[headptr_gray] ;
+    buf_ff0_reg_0,
+    \res_seq_reg[tailptr_gray][2] ,
+    \res_seq_reg[tailptr_gray][0]_0 ,
+    recv_rxen,
+    \res_seq_reg[tailptr_gray] );
+  output [1:0]D;
+  output \res_seq_reg[tailptr_gray]_0_sp_1 ;
+  output [1:0]\state_seq_reg[rxen] ;
+  output [0:0]\res_com[tailptr_gray] ;
   input [0:0]Q;
   input SPW_main_clk;
   input buf_ff0_reg_0;
+  input [1:0]\res_seq_reg[tailptr_gray][2] ;
+  input [1:0]\res_seq_reg[tailptr_gray][0]_0 ;
+  input recv_rxen;
+  input [2:0]\res_seq_reg[tailptr_gray] ;
 
+  wire [1:0]D;
   wire [0:0]Q;
   wire SPW_main_clk;
   wire buf_ff0;
   wire buf_ff0_reg_0;
+  wire recv_rxen;
+  wire [0:0]\res_com[tailptr_gray] ;
+  wire [2:0]\res_seq_reg[tailptr_gray] ;
+  wire [1:0]\res_seq_reg[tailptr_gray][0]_0 ;
+  wire [1:0]\res_seq_reg[tailptr_gray][2] ;
+  wire \res_seq_reg[tailptr_gray]_0_sn_1 ;
+  wire [1:0]\state_seq_reg[rxen] ;
   wire syncdff_ff1;
   wire [0:0]\syncsys[headptr_gray] ;
 
+  assign \res_seq_reg[tailptr_gray]_0_sp_1  = \res_seq_reg[tailptr_gray]_0_sn_1 ;
   FDCE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -9756,6 +9818,61 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_11
         .CLR(buf_ff0_reg_0),
         .D(Q),
         .Q(buf_ff0));
+  LUT3 #(
+    .INIT(8'h82)) 
+    \res_seq[tailptr][0]_i_1 
+       (.I0(recv_rxen),
+        .I1(\res_seq_reg[tailptr_gray]_0_sn_1 ),
+        .I2(\res_seq_reg[tailptr_gray][0]_0 [0]),
+        .O(\state_seq_reg[rxen] [0]));
+  (* SOFT_HLUTNM = "soft_lutpair18" *) 
+  LUT4 #(
+    .INIT(16'hA208)) 
+    \res_seq[tailptr][1]_i_1 
+       (.I0(recv_rxen),
+        .I1(\res_seq_reg[tailptr_gray][0]_0 [0]),
+        .I2(\res_seq_reg[tailptr_gray]_0_sn_1 ),
+        .I3(\res_seq_reg[tailptr_gray][0]_0 [1]),
+        .O(\state_seq_reg[rxen] [1]));
+  (* SOFT_HLUTNM = "soft_lutpair18" *) 
+  LUT4 #(
+    .INIT(16'h4B00)) 
+    \res_seq[tailptr_gray][0]_i_1 
+       (.I0(\res_seq_reg[tailptr_gray][0]_0 [0]),
+        .I1(\res_seq_reg[tailptr_gray]_0_sn_1 ),
+        .I2(\res_seq_reg[tailptr_gray][0]_0 [1]),
+        .I3(recv_rxen),
+        .O(D[0]));
+  (* SOFT_HLUTNM = "soft_lutpair17" *) 
+  LUT5 #(
+    .INIT(32'h45BA0000)) 
+    \res_seq[tailptr_gray][1]_i_1 
+       (.I0(\res_seq_reg[tailptr_gray][0]_0 [1]),
+        .I1(\res_seq_reg[tailptr_gray]_0_sn_1 ),
+        .I2(\res_seq_reg[tailptr_gray][0]_0 [0]),
+        .I3(\res_seq_reg[tailptr_gray] [2]),
+        .I4(recv_rxen),
+        .O(D[1]));
+  LUT6 #(
+    .INIT(64'h9009000000009009)) 
+    \res_seq[tailptr_gray][1]_i_2 
+       (.I0(\res_seq_reg[tailptr_gray] [0]),
+        .I1(\syncsys[headptr_gray] ),
+        .I2(\res_seq_reg[tailptr_gray] [1]),
+        .I3(\res_seq_reg[tailptr_gray][2] [0]),
+        .I4(\res_seq_reg[tailptr_gray][2] [1]),
+        .I5(\res_seq_reg[tailptr_gray] [2]),
+        .O(\res_seq_reg[tailptr_gray]_0_sn_1 ));
+  (* SOFT_HLUTNM = "soft_lutpair17" *) 
+  LUT5 #(
+    .INIT(32'hA2AA0800)) 
+    \res_seq[tailptr_gray][2]_i_1 
+       (.I0(recv_rxen),
+        .I1(\res_seq_reg[tailptr_gray][0]_0 [1]),
+        .I2(\res_seq_reg[tailptr_gray]_0_sn_1 ),
+        .I3(\res_seq_reg[tailptr_gray][0]_0 [0]),
+        .I4(\res_seq_reg[tailptr_gray] [2]),
+        .O(\res_com[tailptr_gray] ));
   FDCE syncdff_ff1_reg
        (.C(SPW_main_clk),
         .CE(1'b1),
@@ -9772,11 +9889,11 @@ endmodule
 
 (* ORIG_REF_NAME = "SyncDff" *) 
 module Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_12
-   (\syncsys[headptr_gray] ,
+   (syncdff_ff2_reg_0,
     Q,
     SPW_main_clk,
     buf_ff0_reg_0);
-  output [0:0]\syncsys[headptr_gray] ;
+  output [0:0]syncdff_ff2_reg_0;
   input [0:0]Q;
   input SPW_main_clk;
   input buf_ff0_reg_0;
@@ -9786,7 +9903,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_12
   wire buf_ff0_reg_0;
   wire buf_ff0_reg_n_0;
   wire syncdff_ff1_reg_n_0;
-  wire [0:0]\syncsys[headptr_gray] ;
+  wire [0:0]syncdff_ff2_reg_0;
 
   FDCE #(
     .INIT(1'b0),
@@ -9808,50 +9925,27 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_12
         .CE(1'b1),
         .CLR(buf_ff0_reg_0),
         .D(syncdff_ff1_reg_n_0),
-        .Q(\syncsys[headptr_gray] ));
+        .Q(syncdff_ff2_reg_0));
 endmodule
 
 (* ORIG_REF_NAME = "SyncDff" *) 
 module Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_13
-   (D,
-    \res_seq_reg[tailptr_gray]_2_sp_1 ,
-    \state_seq_reg[rxen] ,
-    \res_com[tailptr_gray] ,
+   (syncdff_ff2_reg_0,
     \resrx_seq_reg[headptr] ,
     SPW_main_clk,
-    buf_ff0_reg_0,
-    \res_seq_reg[tailptr_gray][2]_0 ,
-    Q,
-    recv_rxen,
-    \res_seq_reg[tailptr_gray] );
-  output [1:0]D;
-  output \res_seq_reg[tailptr_gray]_2_sp_1 ;
-  output [1:0]\state_seq_reg[rxen] ;
-  output [0:0]\res_com[tailptr_gray] ;
+    buf_ff0_reg_0);
+  output [0:0]syncdff_ff2_reg_0;
   input [0:0]\resrx_seq_reg[headptr] ;
   input SPW_main_clk;
   input buf_ff0_reg_0;
-  input [1:0]\res_seq_reg[tailptr_gray][2]_0 ;
-  input [1:0]Q;
-  input recv_rxen;
-  input [2:0]\res_seq_reg[tailptr_gray] ;
 
-  wire [1:0]D;
-  wire [1:0]Q;
   wire SPW_main_clk;
   wire buf_ff0_reg_0;
   wire buf_ff0_reg_n_0;
-  wire recv_rxen;
-  wire [0:0]\res_com[tailptr_gray] ;
-  wire [2:0]\res_seq_reg[tailptr_gray] ;
-  wire [1:0]\res_seq_reg[tailptr_gray][2]_0 ;
-  wire \res_seq_reg[tailptr_gray]_2_sn_1 ;
   wire [0:0]\resrx_seq_reg[headptr] ;
-  wire [1:0]\state_seq_reg[rxen] ;
   wire syncdff_ff1_reg_n_0;
-  wire [2:2]\syncsys[headptr_gray] ;
+  wire [0:0]syncdff_ff2_reg_0;
 
-  assign \res_seq_reg[tailptr_gray]_2_sp_1  = \res_seq_reg[tailptr_gray]_2_sn_1 ;
   FDCE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -9861,61 +9955,6 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_13
         .CLR(buf_ff0_reg_0),
         .D(\resrx_seq_reg[headptr] ),
         .Q(buf_ff0_reg_n_0));
-  LUT3 #(
-    .INIT(8'h82)) 
-    \res_seq[tailptr][0]_i_1 
-       (.I0(recv_rxen),
-        .I1(\res_seq_reg[tailptr_gray]_2_sn_1 ),
-        .I2(Q[0]),
-        .O(\state_seq_reg[rxen] [0]));
-  (* SOFT_HLUTNM = "soft_lutpair16" *) 
-  LUT4 #(
-    .INIT(16'hA208)) 
-    \res_seq[tailptr][1]_i_1 
-       (.I0(recv_rxen),
-        .I1(Q[0]),
-        .I2(\res_seq_reg[tailptr_gray]_2_sn_1 ),
-        .I3(Q[1]),
-        .O(\state_seq_reg[rxen] [1]));
-  (* SOFT_HLUTNM = "soft_lutpair16" *) 
-  LUT4 #(
-    .INIT(16'h4B00)) 
-    \res_seq[tailptr_gray][0]_i_1 
-       (.I0(Q[0]),
-        .I1(\res_seq_reg[tailptr_gray]_2_sn_1 ),
-        .I2(Q[1]),
-        .I3(recv_rxen),
-        .O(D[0]));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
-  LUT5 #(
-    .INIT(32'h45BA0000)) 
-    \res_seq[tailptr_gray][1]_i_1 
-       (.I0(Q[1]),
-        .I1(\res_seq_reg[tailptr_gray]_2_sn_1 ),
-        .I2(Q[0]),
-        .I3(\res_seq_reg[tailptr_gray] [2]),
-        .I4(recv_rxen),
-        .O(D[1]));
-  LUT6 #(
-    .INIT(64'h9009000000009009)) 
-    \res_seq[tailptr_gray][1]_i_2 
-       (.I0(\res_seq_reg[tailptr_gray] [2]),
-        .I1(\syncsys[headptr_gray] ),
-        .I2(\res_seq_reg[tailptr_gray] [0]),
-        .I3(\res_seq_reg[tailptr_gray][2]_0 [0]),
-        .I4(\res_seq_reg[tailptr_gray][2]_0 [1]),
-        .I5(\res_seq_reg[tailptr_gray] [1]),
-        .O(\res_seq_reg[tailptr_gray]_2_sn_1 ));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
-  LUT5 #(
-    .INIT(32'hA2AA0800)) 
-    \res_seq[tailptr_gray][2]_i_1 
-       (.I0(recv_rxen),
-        .I1(Q[1]),
-        .I2(\res_seq_reg[tailptr_gray]_2_sn_1 ),
-        .I3(Q[0]),
-        .I4(\res_seq_reg[tailptr_gray] [2]),
-        .O(\res_com[tailptr_gray] ));
   FDCE syncdff_ff1_reg
        (.C(SPW_main_clk),
         .CE(1'b1),
@@ -9927,7 +9966,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_13
         .CE(1'b1),
         .CLR(buf_ff0_reg_0),
         .D(syncdff_ff1_reg_n_0),
-        .Q(\syncsys[headptr_gray] ));
+        .Q(syncdff_ff2_reg_0));
 endmodule
 
 (* ORIG_REF_NAME = "SyncDff" *) 
@@ -10103,22 +10142,39 @@ endmodule
 
 (* ORIG_REF_NAME = "SyncDff" *) 
 module Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_4
-   (E,
+   (\res_seq_reg[txdivreg]_0_sp_1 ,
+    \res_seq_reg[txdivnorm] ,
     \res_seq_reg[txdivsafe]__0 ,
     SPW_TX_clk,
-    buf_ff0_reg_0);
-  output [0:0]E;
+    buf_ff0_reg_0,
+    \res_seq_reg[txdivreg] ,
+    \restx_seq_reg[txclkdiv][0] ,
+    \res_seq_reg[txdivnorm]__0 ,
+    \restx_seq_reg[txdivnorm] );
+  output \res_seq_reg[txdivreg]_0_sp_1 ;
+  output \res_seq_reg[txdivnorm] ;
   input \res_seq_reg[txdivsafe]__0 ;
   input SPW_TX_clk;
   input buf_ff0_reg_0;
+  input [0:0]\res_seq_reg[txdivreg] ;
+  input \restx_seq_reg[txclkdiv][0] ;
+  input \res_seq_reg[txdivnorm]__0 ;
+  input \restx_seq_reg[txdivnorm] ;
 
-  wire [0:0]E;
   wire SPW_TX_clk;
   wire buf_ff0_reg_0;
   wire buf_ff0_reg_n_0;
+  wire \res_seq_reg[txdivnorm] ;
+  wire \res_seq_reg[txdivnorm]__0 ;
+  wire [0:0]\res_seq_reg[txdivreg] ;
+  wire \res_seq_reg[txdivreg]_0_sn_1 ;
   wire \res_seq_reg[txdivsafe]__0 ;
+  wire \restx_seq_reg[txclkdiv][0] ;
+  wire \restx_seq_reg[txdivnorm] ;
   wire syncdff_ff1_reg_n_0;
+  wire syncdff_ff2;
 
+  assign \res_seq_reg[txdivreg]_0_sp_1  = \res_seq_reg[txdivreg]_0_sn_1 ;
   FDCE #(
     .INIT(1'b0),
     .IS_C_INVERTED(1'b1)) 
@@ -10128,6 +10184,22 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_4
         .CLR(buf_ff0_reg_0),
         .D(\res_seq_reg[txdivsafe]__0 ),
         .Q(buf_ff0_reg_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair43" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    \restx_seq[txclkdiv][0]_i_1 
+       (.I0(\res_seq_reg[txdivreg] ),
+        .I1(syncdff_ff2),
+        .I2(\restx_seq_reg[txclkdiv][0] ),
+        .O(\res_seq_reg[txdivreg]_0_sn_1 ));
+  (* SOFT_HLUTNM = "soft_lutpair43" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    \restx_seq[txdivnorm]_i_1 
+       (.I0(\res_seq_reg[txdivnorm]__0 ),
+        .I1(syncdff_ff2),
+        .I2(\restx_seq_reg[txdivnorm] ),
+        .O(\res_seq_reg[txdivnorm] ));
   FDCE syncdff_ff1_reg
        (.C(SPW_TX_clk),
         .CE(1'b1),
@@ -10139,7 +10211,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_4
         .CE(1'b1),
         .CLR(buf_ff0_reg_0),
         .D(syncdff_ff1_reg_n_0),
-        .Q(E));
+        .Q(syncdff_ff2));
 endmodule
 
 (* ORIG_REF_NAME = "SyncDff" *) 
@@ -10235,7 +10307,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_5
         .CLR(buf_ff0_reg_0),
         .D(\res_seq_reg[txenreg]__0 ),
         .Q(buf_ff0_reg_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair42" *) 
+  (* SOFT_HLUTNM = "soft_lutpair44" *) 
   LUT4 #(
     .INIT(16'h0800)) 
     \restx_seq[b_update]_i_1 
@@ -10253,7 +10325,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_5
         .I3(\synctx[txen] ),
         .I4(\restx_seq_reg[c_busy]__0 ),
         .O(\restx_seq_reg[b_token][fctpiggy] ));
-  (* SOFT_HLUTNM = "soft_lutpair43" *) 
+  (* SOFT_HLUTNM = "soft_lutpair45" *) 
   LUT4 #(
     .INIT(16'h3F4F)) 
     \restx_seq[c_esc]_i_1 
@@ -10280,7 +10352,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_5
         .I2(\restx_seq_reg[d_bits][0]_0 ),
         .I3(\synctx[txen] ),
         .O(\restx_com[d_bits] ));
-  (* SOFT_HLUTNM = "soft_lutpair43" *) 
+  (* SOFT_HLUTNM = "soft_lutpair45" *) 
   LUT2 #(
     .INIT(4'hB)) 
     \restx_seq[e_count][9]_i_1 
@@ -10296,7 +10368,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_5
         .I3(\restx_seq_reg[e_parity]_0 ),
         .I4(\synctx[txen] ),
         .O(\vtx[e_parity]1_out ));
-  (* SOFT_HLUTNM = "soft_lutpair42" *) 
+  (* SOFT_HLUTNM = "soft_lutpair44" *) 
   LUT4 #(
     .INIT(16'hF080)) 
     \restx_seq[e_valid]_i_1 
@@ -10378,7 +10450,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_7
         .CLR(buf_ff0_reg_0),
         .D(buf_ff0_i_1__1_n_0),
         .Q(buf_ff0_reg_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
+  (* SOFT_HLUTNM = "soft_lutpair16" *) 
   LUT2 #(
     .INIT(4'hB)) 
     \res_seq[bitcntp_gray][0]_i_1 
@@ -10395,7 +10467,7 @@ module Test_Implementaiton_SpaceWire_light_AXI_0_2_SyncDff_7
         .I4(\res_seq_reg[inact] [1]),
         .I5(\res_seq_reg[inact]_0 [0]),
         .O(\vres[inact]1_out ));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
+  (* SOFT_HLUTNM = "soft_lutpair16" *) 
   LUT4 #(
     .INIT(16'h6FF6)) 
     \res_seq[inact]_i_2 

@@ -1,0 +1,13 @@
+verilog xil_defaultlib --include "F:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" --include "../../../../edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/SPW_ZynqSetup/ipshared/ec67/hdl" --include "../../../../edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/SPW_ZynqSetup/ipshared/d47c/hdl" --include "../../../../edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/SPW_ZynqSetup/ipshared/3242" \
+"../../../bd/SPW_ZynqSetup/ip/SPW_ZynqSetup_xbar_0/sim/SPW_ZynqSetup_xbar_0.v" \
+"../../../bd/SPW_ZynqSetup/ip/SPW_ZynqSetup_processing_system7_0_0/sim/SPW_ZynqSetup_processing_system7_0_0.v" \
+"../../../bd/SPW_ZynqSetup/ip/SPW_ZynqSetup_xbar_1/sim/SPW_ZynqSetup_xbar_1.v" \
+"../../../bd/SPW_ZynqSetup/ip/SPW_ZynqSetup_clk_wiz_0_0/SPW_ZynqSetup_clk_wiz_0_0_clk_wiz.v" \
+"../../../bd/SPW_ZynqSetup/ip/SPW_ZynqSetup_clk_wiz_0_0/SPW_ZynqSetup_clk_wiz_0_0.v" \
+"../../../bd/SPW_ZynqSetup/ip/SPW_ZynqSetup_auto_pc_0/sim/SPW_ZynqSetup_auto_pc_0.v" \
+"../../../bd/SPW_ZynqSetup/ip/SPW_ZynqSetup_auto_pc_1/sim/SPW_ZynqSetup_auto_pc_1.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

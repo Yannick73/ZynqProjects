@@ -2,7 +2,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
-// Date        : Mon Oct  7 22:24:11 2024
+// Date        : Tue Oct  8 13:34:13 2024
 // Host        : DESKTOP-MEH5DGT running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_clk_wiz_0_0/Test_Implementaiton_clk_wiz_0_0_sim_netlist.v
@@ -97,16 +97,16 @@ module Test_Implementaiton_clk_wiz_0_0_clk_wiz
   (* BOX_TYPE = "PRIMITIVE" *) 
   MMCME2_ADV #(
     .BANDWIDTH("OPTIMIZED"),
-    .CLKFBOUT_MULT_F(50.000000),
+    .CLKFBOUT_MULT_F(10.000000),
     .CLKFBOUT_PHASE(0.000000),
     .CLKFBOUT_USE_FINE_PS("FALSE"),
-    .CLKIN1_PERIOD(50.000000),
+    .CLKIN1_PERIOD(10.000000),
     .CLKIN2_PERIOD(0.000000),
-    .CLKOUT0_DIVIDE_F(25.000000),
+    .CLKOUT0_DIVIDE_F(10.000000),
     .CLKOUT0_DUTY_CYCLE(0.500000),
     .CLKOUT0_PHASE(0.000000),
     .CLKOUT0_USE_FINE_PS("FALSE"),
-    .CLKOUT1_DIVIDE(50),
+    .CLKOUT1_DIVIDE(10),
     .CLKOUT1_DUTY_CYCLE(0.500000),
     .CLKOUT1_PHASE(0.000000),
     .CLKOUT1_USE_FINE_PS("FALSE"),

@@ -3,11 +3,11 @@
 # SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
 # IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
 # SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
-# Start of session at: Mon Oct  7 22:31:33 2024
-# Process ID: 1800
+# Start of session at: Tue Oct  8 20:10:35 2024
+# Process ID: 17572
 # Current directory: F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/synth_1
-# Command line: vivado.exe -log Test_Implementaiton_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Test_Implementaiton_wrapper.tcl
-# Log file: F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/synth_1/Test_Implementaiton_wrapper.vds
+# Command line: vivado.exe -log SPW_ZynqSetup_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SPW_ZynqSetup_wrapper.tcl
+# Log file: F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/synth_1/SPW_ZynqSetup_wrapper.vds
 # Journal file: F:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.runs/synth_1\vivado.jou
 # Running On        :DESKTOP-MEH5DGT
 # Platform          :Windows Server 2016 or Windows 10
@@ -17,8 +17,8 @@
 # CPU Physical cores:6
 # CPU Logical cores :12
 # Host memory       :17100 MB
-# Swap memory       :5368 MB
-# Total Virtual     :22469 MB
-# Available Virtual :5874 MB
+# Swap memory       :5637 MB
+# Total Virtual     :22737 MB
+# Available Virtual :5411 MB
 #-----------------------------------------------------------
-source Test_Implementaiton_wrapper.tcl -notrace
+source SPW_ZynqSetup_wrapper.tcl -notrace

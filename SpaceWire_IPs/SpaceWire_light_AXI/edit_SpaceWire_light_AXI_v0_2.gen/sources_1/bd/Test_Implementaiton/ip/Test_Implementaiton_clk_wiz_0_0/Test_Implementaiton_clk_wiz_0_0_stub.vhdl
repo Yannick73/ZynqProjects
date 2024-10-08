@@ -2,7 +2,7 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
--- Date        : Mon Oct  7 22:24:11 2024
+-- Date        : Tue Oct  8 13:34:13 2024
 -- Host        : DESKTOP-MEH5DGT running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               f:/Xilinx/ZynqProjects/SpaceWire_IPs/SpaceWire_light_AXI/edit_SpaceWire_light_AXI_v0_2.gen/sources_1/bd/Test_Implementaiton/ip/Test_Implementaiton_clk_wiz_0_0/Test_Implementaiton_clk_wiz_0_0_stub.vhdl
